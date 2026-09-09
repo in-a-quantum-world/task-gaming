@@ -206,3 +206,16 @@ No history summaries, B/C artifacts, or model continuations were created.
 - DECISION: Keep both artifacts; use the corrected offline constructor record
 - WHY: The failure belongs to the probe import path, not model availability
 - WHAT COULD MAKE THIS WRONG: A live server may reject or normalize a field despite successful offline construction
+
+## 2026-09-09T21:12:54.445038+00:00 — Implementation freeze and handoff
+
+- TIME: 2026-09-09T21:12:54.445055+00:00
+- QUESTION: Is the integrated source package concrete and reviewable?
+- PREVIOUS BELIEF: Final provenance and the handoff still needed a stable code commit
+- EVIDENCE: Implementation commit e9277e4d8cddc653fa6452c827f7fa4ca3002cd3; frozen.json validates; original branch refs unchanged
+- DECISION: Commit the freeze and requested handoff; leave the paid phase unrun
+- WHY: All required offline work is complete and the provider gate remains false
+- WHAT COULD MAKE THIS WRONG: A future implementation change or image drift invalidates the current frozen hashes
+
+The first staged whitespace check flagged raw test output and valid patch context markers.
+The .gitattributes exceptions preserve raw bytes; normal source whitespace checks still apply.
