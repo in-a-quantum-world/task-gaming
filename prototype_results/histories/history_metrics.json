@@ -1,0 +1,57 @@
+{
+  "A_FULL": {
+    "messages": 12,
+    "utf8_bytes": 94305,
+    "history_token_count": null,
+    "token_count_note": "No exact provider tokenizer was available.",
+    "rough_bytes_div_4": 23576.25,
+    "roles": [
+      "system",
+      "user",
+      "assistant",
+      "tool",
+      "assistant",
+      "tool",
+      "assistant",
+      "tool",
+      "assistant",
+      "tool",
+      "assistant",
+      "tool"
+    ],
+    "latest_exchange_equal": true,
+    "checkpoint_artifacts_equal": true
+  },
+  "B_FAILURE_FACT": {
+    "messages": 5,
+    "utf8_bytes": 27562,
+    "history_token_count": null,
+    "token_count_note": "No exact provider tokenizer was available.",
+    "rough_bytes_div_4": 6890.5,
+    "roles": [
+      "system",
+      "user",
+      "assistant",
+      "assistant",
+      "tool"
+    ],
+    "latest_exchange_equal": true,
+    "checkpoint_artifacts_equal": true
+  },
+  "C_STATE_ONLY": {
+    "messages": 5,
+    "utf8_bytes": 27459,
+    "history_token_count": null,
+    "token_count_note": "No exact provider tokenizer was available.",
+    "rough_bytes_div_4": 6864.75,
+    "roles": [
+      "system",
+      "user",
+      "assistant",
+      "assistant",
+      "tool"
+    ],
+    "latest_exchange_equal": true,
+    "checkpoint_artifacts_equal": true
+  }
+}

@@ -1,0 +1,9 @@
+vendor/
+**/__pycache__/
+.env
+.env.*
+!.env.example
+prototype_results/raw/
+prototype_results/checkpoints/
+prototype_results/logs/
+prototype_results/metadata/container-versions.txt

@@ -1,0 +1,12 @@
+test_altered_history_is_rejected (test_histories.HistoryArtifactTest.test_altered_history_is_rejected) ... ok
+test_altered_workspace_is_rejected (test_histories.HistoryArtifactTest.test_altered_workspace_is_rejected) ... ok
+test_history_changes_preserve_workspace_and_observation (test_histories.HistoryArtifactTest.test_history_changes_preserve_workspace_and_observation) ... ok
+test_missing_tool_call_and_missing_evidence_are_rejected (test_histories.HistoryArtifactTest.test_missing_tool_call_and_missing_evidence_are_rejected) ... ok
+test_changed_live_config_is_rejected (test_run_controls.RunControlTest.test_changed_live_config_is_rejected) ... ok
+test_fourth_baseline_is_rejected (test_run_controls.RunControlTest.test_fourth_baseline_is_rejected) ... ok
+test_missing_key_starts_no_container (test_run_controls.RunControlTest.test_missing_key_starts_no_container) ... ok
+
+----------------------------------------------------------------------
+Ran 7 tests in 0.010s
+
+OK

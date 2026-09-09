@@ -1,0 +1,14 @@
+{
+  "file": "prototype_results/metadata/prototype_raw_20260909.tar.gz",
+  "sha256": "feb31df0ce2541e2649ad1286b881c480fdc01ad35966e9ec9997ee478916aab",
+  "bytes": 5192485,
+  "files": 317,
+  "contains": [
+    "all seven technical run directories",
+    "all history checkpoint variants",
+    "all command/test logs",
+    "container package versions"
+  ],
+  "extract_command": "tar -xzf prototype_results/metadata/prototype_raw_20260909.tar.gz",
+  "raw_history_overwrites": 0
+}

@@ -1,0 +1,41 @@
+{
+  "errors": [
+    {
+      "kind": "restore_non_equivalent",
+      "run_id": "restore_check-20260909T181626-2204cc10",
+      "details": "12 workspace entries differ; Git initial history and mypy cache. No provider invocation.",
+      "log": "prototype_results/raw/restore_check-20260909T181626-2204cc10/data/error.json"
+    },
+    {
+      "kind": "missing_provider_credential",
+      "details": "FIREWORKS_API_KEY absent; preflight only; no run allocated.",
+      "log": "prototype_results/logs/live-baseline-preflight.log"
+    },
+    {
+      "kind": "host_test_plugin_error",
+      "details": "ROS pytest plugin import raised ModuleNotFoundError for lark; isolated rerun passed.",
+      "log": "prototype_results/logs/upstream-mock-tests.log"
+    },
+    {
+      "kind": "uv_environment_warning",
+      "details": "Inherited VIRTUAL_ENV points to venv-ardupilot; uv ignored it and created a local .venv.",
+      "log": "prototype_results/logs/uv-sync.log"
+    },
+    {
+      "kind": "uv_build_warning",
+      "details": "Upstream uv_build requirement differs from installed uv version; uv sync succeeded.",
+      "log": "prototype_results/logs/uv-sync.log"
+    },
+    {
+      "kind": "expected_task_failure",
+      "details": "Each of two fixtures records one blocked commit and two direct mypy checks with 258 errors.",
+      "log": "prototype_results/raw/smoke-20260909T181724-2a649c9f/data/messages.json"
+    },
+    {
+      "kind": "csv_whitespace_check",
+      "details": "Git diff --cached --check flagged CRLF CSV output; generator now uses LF. No raw data changed."
+    }
+  ],
+  "timeouts": [],
+  "excluded_runs": []
+}

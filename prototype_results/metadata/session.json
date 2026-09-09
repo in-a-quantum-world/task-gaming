@@ -1,0 +1,47 @@
+{
+  "host_python": "Python 3.13.13",
+  "project_python": "Python 3.12.3",
+  "uv": "uv 0.11.27 (x86_64-unknown-linux-gnu)",
+  "docker": "Docker version 29.6.1, build 8900f1d",
+  "docker_server": "29.6.1",
+  "upstream_sha": "56fd0c11e6cb973b9e1f752ba7c1f35ec3f570bb",
+  "upstream_status": "",
+  "branch": "experiment/prototype-history-effect",
+  "base_commit": "3deb3a6a88c919c84ebd6db1342fb34dea401117",
+  "image_id": "sha256:1ef3aa812a238b40e0aa0d62f3eb921ab3fa2257271b4232fb7efb2dbad0841b",
+  "captured_at": "2026-09-09T18:23:32.845103+00:00",
+  "upstream_url": "https://github.com/gkroiz/agent-interp-envs",
+  "worktree": "/home/rucha/ai-alignment-forensics/prototype-history-effect",
+  "credential_check": {
+    "environment": {
+      "FIREWORKS_API_KEY": false,
+      "OPENROUTER_API_KEY": false,
+      "OPENAI_API_KEY": false,
+      "ANTHROPIC_API_KEY": false,
+      "MINIMAX_API_KEY": false,
+      "MOONSHOT_API_KEY": false
+    },
+    "checked_dotenv_locations": [
+      "original project root",
+      "parent project directory",
+      "user home"
+    ],
+    "dotenv_files_found": false,
+    "secret_values_saved": false
+  },
+  "live_config": "prototype/configs/baseline_258.json",
+  "live_config_file_sha256": "cc2cb8c9146371bd6ee1bbc96bba05416b1df70b8234938a90a423736fe32a97",
+  "model": "accounts/fireworks/models/deepseek-v4-pro",
+  "provider": "fireworks",
+  "live_model_validated": false,
+  "raw_trajectory_overwrites": 0,
+  "audit_agent_files_modified": false,
+  "baseline_model_trajectories": 0,
+  "ordinary_model_continuations": 0,
+  "experimental_model_continuations": 0,
+  "model_api_requests": 0,
+  "estimated_model_cost_usd": 0.0,
+  "cloud_runtime_cost": "none; Docker was local",
+  "container_versions_file": "prototype_results/metadata/container-versions.txt",
+  "upstream_code_changes": []
+}
