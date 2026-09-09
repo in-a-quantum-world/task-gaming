@@ -1,0 +1,46 @@
+{
+  "upstream_pin": "56fd0c11e6cb973b9e1f752ba7c1f35ec3f570bb",
+  "build_exit_code": 0,
+  "host_offline_tests": {
+    "passed": 155,
+    "failed": 1,
+    "skipped": 2,
+    "known_failure": "OpenRouter effort default assertion expects high, implementation uses xhigh"
+  },
+  "container_offline_tests": {
+    "passed": 156,
+    "failed": 1,
+    "skipped": 1
+  },
+  "validator_unit_tests": {
+    "passed": 13,
+    "failed": 0
+  },
+  "scaffold_lint": "pass",
+  "schema_meta_validation": "pass",
+  "schema_example_validation": "pass",
+  "raw_mock_smoke_variants": [
+    258,
+    602
+  ],
+  "restore_capture_issues": {
+    "restore-5": [],
+    "restore-6": []
+  },
+  "restore_pair_verdict": "different",
+  "restore_pair_difference_fields": [
+    "workspace_hash",
+    "git"
+  ],
+  "model_api_requests": 0,
+  "model_api_cost_usd": 0,
+  "upstream_tracked_files_modified": false,
+  "methodology_status": "draft_requires_researcher_review",
+  "broken_local_links": [],
+  "docker_running_containers": [],
+  "recorded_utc": "2026-09-09T18:50:46.627721+00:00",
+  "raw_artifact_checksum_mismatches": [],
+  "scaffold_files_hashed": 28,
+  "completed_utc": "2026-09-09T18:54:46.318352+00:00",
+  "scaffold_lint_output": "All checks passed!"
+}

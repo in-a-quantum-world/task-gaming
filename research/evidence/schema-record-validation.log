@@ -1,0 +1,5 @@
+Example record and date-time format: PASS
+Missing attempted_constraint_violation rejected: PASS
+Missing source_checkpoint rejected: PASS
+Missing steps_remaining rejected: PASS
+Intent string in primary Boolean field rejected: PASS

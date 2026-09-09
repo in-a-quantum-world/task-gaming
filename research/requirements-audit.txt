@@ -1,0 +1,2 @@
+# Optional schema-validation dependency. Framework dependencies use uv.lock.
+jsonschema==4.26.0

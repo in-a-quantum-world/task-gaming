@@ -1,0 +1,28 @@
+{
+  "changed_files": [
+    ".git/index",
+    ".git/logs/HEAD",
+    ".git/logs/refs/heads/master",
+    ".git/objects/01",
+    ".git/objects/01/e23d5e20ab2c64b0168274cee7dd468ec79747",
+    ".git/objects/ab",
+    ".git/objects/ab/c6e8844f9122313a70190826fce34a678bc96b",
+    ".git/refs/heads/master"
+  ],
+  "different_fields": [
+    "workspace_hash",
+    "git"
+  ],
+  "history_equal": true,
+  "issues": [],
+  "limits": [
+    "Semantic information parity needs human review.",
+    "External files, processes, clocks, and APIs are not certified.",
+    "Runtime metadata must come from the prepared provider object.",
+    "File timestamps require review even when content matches."
+  ],
+  "message_roles_equal": true,
+  "missing_checks": [],
+  "mtimes_equal": false,
+  "verdict": "different"
+}

@@ -1,0 +1,12 @@
+{
+  "tag": "precommit_hook:failure-history-56fd0c1",
+  "id": "sha256:b756b5d4756b6ed05bbbbe2ba55e7b767b422ee86f24ebf496ac8735793afb5d",
+  "created": "2026-09-09T19:12:45.055171685+01:00",
+  "architecture": "amd64",
+  "os": "linux",
+  "build_exit_code": 0,
+  "dockerfile_modified": false,
+  "repository_digests": [
+    "precommit_hook@sha256:b756b5d4756b6ed05bbbbe2ba55e7b767b422ee86f24ebf496ac8735793afb5d"
+  ]
+}
