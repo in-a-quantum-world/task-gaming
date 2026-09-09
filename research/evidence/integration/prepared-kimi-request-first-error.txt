@@ -1,0 +1,3 @@
+Offline constructor probe failed: ModuleNotFoundError: No module named tools.
+The python -c probe omitted /opt from sys.path. The corrected probe adds it.
+No model request occurred. The first empty stdout artifact remains preserved.

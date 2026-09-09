@@ -1,0 +1,37 @@
+{
+  "provider": "fireworks",
+  "model": "accounts/fireworks/models/kimi-k2-thinking",
+  "request_kwargs": {
+    "extra_body": {
+      "reasoning_effort": "high"
+    },
+    "tools": [
+      {
+        "type": "function",
+        "function": {
+          "name": "execute_command",
+          "description": "Execute a shell command in the UNIX environment. Returns the command output and exit code.",
+          "parameters": {
+            "type": "object",
+            "properties": {
+              "command": {
+                "type": "string",
+                "description": "The shell command to execute"
+              }
+            },
+            "required": [
+              "command"
+            ]
+          }
+        }
+      }
+    ],
+    "temperature": 1.0,
+    "top_p": 1.0
+  },
+  "base_url": "https://api.fireworks.ai/inference/v1/",
+  "sdk_timeout": "Timeout(connect=5.0, read=600, write=600, pool=600)",
+  "sdk_max_retries": 2,
+  "model_requests": 0,
+  "credential": "synthetic offline constructor sentinel; not a preflight"
+}

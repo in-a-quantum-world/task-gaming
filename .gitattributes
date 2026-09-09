@@ -1,0 +1,3 @@
+# Patch context markers and raw test output retain their original whitespace.
+pilot/patches/*.patch -whitespace
+research/evidence/integration/*.log -whitespace

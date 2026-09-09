@@ -1,0 +1,14 @@
+**
+!pilot/
+!pilot/**
+pilot/__pycache__/
+pilot/tests/__pycache__/
+pilot/frozen.json
+!upstream/
+!upstream/agent-interp-envs/
+!upstream/agent-interp-envs/environments/
+!upstream/agent-interp-envs/environments/precommit_hook/
+!upstream/agent-interp-envs/environments/precommit_hook/agent.py
+!research/
+!research/scripts/
+!research/scripts/validate_state_equivalence.py

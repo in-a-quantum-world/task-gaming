@@ -1,0 +1,136 @@
+{
+  "rule": "research/SOURCE_CHECKPOINT_RULE.md",
+  "rule_sha256": "923691c37dd7124a6d753fd1feabfc4facd190acbf5e456fe0c9d62be1ccc509",
+  "review_time": "2026-09-09T21:08:32.338544+00:00",
+  "real_source_count": 0,
+  "eligible_checkpoint": null,
+  "rejections": [
+    {
+      "run_id": "fixture-17cefda31b664779ba076ed41698102b",
+      "checkpoint": "step-0",
+      "decision": "reject_scientific_use",
+      "reason": "Synthetic infrastructure fixture; no real model source trajectory"
+    },
+    {
+      "run_id": "fixture-17cefda31b664779ba076ed41698102b",
+      "checkpoint": "step-1",
+      "decision": "reject_scientific_use",
+      "reason": "Synthetic infrastructure fixture; no real model source trajectory"
+    },
+    {
+      "run_id": "fixture-2cba953c67d648cbb4a9a1e8e33d7545",
+      "checkpoint": "step-0",
+      "decision": "reject_scientific_use",
+      "reason": "Synthetic infrastructure fixture; no real model source trajectory"
+    },
+    {
+      "run_id": "fixture-2cba953c67d648cbb4a9a1e8e33d7545",
+      "checkpoint": "step-1",
+      "decision": "reject_scientific_use",
+      "reason": "Synthetic infrastructure fixture; no real model source trajectory"
+    },
+    {
+      "run_id": "fixture-2cba953c67d648cbb4a9a1e8e33d7545",
+      "checkpoint": "step-2",
+      "decision": "reject_scientific_use",
+      "reason": "Synthetic infrastructure fixture; no real model source trajectory"
+    },
+    {
+      "run_id": "fixture-33296c1a86054f1ca0907fd8a9060dbb",
+      "checkpoint": "step-0",
+      "decision": "reject_scientific_use",
+      "reason": "Synthetic infrastructure fixture; no real model source trajectory"
+    },
+    {
+      "run_id": "fixture-33296c1a86054f1ca0907fd8a9060dbb",
+      "checkpoint": "step-1",
+      "decision": "reject_scientific_use",
+      "reason": "Synthetic infrastructure fixture; no real model source trajectory"
+    },
+    {
+      "run_id": "fixture-33296c1a86054f1ca0907fd8a9060dbb",
+      "checkpoint": "step-2",
+      "decision": "reject_scientific_use",
+      "reason": "Synthetic infrastructure fixture; no real model source trajectory"
+    },
+    {
+      "run_id": "fixture-33296c1a86054f1ca0907fd8a9060dbb",
+      "checkpoint": "step-3",
+      "decision": "reject_scientific_use",
+      "reason": "Synthetic infrastructure fixture; no real model source trajectory"
+    },
+    {
+      "run_id": "fixture-44fad38897894fcf8c74fb97dfec2d5f",
+      "checkpoint": "step-0",
+      "decision": "reject_scientific_use",
+      "reason": "Synthetic infrastructure fixture; no real model source trajectory"
+    },
+    {
+      "run_id": "fixture-44fad38897894fcf8c74fb97dfec2d5f",
+      "checkpoint": "step-1",
+      "decision": "reject_scientific_use",
+      "reason": "Synthetic infrastructure fixture; no real model source trajectory"
+    },
+    {
+      "run_id": "fixture-44fad38897894fcf8c74fb97dfec2d5f",
+      "checkpoint": "step-2",
+      "decision": "reject_scientific_use",
+      "reason": "Synthetic infrastructure fixture; no real model source trajectory"
+    },
+    {
+      "run_id": "fixture-44fad38897894fcf8c74fb97dfec2d5f",
+      "checkpoint": "step-3",
+      "decision": "reject_scientific_use",
+      "reason": "Synthetic infrastructure fixture; no real model source trajectory"
+    },
+    {
+      "run_id": "fixture-98e55f6300af4e458fd112017cb66333",
+      "checkpoint": "step-0",
+      "decision": "reject_scientific_use",
+      "reason": "Synthetic infrastructure fixture; no real model source trajectory"
+    },
+    {
+      "run_id": "fixture-98e55f6300af4e458fd112017cb66333",
+      "checkpoint": "step-1",
+      "decision": "reject_scientific_use",
+      "reason": "Synthetic infrastructure fixture; no real model source trajectory"
+    },
+    {
+      "run_id": "fixture-98e55f6300af4e458fd112017cb66333",
+      "checkpoint": "step-2",
+      "decision": "reject_scientific_use",
+      "reason": "Synthetic infrastructure fixture; no real model source trajectory"
+    },
+    {
+      "run_id": "fixture-98e55f6300af4e458fd112017cb66333",
+      "checkpoint": "step-3",
+      "decision": "reject_scientific_use",
+      "reason": "Synthetic infrastructure fixture; no real model source trajectory"
+    },
+    {
+      "run_id": "fixture-fb0f9fc8a68f40369616c6b6f009a01d",
+      "checkpoint": "step-0",
+      "decision": "reject_scientific_use",
+      "reason": "Synthetic infrastructure fixture; no real model source trajectory"
+    },
+    {
+      "run_id": "fixture-fb0f9fc8a68f40369616c6b6f009a01d",
+      "checkpoint": "step-1",
+      "decision": "reject_scientific_use",
+      "reason": "Synthetic infrastructure fixture; no real model source trajectory"
+    },
+    {
+      "run_id": "fixture-fb0f9fc8a68f40369616c6b6f009a01d",
+      "checkpoint": "step-2",
+      "decision": "reject_scientific_use",
+      "reason": "Synthetic infrastructure fixture; no real model source trajectory"
+    },
+    {
+      "run_id": "fixture-fb0f9fc8a68f40369616c6b6f009a01d",
+      "checkpoint": "step-3",
+      "decision": "reject_scientific_use",
+      "reason": "Synthetic infrastructure fixture; no real model source trajectory"
+    }
+  ],
+  "later_real_outcomes_inspected": false
+}

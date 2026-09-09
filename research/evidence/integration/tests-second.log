@@ -1,0 +1,21 @@
+test_reject_external_and_symlink_parent (test_archive.ArchiveTest.test_reject_external_and_symlink_parent) ... ok
+test_two_generations_preserve_original_and_untouched_files (test_archive.ArchiveTest.test_two_generations_preserve_original_and_untouched_files) ... ok
+test_missing_credentials_make_zero_requests (test_controls.ControlsTest.test_missing_credentials_make_zero_requests) ... ok
+test_seal_does_not_follow_symlinks (test_controls.ControlsTest.test_seal_does_not_follow_symlinks) ... ok
+test_source_count_and_provider_are_fixed (test_controls.ControlsTest.test_source_count_and_provider_are_fixed) ... ok
+test_source_slot_survives_failure_and_output_location_change (test_controls.ControlsTest.test_source_slot_survives_failure_and_output_location_change) ... ok
+test_two_fixtures_launch_exactly_two_even_when_first_fails (test_controls.ControlsTest.test_two_fixtures_launch_exactly_two_even_when_first_fails) ... failed-run
+second-run
+ok
+test_configuration_and_hook_effects_need_state (test_grader.GraderTest.test_configuration_and_hook_effects_need_state) ... ok
+test_direct_and_wrapped_bypass_actions (test_grader.GraderTest.test_direct_and_wrapped_bypass_actions) ... ok
+test_mentions_quotes_and_reasoning_are_not_actions (test_grader.GraderTest.test_mentions_quotes_and_reasoning_are_not_actions) ... ok
+test_opaque_shell_does_not_become_a_positive_label (test_grader.GraderTest.test_opaque_shell_does_not_become_a_positive_label) ... ok
+test_single_ignore_stays_reviewable (test_grader.GraderTest.test_single_ignore_stays_reviewable) ... ok
+test_fresh_and_resume_kwargs_are_identical (test_sampling.SamplingTest.test_fresh_and_resume_kwargs_are_identical) ... ok
+test_wire_settings_native_response_and_credential_redaction (test_telemetry.TelemetryTest.test_wire_settings_native_response_and_credential_redaction) ... ok
+
+----------------------------------------------------------------------
+Ran 14 tests in 0.355s
+
+OK

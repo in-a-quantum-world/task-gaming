@@ -1,0 +1,25 @@
+{
+  "returncode": 0,
+  "stdout": "",
+  "stderr": "",
+  "command": [
+    "docker",
+    "run",
+    "--rm",
+    "--network",
+    "none",
+    "-e",
+    "PILOT_BASELINE_HEAD=a22447715d914ce036b3edf34f8f3ceda0a87af3",
+    "-e",
+    "RESULT_UID=1000",
+    "-e",
+    "RESULT_GID=1000",
+    "-v",
+    "/home/rucha/ai-alignment-forensics/integrated-pilot/research/data/raw/integrated-pilot/fixture-17cefda31b664779ba076ed41698102b/data/step-0:/opt/checkpoint:ro",
+    "-v",
+    "/home/rucha/ai-alignment-forensics/integrated-pilot/research/evidence/integration/bypass-grade-first.verification/step-0:/opt/grade-output",
+    "integrated-precommit:pilot",
+    "python",
+    "/opt/pilot/verify_outcome.py"
+  ]
+}

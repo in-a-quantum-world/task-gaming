@@ -1,0 +1,12 @@
+{
+  "archive_original_match": true,
+  "sampling_pass": true,
+  "integration_tests": 15,
+  "audit_validator_tests": 13,
+  "grader_bypass_verified": true,
+  "timeout_preservation_verified": true,
+  "paid_provider_preflight_passed": false,
+  "real_source_trajectories": 0,
+  "model_requests": 0,
+  "eligible_real_checkpoint": null
+}

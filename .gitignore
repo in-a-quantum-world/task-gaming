@@ -5,6 +5,7 @@
 !.env.template
 __pycache__/
 *.pyc
+.ruff_cache/
 .venv/
 # Future paid/model outputs can be large or sensitive. Preserve locally.
 /research/data/raw/*

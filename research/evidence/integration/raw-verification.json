@@ -1,0 +1,54 @@
+{
+  "research/data/raw/integrated-pilot/fixture-44fad38897894fcf8c74fb97dfec2d5f/artifact_sha256.json": {
+    "files_verified": 167,
+    "sha256": "24208202151ef2215ed039f89247822ca9270be7106711aef8c640d656406a4b"
+  },
+  "research/data/raw/integrated-pilot/fixture-87a6b71b6095401080d7c7c6522f8296/artifact_sha256.json": {
+    "files_verified": 95,
+    "sha256": "c70046031ab17a04b5b9210c85b2a0cb74844ddcadc79a535fc732af5135ac81"
+  },
+  "research/data/raw/integrated-pilot/restore-check-d3c7ca5582d54b488ae5e3eb632dccbe/artifact_sha256.json": {
+    "files_verified": 109,
+    "sha256": "d0927c3e74398f8a32d2c11d475a9884fe01372922b928204eece7b7fc64d0b2"
+  },
+  "research/data/raw/integrated-pilot/restore-check-bdcbaee060c84945acfc3a5ae4ae63da/artifact_sha256.json": {
+    "files_verified": 104,
+    "sha256": "8c5ddce63f8be1c4a3d103b20b05c25f6c9971e8da6088b4083199fac51cd20d"
+  },
+  "research/data/raw/integrated-pilot/fixture-17cefda31b664779ba076ed41698102b/artifact_sha256.json": {
+    "files_verified": 137,
+    "sha256": "bd75a7970a0b5943daf0f9dbb2c47625524ebbaf898561bdea5fcd734ae2817a"
+  },
+  "research/data/raw/integrated-pilot/restore-check-82a295237e5b4432b2ea684e2dacb56b/artifact_sha256.json": {
+    "files_verified": 104,
+    "sha256": "cebb4abcc9034a9ebfac2b0c92d8adaefde0f05ab417e7813c2a9065f204b80a"
+  },
+  "research/data/raw/integrated-pilot/fixture-2cba953c67d648cbb4a9a1e8e33d7545/artifact_sha256.json": {
+    "files_verified": 156,
+    "sha256": "b3b34283fb0851d390ccd2a4b548be7e8767499ebee105d8ce849beb232659a3"
+  },
+  "research/data/raw/integrated-pilot/fixture-fb0f9fc8a68f40369616c6b6f009a01d/artifact_sha256.json": {
+    "files_verified": 162,
+    "sha256": "a03579e349e35441f658eb64f1ee207eaa249c87eb9d7f35a63615001c2c8a63"
+  },
+  "research/data/raw/integrated-pilot/fixture-98e55f6300af4e458fd112017cb66333/artifact_sha256.json": {
+    "files_verified": 167,
+    "sha256": "469e02ea3d428f6d38b4d6d6baa4c6d64b66ba7ac6ca590df22766d3cb81a2d2"
+  },
+  "research/data/raw/integrated-pilot/restore-check-f469d3cf54bc4d838bf6b9a1ab933e94/artifact_sha256.json": {
+    "files_verified": 102,
+    "sha256": "f9ffb1c8bec1148e60c3915d4e2be920d6ea930f05d786fa346f4c0fe4c1bc4b"
+  },
+  "research/data/raw/integrated-pilot/restore-check-39a113654c4f452085122152e488e6dc/artifact_sha256.json": {
+    "files_verified": 109,
+    "sha256": "d831bf3e91975776ba967cf3c097f0b49b1713de3d90c032bee864c1c3c25202"
+  },
+  "research/data/raw/integrated-pilot/fixture-33296c1a86054f1ca0907fd8a9060dbb/artifact_sha256.json": {
+    "files_verified": 158,
+    "sha256": "35d8f82d2391e8b4ea7011c73dd71eb33dbc86352aa59e9c639d7e04aadd20b4"
+  },
+  "research/data/raw/integrated-pilot/restore-check-01bcb5f4d0a24e279a6721cfa1ef2faa/artifact_sha256.json": {
+    "files_verified": 102,
+    "sha256": "d6ec938c143989f7c58907180cd17bb42342f74534a90fe86ee8c125acd72a3b"
+  }
+}

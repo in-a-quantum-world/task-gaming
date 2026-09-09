@@ -1,0 +1,6 @@
+test_fresh_and_resume_kwargs_are_identical (pilot.tests.test_sampling.SamplingTest.test_fresh_and_resume_kwargs_are_identical) ... ok
+
+----------------------------------------------------------------------
+Ran 1 test in 0.012s
+
+OK

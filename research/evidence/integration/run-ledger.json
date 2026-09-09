@@ -1,0 +1,301 @@
+[
+  {
+    "path": "research/data/raw/integrated-pilot/fixture-17cefda31b664779ba076ed41698102b",
+    "run": {
+      "config_sha256": "63b12467265456d9cab06645028ea721ca00babbfd05b1b03063ced56b55c0fd",
+      "image_id": "sha256:9510a48f018119049c24741329412e3c468ec6210946ec41622fa936fec7b7ed",
+      "experiment_commit": "622703ee2fa109640eb3befa4d4c3a35ef75a194",
+      "upstream_commit": "56fd0c11e6cb973b9e1f752ba7c1f35ec3f570bb",
+      "experiment_dirty": true,
+      "checkpoint": null,
+      "wall_timeout_seconds": 14400,
+      "synthetic": true,
+      "run_id": "fixture-17cefda31b664779ba076ed41698102b",
+      "mode": "fixture",
+      "start": "2026-09-09T21:01:10.783854+00:00"
+    },
+    "exit": {
+      "end": "2026-09-09T21:01:21.547671+00:00",
+      "returncode": 1,
+      "timed_out": false,
+      "interrupted": false
+    },
+    "artifact_manifest_sha256": "bd75a7970a0b5943daf0f9dbb2c47625524ebbaf898561bdea5fcd734ae2817a"
+  },
+  {
+    "path": "research/data/raw/integrated-pilot/fixture-2cba953c67d648cbb4a9a1e8e33d7545",
+    "run": {
+      "config_sha256": "63b12467265456d9cab06645028ea721ca00babbfd05b1b03063ced56b55c0fd",
+      "image_id": "sha256:eb61ec1cde72f7de7ea43345656c902da84ec64b62d0d37485d39bb40e686960",
+      "experiment_commit": "622703ee2fa109640eb3befa4d4c3a35ef75a194",
+      "upstream_commit": "56fd0c11e6cb973b9e1f752ba7c1f35ec3f570bb",
+      "experiment_dirty": true,
+      "checkpoint": null,
+      "wall_timeout_seconds": 14400,
+      "synthetic": true,
+      "run_id": "fixture-2cba953c67d648cbb4a9a1e8e33d7545",
+      "mode": "fixture",
+      "start": "2026-09-09T21:02:43.819149+00:00"
+    },
+    "exit": {
+      "end": "2026-09-09T21:02:56.641108+00:00",
+      "returncode": 0,
+      "timed_out": false,
+      "interrupted": false
+    },
+    "artifact_manifest_sha256": "b3b34283fb0851d390ccd2a4b548be7e8767499ebee105d8ce849beb232659a3"
+  },
+  {
+    "path": "research/data/raw/integrated-pilot/fixture-33296c1a86054f1ca0907fd8a9060dbb",
+    "run": {
+      "config_sha256": "8e82798ea50e296a92bcbc975aa7374c2c0dd052f512dcbe0a0591e6ce621639",
+      "image_id": "sha256:f0883fc1aece65668691a4f29afc50291456850395db584f94c9ca30a3841e99",
+      "experiment_commit": "622703ee2fa109640eb3befa4d4c3a35ef75a194",
+      "upstream_commit": "56fd0c11e6cb973b9e1f752ba7c1f35ec3f570bb",
+      "experiment_dirty": true,
+      "checkpoint": null,
+      "wall_timeout_seconds": 14400,
+      "synthetic": true,
+      "run_id": "fixture-33296c1a86054f1ca0907fd8a9060dbb",
+      "mode": "fixture",
+      "start": "2026-09-09T20:55:50.687560+00:00"
+    },
+    "exit": {
+      "end": "2026-09-09T20:56:06.464699+00:00",
+      "returncode": 0,
+      "timed_out": false,
+      "interrupted": false
+    },
+    "artifact_manifest_sha256": "35d8f82d2391e8b4ea7011c73dd71eb33dbc86352aa59e9c639d7e04aadd20b4"
+  },
+  {
+    "path": "research/data/raw/integrated-pilot/fixture-44fad38897894fcf8c74fb97dfec2d5f",
+    "run": {
+      "config_sha256": "8e82798ea50e296a92bcbc975aa7374c2c0dd052f512dcbe0a0591e6ce621639",
+      "image_id": "sha256:14bb9a6b1ca097793c25038a6e088e9e33497365bac7e194cc6eeefa1ae14f1e",
+      "experiment_commit": "622703ee2fa109640eb3befa4d4c3a35ef75a194",
+      "upstream_commit": "56fd0c11e6cb973b9e1f752ba7c1f35ec3f570bb",
+      "experiment_dirty": true,
+      "checkpoint": null,
+      "wall_timeout_seconds": 14400,
+      "synthetic": true,
+      "run_id": "fixture-44fad38897894fcf8c74fb97dfec2d5f",
+      "mode": "fixture",
+      "start": "2026-09-09T21:06:49.936503+00:00"
+    },
+    "exit": {
+      "end": "2026-09-09T21:07:05.574954+00:00",
+      "returncode": 0,
+      "timed_out": false,
+      "interrupted": false
+    },
+    "artifact_manifest_sha256": "24208202151ef2215ed039f89247822ca9270be7106711aef8c640d656406a4b"
+  },
+  {
+    "path": "research/data/raw/integrated-pilot/fixture-87a6b71b6095401080d7c7c6522f8296",
+    "run": {
+      "config_sha256": "4480e46b5597e0980ee8048250b3f5f33cddc35fa3df1069f49a3a3650d5bb38",
+      "image_id": "sha256:9510a48f018119049c24741329412e3c468ec6210946ec41622fa936fec7b7ed",
+      "experiment_commit": "622703ee2fa109640eb3befa4d4c3a35ef75a194",
+      "upstream_commit": "56fd0c11e6cb973b9e1f752ba7c1f35ec3f570bb",
+      "experiment_dirty": true,
+      "checkpoint": null,
+      "wall_timeout_seconds": 8,
+      "synthetic": true,
+      "run_id": "fixture-87a6b71b6095401080d7c7c6522f8296",
+      "mode": "fixture",
+      "start": "2026-09-09T21:01:35.452181+00:00"
+    },
+    "exit": {
+      "end": "2026-09-09T21:01:44.999451+00:00",
+      "returncode": 124,
+      "timed_out": true,
+      "interrupted": false
+    },
+    "artifact_manifest_sha256": "c70046031ab17a04b5b9210c85b2a0cb74844ddcadc79a535fc732af5135ac81"
+  },
+  {
+    "path": "research/data/raw/integrated-pilot/fixture-98e55f6300af4e458fd112017cb66333",
+    "run": {
+      "config_sha256": "8e82798ea50e296a92bcbc975aa7374c2c0dd052f512dcbe0a0591e6ce621639",
+      "image_id": "sha256:ac88ea8d3be608ca079bcc23ad03fe36053d256981872818bf3a2090039c8882",
+      "experiment_commit": "622703ee2fa109640eb3befa4d4c3a35ef75a194",
+      "upstream_commit": "56fd0c11e6cb973b9e1f752ba7c1f35ec3f570bb",
+      "experiment_dirty": true,
+      "checkpoint": null,
+      "wall_timeout_seconds": 14400,
+      "synthetic": true,
+      "run_id": "fixture-98e55f6300af4e458fd112017cb66333",
+      "mode": "fixture",
+      "start": "2026-09-09T21:04:34.798223+00:00"
+    },
+    "exit": {
+      "end": "2026-09-09T21:04:50.707449+00:00",
+      "returncode": 0,
+      "timed_out": false,
+      "interrupted": false
+    },
+    "artifact_manifest_sha256": "469e02ea3d428f6d38b4d6d6baa4c6d64b66ba7ac6ca590df22766d3cb81a2d2"
+  },
+  {
+    "path": "research/data/raw/integrated-pilot/fixture-fb0f9fc8a68f40369616c6b6f009a01d",
+    "run": {
+      "config_sha256": "8e82798ea50e296a92bcbc975aa7374c2c0dd052f512dcbe0a0591e6ce621639",
+      "image_id": "sha256:d0c71155580ec89678468f1a6964f88f0bc717c57765eb0fdf27f02afdedd86d",
+      "experiment_commit": "622703ee2fa109640eb3befa4d4c3a35ef75a194",
+      "upstream_commit": "56fd0c11e6cb973b9e1f752ba7c1f35ec3f570bb",
+      "experiment_dirty": true,
+      "checkpoint": null,
+      "wall_timeout_seconds": 14400,
+      "synthetic": true,
+      "run_id": "fixture-fb0f9fc8a68f40369616c6b6f009a01d",
+      "mode": "fixture",
+      "start": "2026-09-09T20:59:17.755217+00:00"
+    },
+    "exit": {
+      "end": "2026-09-09T20:59:34.137458+00:00",
+      "returncode": 0,
+      "timed_out": false,
+      "interrupted": false
+    },
+    "artifact_manifest_sha256": "a03579e349e35441f658eb64f1ee207eaa249c87eb9d7f35a63615001c2c8a63"
+  },
+  {
+    "path": "research/data/raw/integrated-pilot/restore-check-01bcb5f4d0a24e279a6721cfa1ef2faa",
+    "run": {
+      "config_sha256": "8e82798ea50e296a92bcbc975aa7374c2c0dd052f512dcbe0a0591e6ce621639",
+      "image_id": "sha256:f0883fc1aece65668691a4f29afc50291456850395db584f94c9ca30a3841e99",
+      "experiment_commit": "622703ee2fa109640eb3befa4d4c3a35ef75a194",
+      "upstream_commit": "56fd0c11e6cb973b9e1f752ba7c1f35ec3f570bb",
+      "experiment_dirty": true,
+      "checkpoint": "/home/rucha/ai-alignment-forensics/integrated-pilot/research/data/raw/integrated-pilot/fixture-33296c1a86054f1ca0907fd8a9060dbb/data/step-2",
+      "wall_timeout_seconds": 14400,
+      "synthetic": true,
+      "run_id": "restore-check-01bcb5f4d0a24e279a6721cfa1ef2faa",
+      "mode": "restore-check",
+      "start": "2026-09-09T20:57:37.340438+00:00"
+    },
+    "exit": {
+      "end": "2026-09-09T20:57:43.432057+00:00",
+      "returncode": 1,
+      "timed_out": false,
+      "interrupted": false
+    },
+    "artifact_manifest_sha256": "d6ec938c143989f7c58907180cd17bb42342f74534a90fe86ee8c125acd72a3b"
+  },
+  {
+    "path": "research/data/raw/integrated-pilot/restore-check-39a113654c4f452085122152e488e6dc",
+    "run": {
+      "config_sha256": "8e82798ea50e296a92bcbc975aa7374c2c0dd052f512dcbe0a0591e6ce621639",
+      "image_id": "sha256:14bb9a6b1ca097793c25038a6e088e9e33497365bac7e194cc6eeefa1ae14f1e",
+      "experiment_commit": "622703ee2fa109640eb3befa4d4c3a35ef75a194",
+      "upstream_commit": "56fd0c11e6cb973b9e1f752ba7c1f35ec3f570bb",
+      "experiment_dirty": true,
+      "checkpoint": "/home/rucha/ai-alignment-forensics/integrated-pilot/research/data/raw/integrated-pilot/fixture-44fad38897894fcf8c74fb97dfec2d5f/data/step-2",
+      "wall_timeout_seconds": 14400,
+      "synthetic": true,
+      "run_id": "restore-check-39a113654c4f452085122152e488e6dc",
+      "mode": "restore-check",
+      "start": "2026-09-09T21:07:13.179602+00:00"
+    },
+    "exit": {
+      "end": "2026-09-09T21:07:18.859216+00:00",
+      "returncode": 0,
+      "timed_out": false,
+      "interrupted": false
+    },
+    "artifact_manifest_sha256": "d831bf3e91975776ba967cf3c097f0b49b1713de3d90c032bee864c1c3c25202"
+  },
+  {
+    "path": "research/data/raw/integrated-pilot/restore-check-82a295237e5b4432b2ea684e2dacb56b",
+    "run": {
+      "config_sha256": "8e82798ea50e296a92bcbc975aa7374c2c0dd052f512dcbe0a0591e6ce621639",
+      "image_id": "sha256:d0c71155580ec89678468f1a6964f88f0bc717c57765eb0fdf27f02afdedd86d",
+      "experiment_commit": "622703ee2fa109640eb3befa4d4c3a35ef75a194",
+      "upstream_commit": "56fd0c11e6cb973b9e1f752ba7c1f35ec3f570bb",
+      "experiment_dirty": true,
+      "checkpoint": "/home/rucha/ai-alignment-forensics/integrated-pilot/research/data/raw/integrated-pilot/fixture-fb0f9fc8a68f40369616c6b6f009a01d/data/step-2",
+      "wall_timeout_seconds": 14400,
+      "synthetic": true,
+      "run_id": "restore-check-82a295237e5b4432b2ea684e2dacb56b",
+      "mode": "restore-check",
+      "start": "2026-09-09T21:00:00.764341+00:00"
+    },
+    "exit": {
+      "end": "2026-09-09T21:00:07.443729+00:00",
+      "returncode": 0,
+      "timed_out": false,
+      "interrupted": false
+    },
+    "artifact_manifest_sha256": "cebb4abcc9034a9ebfac2b0c92d8adaefde0f05ab417e7813c2a9065f204b80a"
+  },
+  {
+    "path": "research/data/raw/integrated-pilot/restore-check-bdcbaee060c84945acfc3a5ae4ae63da",
+    "run": {
+      "config_sha256": "8e82798ea50e296a92bcbc975aa7374c2c0dd052f512dcbe0a0591e6ce621639",
+      "image_id": "sha256:d0c71155580ec89678468f1a6964f88f0bc717c57765eb0fdf27f02afdedd86d",
+      "experiment_commit": "622703ee2fa109640eb3befa4d4c3a35ef75a194",
+      "upstream_commit": "56fd0c11e6cb973b9e1f752ba7c1f35ec3f570bb",
+      "experiment_dirty": true,
+      "checkpoint": "/home/rucha/ai-alignment-forensics/integrated-pilot/research/data/raw/integrated-pilot/fixture-fb0f9fc8a68f40369616c6b6f009a01d/data/step-2",
+      "wall_timeout_seconds": 14400,
+      "synthetic": true,
+      "run_id": "restore-check-bdcbaee060c84945acfc3a5ae4ae63da",
+      "mode": "restore-check",
+      "start": "2026-09-09T20:59:53.949429+00:00"
+    },
+    "exit": {
+      "end": "2026-09-09T21:00:00.154627+00:00",
+      "returncode": 0,
+      "timed_out": false,
+      "interrupted": false
+    },
+    "artifact_manifest_sha256": "8c5ddce63f8be1c4a3d103b20b05c25f6c9971e8da6088b4083199fac51cd20d"
+  },
+  {
+    "path": "research/data/raw/integrated-pilot/restore-check-d3c7ca5582d54b488ae5e3eb632dccbe",
+    "run": {
+      "config_sha256": "8e82798ea50e296a92bcbc975aa7374c2c0dd052f512dcbe0a0591e6ce621639",
+      "image_id": "sha256:14bb9a6b1ca097793c25038a6e088e9e33497365bac7e194cc6eeefa1ae14f1e",
+      "experiment_commit": "622703ee2fa109640eb3befa4d4c3a35ef75a194",
+      "upstream_commit": "56fd0c11e6cb973b9e1f752ba7c1f35ec3f570bb",
+      "experiment_dirty": true,
+      "checkpoint": "/home/rucha/ai-alignment-forensics/integrated-pilot/research/data/raw/integrated-pilot/fixture-44fad38897894fcf8c74fb97dfec2d5f/data/step-2",
+      "wall_timeout_seconds": 14400,
+      "synthetic": true,
+      "run_id": "restore-check-d3c7ca5582d54b488ae5e3eb632dccbe",
+      "mode": "restore-check",
+      "start": "2026-09-09T21:07:06.353091+00:00"
+    },
+    "exit": {
+      "end": "2026-09-09T21:07:12.570670+00:00",
+      "returncode": 0,
+      "timed_out": false,
+      "interrupted": false
+    },
+    "artifact_manifest_sha256": "d0927c3e74398f8a32d2c11d475a9884fe01372922b928204eece7b7fc64d0b2"
+  },
+  {
+    "path": "research/data/raw/integrated-pilot/restore-check-f469d3cf54bc4d838bf6b9a1ab933e94",
+    "run": {
+      "config_sha256": "8e82798ea50e296a92bcbc975aa7374c2c0dd052f512dcbe0a0591e6ce621639",
+      "image_id": "sha256:f0883fc1aece65668691a4f29afc50291456850395db584f94c9ca30a3841e99",
+      "experiment_commit": "622703ee2fa109640eb3befa4d4c3a35ef75a194",
+      "upstream_commit": "56fd0c11e6cb973b9e1f752ba7c1f35ec3f570bb",
+      "experiment_dirty": true,
+      "checkpoint": "/home/rucha/ai-alignment-forensics/integrated-pilot/research/data/raw/integrated-pilot/fixture-33296c1a86054f1ca0907fd8a9060dbb/data/step-2",
+      "wall_timeout_seconds": 14400,
+      "synthetic": true,
+      "run_id": "restore-check-f469d3cf54bc4d838bf6b9a1ab933e94",
+      "mode": "restore-check",
+      "start": "2026-09-09T20:57:30.250200+00:00"
+    },
+    "exit": {
+      "end": "2026-09-09T20:57:36.745850+00:00",
+      "returncode": 1,
+      "timed_out": false,
+      "interrupted": false
+    },
+    "artifact_manifest_sha256": "f9ffb1c8bec1148e60c3915d4e2be920d6ea930f05d786fa346f4c0fe4c1bc4b"
+  }
+]

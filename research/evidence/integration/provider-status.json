@@ -1,0 +1,32 @@
+{
+  "time": "2026-09-09T21:08:32.336745+00:00",
+  "shell_FIREWORKS_API_KEY_present": false,
+  "checked_files": [
+    {
+      "path": "/home/rucha/ai-alignment-forensics/task-gaming-under-trajectory-pressure/.env",
+      "exists": false
+    },
+    {
+      "path": "/home/rucha/ai-alignment-forensics/prototype-history-effect/.env",
+      "exists": false
+    },
+    {
+      "path": "/home/rucha/ai-alignment-forensics/task-gaming-under-trajectory-pressure/upstream/agent-interp-envs/.env",
+      "exists": false
+    },
+    {
+      "path": "/home/rucha/.env",
+      "exists": false
+    },
+    {
+      "path": "/home/rucha/ai-alignment-forensics/integrated-pilot/.env",
+      "exists": false
+    }
+  ],
+  "public_model_url": "https://fireworks.ai/models/fireworks/kimi-k2-thinking",
+  "public_serverless_status": "Not supported",
+  "authenticated_preflight_passed": false,
+  "model_requests": 0,
+  "real_source_trajectories": 0,
+  "provider_substitution": false
+}

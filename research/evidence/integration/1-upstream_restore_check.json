@@ -1,0 +1,19 @@
+{
+  "matches_original": false,
+  "changed_paths": [
+    ".git/logs/HEAD",
+    ".git/logs/refs/heads/master",
+    ".git/objects/05",
+    ".git/objects/05/73cf81344c41b92c45cae9043a66e837a7240f",
+    ".git/objects/95",
+    ".git/objects/95/d56443e2ae3d7887f8a3eb3e8d387a756b9884",
+    ".git/refs/heads/master",
+    ".mypy_cache",
+    ".mypy_cache/.gitignore",
+    ".mypy_cache/3.11",
+    ".mypy_cache/3.11/cache.db",
+    ".mypy_cache/CACHEDIR.TAG",
+    ".mypy_cache/missing_stubs",
+    "dir-link"
+  ]
+}

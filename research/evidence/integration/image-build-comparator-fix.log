@@ -1,0 +1,43 @@
+#0 building with "default" instance using docker driver
+
+#1 [internal] load build definition from Dockerfile
+#1 transferring dockerfile: 380B done
+#1 DONE 0.0s
+
+#2 [internal] load metadata for docker.io/library/precommit_hook:failure-history-56fd0c1
+#2 DONE 0.0s
+
+#3 [internal] load .dockerignore
+#3 transferring context: 389B done
+#3 DONE 0.0s
+
+#4 [1/5] FROM docker.io/library/precommit_hook:failure-history-56fd0c1@sha256:b756b5d4756b6ed05bbbbe2ba55e7b767b422ee86f24ebf496ac8735793afb5d
+#4 resolve docker.io/library/precommit_hook:failure-history-56fd0c1@sha256:b756b5d4756b6ed05bbbbe2ba55e7b767b422ee86f24ebf496ac8735793afb5d 0.0s done
+#4 DONE 0.0s
+
+#5 [internal] load build context
+#5 transferring context: 36.01kB done
+#5 DONE 0.0s
+
+#6 [2/5] COPY upstream/agent-interp-envs/environments/precommit_hook/agent.py /opt/agent.py
+#6 CACHED
+
+#7 [3/5] COPY pilot /opt/pilot
+#7 DONE 0.0s
+
+#8 [4/5] COPY research/scripts/validate_state_equivalence.py /opt/research/scripts/validate_state_equivalence.py
+#8 DONE 0.0s
+
+#9 [5/5] RUN chmod -R go-rwx /opt/pilot /opt/research /opt/agent.py
+#9 DONE 0.2s
+
+#10 exporting to image
+#10 exporting layers 0.1s done
+#10 exporting manifest sha256:1ecd82f3863267dc426aba97061e74a177aa3428fa8a9827b5fd20c38fe13c54 done
+#10 exporting config sha256:7bb5714561bb822aa4151058d21c01fa6fd4b9dbed1889d6d9646a929f96f363
+#10 exporting config sha256:7bb5714561bb822aa4151058d21c01fa6fd4b9dbed1889d6d9646a929f96f363 done
+#10 exporting attestation manifest sha256:6e971d6be474e490ceff93d6959870eba4bd722e43c66bcc0e20bb32d137b5d6 0.0s done
+#10 exporting manifest list sha256:d0c71155580ec89678468f1a6964f88f0bc717c57765eb0fdf27f02afdedd86d done
+#10 naming to docker.io/library/integrated-precommit:pilot done
+#10 unpacking to docker.io/library/integrated-precommit:pilot 0.1s done
+#10 DONE 0.3s
