@@ -1,0 +1,14 @@
+{
+  "time": "2026-09-10T23:30:05.909804+00:00",
+  "baseline_108": true,
+  "archive_original_match": true,
+  "sampling_pass": true,
+  "separate_stage_cap": true,
+  "test_counts": {
+    "integration": 19,
+    "audit": 13,
+    "stage": 6
+  },
+  "selected_variant": "src_108",
+  "selected_error_count": 108
+}

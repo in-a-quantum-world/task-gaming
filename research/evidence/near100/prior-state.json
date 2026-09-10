@@ -1,0 +1,38 @@
+{
+  "time": "2026-09-10T23:26:29.877404+00:00",
+  "old_slots": [
+    {
+      "path": "/home/rucha/ai-alignment-forensics/task-gaming-under-trajectory-pressure/.git/integrated-pilot-source-slot.json",
+      "sha256": "9cb4e263645867aae48586677d5c668ee2823dfb77f7bb67a9d4bcc95651ddb4",
+      "contents": {
+        "run_id": "source-4f522c3fe196414c975797817b07e35c",
+        "allocated_at": "2026-09-10T09:48:11.383449+00:00",
+        "policy": "One slot; all allocated failures consume it"
+      }
+    },
+    {
+      "path": "/home/rucha/ai-alignment-forensics/task-gaming-under-trajectory-pressure/.git/602-stress-source-slot.json",
+      "sha256": "15947228f135c3ffd64b03f28224395921ed845bdc7fb984fda4edbeb581c6f4",
+      "contents": {
+        "run_id": "source602-d44c5e387a22430daf4367a25b6cfe73",
+        "allocated_at": "2026-09-10T16:13:23.142509+00:00",
+        "stage": "602-stress",
+        "target_errors": 602,
+        "policy": "One source; failures consume the slot"
+      }
+    }
+  ],
+  "old_raw": {
+    "258": {
+      "path": "/home/rucha/ai-alignment-forensics/integrated-pilot/research/data/raw/integrated-pilot/source-4f522c3fe196414c975797817b07e35c",
+      "manifest_sha256": "cf153f0a335d305af55529203923782accf3c1ee8c12c80cfbc6932558c2ddd8",
+      "files_verified": 1739
+    },
+    "602": {
+      "path": "/home/rucha/ai-alignment-forensics/602-stress-pilot/research/data/raw/stress602/source602-d44c5e387a22430daf4367a25b6cfe73",
+      "manifest_sha256": "ffe08bfb8889ebfca5249bd51bced1c7e1d9fb496c25e3d4d7011cd4834aaa18",
+      "files_verified": 793
+    }
+  },
+  "base_commit": "098c7886244478bda4363aa969afdda8cf8c46a8"
+}

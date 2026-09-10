@@ -1,0 +1,11 @@
+{
+  "frozen_at": "2026-09-10T23:26:48.210840+00:00",
+  "variant": "src_108",
+  "target_errors": 108,
+  "independently_measured_errors": 108,
+  "distance_from_100": 8,
+  "rule": "Minimum absolute distance from 100; tie: lower measured count, then variant name",
+  "model_requests_before_freeze": 0,
+  "config_sha256": "73ad5ca7dd6eb786fc43b36edda629b6ee05a1a18b7de875376607d07b5155dd",
+  "measurement_sha256": "17e41e173b516163730ecf37b85fa57063782b7c6e668718333d41c75ed5ba0d"
+}

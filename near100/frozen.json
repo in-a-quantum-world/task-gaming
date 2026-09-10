@@ -1,0 +1,35 @@
+{
+  "frozen_at": "2026-09-10T23:30:05.909913+00:00",
+  "base_commit": "098c7886244478bda4363aa969afdda8cf8c46a8",
+  "image_id": "sha256:271a3daf958c33c9e6ad7332624015f9303ef06bf2a805abd12004abff8ddbae",
+  "config_sha256": "73ad5ca7dd6eb786fc43b36edda629b6ee05a1a18b7de875376607d07b5155dd",
+  "stage_code_sha256": {
+    "near100/audit_run.py": "7e49580dd9e838f515330f7acaf482ace82ddc30f0d9c525eaad0838c7d8617f",
+    "near100/candidates.py": "24106b29d3f180525ca81e31f0155bc47d53c4c8cd7b21077e24d6ea4452f205",
+    "near100/compare_archives.py": "c32da243e744a576bdfa42a3c9903e85cf57bba09a95e7aea4a1326857ca36df",
+    "near100/grade_stage.py": "00bd0ef6fc2adedb08fde68a2bf79209644567010af314fe26b6192e5e21019f",
+    "near100/measure_variants.py": "81618209a0e81f325dfd8300a69d8360f828bfe0ae5416a24fef4750df920e50",
+    "near100/run_stage.py": "9e6857f3e70663a3b8ada5059a2ae21af6fff1b7acd197f8f52a3bd3d8d0dfd5",
+    "near100/test_stage.py": "bdeb0e134c3ab9d778bc2991c2ee7c9f1072b8ea99f43b60e74d32521ff5d010",
+    "near100/transcript.py": "c1dc16a2f78879cc8d832003ee609e058f89b7d0d1b4df4a247a3e1b46e98671",
+    "near100/verify_outcome.py": "b8b3a9139fd9ba25f3fc09b77a21e7a0c74e8697ff80e7821b3e8f088d369d9b",
+    "near100/archive_fixture.json": "8e58f986348df8b7a8b388c3488e64e519e44fc9f336b76650042c38a304cb61",
+    "near100/README.md": "57d7778213c70b6c1a148e3f8b5dbe1b67040daf40d52c9abf18930e128f0e94",
+    "NEAR100_SOURCE_CONFIG.yaml": "73ad5ca7dd6eb786fc43b36edda629b6ee05a1a18b7de875376607d07b5155dd",
+    "NEAR100_SOURCE_PREREG.md": "c4563910e5d4d63039d412abe5c7b37cc901847f1a4d148fb6949488bb2e9f22",
+    "research/SOURCE_CHECKPOINT_RULE.md": "923691c37dd7124a6d753fd1feabfc4facd190acbf5e456fe0c9d62be1ccc509",
+    "research/scripts/review_source_prefix.py": "6dfa5f8d445820e9051cb33ee64e556894a37817751939ed509d1e91e2bd850b"
+  },
+  "gates_path": "research/evidence/near100/gates.json",
+  "gate_artifacts": {
+    "research/evidence/near100/gates.json": "6a91bb04de4ecbbcc1047ab53fd38b0604b7fb306e672cce2ea69aeb8583bbfe",
+    "research/evidence/near100/variant-counts.json": "17e41e173b516163730ecf37b85fa57063782b7c6e668718333d41c75ed5ba0d",
+    "research/evidence/near100/selection-freeze.json": "3834193cbb5cc782d775cf2c2bc06b9ffb936160aa08d601c451a7658efcf687",
+    "research/evidence/near100/archive-three-way.json": "1ba449f6f1f859a097557479475ecc707f2162ba7bc12e2f30d98669a1a79a89",
+    "research/evidence/near100/tests-integration.log": "cab594ffef4844328917c72dae0a4d89125c3965788e4334e3d0ce856fbe668c",
+    "research/evidence/near100/tests-audit.log": "5dc7bff5292bcd4bf30067eb0b04638280ee7e24f4150273100b09e4fa46300d",
+    "research/evidence/near100/tests-stage.log": "2adb40aec75d84bf4e808547e1dc924496ccd046a711f28b2921590dc4e3d384",
+    "research/evidence/near100/prior-state.json": "4b19029a8bc06428526fb70e7736116537f6c114bc5cb32b1435598351cc4893"
+  },
+  "policy": "One prospective src_108 source; original chronological checkpoint rule; no model continuation"
+}

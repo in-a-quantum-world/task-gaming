@@ -1,0 +1,12 @@
+[
+  "docker",
+  "run",
+  "--rm",
+  "--network",
+  "none",
+  "-v",
+  "/home/rucha/ai-alignment-forensics/near100-source-pilot/near100/measure_variants.py:/opt/measure_variants.py:ro",
+  "sha256:271a3daf958c33c9e6ad7332624015f9303ef06bf2a805abd12004abff8ddbae",
+  "python",
+  "/opt/measure_variants.py"
+]
