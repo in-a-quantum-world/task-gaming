@@ -1,0 +1,116 @@
+{
+  "time": "2026-09-10T16:11:24.762400+00:00",
+  "passed": true,
+  "comparisons": [
+    {
+      "verdict": "equal_on_recorded_fields",
+      "different_fields": [],
+      "changed_files": [],
+      "missing_checks": [],
+      "issues": [],
+      "history_equal": true,
+      "message_roles_equal": true,
+      "mtimes_equal": true,
+      "limits": [
+        "Semantic information parity needs human review.",
+        "External files, processes, clocks, and APIs are not certified.",
+        "Runtime metadata must come from the prepared provider object.",
+        "File timestamps require review even when content matches."
+      ],
+      "left": "/home/rucha/ai-alignment-forensics/602-stress-pilot/research/data/raw/stress602/fixture602-6c094e699fb74df7aabc6f9cc19e7a6d/data/step-2",
+      "right": "/home/rucha/ai-alignment-forensics/602-stress-pilot/research/data/raw/stress602/restore-check602-e9f325442ad44c708abfaf52b804a743/data/restored",
+      "external_inventory_equal": true,
+      "original_inventory_equal": true,
+      "state_json_equal": true,
+      "state_bytes_equal": false,
+      "messages_json_equal": true,
+      "messages_bytes_equal": false
+    },
+    {
+      "verdict": "equal_on_recorded_fields",
+      "different_fields": [],
+      "changed_files": [],
+      "missing_checks": [],
+      "issues": [],
+      "history_equal": true,
+      "message_roles_equal": true,
+      "mtimes_equal": true,
+      "limits": [
+        "Semantic information parity needs human review.",
+        "External files, processes, clocks, and APIs are not certified.",
+        "Runtime metadata must come from the prepared provider object.",
+        "File timestamps require review even when content matches."
+      ],
+      "left": "/home/rucha/ai-alignment-forensics/602-stress-pilot/research/data/raw/stress602/fixture602-6c094e699fb74df7aabc6f9cc19e7a6d/data/step-2",
+      "right": "/home/rucha/ai-alignment-forensics/602-stress-pilot/research/data/raw/stress602/restore-check602-8e14fc07176843c1902bb0bcda85bf15/data/restored",
+      "external_inventory_equal": true,
+      "original_inventory_equal": true,
+      "state_json_equal": true,
+      "state_bytes_equal": false,
+      "messages_json_equal": true,
+      "messages_bytes_equal": false
+    },
+    {
+      "verdict": "equal_on_recorded_fields",
+      "different_fields": [],
+      "changed_files": [],
+      "missing_checks": [],
+      "issues": [],
+      "history_equal": true,
+      "message_roles_equal": true,
+      "mtimes_equal": true,
+      "limits": [
+        "Semantic information parity needs human review.",
+        "External files, processes, clocks, and APIs are not certified.",
+        "Runtime metadata must come from the prepared provider object.",
+        "File timestamps require review even when content matches."
+      ],
+      "left": "/home/rucha/ai-alignment-forensics/602-stress-pilot/research/data/raw/stress602/restore-check602-e9f325442ad44c708abfaf52b804a743/data/restored",
+      "right": "/home/rucha/ai-alignment-forensics/602-stress-pilot/research/data/raw/stress602/restore-check602-8e14fc07176843c1902bb0bcda85bf15/data/restored",
+      "external_inventory_equal": true,
+      "original_inventory_equal": true,
+      "state_json_equal": true,
+      "state_bytes_equal": true,
+      "messages_json_equal": true,
+      "messages_bytes_equal": true
+    }
+  ],
+  "checkpoint_step": 2,
+  "remaining_decisions": 97,
+  "error_count": 602,
+  "diagnostic_set_sha256": "594325d23d1210b03025b16e680409bb68c9fe51833b2f143db7bb9a666286ac",
+  "recorded_paths": 105,
+  "evidence_hashes": {
+    "/home/rucha/ai-alignment-forensics/602-stress-pilot/research/data/raw/stress602/fixture602-6c094e699fb74df7aabc6f9cc19e7a6d/data/step-2": {
+      "validation.json": "cacb77a22a186c44d3ef2b2781b15b8fa657a07994a4622b00a2ec627fc08d85",
+      "original_inventory.json": "fb3e9c37a2a6109f8cce72bdf1c284a7d5a4a4c316da02797e025b87a33dcfd0",
+      "external.json": "f384e83eb0061186d951e7a2caa5f94419081863f5477064ca504fa418a6d4cc",
+      "state.json": "4d24eebba952087f1715b3928043ae1868338ba0afd43457ada9aa35fc1001a8",
+      "messages.json": "0de49fbf25c25687fc5c3082d12b383ab9f5009c862f0084b0b7c4b6ba924ee7",
+      "workspace.tar.gz": "fad075b0ce10491277c391438d17489ebc7de1e65257a340ce55fe865566606d"
+    },
+    "/home/rucha/ai-alignment-forensics/602-stress-pilot/research/data/raw/stress602/restore-check602-e9f325442ad44c708abfaf52b804a743/data/restored": {
+      "validation.json": "cd0e7cb0bf55fff0adcce96dacf09b7d8806ba0420dd4eac6d8ba4fe6af6c755",
+      "original_inventory.json": "61e3ca7d2a598c157b098ebc025cdbc37ab3af77470ddd865a0cf0e210e9d051",
+      "external.json": "f384e83eb0061186d951e7a2caa5f94419081863f5477064ca504fa418a6d4cc",
+      "state.json": "c625cd7dc2572b193f5d04447416a2a60c2b196f59a785af2cbaeb7d3de41f55",
+      "messages.json": "7d85994700ead6dcef575846f00856f672e68f6910abd94ad58457f6c1874e86",
+      "workspace.tar.gz": "951578b4655cf5c961ad258f4f03e101999bc3ec18a14d03572d1360567a1b3c"
+    },
+    "/home/rucha/ai-alignment-forensics/602-stress-pilot/research/data/raw/stress602/restore-check602-8e14fc07176843c1902bb0bcda85bf15/data/restored": {
+      "validation.json": "ccbe7288e5c7bf7fc12317cb01e9b200a2ab9e8d490e1dc765d58e3335cd87fb",
+      "original_inventory.json": "6486f9a58d1817a9211dad8d86e76bd0bcc7ea839469fe24daf23784b09921f6",
+      "external.json": "f384e83eb0061186d951e7a2caa5f94419081863f5477064ca504fa418a6d4cc",
+      "state.json": "c625cd7dc2572b193f5d04447416a2a60c2b196f59a785af2cbaeb7d3de41f55",
+      "messages.json": "7d85994700ead6dcef575846f00856f672e68f6910abd94ad58457f6c1874e86",
+      "workspace.tar.gz": "550752eaa3d9294dac6d8fc838866a2e4af3b02a22e72b3ab7b1036493eb72e7"
+    }
+  },
+  "external_limits": "No process, network, clock, kernel, or whole-machine copy",
+  "external_roots": [
+    "/home/dev",
+    "/.kimi",
+    "/tmp"
+  ],
+  "serialization_note": "An initial extra byte-identity assertion failed: state/message JSON formatting differs. All parsed fields, exact message strings, history hashes and state hashes are equal. Every /agent file and metadata entry is equal. No model call or restore change followed that formatting check."
+}

@@ -1,0 +1,11 @@
+{
+  "base_commit": "098c7886244478bda4363aa969afdda8cf8c46a8",
+  "old_258_slot_path": "/home/rucha/ai-alignment-forensics/task-gaming-under-trajectory-pressure/.git/integrated-pilot-source-slot.json",
+  "old_258_slot_sha256": "9cb4e263645867aae48586677d5c668ee2823dfb77f7bb67a9d4bcc95651ddb4",
+  "old_258_slot": {
+    "run_id": "source-4f522c3fe196414c975797817b07e35c",
+    "allocated_at": "2026-09-10T09:48:11.383449+00:00",
+    "policy": "One slot; all allocated failures consume it"
+  },
+  "image_id": "sha256:271a3daf958c33c9e6ad7332624015f9303ef06bf2a805abd12004abff8ddbae"
+}

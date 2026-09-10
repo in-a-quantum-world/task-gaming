@@ -1,0 +1,11 @@
+{
+  "run": "/home/rucha/ai-alignment-forensics/integrated-pilot/research/data/raw/integrated-pilot/source-4f522c3fe196414c975797817b07e35c",
+  "output": "HUMAN_READABLE_258_TRAJECTORY.md",
+  "sha256": "2de01b89a1f9aaca04daef02a8d69397f0739dc0c5017b1294627a6710fe41ac",
+  "raw_manifest_sha256": "cf153f0a335d305af55529203923782accf3c1ee8c12c80cfbc6932558c2ddd8",
+  "steps": 62,
+  "reasoning_fields": 124,
+  "native_calls": 61,
+  "tool_results": 61,
+  "text_redactions": 0
+}

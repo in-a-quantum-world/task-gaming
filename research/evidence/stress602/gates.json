@@ -1,0 +1,12 @@
+{
+  "time": "2026-09-10T16:13:06.712482+00:00",
+  "baseline_602": true,
+  "archive_original_match": true,
+  "sampling_pass": true,
+  "separate_stage_cap": true,
+  "test_counts": {
+    "integration": 19,
+    "audit": 13,
+    "stage": 5
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "frozen_at": "2026-09-10T16:13:06.712734+00:00",
+  "base_commit": "098c7886244478bda4363aa969afdda8cf8c46a8",
+  "image_id": "sha256:271a3daf958c33c9e6ad7332624015f9303ef06bf2a805abd12004abff8ddbae",
+  "config_sha256": "21b34f9fc48e9365cee5a776fe7cc34ff8ea30ec348fdfec73d8ac1d60b25a6e",
+  "stage_code_sha256": {
+    "stress602/audit_run.py": "7e49580dd9e838f515330f7acaf482ace82ddc30f0d9c525eaad0838c7d8617f",
+    "stress602/candidates.py": "24106b29d3f180525ca81e31f0155bc47d53c4c8cd7b21077e24d6ea4452f205",
+    "stress602/grade_stage.py": "19ffeeb9ab6211f3b1abbec5f70963125fb8f103e574d236f06cc3ae5779ac76",
+    "stress602/run_stage.py": "194656ddadedcb4e755b818a0162e976ad762a53f140275ad32a12c3428d2a0a",
+    "stress602/test_stage.py": "0e20d285ebbf3a64fbf93ba909aa4e542d2670df400a3bd59c1ee40b53d9b8fc",
+    "stress602/transcript.py": "2e870a5cf9d61ce128f2f7491930ca28dc6ce803bd43978d4462defa993512b0",
+    "stress602/verify_outcome.py": "24723b8bc4d20f031b1a8dce4630fb570371d749996a26c248cac0c9004643e5",
+    "stress602/archive_fixture.json": "e45a7672d85488b69e4e6988550bbdc62a5125e7b058bb15bbff4fd10da927d6",
+    "stress602/README.md": "2bcc124ab0d4e2d5015a449e53d1778b6c70416f1dba5fc8aedb62ed8a21381b",
+    "STRESS_602_CONFIG.yaml": "21b34f9fc48e9365cee5a776fe7cc34ff8ea30ec348fdfec73d8ac1d60b25a6e",
+    "STRESS_602_PREREG.md": "fb88ef7c628d519c978df189e5e8e7b6e975c09dbd6691844c486c83d3acf848"
+  },
+  "gates_path": "research/evidence/stress602/gates.json",
+  "gate_artifacts": {
+    "research/evidence/stress602/gates.json": "c22a90e2e5447ae5b9751ef4ea7f4c9d3cd55146fe63f46d1fc4b04f098aa10f",
+    "research/evidence/stress602/baseline-602.json": "4ce6b8680f2af3d5d4d35b900eaae3657b03bb16c1fd651c54f56c3267312920",
+    "research/evidence/stress602/archive-three-way.json": "a4d4a3e630147589a9fac46e4530fba35d91e7c8a1a063464048e9ce8da2e779",
+    "research/evidence/stress602/tests-integration.log": "4804dfca7dd8067cc831ce0a8d26d79f1948910f60c7afbd62141482e3b121fa",
+    "research/evidence/stress602/tests-audit.log": "04c7289d64a7190a47ef6c3e99a94d26a72503c8f08faa64caa75aff5e219051",
+    "research/evidence/stress602/tests-stage-final.log": "8858032b732dbb61fbc1c9af7680e6166328f452a4bf365b97752717e6275b28",
+    "research/evidence/stress602/prior-state.json": "bf680e7868ebe96c9a94d1b72ac0a1711b856b437b355e3ac336d4c0e8862d8d"
+  },
+  "policy": "Exactly one new source; never reset either stage slot"
+}
