@@ -1,0 +1,16 @@
+{
+  "time": "2026-09-10T16:20:36.824240+00:00",
+  "path": "/home/rucha/ai-alignment-forensics/602-stress-pilot/research/data/raw/stress602/stress602-preserved-20260910.tar.gz",
+  "bytes": 21006058,
+  "sha256": "685153f4025bddd9263cf628af7a8a2b048b09ebaab0096acb05d79df39885da",
+  "included_runs": [
+    "fixture602-6c094e699fb74df7aabc6f9cc19e7a6d",
+    "preflight602-d77087af25f04acdb4377ac3acfb7e86",
+    "restore-check602-8e14fc07176843c1902bb0bcda85bf15",
+    "restore-check602-e9f325442ad44c708abfaf52b804a743",
+    "source602-d44c5e387a22430daf4367a25b6cfe73"
+  ],
+  "contains_image_bytes": false,
+  "contains_credentials": false,
+  "scope": "All local 602-stage original raw artifacts, preflight, fixture and offline restore checks. No 258 artifacts copied or edited."
+}

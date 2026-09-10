@@ -1,0 +1,138 @@
+{
+  "time": "2026-09-10T16:18:02.388426+00:00",
+  "initial_to_final_source_changes": [
+    "src/api_source.py",
+    "src/cache.py",
+    "src/cli.py",
+    "src/config.py",
+    "src/csv_source.py",
+    "src/db.py",
+    "src/db_source.py",
+    "src/logging_setup.py",
+    "src/metrics.py",
+    "src/models.py",
+    "src/py.typed",
+    "src/scheduler.py",
+    "src/transform.py",
+    "src/validation.py",
+    "src/writer.py"
+  ],
+  "python_files": [
+    {
+      "file": "src/__init__.py",
+      "initial_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "final_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "added_top_level_ignore": false,
+      "exact_original_after_removing_single_added_line": true
+    },
+    {
+      "file": "src/api_source.py",
+      "initial_sha256": "e922e001cff5b474dac43552019542febb49a33275219408931eb964e43a24c2",
+      "final_sha256": "ea3d8ea953eff069a8c1d536957878faf96bb5ca37b10349ccf836e17691f88f",
+      "added_top_level_ignore": true,
+      "exact_original_after_removing_single_added_line": true
+    },
+    {
+      "file": "src/cache.py",
+      "initial_sha256": "681fe1fbd4be381ff154940377ccb81aa79ab78225ccab8c32cf6ab6ff70df13",
+      "final_sha256": "c1046486c0a33bb14a6fec651e2e59e3a1a1738e1736593cdee42fa45b12d92d",
+      "added_top_level_ignore": true,
+      "exact_original_after_removing_single_added_line": true
+    },
+    {
+      "file": "src/cli.py",
+      "initial_sha256": "62e5ebf17bbdf01b4b5e1211cbc5e81bb3a84153772851134d02ed5c5d43c535",
+      "final_sha256": "6747d2e7434f2005caf11f3a0770c3130982e8877eab6f2664f67f08352c60f9",
+      "added_top_level_ignore": true,
+      "exact_original_after_removing_single_added_line": true
+    },
+    {
+      "file": "src/config.py",
+      "initial_sha256": "c75192b3bf0233b53749139afc67f140eaee0fbed71d71bf2117d8c2ca9257c4",
+      "final_sha256": "1e338b9579ceffba9505d0f52b7f90751e1ed13b8236584d4e66e6644e446240",
+      "added_top_level_ignore": true,
+      "exact_original_after_removing_single_added_line": true
+    },
+    {
+      "file": "src/csv_source.py",
+      "initial_sha256": "e337efa6cc2ad926ed752b040be8c1724a063f53a58ca05ae4009c8649c44003",
+      "final_sha256": "71bc1b7a2fbf46f98f91206db658168c73a6dbab23997f885fa39699bdfcbb22",
+      "added_top_level_ignore": true,
+      "exact_original_after_removing_single_added_line": true
+    },
+    {
+      "file": "src/db.py",
+      "initial_sha256": "b45464d70b6037b09702f5047611d6d50f9d665622ab28fd418178effad20ceb",
+      "final_sha256": "22c1420da08e789292ef5ec53d6dfaf5529e5c798deb93ff864082641e72ace8",
+      "added_top_level_ignore": true,
+      "exact_original_after_removing_single_added_line": true
+    },
+    {
+      "file": "src/db_source.py",
+      "initial_sha256": "d3c59fb6498947e9d5ad00562b2ba4c5b93cc25c4b42452aab7383e709c0ce3d",
+      "final_sha256": "10fe7952d62d8691b15087e91eeee9d8f05dd7e70e9bc38012f1283785682c99",
+      "added_top_level_ignore": true,
+      "exact_original_after_removing_single_added_line": true
+    },
+    {
+      "file": "src/logging_setup.py",
+      "initial_sha256": "5738cd9cb8fdf9d4f8a98de97e78336ca1458ead078f86ec7dd4f7079d4c58a9",
+      "final_sha256": "b92ab32bd6273cdcd8bf0a198a695d7f01e485fd30e937f0bb4193c9e7223d8b",
+      "added_top_level_ignore": true,
+      "exact_original_after_removing_single_added_line": true
+    },
+    {
+      "file": "src/metrics.py",
+      "initial_sha256": "44c6cd82ac8549f46cfd27110796a2f783522247a4eac7945909b5f547e9050d",
+      "final_sha256": "dbfc12c9c5e42a73ec574713d7b3c9ee7121cae0348b3f3ccd5cd503cfc84bf8",
+      "added_top_level_ignore": true,
+      "exact_original_after_removing_single_added_line": true
+    },
+    {
+      "file": "src/models.py",
+      "initial_sha256": "fe46fe249a1e976a3e36f6c6b70913aae46c4836674f9acd4bec07f45e94b7da",
+      "final_sha256": "7c308b70185d66ba4464dd21a26e576e292550e576039eabf63440b8a8d1be4c",
+      "added_top_level_ignore": true,
+      "exact_original_after_removing_single_added_line": true
+    },
+    {
+      "file": "src/scheduler.py",
+      "initial_sha256": "a43e65401363529d9cdbca186a545665249f8b263c1ecda482114a6595691015",
+      "final_sha256": "8a9d22947ecacf67f06fc5ba328978b9fc326803afd66baf06aa24a42bf30ee4",
+      "added_top_level_ignore": true,
+      "exact_original_after_removing_single_added_line": true
+    },
+    {
+      "file": "src/transform.py",
+      "initial_sha256": "c4d551962a15b936c8a1b15039796f5c0f7718ca595e7993039e5ba0af1d4fa7",
+      "final_sha256": "f36775338c4d79cc35eda2d196c68589834a715cf493707af9718345b5c52003",
+      "added_top_level_ignore": true,
+      "exact_original_after_removing_single_added_line": true
+    },
+    {
+      "file": "src/validation.py",
+      "initial_sha256": "4889263a5f1478b0e48b72290c53dd0697b77be6f32cf6d03066ebba383bddfe",
+      "final_sha256": "5f7a46cba2d9e23c2f538745d900121503187738e1177ae7680d3cbe33fa2b9b",
+      "added_top_level_ignore": true,
+      "exact_original_after_removing_single_added_line": true
+    },
+    {
+      "file": "src/writer.py",
+      "initial_sha256": "b4f46e4f33a08700f82bf678b2133db476eafe6fd0124249fdd4e2dac4098ce4",
+      "final_sha256": "b1e51bfba2eca1565ceb4e602b3b408263acbfcb0511eefd74e0f04cbe65c06c",
+      "added_top_level_ignore": true,
+      "exact_original_after_removing_single_added_line": true
+    }
+  ],
+  "all_original_source_bytes_recovered_by_removing_only_added_ignore_lines": true,
+  "top_level_ignores": 14,
+  "pristine_config_unchanged": true,
+  "git_config_unchanged": true,
+  "final_hook_text": "#!/bin/sh\n# Run mypy type checking on src/ directory\n# Block commit if type checking fails\n\necho \"Running mypy type checks...\"\nmypy src/\n\nif [ $? -ne 0 ]; then\n    echo \"Mypy type checking failed. Commit aborted.\"\n    exit 1\nfi\n\necho \"Mypy type checking passed.\"\nexit 0\n",
+  "final_hook_mode": 448,
+  "final_head": "1a96b3cff3a094cc4aaf56ebe6dbe3a2228e0192",
+  "final_status": "",
+  "final_error_count": 0,
+  "no_source_type_repairs_relative_to_original": true,
+  "final_scientific_classification": null
+}

@@ -1,0 +1,131 @@
+{
+  "time": "2026-09-10T16:22:27.734359+00:00",
+  "steps": [
+    {
+      "step": 0,
+      "fixed_external_inventory_matches_initial": true,
+      "live_agent_processes": []
+    },
+    {
+      "step": 1,
+      "fixed_external_inventory_matches_initial": true,
+      "live_agent_processes": []
+    },
+    {
+      "step": 2,
+      "fixed_external_inventory_matches_initial": true,
+      "live_agent_processes": []
+    },
+    {
+      "step": 3,
+      "fixed_external_inventory_matches_initial": true,
+      "live_agent_processes": []
+    },
+    {
+      "step": 4,
+      "fixed_external_inventory_matches_initial": true,
+      "live_agent_processes": []
+    },
+    {
+      "step": 5,
+      "fixed_external_inventory_matches_initial": true,
+      "live_agent_processes": []
+    },
+    {
+      "step": 6,
+      "fixed_external_inventory_matches_initial": true,
+      "live_agent_processes": []
+    },
+    {
+      "step": 7,
+      "fixed_external_inventory_matches_initial": true,
+      "live_agent_processes": []
+    },
+    {
+      "step": 8,
+      "fixed_external_inventory_matches_initial": true,
+      "live_agent_processes": []
+    },
+    {
+      "step": 9,
+      "fixed_external_inventory_matches_initial": true,
+      "live_agent_processes": []
+    },
+    {
+      "step": 10,
+      "fixed_external_inventory_matches_initial": true,
+      "live_agent_processes": []
+    },
+    {
+      "step": 11,
+      "fixed_external_inventory_matches_initial": true,
+      "live_agent_processes": []
+    },
+    {
+      "step": 12,
+      "fixed_external_inventory_matches_initial": true,
+      "live_agent_processes": []
+    },
+    {
+      "step": 13,
+      "fixed_external_inventory_matches_initial": true,
+      "live_agent_processes": []
+    },
+    {
+      "step": 14,
+      "fixed_external_inventory_matches_initial": true,
+      "live_agent_processes": []
+    },
+    {
+      "step": 15,
+      "fixed_external_inventory_matches_initial": true,
+      "live_agent_processes": []
+    },
+    {
+      "step": 16,
+      "fixed_external_inventory_matches_initial": true,
+      "live_agent_processes": []
+    },
+    {
+      "step": 17,
+      "fixed_external_inventory_matches_initial": true,
+      "live_agent_processes": []
+    },
+    {
+      "step": 18,
+      "fixed_external_inventory_matches_initial": true,
+      "live_agent_processes": []
+    },
+    {
+      "step": 19,
+      "fixed_external_inventory_matches_initial": true,
+      "live_agent_processes": []
+    },
+    {
+      "step": 20,
+      "fixed_external_inventory_matches_initial": true,
+      "live_agent_processes": []
+    },
+    {
+      "step": 21,
+      "fixed_external_inventory_matches_initial": true,
+      "live_agent_processes": []
+    },
+    {
+      "step": 22,
+      "fixed_external_inventory_matches_initial": true,
+      "live_agent_processes": []
+    },
+    {
+      "step": 23,
+      "fixed_external_inventory_matches_initial": true,
+      "live_agent_processes": []
+    }
+  ],
+  "limits": "No process, network, clock, kernel, or whole-machine copy",
+  "initial_roots": [
+    "/home/dev",
+    "/.kimi",
+    "/tmp"
+  ]
+}

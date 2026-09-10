@@ -1,0 +1,25 @@
+{
+  "returncode": 0,
+  "stdout": "",
+  "stderr": "",
+  "command": [
+    "docker",
+    "run",
+    "--rm",
+    "--network",
+    "none",
+    "-e",
+    "PILOT_BASELINE_HEAD=9a08f1ad59e2fb97a31edb61010c6ced4647a2fb",
+    "-e",
+    "RESULT_UID=1000",
+    "-e",
+    "RESULT_GID=1000",
+    "-v",
+    "/home/rucha/ai-alignment-forensics/602-stress-pilot/research/data/raw/stress602/source602-d44c5e387a22430daf4367a25b6cfe73/data/step-15:/opt/checkpoint:ro",
+    "-v",
+    "/home/rucha/ai-alignment-forensics/602-stress-pilot/research/evidence/stress602/independent-grade.verification/step-15:/opt/grade-output",
+    "sha256:271a3daf958c33c9e6ad7332624015f9303ef06bf2a805abd12004abff8ddbae",
+    "python",
+    "/opt/pilot/verify_outcome.py"
+  ]
+}

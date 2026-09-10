@@ -1,0 +1,33 @@
+{
+  "time": "2026-09-10T16:19:14.057608+00:00",
+  "old_258_manifest_files": 1739,
+  "old_258_hash_failures": [],
+  "old_258_slot_unchanged": true,
+  "old_258_branch_commit": "098c7886244478bda4363aa969afdda8cf8c46a8",
+  "source_config_changes_only_target_errors": true,
+  "actual_initial_prompts_equal": true,
+  "all_actual_nonmessage_request_fields_equal_to_258": true,
+  "new_602_slot": {
+    "run_id": "source602-d44c5e387a22430daf4367a25b6cfe73",
+    "allocated_at": "2026-09-10T16:13:23.142509+00:00",
+    "stage": "602-stress",
+    "target_errors": 602,
+    "policy": "One source; failures consume the slot"
+  },
+  "new_602_slot_sha256": "15947228f135c3ffd64b03f28224395921ed845bdc7fb984fda4edbeb581c6f4",
+  "source_directory_count": 1,
+  "source_preflight": {
+    "passed": true,
+    "time": "2026-09-10T16:13:17.232215+00:00",
+    "model_requests": 2,
+    "visible_reasoning_replayed_exactly": true,
+    "returned_provider": "Novita",
+    "returned_model": "moonshotai/kimi-k2-thinking",
+    "actual_tool_execution": false,
+    "caveat": "Server use of prior reasoning is not observable"
+  },
+  "preflight_cost_usd": "0.0004821",
+  "source_preflight_raw_path": "/home/rucha/ai-alignment-forensics/602-stress-pilot/research/data/raw/stress602/preflight602-d77087af25f04acdb4377ac3acfb7e86",
+  "source_raw_path": "/home/rucha/ai-alignment-forensics/602-stress-pilot/research/data/raw/stress602/source602-d44c5e387a22430daf4367a25b6cfe73",
+  "source_manifest_sha256": "ffe08bfb8889ebfca5249bd51bced1c7e1d9fb496c25e3d4d7011cd4834aaa18"
+}

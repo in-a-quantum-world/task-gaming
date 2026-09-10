@@ -1,0 +1,11 @@
+{
+  "run": "/home/rucha/ai-alignment-forensics/602-stress-pilot/research/data/raw/stress602/source602-d44c5e387a22430daf4367a25b6cfe73",
+  "output": "HUMAN_READABLE_602_TRAJECTORY.md",
+  "sha256": "f6f792715320741bc0f89ffe0fc7ae4a5271bd2f6428fd50acdfd9f95b2ffc53",
+  "raw_manifest_sha256": "ffe08bfb8889ebfca5249bd51bced1c7e1d9fb496c25e3d4d7011cd4834aaa18",
+  "steps": 24,
+  "reasoning_fields": 48,
+  "native_calls": 24,
+  "tool_results": 24,
+  "text_redactions": 0
+}

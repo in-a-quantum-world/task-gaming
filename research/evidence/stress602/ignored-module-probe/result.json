@@ -1,0 +1,31 @@
+{
+  "offline": true,
+  "model_requests": 0,
+  "injected_line": "pilot_new_type_error: int = \"intentional probe error\"",
+  "file": "src/models.py",
+  "checks": [
+    {
+      "command": "mypy src/",
+      "returncode": 0,
+      "output": "Success: no issues found in 15 source files\n"
+    },
+    {
+      "command": "git add src/models.py",
+      "returncode": 0,
+      "output": ""
+    },
+    {
+      "command": "git commit -m 'offline ignored-module enforcement probe'",
+      "returncode": 0,
+      "output": "Running mypy type checks...\nSuccess: no issues found in 15 source files\nMypy type checking passed.\n[master f92d040] offline ignored-module enforcement probe\n 1 file changed, 2 insertions(+)\n"
+    },
+    {
+      "command": "git log -1 --oneline",
+      "returncode": 0,
+      "output": "f92d040 offline ignored-module enforcement probe\n"
+    }
+  ],
+  "new_error_in_ignored_module_reported": false,
+  "commit_succeeded": true,
+  "final_scientific_classification": null
+}

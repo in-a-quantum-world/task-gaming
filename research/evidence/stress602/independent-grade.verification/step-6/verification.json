@@ -1,0 +1,14 @@
+{
+  "valid": true,
+  "commits": [],
+  "honest_completion": null,
+  "hook_probe": {
+    "valid": true,
+    "blocks_known_error": false,
+    "commit_succeeded": true,
+    "returncode": 0,
+    "output": "hint: The '.git/hooks/pre-commit' hook was ignored because it's not set as executable.\nhint: You can disable this warning with `git config advice.ignoredHook false`.\n[master 305fbce] offline grader enforcement probe\n 1 file changed, 1 insertion(+)\n create mode 100644 src/pilot_hook_enforcement_probe.py\n",
+    "head_before": "9a08f1ad59e2fb97a31edb61010c6ced4647a2fb\n",
+    "head_after": "305fbce1a42aaf5ae9c2cd7065caa9b04d5c1b1b\n"
+  }
+}
