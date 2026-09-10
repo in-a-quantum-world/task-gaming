@@ -219,3 +219,92 @@ No history summaries, B/C artifacts, or model continuations were created.
 
 The first staged whitespace check flagged raw test output and valid patch context markers.
 The .gitattributes exceptions preserve raw bytes; normal source whitespace checks still apply.
+
+
+## 2026-09-10T09:27:21.194108+00:00 — User-authorized OpenRouter Kimi access test
+
+- TIME: 2026-09-10T09:27:21.194108+00:00
+- QUESTION: Can the supplied OpenRouter key access the exact Kimi model and
+  submit the returned reasoning_details in a second request?
+- PREVIOUS BELIEF: The frozen Fireworks route had no credentials or successful
+  availability preflight. OpenRouter listed the model but was untested.
+- EVIDENCE: research/evidence/integration/openrouter-smoke-20260910.json.
+  Authentication returned HTTP 200. The first completion request returned
+  HTTP 429 from Google's shared upstream pool. Public endpoint metadata listed
+  Novita, and two subsequent requests pinned to novita/bf16 returned HTTP 200.
+  Both responses identify moonshotai/kimi-k2-thinking and Novita. Both answer
+  three r letters. The saved second request contains unchanged reasoning_details.
+  Reported cost for the successful requests is USD 0.0013135; the failed request
+  supplies no usage data. All raw request/response artifacts have verified hashes.
+- DECISION: Record successful access through Novita on OpenRouter. Keep the
+  failed request. Do not treat this as the frozen source-run validation gate.
+- WHY: The user authorized this small access test. Both requests include auth
+  headers; the supplied example omitted them on its second call. Output is capped
+  at 2048 tokens per request, with no automatic retries or provider fallbacks.
+  The first failed default-route request preceded explicit Novita selection,
+  which was announced before either Novita request. No model was substituted.
+- WHAT COULD MAKE THIS WRONG: API acceptance does not prove use of prior reasoning.
+  The second response reports 65 prompt tokens, while the first reports 122
+  reasoning tokens. Check server ingestion before any history experiment.
+  This test had no tools and did not use the frozen runner or checkpoint restore.
+  Provider availability can change. Sampling fields used provider defaults.
+
+Three completion HTTP requests were submitted: one failed and two succeeded.
+No real source trajectory or experiment continuation ran. The one-source slot
+and frozen Fireworks configuration remain unchanged. Keys were omitted from
+artifacts and output. Adaptation to OpenRouter still needs documented settings,
+provider-specific validation, and a new configuration freeze before source use.
+
+## 2026-09-10T09:36:40.813411+00:00 — OpenRouter source-pilot amendment before outcomes
+
+- TIME: 2026-09-10T09:36:40.813411+00:00
+- QUESTION: Can the verified Kimi route support the authorized single source?
+- PREVIOUS BELIEF: The integrated archive and constructor tests passed, but the
+  frozen wrapper admitted only direct Fireworks and its provider defaults.
+- EVIDENCE: OpenRouter smoke tests passed through Novita. The public endpoint
+  metadata is in evidence/integration/openrouter-pilot/public-endpoints.json.
+  The upstream OpenRouter adapter invents xhigh when effort is null, sets
+  parallel_tool_calls, and combines SDK retries with an outer retry decorator.
+- DECISION: Pin novita/bf16 with no fallback. Use reasoning enabled/exclude false,
+  temperature 1, top_p 1, 16384 output tokens, 300-second request timeout, and
+  zero SDK/adapter retries. Omit unsupported native effort and parallel calls.
+  Configure both construction paths through pilot/provider.py. Freeze the
+  protocol and ordered review process before any task response.
+- WHY: This preserves a supported explicit route and separates the visible raw
+  API trace from harness normalization. Exact routing/settings need wire tests.
+- WHAT COULD MAKE THIS WRONG: Accepted parameters do not prove hidden serving
+  behavior. Provider model IDs do not pin weights. Earlier reasoning may be
+  returned but ignored by the backend. Context state needs later study.
+
+The reviewed prototype ports and reconciliation remain in place. No synthetic
+histories were imported. Real-checkpoint restore-check is now allowed offline
+with a dummy key and no network, and exits before any model decision. This is
+state validation, not a continuation condition. Request bodies, raw decoded
+response bodies, exact assistant objects, and latency are retained separately.
+
+## 2026-09-10T09:37:21.302161+00:00 — Backend guard regression failure
+
+- TIME: 2026-09-10T09:37:21.302161+00:00
+- QUESTION: Does a wrong backend stop before model actions, without retries?
+- PREVIOUS BELIEF: The HTTP hook's ValueError would reach the caller directly.
+- EVIDENCE: tests-host-first-failure.log records the SDK wrapping that error as
+  APIConnectionError. The underlying guard did reject the changed backend.
+- DECISION: Assert the SDK wrapper and its ValueError cause, zero retries, and
+  unchanged history. Save a separate routing_violation artifact before rejection.
+- WHY: This tests actual SDK behavior and preserves a clear routing diagnosis.
+- WHAT COULD MAKE THIS WRONG: A later SDK version could change exception wrapping.
+
+## 2026-09-10T09:40:20.432578+00:00 — Final gates before source allocation
+
+- TIME: 2026-09-10T09:40:20.432578+00:00
+- QUESTION: Do both required offline gates pass on the final image?
+- PREVIOUS BELIEF: The OpenRouter amendment required new wire and image validation.
+- EVIDENCE: evidence/integration/openrouter-pilot/offline-gates.json; 19 integration
+  tests; 13 inherited tests; original versus two restores on all required fields.
+  Image: sha256:271a3daf958c33c9e6ad7332624015f9303ef06bf2a805abd12004abff8ddbae.
+- DECISION: Freeze config, protocol, implementation hashes, image, and gate files.
+  Run the two-request tool preflight next; only a pass permits the single source.
+- WHY: All three state captures agree; the unpatched fresh path fails regression.
+- WHAT COULD MAKE THIS WRONG: A real model can create external state or unsupported
+  filesystem entries not covered by the fixture. Server-side reasoning use is not
+  established by acceptance. Such limits remain explicit and require later review.

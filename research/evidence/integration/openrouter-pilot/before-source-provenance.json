@@ -1,0 +1,19 @@
+{
+  "time": "2026-09-10T09:40:20.432578+00:00",
+  "branches": {
+    "experiment/failure-history": "622703ee2fa109640eb3befa4d4c3a35ef75a194",
+    "experiment/prototype-history-effect": "eaedc8fc320ad3d00696e3a17cffdd2bcef2eb7d"
+  },
+  "source_run_command": [
+    "/home/rucha/ai-alignment-forensics/task-gaming-under-trajectory-pressure/upstream/agent-interp-envs/.venv/bin/python",
+    "pilot/run.py",
+    "source",
+    "--config",
+    "SOURCE_PILOT_CONFIG.yaml",
+    "--image",
+    "sha256:271a3daf958c33c9e6ad7332624015f9303ef06bf2a805abd12004abff8ddbae",
+    "--count",
+    "1"
+  ],
+  "no_source_outcomes_viewed": true
+}

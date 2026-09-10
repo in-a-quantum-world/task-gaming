@@ -11,12 +11,12 @@ import threading
 import uuid
 
 from common import now, redact, save, seal, sha256
+from provider import BACKEND, MODEL
 
 
 ROOT = Path(__file__).resolve().parents[1]
 RAW = ROOT / "research/data/raw/integrated-pilot"
 UPSTREAM_SHA = "56fd0c11e6cb973b9e1f752ba7c1f35ec3f570bb"
-MODEL = "accounts/fireworks/models/kimi-k2-thinking"
 
 
 def output(argv, cwd=ROOT):
@@ -27,6 +27,7 @@ def code_hashes():
     paths = [p for p in (ROOT / "pilot").rglob("*") if p.is_file()
              and "__pycache__" not in p.parts and p.name != "frozen.json"]
     paths.extend(ROOT / name for name in (
+        "SOURCE_PILOT_CONFIG.yaml", "SOURCE_PILOT_PREREG.md",
         "research/SOURCE_CHECKPOINT_RULE.md",
         "research/scripts/validate_state_equivalence.py"))
     return {str(p.relative_to(ROOT)): sha256(p) for p in sorted(paths)}
@@ -78,10 +79,15 @@ def validate_request(mode, count, config, source):
         raise ValueError("Total decision budget must remain 100")
     if (mode == "restore-check") != (source is not None):
         raise ValueError("Only restore-check accepts a checkpoint")
-    if mode == "source":
-        if (config["agent"]["provider"] != "fireworks"
+    if mode == "source" or (mode == "restore-check"
+                            and config["agent"]["provider"] != "mock"):
+        if (config["agent"]["provider"] != "openrouter"
                 or config["agent"]["model"] != MODEL):
             raise ValueError("Requested Kimi route cannot be substituted")
+        preferences = config["agent"]["provider_preferences"]
+        if preferences != {"only": [BACKEND], "allow_fallbacks": False,
+                           "require_parameters": True}:
+            raise ValueError("The exact Novita backend must be pinned")
         if "script" in config["pilot"]:
             raise ValueError("A real source cannot use a scripted fixture")
     elif config["agent"]["provider"] != "mock":
@@ -90,9 +96,9 @@ def validate_request(mode, count, config, source):
 
 def preflight(config, directory):
     """Run one request-acceptance probe; never change model or provider."""
-    if not os.environ.get("FIREWORKS_API_KEY"):
+    if not os.environ.get("OPENROUTER_API_KEY"):
         save(directory / "preflight.json", {
-            "passed": False, "reason": "FIREWORKS_API_KEY absent",
+            "passed": False, "reason": "OPENROUTER_API_KEY absent",
             "model_requests": 0, "time": now(),
         })
         return False
@@ -100,15 +106,21 @@ def preflight(config, directory):
     image = json.loads((ROOT / "pilot/frozen.json").read_text())["image_id"]
     name = f"pilot-preflight-{uuid.uuid4().hex}"
     command = ["docker", "run", "--rm", "--name", name,
-               "-e", "FIREWORKS_API_KEY",
+               "-e", "OPENROUTER_API_KEY",
                "-e", f"RESULT_UID={os.getuid()}",
                "-e", f"RESULT_GID={os.getgid()}",
                "-v", f"{directory}:/opt/preflight-output",
                "-v", f"{ROOT / 'pilot/configs/first_pilot.json'}:"
                "/opt/config.yaml:ro", image,
                "python", "/opt/pilot/provider_preflight.py"]
+    save(directory / "command.json", command)
     try:
-        subprocess.run(command, check=False, capture_output=True, timeout=120)
+        result = subprocess.run(command, check=False, capture_output=True,
+                                text=True, timeout=660)
+        save(directory / "process.json", {
+            "returncode": result.returncode,
+            "stdout": redact(result.stdout), "stderr": redact(result.stderr),
+        })
     except subprocess.TimeoutExpired:
         subprocess.run(["docker", "kill", name], capture_output=True)
         save(directory / "preflight_timeout.json", {"passed": False})
@@ -146,9 +158,11 @@ def launch(mode, config_path, image, source=None, timeout=None):
                "-v", f"{directory / 'config.json'}:/opt/config.yaml:ro",
                "-v", f"{data}:/opt/output"]
     if mode == "source":
-        command.extend(["-e", "FIREWORKS_API_KEY"])
+        command.extend(["-e", "OPENROUTER_API_KEY"])
     else:
         command.extend(["--network", "none"])
+        if config["agent"]["provider"] == "openrouter":
+            command.extend(["-e", "OPENROUTER_API_KEY=offline-restore-only"])
     if source:
         command.extend(["-v", f"{source}:/opt/checkpoint:ro"])
     command.extend([image, "python", "/opt/pilot/bootstrap.py"])
@@ -228,12 +242,29 @@ def main():
     image = output(["docker", "image", "inspect", args.image,
                     "--format", "{{.Id}}"])
     if args.mode == "source":
+        # Explicit local secret mechanism; never print or source shell code.
+        from dotenv import dotenv_values
+        local_key = dotenv_values(ROOT / ".env").get("OPENROUTER_API_KEY")
+        if local_key:
+            os.environ["OPENROUTER_API_KEY"] = local_key
         if args.fixture_timeout is not None:
             raise ValueError("Real-run timeout is frozen in the config")
         require_frozen(args.config, image)
+        common_git = Path(output(["git", "rev-parse", "--git-common-dir"]))
+        if not common_git.is_absolute():
+            common_git = ROOT / common_git
+        if (common_git / "integrated-pilot-source-slot.json").exists():
+            raise ValueError("The single source slot is already consumed")
         directory = RAW / f"preflight-{uuid.uuid4().hex}"
         directory.mkdir(parents=True)
-        if not preflight(config, directory):
+        passed = preflight(config, directory)
+        subprocess.run([
+            "docker", "run", "--rm", "--network", "none",
+            "-v", f"{directory}:/opt/host-artifacts", image,
+            "chown", "-R", f"{os.getuid()}:{os.getgid()}",
+            "/opt/host-artifacts"], check=True, capture_output=True)
+        seal(directory)
+        if not passed:
             raise SystemExit("Kimi preflight failed; no source trajectory")
     codes = []
     for _ in range(args.count):

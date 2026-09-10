@@ -2,6 +2,7 @@
 
 import copy
 import json
+import time
 
 from common import now, redact, save
 
@@ -15,6 +16,7 @@ def instrument(provider, output, context):
             nonlocal counter
             counter += 1
             request.extensions["pilot_request_number"] = counter
+            request.extensions["pilot_started"] = time.monotonic()
             save(output / f"api-request-{counter:04d}.json", {
                 "time": now(), "step": context.get("step"),
                 "method": request.method,
@@ -25,12 +27,33 @@ def instrument(provider, output, context):
         def response_hook(response):
             number = response.request.extensions["pilot_request_number"]
             response.read()
+            body = redact(response.text)
+            with (output / f"api-response-{number:04d}.body.json").open(
+                    "x", encoding="utf-8", newline="") as stream:
+                stream.write(body)
             save(output / f"api-response-{number:04d}.json", {
                 "time": now(), "step": context.get("step"),
                 "status_code": response.status_code,
                 "request_id": response.headers.get("x-request-id"),
-                "body": redact(response.text),
+                "elapsed_seconds": (time.monotonic()
+                                    - response.request.extensions[
+                                        "pilot_started"]),
+                "body": body,
             })
+            if response.status_code == 200:
+                data = json.loads(body)
+                if data.get("choices"):
+                    save(output / f"api-assistant-{number:04d}.json",
+                         data["choices"][0]["message"])
+                    for field in ("model", "provider"):
+                        expected = context.get(f"expected_{field}")
+                        if expected and data.get(field) != expected:
+                            save(output / "routing_violation.json", {
+                                "field": field, "expected": expected,
+                                "returned": data.get(field),
+                                "request_number": number,
+                            })
+                            raise ValueError(f"Unexpected response {field}")
 
         client._client.event_hooks["request"].append(request_hook)
         client._client.event_hooks["response"].append(response_hook)

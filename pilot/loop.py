@@ -18,6 +18,7 @@ from score import score_precommit_hook
 import states
 
 from common import now, redact, save
+from provider import configure, PROVIDER_NAME
 from telemetry import instrument
 from workspace import (
     WORKSPACE, archive_workspace, capture_checkpoint, compare_external,
@@ -44,8 +45,11 @@ def provider_factory(**kwargs):
             model=kwargs["model"], messages=kwargs["messages"],
             tools=kwargs["tools"], mock_script=CONFIG["pilot"]["script"])
     else:
-        provider = create_provider(**kwargs)
+        provider = configure(create_provider(**kwargs), CONFIG)
     CONTEXT["provider"] = provider
+    if kwargs["provider"] != "mock":
+        CONTEXT["expected_provider"] = PROVIDER_NAME
+        CONTEXT["expected_model"] = provider.model
     instrument(provider, OUTPUT, CONTEXT)
     runtime = {
         "provider": kwargs["provider"], "model": provider.model,
@@ -55,7 +59,7 @@ def provider_factory(**kwargs):
         "tools": kwargs["tools"], "agent_cwd": "/agent",
         "agent_environment": tool_calling._agent_env(),
         "image_id": os.environ["PILOT_IMAGE_ID"],
-        "command_timeout_seconds": 30,
+        "command_timeout_seconds": CONFIG["pilot"]["command_timeout_seconds"],
     }
     if hasattr(provider, "client"):
         runtime["sdk_max_retries"] = provider.client.max_retries

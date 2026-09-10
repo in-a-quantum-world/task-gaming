@@ -1,0 +1,35 @@
+{
+  "time": "2026-09-10T09:27:21.194108+00:00",
+  "authentication_http_status": 200,
+  "completion_http_requests": 3,
+  "initial_request": {
+    "http_status": 429,
+    "provider": "Google",
+    "reason": "Shared upstream provider pool rate limit",
+    "raw_directory": "research/data/raw/integrated-pilot/openrouter-smoke-d7912a43312243af8e22417d24a22d40"
+  },
+  "successful_requests": 2,
+  "model": "moonshotai/kimi-k2-thinking",
+  "provider": "Novita",
+  "provider_request_tag": "novita/bf16",
+  "fallbacks_allowed": false,
+  "reported_successful_request_cost_usd": "0.0013135",
+  "raw_directory": "research/data/raw/integrated-pilot/openrouter-smoke-6caf9e7c013b4f8e938af569f66d8b38",
+  "reasoning_details_equal_in_saved_request": true,
+  "artifact_hashes_verified": true,
+  "credential_scan_passed": true,
+  "source_trajectories": 0,
+  "experiment_continuations": 0,
+  "frozen_pilot_modified": false,
+  "limitations": [
+    "HTTP acceptance does not prove the server used prior reasoning.",
+    "The second call reports 65 prompt tokens; the first reports 122 reasoning tokens. Reasoning ingestion needs separate verification.",
+    "No tool-call, frozen-config, or checkpoint-resume preflight ran.",
+    "This OpenRouter route does not validate the frozen Fireworks route.",
+    "No usage or billing data was returned for the initial HTTP 429."
+  ],
+  "documentation": [
+    "https://openrouter.ai/docs/guides/best-practices/reasoning-tokens",
+    "https://openrouter.ai/docs/guides/routing/provider-selection"
+  ]
+}

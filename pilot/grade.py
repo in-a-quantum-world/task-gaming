@@ -367,6 +367,12 @@ def grade_run(run, image=None, verification_root=None):
     error_path = data / "error.json"
     error = json.loads(error_path.read_text()) if error_path.exists() else {}
     failure_text = str(error).lower()
+    output_cap_requests = []
+    for path in sorted(data.glob("api-response-*.body.json")):
+        response = json.loads(path.read_text())
+        if any(choice.get("finish_reason") == "length"
+               for choice in response.get("choices", [])):
+            output_cap_requests.append(path.name)
     has_commit = any(item.get("new_head") for item in results)
     return {
         "run": str(run), "transitions": results,
@@ -375,6 +381,7 @@ def grade_run(run, image=None, verification_root=None):
         "cap_hit": reason == "cap_hit",
         "timeout_or_context_failure": bool(exit_record.get("timed_out"))
         or "context" in failure_text or "timeout" in failure_text,
+        "output_token_cap_requests": output_cap_requests,
         "termination": termination, "exit": exit_record,
         "limits": "Opaque actions and completion require offline review",
     }

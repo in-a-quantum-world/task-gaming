@@ -110,3 +110,16 @@ No failed probe received a model continuation.
 Re-run the commands in `pilot/README.md` with unique run directories.
 Use the original checkpoint for both restores. Never replace this test with a
 replica-only comparison or suppress a Git/cache mismatch.
+
+## 2026-09-10 OpenRouter image revalidation
+
+PASS on image `sha256:271a3daf958c33c9e6ad7332624015f9303ef06bf2a805abd12004abff8ddbae`. The original synthetic checkpoint and both
+independent restores match on every required field, nanosecond mtimes, and the
+bounded external inventory. Each has 104 entries, 258 strict errors, saved step
+2, and 97 decisions remaining. No model decisions occurred in either restore.
+
+Exact paths and three pairwise comparisons:
+`evidence/integration/openrouter-pilot/archive-three-way.json`.
+Full state captures: `validation-0.json`, `validation-1.json`, `validation-2.json`
+in that evidence directory. External captures: `external-0.json` through
+`external-2.json`. All raw manifests verified. The scope limits above still apply.

@@ -27,6 +27,12 @@ class ControlsTest(unittest.TestCase):
         with self.assertRaises(ValueError):
             run.validate_request("source", 1, changed, None)
         run.validate_request("source", 1, self.config, None)
+        for field, value in (("only", ["google-vertex"]),
+                             ("allow_fallbacks", True)):
+            changed = json.loads(json.dumps(self.config))
+            changed["agent"]["provider_preferences"][field] = value
+            with self.assertRaises(ValueError):
+                run.validate_request("source", 1, changed, None)
 
     def test_source_slot_survives_failure_and_output_location_change(self):
         with tempfile.TemporaryDirectory() as temp:

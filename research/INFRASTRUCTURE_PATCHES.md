@@ -1,3 +1,9 @@
+> 2026-09-10 amendment: the user authorized Kimi through OpenRouter,
+> pinned to novita/bf16 with no fallback. SOURCE_PILOT_CONFIG.yaml and
+> SOURCE_PILOT_PREREG.md supersede historical Fireworks access/config claims.
+> The earlier audit/prototype reconciliation and archive evidence remain valid
+> for their recorded image; new-image validation is required before source use.
+
 # Infrastructure patches
 
 Status: exploratory infrastructure; no paid model trajectory.
@@ -73,3 +79,26 @@ One image-build attempt used a local sha256 value in Dockerfile `FROM`. Docker
 interpreted it as a registry image name and failed. The successful build uses
 the existing base tag after verification of its immutable image ID.
 No dependency installation or provider-internal patch was needed.
+
+## OpenRouter source route (2026-09-10)
+
+The actual upstream fresh/resume patch is unchanged. The new regression invokes
+fresh main and shared restore_provider, then intercepts actual SDK serialization.
+It compares model, provider, backend routing, reasoning, temperature, top_p,
+complete tool definitions, token cap, and request policy. It fails on the pinned
+unpatched upstream and passes with the patch. Evidence is in
+`evidence/integration/openrouter-pilot/sampling-unpatched.log` and
+`tests-final-image.log`. All 19 integration and 13 inherited audit tests pass.
+
+The selected endpoint lacks native reasoning-effort and parallel_tool_calls
+controls. `pilot/provider.py` removes the adapter's implicit xhigh and unsupported
+parallel-call field, then applies explicit reasoning enablement, output cap, and
+zero SDK/adapter retries in both construction paths. Provider source is unchanged.
+HTTP guards verify returned model/provider before the loop can execute a tool.
+Raw response bodies and assistant messages precede any history normalization.
+The SDK wraps a guard rejection as APIConnectionError; a separate routing record
+retains the cause. The wrong-backend test checks that no history/tool action occurs.
+
+`restore-check` now also accepts the pinned real source config, only with a dummy
+key and Docker network disabled. It constructs/restores state and exits before any
+model invoke. This permits original-versus-restored validation of a real candidate.

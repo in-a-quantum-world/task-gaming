@@ -1,0 +1,7 @@
+{
+  "unpatched_exit": 1,
+  "patched_exit": 0,
+  "unpatched_log": "sampling-unpatched.log",
+  "patched_log": "tests-image.log",
+  "patched_test_count": 19
+}

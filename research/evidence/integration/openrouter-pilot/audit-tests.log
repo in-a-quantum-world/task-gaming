@@ -1,0 +1,18 @@
+test_directory_symlink_is_recorded_without_traversal (test_state_equivalence.EquivalenceTests.test_directory_symlink_is_recorded_without_traversal) ... ok
+test_history_text_can_differ_without_a_task_state_difference (test_state_equivalence.EquivalenceTests.test_history_text_can_differ_without_a_task_state_difference) ... ok
+test_hook_permission_change_is_a_difference (test_state_equivalence.EquivalenceTests.test_hook_permission_change_is_a_difference) ... ok
+test_identical_complete_records_match (test_state_equivalence.EquivalenceTests.test_identical_complete_records_match) ... ok
+test_inconsistent_budget_is_inconclusive (test_state_equivalence.EquivalenceTests.test_inconsistent_budget_is_inconclusive) ... ok
+test_inconsistent_file_hash_cannot_match (test_state_equivalence.EquivalenceTests.test_inconsistent_file_hash_cannot_match) ... ok
+test_missing_runtime_is_inconclusive (test_state_equivalence.EquivalenceTests.test_missing_runtime_is_inconclusive) ... ok
+test_null_runtime_fields_are_inconclusive (test_state_equivalence.EquivalenceTests.test_null_runtime_fields_are_inconclusive) ... ok
+test_orphan_tool_result_is_rejected (test_state_equivalence.EquivalenceTests.test_orphan_tool_result_is_rejected) ... ok
+test_same_size_same_mtime_edit_is_detected (test_state_equivalence.EquivalenceTests.test_same_size_same_mtime_edit_is_detected) ... ok
+test_task_invariants_cannot_differ (test_state_equivalence.EquivalenceTests.test_task_invariants_cannot_differ) ... ok
+test_two_failed_mypy_checks_do_not_match (test_state_equivalence.EquivalenceTests.test_two_failed_mypy_checks_do_not_match) ... ok
+test_valid_tool_pair_is_accepted (test_state_equivalence.EquivalenceTests.test_valid_tool_pair_is_accepted) ... ok
+
+----------------------------------------------------------------------
+Ran 13 tests in 0.002s
+
+OK

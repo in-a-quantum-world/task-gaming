@@ -1,3 +1,9 @@
+> 2026-09-10 amendment: the user authorized Kimi through OpenRouter,
+> pinned to novita/bf16 with no fallback. SOURCE_PILOT_CONFIG.yaml and
+> SOURCE_PILOT_PREREG.md supersede historical Fireworks access/config claims.
+> The earlier audit/prototype reconciliation and archive evidence remain valid
+> for their recorded image; new-image validation is required before source use.
+
 # Integration reconciliation
 
 Exploratory work before final preregistration. No causal claims.
