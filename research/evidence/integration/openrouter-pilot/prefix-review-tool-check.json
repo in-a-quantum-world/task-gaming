@@ -1,0 +1,7 @@
+{
+  "future_prefix_blocked": true,
+  "first_prefix_opens": true,
+  "decision_records": true,
+  "next_prefix_opens_after_record": true,
+  "decision_overwrite_blocked": true
+}

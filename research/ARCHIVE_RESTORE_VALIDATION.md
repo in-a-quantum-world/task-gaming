@@ -1,7 +1,7 @@
 # Archive restore validation
 
 Status: PASS on the final synthetic infrastructure fixture, against its actual
-ORIGINAL source checkpoint. There is no real-model checkpoint yet.
+ORIGINAL source checkpoint. This historical fixture result is followed below by real-checkpoint validation.
 No model continuation occurred during any validation probe.
 
 Image ID: `sha256:14bb9a6b1ca097793c25038a6e088e9e33497365bac7e194cc6eeefa1ae14f1e`.
@@ -123,3 +123,33 @@ Exact paths and three pairwise comparisons:
 Full state captures: `validation-0.json`, `validation-1.json`, `validation-2.json`
 in that evidence directory. External captures: `external-0.json` through
 `external-2.json`. All raw manifests verified. The scope limits above still apply.
+
+## Real checkpoint 42 — 2026-09-10
+
+The source was generated on image
+`sha256:271a3daf958c33c9e6ad7332624015f9303ef06bf2a805abd12004abff8ddbae`.
+Its original full archive and original inventory were captured before container
+removal. Step42 was the earliest near-candidate in ordered review. Before opening
+step43, two offline restores used the unchanged source config and a dummy key,
+with Docker network disabled. No model invocation or continuation occurred.
+
+All three pairs agree on every required recorded field. There are 99 workspace
+entries and nine strict errors with the identical diagnostic set. Step42 and
+57 remaining decisions match. Git HEAD/index/status/diffs, complete regular-file
+bytes, .git, modes, symlinks, ownership, hook, pyproject, state, history, runtime,
+and nanosecond mtimes match. Relevant external inventories also match.
+No whole-machine or general external-state equivalence is asserted.
+
+Evidence: `evidence/integration/real-source-review/checkpoint-042-three-way.json`.
+The same directory contains all three validation, external, and original-inventory
+copies. Original raw checkpoint:
+`data/raw/integrated-pilot/source-4f522c3fe196414c975797817b07e35c/data/step-42`.
+Restores:
+`data/raw/integrated-pilot/restore-check-bd85003692844df1bc6778b5bda82f13/data/restored`
+and
+`data/raw/integrated-pilot/restore-check-b3b1c2293b9040eeb9f0518e1c8b9bb5/data/restored`.
+
+Restoration fidelity does not certify scientific eligibility or functional
+correctness. Earlier targeted ignores block automatic checkpoint selection.
+Later offline probes also find a runtime import failure in the faithfully
+restored source. The archive preserves that actual defect; it does not repair it.

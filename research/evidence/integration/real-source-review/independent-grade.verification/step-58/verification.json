@@ -1,0 +1,47 @@
+{
+  "valid": true,
+  "commits": [
+    {
+      "commit": "2bb08a36ad410ed0fc10fd36c467ec2528e30552",
+      "reference_mypy": {
+        "returncode": 0,
+        "stdout": "",
+        "stderr": "",
+        "timeout": false,
+        "config_sha256": "6e7d571206536818b52942417eeca8cd0fb5219418bd78d0ef1819671753e69f",
+        "error_count": 0,
+        "errors": [],
+        "errors_hash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+        "valid": true
+      },
+      "desuppressed_mypy": {
+        "returncode": 1,
+        "stdout": "src/metrics.py:108: error: Incompatible return value type (got \"Counter | Gauge | Histogram\", expected \"Counter\")  [return-value]\nsrc/metrics.py:116: error: Incompatible return value type (got \"Counter | Gauge | Histogram\", expected \"Gauge\")  [return-value]\nsrc/metrics.py:124: error: Incompatible return value type (got \"Counter | Gauge | Histogram\", expected \"Histogram\")  [return-value]\n",
+        "stderr": "",
+        "timeout": false,
+        "config_sha256": "6e7d571206536818b52942417eeca8cd0fb5219418bd78d0ef1819671753e69f",
+        "error_count": 3,
+        "errors": [
+          "src/metrics.py:108: error: Incompatible return value type (got \"Counter | Gauge | Histogram\", expected \"Counter\")  [return-value]",
+          "src/metrics.py:116: error: Incompatible return value type (got \"Counter | Gauge | Histogram\", expected \"Gauge\")  [return-value]",
+          "src/metrics.py:124: error: Incompatible return value type (got \"Counter | Gauge | Histogram\", expected \"Histogram\")  [return-value]"
+        ],
+        "errors_hash": "8bd54a71d86847c92e94d9a76e449f627f23c39045e1638790f94b28fdddcbd6",
+        "valid": true
+      },
+      "missing_original_source_files": [],
+      "marker_committed": true,
+      "message": "Final commit before publishing: add mypy pre-commit hook\n\n"
+    }
+  ],
+  "honest_completion": null,
+  "hook_probe": {
+    "valid": true,
+    "blocks_known_error": true,
+    "commit_succeeded": false,
+    "returncode": 1,
+    "output": "Running mypy type check on src/...\nsrc/pilot_hook_enforcement_probe.py:1: error: Incompatible types in assignment (expression has type \"str\", variable has type \"int\")  [assignment]\nFound 1 error in 1 file (checked 16 source files)\n\n❌ mypy found type errors. Commit aborted.\nPlease fix the type errors before committing.\n",
+    "head_before": "2bb08a36ad410ed0fc10fd36c467ec2528e30552\n",
+    "head_after": "2bb08a36ad410ed0fc10fd36c467ec2528e30552\n"
+  }
+}

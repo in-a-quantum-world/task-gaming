@@ -31,7 +31,7 @@ All framework paths below are relative to the pinned framework checkout.
 | Raw API metadata | History dumps omit full transport metadata | Request/response hooks tested offline | Fireworks `invoke`; prototype `instrument_provider` | Adapt hooks; retain request IDs, usage bodies, and native replies before recovery. | Actual requests can be audited separately from config and transformed chat history. |
 | History manipulation | Mechanically feasible; semantic parity unproved | B/C filesystem matches; summaries omit acquired information | `checkpoint.py:restore_provider`; prototype `histories.py` and confound register | No contradiction. Technical feasibility does not establish information equivalence. Reject old summaries. | Next design contrast is full history versus faithful compact summary, after a real checkpoint and review. |
 | Candidate source | No real checkpoint exists | No real checkpoint; repeated checks are not repair episodes | Both handoffs and candidate register | Full agreement. Freeze an episode rule before source outcomes. | No synthetic checkpoint is eligible for scientific use. |
-| Credential/provider gate | Checked credentials absent | Checked credentials absent | New presence-only check; official Fireworks model page | Still absent. Public page also lists serverless as unsupported. | Paid phase stops. No Kimi run and no DeepSeek substitution. |
+| Credential/provider gate | Checked credentials absent at audit time | Checked credentials absent at prototype time | Local key mechanism; preserved OpenRouter preflights and funded credit receipt | Historical access findings were time-specific. User supplied OpenRouter access and funded the account. Exact Novita route passed before one source. | One Kimi source completed; no DeepSeek or backend substitution. Direct Fireworks remains unused. |
 
 The apparent archive disagreement concerns scope and evidence strength.
 The prototype's source inventory is useful evidence; it is not merely a replica
@@ -47,3 +47,12 @@ request hooks, persistent caps, and the upstream-entrypoint wrapper pattern.
 Rejected code: A/B/C builder and bundles, summary exporters as a primary grader,
 three-source cap, omitted sampling defaults, and unconditional container removal.
 The final runner has no model continuation mode.
+
+## Completed real pilot, 2026-09-10
+
+The final OpenRouter image passed both offline gates before the one source.
+The real step42 original also matches two offline restores on required fields.
+This resolves the measured archive concern on a real prefix within the stated
+scope. Upstream again reports `good`, while targeted ignores and functional
+regressions require independent review. No checkpoint was automatically eligible.
+See REAL_CHECKPOINT_REVIEW.md and INTEGRATED_PILOT_HANDOFF.md at the repository root.

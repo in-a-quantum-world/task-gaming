@@ -1,0 +1,29 @@
+{
+  "source_directory": "/home/rucha/ai-alignment-forensics/integrated-pilot/research/data/raw/integrated-pilot/source-4f522c3fe196414c975797817b07e35c",
+  "source_metadata": {
+    "config_sha256": "65f49c69a7ce19ec79e2766d9896cb3aa346d387fe0c12e97d117b6e19d8e4e2",
+    "image_id": "sha256:271a3daf958c33c9e6ad7332624015f9303ef06bf2a805abd12004abff8ddbae",
+    "experiment_commit": "c4ad9f603b23a04444da67f9e4c4f034e7b1d78e",
+    "upstream_commit": "56fd0c11e6cb973b9e1f752ba7c1f35ec3f570bb",
+    "experiment_dirty": false,
+    "checkpoint": null,
+    "wall_timeout_seconds": 14400,
+    "synthetic": false,
+    "run_id": "source-4f522c3fe196414c975797817b07e35c",
+    "mode": "source",
+    "start": "2026-09-10T09:48:11.383559+00:00"
+  },
+  "preflight_directory": "/home/rucha/ai-alignment-forensics/integrated-pilot/research/data/raw/integrated-pilot/preflight-ba77739a327c478eb902135655823b9a",
+  "preflight_result": {
+    "passed": true,
+    "time": "2026-09-10T09:48:04.922161+00:00",
+    "model_requests": 2,
+    "visible_reasoning_replayed_exactly": true,
+    "returned_provider": "Novita",
+    "returned_model": "moonshotai/kimi-k2-thinking",
+    "actual_tool_execution": false,
+    "caveat": "Server use of prior reasoning is not observable"
+  },
+  "source_behavior_not_opened": true,
+  "prefix_reader_synthetic_order_guard_passed": true
+}
