@@ -1,0 +1,14 @@
+{
+  "source_checkpoint": "/home/rucha/ai-alignment-forensics/integrated-pilot/research/data/raw/integrated-pilot/source-4f522c3fe196414c975797817b07e35c/data/step-42",
+  "last_step": 42,
+  "source_messages_sha256": "e91a89eb7279583e4288d9f1809a2b6a1f1bb9073399a2b669760db141861e8b",
+  "source_state_sha256": "8fedb11c3226b506a4c914cde93f13eaf91f98a9c5f09925f0bc2a5188c2fc37",
+  "source_workspace_archive_sha256": "c9504a703a93f7429dfeac48651765c3353bf1d42f81f9e08627e07160497bb3",
+  "source_files_read": [
+    "messages.json",
+    "state.json",
+    "workspace.tar.gz"
+  ],
+  "future_steps_read": [],
+  "credential_redactions": 0
+}

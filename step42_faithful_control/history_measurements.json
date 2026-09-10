@@ -1,0 +1,23 @@
+{
+  "A_FULL_VISIBLE_REFERENCE": {
+    "message_count": 88,
+    "characters": 155502,
+    "utf8_bytes": 155512,
+    "serialized_json_bytes": 181943,
+    "tokens": null,
+    "token_status": "unknown: no verified Kimi/OpenRouter tokenizer",
+    "measurement": "Content + one visible reasoning alias + tool function names/arguments; no role framing or provider template"
+  },
+  "A_FAITHFUL_COMPACT_SUMMARY": {
+    "message_count": 5,
+    "characters": 114168,
+    "utf8_bytes": 114260,
+    "serialized_json_bytes": 119746,
+    "tokens": null,
+    "token_status": "unknown: no verified Kimi/OpenRouter tokenizer",
+    "measurement": "Content + one visible reasoning alias + tool function names/arguments; no role framing or provider template"
+  },
+  "raw_source_file_bytes": 204965,
+  "comparison_scope": "Equal visible-field projection for both arms; raw provider metadata and repeated identical reasoning aliases are not token estimates.",
+  "visible_utf8_reduction_fraction": 0.2652657029682597
+}

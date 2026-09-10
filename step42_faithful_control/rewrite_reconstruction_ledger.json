@@ -1,0 +1,1711 @@
+[
+  {
+    "step": 11,
+    "path": "src/models.py",
+    "before_sha256": "03ca9dabc5b4a36be45d4b5c18ae6fc34389e51fb8dd1d5b091a5324c9472a70",
+    "after_sha256": "07b454611071f4ad33fa29a5b4c34018abcade39306133b777f8ecc1ae4ad2d3",
+    "operations": [
+      {
+        "start": 4,
+        "end": 4,
+        "new_lines": [
+          "from typing import Any\n"
+        ]
+      },
+      {
+        "start": 9,
+        "end": 10,
+        "new_lines": [
+          "    data: dict[str, Any]\n"
+        ]
+      },
+      {
+        "start": 12,
+        "end": 14,
+        "new_lines": [
+          "    tags: list[str] = field(default_factory=list)\n",
+          "    metadata: dict[str, Any] = field(default_factory=dict)\n"
+        ]
+      },
+      {
+        "start": 15,
+        "end": 16,
+        "new_lines": [
+          "    def __post_init__(self) -> None:\n"
+        ]
+      },
+      {
+        "start": 22,
+        "end": 23,
+        "new_lines": [
+          "    def from_dict(cls, raw: dict[str, Any]) -> \"Record\":\n"
+        ]
+      },
+      {
+        "start": 28,
+        "end": 29,
+        "new_lines": [
+          "    def to_dict(self) -> dict[str, Any]:\n"
+        ]
+      },
+      {
+        "start": 38,
+        "end": 39,
+        "new_lines": [
+          "    def merge(self, other: \"Record\") -> \"Record\":\n"
+        ]
+      },
+      {
+        "start": 58,
+        "end": 59,
+        "new_lines": [
+          "    errors: list[str] = field(default_factory=list)\n"
+        ]
+      },
+      {
+        "start": 61,
+        "end": 62,
+        "new_lines": [
+          "    def add_success(self) -> None:\n"
+        ]
+      },
+      {
+        "start": 65,
+        "end": 66,
+        "new_lines": [
+          "    def add_failure(self, error_msg: str) -> None:\n"
+        ]
+      },
+      {
+        "start": 71,
+        "end": 72,
+        "new_lines": [
+          "    def success_rate(self) -> float:\n"
+        ]
+      },
+      {
+        "start": 76,
+        "end": 77,
+        "new_lines": [
+          "    def to_dict(self) -> dict[str, Any]:\n"
+        ]
+      },
+      {
+        "start": 87,
+        "end": 88,
+        "new_lines": [
+          "def merge_batch_results(*results: BatchResult) -> BatchResult:\n"
+        ]
+      }
+    ]
+  },
+  {
+    "step": 13,
+    "path": "src/metrics.py",
+    "before_sha256": "bbb7fc1f02bc0ab0ceb08cf29835e2a7cb8d06dbf3df250eafea645c8dc00736",
+    "after_sha256": "cf3e1aac46062dff525a0ecec9b179122d0109555de58044ee30e55df7d8bd62",
+    "operations": [
+      {
+        "start": 4,
+        "end": 4,
+        "new_lines": [
+          "from typing import Callable, Any, TypeVar, ParamSpec, Optional\n"
+        ]
+      },
+      {
+        "start": 5,
+        "end": 6,
+        "new_lines": [
+          "_registry: dict[str, Counter | Gauge | Histogram] = {}\n",
+          "\n",
+          "F = TypeVar(\"F\")\n",
+          "P = ParamSpec(\"P\")\n",
+          "R = TypeVar(\"R\")\n"
+        ]
+      },
+      {
+        "start": 9,
+        "end": 10,
+        "new_lines": [
+          "    def __init__(self, name: str, description: str = \"\") -> None:\n"
+        ]
+      },
+      {
+        "start": 14,
+        "end": 15,
+        "new_lines": [
+          "    def inc(self, amount: int = 1) -> None:\n"
+        ]
+      },
+      {
+        "start": 17,
+        "end": 18,
+        "new_lines": [
+          "    def value(self) -> int:\n"
+        ]
+      },
+      {
+        "start": 20,
+        "end": 21,
+        "new_lines": [
+          "    def reset(self) -> None:\n"
+        ]
+      },
+      {
+        "start": 23,
+        "end": 24,
+        "new_lines": [
+          "    def to_dict(self) -> dict[str, Any]:\n"
+        ]
+      },
+      {
+        "start": 28,
+        "end": 29,
+        "new_lines": [
+          "    def __init__(self, name: str, description: str = \"\") -> None:\n"
+        ]
+      },
+      {
+        "start": 33,
+        "end": 34,
+        "new_lines": [
+          "    def set(self, value: int) -> None:\n"
+        ]
+      },
+      {
+        "start": 36,
+        "end": 37,
+        "new_lines": [
+          "    def inc(self, amount: int = 1) -> None:\n"
+        ]
+      },
+      {
+        "start": 39,
+        "end": 40,
+        "new_lines": [
+          "    def dec(self, amount: int = 1) -> None:\n"
+        ]
+      },
+      {
+        "start": 42,
+        "end": 43,
+        "new_lines": [
+          "    def value(self) -> int:\n"
+        ]
+      },
+      {
+        "start": 45,
+        "end": 46,
+        "new_lines": [
+          "    def to_dict(self) -> dict[str, Any]:\n"
+        ]
+      },
+      {
+        "start": 50,
+        "end": 51,
+        "new_lines": [
+          "    def __init__(self, name: str, description: str = \"\", buckets: Optional[list[float]] = None) -> None:\n"
+        ]
+      },
+      {
+        "start": 54,
+        "end": 55,
+        "new_lines": [
+          "        self._observations: list[float] = []\n"
+        ]
+      },
+      {
+        "start": 56,
+        "end": 57,
+        "new_lines": [
+          "    def observe(self, value: float) -> None:\n"
+        ]
+      },
+      {
+        "start": 59,
+        "end": 60,
+        "new_lines": [
+          "    def count(self) -> int:\n"
+        ]
+      },
+      {
+        "start": 62,
+        "end": 63,
+        "new_lines": [
+          "    def sum(self) -> float:\n"
+        ]
+      },
+      {
+        "start": 65,
+        "end": 66,
+        "new_lines": [
+          "    def avg(self) -> float:\n"
+        ]
+      },
+      {
+        "start": 70,
+        "end": 71,
+        "new_lines": [
+          "    def percentile(self, p: int) -> float:\n"
+        ]
+      },
+      {
+        "start": 77,
+        "end": 79,
+        "new_lines": [
+          "    def bucket_counts(self) -> dict[float, int]:\n",
+          "        counts: dict[float, int] = {}\n"
+        ]
+      },
+      {
+        "start": 84,
+        "end": 85,
+        "new_lines": [
+          "    def to_dict(self) -> dict[str, Any]:\n"
+        ]
+      },
+      {
+        "start": 97,
+        "end": 98,
+        "new_lines": [
+          "def counter(name: str, description: str = \"\") -> Counter:\n"
+        ]
+      },
+      {
+        "start": 101,
+        "end": 102,
+        "new_lines": [
+          "    # Safe cast since we just created it or it was already a Counter\n",
+          "    return _registry[name]  # type: ignore[return-value]\n"
+        ]
+      },
+      {
+        "start": 104,
+        "end": 105,
+        "new_lines": [
+          "def gauge(name: str, description: str = \"\") -> Gauge:\n"
+        ]
+      },
+      {
+        "start": 108,
+        "end": 109,
+        "new_lines": [
+          "    # Safe cast since we just created it or it was already a Gauge\n",
+          "    return _registry[name]  # type: ignore[return-value]\n"
+        ]
+      },
+      {
+        "start": 111,
+        "end": 112,
+        "new_lines": [
+          "def histogram(name: str, description: str = \"\", buckets: Optional[list[float]] = None) -> Histogram:\n"
+        ]
+      },
+      {
+        "start": 115,
+        "end": 116,
+        "new_lines": [
+          "    # Safe cast since we just created it or it was already a Histogram\n",
+          "    return _registry[name]  # type: ignore[return-value]\n"
+        ]
+      },
+      {
+        "start": 118,
+        "end": 119,
+        "new_lines": [
+          "def report() -> dict[str, Any]:\n"
+        ]
+      },
+      {
+        "start": 123,
+        "end": 124,
+        "new_lines": [
+          "def reset_all() -> None:\n"
+        ]
+      },
+      {
+        "start": 128,
+        "end": 129,
+        "new_lines": [
+          "def timed(metric_name: str) -> Callable[[Callable[P, R]], Callable[P, R]]:\n"
+        ]
+      },
+      {
+        "start": 130,
+        "end": 131,
+        "new_lines": [
+          "    def decorator(fn: Callable[P, R]) -> Callable[P, R]:\n"
+        ]
+      },
+      {
+        "start": 134,
+        "end": 135,
+        "new_lines": [
+          "        def wrapper(*args: P.args, **kwargs: P.kwargs) -> R:\n"
+        ]
+      },
+      {
+        "start": 144,
+        "end": 145,
+        "new_lines": [
+          "def counted(metric_name: str) -> Callable[[Callable[P, R]], Callable[P, R]]:\n"
+        ]
+      },
+      {
+        "start": 146,
+        "end": 147,
+        "new_lines": [
+          "    def decorator(fn: Callable[P, R]) -> Callable[P, R]:\n"
+        ]
+      },
+      {
+        "start": 150,
+        "end": 151,
+        "new_lines": [
+          "        def wrapper(*args: P.args, **kwargs: P.kwargs) -> R:\n"
+        ]
+      }
+    ]
+  },
+  {
+    "step": 15,
+    "path": "src/cache.py",
+    "before_sha256": "0e4dcb6072e96c2de2e24ac5ebb929ca7b9c1e3b623a8477421c032a735d2c2f",
+    "after_sha256": "e71ac9cec30fc9c6e01845b86e582dee2a403bb17162f4d79c601bd2590ae5ab",
+    "operations": [
+      {
+        "start": 4,
+        "end": 4,
+        "new_lines": [
+          "from typing import Any, Callable, TypeVar, ParamSpec\n",
+          "\n",
+          "P = ParamSpec(\"P\")\n",
+          "R = TypeVar(\"R\")\n"
+        ]
+      },
+      {
+        "start": 7,
+        "end": 8,
+        "new_lines": [
+          "    def __init__(self, ttl_seconds: int = 300, max_size: int = 1000) -> None:\n"
+        ]
+      },
+      {
+        "start": 10,
+        "end": 11,
+        "new_lines": [
+          "        self._store: dict[Any, tuple[Any, float]] = {}\n"
+        ]
+      },
+      {
+        "start": 12,
+        "end": 13,
+        "new_lines": [
+          "    def get(self, key: Any) -> Any | None:\n"
+        ]
+      },
+      {
+        "start": 22,
+        "end": 23,
+        "new_lines": [
+          "    def set(self, key: Any, value: Any) -> None:\n"
+        ]
+      },
+      {
+        "start": 30,
+        "end": 31,
+        "new_lines": [
+          "    def delete(self, key: Any) -> None:\n"
+        ]
+      },
+      {
+        "start": 33,
+        "end": 34,
+        "new_lines": [
+          "    def clear(self) -> None:\n"
+        ]
+      },
+      {
+        "start": 36,
+        "end": 37,
+        "new_lines": [
+          "    def _evict_expired(self) -> None:\n"
+        ]
+      },
+      {
+        "start": 43,
+        "end": 44,
+        "new_lines": [
+          "    def size(self) -> int:\n"
+        ]
+      },
+      {
+        "start": 46,
+        "end": 47,
+        "new_lines": [
+          "    def stats(self) -> dict[str, int]:\n"
+        ]
+      },
+      {
+        "start": 52,
+        "end": 53,
+        "new_lines": [
+          "_default_cache: TTLCache | None = None\n"
+        ]
+      },
+      {
+        "start": 55,
+        "end": 56,
+        "new_lines": [
+          "def get_default_cache(ttl: int = 300) -> TTLCache:\n"
+        ]
+      },
+      {
+        "start": 62,
+        "end": 63,
+        "new_lines": [
+          "class _CachedWrapper(Callable[P, R]):  # type: ignore[misc]\n",
+          "    cache: TTLCache\n",
+          "    cache_clear: Callable[[], None]\n",
+          "    def __call__(self, *args: P.args, **kwargs: P.kwargs) -> R: ...\n",
+          "\n",
+          "\n",
+          "def cached(ttl: int = 300) -> Callable[[Callable[P, R]], Callable[P, R]]:\n"
+        ]
+      },
+      {
+        "start": 64,
+        "end": 65,
+        "new_lines": [
+          "    def decorator(fn: Callable[P, R]) -> Callable[P, R]:\n"
+        ]
+      },
+      {
+        "start": 68,
+        "end": 69,
+        "new_lines": [
+          "        def wrapper(*args: P.args, **kwargs: P.kwargs) -> R:\n"
+        ]
+      },
+      {
+        "start": 72,
+        "end": 73,
+        "new_lines": [
+          "                return result  # type: ignore[return-value]\n"
+        ]
+      },
+      {
+        "start": 77,
+        "end": 80,
+        "new_lines": [
+          "        wrapper.cache = cache  # type: ignore[attr-defined]\n",
+          "        wrapper.cache_clear = cache.clear  # type: ignore[attr-defined]\n",
+          "        return wrapper  # type: ignore[return-value]\n"
+        ]
+      }
+    ]
+  },
+  {
+    "step": 17,
+    "path": "src/csv_source.py",
+    "before_sha256": "1b9213b59bd31ac34011c9566112f036703acd6b1b81a287035d134d8587d7dc",
+    "after_sha256": "cfc55b8df2c6d6e9846358915327211f9610412f24661585950a69e4550aa340",
+    "operations": [
+      {
+        "start": 5,
+        "end": 5,
+        "new_lines": [
+          "from typing import Iterator, Any\n"
+        ]
+      },
+      {
+        "start": 9,
+        "end": 10,
+        "new_lines": [
+          "def iter_records(path: str, delimiter: str = \",\", encoding: str = \"utf-8\") -> Iterator[Record]:\n"
+        ]
+      },
+      {
+        "start": 16,
+        "end": 17,
+        "new_lines": [
+          "            parsed = _coerce_row(row, line_num, path)\n"
+        ]
+      },
+      {
+        "start": 21,
+        "end": 22,
+        "new_lines": [
+          "def _coerce_row(row: dict[str, str], line_num: int, path: str) -> dict[str, Any] | None:\n"
+        ]
+      },
+      {
+        "start": 23,
+        "end": 24,
+        "new_lines": [
+          "    result: dict[str, Any] = {}\n"
+        ]
+      },
+      {
+        "start": 51,
+        "end": 52,
+        "new_lines": [
+          "    result[\"_meta\"] = {\"file\": os.path.basename(path), \"line\": line_num}\n"
+        ]
+      },
+      {
+        "start": 55,
+        "end": 56,
+        "new_lines": [
+          "def _try_numeric(value: str) -> int | float | None:\n"
+        ]
+      },
+      {
+        "start": 65,
+        "end": 66,
+        "new_lines": [
+          "def _try_parse_date(value: str) -> str | None:\n"
+        ]
+      },
+      {
+        "start": 76,
+        "end": 77,
+        "new_lines": [
+          "def read_csv_batch(path: str, batch_size: int = 1000, skip_header: bool = False) -> Iterator[list[Record]]:\n"
+        ]
+      },
+      {
+        "start": 78,
+        "end": 79,
+        "new_lines": [
+          "    batch: list[Record] = []\n"
+        ]
+      },
+      {
+        "start": 88,
+        "end": 89,
+        "new_lines": [
+          "def detect_delimiter(path: str) -> str:\n"
+        ]
+      },
+      {
+        "start": 98,
+        "end": 99,
+        "new_lines": [
+          "def count_rows(path: str, delimiter: str = \",\") -> int:\n"
+        ]
+      }
+    ]
+  },
+  {
+    "step": 19,
+    "path": "src/db.py",
+    "before_sha256": "0a130dff8de860a67704da14a6b909607f0295fa1b1796cba747b1b36eb3910d",
+    "after_sha256": "1c21a9c3b8d1683858fb54bc148f9609b5047fb2db13e715dd98595c9d927d99",
+    "operations": [
+      {
+        "start": 4,
+        "end": 4,
+        "new_lines": [
+          "from typing import Any, Optional\n",
+          "from types import TracebackType\n"
+        ]
+      },
+      {
+        "start": 5,
+        "end": 7,
+        "new_lines": [
+          "_pool: Optional[\"ConnectionPool\"] = None\n"
+        ]
+      },
+      {
+        "start": 11,
+        "end": 12,
+        "new_lines": [
+          "    def __init__(self, db_path: str, max_connections: int = 5) -> None:\n"
+        ]
+      },
+      {
+        "start": 14,
+        "end": 16,
+        "new_lines": [
+          "        self._connections: list[sqlite3.Connection] = []\n",
+          "        self._in_use: set[sqlite3.Connection] = set()\n"
+        ]
+      },
+      {
+        "start": 17,
+        "end": 18,
+        "new_lines": [
+          "    def acquire(self) -> sqlite3.Connection:\n"
+        ]
+      },
+      {
+        "start": 31,
+        "end": 32,
+        "new_lines": [
+          "    def release(self, conn: sqlite3.Connection) -> None:\n"
+        ]
+      },
+      {
+        "start": 35,
+        "end": 36,
+        "new_lines": [
+          "    def close_all(self) -> None:\n"
+        ]
+      },
+      {
+        "start": 43,
+        "end": 44,
+        "new_lines": [
+          "def init_pool(db_path: str, max_connections: int = 5) -> ConnectionPool:\n"
+        ]
+      },
+      {
+        "start": 49,
+        "end": 50,
+        "new_lines": [
+          "def get_connection() -> sqlite3.Connection:\n"
+        ]
+      },
+      {
+        "start": 55,
+        "end": 56,
+        "new_lines": [
+          "def release_connection(conn: sqlite3.Connection) -> None:\n"
+        ]
+      },
+      {
+        "start": 60,
+        "end": 61,
+        "new_lines": [
+          "def execute_query(query: str, params: Optional[tuple[Any, ...]] = None) -> list[dict[str, Any]] | int:\n"
+        ]
+      },
+      {
+        "start": 74,
+        "end": 75,
+        "new_lines": [
+          "def execute_many(query: str, param_list: list[tuple[Any, ...]]) -> int:\n"
+        ]
+      },
+      {
+        "start": 87,
+        "end": 89,
+        "new_lines": [
+          "    def __init__(self) -> None:\n",
+          "        self.conn: Optional[sqlite3.Connection] = None\n"
+        ]
+      },
+      {
+        "start": 90,
+        "end": 91,
+        "new_lines": [
+          "    def __enter__(self) -> \"DatabaseSession\":\n"
+        ]
+      },
+      {
+        "start": 94,
+        "end": 95,
+        "new_lines": [
+          "    def __exit__(self, exc_type: Optional[type[BaseException]], exc_val: Optional[BaseException], exc_tb: Optional[TracebackType]) -> bool:\n"
+        ]
+      },
+      {
+        "start": 104,
+        "end": 105,
+        "new_lines": [
+          "    def execute(self, query: str, params: Optional[tuple[Any, ...]] = None) -> sqlite3.Cursor:\n",
+          "        if self.conn is None:\n",
+          "            raise RuntimeError(\"Connection not available\")\n"
+        ]
+      },
+      {
+        "start": 107,
+        "end": 108,
+        "new_lines": [
+          "    def fetchall(self, query: str, params: Optional[tuple[Any, ...]] = None) -> list[dict[str, Any]]:\n",
+          "        if self.conn is None:\n",
+          "            raise RuntimeError(\"Connection not available\")\n"
+        ]
+      }
+    ]
+  },
+  {
+    "step": 21,
+    "path": "src/writer.py",
+    "before_sha256": "11b90cbd0c77b409c0ac9e755cddc1c5ee7189338ff12e25a7cfe3ddf227f81a",
+    "after_sha256": "1c5f8bc41f3caf328e275b3eb100edfa5ba38d5c170fcccf88097a53cf86ed95",
+    "operations": [
+      {
+        "start": 8,
+        "end": 8,
+        "new_lines": [
+          "from typing import Any, Optional\n",
+          "from types import TracebackType\n"
+        ]
+      },
+      {
+        "start": 15,
+        "end": 16,
+        "new_lines": [
+          "    def __init__(self, output_path: str, buffer_size: int = 100) -> None:\n"
+        ]
+      },
+      {
+        "start": 18,
+        "end": 19,
+        "new_lines": [
+          "        self._buffer: list[Record | dict[str, Any]] = []\n"
+        ]
+      },
+      {
+        "start": 21,
+        "end": 22,
+        "new_lines": [
+          "    def write_record(self, record: Record | dict[str, Any]) -> None:\n"
+        ]
+      },
+      {
+        "start": 26,
+        "end": 27,
+        "new_lines": [
+          "    def write_batch(self, records: list[Record | dict[str, Any]]) -> None:\n"
+        ]
+      },
+      {
+        "start": 30,
+        "end": 31,
+        "new_lines": [
+          "    def flush(self) -> None:\n"
+        ]
+      },
+      {
+        "start": 33,
+        "end": 34,
+        "new_lines": [
+          "    def close(self) -> None:\n"
+        ]
+      },
+      {
+        "start": 38,
+        "end": 39,
+        "new_lines": [
+          "    def total_written(self) -> int:\n"
+        ]
+      },
+      {
+        "start": 41,
+        "end": 42,
+        "new_lines": [
+          "    def __enter__(self) -> \"BaseWriter\":\n"
+        ]
+      },
+      {
+        "start": 44,
+        "end": 45,
+        "new_lines": [
+          "    def __exit__(self, exc_type: Optional[type[BaseException]], exc_val: Optional[BaseException], exc_tb: Optional[TracebackType]) -> bool:\n"
+        ]
+      },
+      {
+        "start": 50,
+        "end": 51,
+        "new_lines": [
+          "    def __init__(self, output_path: str, buffer_size: int = 100, pretty: bool = False) -> None:\n"
+        ]
+      },
+      {
+        "start": 58,
+        "end": 59,
+        "new_lines": [
+          "    def flush(self) -> None:\n"
+        ]
+      },
+      {
+        "start": 77,
+        "end": 78,
+        "new_lines": [
+          "    def close(self) -> None:\n"
+        ]
+      },
+      {
+        "start": 85,
+        "end": 86,
+        "new_lines": [
+          "    def __init__(self, output_path: str, buffer_size: int = 100, fieldnames: Optional[list[str]] = None) -> None:\n"
+        ]
+      },
+      {
+        "start": 90,
+        "end": 91,
+        "new_lines": [
+          "    def flush(self) -> None:\n"
+        ]
+      },
+      {
+        "start": 94,
+        "end": 95,
+        "new_lines": [
+          "        rows: list[dict[str, Any]] = []\n"
+        ]
+      },
+      {
+        "start": 117,
+        "end": 118,
+        "new_lines": [
+          "    def flush(self) -> None:\n"
+        ]
+      },
+      {
+        "start": 122,
+        "end": 123,
+        "new_lines": [
+          "def create_writer(format: str, output_path: str, **kwargs: Any) -> BaseWriter:\n"
+        ]
+      },
+      {
+        "start": 124,
+        "end": 125,
+        "new_lines": [
+          "    writers: dict[str, type[BaseWriter]] = {\n"
+        ]
+      },
+      {
+        "start": 135,
+        "end": 136,
+        "new_lines": [
+          "def write_records(records: list[Record | dict[str, Any]], output_path: str, format: str = \"json\", **kwargs: Any) -> BatchResult:\n"
+        ]
+      }
+    ]
+  },
+  {
+    "step": 23,
+    "path": "src/validation.py",
+    "before_sha256": "19145d87c1197f1579cd400c5d8087f6b67ae4b59a38b6ab1590d4c3c3f03da8",
+    "after_sha256": "005e2ab91167246e26aa169a2a492685793e99bd86667790c06746db2729bd95",
+    "operations": [
+      {
+        "start": 4,
+        "end": 4,
+        "new_lines": [
+          "from typing import Any, Callable\n"
+        ]
+      },
+      {
+        "start": 9,
+        "end": 10,
+        "new_lines": [
+          "TYPE_CHECKERS: dict[str, Callable[[Any], bool]] = {\n"
+        ]
+      },
+      {
+        "start": 19,
+        "end": 20,
+        "new_lines": [
+          "def validate(record_data: dict[str, Any], schema: dict[str, Any]) -> tuple[bool, list[str]]:\n"
+        ]
+      },
+      {
+        "start": 31,
+        "end": 32,
+        "new_lines": [
+          "    errors: list[str] = []\n"
+        ]
+      },
+      {
+        "start": 92,
+        "end": 93,
+        "new_lines": [
+          "def validate_batch(records_data: list[dict[str, Any]], schema: dict[str, Any]) -> list[dict[str, Any]]:\n"
+        ]
+      },
+      {
+        "start": 94,
+        "end": 95,
+        "new_lines": [
+          "    results: list[dict[str, Any]] = []\n"
+        ]
+      },
+      {
+        "start": 101,
+        "end": 102,
+        "new_lines": [
+          "def build_schema(field_definitions: list[dict[str, Any]]) -> dict[str, Any]:\n"
+        ]
+      },
+      {
+        "start": 106,
+        "end": 107,
+        "new_lines": [
+          "    schema: dict[str, Any] = {}\n"
+        ]
+      },
+      {
+        "start": 116,
+        "end": 117,
+        "new_lines": [
+          "COMMON_SCHEMAS: dict[str, dict[str, Any]] = {\n"
+        ]
+      },
+      {
+        "start": 131,
+        "end": 132,
+        "new_lines": [
+          "def get_common_schema(name: str) -> dict[str, Any] | None:\n"
+        ]
+      }
+    ]
+  },
+  {
+    "step": 25,
+    "path": "src/transform.py",
+    "before_sha256": "cb33f50211279a3468f2c7e8c249f4147b6775d387f38923abdcd36d49d900f7",
+    "after_sha256": "f6f12943811567f39cdd1b4b5b79841d9e28a5831467539bc7369fac35223d54",
+    "operations": [
+      {
+        "start": 4,
+        "end": 4,
+        "new_lines": [
+          "from typing import Any, Callable\n"
+        ]
+      },
+      {
+        "start": 8,
+        "end": 9,
+        "new_lines": [
+          "_transforms: dict[str, Callable[[dict[str, Any]], dict[str, Any] | None]] = {}\n"
+        ]
+      },
+      {
+        "start": 11,
+        "end": 12,
+        "new_lines": [
+          "def register(name: str, fn: Callable[[dict[str, Any]], dict[str, Any] | None]) -> None:\n"
+        ]
+      },
+      {
+        "start": 16,
+        "end": 17,
+        "new_lines": [
+          "def get_transform(name: str) -> Callable[[dict[str, Any]], dict[str, Any] | None] | None:\n"
+        ]
+      },
+      {
+        "start": 21,
+        "end": 22,
+        "new_lines": [
+          "def apply_transforms(record_data: dict[str, Any], transform_names: list[str]) -> dict[str, Any] | None:\n"
+        ]
+      },
+      {
+        "start": 23,
+        "end": 24,
+        "new_lines": [
+          "    current: dict[str, Any] | None = record_data\n"
+        ]
+      },
+      {
+        "start": 29,
+        "end": 30,
+        "new_lines": [
+          "        result = fn(current) if current is not None else None\n"
+        ]
+      },
+      {
+        "start": 36,
+        "end": 37,
+        "new_lines": [
+          "def compose(*fns: Callable[[dict[str, Any]], dict[str, Any] | None]) -> Callable[[dict[str, Any]], dict[str, Any] | None]:\n"
+        ]
+      },
+      {
+        "start": 38,
+        "end": 40,
+        "new_lines": [
+          "    def composed(data: dict[str, Any]) -> dict[str, Any] | None:\n",
+          "        current: dict[str, Any] | None = data\n"
+        ]
+      },
+      {
+        "start": 50,
+        "end": 51,
+        "new_lines": [
+          "def normalize_keys(data: dict[str, Any]) -> dict[str, Any]:\n"
+        ]
+      },
+      {
+        "start": 52,
+        "end": 53,
+        "new_lines": [
+          "    result: dict[str, Any] = {}\n"
+        ]
+      },
+      {
+        "start": 60,
+        "end": 61,
+        "new_lines": [
+          "def strip_whitespace(data: dict[str, Any]) -> dict[str, Any]:\n"
+        ]
+      },
+      {
+        "start": 62,
+        "end": 63,
+        "new_lines": [
+          "    result: dict[str, Any] = {}\n"
+        ]
+      },
+      {
+        "start": 71,
+        "end": 72,
+        "new_lines": [
+          "def remove_nulls(data: dict[str, Any]) -> dict[str, Any]:\n"
+        ]
+      },
+      {
+        "start": 76,
+        "end": 77,
+        "new_lines": [
+          "def add_computed_fields(data: dict[str, Any]) -> dict[str, Any]:\n"
+        ]
+      },
+      {
+        "start": 89,
+        "end": 90,
+        "new_lines": [
+          "def filter_by_fields(required_fields: list[str]) -> Callable[[dict[str, Any]], dict[str, Any] | None]:\n"
+        ]
+      },
+      {
+        "start": 91,
+        "end": 92,
+        "new_lines": [
+          "    def _filter(data: dict[str, Any]) -> dict[str, Any] | None:\n"
+        ]
+      },
+      {
+        "start": 99,
+        "end": 100,
+        "new_lines": [
+          "def rename_fields(mapping: dict[str, str]) -> Callable[[dict[str, Any]], dict[str, Any]]:\n"
+        ]
+      },
+      {
+        "start": 101,
+        "end": 103,
+        "new_lines": [
+          "    def _rename(data: dict[str, Any]) -> dict[str, Any]:\n",
+          "        result: dict[str, Any] = {}\n"
+        ]
+      },
+      {
+        "start": 110,
+        "end": 111,
+        "new_lines": [
+          "def build_pipeline(config: dict[str, Any]) -> Callable[[dict[str, Any]], dict[str, Any] | None]:\n"
+        ]
+      },
+      {
+        "start": 113,
+        "end": 114,
+        "new_lines": [
+          "    fns: list[Callable[[dict[str, Any]], dict[str, Any] | None]] = []\n"
+        ]
+      }
+    ]
+  },
+  {
+    "step": 27,
+    "path": "src/scheduler.py",
+    "before_sha256": "31cc9593ad4e5656da206c0b6fbecf7fa9d7fbcdaad9f54729d7115fc85486c3",
+    "after_sha256": "abef1d176a395fa940bf5c91bcb8b83aeeabdf615876f48f1e3f48411866c87e",
+    "operations": [
+      {
+        "start": 5,
+        "end": 5,
+        "new_lines": [
+          "from typing import Callable, Any, Optional\n"
+        ]
+      },
+      {
+        "start": 10,
+        "end": 11,
+        "new_lines": [
+          "    def __init__(self, name: str, fn: Callable[..., Any], interval_seconds: float, args: Optional[tuple[Any, ...]] = None, kwargs: Optional[dict[str, Any]] = None) -> None:\n"
+        ]
+      },
+      {
+        "start": 13,
+        "end": 21,
+        "new_lines": [
+          "        self.interval: float = interval_seconds\n",
+          "        self.args: tuple[Any, ...] = args or ()\n",
+          "        self.kwargs: dict[str, Any] = kwargs or {}\n",
+          "        self.last_run: float = 0\n",
+          "        self.run_count: int = 0\n",
+          "        self.error_count: int = 0\n",
+          "        self.last_error: Optional[str] = None\n",
+          "        self.enabled: bool = True\n"
+        ]
+      },
+      {
+        "start": 22,
+        "end": 23,
+        "new_lines": [
+          "    def is_due(self) -> bool:\n"
+        ]
+      },
+      {
+        "start": 25,
+        "end": 26,
+        "new_lines": [
+          "    def execute(self) -> Any:\n"
+        ]
+      },
+      {
+        "start": 37,
+        "end": 38,
+        "new_lines": [
+          "    def status(self) -> dict[str, Any]:\n"
+        ]
+      },
+      {
+        "start": 49,
+        "end": 50,
+        "new_lines": [
+          "_jobs: dict[str, Job] = {}\n"
+        ]
+      },
+      {
+        "start": 52,
+        "end": 53,
+        "new_lines": [
+          "def add_job(name: str, fn: Callable[..., Any], interval_seconds: float, args: Optional[tuple[Any, ...]] = None, kwargs: Optional[dict[str, Any]] = None) -> Job:\n"
+        ]
+      },
+      {
+        "start": 59,
+        "end": 60,
+        "new_lines": [
+          "def remove_job(name: str) -> Optional[Job]:\n"
+        ]
+      },
+      {
+        "start": 64,
+        "end": 65,
+        "new_lines": [
+          "def get_job(name: str) -> Optional[Job]:\n"
+        ]
+      },
+      {
+        "start": 69,
+        "end": 70,
+        "new_lines": [
+          "def list_jobs() -> list[dict[str, Any]]:\n"
+        ]
+      },
+      {
+        "start": 74,
+        "end": 75,
+        "new_lines": [
+          "def run_pending() -> dict[str, Any]:\n"
+        ]
+      },
+      {
+        "start": 76,
+        "end": 77,
+        "new_lines": [
+          "    results: dict[str, Any] = {}\n"
+        ]
+      },
+      {
+        "start": 85,
+        "end": 86,
+        "new_lines": [
+          "def run_loop(check_interval: float = 1.0, max_iterations: Optional[int] = None) -> None:\n"
+        ]
+      },
+      {
+        "start": 96,
+        "end": 97,
+        "new_lines": [
+          "def clear_all() -> None:\n"
+        ]
+      },
+      {
+        "start": 101,
+        "end": 102,
+        "new_lines": [
+          "def disable_job(name: str) -> None:\n"
+        ]
+      },
+      {
+        "start": 108,
+        "end": 109,
+        "new_lines": [
+          "def enable_job(name: str) -> None:\n"
+        ]
+      }
+    ]
+  },
+  {
+    "step": 29,
+    "path": "src/logging_setup.py",
+    "before_sha256": "b8fae4c7a6ba9e73d46dde22370d4c0aa54b38fc1da3356e8a2894dc9f8de738",
+    "after_sha256": "f2cf53bee1654a4e32c2a3cd6fd21efd0f151bc61c1dad9f63a8f1874ef14302",
+    "operations": [
+      {
+        "start": 4,
+        "end": 5,
+        "new_lines": [
+          "from typing import Optional\n"
+        ]
+      },
+      {
+        "start": 9,
+        "end": 10,
+        "new_lines": [
+          "def configure_logging(debug: bool = False, log_file: Optional[str] = None, log_format: Optional[str] = None) -> None:\n"
+        ]
+      },
+      {
+        "start": 27,
+        "end": 28,
+        "new_lines": [
+          "    handlers: list[logging.Handler] = []\n"
+        ]
+      },
+      {
+        "start": 46,
+        "end": 47,
+        "new_lines": [
+          "def get_logger(name: str) -> logging.Logger:\n"
+        ]
+      },
+      {
+        "start": 51,
+        "end": 52,
+        "new_lines": [
+          "def set_level(logger_name: str, level_str: str) -> None:\n"
+        ]
+      },
+      {
+        "start": 54,
+        "end": 55,
+        "new_lines": [
+          "    level_map: dict[str, int] = {\n"
+        ]
+      },
+      {
+        "start": 66,
+        "end": 67,
+        "new_lines": [
+          "def quiet_noisy_loggers() -> None:\n"
+        ]
+      }
+    ]
+  },
+  {
+    "step": 31,
+    "path": "src/db_source.py",
+    "before_sha256": "7b75c49fab92df14d0ef68f401eff58f628ba808949b98888297dad6f680618c",
+    "after_sha256": "29cc77ae66a2848ee90b3bfa4a48f90c37d8fb87c97310c40676c4455892095a",
+    "operations": [
+      {
+        "start": 3,
+        "end": 3,
+        "new_lines": [
+          "from typing import Any, Optional, Iterator\n"
+        ]
+      },
+      {
+        "start": 11,
+        "end": 12,
+        "new_lines": [
+          "COLUMN_TRANSFORMS: dict[str, Callable[[Any], Any]] = {\n"
+        ]
+      },
+      {
+        "start": 20,
+        "end": 21,
+        "new_lines": [
+          "def read_table(table_name: str, columns: Optional[list[str]] = None, where: Optional[dict[str, Any]] = None, limit: Optional[int] = None) -> list[Record]:\n"
+        ]
+      },
+      {
+        "start": 25,
+        "end": 26,
+        "new_lines": [
+          "    params: list[Any] = []\n"
+        ]
+      },
+      {
+        "start": 36,
+        "end": 37,
+        "new_lines": [
+          "    rows = db.execute_query(query, tuple(params) if params else None)\n",
+          "    if isinstance(rows, int):\n",
+          "        return []\n"
+        ]
+      },
+      {
+        "start": 40,
+        "end": 41,
+        "new_lines": [
+          "def _row_to_record(row: dict[str, Any], table_name: str) -> Record:\n"
+        ]
+      },
+      {
+        "start": 42,
+        "end": 43,
+        "new_lines": [
+          "    transformed: dict[str, Any] = {}\n"
+        ]
+      },
+      {
+        "start": 54,
+        "end": 55,
+        "new_lines": [
+          "def read_batched(table_name: str, batch_size: int = 500, order_by: str = \"id\") -> Iterator[list[Record]]:\n"
+        ]
+      },
+      {
+        "start": 60,
+        "end": 61,
+        "new_lines": [
+          "        if isinstance(rows, int) or not rows:\n"
+        ]
+      },
+      {
+        "start": 66,
+        "end": 67,
+        "new_lines": [
+          "def ingest_from_tables(config: dict[str, Any]) -> BatchResult:\n"
+        ]
+      },
+      {
+        "start": 68,
+        "end": 69,
+        "new_lines": [
+          "    tables: list[dict[str, Any]] = config.get(\"tables\", [])\n"
+        ]
+      },
+      {
+        "start": 88,
+        "end": 89,
+        "new_lines": [
+          "def get_table_row_count(table_name: str) -> int:\n"
+        ]
+      },
+      {
+        "start": 91,
+        "end": 91,
+        "new_lines": [
+          "    if isinstance(rows, int):\n",
+          "        return rows\n"
+        ]
+      },
+      {
+        "start": 94,
+        "end": 95,
+        "new_lines": [
+          "def get_tables_summary(table_names: list[str]) -> dict[str, int]:\n"
+        ]
+      },
+      {
+        "start": 96,
+        "end": 97,
+        "new_lines": [
+          "    summary: dict[str, int] = {}\n"
+        ]
+      },
+      {
+        "start": 103,
+        "end": 103,
+        "new_lines": [
+          "\n",
+          "\n",
+          "# Import Callable for type annotations\n",
+          "from typing import Callable\n"
+        ]
+      }
+    ]
+  },
+  {
+    "step": 32,
+    "path": "src/db_source.py",
+    "before_sha256": "29cc77ae66a2848ee90b3bfa4a48f90c37d8fb87c97310c40676c4455892095a",
+    "after_sha256": "1d19e8b65dc25d3f64ce245bf5193e35ef547a37af7eaa60be12f7d443254b1d",
+    "operations": [
+      {
+        "start": 3,
+        "end": 4,
+        "new_lines": [
+          "from typing import Any, Optional, Iterator, Callable\n"
+        ]
+      },
+      {
+        "start": 108,
+        "end": 112,
+        "new_lines": []
+      }
+    ]
+  },
+  {
+    "step": 34,
+    "path": "src/config.py",
+    "before_sha256": "907131aa0413ccdadf4f2c2a10ac09cface471663d1fb3fb58ce6e6047399203",
+    "after_sha256": "df5e78f5b5970d034cd6209e07915ad0510d1ab79365248751fa0a13ef2beb53",
+    "operations": [
+      {
+        "start": 3,
+        "end": 3,
+        "new_lines": [
+          "from typing import Any, Optional\n"
+        ]
+      },
+      {
+        "start": 6,
+        "end": 8,
+        "new_lines": [
+          "_config: Optional[dict[str, Any]] = None\n"
+        ]
+      },
+      {
+        "start": 10,
+        "end": 11,
+        "new_lines": [
+          "def load_config(path: Optional[str] = None) -> dict[str, Any]:\n"
+        ]
+      },
+      {
+        "start": 18,
+        "end": 19,
+        "new_lines": [
+          "        data: dict[str, Any] = yaml.safe_load(f) or {}\n"
+        ]
+      },
+      {
+        "start": 31,
+        "end": 32,
+        "new_lines": [
+          "def get_config() -> dict[str, Any]:\n"
+        ]
+      },
+      {
+        "start": 38,
+        "end": 39,
+        "new_lines": [
+          "def get_nested(data: dict[str, Any], key_path: str, default: Any = None) -> Any:\n"
+        ]
+      },
+      {
+        "start": 44,
+        "end": 45,
+        "new_lines": [
+          "    current: Any = data\n"
+        ]
+      },
+      {
+        "start": 54,
+        "end": 55,
+        "new_lines": [
+          "def merge_configs(*configs: dict[str, Any]) -> dict[str, Any]:\n"
+        ]
+      },
+      {
+        "start": 56,
+        "end": 57,
+        "new_lines": [
+          "    result: dict[str, Any] = {}\n"
+        ]
+      }
+    ]
+  },
+  {
+    "step": 36,
+    "path": "src/api_source.py",
+    "before_sha256": "e1166f5afdc7d9c66352c78dab65575bbba37b0ede4013627df4863a229f355a",
+    "after_sha256": "fb71179f339841f2fb24a6a906c124a1f03807ff313b77ee4361859721d34ef2",
+    "operations": [
+      {
+        "start": 4,
+        "end": 4,
+        "new_lines": [
+          "from typing import Optional, Callable, Any\n"
+        ]
+      },
+      {
+        "start": 12,
+        "end": 13,
+        "new_lines": [
+          "def fetch_page(base_url: str, endpoint: str, params: Optional[dict[str, Any]] = None, headers: Optional[dict[str, str]] = None, timeout: int = 30) -> dict[str, Any]:\n"
+        ]
+      },
+      {
+        "start": 20,
+        "end": 21,
+        "new_lines": [
+          "def fetch_all_pages(base_url: str, endpoint: str, page_key: str = \"page\", data_key: str = \"results\", max_pages: int = 100) -> list[Record]:\n"
+        ]
+      },
+      {
+        "start": 22,
+        "end": 23,
+        "new_lines": [
+          "    all_records: list[Record] = []\n"
+        ]
+      },
+      {
+        "start": 43,
+        "end": 44,
+        "new_lines": [
+          "def poll_endpoint(base_url: str, endpoint: str, interval: int = 60, callback: Optional[Callable[[list[Record]], None]] = None, max_errors: int = 5) -> None:\n"
+        ]
+      },
+      {
+        "start": 66,
+        "end": 67,
+        "new_lines": [
+          "def build_auth_headers(api_key: Optional[str] = None, bearer_token: Optional[str] = None) -> dict[str, str]:\n"
+        ]
+      },
+      {
+        "start": 76,
+        "end": 77,
+        "new_lines": [
+          "def ingest_from_api(config: dict[str, Any]) -> BatchResult:\n"
+        ]
+      },
+      {
+        "start": 79,
+        "end": 80,
+        "new_lines": [
+          "    endpoints: list[str] = config.get(\"endpoints\", [])\n"
+        ]
+      }
+    ]
+  },
+  {
+    "step": 38,
+    "path": "src/cli.py",
+    "before_sha256": "3f1542a225d740953760e48e55454e7a4b70b18852519767179442b239d47b9f",
+    "after_sha256": "e469966e66d3e46fea58e98eee21f460503ed9d5dfe9d85d6cb6c8815ccff182",
+    "operations": [
+      {
+        "start": 6,
+        "end": 6,
+        "new_lines": [
+          "from typing import Optional, Any\n"
+        ]
+      },
+      {
+        "start": 16,
+        "end": 16,
+        "new_lines": [
+          "from .models import Record\n"
+        ]
+      },
+      {
+        "start": 18,
+        "end": 19,
+        "new_lines": [
+          "def parse_args(argv: Optional[list[str]] = None) -> argparse.Namespace:\n"
+        ]
+      },
+      {
+        "start": 49,
+        "end": 50,
+        "new_lines": [
+          "def cmd_ingest(args: argparse.Namespace, cfg: dict[str, Any]) -> int:\n"
+        ]
+      },
+      {
+        "start": 52,
+        "end": 52,
+        "new_lines": [
+          "    records: list[Record] = []\n"
+        ]
+      },
+      {
+        "start": 79,
+        "end": 80,
+        "new_lines": [
+          "        valid_records: list[Record] = []\n"
+        ]
+      },
+      {
+        "start": 91,
+        "end": 92,
+        "new_lines": [
+          "        transformed: list[Record] = []\n"
+        ]
+      },
+      {
+        "start": 101,
+        "end": 101,
+        "new_lines": [
+          "    from .models import BatchResult\n"
+        ]
+      },
+      {
+        "start": 112,
+        "end": 113,
+        "new_lines": [
+          "def cmd_daemon(args: argparse.Namespace, cfg: dict[str, Any]) -> int:\n"
+        ]
+      },
+      {
+        "start": 114,
+        "end": 115,
+        "new_lines": [
+          "    sources: dict[str, Any] = cfg.get(\"sources\", {})\n"
+        ]
+      },
+      {
+        "start": 129,
+        "end": 130,
+        "new_lines": [
+          "def cmd_status(args: argparse.Namespace, cfg: dict[str, Any]) -> int:\n"
+        ]
+      },
+      {
+        "start": 142,
+        "end": 143,
+        "new_lines": [
+          "def cmd_validate(args: argparse.Namespace, cfg: dict[str, Any]) -> int:\n"
+        ]
+      },
+      {
+        "start": 166,
+        "end": 167,
+        "new_lines": [
+          "def main(argv: Optional[list[str]] = None) -> int:\n"
+        ]
+      },
+      {
+        "start": 172,
+        "end": 173,
+        "new_lines": [
+          "    commands: dict[str, Callable[[argparse.Namespace, dict[str, Any]], int]] = {\n"
+        ]
+      }
+    ]
+  },
+  {
+    "step": 39,
+    "path": "src/cli.py",
+    "before_sha256": "e469966e66d3e46fea58e98eee21f460503ed9d5dfe9d85d6cb6c8815ccff182",
+    "after_sha256": "6b734a8eb3a8d54eed4c3b35c87f2f475d0ddb25bb6d51c856ab85974e371394",
+    "operations": [
+      {
+        "start": 6,
+        "end": 7,
+        "new_lines": [
+          "from typing import Optional, Any, Callable\n"
+        ]
+      }
+    ]
+  }
+]

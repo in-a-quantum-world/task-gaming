@@ -1,0 +1,12 @@
+{
+  "actual_candidate_unified_diffs_round_trip": 16,
+  "all_same_step_observations_exact": true,
+  "initial_messages_and_terminal_pair_exact": true,
+  "visible_reasoning_blocks_exact": 43,
+  "transcript_read_only": true,
+  "all_artifact_hashes_valid": true,
+  "matrix_covers_inventory": 820,
+  "model_calls": 0,
+  "continuations": 0,
+  "validator": "validate_candidate.py"
+}

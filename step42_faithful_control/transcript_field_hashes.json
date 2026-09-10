@@ -1,0 +1,972 @@
+[
+  {
+    "message": 0,
+    "step": null,
+    "field": "content",
+    "sha256": "bf6c2dd0644ad3722ffc7f951690177f929c96279d79dd44d7373d210d0b1cb1",
+    "characters": 232,
+    "bytes": 232
+  },
+  {
+    "message": 1,
+    "step": null,
+    "field": "content",
+    "sha256": "58e1c9810401db646fb0943c6c6004e61ee11ef73078b04b9c38b17ae915621c",
+    "characters": 660,
+    "bytes": 662
+  },
+  {
+    "message": 2,
+    "step": 0,
+    "field": "reasoning",
+    "sha256": "196ed19127286051588c5582cb1f39c00c8c4df2cbdaa47b388f122e1a5930dd",
+    "characters": 344,
+    "bytes": 344
+  },
+  {
+    "message": 2,
+    "step": 0,
+    "field": "tool_calls",
+    "sha256": "4c3df354ac55e44cfe351f0472dc3128bf1c0eb1c1331d60f0302a87798677d2"
+  },
+  {
+    "message": 3,
+    "step": 0,
+    "field": "content",
+    "sha256": "9c7f4e9c4cbdd6e30f2ebc5acccd6e7629f5e45d3f7ff4e1f4b4eade7ec457ea",
+    "characters": 264,
+    "bytes": 264
+  },
+  {
+    "message": 4,
+    "step": 1,
+    "field": "reasoning",
+    "sha256": "eba32e36b333196644ab20dca0d6bed10d18e2541068ad79962cc14ff9f4e04f",
+    "characters": 98,
+    "bytes": 98
+  },
+  {
+    "message": 4,
+    "step": 1,
+    "field": "tool_calls",
+    "sha256": "478d7bb0ee4ebf37bf57d5d4dde9b36c46a2b831216b5ea5abd06b08295a7a71"
+  },
+  {
+    "message": 5,
+    "step": 1,
+    "field": "content",
+    "sha256": "148fa4a62de30060c9230babd292b37b743a4d9909d27137a6e644e4099749c9",
+    "characters": 500,
+    "bytes": 500
+  },
+  {
+    "message": 6,
+    "step": 2,
+    "field": "reasoning",
+    "sha256": "bbfc2f2e7a792e3bca42224f30eae52be0f27f58bed2cb6000aa529f3adbf9b1",
+    "characters": 121,
+    "bytes": 121
+  },
+  {
+    "message": 6,
+    "step": 2,
+    "field": "tool_calls",
+    "sha256": "676768e734ca07d1c63216634b4d21868377eec51cbd4f481bf1c4931edaa738"
+  },
+  {
+    "message": 7,
+    "step": 2,
+    "field": "content",
+    "sha256": "be00c8ea74b6cbad4f1d8545992047fddaee3a170868b16806a2e0de7253e921",
+    "characters": 871,
+    "bytes": 871
+  },
+  {
+    "message": 8,
+    "step": 3,
+    "field": "reasoning",
+    "sha256": "451bc1030944560de6fbcef570602ae209115c1909f2bb01ff67b04a6c9a8936",
+    "characters": 89,
+    "bytes": 89
+  },
+  {
+    "message": 8,
+    "step": 3,
+    "field": "tool_calls",
+    "sha256": "fba9322fae06669f51b48d5b2ba54407b68311211e838623e32c31ce1051eb92"
+  },
+  {
+    "message": 9,
+    "step": 3,
+    "field": "content",
+    "sha256": "80a0db7b5f24901a1bf4e796873b046e560854a722cb9e7be9ef6560a5765bb1",
+    "characters": 951,
+    "bytes": 951
+  },
+  {
+    "message": 10,
+    "step": 4,
+    "field": "reasoning",
+    "sha256": "ec9d907ea657579169c677e5770c1bcd434dac2c188ae75e49ed2080b3b19562",
+    "characters": 98,
+    "bytes": 98
+  },
+  {
+    "message": 10,
+    "step": 4,
+    "field": "tool_calls",
+    "sha256": "452f1cbe9f2af3b601b1d1cb24ca8775d481fd73124e19b8c87ee947b675908a"
+  },
+  {
+    "message": 11,
+    "step": 4,
+    "field": "content",
+    "sha256": "84a39e9d39cafcd65e38a5b69e952c1dc692a761c87e24a6b6b476413dc39bdc",
+    "characters": 41,
+    "bytes": 41
+  },
+  {
+    "message": 12,
+    "step": 5,
+    "field": "reasoning",
+    "sha256": "a5abad9d5a9c8fbe72ae70ef0ee9508c19b9c4b75ac83676b8c67e75423d75f9",
+    "characters": 226,
+    "bytes": 226
+  },
+  {
+    "message": 12,
+    "step": 5,
+    "field": "tool_calls",
+    "sha256": "ee9c0cf8e18378637aea047dbda395a499caa865bc15eb1d6edb83c0a59b9d7b"
+  },
+  {
+    "message": 13,
+    "step": 5,
+    "field": "content",
+    "sha256": "db2a193cc01e2fc534dc4a231b8209d891bfbdc6b3284871eaf2048cb81a4b8e",
+    "characters": 21,
+    "bytes": 21
+  },
+  {
+    "message": 14,
+    "step": 6,
+    "field": "reasoning",
+    "sha256": "e2d25a3664a0a71179db1a71ab76e5c22437e99c291b4e0433c94edc0b814329",
+    "characters": 50,
+    "bytes": 50
+  },
+  {
+    "message": 14,
+    "step": 6,
+    "field": "tool_calls",
+    "sha256": "cf6a21114e39d6dc45829a4b5072e9ab722ced83911da81e212c3e6de6a316b2"
+  },
+  {
+    "message": 15,
+    "step": 6,
+    "field": "content",
+    "sha256": "db2a193cc01e2fc534dc4a231b8209d891bfbdc6b3284871eaf2048cb81a4b8e",
+    "characters": 21,
+    "bytes": 21
+  },
+  {
+    "message": 16,
+    "step": 7,
+    "field": "reasoning",
+    "sha256": "9b4ed5fc8bc5ba41a60b880102517346aae3d5bf50489506efc852133af126fa",
+    "characters": 43,
+    "bytes": 43
+  },
+  {
+    "message": 16,
+    "step": 7,
+    "field": "tool_calls",
+    "sha256": "ec9ee9fede99332678e23b594b8f25fb1846beadbb24274ba07b80a36119763f"
+  },
+  {
+    "message": 17,
+    "step": 7,
+    "field": "content",
+    "sha256": "db2a193cc01e2fc534dc4a231b8209d891bfbdc6b3284871eaf2048cb81a4b8e",
+    "characters": 21,
+    "bytes": 21
+  },
+  {
+    "message": 18,
+    "step": 8,
+    "field": "reasoning",
+    "sha256": "ed967e0eeb93d3178d667edadb6fdab8d52a62a4cc2e28d78018316a01841a79",
+    "characters": 93,
+    "bytes": 93
+  },
+  {
+    "message": 18,
+    "step": 8,
+    "field": "tool_calls",
+    "sha256": "2db930c10dd3435d83989262ede792ec0405671ebd07e517ed206de418981d77"
+  },
+  {
+    "message": 19,
+    "step": 8,
+    "field": "content",
+    "sha256": "eb0d2ba400ff8d5d5eb0db6d7deb0f3b3b9a988b47ee80f899967c183bda9147",
+    "characters": 132,
+    "bytes": 132
+  },
+  {
+    "message": 20,
+    "step": 9,
+    "field": "reasoning",
+    "sha256": "a86a0b6f8831807877da26ef71fa3b4cb346886b15d14ce163c9959da8bd0856",
+    "characters": 72,
+    "bytes": 72
+  },
+  {
+    "message": 20,
+    "step": 9,
+    "field": "tool_calls",
+    "sha256": "846d0bc41c8448d21556f2c471297ffac1aa530d480e804de64021b4fd5a29dc"
+  },
+  {
+    "message": 21,
+    "step": 9,
+    "field": "content",
+    "sha256": "374de7a016ddeba90ae1b70d7986fc6ed7ded87cc3ba4e6b4ee875c0a098b96f",
+    "characters": 24956,
+    "bytes": 24956
+  },
+  {
+    "message": 22,
+    "step": 10,
+    "field": "reasoning",
+    "sha256": "6ade17acdcd93e461ede9a26fc5c793fc9e897aa879cd4c7211b60c699b5b3c0",
+    "characters": 2927,
+    "bytes": 2931
+  },
+  {
+    "message": 22,
+    "step": 10,
+    "field": "content",
+    "sha256": "e69fa9766b5bc11c3de7f2a3ace12ffb42a110cd08811274a34f5ccd1d6c260d",
+    "characters": 247,
+    "bytes": 247
+  },
+  {
+    "message": 22,
+    "step": 10,
+    "field": "tool_calls",
+    "sha256": "87ea24e9e13b8b9d294e8adc53b7cb7359019e570e6f069e8bab5a3032c123fd"
+  },
+  {
+    "message": 23,
+    "step": 10,
+    "field": "content",
+    "sha256": "17096c0d17230bb5c641f2148977fea4595c7d6920d14653630883c51494d777",
+    "characters": 2689,
+    "bytes": 2689
+  },
+  {
+    "message": 24,
+    "step": 11,
+    "field": "reasoning",
+    "sha256": "4f4f313db527ebca9058ec55466466a7e454b2d2b37f6b39ae42b5d95568a10f",
+    "characters": 291,
+    "bytes": 291
+  },
+  {
+    "message": 24,
+    "step": 11,
+    "field": "tool_calls",
+    "sha256": "54c6ff9cfe1919d7430a2f96c38c288adc04f7e128e09331c84207b97250e1c0"
+  },
+  {
+    "message": 25,
+    "step": 11,
+    "field": "content",
+    "sha256": "db2a193cc01e2fc534dc4a231b8209d891bfbdc6b3284871eaf2048cb81a4b8e",
+    "characters": 21,
+    "bytes": 21
+  },
+  {
+    "message": 26,
+    "step": 12,
+    "field": "reasoning",
+    "sha256": "c2abadcc61ecda2e01ce06843ffde6162c3e14506e5525e0d0bde1523f99f34c",
+    "characters": 65,
+    "bytes": 65
+  },
+  {
+    "message": 26,
+    "step": 12,
+    "field": "tool_calls",
+    "sha256": "3d0bdb689522f781fa435f7092fac49c2cd13c8a6f0fac30b1cd949e29503e30"
+  },
+  {
+    "message": 27,
+    "step": 12,
+    "field": "content",
+    "sha256": "c8540f1e6ae89435c081e3dd8050fd07b1eb301ab34d4a8eeb7be77486836af3",
+    "characters": 4022,
+    "bytes": 4022
+  },
+  {
+    "message": 28,
+    "step": 13,
+    "field": "reasoning",
+    "sha256": "ceea2503bb7f8e202c62edc6e9cfbe40593c303211f5b3ff68fe45f41e3d731d",
+    "characters": 44,
+    "bytes": 44
+  },
+  {
+    "message": 28,
+    "step": 13,
+    "field": "tool_calls",
+    "sha256": "d515cd3ef770fcdeba6d18145a18661281209c215bcfca23b77ec7f58867b1cf"
+  },
+  {
+    "message": 29,
+    "step": 13,
+    "field": "content",
+    "sha256": "db2a193cc01e2fc534dc4a231b8209d891bfbdc6b3284871eaf2048cb81a4b8e",
+    "characters": 21,
+    "bytes": 21
+  },
+  {
+    "message": 30,
+    "step": 14,
+    "field": "reasoning",
+    "sha256": "2ff0c66175b033961cb53598861f7f47bf6fda7d7e29411b57ab14cbb22f1660",
+    "characters": 34,
+    "bytes": 34
+  },
+  {
+    "message": 30,
+    "step": 14,
+    "field": "tool_calls",
+    "sha256": "3e3c59ce4c9583d472c410006d7513e9733915cec368bcc7668d3b0036f3e7ee"
+  },
+  {
+    "message": 31,
+    "step": 14,
+    "field": "content",
+    "sha256": "cbb1017848de2a74ba5dd354ee2908d1d065cf24902b82e714ad51772d8ccd90",
+    "characters": 2278,
+    "bytes": 2278
+  },
+  {
+    "message": 32,
+    "step": 15,
+    "field": "reasoning",
+    "sha256": "b7a312aa76281cc1cd16ffe18f261348b155cf7dea709494c24dcc1cfcfafa03",
+    "characters": 46,
+    "bytes": 46
+  },
+  {
+    "message": 32,
+    "step": 15,
+    "field": "tool_calls",
+    "sha256": "1661ce51583bf8c42bbcc4f9333ea3a25e742d2773dc629d9c895b800e92cd32"
+  },
+  {
+    "message": 33,
+    "step": 15,
+    "field": "content",
+    "sha256": "db2a193cc01e2fc534dc4a231b8209d891bfbdc6b3284871eaf2048cb81a4b8e",
+    "characters": 21,
+    "bytes": 21
+  },
+  {
+    "message": 34,
+    "step": 16,
+    "field": "reasoning",
+    "sha256": "c5c10ed52a99de2dbf959440db4ee33c1be2b2db8464d13cc843019a720220cb",
+    "characters": 63,
+    "bytes": 63
+  },
+  {
+    "message": 34,
+    "step": 16,
+    "field": "tool_calls",
+    "sha256": "e88368494694e3811794db3ccb5a8a586a5454d2203eae693e582d0ba8a395b8"
+  },
+  {
+    "message": 35,
+    "step": 16,
+    "field": "content",
+    "sha256": "d811feecff0b1c1efd3923063110a82439d61ff2e794965a204f0dfe2a3cecdf",
+    "characters": 2868,
+    "bytes": 2868
+  },
+  {
+    "message": 36,
+    "step": 17,
+    "field": "reasoning",
+    "sha256": "015a0dd58a89f9dc6f129d22d45f3b93221b46d288d35dc5045ce89d55c945f7",
+    "characters": 25,
+    "bytes": 25
+  },
+  {
+    "message": 36,
+    "step": 17,
+    "field": "tool_calls",
+    "sha256": "cae7201279b2f520e956f11e3fc47b22825115fa1b8e93ccb1c29ee6af5adf0f"
+  },
+  {
+    "message": 37,
+    "step": 17,
+    "field": "content",
+    "sha256": "db2a193cc01e2fc534dc4a231b8209d891bfbdc6b3284871eaf2048cb81a4b8e",
+    "characters": 21,
+    "bytes": 21
+  },
+  {
+    "message": 38,
+    "step": 18,
+    "field": "reasoning",
+    "sha256": "516b9f52ca8c7b7e29e5a5a0e14c1362a66552fc2ea829d9ba7d7ca89e4b5328",
+    "characters": 31,
+    "bytes": 31
+  },
+  {
+    "message": 38,
+    "step": 18,
+    "field": "tool_calls",
+    "sha256": "6ee9f201659ae8fc003adf0dae80810e17a7a2ff04e7ba06114a5ea8ab969190"
+  },
+  {
+    "message": 39,
+    "step": 18,
+    "field": "content",
+    "sha256": "760b5878cdc976521c9b2fbc8e8f6134ec1cde1d56761a9b5ad4da439548b4d5",
+    "characters": 2941,
+    "bytes": 2941
+  },
+  {
+    "message": 40,
+    "step": 19,
+    "field": "reasoning",
+    "sha256": "a81d3dd13d912c0e4fb8d0503026e509545fc3e0cc4f82ebc7eb4d2618e30c43",
+    "characters": 17,
+    "bytes": 17
+  },
+  {
+    "message": 40,
+    "step": 19,
+    "field": "tool_calls",
+    "sha256": "4032696d4c74e96bc6731e5fe36500635723ac1ccae2dbbd3e00534d0bc3dde8"
+  },
+  {
+    "message": 41,
+    "step": 19,
+    "field": "content",
+    "sha256": "db2a193cc01e2fc534dc4a231b8209d891bfbdc6b3284871eaf2048cb81a4b8e",
+    "characters": 21,
+    "bytes": 21
+  },
+  {
+    "message": 42,
+    "step": 20,
+    "field": "reasoning",
+    "sha256": "fd4cf82b31fc36a9cf3c9b941fa6364dd5b650e3aa85c18bb5799057036a5a3f",
+    "characters": 27,
+    "bytes": 27
+  },
+  {
+    "message": 42,
+    "step": 20,
+    "field": "tool_calls",
+    "sha256": "50e23bbb87f59efa78730954e51255ca6df255f5ebffda57806abdec9271c70d"
+  },
+  {
+    "message": 43,
+    "step": 20,
+    "field": "content",
+    "sha256": "af7f54c7a7d09d05dc2668280abf488f44189e8ef11f1721632ecb35f671c49b",
+    "characters": 4377,
+    "bytes": 4377
+  },
+  {
+    "message": 44,
+    "step": 21,
+    "field": "reasoning",
+    "sha256": "45c5c2cc165f6b33744ef8e105f61f4fbaff7262264a76268b92b46c2c36ed37",
+    "characters": 21,
+    "bytes": 21
+  },
+  {
+    "message": 44,
+    "step": 21,
+    "field": "tool_calls",
+    "sha256": "1520b92878e340202d02028edd5c4d3ef57863b86b3da3545cf03a9fd4c95ffc"
+  },
+  {
+    "message": 45,
+    "step": 21,
+    "field": "content",
+    "sha256": "db2a193cc01e2fc534dc4a231b8209d891bfbdc6b3284871eaf2048cb81a4b8e",
+    "characters": 21,
+    "bytes": 21
+  },
+  {
+    "message": 46,
+    "step": 22,
+    "field": "reasoning",
+    "sha256": "94008392d6a0fe209c9832dd7a417ae5e69283de1d0d34876c27b6e7e747b84b",
+    "characters": 31,
+    "bytes": 31
+  },
+  {
+    "message": 46,
+    "step": 22,
+    "field": "tool_calls",
+    "sha256": "de4185f5b46279035bb9426bd20cdcaa68dcf0ddd02978c9c684cd6135b6a862"
+  },
+  {
+    "message": 47,
+    "step": 22,
+    "field": "content",
+    "sha256": "83dd18d47df54f20095b772eafc4f5cb28957a38bb897655a4e87d3f3c801068",
+    "characters": 4706,
+    "bytes": 4706
+  },
+  {
+    "message": 48,
+    "step": 23,
+    "field": "reasoning",
+    "sha256": "88245877d10f85d4ac51e9e99c517f615adea134a311ab52ea6ee5632e8b6418",
+    "characters": 25,
+    "bytes": 25
+  },
+  {
+    "message": 48,
+    "step": 23,
+    "field": "tool_calls",
+    "sha256": "7fecd59d74400b1bab12b1dd8916e70cd9bcc0a4ded3343abbb9fde7bf663919"
+  },
+  {
+    "message": 49,
+    "step": 23,
+    "field": "content",
+    "sha256": "db2a193cc01e2fc534dc4a231b8209d891bfbdc6b3284871eaf2048cb81a4b8e",
+    "characters": 21,
+    "bytes": 21
+  },
+  {
+    "message": 50,
+    "step": 24,
+    "field": "reasoning",
+    "sha256": "5aa239e944666033c6a3845e1cd4d239728ff289d0cfd334f05eb35f509f2a39",
+    "characters": 30,
+    "bytes": 30
+  },
+  {
+    "message": 50,
+    "step": 24,
+    "field": "tool_calls",
+    "sha256": "dde532f4e4ced6384082fad34124ea045a2ff72a7e2bd0832e34f0d297d8c834"
+  },
+  {
+    "message": 51,
+    "step": 24,
+    "field": "content",
+    "sha256": "be561ef9d3da52f17b8ef28f0c3e0aced77c61ff355d594ca21a1cdbe743b59b",
+    "characters": 3626,
+    "bytes": 3626
+  },
+  {
+    "message": 52,
+    "step": 25,
+    "field": "reasoning",
+    "sha256": "5d9f0c93e129872c9d8ed8f57dabaa6bfdaafc666ed7e250a42b92ce54afbdf2",
+    "characters": 24,
+    "bytes": 24
+  },
+  {
+    "message": 52,
+    "step": 25,
+    "field": "tool_calls",
+    "sha256": "82865794bfaea3b1c406f32997f700df9de467ffefe3365c4382d411e235ca72"
+  },
+  {
+    "message": 53,
+    "step": 25,
+    "field": "content",
+    "sha256": "db2a193cc01e2fc534dc4a231b8209d891bfbdc6b3284871eaf2048cb81a4b8e",
+    "characters": 21,
+    "bytes": 21
+  },
+  {
+    "message": 54,
+    "step": 26,
+    "field": "reasoning",
+    "sha256": "74101e4398a69030118ca5f7088f81379a7d4ff1735463a105c1ab629baf5c53",
+    "characters": 38,
+    "bytes": 38
+  },
+  {
+    "message": 54,
+    "step": 26,
+    "field": "tool_calls",
+    "sha256": "7f802ccc85e16970fefa94c2977368f28717d913412b1d52ecda6db8ab9366ac"
+  },
+  {
+    "message": 55,
+    "step": 26,
+    "field": "content",
+    "sha256": "dbfca5976847c76300fc49773848ce01997d46688be72f80b036d09fa90190a4",
+    "characters": 2901,
+    "bytes": 2901
+  },
+  {
+    "message": 56,
+    "step": 27,
+    "field": "reasoning",
+    "sha256": "985172bebae2af51ed12ae5e1c6292829439e9dbdfb2896881d6493655a9f8a2",
+    "characters": 24,
+    "bytes": 24
+  },
+  {
+    "message": 56,
+    "step": 27,
+    "field": "tool_calls",
+    "sha256": "1ae260abcb06c8d099472a0ecd4c2f3c09e6cbe0f614c802dbfda4d34361bd66"
+  },
+  {
+    "message": 57,
+    "step": 27,
+    "field": "content",
+    "sha256": "db2a193cc01e2fc534dc4a231b8209d891bfbdc6b3284871eaf2048cb81a4b8e",
+    "characters": 21,
+    "bytes": 21
+  },
+  {
+    "message": 58,
+    "step": 28,
+    "field": "reasoning",
+    "sha256": "35ef8bb3d6f0229d9ae500706946cce8742c2ad68e61e9fe85c9f50aaee67a99",
+    "characters": 42,
+    "bytes": 42
+  },
+  {
+    "message": 58,
+    "step": 28,
+    "field": "tool_calls",
+    "sha256": "43624df6b903b63b44cf415c22a2edac4c327734e3f6bb39646e15ca59531c23"
+  },
+  {
+    "message": 59,
+    "step": 28,
+    "field": "content",
+    "sha256": "0cd94aaf6dc7a979b11965c44de107ae67981d1457e444d6ea995c39219d7a59",
+    "characters": 1876,
+    "bytes": 1876
+  },
+  {
+    "message": 60,
+    "step": 29,
+    "field": "reasoning",
+    "sha256": "37b78a58abfb7c3abc23584a77b73a9b7521480d82316be4833446a2d0cdd328",
+    "characters": 121,
+    "bytes": 121
+  },
+  {
+    "message": 60,
+    "step": 29,
+    "field": "tool_calls",
+    "sha256": "3a69d3a92e545ece9075aafd96b7138118307b609535db54153141df8f65a849"
+  },
+  {
+    "message": 61,
+    "step": 29,
+    "field": "content",
+    "sha256": "db2a193cc01e2fc534dc4a231b8209d891bfbdc6b3284871eaf2048cb81a4b8e",
+    "characters": 21,
+    "bytes": 21
+  },
+  {
+    "message": 62,
+    "step": 30,
+    "field": "reasoning",
+    "sha256": "efc56ba9ff46b10d1eb9f03db971f2938dc31021885e66e16f12f8e1e12a464c",
+    "characters": 38,
+    "bytes": 38
+  },
+  {
+    "message": 62,
+    "step": 30,
+    "field": "tool_calls",
+    "sha256": "cbe948bb5a84744f16ea2a0f1b9e2993d31752022145f2ccf0a74b242254f6b0"
+  },
+  {
+    "message": 63,
+    "step": 30,
+    "field": "content",
+    "sha256": "32f97f1161dadb86c60a05c13fe6acde1831cc67d0f78cbd931a1c3822ffc86c",
+    "characters": 3300,
+    "bytes": 3300
+  },
+  {
+    "message": 64,
+    "step": 31,
+    "field": "reasoning",
+    "sha256": "e546c30d0e5f83ee5bca34e778bc038ed15c3f1bff6f421997c5b550fcbdafdb",
+    "characters": 92,
+    "bytes": 92
+  },
+  {
+    "message": 64,
+    "step": 31,
+    "field": "tool_calls",
+    "sha256": "63e1a53a32da7041662c73e9bed8d194ba4a046b57105bf96863c61ef0656c12"
+  },
+  {
+    "message": 65,
+    "step": 31,
+    "field": "content",
+    "sha256": "db2a193cc01e2fc534dc4a231b8209d891bfbdc6b3284871eaf2048cb81a4b8e",
+    "characters": 21,
+    "bytes": 21
+  },
+  {
+    "message": 66,
+    "step": 32,
+    "field": "reasoning",
+    "sha256": "5f679104245403fafdb62ed223f3b315935b34c7600ac723a46f56caf39b5708",
+    "characters": 80,
+    "bytes": 80
+  },
+  {
+    "message": 66,
+    "step": 32,
+    "field": "tool_calls",
+    "sha256": "2621772ca585cc9c901c8c5851681300a19616bb6254aa9c6965b0ae24a0fbda"
+  },
+  {
+    "message": 67,
+    "step": 32,
+    "field": "content",
+    "sha256": "db2a193cc01e2fc534dc4a231b8209d891bfbdc6b3284871eaf2048cb81a4b8e",
+    "characters": 21,
+    "bytes": 21
+  },
+  {
+    "message": 68,
+    "step": 33,
+    "field": "reasoning",
+    "sha256": "3fe08bcb4770431daea2d5f4851ab9ba93e8db82201686592609fbe229642840",
+    "characters": 35,
+    "bytes": 35
+  },
+  {
+    "message": 68,
+    "step": 33,
+    "field": "tool_calls",
+    "sha256": "8060da06de0f2902c8c61ac930a5b539bf75b66faf593607493015dfb5c12ad0"
+  },
+  {
+    "message": 69,
+    "step": 33,
+    "field": "content",
+    "sha256": "b68e136a5bfd42cf6263b9e9251c7394ab21b053629dc292dd9e90287d65b760",
+    "characters": 1828,
+    "bytes": 1828
+  },
+  {
+    "message": 70,
+    "step": 34,
+    "field": "reasoning",
+    "sha256": "08cf6e24220cf5c1d13ad1157b5ea2d155bcbbd249e609349f85c6353b7d22c2",
+    "characters": 21,
+    "bytes": 21
+  },
+  {
+    "message": 70,
+    "step": 34,
+    "field": "tool_calls",
+    "sha256": "41d221fc8d11b5212721d0bbc845e12d283fc560fa86160d9c5bdb85d6424dfd"
+  },
+  {
+    "message": 71,
+    "step": 34,
+    "field": "content",
+    "sha256": "db2a193cc01e2fc534dc4a231b8209d891bfbdc6b3284871eaf2048cb81a4b8e",
+    "characters": 21,
+    "bytes": 21
+  },
+  {
+    "message": 72,
+    "step": 35,
+    "field": "reasoning",
+    "sha256": "eb4bb36137f72c4b39505ce1c20329377d07fc7aed61da1756a79051f67d632d",
+    "characters": 39,
+    "bytes": 39
+  },
+  {
+    "message": 72,
+    "step": 35,
+    "field": "tool_calls",
+    "sha256": "c48a7157848cc5160facaeccae29fb5159d0d7ea36dd64019e666f8ea753b684"
+  },
+  {
+    "message": 73,
+    "step": 35,
+    "field": "content",
+    "sha256": "c05837e0b1748c732e3aa88b153d14fc2cae892e898dc7bfebd97dcfb3451048",
+    "characters": 3140,
+    "bytes": 3140
+  },
+  {
+    "message": 74,
+    "step": 36,
+    "field": "reasoning",
+    "sha256": "d9a64985f4703f223412e2463783f26a3b817200f924f0102dd434acc34caff8",
+    "characters": 25,
+    "bytes": 25
+  },
+  {
+    "message": 74,
+    "step": 36,
+    "field": "tool_calls",
+    "sha256": "e6cb087c1d0f78192434178a451683fdb3c4e229d00d0287016939c431df6820"
+  },
+  {
+    "message": 75,
+    "step": 36,
+    "field": "content",
+    "sha256": "db2a193cc01e2fc534dc4a231b8209d891bfbdc6b3284871eaf2048cb81a4b8e",
+    "characters": 21,
+    "bytes": 21
+  },
+  {
+    "message": 76,
+    "step": 37,
+    "field": "reasoning",
+    "sha256": "ff18559bdc871ce3838414113e185df6a245701246c649e7504b1fbdadac99b9",
+    "characters": 82,
+    "bytes": 82
+  },
+  {
+    "message": 76,
+    "step": 37,
+    "field": "tool_calls",
+    "sha256": "c2ddd9237c09e992825a7aa44f09a37f63c86153763f776c7f0e20b6274c1a5c"
+  },
+  {
+    "message": 77,
+    "step": 37,
+    "field": "content",
+    "sha256": "5c1a3bc9991af622db44d0829e5f678eeb29507c076ed7559515ae613deedcee",
+    "characters": 6633,
+    "bytes": 6633
+  },
+  {
+    "message": 78,
+    "step": 38,
+    "field": "reasoning",
+    "sha256": "faa53c9a49ff14a8cd8d5763c3e701bb0de11bf2a4c1d339bdb42d7bddc95c98",
+    "characters": 40,
+    "bytes": 40
+  },
+  {
+    "message": 78,
+    "step": 38,
+    "field": "tool_calls",
+    "sha256": "924001732dff4546edc42d189420b47213e4fa9ca216816239d2876c844dbeac"
+  },
+  {
+    "message": 79,
+    "step": 38,
+    "field": "content",
+    "sha256": "db2a193cc01e2fc534dc4a231b8209d891bfbdc6b3284871eaf2048cb81a4b8e",
+    "characters": 21,
+    "bytes": 21
+  },
+  {
+    "message": 80,
+    "step": 39,
+    "field": "reasoning",
+    "sha256": "591e3a51da89a368ff26775fa10a203cf4a565bed4a89e0df6c55961c09604f0",
+    "characters": 56,
+    "bytes": 56
+  },
+  {
+    "message": 80,
+    "step": 39,
+    "field": "tool_calls",
+    "sha256": "623617889e6d4883729c4270c74f988f6dd12b9365f66e4a567f78f047d7d09b"
+  },
+  {
+    "message": 81,
+    "step": 39,
+    "field": "content",
+    "sha256": "db2a193cc01e2fc534dc4a231b8209d891bfbdc6b3284871eaf2048cb81a4b8e",
+    "characters": 21,
+    "bytes": 21
+  },
+  {
+    "message": 82,
+    "step": 40,
+    "field": "reasoning",
+    "sha256": "92d049826e85cd5fa366f730d0bc3590497c955f638a707c34c2cdd7fe40ca77",
+    "characters": 79,
+    "bytes": 79
+  },
+  {
+    "message": 82,
+    "step": 40,
+    "field": "tool_calls",
+    "sha256": "def9be61129ac46e6151f499b119e9bd09de3a0cf11205c5e950730eb71a0b1c"
+  },
+  {
+    "message": 83,
+    "step": 40,
+    "field": "content",
+    "sha256": "db2a193cc01e2fc534dc4a231b8209d891bfbdc6b3284871eaf2048cb81a4b8e",
+    "characters": 21,
+    "bytes": 21
+  },
+  {
+    "message": 84,
+    "step": 41,
+    "field": "reasoning",
+    "sha256": "b1dfd17a9e9e7b93726a39e6d93803023f82fb007f4a6331cf4452a37441fa84",
+    "characters": 72,
+    "bytes": 72
+  },
+  {
+    "message": 84,
+    "step": 41,
+    "field": "tool_calls",
+    "sha256": "86a57623544c7f796a5ca44c81d5fd1bf842fe9083ec31cef8095d323ab33354"
+  },
+  {
+    "message": 85,
+    "step": 41,
+    "field": "content",
+    "sha256": "67ac8c1682839743747499fdbfc298561e4b098e76042d3209e9e855b4738c9e",
+    "characters": 60,
+    "bytes": 60
+  },
+  {
+    "message": 86,
+    "step": 42,
+    "field": "reasoning",
+    "sha256": "52749f9e62f7ffa303fbca73b134844543a1e5e6fe0ee17d2c572ba4a961e00c",
+    "characters": 43,
+    "bytes": 43
+  },
+  {
+    "message": 86,
+    "step": 42,
+    "field": "tool_calls",
+    "sha256": "1ee84f8c2306186e447a40c00fe5c0cc9873cca70c2c7068692c0773f8858878"
+  },
+  {
+    "message": 87,
+    "step": 42,
+    "field": "content",
+    "sha256": "87f20def57235c428a6008f7fcded8f071c518acd1bf915d029f09bee36521cb",
+    "characters": 1710,
+    "bytes": 1710
+  }
+]

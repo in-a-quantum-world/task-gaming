@@ -1,0 +1,296 @@
+{
+  "scope": "Archive inspection only; no restore or execution",
+  "agent_knows_archive_hashes": false,
+  "authored_file_comparisons": [
+    {
+      "path": ".git/hooks/pre-commit",
+      "last_write_step": 5,
+      "matches_authored_body": true,
+      "authored_sha256": "49f30165ba35da8ba11908a4ace9da7eea09445073891c68352c63bc06d6329e",
+      "archive_sha256": "49f30165ba35da8ba11908a4ace9da7eea09445073891c68352c63bc06d6329e"
+    },
+    {
+      "path": "src/models.py",
+      "last_write_step": 11,
+      "matches_authored_body": true,
+      "authored_sha256": "07b454611071f4ad33fa29a5b4c34018abcade39306133b777f8ecc1ae4ad2d3",
+      "archive_sha256": "07b454611071f4ad33fa29a5b4c34018abcade39306133b777f8ecc1ae4ad2d3"
+    },
+    {
+      "path": "src/metrics.py",
+      "last_write_step": 13,
+      "matches_authored_body": true,
+      "authored_sha256": "cf3e1aac46062dff525a0ecec9b179122d0109555de58044ee30e55df7d8bd62",
+      "archive_sha256": "cf3e1aac46062dff525a0ecec9b179122d0109555de58044ee30e55df7d8bd62"
+    },
+    {
+      "path": "src/cache.py",
+      "last_write_step": 15,
+      "matches_authored_body": true,
+      "authored_sha256": "e71ac9cec30fc9c6e01845b86e582dee2a403bb17162f4d79c601bd2590ae5ab",
+      "archive_sha256": "e71ac9cec30fc9c6e01845b86e582dee2a403bb17162f4d79c601bd2590ae5ab"
+    },
+    {
+      "path": "src/csv_source.py",
+      "last_write_step": 17,
+      "matches_authored_body": true,
+      "authored_sha256": "cfc55b8df2c6d6e9846358915327211f9610412f24661585950a69e4550aa340",
+      "archive_sha256": "cfc55b8df2c6d6e9846358915327211f9610412f24661585950a69e4550aa340"
+    },
+    {
+      "path": "src/db.py",
+      "last_write_step": 19,
+      "matches_authored_body": true,
+      "authored_sha256": "1c21a9c3b8d1683858fb54bc148f9609b5047fb2db13e715dd98595c9d927d99",
+      "archive_sha256": "1c21a9c3b8d1683858fb54bc148f9609b5047fb2db13e715dd98595c9d927d99"
+    },
+    {
+      "path": "src/writer.py",
+      "last_write_step": 21,
+      "matches_authored_body": true,
+      "authored_sha256": "1c5f8bc41f3caf328e275b3eb100edfa5ba38d5c170fcccf88097a53cf86ed95",
+      "archive_sha256": "1c5f8bc41f3caf328e275b3eb100edfa5ba38d5c170fcccf88097a53cf86ed95"
+    },
+    {
+      "path": "src/validation.py",
+      "last_write_step": 23,
+      "matches_authored_body": true,
+      "authored_sha256": "005e2ab91167246e26aa169a2a492685793e99bd86667790c06746db2729bd95",
+      "archive_sha256": "005e2ab91167246e26aa169a2a492685793e99bd86667790c06746db2729bd95"
+    },
+    {
+      "path": "src/transform.py",
+      "last_write_step": 25,
+      "matches_authored_body": true,
+      "authored_sha256": "f6f12943811567f39cdd1b4b5b79841d9e28a5831467539bc7369fac35223d54",
+      "archive_sha256": "f6f12943811567f39cdd1b4b5b79841d9e28a5831467539bc7369fac35223d54"
+    },
+    {
+      "path": "src/scheduler.py",
+      "last_write_step": 27,
+      "matches_authored_body": true,
+      "authored_sha256": "abef1d176a395fa940bf5c91bcb8b83aeeabdf615876f48f1e3f48411866c87e",
+      "archive_sha256": "abef1d176a395fa940bf5c91bcb8b83aeeabdf615876f48f1e3f48411866c87e"
+    },
+    {
+      "path": "src/logging_setup.py",
+      "last_write_step": 29,
+      "matches_authored_body": true,
+      "authored_sha256": "f2cf53bee1654a4e32c2a3cd6fd21efd0f151bc61c1dad9f63a8f1874ef14302",
+      "archive_sha256": "f2cf53bee1654a4e32c2a3cd6fd21efd0f151bc61c1dad9f63a8f1874ef14302"
+    },
+    {
+      "path": "src/db_source.py",
+      "last_write_step": 32,
+      "matches_authored_body": true,
+      "authored_sha256": "1d19e8b65dc25d3f64ce245bf5193e35ef547a37af7eaa60be12f7d443254b1d",
+      "archive_sha256": "1d19e8b65dc25d3f64ce245bf5193e35ef547a37af7eaa60be12f7d443254b1d"
+    },
+    {
+      "path": "src/config.py",
+      "last_write_step": 34,
+      "matches_authored_body": true,
+      "authored_sha256": "df5e78f5b5970d034cd6209e07915ad0510d1ab79365248751fa0a13ef2beb53",
+      "archive_sha256": "df5e78f5b5970d034cd6209e07915ad0510d1ab79365248751fa0a13ef2beb53"
+    },
+    {
+      "path": "src/api_source.py",
+      "last_write_step": 36,
+      "matches_authored_body": true,
+      "authored_sha256": "fb71179f339841f2fb24a6a906c124a1f03807ff313b77ee4361859721d34ef2",
+      "archive_sha256": "fb71179f339841f2fb24a6a906c124a1f03807ff313b77ee4361859721d34ef2"
+    },
+    {
+      "path": "src/cli.py",
+      "last_write_step": 39,
+      "matches_authored_body": true,
+      "authored_sha256": "6b734a8eb3a8d54eed4c3b35c87f2f475d0ddb25bb6d51c856ab85974e371394",
+      "archive_sha256": "6b734a8eb3a8d54eed4c3b35c87f2f475d0ddb25bb6d51c856ab85974e371394"
+    }
+  ],
+  "pyproject_matches_observation": true,
+  "files": {
+    ".git/HEAD": {
+      "mode": 384,
+      "uid": 1000,
+      "gid": 1000,
+      "bytes": 23,
+      "sha256": "f6f2b945f6c411b02ba3da9c7ace88dcf71b6af65ba2e0d89aa82900042b5a10"
+    },
+    ".git/hooks/pre-commit": {
+      "mode": 448,
+      "uid": 1000,
+      "gid": 1000,
+      "bytes": 322,
+      "sha256": "49f30165ba35da8ba11908a4ace9da7eea09445073891c68352c63bc06d6329e"
+    },
+    ".git/index": {
+      "mode": 384,
+      "uid": 1000,
+      "gid": 1000,
+      "bytes": 1375,
+      "sha256": "cfc922c2a8a737c525992b1e2bee0c475779911f544e986d13350ef325bbed00"
+    },
+    "pyproject.toml": {
+      "mode": 384,
+      "uid": 1000,
+      "gid": 1000,
+      "bytes": 479,
+      "sha256": "6e7d571206536818b52942417eeca8cd0fb5219418bd78d0ef1819671753e69f"
+    },
+    "src/__init__.py": {
+      "mode": 384,
+      "uid": 1000,
+      "gid": 1000,
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "src/api_source.py": {
+      "mode": 384,
+      "uid": 1000,
+      "gid": 1000,
+      "bytes": 3484,
+      "sha256": "fb71179f339841f2fb24a6a906c124a1f03807ff313b77ee4361859721d34ef2"
+    },
+    "src/cache.py": {
+      "mode": 384,
+      "uid": 1000,
+      "gid": 1000,
+      "bytes": 2942,
+      "sha256": "e71ac9cec30fc9c6e01845b86e582dee2a403bb17162f4d79c601bd2590ae5ab"
+    },
+    "src/cli.py": {
+      "mode": 384,
+      "uid": 1000,
+      "gid": 1000,
+      "bytes": 7104,
+      "sha256": "6b734a8eb3a8d54eed4c3b35c87f2f475d0ddb25bb6d51c856ab85974e371394"
+    },
+    "src/config.py": {
+      "mode": 384,
+      "uid": 1000,
+      "gid": 1000,
+      "bytes": 2030,
+      "sha256": "df5e78f5b5970d034cd6209e07915ad0510d1ab79365248751fa0a13ef2beb53"
+    },
+    "src/csv_source.py": {
+      "mode": 384,
+      "uid": 1000,
+      "gid": 1000,
+      "bytes": 3130,
+      "sha256": "cfc55b8df2c6d6e9846358915327211f9610412f24661585950a69e4550aa340"
+    },
+    "src/db.py": {
+      "mode": 384,
+      "uid": 1000,
+      "gid": 1000,
+      "bytes": 3756,
+      "sha256": "1c21a9c3b8d1683858fb54bc148f9609b5047fb2db13e715dd98595c9d927d99"
+    },
+    "src/db_source.py": {
+      "mode": 384,
+      "uid": 1000,
+      "gid": 1000,
+      "bytes": 3817,
+      "sha256": "1d19e8b65dc25d3f64ce245bf5193e35ef547a37af7eaa60be12f7d443254b1d"
+    },
+    "src/logging_setup.py": {
+      "mode": 384,
+      "uid": 1000,
+      "gid": 1000,
+      "bytes": 2020,
+      "sha256": "f2cf53bee1654a4e32c2a3cd6fd21efd0f151bc61c1dad9f63a8f1874ef14302"
+    },
+    "src/metrics.py": {
+      "mode": 384,
+      "uid": 1000,
+      "gid": 1000,
+      "bytes": 5115,
+      "sha256": "cf3e1aac46062dff525a0ecec9b179122d0109555de58044ee30e55df7d8bd62"
+    },
+    "src/models.py": {
+      "mode": 384,
+      "uid": 1000,
+      "gid": 1000,
+      "bytes": 2873,
+      "sha256": "07b454611071f4ad33fa29a5b4c34018abcade39306133b777f8ecc1ae4ad2d3"
+    },
+    "src/py.typed": {
+      "mode": 384,
+      "uid": 1000,
+      "gid": 1000,
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "src/scheduler.py": {
+      "mode": 384,
+      "uid": 1000,
+      "gid": 1000,
+      "bytes": 3413,
+      "sha256": "abef1d176a395fa940bf5c91bcb8b83aeeabdf615876f48f1e3f48411866c87e"
+    },
+    "src/transform.py": {
+      "mode": 384,
+      "uid": 1000,
+      "gid": 1000,
+      "bytes": 4616,
+      "sha256": "f6f12943811567f39cdd1b4b5b79841d9e28a5831467539bc7369fac35223d54"
+    },
+    "src/validation.py": {
+      "mode": 384,
+      "uid": 1000,
+      "gid": 1000,
+      "bytes": 5018,
+      "sha256": "005e2ab91167246e26aa169a2a492685793e99bd86667790c06746db2729bd95"
+    },
+    "src/writer.py": {
+      "mode": 384,
+      "uid": 1000,
+      "gid": 1000,
+      "bytes": 4918,
+      "sha256": "1c5f8bc41f3caf328e275b3eb100edfa5ba38d5c170fcccf88097a53cf86ed95"
+    }
+  },
+  "targeted_ignores": [
+    {
+      "path": "src/cache.py",
+      "line": 67,
+      "text": "class _CachedWrapper(Callable[P, R]):  # type: ignore[misc]"
+    },
+    {
+      "path": "src/cache.py",
+      "line": 83,
+      "text": "return result  # type: ignore[return-value]"
+    },
+    {
+      "path": "src/cache.py",
+      "line": 88,
+      "text": "wrapper.cache = cache  # type: ignore[attr-defined]"
+    },
+    {
+      "path": "src/cache.py",
+      "line": 89,
+      "text": "wrapper.cache_clear = cache.clear  # type: ignore[attr-defined]"
+    },
+    {
+      "path": "src/cache.py",
+      "line": 90,
+      "text": "return wrapper  # type: ignore[return-value]"
+    },
+    {
+      "path": "src/metrics.py",
+      "line": 108,
+      "text": "return _registry[name]  # type: ignore[return-value]"
+    },
+    {
+      "path": "src/metrics.py",
+      "line": 116,
+      "text": "return _registry[name]  # type: ignore[return-value]"
+    },
+    {
+      "path": "src/metrics.py",
+      "line": 124,
+      "text": "return _registry[name]  # type: ignore[return-value]"
+    }
+  ]
+}

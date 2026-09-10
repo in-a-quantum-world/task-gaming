@@ -1,0 +1,327 @@
+{
+  "source_message_count": 88,
+  "assistant_steps": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30,
+    31,
+    32,
+    33,
+    34,
+    35,
+    36,
+    37,
+    38,
+    39,
+    40,
+    41,
+    42
+  ],
+  "cutoff_step": 42,
+  "future_steps_read": [],
+  "model_calls": 0,
+  "api_calls": 0,
+  "continuations": 0,
+  "workspace_restores": 0,
+  "source_messages_hash_unchanged": true,
+  "source_state_hash_unchanged": true,
+  "source_archive_hash_unchanged": true,
+  "original_system_and_user_identical": true,
+  "final_visible_pair_identical": true,
+  "all_43_observations_preserved_verbatim": true,
+  "all_rewrite_deltas_reconstruct_exactly": true,
+  "rewritten_versions": 16,
+  "targeted_ignores_retained": 8,
+  "visible_reasoning_blocks_exported": 43,
+  "reasoning_alias_checks": [
+    {
+      "step": 0,
+      "reasoning_equals_reasoning_content": true,
+      "visible_detail_texts_equal": true,
+      "exported_detail_metadata": false
+    },
+    {
+      "step": 1,
+      "reasoning_equals_reasoning_content": true,
+      "visible_detail_texts_equal": true,
+      "exported_detail_metadata": false
+    },
+    {
+      "step": 2,
+      "reasoning_equals_reasoning_content": true,
+      "visible_detail_texts_equal": true,
+      "exported_detail_metadata": false
+    },
+    {
+      "step": 3,
+      "reasoning_equals_reasoning_content": true,
+      "visible_detail_texts_equal": true,
+      "exported_detail_metadata": false
+    },
+    {
+      "step": 4,
+      "reasoning_equals_reasoning_content": true,
+      "visible_detail_texts_equal": true,
+      "exported_detail_metadata": false
+    },
+    {
+      "step": 5,
+      "reasoning_equals_reasoning_content": true,
+      "visible_detail_texts_equal": true,
+      "exported_detail_metadata": false
+    },
+    {
+      "step": 6,
+      "reasoning_equals_reasoning_content": true,
+      "visible_detail_texts_equal": true,
+      "exported_detail_metadata": false
+    },
+    {
+      "step": 7,
+      "reasoning_equals_reasoning_content": true,
+      "visible_detail_texts_equal": true,
+      "exported_detail_metadata": false
+    },
+    {
+      "step": 8,
+      "reasoning_equals_reasoning_content": true,
+      "visible_detail_texts_equal": true,
+      "exported_detail_metadata": false
+    },
+    {
+      "step": 9,
+      "reasoning_equals_reasoning_content": true,
+      "visible_detail_texts_equal": true,
+      "exported_detail_metadata": false
+    },
+    {
+      "step": 10,
+      "reasoning_equals_reasoning_content": true,
+      "visible_detail_texts_equal": true,
+      "exported_detail_metadata": false
+    },
+    {
+      "step": 11,
+      "reasoning_equals_reasoning_content": true,
+      "visible_detail_texts_equal": true,
+      "exported_detail_metadata": false
+    },
+    {
+      "step": 12,
+      "reasoning_equals_reasoning_content": true,
+      "visible_detail_texts_equal": true,
+      "exported_detail_metadata": false
+    },
+    {
+      "step": 13,
+      "reasoning_equals_reasoning_content": true,
+      "visible_detail_texts_equal": true,
+      "exported_detail_metadata": false
+    },
+    {
+      "step": 14,
+      "reasoning_equals_reasoning_content": true,
+      "visible_detail_texts_equal": true,
+      "exported_detail_metadata": false
+    },
+    {
+      "step": 15,
+      "reasoning_equals_reasoning_content": true,
+      "visible_detail_texts_equal": true,
+      "exported_detail_metadata": false
+    },
+    {
+      "step": 16,
+      "reasoning_equals_reasoning_content": true,
+      "visible_detail_texts_equal": true,
+      "exported_detail_metadata": false
+    },
+    {
+      "step": 17,
+      "reasoning_equals_reasoning_content": true,
+      "visible_detail_texts_equal": true,
+      "exported_detail_metadata": false
+    },
+    {
+      "step": 18,
+      "reasoning_equals_reasoning_content": true,
+      "visible_detail_texts_equal": true,
+      "exported_detail_metadata": false
+    },
+    {
+      "step": 19,
+      "reasoning_equals_reasoning_content": true,
+      "visible_detail_texts_equal": true,
+      "exported_detail_metadata": false
+    },
+    {
+      "step": 20,
+      "reasoning_equals_reasoning_content": true,
+      "visible_detail_texts_equal": true,
+      "exported_detail_metadata": false
+    },
+    {
+      "step": 21,
+      "reasoning_equals_reasoning_content": true,
+      "visible_detail_texts_equal": true,
+      "exported_detail_metadata": false
+    },
+    {
+      "step": 22,
+      "reasoning_equals_reasoning_content": true,
+      "visible_detail_texts_equal": true,
+      "exported_detail_metadata": false
+    },
+    {
+      "step": 23,
+      "reasoning_equals_reasoning_content": true,
+      "visible_detail_texts_equal": true,
+      "exported_detail_metadata": false
+    },
+    {
+      "step": 24,
+      "reasoning_equals_reasoning_content": true,
+      "visible_detail_texts_equal": true,
+      "exported_detail_metadata": false
+    },
+    {
+      "step": 25,
+      "reasoning_equals_reasoning_content": true,
+      "visible_detail_texts_equal": true,
+      "exported_detail_metadata": false
+    },
+    {
+      "step": 26,
+      "reasoning_equals_reasoning_content": true,
+      "visible_detail_texts_equal": true,
+      "exported_detail_metadata": false
+    },
+    {
+      "step": 27,
+      "reasoning_equals_reasoning_content": true,
+      "visible_detail_texts_equal": true,
+      "exported_detail_metadata": false
+    },
+    {
+      "step": 28,
+      "reasoning_equals_reasoning_content": true,
+      "visible_detail_texts_equal": true,
+      "exported_detail_metadata": false
+    },
+    {
+      "step": 29,
+      "reasoning_equals_reasoning_content": true,
+      "visible_detail_texts_equal": true,
+      "exported_detail_metadata": false
+    },
+    {
+      "step": 30,
+      "reasoning_equals_reasoning_content": true,
+      "visible_detail_texts_equal": true,
+      "exported_detail_metadata": false
+    },
+    {
+      "step": 31,
+      "reasoning_equals_reasoning_content": true,
+      "visible_detail_texts_equal": true,
+      "exported_detail_metadata": false
+    },
+    {
+      "step": 32,
+      "reasoning_equals_reasoning_content": true,
+      "visible_detail_texts_equal": true,
+      "exported_detail_metadata": false
+    },
+    {
+      "step": 33,
+      "reasoning_equals_reasoning_content": true,
+      "visible_detail_texts_equal": true,
+      "exported_detail_metadata": false
+    },
+    {
+      "step": 34,
+      "reasoning_equals_reasoning_content": true,
+      "visible_detail_texts_equal": true,
+      "exported_detail_metadata": false
+    },
+    {
+      "step": 35,
+      "reasoning_equals_reasoning_content": true,
+      "visible_detail_texts_equal": true,
+      "exported_detail_metadata": false
+    },
+    {
+      "step": 36,
+      "reasoning_equals_reasoning_content": true,
+      "visible_detail_texts_equal": true,
+      "exported_detail_metadata": false
+    },
+    {
+      "step": 37,
+      "reasoning_equals_reasoning_content": true,
+      "visible_detail_texts_equal": true,
+      "exported_detail_metadata": false
+    },
+    {
+      "step": 38,
+      "reasoning_equals_reasoning_content": true,
+      "visible_detail_texts_equal": true,
+      "exported_detail_metadata": false
+    },
+    {
+      "step": 39,
+      "reasoning_equals_reasoning_content": true,
+      "visible_detail_texts_equal": true,
+      "exported_detail_metadata": false
+    },
+    {
+      "step": 40,
+      "reasoning_equals_reasoning_content": true,
+      "visible_detail_texts_equal": true,
+      "exported_detail_metadata": false
+    },
+    {
+      "step": 41,
+      "reasoning_equals_reasoning_content": true,
+      "visible_detail_texts_equal": true,
+      "exported_detail_metadata": false
+    },
+    {
+      "step": 42,
+      "reasoning_equals_reasoning_content": true,
+      "visible_detail_texts_equal": true,
+      "exported_detail_metadata": false
+    }
+  ],
+  "credentials_redacted": 0,
+  "tokens": null,
+  "candidate_only": true
+}
