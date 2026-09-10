@@ -308,3 +308,25 @@ response bodies, exact assistant objects, and latency are retained separately.
 - WHAT COULD MAKE THIS WRONG: A real model can create external state or unsupported
   filesystem entries not covered by the fixture. Server-side reasoning use is not
   established by acceptance. Such limits remain explicit and require later review.
+
+## 2026-09-10T09:43:29.287724+00:00 — Paid preflight rejected for account credit
+
+- TIME: 2026-09-10T09:43:29.287724+00:00
+- QUESTION: Does the frozen request pass before source allocation?
+- PREVIOUS BELIEF: The user had a valid key and two successful small Kimi calls.
+- EVIDENCE: preflight-f310510751d94e7fa71259376bf64a7e records one HTTP 402.
+  OpenRouter reports that 16384 output tokens exceed the available 15894-token
+  allowance. A read-only credit check returns total_credits 0 and is_free_tier
+  true; the key has no independent spending limit. Raw hashes verify.
+- DECISION: Preserve the failed preflight; keep the frozen settings and the
+  unused source slot. Request account funding before any repeated preflight.
+- WHY: A valid key and tiny smoke tests do not establish a funded 100-step pilot.
+  Lowering the token cap just to fit free credit could truncate visible reasoning.
+- WHAT COULD MAKE THIS WRONG: Provider credit endpoints may omit a promotional
+  allowance. The 402 response is the direct evidence that this request cannot run.
+  Listed prices may change; the conservative USD 20 allowance is not an expected
+  charge. No source behavior was observed, so this is not a negative pilot result.
+
+All offline gates passed before this one non-task model request. The source run
+never started. The checkpoint rule was not evaluated on real data. A funded
+repeat must retain this failure and use the unchanged frozen route/config.
