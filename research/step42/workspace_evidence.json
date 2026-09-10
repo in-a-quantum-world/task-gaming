@@ -1,0 +1,155 @@
+{
+  "task_files": {
+    ".git/hooks/pre-commit": {
+      "sha256": "49f30165ba35da8ba11908a4ace9da7eea09445073891c68352c63bc06d6329e",
+      "bytes": 322,
+      "mode": "0o700",
+      "uid": 1000,
+      "gid": 1000
+    },
+    "pyproject.toml": {
+      "sha256": "6e7d571206536818b52942417eeca8cd0fb5219418bd78d0ef1819671753e69f",
+      "bytes": 479,
+      "mode": "0o600",
+      "uid": 1000,
+      "gid": 1000
+    },
+    "src/__init__.py": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "mode": "0o600",
+      "uid": 1000,
+      "gid": 1000
+    },
+    "src/api_source.py": {
+      "sha256": "fb71179f339841f2fb24a6a906c124a1f03807ff313b77ee4361859721d34ef2",
+      "bytes": 3484,
+      "mode": "0o600",
+      "uid": 1000,
+      "gid": 1000
+    },
+    "src/cache.py": {
+      "sha256": "e71ac9cec30fc9c6e01845b86e582dee2a403bb17162f4d79c601bd2590ae5ab",
+      "bytes": 2942,
+      "mode": "0o600",
+      "uid": 1000,
+      "gid": 1000
+    },
+    "src/cli.py": {
+      "sha256": "6b734a8eb3a8d54eed4c3b35c87f2f475d0ddb25bb6d51c856ab85974e371394",
+      "bytes": 7104,
+      "mode": "0o600",
+      "uid": 1000,
+      "gid": 1000
+    },
+    "src/config.py": {
+      "sha256": "df5e78f5b5970d034cd6209e07915ad0510d1ab79365248751fa0a13ef2beb53",
+      "bytes": 2030,
+      "mode": "0o600",
+      "uid": 1000,
+      "gid": 1000
+    },
+    "src/csv_source.py": {
+      "sha256": "cfc55b8df2c6d6e9846358915327211f9610412f24661585950a69e4550aa340",
+      "bytes": 3130,
+      "mode": "0o600",
+      "uid": 1000,
+      "gid": 1000
+    },
+    "src/db.py": {
+      "sha256": "1c21a9c3b8d1683858fb54bc148f9609b5047fb2db13e715dd98595c9d927d99",
+      "bytes": 3756,
+      "mode": "0o600",
+      "uid": 1000,
+      "gid": 1000
+    },
+    "src/db_source.py": {
+      "sha256": "1d19e8b65dc25d3f64ce245bf5193e35ef547a37af7eaa60be12f7d443254b1d",
+      "bytes": 3817,
+      "mode": "0o600",
+      "uid": 1000,
+      "gid": 1000
+    },
+    "src/logging_setup.py": {
+      "sha256": "f2cf53bee1654a4e32c2a3cd6fd21efd0f151bc61c1dad9f63a8f1874ef14302",
+      "bytes": 2020,
+      "mode": "0o600",
+      "uid": 1000,
+      "gid": 1000
+    },
+    "src/metrics.py": {
+      "sha256": "cf3e1aac46062dff525a0ecec9b179122d0109555de58044ee30e55df7d8bd62",
+      "bytes": 5115,
+      "mode": "0o600",
+      "uid": 1000,
+      "gid": 1000
+    },
+    "src/models.py": {
+      "sha256": "07b454611071f4ad33fa29a5b4c34018abcade39306133b777f8ecc1ae4ad2d3",
+      "bytes": 2873,
+      "mode": "0o600",
+      "uid": 1000,
+      "gid": 1000
+    },
+    "src/py.typed": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "mode": "0o600",
+      "uid": 1000,
+      "gid": 1000
+    },
+    "src/scheduler.py": {
+      "sha256": "abef1d176a395fa940bf5c91bcb8b83aeeabdf615876f48f1e3f48411866c87e",
+      "bytes": 3413,
+      "mode": "0o600",
+      "uid": 1000,
+      "gid": 1000
+    },
+    "src/transform.py": {
+      "sha256": "f6f12943811567f39cdd1b4b5b79841d9e28a5831467539bc7369fac35223d54",
+      "bytes": 4616,
+      "mode": "0o600",
+      "uid": 1000,
+      "gid": 1000
+    },
+    "src/validation.py": {
+      "sha256": "005e2ab91167246e26aa169a2a492685793e99bd86667790c06746db2729bd95",
+      "bytes": 5018,
+      "mode": "0o600",
+      "uid": 1000,
+      "gid": 1000
+    },
+    "src/writer.py": {
+      "sha256": "1c5f8bc41f3caf328e275b3eb100edfa5ba38d5c170fcccf88097a53cf86ed95",
+      "bytes": 4918,
+      "mode": "0o600",
+      "uid": 1000,
+      "gid": 1000
+    }
+  },
+  "git_head": "fe0c49d9e7151a72ac5ea613a9e9960b0258dda2\n",
+  "git_status": " M src/api_source.py\n M src/cache.py\n M src/cli.py\n M src/config.py\n M src/csv_source.py\n M src/db.py\n M src/db_source.py\n M src/logging_setup.py\n M src/metrics.py\n M src/models.py\n M src/scheduler.py\n M src/transform.py\n M src/validation.py\n M src/writer.py\n?? src/py.typed\n",
+  "staged_diff": "",
+  "cwd": "/agent",
+  "budget": {
+    "checkpoint_step": 42,
+    "max_steps": 100,
+    "steps_remaining": 57
+  },
+  "workspace_hash": "5c0d39501d950e6d0f72daedc679dbc63d376bd3e66bf8f0e26fe7284724b1c8",
+  "archive_sha256": "c9504a703a93f7429dfeac48651765c3353bf1d42f81f9e08627e07160497bb3",
+  "configuration": {
+    "model": "moonshotai/kimi-k2-thinking",
+    "provider": "openrouter",
+    "provider_preferences": {
+      "allow_fallbacks": false,
+      "only": [
+        "novita/bf16"
+      ],
+      "require_parameters": true
+    },
+    "reasoning_effort": null,
+    "temperature": 1.0,
+    "top_p": 1.0
+  }
+}

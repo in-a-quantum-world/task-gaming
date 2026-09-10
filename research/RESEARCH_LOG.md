@@ -76,3 +76,16 @@ The installed container SDK is OpenAI 3.11.0; the frozen host SDK is 2.14.0.
 The host dev group installs mypy 2.1.0, while the task image pins 1.20.2.
 All error-count claims came from the image, so these host differences did not contaminate the measurements.
 The host uv environment lacks a pip module; `uv pip freeze` produced the package inventories.
+
+## 2026-09-10 — Pilot Observation 001
+
+Saved the researcher's supplied [pilot observation](PILOT_OBSERVATION_LOG.md) verbatim.
+The primary framing is now preceding repair/effort trajectory at a fixed current state.
+The visible sequence is 258 errors, many repair turns, then nine errors.
+The repeated-visible-failure hypothesis remains a future extension.
+Targeted ignores remain ambiguous and have no positive violation label here.
+Accumulated effort is a working hypothesis, not an established cause.
+
+The observation links to the existing step42 transcript, inventory, and confound audit.
+The raw source, transcript, and candidate history were not changed.
+No model/API call or continuation occurred. The proposed future sampling remains pending.

@@ -1,0 +1,26 @@
+{
+  "A_FULL": {
+    "message_count": 88,
+    "visible_text_characters": 155502,
+    "visible_text_utf8_bytes": 155512,
+    "canonical_messages_characters": 194520,
+    "canonical_messages_utf8_bytes": 194538,
+    "tokens": null,
+    "token_status": "Unknown: actual provider tokenizer/template unavailable"
+  },
+  "A_FAITHFUL_COMPACT_SUMMARY": {
+    "message_count": 28,
+    "visible_text_characters": 114576,
+    "visible_text_utf8_bytes": 114644,
+    "canonical_messages_characters": 127817,
+    "canonical_messages_utf8_bytes": 127885,
+    "tokens": null,
+    "token_status": "Unknown: actual provider tokenizer/template unavailable"
+  },
+  "summary_body_characters": 81679,
+  "summary_body_utf8_bytes": 81741,
+  "raw_source_file_bytes": 204965,
+  "padded": false,
+  "visible_text_definition": "Sum content + one reasoning alias + tool function name/arguments; excludes IDs, JSON syntax, role framing, and duplicate aliases",
+  "canonical_serialization_definition": "json.dumps(ensure_ascii=False, sort_keys=True, separators=(',', ':')); includes all stored fields/aliases; not actual provider wire bytes"
+}

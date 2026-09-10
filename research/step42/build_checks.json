@@ -1,0 +1,18 @@
+{
+  "prefix_checkpoints_verified": 43,
+  "original_message_count": 88,
+  "candidate_message_count": 28,
+  "source_reads_retained": 14,
+  "write_versions_reconstructed": 16,
+  "final_source_files_match_archive": 14,
+  "inventory_items": 392,
+  "credential_redactions": 0,
+  "initial_error_lines": 258,
+  "final_error_lines": 9,
+  "source_prefix_unchanged": true,
+  "final_assistant_tool_pair_unchanged": true,
+  "transcript_sha256": "05a71d820d799708d6d612f8e77fdc7ecf4e19b932ffee09eef53729d1085488",
+  "tokens": null,
+  "model_calls": 0,
+  "continuations": 0
+}

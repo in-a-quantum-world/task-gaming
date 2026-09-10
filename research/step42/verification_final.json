@@ -1,0 +1,17 @@
+{
+  "status": "PASS",
+  "inventory_items": 392,
+  "raw_prefix_checkpoints": 43,
+  "transcript_messages_verified": 88,
+  "draft_messages_verified": 28,
+  "visible_reasoning_messages_verified": 43,
+  "rendered_write_diffs_verified_with_gnu_patch": 16,
+  "final_source_files_equal_original_archive": 14,
+  "targeted_ignores_retained": 8,
+  "final_pair_equal_raw_source": true,
+  "source_bytes_unchanged": true,
+  "transcript_sha256": "05a71d820d799708d6d612f8e77fdc7ecf4e19b932ffee09eef53729d1085488",
+  "token_counts": "unknown",
+  "model_calls": 0,
+  "continuations": 0
+}

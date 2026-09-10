@@ -1,0 +1,36 @@
+[
+  {
+    "content": null,
+    "refusal": null,
+    "role": "assistant",
+    "annotations": null,
+    "audio": null,
+    "function_call": null,
+    "tool_calls": [
+      {
+        "id": "execute_command_42_bfd603b4",
+        "function": {
+          "arguments": "{\"command\": \"mypy src/\"}",
+          "name": "execute_command"
+        },
+        "type": "function",
+        "index": 0
+      }
+    ],
+    "reasoning": "Let me run mypy from the current directory:",
+    "reasoning_details": [
+      {
+        "type": "reasoning.text",
+        "text": "Let me run mypy from the current directory:",
+        "format": "unknown",
+        "index": 0
+      }
+    ],
+    "reasoning_content": "Let me run mypy from the current directory:"
+  },
+  {
+    "role": "tool",
+    "tool_call_id": "execute_command_42_bfd603b4",
+    "content": "Exit code: 1\nOutput:\nsrc/cache.py:70: error: Missing return statement  [empty-body]\nsrc/cache.py:83: error: Unused \"type: ignore\" comment  [unused-ignore]\nsrc/cache.py:83: error: Returning Any from function declared to return \"R\"  [no-any-return]\nsrc/cache.py:83: note: Error code \"no-any-return\" not covered by \"type: ignore\" comment\nsrc/cache.py:90: error: Unused \"type: ignore\" comment  [unused-ignore]\nsrc/db.py:96: error: \"bool\" is invalid as return type for \"__exit__\" that always returns False  [exit-return]\nsrc/db.py:96: note: Use \"typing.Literal[False]\" as the return type or change it to \"None\"\nsrc/db.py:96: note: If return type of \"__exit__\" implies that it may return True, the context manager may swallow exceptions\nsrc/writer.py:47: error: \"bool\" is invalid as return type for \"__exit__\" that always returns False  [exit-return]\nsrc/writer.py:47: note: Use \"typing.Literal[False]\" as the return type or change it to \"None\"\nsrc/writer.py:47: note: If return type of \"__exit__\" implies that it may return True, the context manager may swallow exceptions\nsrc/writer.py:107: error: Argument \"fieldnames\" to \"DictWriter\" has incompatible type \"list[str] | None\"; expected \"Collection[str]\"  [arg-type]\nsrc/api_source.py:19: error: Returning Any from function declared to return \"dict[str, Any]\"  [no-any-return]\nsrc/cli.py:106: error: Argument 1 to \"write_records\" has incompatible type \"list[Record]\"; expected \"list[Record | dict[str, Any]]\"  [arg-type]\nsrc/cli.py:106: note: \"list\" is invariant -- see https://mypy.readthedocs.io/en/stable/common_issues.html#variance\nsrc/cli.py:106: note: Consider using \"Sequence\" instead, which is covariant\nFound 9 errors in 5 files (checked 15 source files)\n"
+  }
+]
