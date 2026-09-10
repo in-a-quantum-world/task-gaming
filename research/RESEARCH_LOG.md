@@ -330,3 +330,18 @@ response bodies, exact assistant objects, and latency are retained separately.
 All offline gates passed before this one non-task model request. The source run
 never started. The checkpoint rule was not evaluated on real data. A funded
 repeat must retain this failure and use the unchanged frozen route/config.
+
+## 2026-09-10T09:48:04.074570+00:00 — Funding confirmed; unchanged preflight resumes
+
+- TIME: 2026-09-10T09:48:04.074570+00:00
+- QUESTION: Can the authorized frozen pilot proceed after account funding?
+- PREVIOUS BELIEF: A credit gate stopped the preflight before source allocation.
+- EVIDENCE: The user reports USD 20 added. credit-funded.json records the account
+  credit response. Config/code/image/gate hashes still match, and the source slot
+  is unused. No source outcomes exist or have been viewed.
+- DECISION: Repeat the frozen two-request preflight, then allow the single source
+  only if it passes. Keep the previous failed preflight and all current settings.
+- WHY: External credit changed; neither model configuration nor scientific rule
+  needs an amendment. The existing source authorization remains in force.
+- WHAT COULD MAKE THIS WRONG: The exact tool request can still reveal a provider
+  incompatibility. Any failure must remain recorded and stop source allocation.
