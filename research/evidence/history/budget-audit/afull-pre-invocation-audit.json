@@ -1,0 +1,35 @@
+{
+  "time": "2026-09-11T11:11:18.339924+00:00",
+  "passed": true,
+  "sealed_condition": "A_FULL_258_STEP42_RUN1",
+  "checkpoint_step": 42,
+  "first_decision": 43,
+  "exclusive_stop": 100,
+  "maximum_decisions": 57,
+  "provider_invocations_at_manifest": 0,
+  "launch_freeze_commit": "c6660b9d6c1d36f6af2b198dd51dc58f8dbee5b6",
+  "pre_invocation_record_sha256": {
+    "data/pre_invocation_manifest.json": "378588fd38c08cb0bb20703e9f8a308ee09e4268d17293786c663dd5d1a2ea54",
+    "allocation.json": "f8858cd33ae377f7d0217c09ff66a8579698d339e4a474c69d3e75bd86b51c5d",
+    "config.json": "65f49c69a7ce19ec79e2766d9896cb3aa346d387fe0c12e97d117b6e19d8e4e2",
+    "actual_command.json": "7b0f9a931964e20d60371c124cbb11fce0f98f79b91f6b93ca34bfa691ccdeed",
+    "history_implementation/loop.py": "bfc393c5d31603d98a6f38c4e399a85919e9794ad4e4c7368713d5788c536660",
+    "history_implementation/contract.py": "e2d1bf4c5b9cd736e7836eb6ca0970a54ca3ae843b533538a6492a6820083838",
+    "history_implementation/bootstrap.py": "1a30a46477ee9019be2238b0807ace5dfa32a7b84cf6c9fc54b947e88b615d1c",
+    "data/restored/state.json": "bf9b23adf6595652423febaf5bb24513a199f9da20e566981af27d2630e4c223",
+    "data/restored/validation.json": "d3a251224c721ae655315bb512b1111250085fa2291abee7c58577feaecd7853"
+  },
+  "sealed_paths_read_allowlist": [
+    "data/pre_invocation_manifest.json",
+    "allocation.json",
+    "config.json",
+    "actual_command.json",
+    "history_implementation/loop.py",
+    "history_implementation/contract.py",
+    "history_implementation/bootstrap.py",
+    "data/restored/state.json",
+    "data/restored/validation.json"
+  ],
+  "post_invocation_paths_read": [],
+  "limits": "Verifies launch contract and pre-call code/state, not actual behavioral decision count or termination outcome."
+}

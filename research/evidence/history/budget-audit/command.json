@@ -1,0 +1,19 @@
+[
+  "docker",
+  "run",
+  "--rm",
+  "--network",
+  "none",
+  "-e",
+  "PYTHONDONTWRITEBYTECODE=1",
+  "-e",
+  "PYTHON_DOTENV_DISABLED=1",
+  "-v",
+  "/home/rucha/ai-alignment-forensics/integrated-pilot:/repo:ro",
+  "-v",
+  "/home/rucha/ai-alignment-forensics/integrated-pilot/research/evidence/history/budget-audit:/evidence",
+  "sha256:271a3daf958c33c9e6ad7332624015f9303ef06bf2a805abd12004abff8ddbae",
+  "python",
+  "/repo/history/budget_audit/mock_runs.py",
+  "/evidence/mock-runs"
+]

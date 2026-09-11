@@ -1,0 +1,13 @@
+{
+  "time": "2026-09-11T11:19:11.616210+00:00",
+  "passed": true,
+  "prepared_python_syntax_valid": true,
+  "main_and_launch_raise_before_side_effects": true,
+  "original_afull_frozen_code_unchanged": true,
+  "prepared_108_ledger_allocated": false,
+  "actual_108_restore_path_invoked": false,
+  "actual_108_provider_invoked": false,
+  "mock_raw_path": "/home/rucha/ai-alignment-forensics/integrated-pilot/research/data/raw/budget-audit/mock-runs-20260911",
+  "mock_manifest_sha256": "7beb8043ac8d04e114d9e4ed35097c8c1bed46332804c6e0e92dc09fec9064ea",
+  "audit_script_sha256": "6ce22d36bc0b7670dc9002375d4edeb4950e1306e0745058e75b6d1d4c1826d4"
+}

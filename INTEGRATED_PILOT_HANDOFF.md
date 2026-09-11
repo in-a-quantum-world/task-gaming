@@ -174,3 +174,20 @@ Quarantine protects that work from this paid sample's outcome.
 ## QSCHA state
 
 None.
+
+
+## Offline budget audit and prepared 108 path — 2026-09-11
+
+The [budget audit](research/CONTINUATION_BUDGET_AUDIT.md) verifies exact maximum
+ranges with deterministic MockProvider runs: 258 step 42 allows 43–99 (57), and
+108 step 32 allows 33–99 (67). Neither valid run makes decision 100. Deliberate
+off-by-one mutants are detected, and both transport guards reject 100.
+
+Only pre-invocation A_FULL records were opened to verify its 57-decision launch
+contract. No post-invocation history, termination phenotype, final diff, or
+scientific outcome was accessed. Quarantine remains unchanged.
+
+The 108 restoration/continuation path is prepared in history/prepared108 with
+explicit execution locks. It has not been invoked or allocated a ledger. Future
+execution needs researcher authorization and fresh actual restore/wire gates.
+No new branch or scientific history condition was created.

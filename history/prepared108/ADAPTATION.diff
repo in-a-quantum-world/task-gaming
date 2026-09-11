@@ -1,0 +1,158 @@
+--- frozen-history/contract.py
++++ prepared108/contract.py
+@@ -4,7 +4,7 @@
+ import json
+ from pathlib import Path
+ 
+-CONDITION = "A_FULL_258_STEP42_RUN1"
++CONDITION = "RESTORE_108_STEP32"
+ 
+ 
+ def read(path):
+@@ -55,6 +55,7 @@
+             or not comparison["external_inventory_equal"]
+             or actual["mypy"]["reference"]["errors_hash"]
+             != contract["diagnostic_sha256"]
+-            or actual["mypy"]["reference"]["error_count"] != 9
++            or actual["mypy"]["reference"]["error_count"]
++            != contract["diagnostic_count"]
+             or actual["runtime"] != original["runtime"]):
+         raise ValueError("Actual original restore gate failed")
+--- frozen-history/loop.py
++++ prepared108/loop.py
+@@ -17,7 +17,7 @@
+ spec.loader.exec_module(preserved)
+ original_restore = preserved.restore
+ original_factory = preserved.provider_factory
+-CONTRACT = read("/root/history/A_FULL_258_STEP42_RUN1.json")
++CONTRACT = read("/root/history/RESTORE_108_STEP32.json")
+ MODE = os.environ["HISTORY_MODE"]
+ 
+ 
+@@ -30,7 +30,9 @@
+         ready = preserved.OUTPUT / "pre_invocation_manifest.json"
+         if not ready.is_file():
+             raise ValueError("Provider request before restore validation")
+-        if not 43 <= preserved.CONTEXT["step"] <= 99:
++        if not (CONTRACT["first_continuation_step"]
++                <= preserved.CONTEXT["step"]
++                < CONTRACT["max_steps"]):
+             raise ValueError("Continuation decision outside remaining cap")
+         validate_request(json.loads(request.content), CONTRACT, first)
+         first = False
+@@ -77,7 +79,7 @@
+         raise ValueError("Restored state values differ from source")
+     full_restore_check(original, actual, comparison, provider.messages,
+                        state.to_dict(), CONTRACT)
+-    private_paths = ["/root/history/A_FULL_258_STEP42_RUN1.json",
++    private_paths = ["/root/history/RESTORE_108_STEP32.json",
+                      "/root/history-allocation.json",
+                      "/opt/checkpoint/messages.json",
+                      "/opt/output/runtime.json"]
+@@ -89,14 +91,15 @@
+     manifest = {
+         "time": now(), "condition_id": CONTRACT["condition_id"],
+         "contract_sha256": sha256(
+-            "/root/history/A_FULL_258_STEP42_RUN1.json"),
++            "/root/history/RESTORE_108_STEP32.json"),
+         "contract": CONTRACT, "validation": comparison,
+         "original_validation_sha256": sha256(source / "validation.json"),
+         "restored_validation_sha256": sha256(
+             preserved.OUTPUT / "restored/validation.json"),
+         "actual_runtime": actual["runtime"],
+         "continuation_ledger_state": allocation,
+-        "remaining_decisions": 57, "next_step": 43,
++        "remaining_decisions": CONTRACT["remaining_decisions"],
++        "next_step": CONTRACT["first_continuation_step"],
+         "provider_invocations_before_manifest": 0,
+         "model_cannot_read_study_artifacts": True,
+         "private_path_probes": private_paths,
+--- frozen-history/run.py
++++ prepared108/run.py
+@@ -10,7 +10,7 @@
+ import sys
+ import uuid
+ 
+-ROOT = Path(__file__).resolve().parents[1]
++ROOT = Path(__file__).resolve().parents[2]
+ sys.path.insert(0, str(ROOT / "pilot"))
+ import run as preserved
+ from common import now, save, sha256
+@@ -18,10 +18,10 @@
+ 
+ RAW = ROOT / "research/data/raw/history"
+ EVIDENCE = ROOT / "research/evidence/history" / CONDITION
+-CONTRACT_PATH = ROOT / "history" / f"{CONDITION}.json"
++CONTRACT_PATH = ROOT / "history/prepared108" / f"{CONDITION}.json"
+ CONTRACT = read(CONTRACT_PATH)
+ IMAGE = CONTRACT["image_id"]
+-CONFIG = ROOT / "SOURCE_PILOT_CONFIG.yaml"
++CONFIG = ROOT / "history/prepared108/SOURCE108_CONFIG.yaml"
+ CHECKPOINT = Path(CONTRACT["checkpoint"])
+ 
+ 
+@@ -35,13 +35,14 @@
+ 
+ 
+ def implementation_hashes():
+-    paths = sorted((ROOT / "history").glob("*.py"))
+-    paths += [CONTRACT_PATH, ROOT / "history/PREREG.md"]
++    paths = sorted((ROOT / "history/prepared108").glob("*.py"))
++    paths += [CONTRACT_PATH, ROOT / "history/prepared108/README.md"]
+     return {str(p.relative_to(ROOT)): sha256(p) for p in paths}
+ 
+ 
+ def verify_source():
+-    preserved.require_frozen(CONFIG, IMAGE)
++    preserved.require_frozen(
++        ROOT / "SOURCE_PILOT_CONFIG.yaml", IMAGE)
+     if sha256(CONFIG) != CONTRACT["config_sha256"]:
+         raise ValueError("Source config differs")
+     source = Path(CONTRACT["source_run"])
+@@ -64,7 +65,7 @@
+ 
+ def validate_condition(condition, count):
+     if condition != CONDITION or count != 1:
+-        raise ValueError("Only one A_FULL step-42 continuation is authorized")
++        raise ValueError("Only the prepared 108 step-32 identifier is valid")
+ 
+ 
+ def allocate_paid(metadata, raw=RAW):
+@@ -99,7 +100,7 @@
+         **metadata, "mode": mode, "synthetic": mode != "paid",
+         "condition_id": CONDITION, "start": now(),
+     })
+-    shutil.copytree(ROOT / "history", directory / "history_implementation",
++    shutil.copytree(ROOT / "history/prepared108", directory / "history_implementation",
+                     ignore=shutil.ignore_patterns("__pycache__"))
+     save(directory / "SEALED_UNTIL_CONDITION_FREEZE", {
+         "condition_id": CONDITION, "opened_for_behavior": False,
+@@ -153,6 +154,8 @@
+ 
+ 
+ def launch(mode):
++    raise PermissionError(
++        "108 path is prepared only; execution is not authorized")
+     directory = None
+     original_popen = subprocess.Popen
+     original_allocate = preserved.allocate
+@@ -201,6 +204,8 @@
+ 
+ 
+ def main():
++    raise PermissionError(
++        "108 path is prepared only; execution is not authorized")
+     parser = argparse.ArgumentParser(description=__doc__)
+     parser.add_argument("mode", choices=("restore-check", "offline-wire",
+                                           "paid"))
+@@ -213,8 +218,8 @@
+     EVIDENCE.mkdir(parents=True, exist_ok=True)
+     if args.mode == "paid":
+         if ledger_path().exists() or (RAW / CONDITION).exists():
+-            raise ValueError("A_FULL continuation slot is already consumed")
+-        frozen = read(ROOT / "history/frozen.json")
++            raise ValueError("Prepared 108 continuation slot is already consumed")
++        frozen = read(ROOT / "history/prepared108/frozen.json")
+         if implementation_hashes() != frozen["implementation_sha256"]:
+             raise ValueError("Continuation implementation freeze differs")
+         for path, expected in frozen["gate_sha256"].items():

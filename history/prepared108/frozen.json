@@ -1,0 +1,18 @@
+{
+  "time": "2026-09-11T11:19:11.556386+00:00",
+  "status": "prepared_only_not_invoked",
+  "execution_authorized": false,
+  "all_gates_passed": false,
+  "reason": "Budget and syntax/guard checks pass; actual prepared restoration and wire validation are deliberately not invoked.",
+  "preparation_sha256": {
+    "ADAPTATION.diff": "ea1ed8453572391708c86247c2477d99d79d25a7964ee8229b90733597b09e34",
+    "README.md": "81d71b4a470d1c7a581751cf7a92403a6c9727ae58480ad25dc8e6c19125ca45",
+    "RESTORE_108_STEP32.json": "a5fe321a75a0ce53f24ceb19d2032a83d5a2f4871928b5e00cc4fb89f7acdbf2",
+    "SOURCE108_CONFIG.yaml": "73ad5ca7dd6eb786fc43b36edda629b6ee05a1a18b7de875376607d07b5155dd",
+    "bootstrap.py": "1a30a46477ee9019be2238b0807ace5dfa32a7b84cf6c9fc54b947e88b615d1c",
+    "contract.py": "f89713838ae103bbe46cd6d6534ea90001c013c64b394b17af230c8802a5926d",
+    "loop.py": "f3aeba904522abc0fb8556aa4eefc7b9929ad5e1bee17b7303ac7340a9225314",
+    "preparation.json": "dca511bbf84201ee6cb96f30266d75a090bded880ee489cb721150047d41d77b",
+    "run.py": "0a666d9c33771815a001b6a22464cf28ffdb299235646c7c0f1218c57beb7f97"
+  }
+}

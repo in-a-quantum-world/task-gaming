@@ -69,3 +69,34 @@
 - DECISION: Stop paid work. Keep the quarantine marker and update only this operational handoff. No transcript, grader, behavior summary, final-diff interpretation, or further model call follows.
 - WHY: Later condition texts, local rubric, planned N, and analysis policy must be frozen before this outcome is opened.
 - WHAT COULD MAKE THIS WRONG: Local permissions are owner-controlled. The marker and access discipline must be respected by later agents and researchers; preservation hashes do not enforce scientific blinding against an authorized filesystem owner.
+
+
+## 2026-09-11 — Offline budget semantics and 108 preparation
+
+- TIME: The budget audit and preparation receipts record exact times.
+- QUESTION: Do saved steps 42 and 32 leave precisely 57 and 67 decisions?
+- PREVIOUS BELIEF: The upstream increment-then-exclusive-loop design implies those bounds; the prior test covered 258 with a stub step.
+- EVIDENCE: Actual loop/native step code plus deterministic MockProvider produce exact 43–99 and 33–99 ranges, with unused scripted calls. Mutating < to <= adds mock decision 100 and fails both assertions. Isolated transport guards reject 100 independently.
+- DECISION: Record both budget contracts as verified offline. Final cursor 100 is not an executed decision 100.
+- WHY: The test exercises provider invocation, native results, and checkpoint saves, rather than only reimplementing a range formula.
+- WHAT COULD MAKE THIS WRONG: Budget isolation stubs real restoration and shell execution. It does not prove functional fidelity of an uninvoked checkpoint path or disclose the sealed run's actual duration.
+
+## 2026-09-11 — Pre-invocation-only sealed contract audit
+
+- TIME: afull-pre-invocation-audit.json records the inspection time and read allowlist.
+- QUESTION: Was the existing sealed A_FULL sample launched under the 57-decision contract?
+- PREVIOUS BELIEF: Its frozen manifest was intended to preserve saved step 42 and max_steps 100.
+- EVIDENCE: Actual pre-invocation manifest, allocation/config, restored pre-call state/reference, and archived pre-launch code agree: next 43, remaining 57, total 100, zero prior invocations. Code hashes match the original freeze.
+- DECISION: Confirm the launch contract without opening any post-invocation records or scientific outcome.
+- WHY: A bounded allowlist permits infrastructure verification without contaminating condition design.
+- WHAT COULD MAKE THIS WRONG: These records establish the launch contract, not the actual number or phenotype of later decisions. No such claim is made.
+
+## 2026-09-11 — 108 path prepared, not invoked
+
+- TIME: history/prepared108/preparation.json records preparation time.
+- QUESTION: Can the same machinery be prepared for step 32 without running it?
+- PREVIOUS BELIEF: A_FULL v1 hardcodes step 43, 57 remaining decisions, and nine errors.
+- EVIDENCE: The original 108 step-32 reference has six errors and 67 remaining decisions. Config and provider controls match the source. Adapted copies use the correct contract, independent paths, six-error gate, and 33–99 bound; both entry points deny execution before side effects.
+- DECISION: Preserve the old frozen code and prepare a disabled nested copy with exact provenance and source hashes. Do not invoke its restoration, wire path, or provider; do not allocate its ledger.
+- WHY: The researcher explicitly requested preparation only. Synthetic mock budget tests are not a real checkpoint continuation.
+- WHAT COULD MAKE THIS WRONG: This new path has not passed actual restore/wire gates. A later authorized stage must run those gates and freeze its exact scientific condition before paid use.

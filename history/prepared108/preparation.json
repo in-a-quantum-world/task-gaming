@@ -1,0 +1,25 @@
+{
+  "prepared_at": "2026-09-11T11:11:18.362196+00:00",
+  "status": "prepared_not_invoked",
+  "execution_authorized": false,
+  "real_checkpoint_restored_in_this_task": false,
+  "continuation_ledger_allocated": false,
+  "source": "/home/rucha/ai-alignment-forensics/near100-source-pilot/research/data/raw/near100/source108-955f35aaeaf24d7a8e5de9b4fc29611a/data/step-32",
+  "source_reference_errors": 6,
+  "first_decision": 33,
+  "last_permitted_decision": 99,
+  "maximum_decisions": 67,
+  "mechanism": "Reviewed copy of frozen A_FULL launcher/bootstrap/restore/transport gate, adapted only for the original 108 config, checkpoint contract, range, diagnostics and independent slot; main and launch are disabled before any side effect.",
+  "original_code_sha256": {
+    "bootstrap.py": "1a30a46477ee9019be2238b0807ace5dfa32a7b84cf6c9fc54b947e88b615d1c",
+    "contract.py": "e2d1bf4c5b9cd736e7836eb6ca0970a54ca3ae843b533538a6492a6820083838",
+    "loop.py": "bfc393c5d31603d98a6f38c4e399a85919e9794ad4e4c7368713d5788c536660",
+    "run.py": "7f5d57d72bfa76dc7efc6a0cddc80c62f4a8553d156e0fe8cf5192d69357da49"
+  },
+  "prepared_code_sha256": {
+    "bootstrap.py": "1a30a46477ee9019be2238b0807ace5dfa32a7b84cf6c9fc54b947e88b615d1c",
+    "contract.py": "f89713838ae103bbe46cd6d6534ea90001c013c64b394b17af230c8802a5926d",
+    "loop.py": "f3aeba904522abc0fb8556aa4eefc7b9929ad5e1bee17b7303ac7340a9225314",
+    "run.py": "0a666d9c33771815a001b6a22464cf28ffdb299235646c7c0f1218c57beb7f97"
+  }
+}

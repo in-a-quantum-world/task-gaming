@@ -1,0 +1,834 @@
+{
+  "passed": true,
+  "deterministic_mock_runs": [
+    {
+      "fixture": "258-cap",
+      "synthetic_saved_step": 42,
+      "invoked_steps": [
+        43,
+        44,
+        45,
+        46,
+        47,
+        48,
+        49,
+        50,
+        51,
+        52,
+        53,
+        54,
+        55,
+        56,
+        57,
+        58,
+        59,
+        60,
+        61,
+        62,
+        63,
+        64,
+        65,
+        66,
+        67,
+        68,
+        69,
+        70,
+        71,
+        72,
+        73,
+        74,
+        75,
+        76,
+        77,
+        78,
+        79,
+        80,
+        81,
+        82,
+        83,
+        84,
+        85,
+        86,
+        87,
+        88,
+        89,
+        90,
+        91,
+        92,
+        93,
+        94,
+        95,
+        96,
+        97,
+        98,
+        99
+      ],
+      "saved_steps": [
+        43,
+        44,
+        45,
+        46,
+        47,
+        48,
+        49,
+        50,
+        51,
+        52,
+        53,
+        54,
+        55,
+        56,
+        57,
+        58,
+        59,
+        60,
+        61,
+        62,
+        63,
+        64,
+        65,
+        66,
+        67,
+        68,
+        69,
+        70,
+        71,
+        72,
+        73,
+        74,
+        75,
+        76,
+        77,
+        78,
+        79,
+        80,
+        81,
+        82,
+        83,
+        84,
+        85,
+        86,
+        87,
+        88,
+        89,
+        90,
+        91,
+        92,
+        93,
+        94,
+        95,
+        96,
+        97,
+        98,
+        99
+      ],
+      "mock_provider_calls": 57,
+      "native_tool_results": 57,
+      "script_commands_left": 63,
+      "final_cursor": 100,
+      "ended_by_mock_script_exhaustion": false,
+      "real_checkpoint_restored": false,
+      "real_provider_requests": 0,
+      "shell_execution": "deterministic recorder; no shell subprocess",
+      "commands": [
+        {
+          "step": 43,
+          "command": "budget-probe-0"
+        },
+        {
+          "step": 44,
+          "command": "budget-probe-1"
+        },
+        {
+          "step": 45,
+          "command": "budget-probe-2"
+        },
+        {
+          "step": 46,
+          "command": "budget-probe-3"
+        },
+        {
+          "step": 47,
+          "command": "budget-probe-4"
+        },
+        {
+          "step": 48,
+          "command": "budget-probe-5"
+        },
+        {
+          "step": 49,
+          "command": "budget-probe-6"
+        },
+        {
+          "step": 50,
+          "command": "budget-probe-7"
+        },
+        {
+          "step": 51,
+          "command": "budget-probe-8"
+        },
+        {
+          "step": 52,
+          "command": "budget-probe-9"
+        },
+        {
+          "step": 53,
+          "command": "budget-probe-10"
+        },
+        {
+          "step": 54,
+          "command": "budget-probe-11"
+        },
+        {
+          "step": 55,
+          "command": "budget-probe-12"
+        },
+        {
+          "step": 56,
+          "command": "budget-probe-13"
+        },
+        {
+          "step": 57,
+          "command": "budget-probe-14"
+        },
+        {
+          "step": 58,
+          "command": "budget-probe-15"
+        },
+        {
+          "step": 59,
+          "command": "budget-probe-16"
+        },
+        {
+          "step": 60,
+          "command": "budget-probe-17"
+        },
+        {
+          "step": 61,
+          "command": "budget-probe-18"
+        },
+        {
+          "step": 62,
+          "command": "budget-probe-19"
+        },
+        {
+          "step": 63,
+          "command": "budget-probe-20"
+        },
+        {
+          "step": 64,
+          "command": "budget-probe-21"
+        },
+        {
+          "step": 65,
+          "command": "budget-probe-22"
+        },
+        {
+          "step": 66,
+          "command": "budget-probe-23"
+        },
+        {
+          "step": 67,
+          "command": "budget-probe-24"
+        },
+        {
+          "step": 68,
+          "command": "budget-probe-25"
+        },
+        {
+          "step": 69,
+          "command": "budget-probe-26"
+        },
+        {
+          "step": 70,
+          "command": "budget-probe-27"
+        },
+        {
+          "step": 71,
+          "command": "budget-probe-28"
+        },
+        {
+          "step": 72,
+          "command": "budget-probe-29"
+        },
+        {
+          "step": 73,
+          "command": "budget-probe-30"
+        },
+        {
+          "step": 74,
+          "command": "budget-probe-31"
+        },
+        {
+          "step": 75,
+          "command": "budget-probe-32"
+        },
+        {
+          "step": 76,
+          "command": "budget-probe-33"
+        },
+        {
+          "step": 77,
+          "command": "budget-probe-34"
+        },
+        {
+          "step": 78,
+          "command": "budget-probe-35"
+        },
+        {
+          "step": 79,
+          "command": "budget-probe-36"
+        },
+        {
+          "step": 80,
+          "command": "budget-probe-37"
+        },
+        {
+          "step": 81,
+          "command": "budget-probe-38"
+        },
+        {
+          "step": 82,
+          "command": "budget-probe-39"
+        },
+        {
+          "step": 83,
+          "command": "budget-probe-40"
+        },
+        {
+          "step": 84,
+          "command": "budget-probe-41"
+        },
+        {
+          "step": 85,
+          "command": "budget-probe-42"
+        },
+        {
+          "step": 86,
+          "command": "budget-probe-43"
+        },
+        {
+          "step": 87,
+          "command": "budget-probe-44"
+        },
+        {
+          "step": 88,
+          "command": "budget-probe-45"
+        },
+        {
+          "step": 89,
+          "command": "budget-probe-46"
+        },
+        {
+          "step": 90,
+          "command": "budget-probe-47"
+        },
+        {
+          "step": 91,
+          "command": "budget-probe-48"
+        },
+        {
+          "step": 92,
+          "command": "budget-probe-49"
+        },
+        {
+          "step": 93,
+          "command": "budget-probe-50"
+        },
+        {
+          "step": 94,
+          "command": "budget-probe-51"
+        },
+        {
+          "step": 95,
+          "command": "budget-probe-52"
+        },
+        {
+          "step": 96,
+          "command": "budget-probe-53"
+        },
+        {
+          "step": 97,
+          "command": "budget-probe-54"
+        },
+        {
+          "step": 98,
+          "command": "budget-probe-55"
+        },
+        {
+          "step": 99,
+          "command": "budget-probe-56"
+        }
+      ]
+    },
+    {
+      "fixture": "108-cap",
+      "synthetic_saved_step": 32,
+      "invoked_steps": [
+        33,
+        34,
+        35,
+        36,
+        37,
+        38,
+        39,
+        40,
+        41,
+        42,
+        43,
+        44,
+        45,
+        46,
+        47,
+        48,
+        49,
+        50,
+        51,
+        52,
+        53,
+        54,
+        55,
+        56,
+        57,
+        58,
+        59,
+        60,
+        61,
+        62,
+        63,
+        64,
+        65,
+        66,
+        67,
+        68,
+        69,
+        70,
+        71,
+        72,
+        73,
+        74,
+        75,
+        76,
+        77,
+        78,
+        79,
+        80,
+        81,
+        82,
+        83,
+        84,
+        85,
+        86,
+        87,
+        88,
+        89,
+        90,
+        91,
+        92,
+        93,
+        94,
+        95,
+        96,
+        97,
+        98,
+        99
+      ],
+      "saved_steps": [
+        33,
+        34,
+        35,
+        36,
+        37,
+        38,
+        39,
+        40,
+        41,
+        42,
+        43,
+        44,
+        45,
+        46,
+        47,
+        48,
+        49,
+        50,
+        51,
+        52,
+        53,
+        54,
+        55,
+        56,
+        57,
+        58,
+        59,
+        60,
+        61,
+        62,
+        63,
+        64,
+        65,
+        66,
+        67,
+        68,
+        69,
+        70,
+        71,
+        72,
+        73,
+        74,
+        75,
+        76,
+        77,
+        78,
+        79,
+        80,
+        81,
+        82,
+        83,
+        84,
+        85,
+        86,
+        87,
+        88,
+        89,
+        90,
+        91,
+        92,
+        93,
+        94,
+        95,
+        96,
+        97,
+        98,
+        99
+      ],
+      "mock_provider_calls": 67,
+      "native_tool_results": 67,
+      "script_commands_left": 53,
+      "final_cursor": 100,
+      "ended_by_mock_script_exhaustion": false,
+      "real_checkpoint_restored": false,
+      "real_provider_requests": 0,
+      "shell_execution": "deterministic recorder; no shell subprocess",
+      "commands": [
+        {
+          "step": 33,
+          "command": "budget-probe-0"
+        },
+        {
+          "step": 34,
+          "command": "budget-probe-1"
+        },
+        {
+          "step": 35,
+          "command": "budget-probe-2"
+        },
+        {
+          "step": 36,
+          "command": "budget-probe-3"
+        },
+        {
+          "step": 37,
+          "command": "budget-probe-4"
+        },
+        {
+          "step": 38,
+          "command": "budget-probe-5"
+        },
+        {
+          "step": 39,
+          "command": "budget-probe-6"
+        },
+        {
+          "step": 40,
+          "command": "budget-probe-7"
+        },
+        {
+          "step": 41,
+          "command": "budget-probe-8"
+        },
+        {
+          "step": 42,
+          "command": "budget-probe-9"
+        },
+        {
+          "step": 43,
+          "command": "budget-probe-10"
+        },
+        {
+          "step": 44,
+          "command": "budget-probe-11"
+        },
+        {
+          "step": 45,
+          "command": "budget-probe-12"
+        },
+        {
+          "step": 46,
+          "command": "budget-probe-13"
+        },
+        {
+          "step": 47,
+          "command": "budget-probe-14"
+        },
+        {
+          "step": 48,
+          "command": "budget-probe-15"
+        },
+        {
+          "step": 49,
+          "command": "budget-probe-16"
+        },
+        {
+          "step": 50,
+          "command": "budget-probe-17"
+        },
+        {
+          "step": 51,
+          "command": "budget-probe-18"
+        },
+        {
+          "step": 52,
+          "command": "budget-probe-19"
+        },
+        {
+          "step": 53,
+          "command": "budget-probe-20"
+        },
+        {
+          "step": 54,
+          "command": "budget-probe-21"
+        },
+        {
+          "step": 55,
+          "command": "budget-probe-22"
+        },
+        {
+          "step": 56,
+          "command": "budget-probe-23"
+        },
+        {
+          "step": 57,
+          "command": "budget-probe-24"
+        },
+        {
+          "step": 58,
+          "command": "budget-probe-25"
+        },
+        {
+          "step": 59,
+          "command": "budget-probe-26"
+        },
+        {
+          "step": 60,
+          "command": "budget-probe-27"
+        },
+        {
+          "step": 61,
+          "command": "budget-probe-28"
+        },
+        {
+          "step": 62,
+          "command": "budget-probe-29"
+        },
+        {
+          "step": 63,
+          "command": "budget-probe-30"
+        },
+        {
+          "step": 64,
+          "command": "budget-probe-31"
+        },
+        {
+          "step": 65,
+          "command": "budget-probe-32"
+        },
+        {
+          "step": 66,
+          "command": "budget-probe-33"
+        },
+        {
+          "step": 67,
+          "command": "budget-probe-34"
+        },
+        {
+          "step": 68,
+          "command": "budget-probe-35"
+        },
+        {
+          "step": 69,
+          "command": "budget-probe-36"
+        },
+        {
+          "step": 70,
+          "command": "budget-probe-37"
+        },
+        {
+          "step": 71,
+          "command": "budget-probe-38"
+        },
+        {
+          "step": 72,
+          "command": "budget-probe-39"
+        },
+        {
+          "step": 73,
+          "command": "budget-probe-40"
+        },
+        {
+          "step": 74,
+          "command": "budget-probe-41"
+        },
+        {
+          "step": 75,
+          "command": "budget-probe-42"
+        },
+        {
+          "step": 76,
+          "command": "budget-probe-43"
+        },
+        {
+          "step": 77,
+          "command": "budget-probe-44"
+        },
+        {
+          "step": 78,
+          "command": "budget-probe-45"
+        },
+        {
+          "step": 79,
+          "command": "budget-probe-46"
+        },
+        {
+          "step": 80,
+          "command": "budget-probe-47"
+        },
+        {
+          "step": 81,
+          "command": "budget-probe-48"
+        },
+        {
+          "step": 82,
+          "command": "budget-probe-49"
+        },
+        {
+          "step": 83,
+          "command": "budget-probe-50"
+        },
+        {
+          "step": 84,
+          "command": "budget-probe-51"
+        },
+        {
+          "step": 85,
+          "command": "budget-probe-52"
+        },
+        {
+          "step": 86,
+          "command": "budget-probe-53"
+        },
+        {
+          "step": 87,
+          "command": "budget-probe-54"
+        },
+        {
+          "step": 88,
+          "command": "budget-probe-55"
+        },
+        {
+          "step": 89,
+          "command": "budget-probe-56"
+        },
+        {
+          "step": 90,
+          "command": "budget-probe-57"
+        },
+        {
+          "step": 91,
+          "command": "budget-probe-58"
+        },
+        {
+          "step": 92,
+          "command": "budget-probe-59"
+        },
+        {
+          "step": 93,
+          "command": "budget-probe-60"
+        },
+        {
+          "step": 94,
+          "command": "budget-probe-61"
+        },
+        {
+          "step": 95,
+          "command": "budget-probe-62"
+        },
+        {
+          "step": 96,
+          "command": "budget-probe-63"
+        },
+        {
+          "step": 97,
+          "command": "budget-probe-64"
+        },
+        {
+          "step": 98,
+          "command": "budget-probe-65"
+        },
+        {
+          "step": 99,
+          "command": "budget-probe-66"
+        }
+      ]
+    }
+  ],
+  "mutation_checks": [
+    {
+      "variant": 258,
+      "deliberate_in_memory_mutation": "< changed to <=",
+      "extra_mock_decision": 100,
+      "regression_test_rejects_mutant": true
+    },
+    {
+      "variant": 108,
+      "deliberate_in_memory_mutation": "< changed to <=",
+      "extra_mock_decision": 100,
+      "regression_test_rejects_mutant": true
+    }
+  ],
+  "transport_guard_checks": [
+    {
+      "first_accepted": 43,
+      "last_accepted": 99,
+      "rejected_steps": [
+        42,
+        100,
+        101
+      ],
+      "missing_manifest_rejected": true,
+      "real_checkpoint_restored": false,
+      "provider_created": false,
+      "transport_called": false,
+      "guard_source_sha256": "bfc393c5d31603d98a6f38c4e399a85919e9794ad4e4c7368713d5788c536660"
+    },
+    {
+      "first_accepted": 33,
+      "last_accepted": 99,
+      "rejected_steps": [
+        32,
+        100,
+        101
+      ],
+      "missing_manifest_rejected": true,
+      "real_checkpoint_restored": false,
+      "provider_created": false,
+      "transport_called": false,
+      "guard_source_sha256": "f3aeba904522abc0fb8556aa4eefc7b9929ad5e1bee17b7303ac7340a9225314"
+    }
+  ],
+  "agent_py_sha256": "1c41bdb671d037fe9335d6f87cf648b679157cf3d31bf0cb048c5c574447fe1e",
+  "run_step_py_sha256": "8341aa7af452ba3f4c7c409048ec2ff42316e7a2088ef788731f412acad3db1e",
+  "mock_provider_module": "agent_interp_envs.providers.mock_provider",
+  "network": "Docker --network none plus socket-connect rejection",
+  "scope": "Budget and guard audit with synthetic cursors, not an invocation of either real restoration/continuation path."
+}
