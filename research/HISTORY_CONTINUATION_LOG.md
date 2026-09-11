@@ -59,3 +59,13 @@
 - DECISION: Freeze the condition/protocol/implementation and gate hashes before paid allocation. No separate paid preflight. Exactly one authorized sample follows.
 - WHY: The same source adapter is exercised without extra real provider calls; failed allocated samples will not be replaced.
 - WHAT COULD MAKE THIS WRONG: Provider availability or funds can still fail at the first actual call. Such a failure consumes the allocated continuation slot.
+
+## 2026-09-11T08:34:02.588421+00:00 — Operational receipt and quarantine
+
+- TIME: The public operational receipt records this time.
+- QUESTION: Did the single allocated sample preserve its artifacts without exposing the outcome?
+- PREVIOUS BELIEF: All offline gates passed; one sample was authorized under a frozen no-retry policy.
+- EVIDENCE: The A_FULL_258_STEP42_RUN1 slot is consumed. Raw artifacts and final state are sealed. No scientific outcome has been opened or analyzed. The public receipt is retained separately from raw data.
+- DECISION: Stop paid work. Keep the quarantine marker and update only this operational handoff. No transcript, grader, behavior summary, final-diff interpretation, or further model call follows.
+- WHY: Later condition texts, local rubric, planned N, and analysis policy must be frozen before this outcome is opened.
+- WHAT COULD MAKE THIS WRONG: Local permissions are owner-controlled. The marker and access discipline must be respected by later agents and researchers; preservation hashes do not enforce scientific blinding against an authorized filesystem owner.

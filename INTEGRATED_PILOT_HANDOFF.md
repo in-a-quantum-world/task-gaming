@@ -21,11 +21,12 @@ The researcher retains scientific adjudication and must authorize unsealing.
 
 ## Task and current state
 
-Infrastructure and offline gates are complete. The paid slot is not yet allocated
-at this pre-launch handoff revision. Read the later Operational receipt section
-and `research/evidence/history/A_FULL_258_STEP42_RUN1/operational-receipt.json`
-when they exist. Never infer that a missing receipt authorizes a replacement;
-check the common Git continuation ledger first.
+The A_FULL_258_STEP42_RUN1 slot is consumed. Raw artifacts and final state are sealed. No scientific outcome has been opened or analyzed.
+
+The [operational receipt](research/evidence/history/A_FULL_258_STEP42_RUN1/operational-receipt.json)
+records only allocation, preservation, gate-record presence, and an operational
+failure category. Behavioral decisions, termination phenotype, final diffs, usage,
+and scientific labels remain quarantined.
 
 **Condition: A_FULL_258_STEP42_RUN1.** Use the exact original full message/tool
 trajectory through step 42 from the preserved 258 source. Preserve every earlier
@@ -59,12 +60,20 @@ grading; the paid outcome cannot change the primary rubric.
 
 ## Remaining work
 
-At this pre-launch revision, freeze/commit the stage and run the sole authorized
-sample. After any allocation, never repeat it. Record only the operational receipt.
-Keep the scientific outcome unopened. The researcher must freeze all five release
-gates below before any unsealing or later scientific analysis.
+No paid execution work remains. Do not repeat or replace this sample.
+Keep its scientific outcome unopened. The researcher must freeze all five
+release gates below and explicitly authorize unsealing. Later samples need
+separate authorization; no next-condition text was constructed here.
 
 ## Verified state
+
+Continuation freeze commit: `c6660b9d6c1d36f6af2b198dd51dc58f8dbee5b6`. The source config, primary rubric,
+exact condition, and implementation were frozen before allocation.
+Raw location: `/home/rucha/ai-alignment-forensics/integrated-pilot/research/data/raw/history/A_FULL_258_STEP42_RUN1`.
+The marker `SEALED_UNTIL_CONDITION_FREEZE` remains in place.
+Raw manifest SHA-256: `328f06cedb083f90d73832e4b6a951977c439a3e54a4e89ded7a66acbcb557f4`.
+Integrity checks did not render messages, classify behavior, or open final
+source diffs. Detailed termination and cost records remain inside quarantine.
 
 - Source: `research/data/raw/integrated-pilot/source-4f522c3fe196414c975797817b07e35c/data/step-42`.
 - Source manifest SHA-256: `cf153f0a335d305af55529203923782accf3c1ee8c12c80cfbc6932558c2ddd8`.
@@ -99,7 +108,7 @@ usage/cost, and final state. The root preserves final_workspace and its archive,
 code/config copies, original source reference, exact Docker command, and hashes.
 No behavioral count, termination phenotype, final diff, or transcript is published.
 
-Command for the sole paid sample, to become historical after allocation:
+Historical command for the sole paid sample — **do not rerun**:
 
 ```bash
 /home/rucha/ai-alignment-forensics/task-gaming-under-trajectory-pressure/upstream/agent-interp-envs/.venv/bin/python history/run.py paid --condition A_FULL_258_STEP42_RUN1 --count 1
