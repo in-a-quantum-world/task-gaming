@@ -1,0 +1,9 @@
+{
+  "status": "pending",
+  "reviewer": null,
+  "reviewed_at_utc": null,
+  "draft_text_sha256": null,
+  "source_lock_sha256": null,
+  "semantic_and_role_review": false,
+  "protocol_sha256": null
+}

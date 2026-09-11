@@ -1,0 +1,24 @@
+{
+  "timestamp_utc": "2026-09-11T09:35:45.200045+00:00",
+  "source_cutoffs": {
+    "258": 42,
+    "108": 32
+  },
+  "outcomes_inspected": false,
+  "paid_model_calls": 0,
+  "model_calls": 0,
+  "continuations": 0,
+  "task_commands": 0,
+  "workspace_restores": 0,
+  "new_branches": 0,
+  "destination_branch": "experiment/prototype-history-effect",
+  "source_files_modified": false,
+  "status": "candidate_pending_external_review",
+  "python_version": "3.13.13 | packaged by Anaconda, Inc. | (main, Apr 14 2026, 06:19:41) [GCC 14.3.0]",
+  "tests_passed": 8,
+  "source_edits_reconstructed": 28,
+  "actual_token_counts": "unknown",
+  "final_worktree_offline_tests_passed": 8,
+  "prototype_parent_commit": "e5a9ef9da0384d46eaf7b1a0fe48ae971cffc46b",
+  "created_file_count_before_hash_manifest": 69
+}

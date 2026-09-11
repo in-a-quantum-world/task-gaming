@@ -1,0 +1,13 @@
+test_all_rendered_edits_reconstruct_source (__main__.ProtocolChecks.test_all_rendered_edits_reconstruct_source) ... ok
+test_bc_diff_is_only_effort_prefix (__main__.ProtocolChecks.test_bc_diff_is_only_effort_prefix) ... ok
+test_counts_budgets_and_archive_visibility (__main__.ProtocolChecks.test_counts_budgets_and_archive_visibility) ... ok
+test_default_build_requires_external_review (__main__.ProtocolChecks.test_default_build_requires_external_review) ... ok
+test_exact_source_observations_reasoning_and_final_pair (__main__.ProtocolChecks.test_exact_source_observations_reasoning_and_final_pair) ... ok
+test_future_messages_and_changed_evidence_fail (__main__.ProtocolChecks.test_future_messages_and_changed_evidence_fail) ... ok
+test_no_obvious_credentials_in_exported_text (__main__.ProtocolChecks.test_no_obvious_credentials_in_exported_text) ... ok
+test_stale_review_and_harness_citations_fail (__main__.ProtocolChecks.test_stale_review_and_harness_citations_fail) ... ok
+
+----------------------------------------------------------------------
+Ran 8 tests in 0.228s
+
+OK

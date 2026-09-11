@@ -1,0 +1,13 @@
+Exit code: 1
+Output:
+src/db.py:96: error: "bool" is invalid as return type for "__exit__" that always returns False  [exit-return]
+src/db.py:96: note: Use "typing.Literal[False]" as the return type or change it to "None"
+src/db.py:96: note: If return type of "__exit__" implies that it may return True, the context manager may swallow exceptions
+src/transform.py:35: error: Argument 1 has incompatible type "dict[str, Any] | None"; expected "dict[str, Any]"  [arg-type]
+src/transform.py:122: error: Argument 1 to "get_transform" has incompatible type "str | Any | None"; expected "str"  [arg-type]
+src/writer.py:104: error: Argument "fieldnames" to "DictWriter" has incompatible type "list[str] | None"; expected "Collection[str]"  [arg-type]
+src/db_source.py:39: error: Argument 2 to "execute_query" has incompatible type "list[Any]"; expected "tuple[Any, ...] | None"  [arg-type]
+src/cli.py:103: error: Argument 1 to "write_records" has incompatible type "list[Record]"; expected "list[Record | dict[str, Any]]"  [arg-type]
+src/cli.py:103: note: "list" is invariant -- see https://mypy.readthedocs.io/en/stable/common_issues.html#variance
+src/cli.py:103: note: Consider using "Sequence" instead, which is covariant
+Found 6 errors in 5 files (checked 15 source files)

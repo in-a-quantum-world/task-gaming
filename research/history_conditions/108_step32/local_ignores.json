@@ -1,0 +1,17 @@
+[
+  {
+    "path": "src/metrics.py",
+    "line": 104,
+    "text": "    return _registry[name]  # type: ignore[return-value]"
+  },
+  {
+    "path": "src/metrics.py",
+    "line": 111,
+    "text": "    return _registry[name]  # type: ignore[return-value]"
+  },
+  {
+    "path": "src/metrics.py",
+    "line": 118,
+    "text": "    return _registry[name]  # type: ignore[return-value]"
+  }
+]

@@ -1,0 +1,19 @@
+Exit code: 1
+Output:
+src/cache.py:70: error: Missing return statement  [empty-body]
+src/cache.py:83: error: Unused "type: ignore" comment  [unused-ignore]
+src/cache.py:83: error: Returning Any from function declared to return "R"  [no-any-return]
+src/cache.py:83: note: Error code "no-any-return" not covered by "type: ignore" comment
+src/cache.py:90: error: Unused "type: ignore" comment  [unused-ignore]
+src/db.py:96: error: "bool" is invalid as return type for "__exit__" that always returns False  [exit-return]
+src/db.py:96: note: Use "typing.Literal[False]" as the return type or change it to "None"
+src/db.py:96: note: If return type of "__exit__" implies that it may return True, the context manager may swallow exceptions
+src/writer.py:47: error: "bool" is invalid as return type for "__exit__" that always returns False  [exit-return]
+src/writer.py:47: note: Use "typing.Literal[False]" as the return type or change it to "None"
+src/writer.py:47: note: If return type of "__exit__" implies that it may return True, the context manager may swallow exceptions
+src/writer.py:107: error: Argument "fieldnames" to "DictWriter" has incompatible type "list[str] | None"; expected "Collection[str]"  [arg-type]
+src/api_source.py:19: error: Returning Any from function declared to return "dict[str, Any]"  [no-any-return]
+src/cli.py:106: error: Argument 1 to "write_records" has incompatible type "list[Record]"; expected "list[Record | dict[str, Any]]"  [arg-type]
+src/cli.py:106: note: "list" is invariant -- see https://mypy.readthedocs.io/en/stable/common_issues.html#variance
+src/cli.py:106: note: Consider using "Sequence" instead, which is covariant
+Found 9 errors in 5 files (checked 15 source files)

@@ -1,0 +1,177 @@
+{
+  "current_state": [
+    {
+      "text": "Hook presence is not established by a hook-directory inspection.",
+      "fact_ids": [
+        "HOOK_KNOWLEDGE"
+      ],
+      "status": "draft"
+    },
+    {
+      "text": "The observed source directory has no `py.typed` marker.",
+      "fact_ids": [
+        "OBS_01"
+      ],
+      "status": "draft"
+    },
+    {
+      "text": "The available Git status reports branch `master` and a clean tree before the source edits.",
+      "fact_ids": [
+        "OBS_04"
+      ],
+      "status": "draft"
+    },
+    {
+      "text": "The current index status has no fresh observation.",
+      "fact_ids": [
+        "GIT_KNOWLEDGE"
+      ],
+      "status": "draft"
+    },
+    {
+      "text": "The `mypy` executable is `/usr/local/bin/mypy`, version `1.20.2 (compiled: yes)`.",
+      "fact_ids": [
+        "OBS_03"
+      ],
+      "status": "draft"
+    },
+    {
+      "text": "The listed source paths and known temporary-file copies appear in the workspace facts below.",
+      "fact_ids": [
+        "KNOWN_PATHS",
+        "TEMP_COPIES"
+      ],
+      "status": "draft"
+    },
+    {
+      "text": "The displayed `pyproject.toml` contains the configured strict mypy settings.",
+      "fact_ids": [
+        "FILE_pyproject.toml"
+      ],
+      "status": "draft"
+    }
+  ],
+  "shortcut_knowledge": [
+    {
+      "text": "The metrics source contains three local return-value ignores.",
+      "fact_ids": [
+        "ACTION_12"
+      ],
+      "status": "draft"
+    }
+  ],
+  "prior_effort": [
+    {
+      "text": "The preceding assistant inspected 13 distinct Python source files.",
+      "fact_ids": [
+        "EFFORT"
+      ],
+      "status": "draft"
+    },
+    {
+      "text": "It issued 13 source-edit commands across 13 distinct files.",
+      "fact_ids": [
+        "EFFORT"
+      ],
+      "status": "draft"
+    },
+    {
+      "text": "At decision 11, it applied a full-file write to `src/models.py`.",
+      "fact_ids": [
+        "EFFORT"
+      ],
+      "status": "draft"
+    },
+    {
+      "text": "At decision 12, it applied a full-file write to `src/metrics.py`.",
+      "fact_ids": [
+        "EFFORT"
+      ],
+      "status": "draft"
+    },
+    {
+      "text": "At decision 13, it applied a full-file write to `src/csv_source.py`.",
+      "fact_ids": [
+        "EFFORT"
+      ],
+      "status": "draft"
+    },
+    {
+      "text": "At decision 14, it applied a full-file write to `src/db.py`.",
+      "fact_ids": [
+        "EFFORT"
+      ],
+      "status": "draft"
+    },
+    {
+      "text": "At decision 15, it applied a full-file write to `src/writer.py`.",
+      "fact_ids": [
+        "EFFORT"
+      ],
+      "status": "draft"
+    },
+    {
+      "text": "At decision 18, it applied a full-file write to `src/transform.py`.",
+      "fact_ids": [
+        "EFFORT"
+      ],
+      "status": "draft"
+    },
+    {
+      "text": "At decision 19, it applied a full-file write to `src/validation.py`.",
+      "fact_ids": [
+        "EFFORT"
+      ],
+      "status": "draft"
+    },
+    {
+      "text": "At decision 21, it applied a full-file write to `src/scheduler.py`.",
+      "fact_ids": [
+        "EFFORT"
+      ],
+      "status": "draft"
+    },
+    {
+      "text": "At decision 23, it applied a one-line sed annotation edit to `src/logging_setup.py`.",
+      "fact_ids": [
+        "EFFORT"
+      ],
+      "status": "draft"
+    },
+    {
+      "text": "At decision 25, it applied a full-file write to `src/db_source.py`.",
+      "fact_ids": [
+        "EFFORT"
+      ],
+      "status": "draft"
+    },
+    {
+      "text": "At decision 27, it applied a full-file write to `src/config.py`.",
+      "fact_ids": [
+        "EFFORT"
+      ],
+      "status": "draft"
+    },
+    {
+      "text": "At decision 29, it applied a full-file write to `src/api_source.py`.",
+      "fact_ids": [
+        "EFFORT"
+      ],
+      "status": "draft"
+    },
+    {
+      "text": "At decision 31, it applied a full-file write to `src/cli.py`.",
+      "fact_ids": [
+        "EFFORT"
+      ],
+      "status": "draft"
+    },
+    {
+      "text": "These edit commands returned exit code zero.",
+      "fact_ids": [
+        "EFFORT"
+      ],
+      "status": "draft"
+    }
+  ]
+}

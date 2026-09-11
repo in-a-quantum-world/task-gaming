@@ -1,0 +1,53 @@
+{
+  "repository": "in-a-quantum-world/task-gaming-under-trajectory-pressure",
+  "source_branch": "experiment/integrated-pilot",
+  "source_commit": "098c7886244478bda4363aa969afdda8cf8c46a8",
+  "checkpoint_directory": "/home/rucha/ai-alignment-forensics/integrated-pilot/research/data/raw/integrated-pilot/source-4f522c3fe196414c975797817b07e35c/data/step-42",
+  "step": 42,
+  "raw_sha256": {
+    "messages.json": "e91a89eb7279583e4288d9f1809a2b6a1f1bb9073399a2b669760db141861e8b",
+    "state.json": "8fedb11c3226b506a4c914cde93f13eaf91f98a9c5f09925f0bc2a5188c2fc37",
+    "workspace.tar.gz": "c9504a703a93f7429dfeac48651765c3353bf1d42f81f9e08627e07160497bb3"
+  },
+  "evidence_sha256": {
+    "effort_inventory.json": "97bfb6287ee1d3ec2e1edb6a18dc523c87a87f06da48849f48102202860bb7b9",
+    "edit_reconstruction.json": "acb695e3f23f968b2a2e98645900aff07debdaf941310e73d36468052b662bca",
+    "faithful_compact_evidence.txt": "ffaffa334d0f2b3f9a82276b09bd948ad49bc9194450b770e1c1868c8142cd4c",
+    "current_source_evidence.txt": "444be79b8f355832b4843ca25fb8650f5cadfb19f6cef4e8ca630d608076c390",
+    "information_inventory.json": "f0f075dd1b19e2f76907a9228585cd9366fb3bdd6d3b95f46973ee413cb36c86",
+    "workspace_audit.json": "00ab3ebe0a0ea86a58f9dd8ef7c829d1cb6d8e0374c5445f21103019a6a03ca6",
+    "final_diagnostics.txt": "87f20def57235c428a6008f7fcded8f071c518acd1bf915d029f09bee36521cb",
+    "source_config.json": "9dced62c46ee74b5095faee600c1dbf684878a05309c8063603b4eb1e2559c2b",
+    "initial_diagnostics.txt": "374de7a016ddeba90ae1b70d7986fc6ed7ded87cc3ba4e6b4ee875c0a098b96f",
+    "local_ignores.json": "a15049876154d7e55aa976799b24e23f00320423cbc9714e4b75d8f71a697a3b",
+    "visible_check_counts.json": "9b3b76942133c8310d666e58f0585991dfa953e66d072962d593795e2065f0be"
+  },
+  "source_config_at_commit_sha256": "65f49c69a7ce19ec79e2766d9896cb3aa346d387fe0c12e97d117b6e19d8e4e2",
+  "max_steps": 100,
+  "next_decision_index": 43,
+  "remaining_decision_budget": 57,
+  "naive_restore_remaining_if_increment_omitted": 58,
+  "source_agent_restore_increment_present": true,
+  "runtime_budget_verified": false,
+  "model": "moonshotai/kimi-k2-thinking",
+  "provider": "openrouter",
+  "provider_backend": "novita/bf16",
+  "reasoning_effort": null,
+  "generation_settings": {
+    "provider": "openrouter",
+    "model": "moonshotai/kimi-k2-thinking",
+    "max_steps": 100,
+    "reasoning_effort": null,
+    "temperature": 1.0,
+    "top_p": 1.0,
+    "provider_preferences": {
+      "only": [
+        "novita/bf16"
+      ],
+      "allow_fallbacks": false,
+      "require_parameters": true
+    }
+  },
+  "tokenizer": null,
+  "tokenizer_status": "No verified local Kimi tokenizer."
+}

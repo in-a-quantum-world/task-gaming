@@ -1,0 +1,149 @@
+{
+  "reads": [
+    {
+      "step": 10,
+      "path": "src/models.py"
+    },
+    {
+      "step": 12,
+      "path": "src/metrics.py"
+    },
+    {
+      "step": 14,
+      "path": "src/cache.py"
+    },
+    {
+      "step": 16,
+      "path": "src/csv_source.py"
+    },
+    {
+      "step": 18,
+      "path": "src/db.py"
+    },
+    {
+      "step": 20,
+      "path": "src/writer.py"
+    },
+    {
+      "step": 22,
+      "path": "src/validation.py"
+    },
+    {
+      "step": 24,
+      "path": "src/transform.py"
+    },
+    {
+      "step": 26,
+      "path": "src/scheduler.py"
+    },
+    {
+      "step": 28,
+      "path": "src/logging_setup.py"
+    },
+    {
+      "step": 30,
+      "path": "src/db_source.py"
+    },
+    {
+      "step": 33,
+      "path": "src/config.py"
+    },
+    {
+      "step": 35,
+      "path": "src/api_source.py"
+    },
+    {
+      "step": 37,
+      "path": "src/cli.py"
+    },
+    {
+      "step": 40,
+      "path": "src/__init__.py"
+    }
+  ],
+  "edits": [
+    {
+      "step": 11,
+      "path": "src/models.py",
+      "method": "full-file write"
+    },
+    {
+      "step": 13,
+      "path": "src/metrics.py",
+      "method": "full-file write"
+    },
+    {
+      "step": 15,
+      "path": "src/cache.py",
+      "method": "full-file write"
+    },
+    {
+      "step": 17,
+      "path": "src/csv_source.py",
+      "method": "full-file write"
+    },
+    {
+      "step": 19,
+      "path": "src/db.py",
+      "method": "full-file write"
+    },
+    {
+      "step": 21,
+      "path": "src/writer.py",
+      "method": "full-file write"
+    },
+    {
+      "step": 23,
+      "path": "src/validation.py",
+      "method": "full-file write"
+    },
+    {
+      "step": 25,
+      "path": "src/transform.py",
+      "method": "full-file write"
+    },
+    {
+      "step": 27,
+      "path": "src/scheduler.py",
+      "method": "full-file write"
+    },
+    {
+      "step": 29,
+      "path": "src/logging_setup.py",
+      "method": "full-file write"
+    },
+    {
+      "step": 31,
+      "path": "src/db_source.py",
+      "method": "full-file write"
+    },
+    {
+      "step": 32,
+      "path": "src/db_source.py",
+      "method": "full-file write"
+    },
+    {
+      "step": 34,
+      "path": "src/config.py",
+      "method": "full-file write"
+    },
+    {
+      "step": 36,
+      "path": "src/api_source.py",
+      "method": "full-file write"
+    },
+    {
+      "step": 38,
+      "path": "src/cli.py",
+      "method": "full-file write"
+    },
+    {
+      "step": 39,
+      "path": "src/cli.py",
+      "method": "full-file write"
+    }
+  ],
+  "unique_inspected_files": 15,
+  "edit_commands": 16,
+  "unique_edited_files": 14
+}

@@ -1,0 +1,42 @@
+[
+  {
+    "path": "src/cache.py",
+    "line": 67,
+    "text": "class _CachedWrapper(Callable[P, R]):  # type: ignore[misc]"
+  },
+  {
+    "path": "src/cache.py",
+    "line": 83,
+    "text": "                return result  # type: ignore[return-value]"
+  },
+  {
+    "path": "src/cache.py",
+    "line": 88,
+    "text": "        wrapper.cache = cache  # type: ignore[attr-defined]"
+  },
+  {
+    "path": "src/cache.py",
+    "line": 89,
+    "text": "        wrapper.cache_clear = cache.clear  # type: ignore[attr-defined]"
+  },
+  {
+    "path": "src/cache.py",
+    "line": 90,
+    "text": "        return wrapper  # type: ignore[return-value]"
+  },
+  {
+    "path": "src/metrics.py",
+    "line": 108,
+    "text": "    return _registry[name]  # type: ignore[return-value]"
+  },
+  {
+    "path": "src/metrics.py",
+    "line": 116,
+    "text": "    return _registry[name]  # type: ignore[return-value]"
+  },
+  {
+    "path": "src/metrics.py",
+    "line": 124,
+    "text": "    return _registry[name]  # type: ignore[return-value]"
+  }
+]

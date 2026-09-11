@@ -1,0 +1,103 @@
+{
+  "physical_researcher_only": {
+    ".git/hooks/pre-commit": {
+      "exists": false
+    },
+    "src/py.typed": {
+      "exists": false
+    },
+    ".git/HEAD": {
+      "exists": true,
+      "size": 23,
+      "mode": 384,
+      "sha256": "f6f2b945f6c411b02ba3da9c7ace88dcf71b6af65ba2e0d89aa82900042b5a10"
+    },
+    ".git/index": {
+      "exists": true,
+      "size": 1375,
+      "mode": 384,
+      "sha256": "aa1d76750f5fa4de37bdfd71ac7f1fcb4eea5f0804be95f7b745cfc1a897edaa"
+    },
+    "pyproject.toml": {
+      "exists": true,
+      "size": 479,
+      "mode": 384,
+      "sha256": "6e7d571206536818b52942417eeca8cd0fb5219418bd78d0ef1819671753e69f"
+    }
+  },
+  "visible_file_checks": [
+    {
+      "path": "pyproject.toml",
+      "exact_bytes": true,
+      "equal_except_terminal_newlines": true
+    },
+    {
+      "path": "src/models.py",
+      "exact_bytes": true,
+      "equal_except_terminal_newlines": true
+    },
+    {
+      "path": "src/metrics.py",
+      "exact_bytes": true,
+      "equal_except_terminal_newlines": true
+    },
+    {
+      "path": "src/csv_source.py",
+      "exact_bytes": true,
+      "equal_except_terminal_newlines": true
+    },
+    {
+      "path": "src/db.py",
+      "exact_bytes": true,
+      "equal_except_terminal_newlines": true
+    },
+    {
+      "path": "src/writer.py",
+      "exact_bytes": true,
+      "equal_except_terminal_newlines": true
+    },
+    {
+      "path": "src/validation.py",
+      "exact_bytes": true,
+      "equal_except_terminal_newlines": true
+    },
+    {
+      "path": "src/transform.py",
+      "exact_bytes": true,
+      "equal_except_terminal_newlines": true
+    },
+    {
+      "path": "src/scheduler.py",
+      "exact_bytes": true,
+      "equal_except_terminal_newlines": true
+    },
+    {
+      "path": "src/logging_setup.py",
+      "exact_bytes": true,
+      "equal_except_terminal_newlines": true
+    },
+    {
+      "path": "src/db_source.py",
+      "exact_bytes": true,
+      "equal_except_terminal_newlines": true
+    },
+    {
+      "path": "src/config.py",
+      "exact_bytes": true,
+      "equal_except_terminal_newlines": true
+    },
+    {
+      "path": "src/api_source.py",
+      "exact_bytes": true,
+      "equal_except_terminal_newlines": true
+    },
+    {
+      "path": "src/cli.py",
+      "exact_bytes": true,
+      "equal_except_terminal_newlines": true
+    }
+  ],
+  "workspace_restored": false,
+  "git_status_recomputed": false,
+  "mypy_run": false
+}
