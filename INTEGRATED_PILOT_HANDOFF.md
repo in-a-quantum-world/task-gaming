@@ -191,3 +191,20 @@ The 108 restoration/continuation path is prepared in history/prepared108 with
 explicit execution locks. It has not been invoked or allocated a ledger. Future
 execution needs researcher authorization and fresh actual restore/wire gates.
 No new branch or scientific history condition was created.
+
+
+## Offline frozen-collection preparation — 2026-09-11
+
+The new preparation is in history/collection and
+[HISTORY_COLLECTION_READINESS.md](research/HISTORY_COLLECTION_READINESS.md).
+The freeze template, analysis skeleton, block schedule, immutable condition loader,
+per-sample ledgers, and blind packet workflow are prepared.
+The design remains draft: 32 planned samples, one already sealed, 31 future slots.
+No count authorizes execution. No new paid model call occurred.
+The existing sealed A_FULL outcome remains unopened; no original marker changed.
+
+The new adapter preserves frozen v1 code and validates the ORIGINAL before history substitution.
+57/67-decision guards remain explicit. The 108 path and all collection entry points stay locked.
+Final condition/rubric approval, actual restore/wire gates, adapter acceptance, and explicit
+researcher authorization still block activation. Old gate evidence does not certify new code.
+Prefer collection-wide quarantine; a condition freeze alone does not release any outcome.

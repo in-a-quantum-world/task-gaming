@@ -1,0 +1,42 @@
+{
+  "time": "2026-09-11T17:29:08.679709+00:00",
+  "command": [
+    "docker",
+    "run",
+    "--rm",
+    "--network",
+    "none",
+    "-e",
+    "PYTHONDONTWRITEBYTECODE=1",
+    "-e",
+    "PYTHON_DOTENV_DISABLED=1",
+    "-v",
+    "/home/rucha/ai-alignment-forensics/integrated-pilot:/repo:ro",
+    "sha256:271a3daf958c33c9e6ad7332624015f9303ef06bf2a805abd12004abff8ddbae",
+    "python",
+    "-B",
+    "/repo/history/collection/test_collection.py"
+  ],
+  "returncode": 0,
+  "passed": true,
+  "network": "none",
+  "inputs": "synthetic temporary state and condition fixtures only",
+  "real_checkpoint_restores": 0,
+  "real_provider_calls": 0,
+  "paid_artifacts_opened": false,
+  "test_log_sha256": "f0830baf22b63c34295729b302eed5d0044bae5295cef4bf73e6805062bc2b1d",
+  "implementation_sha256": {
+    "history/collection/blind.py": "0b10d4a61ac7a9807ca0ff48d0b66cadb0185fc662989dfa348e616f4817bd77",
+    "history/collection/blind_inputs.py": "c43d82c2cf58003df7117205b87da29f120b92c3f68242d7e67efeccaa30d79c",
+    "history/collection/contract.py": "f1235e4a87fd56a553ba0724f82cda26901b4fe4f65d92b54b632af94691fb77",
+    "history/collection/freeze.py": "1e690f51af5f12be6a82d5479f0127e5284566054c1ff72aec012b9a3462399e",
+    "history/collection/frozen_fixture_checks.py": "de63a9f037960fe64eb987d4f79d9ebe1aa87d81b32c5ad20190a3677bf7c808",
+    "history/collection/gates.py": "c8cf42d6e341122363265ba0bccb0ebcc0dbfd994e26a379449bab982b51f54d",
+    "history/collection/ledger.py": "6adccc7340f9322bc544da2d5fca7b28e0b73c3ac51752714610ed2148410f74",
+    "history/collection/loop.py": "adb226eb90ce3ff556cab02cbb53f2d9644868d683936ffe0e99b56d3ab3f360",
+    "history/collection/run.py": "6b47ba059c8e55b335b215c614f51c7a6076f110ed1e433eb37ea82926822105",
+    "history/collection/runtime_fixture_checks.py": "3a83768823f3cf7121d2a05f588ac23d6747031d0e605282129b78b8d08b19b3",
+    "history/collection/schedule.py": "1252b02fd85b4edff0da5cba58b4fc5b4aa5c37cff8136aa6207d9597b632e38",
+    "history/collection/test_collection.py": "0825cf8e542a6e11fa390fa10c20bbe7940e7872c92e97c7af1436dd94c2e5e5"
+  }
+}

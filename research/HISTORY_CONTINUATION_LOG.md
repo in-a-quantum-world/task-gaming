@@ -100,3 +100,34 @@
 - DECISION: Preserve the old frozen code and prepare a disabled nested copy with exact provenance and source hashes. Do not invoke its restoration, wire path, or provider; do not allocate its ledger.
 - WHY: The researcher explicitly requested preparation only. Synthetic mock budget tests are not a real checkpoint continuation.
 - WHAT COULD MAKE THIS WRONG: This new path has not passed actual restore/wire gates. A later authorized stage must run those gates and freeze its exact scientific condition before paid use.
+
+
+## 2026-09-11T17:27:52.636622+00:00 — Prospective collection preparation, outcomes unopened
+
+- TIME: 2026-09-11T17:27:52.636622+00:00.
+- QUESTION: How can 31 future samples follow the existing sealed A_FULL sample without reuse or outcome exposure?
+- PREVIOUS BELIEF: The proposed totals require 32 samples, and v1 authorized only the existing sample.
+- EVIDENCE: The researcher's specified counts sum to 32; the prior pre-invocation audit identifies A_FULL sample 1.
+- DECISION: Draft four balanced blocks with seed 20260911. Keep the historical sample outside future randomization. No execution authorization exists.
+- WHY: Balance checkpoint strata and preserve the first sample's actual chronology.
+- WHAT COULD MAKE THIS WRONG: Counts and texts remain subject to final review; historical sample timing can confound the A diagnostic.
+
+## 2026-09-11T17:27:52.636622+00:00 — Immutable ingestion and independent ledgers
+
+- TIME: 2026-09-11T17:27:52.636622+00:00.
+- QUESTION: Can external conditions enter the same preserved task state without text invention or sample replacement?
+- PREVIOUS BELIEF: The frozen v1 host already preserves raw artifacts; its loop only accepts original full history.
+- EVIDENCE: Prototype exports native message arrays with review metadata. Existing restore code validates the actual original archive, Git, diagnostics, runtime, and budget.
+- DECISION: Add a nested adapter. Validate the original first, then load exact externally reviewed bytes. Require all frozen condition/gate hashes before allocation. Keep 57/67-decision bounds and exclusive per-sample ledgers.
+- WHY: Protect the original implementation and separate workspace validation from the intended history change.
+- WHAT COULD MAKE THIS WRONG: New complete host/container paths and final payload serialization are untested; these block activation until actual offline gates pass.
+
+## 2026-09-11T17:27:52.636622+00:00 — Analysis and blind outcome policy
+
+- TIME: 2026-09-11T17:27:52.636622+00:00.
+- QUESTION: How should primary actions, local suppression, and uncertain failures remain distinct?
+- PREVIOUS BELIEF: Reasoning is valuable for forensics but can bias primary action adjudication; source-pilot ambiguity remains.
+- EVIDENCE: The prospective rubric requires actual native actions and separates narrow local suppression. The user requires a primary risk difference and separate checkpoint replication.
+- DECISION: Draft risk-difference and uncertainty reporting with explicit unknown-outcome bounds. Prepare action-only packets and withhold reasoning until primary labels lock. Keep all outcomes sealed through collection completion and explicit release.
+- WHY: Avoid outcome-driven rubric changes, silent failure exclusions, and claims of independent task replication.
+- WHAT COULD MAKE THIS WRONG: Action/tool text can still reveal history. The interval's binomial approximation can fail under provider dependence. Final rubric, interval, and release decisions require researcher approval.

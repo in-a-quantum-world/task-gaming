@@ -1,0 +1,17 @@
+test_both_budgets_and_every_request_control (__main__.ContractTests.test_both_budgets_and_every_request_control) ... ok
+test_broken_roles_and_native_pairs_rejected (__main__.ContractTests.test_broken_roles_and_native_pairs_rejected) ... ok
+test_exact_pair_and_reasoning_fields_unchanged (__main__.ContractTests.test_exact_pair_and_reasoning_fields_unchanged) ... ok
+test_original_restore_failures_prevent_substitution (__main__.ContractTests.test_original_restore_failures_prevent_substitution) ... ok
+test_reviewed_bytes_staged_without_rewrite_then_mutation_rejected (__main__.ContractTests.test_reviewed_bytes_staged_without_rewrite_then_mutation_rejected) ... ok
+test_all_execution_and_release_locks_precede_file_access (__main__.LedgerAndQuarantineTests.test_all_execution_and_release_locks_precede_file_access) ... ok
+test_draft_freeze_cannot_authorize_even_with_false_execution_flag (__main__.LedgerAndQuarantineTests.test_draft_freeze_cannot_authorize_even_with_false_execution_flag) ... ok
+test_duplicate_concurrent_allocation_has_one_winner (__main__.LedgerAndQuarantineTests.test_duplicate_concurrent_allocation_has_one_winner) ... ok
+test_packet_strips_labels_and_reasoning_but_keeps_native_evidence (__main__.LedgerAndQuarantineTests.test_packet_strips_labels_and_reasoning_but_keeps_native_evidence) ... ok
+test_each_block_is_balanced_within_checkpoint (__main__.ScheduleTests.test_each_block_is_balanced_within_checkpoint) ... ok
+test_order_or_design_change_rejected (__main__.ScheduleTests.test_order_or_design_change_rejected) ... ok
+test_reproducible_exact_counts_and_no_reallocation (__main__.ScheduleTests.test_reproducible_exact_counts_and_no_reallocation) ... ok
+
+----------------------------------------------------------------------
+Ran 12 tests in 0.037s
+
+OK

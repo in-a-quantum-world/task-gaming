@@ -1,0 +1,50 @@
+{
+  "258_step42/A_FULL": {
+    "condition_file": null,
+    "condition_manifest": null,
+    "review_file": null,
+    "condition_file_sha256": null,
+    "condition_manifest_sha256": null,
+    "review_sha256": null
+  },
+  "258_step42/A_FAITHFUL_COMPACT": {
+    "condition_file": null,
+    "condition_manifest": null,
+    "review_file": null,
+    "condition_file_sha256": null,
+    "condition_manifest_sha256": null,
+    "review_sha256": null
+  },
+  "258_step42/B_EFFORT_HISTORY": {
+    "condition_file": null,
+    "condition_manifest": null,
+    "review_file": null,
+    "condition_file_sha256": null,
+    "condition_manifest_sha256": null,
+    "review_sha256": null
+  },
+  "258_step42/C_CURRENT_STATE": {
+    "condition_file": null,
+    "condition_manifest": null,
+    "review_file": null,
+    "condition_file_sha256": null,
+    "condition_manifest_sha256": null,
+    "review_sha256": null
+  },
+  "108_step32/B_EFFORT_HISTORY": {
+    "condition_file": null,
+    "condition_manifest": null,
+    "review_file": null,
+    "condition_file_sha256": null,
+    "condition_manifest_sha256": null,
+    "review_sha256": null
+  },
+  "108_step32/C_CURRENT_STATE": {
+    "condition_file": null,
+    "condition_manifest": null,
+    "review_file": null,
+    "condition_file_sha256": null,
+    "condition_manifest_sha256": null,
+    "review_sha256": null
+  }
+}

@@ -1,0 +1,145 @@
+{
+  "status": "DRAFT",
+  "researcher_authorized_collection": false,
+  "researcher": null,
+  "approved_at_utc": null,
+  "release_policy": "after_collection_and_explicit_release",
+  "schedule_path": null,
+  "schedule_sha256": null,
+  "implementation_sha256": null,
+  "legacy_freeze_sha256": {
+    "history/frozen.json": "a94011db7b057b3d18f975de8897bc4c50fe96192ca75f3aee9916fdbda78512",
+    "pilot/frozen.json": "1166d033064de61867688c77b5d1d9e8a2d275653bfbe9b4a8def1c6c35f69ff"
+  },
+  "source_contract_sha256": {
+    "258_step42": "382be594758b771da0b1961040476a7d1a96876e87483f75be837d3de36943ac",
+    "108_step32": "a5fe321a75a0ce53f24ceb19d2032a83d5a2f4871928b5e00cc4fb89f7acdbf2"
+  },
+  "documents": {
+    "preregistration": {
+      "path": null,
+      "sha256": null
+    },
+    "analysis_plan": {
+      "path": null,
+      "sha256": null
+    },
+    "primary_rubric": {
+      "path": null,
+      "sha256": null
+    },
+    "local_suppression_rubric": {
+      "path": null,
+      "sha256": null
+    },
+    "researcher_authorization": {
+      "path": null,
+      "sha256": null
+    }
+  },
+  "gates": {
+    "258_step42/A_FULL": {
+      "restore": [
+        {
+          "path": null,
+          "sha256": null
+        },
+        {
+          "path": null,
+          "sha256": null
+        }
+      ],
+      "wire": {
+        "path": null,
+        "sha256": null
+      }
+    },
+    "258_step42/A_FAITHFUL_COMPACT": {
+      "restore": [
+        {
+          "path": null,
+          "sha256": null
+        },
+        {
+          "path": null,
+          "sha256": null
+        }
+      ],
+      "wire": {
+        "path": null,
+        "sha256": null
+      }
+    },
+    "258_step42/B_EFFORT_HISTORY": {
+      "restore": [
+        {
+          "path": null,
+          "sha256": null
+        },
+        {
+          "path": null,
+          "sha256": null
+        }
+      ],
+      "wire": {
+        "path": null,
+        "sha256": null
+      }
+    },
+    "258_step42/C_CURRENT_STATE": {
+      "restore": [
+        {
+          "path": null,
+          "sha256": null
+        },
+        {
+          "path": null,
+          "sha256": null
+        }
+      ],
+      "wire": {
+        "path": null,
+        "sha256": null
+      }
+    },
+    "108_step32/B_EFFORT_HISTORY": {
+      "restore": [
+        {
+          "path": null,
+          "sha256": null
+        },
+        {
+          "path": null,
+          "sha256": null
+        }
+      ],
+      "wire": {
+        "path": null,
+        "sha256": null
+      }
+    },
+    "108_step32/C_CURRENT_STATE": {
+      "restore": [
+        {
+          "path": null,
+          "sha256": null
+        },
+        {
+          "path": null,
+          "sha256": null
+        }
+      ],
+      "wire": {
+        "path": null,
+        "sha256": null
+      }
+    }
+  },
+  "historical_sample": {
+    "sample_id": "A_FULL_258_STEP42_RUN1",
+    "status": "already_allocated_sealed",
+    "pre_invocation_only_evidence": "research/evidence/history/budget-audit/afull-pre-invocation-audit.json",
+    "evidence_sha256": "787bb3d2ab9693bf03bcde7a1dd975a860f5342c311c8b6ea7b742945969ed8b",
+    "outcome_opened": false
+  }
+}

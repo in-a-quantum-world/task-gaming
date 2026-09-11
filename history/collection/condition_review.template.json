@@ -1,0 +1,10 @@
+{
+  "status": "pending",
+  "reviewer": null,
+  "reviewed_at_utc": null,
+  "final_text_and_roles_approved": false,
+  "checkpoint": null,
+  "condition_id": null,
+  "payload_sha256": null,
+  "manifest_sha256": null
+}

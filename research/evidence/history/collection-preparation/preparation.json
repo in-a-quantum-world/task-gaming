@@ -1,0 +1,16 @@
+{
+  "time": "2026-09-11T17:27:52.636622+00:00",
+  "branch": "experiment/integrated-pilot",
+  "base_commit": "ecfef0fabba9f198bbc0378b9452c502e355b9e9",
+  "draft_schedule_sha256": "3b95eb0238a6425469eba6f5cd90c176a82d3ef8c20085919d1c1216b3763e3c",
+  "new_paid_model_calls": 0,
+  "actual_108_restore_invoked": false,
+  "sealed_afull_post_invocation_artifacts_read": false,
+  "scientific_outcomes_opened": false,
+  "old_frozen_implementations_unchanged": true,
+  "execution_enabled": false,
+  "release_enabled": false,
+  "planned_total": 32,
+  "historical_sample_count": 1,
+  "future_slots_not_authorized": 31
+}
