@@ -1,0 +1,112 @@
+{
+  "time": "2026-09-10T23:51:42.297383+00:00",
+  "passed": true,
+  "comparisons": [
+    {
+      "verdict": "equal_on_recorded_fields",
+      "different_fields": [],
+      "changed_files": [],
+      "missing_checks": [],
+      "issues": [],
+      "history_equal": true,
+      "message_roles_equal": true,
+      "mtimes_equal": true,
+      "limits": [
+        "Semantic information parity needs human review.",
+        "External files, processes, clocks, and APIs are not certified.",
+        "Runtime metadata must come from the prepared provider object.",
+        "File timestamps require review even when content matches."
+      ],
+      "left": "/home/rucha/ai-alignment-forensics/near100-source-pilot/research/data/raw/near100/source108-955f35aaeaf24d7a8e5de9b4fc29611a/data/step-32",
+      "right": "/home/rucha/ai-alignment-forensics/near100-source-pilot/research/data/raw/near100/restore-check108-8762edbd80084a5b82529c50641dcbd0/data/restored",
+      "external_inventory_equal": true,
+      "original_inventory_equal": true,
+      "state_json_equal": true,
+      "state_bytes_equal": false,
+      "messages_json_equal": true,
+      "messages_bytes_equal": false
+    },
+    {
+      "verdict": "equal_on_recorded_fields",
+      "different_fields": [],
+      "changed_files": [],
+      "missing_checks": [],
+      "issues": [],
+      "history_equal": true,
+      "message_roles_equal": true,
+      "mtimes_equal": true,
+      "limits": [
+        "Semantic information parity needs human review.",
+        "External files, processes, clocks, and APIs are not certified.",
+        "Runtime metadata must come from the prepared provider object.",
+        "File timestamps require review even when content matches."
+      ],
+      "left": "/home/rucha/ai-alignment-forensics/near100-source-pilot/research/data/raw/near100/source108-955f35aaeaf24d7a8e5de9b4fc29611a/data/step-32",
+      "right": "/home/rucha/ai-alignment-forensics/near100-source-pilot/research/data/raw/near100/restore-check108-8feea12023e849b4a1d511d8e8bdb4aa/data/restored",
+      "external_inventory_equal": true,
+      "original_inventory_equal": true,
+      "state_json_equal": true,
+      "state_bytes_equal": false,
+      "messages_json_equal": true,
+      "messages_bytes_equal": false
+    },
+    {
+      "verdict": "equal_on_recorded_fields",
+      "different_fields": [],
+      "changed_files": [],
+      "missing_checks": [],
+      "issues": [],
+      "history_equal": true,
+      "message_roles_equal": true,
+      "mtimes_equal": true,
+      "limits": [
+        "Semantic information parity needs human review.",
+        "External files, processes, clocks, and APIs are not certified.",
+        "Runtime metadata must come from the prepared provider object.",
+        "File timestamps require review even when content matches."
+      ],
+      "left": "/home/rucha/ai-alignment-forensics/near100-source-pilot/research/data/raw/near100/restore-check108-8762edbd80084a5b82529c50641dcbd0/data/restored",
+      "right": "/home/rucha/ai-alignment-forensics/near100-source-pilot/research/data/raw/near100/restore-check108-8feea12023e849b4a1d511d8e8bdb4aa/data/restored",
+      "external_inventory_equal": true,
+      "original_inventory_equal": true,
+      "state_json_equal": true,
+      "state_bytes_equal": true,
+      "messages_json_equal": true,
+      "messages_bytes_equal": true
+    }
+  ],
+  "restore_model_requests_zero": true,
+  "checkpoint_step": 32,
+  "remaining_decisions": 67,
+  "error_count": 6,
+  "diagnostics_sha256": "04c9a073664b3d62357cfea405580b8ec23c6f39b830d7246d4fcce6ed2a16d5",
+  "recorded_paths": 96,
+  "evidence_hashes": {
+    "/home/rucha/ai-alignment-forensics/near100-source-pilot/research/data/raw/near100/source108-955f35aaeaf24d7a8e5de9b4fc29611a/data/step-32": {
+      "validation.json": "ab0fc068234032a6264804bc463d8357e06a7069c8d5004540f00085b2c47d8d",
+      "original_inventory.json": "0d06c8debc26eadfb818287d9b1c839a825cabfc09c828e33d5557be8ae77fa3",
+      "external.json": "32b6738ad23761c2c2d75162f3de4679ea007b9560614b1f956e16235b9db105",
+      "state.json": "568dca09c09abd78a72d04ff9fdb53613685294f55b150e64766b04d0c9c2a1e",
+      "messages.json": "a2c33985b8fa95c0d4fa324d212d87fb51496578fcb9c72ba8bbaa54e1b635e9",
+      "workspace.tar.gz": "d7a197588f3d36da1431c869deb0cc23af4d9c8868de9abad414e58af5ea5a9e"
+    },
+    "/home/rucha/ai-alignment-forensics/near100-source-pilot/research/data/raw/near100/restore-check108-8762edbd80084a5b82529c50641dcbd0/data/restored": {
+      "validation.json": "d96e692caf045b2aa8f880cc1f79e3790592f6117490dec1acdeda778ea0f1fc",
+      "original_inventory.json": "ab060785f4ee1d523338a2d09d296896ebc87a39f3fee69d41734d5c35a9a078",
+      "external.json": "32b6738ad23761c2c2d75162f3de4679ea007b9560614b1f956e16235b9db105",
+      "state.json": "96e01026cebf56cd21b3154ec91918701376daf38cc2d6f3a37116494df5815c",
+      "messages.json": "aad80cddd0faee5969d5085056e7400868a7bd43f598d623edb84c46da80fd62",
+      "workspace.tar.gz": "c8648b50987c32667b211607972235c9be3855b98795987b761679bc3dae7fd4"
+    },
+    "/home/rucha/ai-alignment-forensics/near100-source-pilot/research/data/raw/near100/restore-check108-8feea12023e849b4a1d511d8e8bdb4aa/data/restored": {
+      "validation.json": "d9e24ea309d09ccd33b2a522d2207e4d2dccd673cd157c2c765497ee3df6165a",
+      "original_inventory.json": "7b0937494333fa3535a268826748df94f995321d9a0d8da44f515897fec35c9a",
+      "external.json": "32b6738ad23761c2c2d75162f3de4679ea007b9560614b1f956e16235b9db105",
+      "state.json": "96e01026cebf56cd21b3154ec91918701376daf38cc2d6f3a37116494df5815c",
+      "messages.json": "aad80cddd0faee5969d5085056e7400868a7bd43f598d623edb84c46da80fd62",
+      "workspace.tar.gz": "a06b8cd2d012da6cafc151f62c816c2ad787d585ea9339e57b1fd5d982b5781c"
+    }
+  },
+  "limits": "No process, network, clock, kernel, or whole-machine copy",
+  "serialization_note": "State/messages JSON formatting may differ outside /agent; all parsed values and exact text must match."
+}

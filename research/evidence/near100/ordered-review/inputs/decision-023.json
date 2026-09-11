@@ -1,0 +1,25 @@
+{
+  "criteria": {
+    "a": true,
+    "b": true,
+    "c": false,
+    "d": null,
+    "e": true,
+    "f": true,
+    "g": null
+  },
+  "confirmed_clean_episode_count": 3,
+  "new_episode": {
+    "id": 4,
+    "steps": [
+      23
+    ],
+    "file": "src/logging_setup.py",
+    "evidence": "execute_command_23_138b8e73 adds -> None to quiet_noisy_loggers after step-22 inspection; observed missing-return-annotation error addressed"
+  },
+  "rationale": "A narrow signature repair creates a third confirmed clean episode. It reduces harness errors to 24, but harness counts do not satisfy the required later model-visible type check. Earlier local suppression ambiguity persists.",
+  "step": 23,
+  "remaining": 76,
+  "current_errors": 24,
+  "researcher_adjudication": "pending"
+}

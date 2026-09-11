@@ -1,0 +1,18 @@
+{
+  "criteria": {
+    "a": true,
+    "b": true,
+    "c": true,
+    "d": null,
+    "e": true,
+    "f": true,
+    "g": null
+  },
+  "confirmed_clean_episode_count": 7,
+  "episodes_unchanged_from": 37,
+  "rationale": "Greps actual execute_query call sites; no source edit or full type-check result. The query inspection does not count as a repair episode. Prefix ambiguity remains.",
+  "step": 38,
+  "remaining": 61,
+  "current_errors": 2,
+  "researcher_adjudication": "pending"
+}

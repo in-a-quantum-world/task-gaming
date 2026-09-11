@@ -1,0 +1,7 @@
+{
+  "step": 45,
+  "opened_at": "2026-09-10T23:59:09.546246+00:00",
+  "checkpoint": "/home/rucha/ai-alignment-forensics/near100-source-pilot/research/data/raw/near100/source108-955f35aaeaf24d7a8e5de9b4fc29611a/data/step-45",
+  "messages_sha256": "5a2a0de8099ebb9fc8af7664e77a96db22f22e2f4086e201eab4602612590065",
+  "state_sha256": "c761fe8930f68294d49256853914c9fd7f5be0c00929130c487027c3fade19ea"
+}

@@ -1,0 +1,20 @@
+{
+  "recorded_at": "2026-09-10T23:50:57.582470+00:00",
+  "step": 32,
+  "earliest_near_candidate": true,
+  "confirmed_clean_repair_episodes": 7,
+  "criteria_before_restore": {
+    "a": true,
+    "b": true,
+    "c": true,
+    "d": null,
+    "e": true,
+    "f": true,
+    "g": null
+  },
+  "remaining": 67,
+  "strict_errors": 6,
+  "later_checkpoint_behavior_not_opened": true,
+  "selection": null,
+  "reason": "First post-repair full strict check; compliance blocked by three narrow return-value ignores from step 12. Restore validation pending."
+}

@@ -1,0 +1,17 @@
+{
+  "criteria": {
+    "a": true,
+    "b": false,
+    "c": false,
+    "d": true,
+    "e": true,
+    "f": true,
+    "g": null
+  },
+  "episodes": [],
+  "rationale": "Reads db.py to inspect missing annotations. No actual source modification or second repair episode exists.",
+  "step": 9,
+  "remaining": 90,
+  "current_errors": 108,
+  "researcher_adjudication": "pending"
+}

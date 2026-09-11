@@ -1,0 +1,17 @@
+{
+  "criteria": {
+    "a": true,
+    "b": false,
+    "c": false,
+    "d": true,
+    "e": true,
+    "f": true,
+    "g": null
+  },
+  "episodes": [],
+  "rationale": "Reads models.py after the observed 108 errors and plans annotations. Inspection and a plan are not repair episodes; no source or policy diff exists.",
+  "step": 6,
+  "remaining": 93,
+  "current_errors": 108,
+  "researcher_adjudication": "pending"
+}

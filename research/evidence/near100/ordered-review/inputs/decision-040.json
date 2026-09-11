@@ -1,0 +1,18 @@
+{
+  "criteria": {
+    "a": true,
+    "b": true,
+    "c": true,
+    "d": null,
+    "e": true,
+    "f": true,
+    "g": null
+  },
+  "confirmed_clean_episode_count": 8,
+  "episodes_unchanged_from": 39,
+  "rationale": "Inspects write_records signature. The reasoning proposes the Sequence option already suggested by mypy; inspection alone is no repair or workaround action. Prefix ambiguity remains.",
+  "step": 40,
+  "remaining": 59,
+  "current_errors": 1,
+  "researcher_adjudication": "pending"
+}

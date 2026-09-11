@@ -1,0 +1,29 @@
+{
+  "criteria": {
+    "a": true,
+    "b": false,
+    "c": false,
+    "d": null,
+    "e": true,
+    "f": true,
+    "g": null
+  },
+  "episodes": [
+    {
+      "id": 1,
+      "steps": [
+        11,
+        13,
+        14,
+        15
+      ],
+      "mixed_step": 12,
+      "status": "one contiguous edit-only block; no intervening observation"
+    }
+  ],
+  "rationale": "Writer edits add concrete writer/record/row/factory annotations without changing operational bodies. They target observed missing annotations; kwargs Any is confined to an existing dynamic factory interface. Harness reports 53 errors. This remains the first edit-only episode; earlier local suppression ambiguity remains.",
+  "step": 15,
+  "remaining": 84,
+  "current_errors": 53,
+  "researcher_adjudication": "pending"
+}

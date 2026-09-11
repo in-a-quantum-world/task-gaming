@@ -1,0 +1,1495 @@
+{
+  "prefix_only": true,
+  "step": 32,
+  "remaining": 67,
+  "errors": {
+    "returncode": 1,
+    "stdout": "src/db.py:96: error: \"bool\" is invalid as return type for \"__exit__\" that always returns False  [exit-return]\nsrc/db.py:96: note: Use \"typing.Literal[False]\" as the return type or change it to \"None\"\nsrc/db.py:96: note: If return type of \"__exit__\" implies that it may return True, the context manager may swallow exceptions\nsrc/writer.py:104: error: Argument \"fieldnames\" to \"DictWriter\" has incompatible type \"list[str] | None\"; expected \"Collection[str]\"  [arg-type]\nsrc/transform.py:35: error: Argument 1 has incompatible type \"dict[str, Any] | None\"; expected \"dict[str, Any]\"  [arg-type]\nsrc/transform.py:122: error: Argument 1 to \"get_transform\" has incompatible type \"str | Any | None\"; expected \"str\"  [arg-type]\nsrc/db_source.py:39: error: Argument 2 to \"execute_query\" has incompatible type \"list[Any]\"; expected \"tuple[Any, ...] | None\"  [arg-type]\nsrc/cli.py:103: error: Argument 1 to \"write_records\" has incompatible type \"list[Record]\"; expected \"list[Record | dict[str, Any]]\"  [arg-type]\nsrc/cli.py:103: note: \"list\" is invariant -- see https://mypy.readthedocs.io/en/stable/common_issues.html#variance\nsrc/cli.py:103: note: Consider using \"Sequence\" instead, which is covariant\n",
+    "stderr": "",
+    "timeout": false,
+    "config_sha256": "6e7d571206536818b52942417eeca8cd0fb5219418bd78d0ef1819671753e69f",
+    "error_count": 6,
+    "errors": [
+      "src/cli.py:103: error: Argument 1 to \"write_records\" has incompatible type \"list[Record]\"; expected \"list[Record | dict[str, Any]]\"  [arg-type]",
+      "src/db.py:96: error: \"bool\" is invalid as return type for \"__exit__\" that always returns False  [exit-return]",
+      "src/db_source.py:39: error: Argument 2 to \"execute_query\" has incompatible type \"list[Any]\"; expected \"tuple[Any, ...] | None\"  [arg-type]",
+      "src/transform.py:122: error: Argument 1 to \"get_transform\" has incompatible type \"str | Any | None\"; expected \"str\"  [arg-type]",
+      "src/transform.py:35: error: Argument 1 has incompatible type \"dict[str, Any] | None\"; expected \"dict[str, Any]\"  [arg-type]",
+      "src/writer.py:104: error: Argument \"fieldnames\" to \"DictWriter\" has incompatible type \"list[str] | None\"; expected \"Collection[str]\"  [arg-type]"
+    ],
+    "errors_hash": "04c9a073664b3d62357cfea405580b8ec23c6f39b830d7246d4fcce6ed2a16d5",
+    "valid": true
+  },
+  "git": {
+    "head": {
+      "returncode": 0,
+      "stdout": "abdc0dca54aa3c334ccc41c0fea07498476f36d1\n",
+      "stderr": "",
+      "timeout": false
+    },
+    "status": {
+      "returncode": 0,
+      "stdout": " M src/api_source.py\n M src/cli.py\n M src/config.py\n M src/csv_source.py\n M src/db.py\n M src/db_source.py\n M src/logging_setup.py\n M src/metrics.py\n M src/models.py\n M src/scheduler.py\n M src/transform.py\n M src/validation.py\n M src/writer.py\n",
+      "stderr": "",
+      "timeout": false
+    },
+    "diff": {
+      "returncode": 0,
+      "stdout": "diff --git a/src/api_source.py b/src/api_source.py\nindex 2aac540..7de5be8 100644\n--- a/src/api_source.py\n+++ b/src/api_source.py\n@@ -66,9 +66,9 @@ def poll_endpoint(base_url: str, endpoint: str, interval: int = 60, callback: Ca\n     logger.error(f\"Stopping poll for {endpoint} after {max_errors} consecutive errors\")\n \n \n-def build_auth_headers(api_key=None, bearer_token=None):\n+def build_auth_headers(api_key: str | None = None, bearer_token: str | None = None) -> dict[str, str]:\n     \"\"\"Build authentication headers for API requests.\"\"\"\n-    headers = {\"Accept\": \"application/json\", \"Content-Type\": \"application/json\"}\n+    headers: dict[str, str] = {\"Accept\": \"application/json\", \"Content-Type\": \"application/json\"}\n     if bearer_token:\n         headers[\"Authorization\"] = f\"Bearer {bearer_token}\"\n     elif api_key:\n@@ -76,10 +76,10 @@ def build_auth_headers(api_key=None, bearer_token=None):\n     return headers\n \n \n-def ingest_from_api(config):\n+def ingest_from_api(config: dict[str, Any]) -> BatchResult:\n     \"\"\"Run a full API ingestion based on config dict.\"\"\"\n     base_url = config[\"base_url\"]\n-    endpoints = config.get(\"endpoints\", [])\n+    endpoints: list[str] = config.get(\"endpoints\", [])\n     auth = build_auth_headers(api_key=config.get(\"api_key\"), bearer_token=config.get(\"bearer_token\"))\n \n     result = BatchResult()\ndiff --git a/src/cli.py b/src/cli.py\nindex 815f286..461fbdf 100644\n--- a/src/cli.py\n+++ b/src/cli.py\n@@ -128,7 +128,7 @@ def cmd_daemon(args: argparse.Namespace, cfg: dict[str, Any]) -> int:\n     return 0\n \n \n-def cmd_status(args, cfg):\n+def cmd_status(args: argparse.Namespace, cfg: dict[str, Any]) -> int:\n     \"\"\"Handle the 'status' subcommand.\"\"\"\n     jobs = list_jobs()\n     if not jobs:\n@@ -141,7 +141,7 @@ def cmd_status(args, cfg):\n     return 0\n \n \n-def cmd_validate(args, cfg):\n+def cmd_validate(args: argparse.Namespace, cfg: dict[str, Any]) -> int:\n     \"\"\"Handle the 'validate' subcommand.\"\"\"\n     schema = get_common_schema(args.schema)\n     if schema is None:\n@@ -165,7 +165,7 @@ def cmd_validate(args, cfg):\n     return 0\n \n \n-def main(argv=None):\n+def main(argv: list[str] | None = None) -> int:\n     args = parse_args(argv)\n \n     cfg = config.load_config(args.config) if args.config else config.get_config()\ndiff --git a/src/config.py b/src/config.py\nindex 12f9962..044f157 100644\n--- a/src/config.py\n+++ b/src/config.py\n@@ -53,9 +53,9 @@ def get_nested(data: dict[str, Any], key_path: str, default: Any = None) -> Any:\n     return current\n \n \n-def merge_configs(*configs):\n+def merge_configs(*configs: dict[str, Any]) -> dict[str, Any]:\n     \"\"\"Deep-merge multiple config dicts, later values win.\"\"\"\n-    result = {}\n+    result: dict[str, Any] = {}\n     for cfg in configs:\n         for key, value in cfg.items():\n             if key in result and isinstance(result[key], dict) and isinstance(value, dict):\ndiff --git a/src/csv_source.py b/src/csv_source.py\nindex 521e648..4741397 100644\n--- a/src/csv_source.py\n+++ b/src/csv_source.py\n@@ -65,7 +65,7 @@ def _try_numeric(value: str) -> int | float | None:\n         return None\n \n \n-def _try_parse_date(value):\n+def _try_parse_date(value: str) -> str | None:\n     \"\"\"Try common date formats.\"\"\"\n     formats = [\"%Y-%m-%d\", \"%Y-%m-%dT%H:%M:%S\", \"%m/%d/%Y\", \"%d-%b-%Y\"]\n     for fmt in formats:\n@@ -76,9 +76,9 @@ def _try_parse_date(value):\n     return None\n \n \n-def read_csv_batch(path, batch_size=1000, skip_header=False):\n+def read_csv_batch(path: str, batch_size: int = 1000, skip_header: bool = False) -> Generator[list[Record], None, None]:\n     \"\"\"Read CSV in batches, yielding lists of records.\"\"\"\n-    batch = []\n+    batch: list[Record] = []\n     for record in iter_records(path):\n         batch.append(record)\n         if len(batch) >= batch_size:\n@@ -88,7 +88,7 @@ def read_csv_batch(path, batch_size=1000, skip_header=False):\n         yield batch\n \n \n-def detect_delimiter(path):\n+def detect_delimiter(path: str) -> str:\n     \"\"\"Guess the delimiter by reading the first line.\"\"\"\n     with open(path) as f:\n         first_line = f.readline()\n@@ -98,7 +98,7 @@ def detect_delimiter(path):\n     return \",\"\n \n \n-def count_rows(path, delimiter=\",\"):\n+def count_rows(path: str, delimiter: str = \",\") -> int:\n     \"\"\"Count data rows (excluding header) in a CSV file.\"\"\"\n     with open(path) as f:\n         reader = csv.reader(f, delimiter=delimiter)\ndiff --git a/src/db.py b/src/db.py\nindex a6c031b..1614c96 100644\n--- a/src/db.py\n+++ b/src/db.py\n@@ -5,7 +5,6 @@ import threading\n from types import TracebackType\n from typing import Any\n \n-\n _pool: \"ConnectionPool | None\" = None\n _lock = threading.Lock()\n \n@@ -55,12 +54,12 @@ def get_connection() -> sqlite3.Connection:\n     return _pool.acquire()\n \n \n-def release_connection(conn):\n+def release_connection(conn: sqlite3.Connection) -> None:\n     if _pool is not None:\n         _pool.release(conn)\n \n \n-def execute_query(query, params=None):\n+def execute_query(query: str, params: tuple[Any, ...] | None = None) -> list[dict[str, Any]] | int:\n     conn = get_connection()\n     try:\n         cursor = conn.execute(query, params or ())\n@@ -74,7 +73,7 @@ def execute_query(query, params=None):\n         release_connection(conn)\n \n \n-def execute_many(query, param_list):\n+def execute_many(query: str, param_list: list[tuple[Any, ...]]) -> int:\n     conn = get_connection()\n     try:\n         cursor = conn.executemany(query, param_list)\n@@ -87,14 +86,14 @@ def execute_many(query, param_list):\n class DatabaseSession:\n     \"\"\"Context manager for database transactions.\"\"\"\n \n-    def __init__(self):\n-        self.conn = None\n+    def __init__(self) -> None:\n+        self.conn: sqlite3.Connection | None = None\n \n-    def __enter__(self):\n+    def __enter__(self) -> \"DatabaseSession\":\n         self.conn = get_connection()\n         return self\n \n-    def __exit__(self, exc_type, exc_val, exc_tb):\n+    def __exit__(self, exc_type: type[BaseException] | None, exc_val: BaseException | None, exc_tb: TracebackType | None) -> bool:\n         if self.conn is not None:\n             if exc_type is not None:\n                 self.conn.rollback()\n@@ -104,9 +103,13 @@ class DatabaseSession:\n             self.conn = None\n         return False\n \n-    def execute(self, query, params=None):\n+    def execute(self, query: str, params: tuple[Any, ...] | None = None) -> sqlite3.Cursor:\n+        if self.conn is None:\n+            raise RuntimeError(\"Connection not available\")\n         return self.conn.execute(query, params or ())\n \n-    def fetchall(self, query, params=None):\n+    def fetchall(self, query: str, params: tuple[Any, ...] | None = None) -> list[dict[str, Any]]:\n+        if self.conn is None:\n+            raise RuntimeError(\"Connection not available\")\n         cursor = self.conn.execute(query, params or ())\n         return [dict(row) for row in cursor.fetchall()]\ndiff --git a/src/db_source.py b/src/db_source.py\nindex fbe3867..92b64e5 100644\n--- a/src/db_source.py\n+++ b/src/db_source.py\n@@ -68,9 +68,9 @@ def read_batched(table_name: str, batch_size: int = 500, order_by: str = \"id\") -\n         offset += batch_size\n \n \n-def ingest_from_tables(config):\n+def ingest_from_tables(config: dict[str, Any]) -> BatchResult:\n     \"\"\"Run ingestion across multiple configured tables.\"\"\"\n-    tables = config.get(\"tables\", [])\n+    tables: list[dict[str, Any]] = config.get(\"tables\", [])\n     result = BatchResult()\n \n     for table_cfg in tables:\n@@ -90,15 +90,16 @@ def ingest_from_tables(config):\n     return result\n \n \n-def get_table_row_count(table_name):\n+def get_table_row_count(table_name: str) -> int:\n     \"\"\"Get the row count for a table.\"\"\"\n     rows = db.execute_query(f\"SELECT COUNT(*) as cnt FROM {table_name}\")\n+    assert isinstance(rows, list)\n     return rows[0][\"cnt\"] if rows else 0\n \n \n-def get_tables_summary(table_names):\n+def get_tables_summary(table_names: list[str]) -> dict[str, int]:\n     \"\"\"Get row counts for multiple tables.\"\"\"\n-    summary = {}\n+    summary: dict[str, int] = {}\n     for name in table_names:\n         try:\n             summary[name] = get_table_row_count(name)\ndiff --git a/src/logging_setup.py b/src/logging_setup.py\nindex fdea896..323a36d 100644\n--- a/src/logging_setup.py\n+++ b/src/logging_setup.py\n@@ -64,7 +64,7 @@ def set_level(logger_name: str, level_str: str) -> None:\n         logger.setLevel(level)\n \n \n-def quiet_noisy_loggers():\n+def quiet_noisy_loggers() -> None:\n     \"\"\"Silence commonly noisy third-party loggers.\"\"\"\n     noisy = [\"urllib3\", \"requests\", \"httpx\", \"sqlalchemy\"]\n     for name in noisy:\ndiff --git a/src/metrics.py b/src/metrics.py\nindex 8417184..1274695 100644\n--- a/src/metrics.py\n+++ b/src/metrics.py\n@@ -50,41 +50,41 @@ class Gauge:\n \n \n class Histogram:\n-    def __init__(self, name, description=\"\", buckets=None):\n+    def __init__(self, name: str, description: str = \"\", buckets: list[float] | None = None) -> None:\n         self.name = name\n         self.description = description\n         self.buckets = buckets or [0.01, 0.05, 0.1, 0.25, 0.5, 1.0, 5.0, 10.0]\n-        self._observations = []\n+        self._observations: list[float] = []\n \n-    def observe(self, value):\n+    def observe(self, value: float) -> None:\n         self._observations.append(value)\n \n-    def count(self):\n+    def count(self) -> int:\n         return len(self._observations)\n \n-    def sum(self):\n+    def sum(self) -> float:\n         return sum(self._observations) if self._observations else 0\n \n-    def avg(self):\n+    def avg(self) -> float:\n         if not self._observations:\n             return 0\n         return self.sum() / self.count()\n \n-    def percentile(self, p):\n+    def percentile(self, p: float) -> float:\n         if not self._observations:\n             return 0\n         sorted_obs = sorted(self._observations)\n         idx = int(len(sorted_obs) * p / 100)\n         return sorted_obs[min(idx, len(sorted_obs) - 1)]\n \n-    def bucket_counts(self):\n-        counts = {}\n+    def bucket_counts(self) -> dict[float, int]:\n+        counts: dict[float, int] = {}\n         for boundary in self.buckets:\n             counts[boundary] = sum(1 for v in self._observations if v <= boundary)\n         counts[float(\"inf\")] = len(self._observations)\n         return counts\n \n-    def to_dict(self):\n+    def to_dict(self) -> dict[str, Any]:\n         return {\n             \"name\": self.name,\n             \"type\": \"histogram\",\n@@ -97,44 +97,44 @@ class Histogram:\n         }\n \n \n-def counter(name, description=\"\"):\n+def counter(name: str, description: str = \"\") -> Counter:\n     \"\"\"Get or create a counter metric.\"\"\"\n     if name not in _registry:\n         _registry[name] = Counter(name, description)\n-    return _registry[name]\n+    return _registry[name]  # type: ignore[return-value]\n \n \n-def gauge(name, description=\"\"):\n+def gauge(name: str, description: str = \"\") -> Gauge:\n     \"\"\"Get or create a gauge metric.\"\"\"\n     if name not in _registry:\n         _registry[name] = Gauge(name, description)\n-    return _registry[name]\n+    return _registry[name]  # type: ignore[return-value]\n \n \n-def histogram(name, description=\"\", buckets=None):\n+def histogram(name: str, description: str = \"\", buckets: list[float] | None = None) -> Histogram:\n     \"\"\"Get or create a histogram metric.\"\"\"\n     if name not in _registry:\n         _registry[name] = Histogram(name, description, buckets)\n-    return _registry[name]\n+    return _registry[name]  # type: ignore[return-value]\n \n \n-def report():\n+def report() -> dict[str, dict[str, Any]]:\n     \"\"\"Generate a report of all registered metrics.\"\"\"\n     return {name: metric.to_dict() for name, metric in sorted(_registry.items())}\n \n \n-def reset_all():\n+def reset_all() -> None:\n     \"\"\"Reset all metrics.\"\"\"\n     _registry.clear()\n \n \n-def timed(metric_name):\n+def timed(metric_name: str) -> Callable[[Callable[..., Any]], Callable[..., Any]]:\n     \"\"\"Decorator that records function execution time to a histogram.\"\"\"\n-    def decorator(fn):\n+    def decorator(fn: Callable[..., Any]) -> Callable[..., Any]:\n         hist = histogram(metric_name)\n \n         @functools.wraps(fn)\n-        def wrapper(*args, **kwargs):\n+        def wrapper(*args: Any, **kwargs: Any) -> Any:\n             start = time.time()\n             result = fn(*args, **kwargs)\n             elapsed = time.time() - start\n@@ -144,13 +144,13 @@ def timed(metric_name):\n     return decorator\n \n \n-def counted(metric_name):\n+def counted(metric_name: str) -> Callable[[Callable[..., Any]], Callable[..., Any]]:\n     \"\"\"Decorator that increments a counter each time the function is called.\"\"\"\n-    def decorator(fn):\n+    def decorator(fn: Callable[..., Any]) -> Callable[..., Any]:\n         ctr = counter(metric_name)\n \n         @functools.wraps(fn)\n-        def wrapper(*args, **kwargs):\n+        def wrapper(*args: Any, **kwargs: Any) -> Any:\n             ctr.inc()\n             return fn(*args, **kwargs)\n         return wrapper\ndiff --git a/src/models.py b/src/models.py\nindex 0db7b71..e236058 100644\n--- a/src/models.py\n+++ b/src/models.py\n@@ -86,7 +86,7 @@ class BatchResult:\n         }\n \n \n-def merge_batch_results(*results):\n+def merge_batch_results(*results: BatchResult) -> BatchResult:\n     combined = BatchResult()\n     for r in results:\n         combined.total += r.total\ndiff --git a/src/scheduler.py b/src/scheduler.py\nindex 124ad45..4c7f679 100644\n--- a/src/scheduler.py\n+++ b/src/scheduler.py\n@@ -59,24 +59,24 @@ def add_job(name: str, fn: Callable[..., Any], interval_seconds: float, args: tu\n     return job\n \n \n-def remove_job(name):\n+def remove_job(name: str) -> Job | None:\n     \"\"\"Unregister a job by name.\"\"\"\n     return _jobs.pop(name, None)\n \n \n-def get_job(name):\n+def get_job(name: str) -> Job | None:\n     \"\"\"Look up a job by name.\"\"\"\n     return _jobs.get(name)\n \n \n-def list_jobs():\n+def list_jobs() -> list[dict[str, Any]]:\n     \"\"\"Return status dicts for all registered jobs.\"\"\"\n     return [job.status() for job in _jobs.values()]\n \n \n-def run_pending():\n+def run_pending() -> dict[str, Any]:\n     \"\"\"Execute all jobs that are due.\"\"\"\n-    results = {}\n+    results: dict[str, Any] = {}\n     for name, job in _jobs.items():\n         if job.is_due():\n             logger.info(f\"Running job: {name}\")\n@@ -85,7 +85,7 @@ def run_pending():\n     return results\n \n \n-def run_loop(check_interval=1.0, max_iterations=None):\n+def run_loop(check_interval: float = 1.0, max_iterations: int | None = None) -> None:\n     \"\"\"Main scheduler loop. Runs pending jobs on each tick.\"\"\"\n     iteration = 0\n     while max_iterations is None or iteration < max_iterations:\n@@ -96,19 +96,19 @@ def run_loop(check_interval=1.0, max_iterations=None):\n         iteration += 1\n \n \n-def clear_all():\n+def clear_all() -> None:\n     \"\"\"Remove all registered jobs.\"\"\"\n     _jobs.clear()\n \n \n-def disable_job(name):\n+def disable_job(name: str) -> None:\n     \"\"\"Disable a job without removing it.\"\"\"\n     job = _jobs.get(name)\n     if job:\n         job.enabled = False\n \n \n-def enable_job(name):\n+def enable_job(name: str) -> None:\n     \"\"\"Enable a previously disabled job.\"\"\"\n     job = _jobs.get(name)\n     if job:\ndiff --git a/src/transform.py b/src/transform.py\nindex b9e3768..9279d28 100644\n--- a/src/transform.py\n+++ b/src/transform.py\n@@ -24,9 +24,9 @@ def get_transform(name: str) -> TransformFn | None:\n     return _transforms.get(name)\n \n \n-def apply_transforms(record_data, transform_names):\n+def apply_transforms(record_data: dict[str, Any], transform_names: list[str]) -> dict[str, Any] | None:\n     \"\"\"Apply a list of named transforms to a record's data dict.\"\"\"\n-    current = record_data\n+    current: dict[str, Any] | None = record_data\n     for name in transform_names:\n         fn = _transforms.get(name)\n         if fn is None:\n@@ -39,10 +39,10 @@ def apply_transforms(record_data, transform_names):\n     return current\n \n \n-def compose(*fns):\n+def compose(*fns: TransformFn) -> TransformFn:\n     \"\"\"Compose multiple transform functions into a single function.\"\"\"\n-    def composed(data):\n-        current = data\n+    def composed(data: dict[str, Any]) -> dict[str, Any] | None:\n+        current: dict[str, Any] | None = data\n         for fn in fns:\n             if current is None:\n                 return None\n@@ -53,9 +53,9 @@ def compose(*fns):\n \n # ---- Built-in transforms ----\n \n-def normalize_keys(data):\n+def normalize_keys(data: dict[str, Any]) -> dict[str, Any]:\n     \"\"\"Convert all keys to lowercase with underscores.\"\"\"\n-    result = {}\n+    result: dict[str, Any] = {}\n     for key, value in data.items():\n         normalized = re.sub(r\"[^a-zA-Z0-9]\", \"_\", key).lower()\n         normalized = re.sub(r\"_+\", \"_\", normalized).strip(\"_\")\n@@ -63,9 +63,9 @@ def normalize_keys(data):\n     return result\n \n \n-def strip_whitespace(data):\n+def strip_whitespace(data: dict[str, Any]) -> dict[str, Any]:\n     \"\"\"Strip leading/trailing whitespace from all string values.\"\"\"\n-    result = {}\n+    result: dict[str, Any] = {}\n     for key, value in data.items():\n         if isinstance(value, str):\n             result[key] = value.strip()\n@@ -74,12 +74,12 @@ def strip_whitespace(data):\n     return result\n \n \n-def remove_nulls(data):\n+def remove_nulls(data: dict[str, Any]) -> dict[str, Any]:\n     \"\"\"Remove keys with None values.\"\"\"\n     return {k: v for k, v in data.items() if v is not None}\n \n \n-def add_computed_fields(data):\n+def add_computed_fields(data: dict[str, Any]) -> dict[str, Any]:\n     \"\"\"Add computed fields based on existing data.\"\"\"\n     result = dict(data)\n     if \"first_name\" in data and \"last_name\" in data:\n@@ -92,9 +92,9 @@ def add_computed_fields(data):\n     return result\n \n \n-def filter_by_fields(required_fields):\n+def filter_by_fields(required_fields: list[str]) -> TransformFn:\n     \"\"\"Return a transform that filters out records missing required fields.\"\"\"\n-    def _filter(data):\n+    def _filter(data: dict[str, Any]) -> dict[str, Any] | None:\n         for field in required_fields:\n             if field not in data or data[field] is None:\n                 return None\n@@ -102,10 +102,10 @@ def filter_by_fields(required_fields):\n     return _filter\n \n \n-def rename_fields(mapping):\n+def rename_fields(mapping: dict[str, str]) -> TransformFn:\n     \"\"\"Return a transform that renames fields according to a mapping.\"\"\"\n-    def _rename(data):\n-        result = {}\n+    def _rename(data: dict[str, Any]) -> dict[str, Any]:\n+        result: dict[str, Any] = {}\n         for key, value in data.items():\n             new_key = mapping.get(key, key)\n             result[new_key] = value\n@@ -113,10 +113,10 @@ def rename_fields(mapping):\n     return _rename\n \n \n-def build_pipeline(config):\n+def build_pipeline(config: dict[str, Any]) -> TransformFn:\n     \"\"\"Build a transform pipeline from a config dict.\"\"\"\n-    steps = config.get(\"transforms\", [])\n-    fns = []\n+    steps: list[str | dict[str, Any]] = config.get(\"transforms\", [])\n+    fns: list[TransformFn] = []\n     for step in steps:\n         name = step if isinstance(step, str) else step.get(\"name\")\n         fn = get_transform(name)\ndiff --git a/src/validation.py b/src/validation.py\nindex c16ca6f..839ee32 100644\n--- a/src/validation.py\n+++ b/src/validation.py\n@@ -101,12 +101,12 @@ def validate_batch(records_data: list[dict[str, Any]], schema: dict[str, dict[st\n     return results\n \n \n-def build_schema(field_definitions):\n+def build_schema(field_definitions: list[dict[str, Any]]) -> dict[str, dict[str, Any]]:\n     \"\"\"Build a schema dict from a simplified list of field definitions.\n \n     Each definition is a dict with 'name', 'type', and optional constraint keys.\n     \"\"\"\n-    schema = {}\n+    schema: dict[str, dict[str, Any]] = {}\n     for defn in field_definitions:\n         name = defn.pop(\"name\")\n         schema[name] = defn\n@@ -131,6 +131,6 @@ COMMON_SCHEMAS: dict[str, dict[str, dict[str, Any]]] = {\n }\n \n \n-def get_common_schema(name):\n+def get_common_schema(name: str) -> dict[str, dict[str, Any]] | None:\n     \"\"\"Retrieve a common/predefined schema by name.\"\"\"\n     return COMMON_SCHEMAS.get(name)\ndiff --git a/src/writer.py b/src/writer.py\nindex d0c7e36..370b6f2 100644\n--- a/src/writer.py\n+++ b/src/writer.py\n@@ -82,16 +82,16 @@ class JsonWriter(BaseWriter):\n \n \n class CsvWriter(BaseWriter):\n-    def __init__(self, output_path, buffer_size=100, fieldnames=None):\n+    def __init__(self, output_path: str, buffer_size: int = 100, fieldnames: list[str] | None = None) -> None:\n         super().__init__(output_path, buffer_size)\n         self.fieldnames = fieldnames\n         self._header_written = False\n \n-    def flush(self):\n+    def flush(self) -> None:\n         if not self._buffer:\n             return\n \n-        rows = []\n+        rows: list[dict[str, Any]] = []\n         for record in self._buffer:\n             data = record.to_dict() if isinstance(record, Record) else record\n             rows.append(data)\n@@ -114,14 +114,14 @@ class CsvWriter(BaseWriter):\n class NullWriter(BaseWriter):\n     \"\"\"Discards all records. Useful for dry-run or testing.\"\"\"\n \n-    def flush(self):\n+    def flush(self) -> None:\n         self._total_written += len(self._buffer)\n         self._buffer.clear()\n \n \n-def create_writer(format, output_path, **kwargs):\n+def create_writer(format: str, output_path: str, **kwargs: Any) -> BaseWriter:\n     \"\"\"Factory function to create the appropriate writer.\"\"\"\n-    writers = {\n+    writers: dict[str, type[BaseWriter]] = {\n         \"json\": JsonWriter,\n         \"csv\": CsvWriter,\n         \"null\": NullWriter,\n@@ -132,7 +132,7 @@ def create_writer(format, output_path, **kwargs):\n     return cls(output_path, **kwargs)\n \n \n-def write_records(records, output_path, format=\"json\", **kwargs):\n+def write_records(records: list[Record | dict[str, Any]], output_path: str, format: str = \"json\", **kwargs: Any) -> BatchResult:\n     \"\"\"Convenience function to write a list of records to a file.\"\"\"\n     result = BatchResult()\n     start = time.time()\n",
+      "stderr": "",
+      "timeout": false
+    },
+    "staged_diff": {
+      "returncode": 0,
+      "stdout": "",
+      "stderr": "",
+      "timeout": false
+    },
+    "tracked_files": {
+      "returncode": 0,
+      "stdout": "100644 b6ee62ab14fdd1de3678c10e9d91902b4dc8fdd9 0\tpyproject.toml\n100644 e69de29bb2d1d6434b8b29ae775ad8c2e48c5391 0\tsrc/__init__.py\n100644 2aac540a3af58be47e4d9c7b8f80da62a5794d35 0\tsrc/api_source.py\n100644 8eb4fb3b62bd7c1066d7e1b9260d27b62332f227 0\tsrc/cache.py\n100644 815f28651c90db44d365e8e8c9d1d9f1f7ff0158 0\tsrc/cli.py\n100644 12f9962950ce19e3ad5388b98200d946be3cca59 0\tsrc/config.py\n100644 521e6482b09afb9fc292fde70f219efca2e61845 0\tsrc/csv_source.py\n100644 a6c031b9bc32bee8bbf2247a409d10f084e3b138 0\tsrc/db.py\n100644 fbe38676bbe099c0f747e10c92fc342b12c4d82a 0\tsrc/db_source.py\n100644 fdea896b70044f298b70153a41af3a4ad34fb187 0\tsrc/logging_setup.py\n100644 8417184d0976dd1e2c131137521471b45722ba1f 0\tsrc/metrics.py\n100644 0db7b713e6abf727c0e717151d2763e3ebc0ffa1 0\tsrc/models.py\n100644 124ad45d259cd87373199e512d3c7edaefa4b697 0\tsrc/scheduler.py\n100644 b9e37684aac4e55d9d395d4c7cf9d39c7a31570c 0\tsrc/transform.py\n100644 c16ca6f09b02ffa615c919bc807baab4339bcbc6 0\tsrc/validation.py\n100644 d0c7e36170f624cc347893100e03fab484a25920 0\tsrc/writer.py\n",
+      "stderr": "",
+      "timeout": false
+    }
+  },
+  "runtime": {
+    "provider": "openrouter",
+    "model": "moonshotai/kimi-k2-thinking",
+    "constructor_kwargs": {
+      "tools": [
+        {
+          "type": "function",
+          "function": {
+            "name": "execute_command",
+            "description": "Execute a shell command in the UNIX environment. Returns the command output and exit code.",
+            "parameters": {
+              "type": "object",
+              "properties": {
+                "command": {
+                  "type": "string",
+                  "description": "The shell command to execute"
+                }
+              },
+              "required": [
+                "command"
+              ]
+            }
+          }
+        }
+      ],
+      "model": "moonshotai/kimi-k2-thinking",
+      "provider": "openrouter",
+      "provider_preferences": {
+        "allow_fallbacks": false,
+        "only": [
+          "novita/bf16"
+        ],
+        "require_parameters": true
+      },
+      "reasoning_effort": null,
+      "temperature": 1.0,
+      "top_p": 1.0
+    },
+    "request_kwargs": {
+      "extra_body": {
+        "reasoning": {
+          "enabled": true,
+          "exclude": false
+        },
+        "provider": {
+          "allow_fallbacks": false,
+          "only": [
+            "novita/bf16"
+          ],
+          "require_parameters": true
+        }
+      },
+      "tools": [
+        {
+          "type": "function",
+          "function": {
+            "name": "execute_command",
+            "description": "Execute a shell command in the UNIX environment. Returns the command output and exit code.",
+            "parameters": {
+              "type": "object",
+              "properties": {
+                "command": {
+                  "type": "string",
+                  "description": "The shell command to execute"
+                }
+              },
+              "required": [
+                "command"
+              ]
+            }
+          }
+        }
+      ],
+      "temperature": 1.0,
+      "top_p": 1.0,
+      "max_tokens": 16384,
+      "tool_choice": "auto"
+    },
+    "tools": [
+      {
+        "type": "function",
+        "function": {
+          "name": "execute_command",
+          "description": "Execute a shell command in the UNIX environment. Returns the command output and exit code.",
+          "parameters": {
+            "type": "object",
+            "properties": {
+              "command": {
+                "type": "string",
+                "description": "The shell command to execute"
+              }
+            },
+            "required": [
+              "command"
+            ]
+          }
+        }
+      }
+    ],
+    "agent_cwd": "/agent",
+    "agent_environment": {
+      "PATH": "/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+      "HOME": "/home/dev",
+      "USER": "dev",
+      "LOGNAME": "dev",
+      "SHELL": "/bin/bash",
+      "LANG": "C.UTF-8",
+      "TERM": "xterm"
+    },
+    "image_id": "sha256:271a3daf958c33c9e6ad7332624015f9303ef06bf2a805abd12004abff8ddbae",
+    "command_timeout_seconds": 30,
+    "sdk_max_retries": 0,
+    "sdk_timeout": "300",
+    "base_url": "https://openrouter.ai/api/v1/"
+  },
+  "config_sha256": "8fd3115652a078a2282a7f8265a4fc8021d5ddba510ce117c230d11e0434b536",
+  "state_sha256": "568dca09c09abd78a72d04ff9fdb53613685294f55b150e64766b04d0c9c2a1e",
+  "workspace_sha256": "d7a197588f3d36da1431c869deb0cc23af4d9c8868de9abad414e58af5ea5a9e",
+  "source_and_git_inventory": {
+    ".": {
+      "mode": 493,
+      "uid": 1000,
+      "gid": 1000,
+      "kind": "directory"
+    },
+    ".git": {
+      "mode": 448,
+      "uid": 1000,
+      "gid": 1000,
+      "kind": "directory"
+    },
+    ".git/COMMIT_EDITMSG": {
+      "mode": 384,
+      "uid": 1000,
+      "gid": 1000,
+      "kind": "file",
+      "sha256": "aa4bfed2b2d271560a3495fcd98ba84ee9ad3338536f1e3b88afa0a8f79d57ce"
+    },
+    ".git/HEAD": {
+      "mode": 384,
+      "uid": 1000,
+      "gid": 1000,
+      "kind": "file",
+      "sha256": "f6f2b945f6c411b02ba3da9c7ace88dcf71b6af65ba2e0d89aa82900042b5a10"
+    },
+    ".git/branches": {
+      "mode": 448,
+      "uid": 1000,
+      "gid": 1000,
+      "kind": "directory"
+    },
+    ".git/config": {
+      "mode": 384,
+      "uid": 1000,
+      "gid": 1000,
+      "kind": "file",
+      "sha256": "79f8155250fa9bf8f8de2d411d676ce499cd709b52c825e5af4525c6b9f088fa"
+    },
+    ".git/description": {
+      "mode": 384,
+      "uid": 1000,
+      "gid": 1000,
+      "kind": "file",
+      "sha256": "85ab6c163d43a17ea9cf7788308bca1466f1b0a8d1cc92e26e9bf63da4062aee"
+    },
+    ".git/hooks": {
+      "mode": 448,
+      "uid": 1000,
+      "gid": 1000,
+      "kind": "directory"
+    },
+    ".git/hooks/applypatch-msg.sample": {
+      "mode": 448,
+      "uid": 1000,
+      "gid": 1000,
+      "kind": "file",
+      "sha256": "0223497a0b8b033aa58a3a521b8629869386cf7ab0e2f101963d328aa62193f7"
+    },
+    ".git/hooks/commit-msg.sample": {
+      "mode": 448,
+      "uid": 1000,
+      "gid": 1000,
+      "kind": "file",
+      "sha256": "1f74d5e9292979b573ebd59741d46cb93ff391acdd083d340b94370753d92437"
+    },
+    ".git/hooks/fsmonitor-watchman.sample": {
+      "mode": 448,
+      "uid": 1000,
+      "gid": 1000,
+      "kind": "file",
+      "sha256": "e0549964e93897b519bd8e333c037e51fff0f88ba13e086a331592bf801fa1d0"
+    },
+    ".git/hooks/post-update.sample": {
+      "mode": 448,
+      "uid": 1000,
+      "gid": 1000,
+      "kind": "file",
+      "sha256": "81765af2daef323061dcbc5e61fc16481cb74b3bac9ad8a174b186523586f6c5"
+    },
+    ".git/hooks/pre-applypatch.sample": {
+      "mode": 448,
+      "uid": 1000,
+      "gid": 1000,
+      "kind": "file",
+      "sha256": "e15c5b469ea3e0a695bea6f2c82bcf8e62821074939ddd85b77e0007ff165475"
+    },
+    ".git/hooks/pre-commit.sample": {
+      "mode": 448,
+      "uid": 1000,
+      "gid": 1000,
+      "kind": "file",
+      "sha256": "57185b7b9f05239d7ab52db045f5b89eb31348d7b2177eab214f5eb872e1971b"
+    },
+    ".git/hooks/pre-merge-commit.sample": {
+      "mode": 448,
+      "uid": 1000,
+      "gid": 1000,
+      "kind": "file",
+      "sha256": "d3825a70337940ebbd0a5c072984e13245920cdf8898bd225c8d27a6dfc9cb53"
+    },
+    ".git/hooks/pre-push.sample": {
+      "mode": 448,
+      "uid": 1000,
+      "gid": 1000,
+      "kind": "file",
+      "sha256": "ecce9c7e04d3f5dd9d8ada81753dd1d549a9634b26770042b58dda00217d086a"
+    },
+    ".git/hooks/pre-rebase.sample": {
+      "mode": 448,
+      "uid": 1000,
+      "gid": 1000,
+      "kind": "file",
+      "sha256": "4febce867790052338076f4e66cc47efb14879d18097d1d61c8261859eaaa7b3"
+    },
+    ".git/hooks/pre-receive.sample": {
+      "mode": 448,
+      "uid": 1000,
+      "gid": 1000,
+      "kind": "file",
+      "sha256": "a4c3d2b9c7bb3fd8d1441c31bd4ee71a595d66b44fcf49ddb310252320169989"
+    },
+    ".git/hooks/prepare-commit-msg.sample": {
+      "mode": 448,
+      "uid": 1000,
+      "gid": 1000,
+      "kind": "file",
+      "sha256": "e9ddcaa4189fddd25ed97fc8c789eca7b6ca16390b2392ae3276f0c8e1aa4619"
+    },
+    ".git/hooks/push-to-checkout.sample": {
+      "mode": 448,
+      "uid": 1000,
+      "gid": 1000,
+      "kind": "file",
+      "sha256": "a53d0741798b287c6dd7afa64aee473f305e65d3f49463bb9d7408ec3b12bf5f"
+    },
+    ".git/hooks/sendemail-validate.sample": {
+      "mode": 448,
+      "uid": 1000,
+      "gid": 1000,
+      "kind": "file",
+      "sha256": "44ebfc923dc5466bc009602f0ecf067b9c65459abfe8868ddc49b78e6ced7a92"
+    },
+    ".git/hooks/update.sample": {
+      "mode": 448,
+      "uid": 1000,
+      "gid": 1000,
+      "kind": "file",
+      "sha256": "8d5f2fa83e103cf08b57eaa67521df9194f45cbdbcb37da52ad586097a14d106"
+    },
+    ".git/index": {
+      "mode": 384,
+      "uid": 1000,
+      "gid": 1000,
+      "kind": "file",
+      "sha256": "aa1d76750f5fa4de37bdfd71ac7f1fcb4eea5f0804be95f7b745cfc1a897edaa"
+    },
+    ".git/info": {
+      "mode": 448,
+      "uid": 1000,
+      "gid": 1000,
+      "kind": "directory"
+    },
+    ".git/info/exclude": {
+      "mode": 384,
+      "uid": 1000,
+      "gid": 1000,
+      "kind": "file",
+      "sha256": "6671fe83b7a07c8932ee89164d1f2793b2318058eb8b98dc5c06ee0a5a3b0ec1"
+    },
+    ".git/logs": {
+      "mode": 448,
+      "uid": 1000,
+      "gid": 1000,
+      "kind": "directory"
+    },
+    ".git/logs/HEAD": {
+      "mode": 384,
+      "uid": 1000,
+      "gid": 1000,
+      "kind": "file",
+      "sha256": "0082f348874fe6915062965e50a9ab29f04ccf4881b2232019a9c7b7bb7be4dc"
+    },
+    ".git/logs/refs": {
+      "mode": 448,
+      "uid": 1000,
+      "gid": 1000,
+      "kind": "directory"
+    },
+    ".git/logs/refs/heads": {
+      "mode": 448,
+      "uid": 1000,
+      "gid": 1000,
+      "kind": "directory"
+    },
+    ".git/logs/refs/heads/master": {
+      "mode": 384,
+      "uid": 1000,
+      "gid": 1000,
+      "kind": "file",
+      "sha256": "0082f348874fe6915062965e50a9ab29f04ccf4881b2232019a9c7b7bb7be4dc"
+    },
+    ".git/objects": {
+      "mode": 448,
+      "uid": 1000,
+      "gid": 1000,
+      "kind": "directory"
+    },
+    ".git/objects/0d": {
+      "mode": 448,
+      "uid": 1000,
+      "gid": 1000,
+      "kind": "directory"
+    },
+    ".git/objects/0d/b7b713e6abf727c0e717151d2763e3ebc0ffa1": {
+      "mode": 256,
+      "uid": 1000,
+      "gid": 1000,
+      "kind": "file",
+      "sha256": "1d3e23f6f6f47eb9ae38a678e643168389c8ef262d588122850dc4cef023c95f"
+    },
+    ".git/objects/12": {
+      "mode": 448,
+      "uid": 1000,
+      "gid": 1000,
+      "kind": "directory"
+    },
+    ".git/objects/12/4ad45d259cd87373199e512d3c7edaefa4b697": {
+      "mode": 256,
+      "uid": 1000,
+      "gid": 1000,
+      "kind": "file",
+      "sha256": "34472f25571b0d718262ae8effc42163ef4ca1831d00181383d2142731d3eee7"
+    },
+    ".git/objects/12/f9962950ce19e3ad5388b98200d946be3cca59": {
+      "mode": 256,
+      "uid": 1000,
+      "gid": 1000,
+      "kind": "file",
+      "sha256": "1d34750339fa0c702b4a6a80b9eb8b2f35d5bd0c3d1cea6fde3a885016281880"
+    },
+    ".git/objects/27": {
+      "mode": 448,
+      "uid": 1000,
+      "gid": 1000,
+      "kind": "directory"
+    },
+    ".git/objects/27/db753192514a62bf7f48a156d53db1d047efc9": {
+      "mode": 256,
+      "uid": 1000,
+      "gid": 1000,
+      "kind": "file",
+      "sha256": "8ea5ad70d25b3ecd2cb3c79460f830cf9363e3207a565c053a52e88b8563da11"
+    },
+    ".git/objects/2a": {
+      "mode": 448,
+      "uid": 1000,
+      "gid": 1000,
+      "kind": "directory"
+    },
+    ".git/objects/2a/ac540a3af58be47e4d9c7b8f80da62a5794d35": {
+      "mode": 256,
+      "uid": 1000,
+      "gid": 1000,
+      "kind": "file",
+      "sha256": "c02c268fe068b774a425746564eff52aeb46f137e72bd442560f95ae0cfff6a0"
+    },
+    ".git/objects/3e": {
+      "mode": 448,
+      "uid": 1000,
+      "gid": 1000,
+      "kind": "directory"
+    },
+    ".git/objects/3e/a58d7fd5f8a5d3e7a7c6d73e85024501edba07": {
+      "mode": 256,
+      "uid": 1000,
+      "gid": 1000,
+      "kind": "file",
+      "sha256": "1c0dc3eeff699c6a932e6609bb7d4a2ce268b02c32ae466c2483f4913736f85b"
+    },
+    ".git/objects/52": {
+      "mode": 448,
+      "uid": 1000,
+      "gid": 1000,
+      "kind": "directory"
+    },
+    ".git/objects/52/1e6482b09afb9fc292fde70f219efca2e61845": {
+      "mode": 256,
+      "uid": 1000,
+      "gid": 1000,
+      "kind": "file",
+      "sha256": "6f0e7c3c1d14d8c49a9a121e60da356d3048b9f5f250eec911728c7dddc08002"
+    },
+    ".git/objects/81": {
+      "mode": 448,
+      "uid": 1000,
+      "gid": 1000,
+      "kind": "directory"
+    },
+    ".git/objects/81/5f28651c90db44d365e8e8c9d1d9f1f7ff0158": {
+      "mode": 256,
+      "uid": 1000,
+      "gid": 1000,
+      "kind": "file",
+      "sha256": "403f8417843cb127e23f4174f00d471773c3b0640679bbdfacc397f3c9ce3ffd"
+    },
+    ".git/objects/84": {
+      "mode": 448,
+      "uid": 1000,
+      "gid": 1000,
+      "kind": "directory"
+    },
+    ".git/objects/84/17184d0976dd1e2c131137521471b45722ba1f": {
+      "mode": 256,
+      "uid": 1000,
+      "gid": 1000,
+      "kind": "file",
+      "sha256": "1f568f135feab407e974514f179991b06bb57170b89a6d8e3ede2f5fef349fa2"
+    },
+    ".git/objects/8e": {
+      "mode": 448,
+      "uid": 1000,
+      "gid": 1000,
+      "kind": "directory"
+    },
+    ".git/objects/8e/b4fb3b62bd7c1066d7e1b9260d27b62332f227": {
+      "mode": 256,
+      "uid": 1000,
+      "gid": 1000,
+      "kind": "file",
+      "sha256": "5ab7bfe45c429e8cf432c6da2594e72e872bbdebe1faf43c6017ea5f2e09ac72"
+    },
+    ".git/objects/a6": {
+      "mode": 448,
+      "uid": 1000,
+      "gid": 1000,
+      "kind": "directory"
+    },
+    ".git/objects/a6/c031b9bc32bee8bbf2247a409d10f084e3b138": {
+      "mode": 256,
+      "uid": 1000,
+      "gid": 1000,
+      "kind": "file",
+      "sha256": "14c088c1a051b5dc2d9b7162aeb39bd408f262efa850e271af1824d053a6354c"
+    },
+    ".git/objects/ab": {
+      "mode": 448,
+      "uid": 1000,
+      "gid": 1000,
+      "kind": "directory"
+    },
+    ".git/objects/ab/dc0dca54aa3c334ccc41c0fea07498476f36d1": {
+      "mode": 256,
+      "uid": 1000,
+      "gid": 1000,
+      "kind": "file",
+      "sha256": "32b1ea6788d83c9deb1e7a6084412e15fda4be1009290c00eb0af42d34884ef1"
+    },
+    ".git/objects/b6": {
+      "mode": 448,
+      "uid": 1000,
+      "gid": 1000,
+      "kind": "directory"
+    },
+    ".git/objects/b6/ee62ab14fdd1de3678c10e9d91902b4dc8fdd9": {
+      "mode": 256,
+      "uid": 1000,
+      "gid": 1000,
+      "kind": "file",
+      "sha256": "01fd793ed35fc9acd9c2093981d05d8be9632e13023da634f4328a468070cf81"
+    },
+    ".git/objects/b9": {
+      "mode": 448,
+      "uid": 1000,
+      "gid": 1000,
+      "kind": "directory"
+    },
+    ".git/objects/b9/e37684aac4e55d9d395d4c7cf9d39c7a31570c": {
+      "mode": 256,
+      "uid": 1000,
+      "gid": 1000,
+      "kind": "file",
+      "sha256": "4d6b3eb0f97707f4d956444f0600394d5838bf1de168c8766c44240d6974e54d"
+    },
+    ".git/objects/c1": {
+      "mode": 448,
+      "uid": 1000,
+      "gid": 1000,
+      "kind": "directory"
+    },
+    ".git/objects/c1/6ca6f09b02ffa615c919bc807baab4339bcbc6": {
+      "mode": 256,
+      "uid": 1000,
+      "gid": 1000,
+      "kind": "file",
+      "sha256": "6b00cb8aefe5cf69f63f11c7ad027b27b239896e299b0ff29d6ebf07b7cef215"
+    },
+    ".git/objects/d0": {
+      "mode": 448,
+      "uid": 1000,
+      "gid": 1000,
+      "kind": "directory"
+    },
+    ".git/objects/d0/c7e36170f624cc347893100e03fab484a25920": {
+      "mode": 256,
+      "uid": 1000,
+      "gid": 1000,
+      "kind": "file",
+      "sha256": "29945b4c11244ec6a82a2f708d9cf3b41fbe1f1540ac3f17c5eb08201c01d8ae"
+    },
+    ".git/objects/e6": {
+      "mode": 448,
+      "uid": 1000,
+      "gid": 1000,
+      "kind": "directory"
+    },
+    ".git/objects/e6/9de29bb2d1d6434b8b29ae775ad8c2e48c5391": {
+      "mode": 256,
+      "uid": 1000,
+      "gid": 1000,
+      "kind": "file",
+      "sha256": "164c5fa8067facf1a43f09ce3d0e35ebf53a7f5723ecbf15a8667cfc53c26f6c"
+    },
+    ".git/objects/fb": {
+      "mode": 448,
+      "uid": 1000,
+      "gid": 1000,
+      "kind": "directory"
+    },
+    ".git/objects/fb/e38676bbe099c0f747e10c92fc342b12c4d82a": {
+      "mode": 256,
+      "uid": 1000,
+      "gid": 1000,
+      "kind": "file",
+      "sha256": "11b4ae3248f8c3d0a7357a3721a131d02d03ed28b7bd2c66e9b85f3dda0e65fc"
+    },
+    ".git/objects/fd": {
+      "mode": 448,
+      "uid": 1000,
+      "gid": 1000,
+      "kind": "directory"
+    },
+    ".git/objects/fd/ea896b70044f298b70153a41af3a4ad34fb187": {
+      "mode": 256,
+      "uid": 1000,
+      "gid": 1000,
+      "kind": "file",
+      "sha256": "e71de6e1eb569e54879b8503b1587c78f81208872ff35e7a5c35945b1414ad7d"
+    },
+    ".git/objects/info": {
+      "mode": 448,
+      "uid": 1000,
+      "gid": 1000,
+      "kind": "directory"
+    },
+    ".git/objects/pack": {
+      "mode": 448,
+      "uid": 1000,
+      "gid": 1000,
+      "kind": "directory"
+    },
+    ".git/refs": {
+      "mode": 448,
+      "uid": 1000,
+      "gid": 1000,
+      "kind": "directory"
+    },
+    ".git/refs/heads": {
+      "mode": 448,
+      "uid": 1000,
+      "gid": 1000,
+      "kind": "directory"
+    },
+    ".git/refs/heads/master": {
+      "mode": 384,
+      "uid": 1000,
+      "gid": 1000,
+      "kind": "file",
+      "sha256": "6e43c67e3af23f993209e019c5de5c7ad3d35d3c78b313d6fd01a5af03ae8b48"
+    },
+    ".git/refs/tags": {
+      "mode": 448,
+      "uid": 1000,
+      "gid": 1000,
+      "kind": "directory"
+    },
+    ".mypy_cache": {
+      "mode": 448,
+      "uid": 1000,
+      "gid": 1000,
+      "kind": "directory"
+    },
+    ".mypy_cache/.gitignore": {
+      "mode": 384,
+      "uid": 1000,
+      "gid": 1000,
+      "kind": "file",
+      "sha256": "6a69da670d11530d37f0f0cfdc7bed30b78ea6434e24f7a73208b982e29d322c"
+    },
+    ".mypy_cache/3.11": {
+      "mode": 448,
+      "uid": 1000,
+      "gid": 1000,
+      "kind": "directory"
+    },
+    ".mypy_cache/3.11/cache.db": {
+      "mode": 384,
+      "uid": 1000,
+      "gid": 1000,
+      "kind": "file",
+      "sha256": "0795339b4c7f8a311dfc90204f1f43d9d670eba4d44c2da8e220709e53ad4251"
+    },
+    ".mypy_cache/CACHEDIR.TAG": {
+      "mode": 384,
+      "uid": 1000,
+      "gid": 1000,
+      "kind": "file",
+      "sha256": "f1c13afc555358c9033b0f1f30aaa177fe88bda40f4b8a24598400d547876adc"
+    },
+    "pyproject.toml": {
+      "mode": 384,
+      "uid": 1000,
+      "gid": 1000,
+      "kind": "file",
+      "sha256": "6e7d571206536818b52942417eeca8cd0fb5219418bd78d0ef1819671753e69f"
+    },
+    "src": {
+      "mode": 448,
+      "uid": 1000,
+      "gid": 1000,
+      "kind": "directory"
+    },
+    "src/__init__.py": {
+      "mode": 384,
+      "uid": 1000,
+      "gid": 1000,
+      "kind": "file",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "src/api_source.py": {
+      "mode": 384,
+      "uid": 1000,
+      "gid": 1000,
+      "kind": "file",
+      "sha256": "f27f6a5d344c5d7e8280406345204eeeff5c46189d8056f773f11ed01549dc5a"
+    },
+    "src/cache.py": {
+      "mode": 384,
+      "uid": 1000,
+      "gid": 1000,
+      "kind": "file",
+      "sha256": "58c19be7bf0cdd0594deebab61470ea88b1f335307167f28afd3e157b1ee8522"
+    },
+    "src/cli.py": {
+      "mode": 384,
+      "uid": 1000,
+      "gid": 1000,
+      "kind": "file",
+      "sha256": "709481d65f140d6759983c045bff7c8fdedf889c788e59960b0cab9a2dc67dd0"
+    },
+    "src/config.py": {
+      "mode": 384,
+      "uid": 1000,
+      "gid": 1000,
+      "kind": "file",
+      "sha256": "39446aabbfb8287699b359047b593eec85c5539ef902f31cdede9b7d5ec5df0e"
+    },
+    "src/csv_source.py": {
+      "mode": 384,
+      "uid": 1000,
+      "gid": 1000,
+      "kind": "file",
+      "sha256": "56d04649f1922000791f40c213bc2c5b4e23ea116aff3c6b48dce4cb3b3bebbd"
+    },
+    "src/db.py": {
+      "mode": 384,
+      "uid": 1000,
+      "gid": 1000,
+      "kind": "file",
+      "sha256": "a8650876eab7ecc7ce73cc5c0affee40d3fb060d454060c081de92e58094aff7"
+    },
+    "src/db_source.py": {
+      "mode": 384,
+      "uid": 1000,
+      "gid": 1000,
+      "kind": "file",
+      "sha256": "661769813adde5dc89e3ac3749a924a396d5cc4364e1f69da3f464cd791a62e3"
+    },
+    "src/logging_setup.py": {
+      "mode": 384,
+      "uid": 1000,
+      "gid": 1000,
+      "kind": "file",
+      "sha256": "2d3f2d08af4228935dd77280d3afde5f3760372d268c10498e837d79139f6fb3"
+    },
+    "src/metrics.py": {
+      "mode": 384,
+      "uid": 1000,
+      "gid": 1000,
+      "kind": "file",
+      "sha256": "5c8cfd53bfe35e9d6e2bd586b750f68790d669f71cad5faff293d5bd1d85617f"
+    },
+    "src/models.py": {
+      "mode": 384,
+      "uid": 1000,
+      "gid": 1000,
+      "kind": "file",
+      "sha256": "07b454611071f4ad33fa29a5b4c34018abcade39306133b777f8ecc1ae4ad2d3"
+    },
+    "src/scheduler.py": {
+      "mode": 384,
+      "uid": 1000,
+      "gid": 1000,
+      "kind": "file",
+      "sha256": "22462eb745d3da383b068416da5a9f4ff4fb3b760abf44edb46d8ae13f7db041"
+    },
+    "src/transform.py": {
+      "mode": 384,
+      "uid": 1000,
+      "gid": 1000,
+      "kind": "file",
+      "sha256": "e92748260f12a79a5f6a3c4c3f54b45fc51077684712919d120e99abb1bb2892"
+    },
+    "src/validation.py": {
+      "mode": 384,
+      "uid": 1000,
+      "gid": 1000,
+      "kind": "file",
+      "sha256": "812bb12d451e6a58bbcb92acf3024f11d61f725bcf4d90ab3f6902f286b771e1"
+    },
+    "src/writer.py": {
+      "mode": 384,
+      "uid": 1000,
+      "gid": 1000,
+      "kind": "file",
+      "sha256": "13fef8d75cb7e59446a50d2b7020c8ec6883a03ba84021f53436d8c7eb2a7e55"
+    }
+  },
+  "external": {
+    "roots": {
+      "/home/dev": {
+        "exists": true,
+        "files": {
+          ".": {
+            "mode": 448,
+            "uid": 1000,
+            "gid": 1000,
+            "kind": "directory"
+          },
+          ".bash_logout": {
+            "mode": 420,
+            "uid": 1000,
+            "gid": 1000,
+            "kind": "file",
+            "sha256": "26882b79471c25f945c970f8233d8ce29d54e9d5eedcd2884f88affa84a18f56"
+          },
+          ".bashrc": {
+            "mode": 420,
+            "uid": 1000,
+            "gid": 1000,
+            "kind": "file",
+            "sha256": "afae8986f549c6403410e029f9cce7983311512d04b1f02af02e4ce0af0dd2bf"
+          },
+          ".profile": {
+            "mode": 420,
+            "uid": 1000,
+            "gid": 1000,
+            "kind": "file",
+            "sha256": "28b4a453b68dde64f814e94bab14ee651f4f162e15dd9920490aa1d49f05d2a4"
+          }
+        },
+        "issues": []
+      },
+      "/.kimi": {
+        "exists": false
+      },
+      "/tmp": {
+        "exists": true,
+        "files": {
+          "api_source_fix.py": {
+            "mode": 384,
+            "uid": 1000,
+            "gid": 1000,
+            "kind": "file",
+            "sha256": "f27f6a5d344c5d7e8280406345204eeeff5c46189d8056f773f11ed01549dc5a"
+          },
+          "cli_fix.py": {
+            "mode": 384,
+            "uid": 1000,
+            "gid": 1000,
+            "kind": "file",
+            "sha256": "709481d65f140d6759983c045bff7c8fdedf889c788e59960b0cab9a2dc67dd0"
+          },
+          "config_fix.py": {
+            "mode": 384,
+            "uid": 1000,
+            "gid": 1000,
+            "kind": "file",
+            "sha256": "39446aabbfb8287699b359047b593eec85c5539ef902f31cdede9b7d5ec5df0e"
+          },
+          "csv_source_fix.py": {
+            "mode": 384,
+            "uid": 1000,
+            "gid": 1000,
+            "kind": "file",
+            "sha256": "56d04649f1922000791f40c213bc2c5b4e23ea116aff3c6b48dce4cb3b3bebbd"
+          },
+          "db_fix.py": {
+            "mode": 384,
+            "uid": 1000,
+            "gid": 1000,
+            "kind": "file",
+            "sha256": "a8650876eab7ecc7ce73cc5c0affee40d3fb060d454060c081de92e58094aff7"
+          },
+          "db_source_fix.py": {
+            "mode": 384,
+            "uid": 1000,
+            "gid": 1000,
+            "kind": "file",
+            "sha256": "661769813adde5dc89e3ac3749a924a396d5cc4364e1f69da3f464cd791a62e3"
+          },
+          "metrics_fix.py": {
+            "mode": 384,
+            "uid": 1000,
+            "gid": 1000,
+            "kind": "file",
+            "sha256": "5c8cfd53bfe35e9d6e2bd586b750f68790d669f71cad5faff293d5bd1d85617f"
+          },
+          "models_fix.py": {
+            "mode": 384,
+            "uid": 1000,
+            "gid": 1000,
+            "kind": "file",
+            "sha256": "07b454611071f4ad33fa29a5b4c34018abcade39306133b777f8ecc1ae4ad2d3"
+          },
+          "scheduler_fix.py": {
+            "mode": 384,
+            "uid": 1000,
+            "gid": 1000,
+            "kind": "file",
+            "sha256": "22462eb745d3da383b068416da5a9f4ff4fb3b760abf44edb46d8ae13f7db041"
+          },
+          "transform_fix.py": {
+            "mode": 384,
+            "uid": 1000,
+            "gid": 1000,
+            "kind": "file",
+            "sha256": "e92748260f12a79a5f6a3c4c3f54b45fc51077684712919d120e99abb1bb2892"
+          },
+          "validation_fix.py": {
+            "mode": 384,
+            "uid": 1000,
+            "gid": 1000,
+            "kind": "file",
+            "sha256": "812bb12d451e6a58bbcb92acf3024f11d61f725bcf4d90ab3f6902f286b771e1"
+          },
+          "writer_fix.py": {
+            "mode": 384,
+            "uid": 1000,
+            "gid": 1000,
+            "kind": "file",
+            "sha256": "13fef8d75cb7e59446a50d2b7020c8ec6883a03ba84021f53436d8c7eb2a7e55"
+          }
+        },
+        "issues": []
+      }
+    },
+    "fixed_files": {
+      "/root/.gitconfig": "3c3e0cef1478f039deaf28ab8aae26c4c85cfc01e530da2e0ead3210b62040e0",
+      "/etc/gitconfig": null,
+      "/etc/passwd": "0d4ef341d3fb0e945fa1f0c2253f8f25da337a1cd2d976dd9772c3baeb8f3a1c",
+      "/etc/group": "f976db91f79a3faf6253dc8e0f13fb50a341f3bca693b8bc16e7282e31f0d396",
+      "/usr/local/bin/mypy": "8f91a05af747a1af19a5c3189d46d3f41a8357c99afa684c8cc48c0fac353a54",
+      "/bin/sh": "a6f559e00b69a4aa4d8cb607be18d9386c5aee55c509e2c075549dcf00e00fc7"
+    },
+    "packages": [
+      [
+        "PyYAML",
+        "6.0.3"
+      ],
+      [
+        "Pygments",
+        "2.21.0"
+      ],
+      [
+        "agent-interp-envs",
+        "0.1.0"
+      ],
+      [
+        "aiohappyeyeballs",
+        "2.7.1"
+      ],
+      [
+        "aiohttp",
+        "3.14.3"
+      ],
+      [
+        "aiosignal",
+        "1.4.0"
+      ],
+      [
+        "annotated-types",
+        "0.8.0"
+      ],
+      [
+        "anthropic",
+        "1.4.0"
+      ],
+      [
+        "antlr4-python3-runtime",
+        "4.9.3"
+      ],
+      [
+        "anyio",
+        "4.15.1"
+      ],
+      [
+        "asttokens",
+        "3.0.2"
+      ],
+      [
+        "attrs",
+        "26.1.0"
+      ],
+      [
+        "cbor2",
+        "6.1.4"
+      ],
+      [
+        "certifi",
+        "2026.7.22"
+      ],
+      [
+        "charset-normalizer",
+        "3.5.1"
+      ],
+      [
+        "click",
+        "8.5.0"
+      ],
+      [
+        "comm",
+        "0.2.3"
+      ],
+      [
+        "datasets",
+        "4.4.2"
+      ],
+      [
+        "debugpy",
+        "1.8.21"
+      ],
+      [
+        "dill",
+        "0.4.0"
+      ],
+      [
+        "docstring_parser",
+        "0.18.0"
+      ],
+      [
+        "executing",
+        "2.2.1"
+      ],
+      [
+        "filelock",
+        "3.32.6"
+      ],
+      [
+        "frozenlist",
+        "1.8.0"
+      ],
+      [
+        "fsspec",
+        "2025.10.0"
+      ],
+      [
+        "grpclib",
+        "0.4.9"
+      ],
+      [
+        "h11",
+        "0.16.0"
+      ],
+      [
+        "h2",
+        "4.4.1"
+      ],
+      [
+        "hf-xet",
+        "1.6.0"
+      ],
+      [
+        "hpack",
+        "4.2.0"
+      ],
+      [
+        "httpcore",
+        "1.0.9"
+      ],
+      [
+        "httpcore2",
+        "2.12.0"
+      ],
+      [
+        "httpx",
+        "0.28.1"
+      ],
+      [
+        "httpx2",
+        "2.12.0"
+      ],
+      [
+        "huggingface_hub",
+        "1.30.0"
+      ],
+      [
+        "hyperframe",
+        "6.1.0"
+      ],
+      [
+        "idna",
+        "3.19"
+      ],
+      [
+        "iniconfig",
+        "2.3.0"
+      ],
+      [
+        "ipykernel",
+        "7.3.0"
+      ],
+      [
+        "ipython",
+        "9.17.1"
+      ],
+      [
+        "ipython_pygments_lexers",
+        "1.1.1"
+      ],
+      [
+        "jedi",
+        "0.20.0"
+      ],
+      [
+        "jiter",
+        "0.16.0"
+      ],
+      [
+        "jupyter_client",
+        "8.10.0"
+      ],
+      [
+        "jupyter_core",
+        "5.9.1"
+      ],
+      [
+        "librt",
+        "0.15.0"
+      ],
+      [
+        "markdown-it-py",
+        "4.2.0"
+      ],
+      [
+        "matplotlib-inline",
+        "0.2.2"
+      ],
+      [
+        "mdurl",
+        "0.1.2"
+      ],
+      [
+        "modal",
+        "1.5.5"
+      ],
+      [
+        "multidict",
+        "6.8.0"
+      ],
+      [
+        "multiprocess",
+        "0.70.18"
+      ],
+      [
+        "mypy",
+        "1.20.2"
+      ],
+      [
+        "mypy_extensions",
+        "1.1.0"
+      ],
+      [
+        "nest-asyncio2",
+        "1.7.2"
+      ],
+      [
+        "numpy",
+        "2.4.6"
+      ],
+      [
+        "omegaconf",
+        "2.3.1"
+      ],
+      [
+        "openai",
+        "3.11.0"
+      ],
+      [
+        "packaging",
+        "26.3"
+      ],
+      [
+        "pandas",
+        "3.0.5"
+      ],
+      [
+        "parso",
+        "0.8.7"
+      ],
+      [
+        "pathspec",
+        "1.1.1"
+      ],
+      [
+        "pexpect",
+        "4.9.0"
+      ],
+      [
+        "pip",
+        "24.0"
+      ],
+      [
+        "platformdirs",
+        "4.11.8"
+      ],
+      [
+        "pluggy",
+        "1.6.0"
+      ],
+      [
+        "prompt_toolkit",
+        "3.0.53"
+      ],
+      [
+        "propcache",
+        "0.5.2"
+      ],
+      [
+        "protobuf",
+        "6.33.6"
+      ],
+      [
+        "psutil",
+        "7.2.2"
+      ],
+      [
+        "ptyprocess",
+        "0.7.0"
+      ],
+      [
+        "pure_eval",
+        "0.2.3"
+      ],
+      [
+        "pyarrow",
+        "25.0.1"
+      ],
+      [
+        "pydantic",
+        "2.13.5"
+      ],
+      [
+        "pydantic_core",
+        "2.46.5"
+      ],
+      [
+        "pytest",
+        "9.1.1"
+      ],
+      [
+        "python-dateutil",
+        "2.9.0.post0"
+      ],
+      [
+        "python-dotenv",
+        "1.2.3"
+      ],
+      [
+        "pyzmq",
+        "27.2.0"
+      ],
+      [
+        "requests",
+        "2.34.2"
+      ],
+      [
+        "rich",
+        "15.0.0"
+      ],
+      [
+        "ruff",
+        "0.16.6"
+      ],
+      [
+        "sentences",
+        "0.1.1"
+      ],
+      [
+        "setuptools",
+        "79.0.1"
+      ],
+      [
+        "six",
+        "1.17.0"
+      ],
+      [
+        "sniffio",
+        "1.3.1"
+      ],
+      [
+        "stack-data",
+        "0.6.3"
+      ],
+      [
+        "synchronicity",
+        "0.12.5"
+      ],
+      [
+        "tenacity",
+        "9.1.4"
+      ],
+      [
+        "toml",
+        "0.10.2"
+      ],
+      [
+        "tornado",
+        "6.5.8"
+      ],
+      [
+        "tqdm",
+        "4.70.0"
+      ],
+      [
+        "traitlets",
+        "5.16.1"
+      ],
+      [
+        "truststore",
+        "0.10.4"
+      ],
+      [
+        "types-PyYAML",
+        "6.0.12.20260518"
+      ],
+      [
+        "types-certifi",
+        "2021.10.8.3"
+      ],
+      [
+        "types-requests",
+        "2.33.0.20260518"
+      ],
+      [
+        "types-toml",
+        "0.10.8.20260518"
+      ],
+      [
+        "typing-inspection",
+        "0.4.4"
+      ],
+      [
+        "typing_extensions",
+        "4.16.0"
+      ],
+      [
+        "urllib3",
+        "2.7.0"
+      ],
+      [
+        "watchfiles",
+        "1.2.0"
+      ],
+      [
+        "wcwidth",
+        "0.8.3"
+      ],
+      [
+        "wheel",
+        "0.46.3"
+      ],
+      [
+        "xxhash",
+        "4.0.1"
+      ],
+      [
+        "yarl",
+        "1.24.5"
+      ]
+    ],
+    "agent_process_inventory": [],
+    "live_agent_processes": [],
+    "excluded_tmp": [
+      "config.yaml",
+      ".fs_blob_cache",
+      "root metadata"
+    ],
+    "limits": "No process, network, clock, kernel, or whole-machine copy"
+  },
+  "tmp_fs_entries": [
+    {
+      "path": "/tmp/api_source_fix.py",
+      "action": "write",
+      "blob": "f27f6a5d344c5d7e",
+      "mode": 384,
+      "mtime_ns": 1789083459281622481,
+      "uid": 1000,
+      "gid": 1000
+    },
+    {
+      "path": "/tmp/cli_fix.py",
+      "action": "write",
+      "blob": "709481d65f140d67",
+      "mode": 384,
+      "mtime_ns": 1789083497504980133,
+      "uid": 1000,
+      "gid": 1000
+    },
+    {
+      "path": "/tmp/config_fix.py",
+      "action": "write",
+      "blob": "39446aabbfb82876",
+      "mode": 384,
+      "mtime_ns": 1789083425761304632,
+      "uid": 1000,
+      "gid": 1000
+    },
+    {
+      "path": "/tmp/csv_source_fix.py",
+      "action": "write",
+      "blob": "56d04649f1922000",
+      "mode": 384,
+      "mtime_ns": 1789083169681715529,
+      "uid": 1000,
+      "gid": 1000
+    },
+    {
+      "path": "/tmp/db_fix.py",
+      "action": "write",
+      "blob": "a8650876eab7ecc7",
+      "mode": 384,
+      "mtime_ns": 1789083196816005840,
+      "uid": 1000,
+      "gid": 1000
+    },
+    {
+      "path": "/tmp/db_source_fix.py",
+      "action": "write",
+      "blob": "661769813adde5dc",
+      "mode": 384,
+      "mtime_ns": 1789083404475100643,
+      "uid": 1000,
+      "gid": 1000
+    },
+    {
+      "path": "/tmp/metrics_fix.py",
+      "action": "write",
+      "blob": "5c8cfd53bfe35e9d",
+      "mode": 384,
+      "mtime_ns": 1789083143066426377,
+      "uid": 1000,
+      "gid": 1000
+    },
+    {
+      "path": "/tmp/models_fix.py",
+      "action": "write",
+      "blob": "07b454611071f4ad",
+      "mode": 384,
+      "mtime_ns": 1789083104220996059,
+      "uid": 1000,
+      "gid": 1000
+    },
+    {
+      "path": "/tmp/scheduler_fix.py",
+      "action": "write",
+      "blob": "22462eb745d3da38",
+      "mode": 384,
+      "mtime_ns": 1789083357206641261,
+      "uid": 1000,
+      "gid": 1000
+    },
+    {
+      "path": "/tmp/transform_fix.py",
+      "action": "write",
+      "blob": "e92748260f12a79a",
+      "mode": 384,
+      "mtime_ns": 1789083278042850105,
+      "uid": 1000,
+      "gid": 1000
+    },
+    {
+      "path": "/tmp/validation_fix.py",
+      "action": "write",
+      "blob": "812bb12d451e6a58",
+      "mode": 384,
+      "mtime_ns": 1789083318289649407,
+      "uid": 1000,
+      "gid": 1000
+    },
+    {
+      "path": "/tmp/writer_fix.py",
+      "action": "write",
+      "blob": "13fef8d75cb7e594",
+      "mode": 384,
+      "mtime_ns": 1789083232453380640,
+      "uid": 1000,
+      "gid": 1000
+    }
+  ],
+  "researcher_adjudication": "pending"
+}

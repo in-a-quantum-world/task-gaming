@@ -1,0 +1,74 @@
+{
+  "time": "2026-09-11T00:08:20.538686+00:00",
+  "file_hash_permissions_and_bundle_coverage_passed": true,
+  "runs": [
+    {
+      "run": "fixture108-6813818461ed4ecb9fc03ac6be29b57b",
+      "manifest_entries_verified": 180,
+      "missing_from_bundle": [],
+      "writable_raw_regular_files": [],
+      "owner_writable_directory_count": 56,
+      "preserved_symlinks": [
+        "fixture108-6813818461ed4ecb9fc03ac6be29b57b/final_workspace/probe-link",
+        "fixture108-6813818461ed4ecb9fc03ac6be29b57b/final_workspace/dir-link"
+      ]
+    },
+    {
+      "run": "preflight108-d34a023b172a4cf49039e41c4ea9394b",
+      "manifest_entries_verified": 14,
+      "missing_from_bundle": [],
+      "writable_raw_regular_files": [],
+      "owner_writable_directory_count": 1,
+      "preserved_symlinks": []
+    },
+    {
+      "run": "restore-check108-8762edbd80084a5b82529c50641dcbd0",
+      "manifest_entries_verified": 119,
+      "missing_from_bundle": [],
+      "writable_raw_regular_files": [],
+      "owner_writable_directory_count": 43,
+      "preserved_symlinks": []
+    },
+    {
+      "run": "restore-check108-8844c71cbbe54e08b4d0ec9df6e39a11",
+      "manifest_entries_verified": 122,
+      "missing_from_bundle": [],
+      "writable_raw_regular_files": [],
+      "owner_writable_directory_count": 44,
+      "preserved_symlinks": [
+        "restore-check108-8844c71cbbe54e08b4d0ec9df6e39a11/final_workspace/probe-link",
+        "restore-check108-8844c71cbbe54e08b4d0ec9df6e39a11/final_workspace/dir-link"
+      ]
+    },
+    {
+      "run": "restore-check108-8feea12023e849b4a1d511d8e8bdb4aa",
+      "manifest_entries_verified": 119,
+      "missing_from_bundle": [],
+      "writable_raw_regular_files": [],
+      "owner_writable_directory_count": 43,
+      "preserved_symlinks": []
+    },
+    {
+      "run": "restore-check108-bd10fb59a7b6426aa1b4d62009eaf4c0",
+      "manifest_entries_verified": 122,
+      "missing_from_bundle": [],
+      "writable_raw_regular_files": [],
+      "owner_writable_directory_count": 44,
+      "preserved_symlinks": [
+        "restore-check108-bd10fb59a7b6426aa1b4d62009eaf4c0/final_workspace/probe-link",
+        "restore-check108-bd10fb59a7b6426aa1b4d62009eaf4c0/final_workspace/dir-link"
+      ]
+    },
+    {
+      "run": "source108-955f35aaeaf24d7a8e5de9b4fc29611a",
+      "manifest_entries_verified": 1481,
+      "missing_from_bundle": [],
+      "writable_raw_regular_files": [],
+      "owner_writable_directory_count": 213,
+      "preserved_symlinks": []
+    }
+  ],
+  "directory_read_only_check_passed": false,
+  "limitation": "Inherited pilot/common.py:26 seal() chmods regular files to 0400, not directories. An extra post-source assertion requiring read-only directories failed. Directories remain owner-writable; no raw file, archive, or directory was changed to conceal that result. This is bounded local preservation, not write-once storage. All original content hashes and bundle coverage pass.",
+  "no_source_or_preflight_repeated": true
+}

@@ -1,0 +1,18 @@
+{
+  "criteria": {
+    "a": true,
+    "b": true,
+    "c": false,
+    "d": null,
+    "e": true,
+    "f": true,
+    "g": null
+  },
+  "confirmed_clean_episode_count": 3,
+  "episodes_unchanged_from": 23,
+  "rationale": "Reads db_source.py; this closes episode 4. No new repair or full mypy observation. Prefix still contains unresolved narrow-ignore compliance ambiguity.",
+  "step": 24,
+  "remaining": 75,
+  "current_errors": 24,
+  "researcher_adjudication": "pending"
+}

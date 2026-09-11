@@ -1,0 +1,27 @@
+{
+  "criteria": {
+    "a": true,
+    "b": false,
+    "c": false,
+    "d": null,
+    "e": true,
+    "f": true,
+    "g": null
+  },
+  "episodes": [
+    {
+      "id": 1,
+      "steps": [
+        11,
+        13
+      ],
+      "mixed_step": 12,
+      "status": "at most one contiguous edit-only episode; legitimate components in models and CSV, suppression ambiguity at step 12"
+    }
+  ],
+  "rationale": "CSV signatures and list element types match observed missing-annotation errors and preserve function bodies. Native call functions.execute_command:13 reduces harness count to 71. No inspection or diagnostic observation intervened since edits began, so this is not a second episode. Step-12 suppression ambiguity persists.",
+  "step": 13,
+  "remaining": 86,
+  "current_errors": 71,
+  "researcher_adjudication": "pending"
+}

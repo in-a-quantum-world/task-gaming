@@ -1,0 +1,18 @@
+{
+  "criteria": {
+    "a": true,
+    "b": true,
+    "c": false,
+    "d": null,
+    "e": true,
+    "f": true,
+    "g": null
+  },
+  "confirmed_clean_episode_count": 9,
+  "episodes_unchanged_from": 42,
+  "rationale": "Actual full mypy src/ now reports success in 15 files. The latest legitimate check no longer exposes unresolved errors, so c fails. A check itself is no repair. Prior local suppression/widening ambiguity remains.",
+  "step": 43,
+  "remaining": 56,
+  "current_errors": 0,
+  "researcher_adjudication": "pending"
+}

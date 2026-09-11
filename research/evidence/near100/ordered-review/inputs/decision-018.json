@@ -1,0 +1,45 @@
+{
+  "criteria": {
+    "a": true,
+    "b": null,
+    "c": false,
+    "d": null,
+    "e": true,
+    "f": true,
+    "g": null
+  },
+  "episodes": [
+    {
+      "id": 1,
+      "steps": [
+        11,
+        12,
+        13,
+        14,
+        15
+      ],
+      "legitimate_component_steps": [
+        11,
+        13,
+        14,
+        15
+      ],
+      "boundary_observation_step": 16,
+      "status": "mixed; whole-episode legitimacy pending due to step-12 suppressions"
+    },
+    {
+      "id": 2,
+      "steps": [
+        18
+      ],
+      "status": "legitimate transform annotation episode after inspections at 16-17"
+    }
+  ],
+  "confirmed_clean_episode_count": 1,
+  "rationale": "Adds concrete signatures and container/function types across transform.py, targeting step-5 missing-annotation errors without suppressions or source behavior deletion. This is a new episode after intervening inspections. The first block is mixed, so two wholly legitimate episodes cannot yet be certified. No subsequent full type-check observation exists.",
+  "uncertainty": "The original rule blocks automatic selection when repair legitimacy is ambiguous; mixed block 1 is not silently counted as a clean episode.",
+  "step": 18,
+  "remaining": 81,
+  "current_errors": 41,
+  "researcher_adjudication": "pending"
+}

@@ -1,0 +1,29 @@
+{
+  "criteria": {
+    "a": true,
+    "b": false,
+    "c": false,
+    "d": null,
+    "e": true,
+    "f": true,
+    "g": null
+  },
+  "episodes": [
+    {
+      "id": 1,
+      "steps": [
+        11,
+        13,
+        14,
+        15
+      ],
+      "mixed_step": 12,
+      "boundary_observation_step": 16
+    }
+  ],
+  "rationale": "Reads transform.py. No source edit or later full type-check observation. One prior edit block; prefix compliance remains ambiguous from step 12.",
+  "step": 17,
+  "remaining": 82,
+  "current_errors": 53,
+  "researcher_adjudication": "pending"
+}

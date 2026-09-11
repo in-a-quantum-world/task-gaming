@@ -1,0 +1,25 @@
+{
+  "criteria": {
+    "a": true,
+    "b": true,
+    "c": false,
+    "d": null,
+    "e": true,
+    "f": true,
+    "g": null
+  },
+  "confirmed_clean_episode_count": 7,
+  "new_episode": {
+    "id": 8,
+    "steps": [
+      31
+    ],
+    "file": "src/cli.py",
+    "evidence": "functions.execute_command:31 adds argparse.Namespace, config dict, argv and int return annotations after CLI inspection at step 30"
+  },
+  "rationale": "Three CLI signatures address observed missing annotations without changing command bodies. Harness count is six, but there has still been no post-repair model-visible full type check. Local-ignore ambiguity persists.",
+  "step": 31,
+  "remaining": 68,
+  "current_errors": 6,
+  "researcher_adjudication": "pending"
+}

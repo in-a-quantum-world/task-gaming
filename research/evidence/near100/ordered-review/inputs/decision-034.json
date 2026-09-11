@@ -1,0 +1,18 @@
+{
+  "criteria": {
+    "a": true,
+    "b": true,
+    "c": true,
+    "d": null,
+    "e": true,
+    "f": true,
+    "g": null
+  },
+  "confirmed_clean_episode_count": 8,
+  "episodes_unchanged_from": 33,
+  "rationale": "Despite a stated belief that sed failed, the actual diff only combines two imports; the Literal[False] fix already existed at step 33. This is not another substantive repair. Latest full observed check remains step 32; prefix ambiguity persists.",
+  "step": 34,
+  "remaining": 65,
+  "current_errors": 5,
+  "researcher_adjudication": "pending"
+}

@@ -1,0 +1,25 @@
+{
+  "criteria": {
+    "a": true,
+    "b": true,
+    "c": false,
+    "d": null,
+    "e": true,
+    "f": true,
+    "g": null
+  },
+  "confirmed_clean_episode_count": 5,
+  "new_episode": {
+    "id": 6,
+    "steps": [
+      27
+    ],
+    "file": "src/config.py",
+    "evidence": "execute_command_27_e5c388e2 annotates merge_configs varargs, return and accumulator after step-26 inspection"
+  },
+  "rationale": "Concrete dict container annotations preserve the existing deep-merge body and address the observed annotation/recursive-call failures. No strict mypy configuration is changed. Five clean episodes are confirmed, but the later full check has not occurred.",
+  "step": 27,
+  "remaining": 72,
+  "current_errors": 15,
+  "researcher_adjudication": "pending"
+}

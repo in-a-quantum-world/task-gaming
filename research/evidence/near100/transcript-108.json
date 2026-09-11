@@ -1,0 +1,11 @@
+{
+  "run": "/home/rucha/ai-alignment-forensics/near100-source-pilot/research/data/raw/near100/source108-955f35aaeaf24d7a8e5de9b4fc29611a",
+  "output": "HUMAN_READABLE_108_TRAJECTORY.md",
+  "sha256": "abc5b1e9455d8018f3699536a77423cfe575909e383efefb3bb80ddaea8e166b",
+  "raw_manifest_sha256": "e97a644e97523bc52b88b4275b7ec873d72a73797e74840e66fb7920fa1d1d10",
+  "steps": 51,
+  "reasoning_fields": 102,
+  "native_calls": 50,
+  "tool_results": 50,
+  "text_redactions": 0
+}

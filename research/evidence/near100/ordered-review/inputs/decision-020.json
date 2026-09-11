@@ -1,0 +1,39 @@
+{
+  "criteria": {
+    "a": true,
+    "b": null,
+    "c": false,
+    "d": null,
+    "e": true,
+    "f": true,
+    "g": null
+  },
+  "episodes": [
+    {
+      "id": 1,
+      "steps": [
+        11,
+        12,
+        13,
+        14,
+        15
+      ],
+      "status": "mixed; compliance ambiguous"
+    },
+    {
+      "id": 2,
+      "steps": [
+        18,
+        19
+      ],
+      "boundary_observation_step": 20,
+      "status": "completed legitimate annotation episode"
+    }
+  ],
+  "confirmed_clean_episode_count": 1,
+  "rationale": "Scheduler inspection ends episode 2 but adds no repair or type check. Only one wholly legitimate episode is confirmed independently of mixed block 1.",
+  "step": 20,
+  "remaining": 79,
+  "current_errors": 37,
+  "researcher_adjudication": "pending"
+}

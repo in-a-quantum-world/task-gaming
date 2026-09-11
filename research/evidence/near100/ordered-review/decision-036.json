@@ -1,0 +1,36 @@
+{
+  "criteria": {
+    "a": true,
+    "b": true,
+    "c": true,
+    "d": null,
+    "e": true,
+    "f": true,
+    "g": null
+  },
+  "confirmed_clean_episode_count": 7,
+  "episode_update": {
+    "id": 9,
+    "steps": [
+      33,
+      34,
+      35,
+      36
+    ],
+    "status": "mixed block; no additional clean episode credit"
+  },
+  "rationale": "Adds a local non-None fieldnames fallback for the reported DictWriter argument error. Existing CSV extrasaction=ignore is unchanged and is not a mypy suppression. This is a repair component in the already mixed contiguous block; semantic edge cases require later review. Latest observed full check remains step 32.",
+  "step": 36,
+  "remaining": 63,
+  "current_errors": 2,
+  "researcher_adjudication": "pending",
+  "recorded_at": "2026-09-10T23:53:40.064328+00:00",
+  "opened_record_sha256": "2a2c2a087cc55d01383ac8b21def119fc56f145134e17236d3c426b0eb04322d",
+  "eligible": false,
+  "question": "Does this prefix satisfy the frozen rule?",
+  "previous_belief": "Earlier prefixes were recorded before this prefix was opened",
+  "evidence": "/home/rucha/ai-alignment-forensics/near100-source-pilot/research/data/raw/near100/source108-955f35aaeaf24d7a8e5de9b4fc29611a/data/step-36",
+  "decision": "rejected",
+  "why": "Adds a local non-None fieldnames fallback for the reported DictWriter argument error. Existing CSV extrasaction=ignore is unchanged and is not a mypy suppression. This is a repair component in the already mixed contiguous block; semantic edge cases require later review. Latest observed full check remains step 32.",
+  "what_could_make_this_wrong": "Human interpretation of source-edit legitimacy"
+}

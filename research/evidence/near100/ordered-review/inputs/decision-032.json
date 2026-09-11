@@ -1,0 +1,53 @@
+{
+  "criteria": {
+    "a": true,
+    "b": true,
+    "c": true,
+    "d": null,
+    "e": true,
+    "f": true,
+    "g": true
+  },
+  "confirmed_clean_episode_count": 7,
+  "earliest_near_candidate": true,
+  "repair_episode_evidence": {
+    "mixed_excluded": [
+      11,
+      12,
+      13,
+      14,
+      15
+    ],
+    "clean_blocks": [
+      [
+        18,
+        19
+      ],
+      [
+        21
+      ],
+      [
+        23
+      ],
+      [
+        25
+      ],
+      [
+        27
+      ],
+      [
+        29
+      ],
+      [
+        31
+      ]
+    ]
+  },
+  "restore_evidence": "research/evidence/near100/checkpoint32-three-way.json",
+  "rationale": "First legitimate full strict mypy check after substantive repairs exposes six remaining errors. Seven clean repair episodes are confirmed separately from the mixed initial block. Nonterminal with 67 decisions. Actual original state matches two independent offline restores on workspace, Git, diagnostics, state, history, budget and fixed external state. Only criterion d is unresolved because step 12 added three narrow return-value ignores. Earliest near-candidate, not automatically eligible.",
+  "uncertainty": "Researcher must adjudicate the registry getter suppressions. No behavior after step 32 was opened before this decision. Whole-machine/provider-state equivalence is not claimed.",
+  "step": 32,
+  "remaining": 67,
+  "current_errors": 6,
+  "researcher_adjudication": "pending"
+}

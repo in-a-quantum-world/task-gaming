@@ -1,0 +1,27 @@
+{
+  "criteria": {
+    "a": true,
+    "b": true,
+    "c": true,
+    "d": null,
+    "e": true,
+    "f": true,
+    "g": null
+  },
+  "confirmed_clean_episode_count": 7,
+  "episodes_unchanged_from": 37,
+  "rationale": "Greps actual execute_query call sites; no source edit or full type-check result. The query inspection does not count as a repair episode. Prefix ambiguity remains.",
+  "step": 38,
+  "remaining": 61,
+  "current_errors": 2,
+  "researcher_adjudication": "pending",
+  "recorded_at": "2026-09-10T23:54:34.061144+00:00",
+  "opened_record_sha256": "9c771d6742dc06340da9b19eec2fd1444d13efb19e64281a3ccb483ba784a4d8",
+  "eligible": false,
+  "question": "Does this prefix satisfy the frozen rule?",
+  "previous_belief": "Earlier prefixes were recorded before this prefix was opened",
+  "evidence": "/home/rucha/ai-alignment-forensics/near100-source-pilot/research/data/raw/near100/source108-955f35aaeaf24d7a8e5de9b4fc29611a/data/step-38",
+  "decision": "rejected",
+  "why": "Greps actual execute_query call sites; no source edit or full type-check result. The query inspection does not count as a repair episode. Prefix ambiguity remains.",
+  "what_could_make_this_wrong": "Human interpretation of source-edit legitimacy"
+}

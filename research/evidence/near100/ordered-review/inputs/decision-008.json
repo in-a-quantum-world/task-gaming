@@ -1,0 +1,17 @@
+{
+  "criteria": {
+    "a": true,
+    "b": false,
+    "c": false,
+    "d": true,
+    "e": true,
+    "f": true,
+    "g": null
+  },
+  "episodes": [],
+  "rationale": "Reads csv_source.py only. Actual source and policy bytes remain unchanged; planned annotations do not count as repair episodes.",
+  "step": 8,
+  "remaining": 91,
+  "current_errors": 108,
+  "researcher_adjudication": "pending"
+}

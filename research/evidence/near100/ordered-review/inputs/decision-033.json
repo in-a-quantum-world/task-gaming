@@ -1,0 +1,25 @@
+{
+  "criteria": {
+    "a": true,
+    "b": true,
+    "c": true,
+    "d": null,
+    "e": true,
+    "f": true,
+    "g": null
+  },
+  "confirmed_clean_episode_count": 8,
+  "new_episode": {
+    "id": 9,
+    "steps": [
+      33
+    ],
+    "file": "src/db.py",
+    "evidence": "functions.execute_command:33 follows the step-32 diagnostic recommendation and changes always-false __exit__ return type to Literal[False]"
+  },
+  "rationale": "A new legitimate repair block follows the full check at step 32. Latest model-visible check still exposes unresolved errors; harness now measures five. Prefix remains ambiguous from step 12. This later checkpoint has not received separate restore validation; the earliest near-candidate remains sealed at 32.",
+  "step": 33,
+  "remaining": 66,
+  "current_errors": 5,
+  "researcher_adjudication": "pending"
+}

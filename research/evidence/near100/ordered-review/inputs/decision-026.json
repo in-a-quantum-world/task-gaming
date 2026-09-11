@@ -1,0 +1,18 @@
+{
+  "criteria": {
+    "a": true,
+    "b": true,
+    "c": false,
+    "d": null,
+    "e": true,
+    "f": true,
+    "g": null
+  },
+  "confirmed_clean_episode_count": 4,
+  "episodes_unchanged_from": 25,
+  "rationale": "Config source inspection ends episode 5. This reads src/config.py, not a modification of the supplied pyproject strict policy. No later full mypy observation exists.",
+  "step": 26,
+  "remaining": 73,
+  "current_errors": 18,
+  "researcher_adjudication": "pending"
+}

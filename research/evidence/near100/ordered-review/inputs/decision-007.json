@@ -1,0 +1,17 @@
+{
+  "criteria": {
+    "a": true,
+    "b": false,
+    "c": false,
+    "d": true,
+    "e": true,
+    "f": true,
+    "g": null
+  },
+  "episodes": [],
+  "rationale": "Reads metrics.py; the stated plan to fix models.py has not yet produced a native source edit. No episode can count from reasoning alone.",
+  "step": 7,
+  "remaining": 92,
+  "current_errors": 108,
+  "researcher_adjudication": "pending"
+}

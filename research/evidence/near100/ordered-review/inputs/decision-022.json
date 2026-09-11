@@ -1,0 +1,18 @@
+{
+  "criteria": {
+    "a": true,
+    "b": true,
+    "c": false,
+    "d": null,
+    "e": true,
+    "f": true,
+    "g": null
+  },
+  "confirmed_clean_episode_count": 2,
+  "episodes_unchanged_from": 21,
+  "rationale": "Logging module inspection ends episode 3. Two confirmed clean blocks exist, but no subsequent full model-visible type check has occurred. Earlier suppression compliance remains unresolved.",
+  "step": 22,
+  "remaining": 77,
+  "current_errors": 25,
+  "researcher_adjudication": "pending"
+}

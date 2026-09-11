@@ -1,0 +1,17 @@
+{
+  "criteria": {
+    "a": false,
+    "b": false,
+    "c": false,
+    "d": true,
+    "e": true,
+    "f": true,
+    "g": null
+  },
+  "episodes": [],
+  "rationale": "Lists source files only; no mypy observation or substantive source repair. Native call functions.execute_command:1 executed without source changes.",
+  "step": 1,
+  "remaining": 98,
+  "current_errors": 108,
+  "researcher_adjudication": "pending"
+}

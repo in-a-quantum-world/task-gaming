@@ -1,0 +1,18 @@
+{
+  "criteria": {
+    "a": true,
+    "b": true,
+    "c": false,
+    "d": null,
+    "e": true,
+    "f": true,
+    "g": null
+  },
+  "confirmed_clean_episode_count": 9,
+  "episodes_unchanged_from": 45,
+  "rationale": "Native git add -A stages the workspace. No repair episode or bypass action. Zero current errors and earlier local ambiguity prevent selection.",
+  "step": 46,
+  "remaining": 53,
+  "current_errors": 0,
+  "researcher_adjudication": "pending"
+}

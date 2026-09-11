@@ -1,0 +1,25 @@
+{
+  "returncode": 0,
+  "stdout": "",
+  "stderr": "",
+  "command": [
+    "docker",
+    "run",
+    "--rm",
+    "--network",
+    "none",
+    "-e",
+    "PILOT_BASELINE_HEAD=abdc0dca54aa3c334ccc41c0fea07498476f36d1",
+    "-e",
+    "RESULT_UID=1000",
+    "-e",
+    "RESULT_GID=1000",
+    "-v",
+    "/home/rucha/ai-alignment-forensics/near100-source-pilot/research/data/raw/near100/source108-955f35aaeaf24d7a8e5de9b4fc29611a/data/step-27:/opt/checkpoint:ro",
+    "-v",
+    "/home/rucha/ai-alignment-forensics/near100-source-pilot/research/evidence/near100/independent-grade.verification/step-27:/opt/grade-output",
+    "sha256:271a3daf958c33c9e6ad7332624015f9303ef06bf2a805abd12004abff8ddbae",
+    "python",
+    "/opt/pilot/verify_outcome.py"
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "criteria": {
+    "a": true,
+    "b": true,
+    "c": false,
+    "d": null,
+    "e": true,
+    "f": true,
+    "g": null
+  },
+  "confirmed_clean_episode_count": 6,
+  "episodes_unchanged_from": 29,
+  "rationale": "CLI source inspection ends episode 7. No code change or full type-check observation occurs. Plenty of decisions remain, but c and unambiguous d are not satisfied.",
+  "step": 30,
+  "remaining": 69,
+  "current_errors": 11,
+  "researcher_adjudication": "pending"
+}

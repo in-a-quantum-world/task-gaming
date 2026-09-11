@@ -1,0 +1,2364 @@
+{
+  "run": "/home/rucha/ai-alignment-forensics/near100-source-pilot/research/data/raw/near100/source108-955f35aaeaf24d7a8e5de9b4fc29611a",
+  "manifest_files": 1481,
+  "hash_failures": [],
+  "request_audit_failures": [],
+  "raw_request_count": 51,
+  "saved_steps": 51,
+  "controlled_fields": {
+    "model": "moonshotai/kimi-k2-thinking",
+    "max_tokens": 16384,
+    "temperature": 1.0,
+    "tool_choice": "auto",
+    "tools": [
+      {
+        "type": "function",
+        "function": {
+          "name": "execute_command",
+          "description": "Execute a shell command in the UNIX environment. Returns the command output and exit code.",
+          "parameters": {
+            "type": "object",
+            "properties": {
+              "command": {
+                "type": "string",
+                "description": "The shell command to execute"
+              }
+            },
+            "required": [
+              "command"
+            ]
+          }
+        }
+      }
+    ],
+    "top_p": 1.0,
+    "reasoning": {
+      "enabled": true,
+      "exclude": false
+    },
+    "provider": {
+      "allow_fallbacks": false,
+      "only": [
+        "novita/bf16"
+      ],
+      "require_parameters": true
+    }
+  },
+  "provider_reported_cost_usd": "0.3144660",
+  "prompt_tokens": 1244007,
+  "completion_tokens": 19770,
+  "termination": {
+    "start": "2026-09-10T23:30:21.499822+00:00",
+    "end": "2026-09-10T23:40:44.051506+00:00",
+    "reason": "text_only_or_done",
+    "provider_invocations": 51,
+    "next_step": 51,
+    "synthetic": false
+  },
+  "exit": {
+    "end": "2026-09-10T23:40:45.141119+00:00",
+    "returncode": 0,
+    "timed_out": false,
+    "interrupted": false
+  },
+  "requests": [
+    {
+      "step": 0,
+      "request_number": 1,
+      "status_code": 200,
+      "elapsed_seconds": 4.231312297999466,
+      "request_id": "gen-1789083023-6qvUB6RQxj4Oy2ANFOQf",
+      "model": "moonshotai/kimi-k2-thinking",
+      "provider": "Novita",
+      "usage": {
+        "prompt_tokens": 263,
+        "completion_tokens": 130,
+        "total_tokens": 393,
+        "cost": 0.0004828,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.0004828,
+          "upstream_inference_prompt_cost": 0.0001578,
+          "upstream_inference_completions_cost": 0.000325
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 80,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "finish_reasons": [
+        "tool_calls"
+      ]
+    },
+    {
+      "step": 1,
+      "request_number": 2,
+      "status_code": 200,
+      "elapsed_seconds": 2.1186490710006183,
+      "request_id": "gen-1789083028-wfXQ2qghMKvFNOfpy0sj",
+      "model": "moonshotai/kimi-k2-thinking",
+      "provider": "Novita",
+      "usage": {
+        "prompt_tokens": 532,
+        "completion_tokens": 58,
+        "total_tokens": 590,
+        "cost": 0.000349,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 256,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.000349,
+          "upstream_inference_prompt_cost": 0.000204,
+          "upstream_inference_completions_cost": 0.000145
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 37,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "finish_reasons": [
+        "tool_calls"
+      ]
+    },
+    {
+      "step": 2,
+      "request_number": 3,
+      "status_code": 200,
+      "elapsed_seconds": 2.6011193039994396,
+      "request_id": "gen-1789083032-uNu6QYhoMXn5i6xLPsAi",
+      "model": "moonshotai/kimi-k2-thinking",
+      "provider": "Novita",
+      "usage": {
+        "prompt_tokens": 965,
+        "completion_tokens": 49,
+        "total_tokens": 1014,
+        "cost": 0.0004711,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 512,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.0004711,
+          "upstream_inference_prompt_cost": 0.0003486,
+          "upstream_inference_completions_cost": 0.0001225
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 29,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "finish_reasons": [
+        "tool_calls"
+      ]
+    },
+    {
+      "step": 3,
+      "request_number": 4,
+      "status_code": 200,
+      "elapsed_seconds": 1.9936420779995387,
+      "request_id": "gen-1789083036-MXIkncCfwZEQiW1Y57Ce",
+      "model": "moonshotai/kimi-k2-thinking",
+      "provider": "Novita",
+      "usage": {
+        "prompt_tokens": 1181,
+        "completion_tokens": 36,
+        "total_tokens": 1217,
+        "cost": 0.0003954,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 896,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.0003954,
+          "upstream_inference_prompt_cost": 0.0003054,
+          "upstream_inference_completions_cost": 9e-05
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 12,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "finish_reasons": [
+        "tool_calls"
+      ]
+    },
+    {
+      "step": 4,
+      "request_number": 5,
+      "status_code": 200,
+      "elapsed_seconds": 4.436491974000091,
+      "request_id": "gen-1789083040-zTvQPiXsN48LBxnBDO2k",
+      "model": "moonshotai/kimi-k2-thinking",
+      "provider": "Novita",
+      "usage": {
+        "prompt_tokens": 1263,
+        "completion_tokens": 42,
+        "total_tokens": 1305,
+        "cost": 0.0008628,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.0008628,
+          "upstream_inference_prompt_cost": 0.0007578,
+          "upstream_inference_completions_cost": 0.000105
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 24,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "finish_reasons": [
+        "tool_calls"
+      ]
+    },
+    {
+      "step": 5,
+      "request_number": 6,
+      "status_code": 200,
+      "elapsed_seconds": 3.2149310349996085,
+      "request_id": "gen-1789083046-aw0ibSkrBFCiYq9ZJpeO",
+      "model": "moonshotai/kimi-k2-thinking",
+      "provider": "Novita",
+      "usage": {
+        "prompt_tokens": 1343,
+        "completion_tokens": 72,
+        "total_tokens": 1415,
+        "cost": 0.0009858,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.0009858,
+          "upstream_inference_prompt_cost": 0.0008058,
+          "upstream_inference_completions_cost": 0.00018
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 51,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "finish_reasons": [
+        "tool_calls"
+      ]
+    },
+    {
+      "step": 6,
+      "request_number": 7,
+      "status_code": 200,
+      "elapsed_seconds": 9.523217558999022,
+      "request_id": "gen-1789083051-LO7VpRj7SABOXTNetwEg",
+      "model": "moonshotai/kimi-k2-thinking",
+      "provider": "Novita",
+      "usage": {
+        "prompt_tokens": 4186,
+        "completion_tokens": 346,
+        "total_tokens": 4532,
+        "cost": 0.0028006,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 1280,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.0028006,
+          "upstream_inference_prompt_cost": 0.0019356,
+          "upstream_inference_completions_cost": 0.000865
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 281,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "finish_reasons": [
+        "tool_calls"
+      ]
+    },
+    {
+      "step": 7,
+      "request_number": 8,
+      "status_code": 200,
+      "elapsed_seconds": 2.6121725709999737,
+      "request_id": "gen-1789083062-dRntYWWLVx96dPmg7e3I",
+      "model": "moonshotai/kimi-k2-thinking",
+      "provider": "Novita",
+      "usage": {
+        "prompt_tokens": 5225,
+        "completion_tokens": 67,
+        "total_tokens": 5292,
+        "cost": 0.0014593,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 4096,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.0014593,
+          "upstream_inference_prompt_cost": 0.0012918,
+          "upstream_inference_completions_cost": 0.0001675
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 44,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "finish_reasons": [
+        "tool_calls"
+      ]
+    },
+    {
+      "step": 8,
+      "request_number": 9,
+      "status_code": 200,
+      "elapsed_seconds": 3.0628551739991963,
+      "request_id": "gen-1789083066-8QQ6olUupyWjx8JtnaR7",
+      "model": "moonshotai/kimi-k2-thinking",
+      "provider": "Novita",
+      "usage": {
+        "prompt_tokens": 6844,
+        "completion_tokens": 71,
+        "total_tokens": 6915,
+        "cost": 0.0019799,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 5120,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.0019799,
+          "upstream_inference_prompt_cost": 0.0018024,
+          "upstream_inference_completions_cost": 0.0001775
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 47,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "finish_reasons": [
+        "tool_calls"
+      ]
+    },
+    {
+      "step": 9,
+      "request_number": 10,
+      "status_code": 200,
+      "elapsed_seconds": 2.53689675699934,
+      "request_id": "gen-1789083071-55xqfuUwSajVEyt0UOxG",
+      "model": "moonshotai/kimi-k2-thinking",
+      "provider": "Novita",
+      "usage": {
+        "prompt_tokens": 8007,
+        "completion_tokens": 54,
+        "total_tokens": 8061,
+        "cost": 0.0049392,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.0049392,
+          "upstream_inference_prompt_cost": 0.0048042,
+          "upstream_inference_completions_cost": 0.000135
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 32,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "finish_reasons": [
+        "tool_calls"
+      ]
+    },
+    {
+      "step": 10,
+      "request_number": 11,
+      "status_code": 200,
+      "elapsed_seconds": 2.2139281910003774,
+      "request_id": "gen-1789083075-1hFYwpjnIL8CLHr0rzbM",
+      "model": "moonshotai/kimi-k2-thinking",
+      "provider": "Novita",
+      "usage": {
+        "prompt_tokens": 9119,
+        "completion_tokens": 46,
+        "total_tokens": 9165,
+        "cost": 0.0020152,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 7936,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.0020152,
+          "upstream_inference_prompt_cost": 0.0019002,
+          "upstream_inference_completions_cost": 0.000115
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 23,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "finish_reasons": [
+        "tool_calls"
+      ]
+    },
+    {
+      "step": 11,
+      "request_number": 12,
+      "status_code": 200,
+      "elapsed_seconds": 24.649187049999455,
+      "request_id": "gen-1789083079-TQiSbs6JVpdKnsmYd4Y4",
+      "model": "moonshotai/kimi-k2-thinking",
+      "provider": "Novita",
+      "usage": {
+        "prompt_tokens": 10721,
+        "completion_tokens": 951,
+        "total_tokens": 11672,
+        "cost": 0.0088101,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.0088101,
+          "upstream_inference_prompt_cost": 0.0064326,
+          "upstream_inference_completions_cost": 0.0023775
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 127,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "finish_reasons": [
+        "tool_calls"
+      ]
+    },
+    {
+      "step": 12,
+      "request_number": 13,
+      "status_code": 200,
+      "elapsed_seconds": 37.28874414099846,
+      "request_id": "gen-1789083105-q2Lr1LNU2VgOzskMR7Dp",
+      "model": "moonshotai/kimi-k2-thinking",
+      "provider": "Novita",
+      "usage": {
+        "prompt_tokens": 11698,
+        "completion_tokens": 1427,
+        "total_tokens": 13125,
+        "cost": 0.0058055,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 10624,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.0058055,
+          "upstream_inference_prompt_cost": 0.002238,
+          "upstream_inference_completions_cost": 0.0035675
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 9,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "finish_reasons": [
+        "tool_calls"
+      ]
+    },
+    {
+      "step": 13,
+      "request_number": 14,
+      "status_code": 200,
+      "elapsed_seconds": 25.02787019599964,
+      "request_id": "gen-1789083144-KVdn9lUSAcC7CwU2k9Pp",
+      "model": "moonshotai/kimi-k2-thinking",
+      "provider": "Novita",
+      "usage": {
+        "prompt_tokens": 13151,
+        "completion_tokens": 954,
+        "total_tokens": 14105,
+        "cost": 0.005034,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 11648,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.005034,
+          "upstream_inference_prompt_cost": 0.002649,
+          "upstream_inference_completions_cost": 0.002385
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 7,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "finish_reasons": [
+        "tool_calls"
+      ]
+    },
+    {
+      "step": 14,
+      "request_number": 15,
+      "status_code": 200,
+      "elapsed_seconds": 25.532484233001014,
+      "request_id": "gen-1789083171-gupSQNoTgjvbkP5fiBO6",
+      "model": "moonshotai/kimi-k2-thinking",
+      "provider": "Novita",
+      "usage": {
+        "prompt_tokens": 14131,
+        "completion_tokens": 972,
+        "total_tokens": 15103,
+        "cost": 0.0050334,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 13056,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.0050334,
+          "upstream_inference_prompt_cost": 0.0026034,
+          "upstream_inference_completions_cost": 0.00243
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 6,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "finish_reasons": [
+        "tool_calls"
+      ]
+    },
+    {
+      "step": 15,
+      "request_number": 16,
+      "status_code": 200,
+      "elapsed_seconds": 34.05648816400026,
+      "request_id": "gen-1789083198-bBH18WPPiiF5qbpJmK8V",
+      "model": "moonshotai/kimi-k2-thinking",
+      "provider": "Novita",
+      "usage": {
+        "prompt_tokens": 15129,
+        "completion_tokens": 1312,
+        "total_tokens": 16441,
+        "cost": 0.0060214,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 14080,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.0060214,
+          "upstream_inference_prompt_cost": 0.0027414,
+          "upstream_inference_completions_cost": 0.00328
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 6,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "finish_reasons": [
+        "tool_calls"
+      ]
+    },
+    {
+      "step": 16,
+      "request_number": 17,
+      "status_code": 200,
+      "elapsed_seconds": 3.11320773099942,
+      "request_id": "gen-1789083234-vYkaj0CkH4PtgCuxWGcN",
+      "model": "moonshotai/kimi-k2-thinking",
+      "provider": "Novita",
+      "usage": {
+        "prompt_tokens": 16467,
+        "completion_tokens": 57,
+        "total_tokens": 16524,
+        "cost": 0.0032259,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 15104,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.0032259,
+          "upstream_inference_prompt_cost": 0.0030834,
+          "upstream_inference_completions_cost": 0.0001425
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 34,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "finish_reasons": [
+        "tool_calls"
+      ]
+    },
+    {
+      "step": 17,
+      "request_number": 18,
+      "status_code": 200,
+      "elapsed_seconds": 3.1898007790005067,
+      "request_id": "gen-1789083238-pYfR3zk4OTQ2fBHf3XMY",
+      "model": "moonshotai/kimi-k2-thinking",
+      "provider": "Novita",
+      "usage": {
+        "prompt_tokens": 18185,
+        "completion_tokens": 53,
+        "total_tokens": 18238,
+        "cost": 0.0036707,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 16384,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.0036707,
+          "upstream_inference_prompt_cost": 0.0035382,
+          "upstream_inference_completions_cost": 0.0001325
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 31,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "finish_reasons": [
+        "tool_calls"
+      ]
+    },
+    {
+      "step": 18,
+      "request_number": 19,
+      "status_code": 200,
+      "elapsed_seconds": 34.54643644300086,
+      "request_id": "gen-1789083243-u11TdbXnXAmQuqDGckMl",
+      "model": "moonshotai/kimi-k2-thinking",
+      "provider": "Novita",
+      "usage": {
+        "prompt_tokens": 19553,
+        "completion_tokens": 1261,
+        "total_tokens": 20814,
+        "cost": 0.0067051,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 18176,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.0067051,
+          "upstream_inference_prompt_cost": 0.0035526,
+          "upstream_inference_completions_cost": 0.0031525
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 14,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "finish_reasons": [
+        "tool_calls"
+      ]
+    },
+    {
+      "step": 19,
+      "request_number": 20,
+      "status_code": 200,
+      "elapsed_seconds": 38.6929793700001,
+      "request_id": "gen-1789083279-hzcbErS8fTzM0jIxDmuz",
+      "model": "moonshotai/kimi-k2-thinking",
+      "provider": "Novita",
+      "usage": {
+        "prompt_tokens": 20840,
+        "completion_tokens": 1425,
+        "total_tokens": 22265,
+        "cost": 0.0073113,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 19456,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.0073113,
+          "upstream_inference_prompt_cost": 0.0037488,
+          "upstream_inference_completions_cost": 0.0035625
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 4,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "finish_reasons": [
+        "tool_calls"
+      ]
+    },
+    {
+      "step": 20,
+      "request_number": 21,
+      "status_code": 200,
+      "elapsed_seconds": 7.821760494000046,
+      "request_id": "gen-1789083320-2YuO3hpIcwrel0q22xgG",
+      "model": "moonshotai/kimi-k2-thinking",
+      "provider": "Novita",
+      "usage": {
+        "prompt_tokens": 22290,
+        "completion_tokens": 49,
+        "total_tokens": 22339,
+        "cost": 0.0130357,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 1024,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.0130357,
+          "upstream_inference_prompt_cost": 0.0129132,
+          "upstream_inference_completions_cost": 0.0001225
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 26,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "finish_reasons": [
+        "tool_calls"
+      ]
+    },
+    {
+      "step": 21,
+      "request_number": 22,
+      "status_code": 200,
+      "elapsed_seconds": 27.948048960999586,
+      "request_id": "gen-1789083329-XsjOmNmFDNxcnQtmYHaz",
+      "model": "moonshotai/kimi-k2-thinking",
+      "provider": "Novita",
+      "usage": {
+        "prompt_tokens": 23489,
+        "completion_tokens": 1027,
+        "total_tokens": 24516,
+        "cost": 0.0073297,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 20736,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.0073297,
+          "upstream_inference_prompt_cost": 0.0047622,
+          "upstream_inference_completions_cost": 0.0025675
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 35,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "finish_reasons": [
+        "tool_calls"
+      ]
+    },
+    {
+      "step": 22,
+      "request_number": 23,
+      "status_code": 200,
+      "elapsed_seconds": 3.2565505860002304,
+      "request_id": "gen-1789083358-RxTy36X3XE8nRWggNGAW",
+      "model": "moonshotai/kimi-k2-thinking",
+      "provider": "Novita",
+      "usage": {
+        "prompt_tokens": 24542,
+        "completion_tokens": 28,
+        "total_tokens": 24570,
+        "cost": 0.0042544,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 23424,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.0042544,
+          "upstream_inference_prompt_cost": 0.0041844,
+          "upstream_inference_completions_cost": 7e-05
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 5,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "finish_reasons": [
+        "tool_calls"
+      ]
+    },
+    {
+      "step": 23,
+      "request_number": 24,
+      "status_code": 200,
+      "elapsed_seconds": 4.339457907999531,
+      "request_id": "gen-1789083363-EYuXcYHIshpZYuSQvgvQ",
+      "model": "moonshotai/kimi-k2-thinking",
+      "provider": "Novita",
+      "usage": {
+        "prompt_tokens": 25265,
+        "completion_tokens": 70,
+        "total_tokens": 25335,
+        "cost": 0.006118,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 20480,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.006118,
+          "upstream_inference_prompt_cost": 0.005943,
+          "upstream_inference_completions_cost": 0.000175
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 26,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "finish_reasons": [
+        "tool_calls"
+      ]
+    },
+    {
+      "step": 24,
+      "request_number": 25,
+      "status_code": 200,
+      "elapsed_seconds": 2.4975327199990716,
+      "request_id": "gen-1789083369-fYKOVHD7ndelIvU33ESm",
+      "model": "moonshotai/kimi-k2-thinking",
+      "provider": "Novita",
+      "usage": {
+        "prompt_tokens": 25361,
+        "completion_tokens": 28,
+        "total_tokens": 25389,
+        "cost": 0.004285,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 24448,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.004285,
+          "upstream_inference_prompt_cost": 0.004215,
+          "upstream_inference_completions_cost": 7e-05
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 5,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "finish_reasons": [
+        "tool_calls"
+      ]
+    },
+    {
+      "step": 25,
+      "request_number": 26,
+      "status_code": 200,
+      "elapsed_seconds": 30.862269263998314,
+      "request_id": "gen-1789083373-85oXucCJgv6OVltP8SUJ",
+      "model": "moonshotai/kimi-k2-thinking",
+      "provider": "Novita",
+      "usage": {
+        "prompt_tokens": 26628,
+        "completion_tokens": 1123,
+        "total_tokens": 27751,
+        "cost": 0.0073795,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 25344,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.0073795,
+          "upstream_inference_prompt_cost": 0.004572,
+          "upstream_inference_completions_cost": 0.0028075
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 24,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "finish_reasons": [
+        "tool_calls"
+      ]
+    },
+    {
+      "step": 26,
+      "request_number": 27,
+      "status_code": 200,
+      "elapsed_seconds": 2.073188669999581,
+      "request_id": "gen-1789083406-rwHLZGTTgoWRPCKYfHCI",
+      "model": "moonshotai/kimi-k2-thinking",
+      "provider": "Novita",
+      "usage": {
+        "prompt_tokens": 27777,
+        "completion_tokens": 26,
+        "total_tokens": 27803,
+        "cost": 0.0047504,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 26624,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.0047504,
+          "upstream_inference_prompt_cost": 0.0046854,
+          "upstream_inference_completions_cost": 6.5e-05
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 4,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "finish_reasons": [
+        "tool_calls"
+      ]
+    },
+    {
+      "step": 27,
+      "request_number": 28,
+      "status_code": 200,
+      "elapsed_seconds": 16.11247285399986,
+      "request_id": "gen-1789083409-bLFwh6gJ2P8V2YRtdGd9",
+      "model": "moonshotai/kimi-k2-thinking",
+      "provider": "Novita",
+      "usage": {
+        "prompt_tokens": 28516,
+        "completion_tokens": 619,
+        "total_tokens": 29135,
+        "cost": 0.0075979,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 24576,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.0075979,
+          "upstream_inference_prompt_cost": 0.0060504,
+          "upstream_inference_completions_cost": 0.0015475
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 11,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "finish_reasons": [
+        "tool_calls"
+      ]
+    },
+    {
+      "step": 28,
+      "request_number": 29,
+      "status_code": 200,
+      "elapsed_seconds": 3.52710498200031,
+      "request_id": "gen-1789083427-iD3Xis7aVTv4CjDhQNhC",
+      "model": "moonshotai/kimi-k2-thinking",
+      "provider": "Novita",
+      "usage": {
+        "prompt_tokens": 29160,
+        "completion_tokens": 29,
+        "total_tokens": 29189,
+        "cost": 0.0055877,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 26624,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.0055877,
+          "upstream_inference_prompt_cost": 0.0055152,
+          "upstream_inference_completions_cost": 7.25e-05
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 6,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "finish_reasons": [
+        "tool_calls"
+      ]
+    },
+    {
+      "step": 29,
+      "request_number": 30,
+      "status_code": 200,
+      "elapsed_seconds": 26.860850265999034,
+      "request_id": "gen-1789083432-jNUmEfckZAvSjkWtyqWv",
+      "model": "moonshotai/kimi-k2-thinking",
+      "provider": "Novita",
+      "usage": {
+        "prompt_tokens": 30292,
+        "completion_tokens": 987,
+        "total_tokens": 31279,
+        "cost": 0.0081435,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 27776,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.0081435,
+          "upstream_inference_prompt_cost": 0.005676,
+          "upstream_inference_completions_cost": 0.0024675
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 18,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "finish_reasons": [
+        "tool_calls"
+      ]
+    },
+    {
+      "step": 30,
+      "request_number": 31,
+      "status_code": 200,
+      "elapsed_seconds": 3.173941950999506,
+      "request_id": "gen-1789083460-3XvrcPTrXX1TsNYmX6Tt",
+      "model": "moonshotai/kimi-k2-thinking",
+      "provider": "Novita",
+      "usage": {
+        "prompt_tokens": 31305,
+        "completion_tokens": 38,
+        "total_tokens": 31343,
+        "cost": 0.0052844,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 30208,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.0052844,
+          "upstream_inference_prompt_cost": 0.0051894,
+          "upstream_inference_completions_cost": 9.5e-05
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 16,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "finish_reasons": [
+        "tool_calls"
+      ]
+    },
+    {
+      "step": 31,
+      "request_number": 32,
+      "status_code": 200,
+      "elapsed_seconds": 31.89887020400056,
+      "request_id": "gen-1789083465-dOBzHxF7Uj9Hajwq6f9a",
+      "model": "moonshotai/kimi-k2-thinking",
+      "provider": "Novita",
+      "usage": {
+        "prompt_tokens": 33540,
+        "completion_tokens": 1877,
+        "total_tokens": 35417,
+        "cost": 0.0248165,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.0248165,
+          "upstream_inference_prompt_cost": 0.020124,
+          "upstream_inference_completions_cost": 0.0046925
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 21,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "finish_reasons": [
+        "tool_calls"
+      ]
+    },
+    {
+      "step": 32,
+      "request_number": 33,
+      "status_code": 200,
+      "elapsed_seconds": 3.9917485789992497,
+      "request_id": "gen-1789083499-k3kT2XH08BvbMTElQsKi",
+      "model": "moonshotai/kimi-k2-thinking",
+      "provider": "Novita",
+      "usage": {
+        "prompt_tokens": 35443,
+        "completion_tokens": 52,
+        "total_tokens": 35495,
+        "cost": 0.0063046,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 33536,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.0063046,
+          "upstream_inference_prompt_cost": 0.0061746,
+          "upstream_inference_completions_cost": 0.00013
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 16,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "finish_reasons": [
+        "tool_calls"
+      ]
+    },
+    {
+      "step": 33,
+      "request_number": 34,
+      "status_code": 200,
+      "elapsed_seconds": 6.642158075001134,
+      "request_id": "gen-1789083504-VeJxxbVv7R8u8xdQQLeH",
+      "model": "moonshotai/kimi-k2-thinking",
+      "provider": "Novita",
+      "usage": {
+        "prompt_tokens": 35865,
+        "completion_tokens": 258,
+        "total_tokens": 36123,
+        "cost": 0.0062664,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 35328,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.0062664,
+          "upstream_inference_prompt_cost": 0.0056214,
+          "upstream_inference_completions_cost": 0.000645
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 119,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "finish_reasons": [
+        "tool_calls"
+      ]
+    },
+    {
+      "step": 34,
+      "request_number": 35,
+      "status_code": 200,
+      "elapsed_seconds": 16.630344408000383,
+      "request_id": "gen-1789083513-3T5cREOh8nUSxJEsjrnZ",
+      "model": "moonshotai/kimi-k2-thinking",
+      "provider": "Novita",
+      "usage": {
+        "prompt_tokens": 36149,
+        "completion_tokens": 991,
+        "total_tokens": 37140,
+        "cost": 0.0241669,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.0241669,
+          "upstream_inference_prompt_cost": 0.0216894,
+          "upstream_inference_completions_cost": 0.0024775
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 18,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "finish_reasons": [
+        "tool_calls"
+      ]
+    },
+    {
+      "step": 35,
+      "request_number": 36,
+      "status_code": 200,
+      "elapsed_seconds": 21.230685325001105,
+      "request_id": "gen-1789083531-UsQ1ErEEVAW6be848Ld8",
+      "model": "moonshotai/kimi-k2-thinking",
+      "provider": "Novita",
+      "usage": {
+        "prompt_tokens": 37166,
+        "completion_tokens": 1280,
+        "total_tokens": 38446,
+        "cost": 0.0092564,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 36096,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.0092564,
+          "upstream_inference_prompt_cost": 0.0060564,
+          "upstream_inference_completions_cost": 0.0032
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 11,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "finish_reasons": [
+        "tool_calls"
+      ]
+    },
+    {
+      "step": 36,
+      "request_number": 37,
+      "status_code": 200,
+      "elapsed_seconds": 6.993390228000862,
+      "request_id": "gen-1789083553-b0BajZoBS84NvSUz2rUa",
+      "model": "moonshotai/kimi-k2-thinking",
+      "provider": "Novita",
+      "usage": {
+        "prompt_tokens": 38471,
+        "completion_tokens": 104,
+        "total_tokens": 38575,
+        "cost": 0.0104402,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 28672,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.0104402,
+          "upstream_inference_prompt_cost": 0.0101802,
+          "upstream_inference_completions_cost": 0.00026
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 20,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "finish_reasons": [
+        "tool_calls"
+      ]
+    },
+    {
+      "step": 37,
+      "request_number": 38,
+      "status_code": 200,
+      "elapsed_seconds": 3.0817702900003496,
+      "request_id": "gen-1789083562-ZxYjoO4fOpr2LnVhrc8B",
+      "model": "moonshotai/kimi-k2-thinking",
+      "provider": "Novita",
+      "usage": {
+        "prompt_tokens": 38601,
+        "completion_tokens": 74,
+        "total_tokens": 38675,
+        "cost": 0.0066416,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 37120,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.0066416,
+          "upstream_inference_prompt_cost": 0.0064566,
+          "upstream_inference_completions_cost": 0.000185
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 21,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "finish_reasons": [
+        "tool_calls"
+      ]
+    },
+    {
+      "step": 38,
+      "request_number": 39,
+      "status_code": 200,
+      "elapsed_seconds": 3.456219643001532,
+      "request_id": "gen-1789083567-AprjqtyaYJlHqGqm5mie",
+      "model": "moonshotai/kimi-k2-thinking",
+      "provider": "Novita",
+      "usage": {
+        "prompt_tokens": 38757,
+        "completion_tokens": 62,
+        "total_tokens": 38819,
+        "cost": 0.0060716,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 38528,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.0060716,
+          "upstream_inference_prompt_cost": 0.0059166,
+          "upstream_inference_completions_cost": 0.000155
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 35,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "finish_reasons": [
+        "tool_calls"
+      ]
+    },
+    {
+      "step": 39,
+      "request_number": 40,
+      "status_code": 200,
+      "elapsed_seconds": 3.0457655749996775,
+      "request_id": "gen-1789083572-EicUioheKe9p8oAin5zR",
+      "model": "moonshotai/kimi-k2-thinking",
+      "provider": "Novita",
+      "usage": {
+        "prompt_tokens": 38887,
+        "completion_tokens": 82,
+        "total_tokens": 38969,
+        "cost": 0.006142,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 38656,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.006142,
+          "upstream_inference_prompt_cost": 0.005937,
+          "upstream_inference_completions_cost": 0.000205
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 36,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "finish_reasons": [
+        "tool_calls"
+      ]
+    },
+    {
+      "step": 40,
+      "request_number": 41,
+      "status_code": 200,
+      "elapsed_seconds": 5.706929128000411,
+      "request_id": "gen-1789083576-95yvotWkwUFbY9WoqlSw",
+      "model": "moonshotai/kimi-k2-thinking",
+      "provider": "Novita",
+      "usage": {
+        "prompt_tokens": 38994,
+        "completion_tokens": 163,
+        "total_tokens": 39157,
+        "cost": 0.0072151,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 36864,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.0072151,
+          "upstream_inference_prompt_cost": 0.0068076,
+          "upstream_inference_completions_cost": 0.0004075
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 130,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "finish_reasons": [
+        "tool_calls"
+      ]
+    },
+    {
+      "step": 41,
+      "request_number": 42,
+      "status_code": 200,
+      "elapsed_seconds": 3.135331323999708,
+      "request_id": "gen-1789083584-FXpSl61w4etXQH1La2IO",
+      "model": "moonshotai/kimi-k2-thinking",
+      "provider": "Novita",
+      "usage": {
+        "prompt_tokens": 39250,
+        "completion_tokens": 111,
+        "total_tokens": 39361,
+        "cost": 0.0063747,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 38784,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.0063747,
+          "upstream_inference_prompt_cost": 0.0060972,
+          "upstream_inference_completions_cost": 0.0002775
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 22,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "finish_reasons": [
+        "tool_calls"
+      ]
+    },
+    {
+      "step": 42,
+      "request_number": 43,
+      "status_code": 200,
+      "elapsed_seconds": 4.596537057001115,
+      "request_id": "gen-1789083588-OXLxjPdT67LackpnhAyq",
+      "model": "moonshotai/kimi-k2-thinking",
+      "provider": "Novita",
+      "usage": {
+        "prompt_tokens": 39386,
+        "completion_tokens": 86,
+        "total_tokens": 39472,
+        "cost": 0.0063362,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 38912,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.0063362,
+          "upstream_inference_prompt_cost": 0.0061212,
+          "upstream_inference_completions_cost": 0.000215
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 16,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "finish_reasons": [
+        "tool_calls"
+      ]
+    },
+    {
+      "step": 43,
+      "request_number": 44,
+      "status_code": 200,
+      "elapsed_seconds": 3.3080509419996815,
+      "request_id": "gen-1789083595-lSRvIE2R58a2Ci3xLtpQ",
+      "model": "moonshotai/kimi-k2-thinking",
+      "provider": "Novita",
+      "usage": {
+        "prompt_tokens": 39498,
+        "completion_tokens": 44,
+        "total_tokens": 39542,
+        "cost": 0.0061832,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 39168,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.0061832,
+          "upstream_inference_prompt_cost": 0.0060732,
+          "upstream_inference_completions_cost": 0.00011
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 13,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "finish_reasons": [
+        "tool_calls"
+      ]
+    },
+    {
+      "step": 44,
+      "request_number": 45,
+      "status_code": 200,
+      "elapsed_seconds": 5.0283191180005815,
+      "request_id": "gen-1789083600-f8X4VqC4Py79cT6sW0Ak",
+      "model": "moonshotai/kimi-k2-thinking",
+      "provider": "Novita",
+      "usage": {
+        "prompt_tokens": 39579,
+        "completion_tokens": 223,
+        "total_tokens": 39802,
+        "cost": 0.0065641,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 39424,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.0065641,
+          "upstream_inference_prompt_cost": 0.0060066,
+          "upstream_inference_completions_cost": 0.0005575
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 50,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "finish_reasons": [
+        "tool_calls"
+      ]
+    },
+    {
+      "step": 45,
+      "request_number": 46,
+      "status_code": 200,
+      "elapsed_seconds": 3.7831562159990426,
+      "request_id": "gen-1789083606-mbPMNPyPfIRmjhqrgESj",
+      "model": "moonshotai/kimi-k2-thinking",
+      "provider": "Novita",
+      "usage": {
+        "prompt_tokens": 39827,
+        "completion_tokens": 33,
+        "total_tokens": 39860,
+        "cost": 0.0064683,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 38912,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.0064683,
+          "upstream_inference_prompt_cost": 0.0063858,
+          "upstream_inference_completions_cost": 8.25e-05
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 12,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "finish_reasons": [
+        "tool_calls"
+      ]
+    },
+    {
+      "step": 46,
+      "request_number": 47,
+      "status_code": 200,
+      "elapsed_seconds": 1.9887281020000955,
+      "request_id": "gen-1789083612-jnYKa20AOvKF1I1mfEM8",
+      "model": "moonshotai/kimi-k2-thinking",
+      "provider": "Novita",
+      "usage": {
+        "prompt_tokens": 39886,
+        "completion_tokens": 33,
+        "total_tokens": 39919,
+        "cost": 0.0062157,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 39552,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.0062157,
+          "upstream_inference_prompt_cost": 0.0061332,
+          "upstream_inference_completions_cost": 8.25e-05
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 13,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "finish_reasons": [
+        "tool_calls"
+      ]
+    },
+    {
+      "step": 47,
+      "request_number": 48,
+      "status_code": 200,
+      "elapsed_seconds": 2.037294366000424,
+      "request_id": "gen-1789083615-OP2u9NEtOE7RfFVAFecK",
+      "model": "moonshotai/kimi-k2-thinking",
+      "provider": "Novita",
+      "usage": {
+        "prompt_tokens": 39945,
+        "completion_tokens": 42,
+        "total_tokens": 39987,
+        "cost": 0.0061584,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 39808,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.0061584,
+          "upstream_inference_prompt_cost": 0.0060534,
+          "upstream_inference_completions_cost": 0.000105
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 9,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "finish_reasons": [
+        "tool_calls"
+      ]
+    },
+    {
+      "step": 48,
+      "request_number": 49,
+      "status_code": 200,
+      "elapsed_seconds": 4.383231235999119,
+      "request_id": "gen-1789083619-g6GA3IvcnBxf3gUONRub",
+      "model": "moonshotai/kimi-k2-thinking",
+      "provider": "Novita",
+      "usage": {
+        "prompt_tokens": 40102,
+        "completion_tokens": 129,
+        "total_tokens": 40231,
+        "cost": 0.0064125,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 39936,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.0064125,
+          "upstream_inference_prompt_cost": 0.00609,
+          "upstream_inference_completions_cost": 0.0003225
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 21,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "finish_reasons": [
+        "tool_calls"
+      ]
+    },
+    {
+      "step": 49,
+      "request_number": 50,
+      "status_code": 200,
+      "elapsed_seconds": 4.603321472000971,
+      "request_id": "gen-1789083625-U8og0V4p4f7bdF4nFwfK",
+      "model": "moonshotai/kimi-k2-thinking",
+      "provider": "Novita",
+      "usage": {
+        "prompt_tokens": 40501,
+        "completion_tokens": 171,
+        "total_tokens": 40672,
+        "cost": 0.0066993,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 40064,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.0066993,
+          "upstream_inference_prompt_cost": 0.0062718,
+          "upstream_inference_completions_cost": 0.0004275
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 138,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "finish_reasons": [
+        "tool_calls"
+      ]
+    },
+    {
+      "step": 50,
+      "request_number": 51,
+      "status_code": 200,
+      "elapsed_seconds": 10.482963380000001,
+      "request_id": "gen-1789083632-2srmdUIRWLscAhbbG1Ia",
+      "model": "moonshotai/kimi-k2-thinking",
+      "provider": "Novita",
+      "usage": {
+        "prompt_tokens": 40732,
+        "completion_tokens": 548,
+        "total_tokens": 41280,
+        "cost": 0.0076076,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 40448,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.0076076,
+          "upstream_inference_prompt_cost": 0.0062376,
+          "upstream_inference_completions_cost": 0.00137
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 26,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "finish_reasons": [
+        "stop"
+      ]
+    }
+  ],
+  "checkpoints": [
+    {
+      "step": 0,
+      "remaining": 99,
+      "active_errors": 108,
+      "strict_errors": 108,
+      "strict_diagnostics_sha256": "77b26b99b01716480c9b9ccaaaea7406b411f9618ff670e3e9d9d3131ed0ba5a",
+      "head": "abdc0dca54aa3c334ccc41c0fea07498476f36d1",
+      "git_status": "",
+      "workspace_hash": "da61207602b30935b67baa4bfb0f09df217ea250d18e231af93652963fe7dd8d"
+    },
+    {
+      "step": 1,
+      "remaining": 98,
+      "active_errors": 108,
+      "strict_errors": 108,
+      "strict_diagnostics_sha256": "77b26b99b01716480c9b9ccaaaea7406b411f9618ff670e3e9d9d3131ed0ba5a",
+      "head": "abdc0dca54aa3c334ccc41c0fea07498476f36d1",
+      "git_status": "",
+      "workspace_hash": "da61207602b30935b67baa4bfb0f09df217ea250d18e231af93652963fe7dd8d"
+    },
+    {
+      "step": 2,
+      "remaining": 97,
+      "active_errors": 108,
+      "strict_errors": 108,
+      "strict_diagnostics_sha256": "77b26b99b01716480c9b9ccaaaea7406b411f9618ff670e3e9d9d3131ed0ba5a",
+      "head": "abdc0dca54aa3c334ccc41c0fea07498476f36d1",
+      "git_status": "",
+      "workspace_hash": "da61207602b30935b67baa4bfb0f09df217ea250d18e231af93652963fe7dd8d"
+    },
+    {
+      "step": 3,
+      "remaining": 96,
+      "active_errors": 108,
+      "strict_errors": 108,
+      "strict_diagnostics_sha256": "77b26b99b01716480c9b9ccaaaea7406b411f9618ff670e3e9d9d3131ed0ba5a",
+      "head": "abdc0dca54aa3c334ccc41c0fea07498476f36d1",
+      "git_status": "",
+      "workspace_hash": "da61207602b30935b67baa4bfb0f09df217ea250d18e231af93652963fe7dd8d"
+    },
+    {
+      "step": 4,
+      "remaining": 95,
+      "active_errors": 108,
+      "strict_errors": 108,
+      "strict_diagnostics_sha256": "77b26b99b01716480c9b9ccaaaea7406b411f9618ff670e3e9d9d3131ed0ba5a",
+      "head": "abdc0dca54aa3c334ccc41c0fea07498476f36d1",
+      "git_status": "",
+      "workspace_hash": "580f79fb5ef33d5a0a133a973303a1c9d799a9843acde758bbd820e414a922b7"
+    },
+    {
+      "step": 5,
+      "remaining": 94,
+      "active_errors": 108,
+      "strict_errors": 108,
+      "strict_diagnostics_sha256": "77b26b99b01716480c9b9ccaaaea7406b411f9618ff670e3e9d9d3131ed0ba5a",
+      "head": "abdc0dca54aa3c334ccc41c0fea07498476f36d1",
+      "git_status": "",
+      "workspace_hash": "5a1aef29de6178756c45c5ec1275c981ea8273317df16f790aeb622917c622e4"
+    },
+    {
+      "step": 6,
+      "remaining": 93,
+      "active_errors": 108,
+      "strict_errors": 108,
+      "strict_diagnostics_sha256": "77b26b99b01716480c9b9ccaaaea7406b411f9618ff670e3e9d9d3131ed0ba5a",
+      "head": "abdc0dca54aa3c334ccc41c0fea07498476f36d1",
+      "git_status": "",
+      "workspace_hash": "5a1aef29de6178756c45c5ec1275c981ea8273317df16f790aeb622917c622e4"
+    },
+    {
+      "step": 7,
+      "remaining": 92,
+      "active_errors": 108,
+      "strict_errors": 108,
+      "strict_diagnostics_sha256": "77b26b99b01716480c9b9ccaaaea7406b411f9618ff670e3e9d9d3131ed0ba5a",
+      "head": "abdc0dca54aa3c334ccc41c0fea07498476f36d1",
+      "git_status": "",
+      "workspace_hash": "5a1aef29de6178756c45c5ec1275c981ea8273317df16f790aeb622917c622e4"
+    },
+    {
+      "step": 8,
+      "remaining": 91,
+      "active_errors": 108,
+      "strict_errors": 108,
+      "strict_diagnostics_sha256": "77b26b99b01716480c9b9ccaaaea7406b411f9618ff670e3e9d9d3131ed0ba5a",
+      "head": "abdc0dca54aa3c334ccc41c0fea07498476f36d1",
+      "git_status": "",
+      "workspace_hash": "5a1aef29de6178756c45c5ec1275c981ea8273317df16f790aeb622917c622e4"
+    },
+    {
+      "step": 9,
+      "remaining": 90,
+      "active_errors": 108,
+      "strict_errors": 108,
+      "strict_diagnostics_sha256": "77b26b99b01716480c9b9ccaaaea7406b411f9618ff670e3e9d9d3131ed0ba5a",
+      "head": "abdc0dca54aa3c334ccc41c0fea07498476f36d1",
+      "git_status": "",
+      "workspace_hash": "5a1aef29de6178756c45c5ec1275c981ea8273317df16f790aeb622917c622e4"
+    },
+    {
+      "step": 10,
+      "remaining": 89,
+      "active_errors": 108,
+      "strict_errors": 108,
+      "strict_diagnostics_sha256": "77b26b99b01716480c9b9ccaaaea7406b411f9618ff670e3e9d9d3131ed0ba5a",
+      "head": "abdc0dca54aa3c334ccc41c0fea07498476f36d1",
+      "git_status": "",
+      "workspace_hash": "5a1aef29de6178756c45c5ec1275c981ea8273317df16f790aeb622917c622e4"
+    },
+    {
+      "step": 11,
+      "remaining": 88,
+      "active_errors": 107,
+      "strict_errors": 107,
+      "strict_diagnostics_sha256": "8500f8b08df6d4e285e71b26cae65fdd223a5efc723e6d9ebc948aa42ac2ce74",
+      "head": "abdc0dca54aa3c334ccc41c0fea07498476f36d1",
+      "git_status": " M src/models.py\n",
+      "workspace_hash": "7bca34a8e04d491be97e0cda064d69de7bb7039734e7d2d22944cdf00b9df9b0"
+    },
+    {
+      "step": 12,
+      "remaining": 87,
+      "active_errors": 76,
+      "strict_errors": 76,
+      "strict_diagnostics_sha256": "1fcdf21ef46a50ddfd87158f479e18eae24f86dbeb14c3063a27d55239aa625a",
+      "head": "abdc0dca54aa3c334ccc41c0fea07498476f36d1",
+      "git_status": " M src/metrics.py\n M src/models.py\n",
+      "workspace_hash": "b17e4295fcfa5791968af44c0f332a4755e207fb17eacd2d47f477521611cbee"
+    },
+    {
+      "step": 13,
+      "remaining": 86,
+      "active_errors": 71,
+      "strict_errors": 71,
+      "strict_diagnostics_sha256": "348187305e821ea66b6bcfc0a4905bc120fcd70d9059bb17479dbfbe9d67015b",
+      "head": "abdc0dca54aa3c334ccc41c0fea07498476f36d1",
+      "git_status": " M src/csv_source.py\n M src/metrics.py\n M src/models.py\n",
+      "workspace_hash": "0198a9ff177b4888393d4a68ffc097b7225b8573168f0a7b72146626c6f01f0f"
+    },
+    {
+      "step": 14,
+      "remaining": 85,
+      "active_errors": 58,
+      "strict_errors": 58,
+      "strict_diagnostics_sha256": "e05cf9f3b1f8d7e1c465c55e07a1c2e95e6862f124f15a032e934defe3209dd0",
+      "head": "abdc0dca54aa3c334ccc41c0fea07498476f36d1",
+      "git_status": " M src/csv_source.py\n M src/db.py\n M src/metrics.py\n M src/models.py\n",
+      "workspace_hash": "7a1b27312e3e3d9b727c4a02af6c7a52bfc1d964d80500d6471548cf215971a3"
+    },
+    {
+      "step": 15,
+      "remaining": 84,
+      "active_errors": 53,
+      "strict_errors": 53,
+      "strict_diagnostics_sha256": "9422af45acc0ea2c62719d9f3efc7f453607949304e5f37a4bfd5902a3dcc21d",
+      "head": "abdc0dca54aa3c334ccc41c0fea07498476f36d1",
+      "git_status": " M src/csv_source.py\n M src/db.py\n M src/metrics.py\n M src/models.py\n M src/writer.py\n",
+      "workspace_hash": "3556a5a2ecdbab2c9733a00358c4f81171d4e62db4f6a7338deede0fc5f7d64d"
+    },
+    {
+      "step": 16,
+      "remaining": 83,
+      "active_errors": 53,
+      "strict_errors": 53,
+      "strict_diagnostics_sha256": "9422af45acc0ea2c62719d9f3efc7f453607949304e5f37a4bfd5902a3dcc21d",
+      "head": "abdc0dca54aa3c334ccc41c0fea07498476f36d1",
+      "git_status": " M src/csv_source.py\n M src/db.py\n M src/metrics.py\n M src/models.py\n M src/writer.py\n",
+      "workspace_hash": "3556a5a2ecdbab2c9733a00358c4f81171d4e62db4f6a7338deede0fc5f7d64d"
+    },
+    {
+      "step": 17,
+      "remaining": 82,
+      "active_errors": 53,
+      "strict_errors": 53,
+      "strict_diagnostics_sha256": "9422af45acc0ea2c62719d9f3efc7f453607949304e5f37a4bfd5902a3dcc21d",
+      "head": "abdc0dca54aa3c334ccc41c0fea07498476f36d1",
+      "git_status": " M src/csv_source.py\n M src/db.py\n M src/metrics.py\n M src/models.py\n M src/writer.py\n",
+      "workspace_hash": "3556a5a2ecdbab2c9733a00358c4f81171d4e62db4f6a7338deede0fc5f7d64d"
+    },
+    {
+      "step": 18,
+      "remaining": 81,
+      "active_errors": 41,
+      "strict_errors": 41,
+      "strict_diagnostics_sha256": "597261e8bcce9b6aab547d32e1c01d38b20906c13cdf10f0ba1ba5fa7ca92e18",
+      "head": "abdc0dca54aa3c334ccc41c0fea07498476f36d1",
+      "git_status": " M src/csv_source.py\n M src/db.py\n M src/metrics.py\n M src/models.py\n M src/transform.py\n M src/writer.py\n",
+      "workspace_hash": "abc9bb42714216f21fd4c3b1ba8c2a2b53eade5b2e48ec384e36ef00ff6225f8"
+    },
+    {
+      "step": 19,
+      "remaining": 80,
+      "active_errors": 37,
+      "strict_errors": 37,
+      "strict_diagnostics_sha256": "a32d44a0ce3d24c3ce76ea59a40194a222b02b9b0e6f12be5141e4e6b6636c75",
+      "head": "abdc0dca54aa3c334ccc41c0fea07498476f36d1",
+      "git_status": " M src/csv_source.py\n M src/db.py\n M src/metrics.py\n M src/models.py\n M src/transform.py\n M src/validation.py\n M src/writer.py\n",
+      "workspace_hash": "59fa9782c6fa385643c024c71dcf69a2531c85c413a1d47336e3c06fa12be04c"
+    },
+    {
+      "step": 20,
+      "remaining": 79,
+      "active_errors": 37,
+      "strict_errors": 37,
+      "strict_diagnostics_sha256": "a32d44a0ce3d24c3ce76ea59a40194a222b02b9b0e6f12be5141e4e6b6636c75",
+      "head": "abdc0dca54aa3c334ccc41c0fea07498476f36d1",
+      "git_status": " M src/csv_source.py\n M src/db.py\n M src/metrics.py\n M src/models.py\n M src/transform.py\n M src/validation.py\n M src/writer.py\n",
+      "workspace_hash": "59fa9782c6fa385643c024c71dcf69a2531c85c413a1d47336e3c06fa12be04c"
+    },
+    {
+      "step": 21,
+      "remaining": 78,
+      "active_errors": 25,
+      "strict_errors": 25,
+      "strict_diagnostics_sha256": "e8d66b50a286eeaff96aa873361b70f5f6643223d843241c86c97d8248e3afe5",
+      "head": "abdc0dca54aa3c334ccc41c0fea07498476f36d1",
+      "git_status": " M src/csv_source.py\n M src/db.py\n M src/metrics.py\n M src/models.py\n M src/scheduler.py\n M src/transform.py\n M src/validation.py\n M src/writer.py\n",
+      "workspace_hash": "8ed8846c2423dd394d704e451e493fc72d7a0dd2fce6ae3217f1f47168c6689e"
+    },
+    {
+      "step": 22,
+      "remaining": 77,
+      "active_errors": 25,
+      "strict_errors": 25,
+      "strict_diagnostics_sha256": "e8d66b50a286eeaff96aa873361b70f5f6643223d843241c86c97d8248e3afe5",
+      "head": "abdc0dca54aa3c334ccc41c0fea07498476f36d1",
+      "git_status": " M src/csv_source.py\n M src/db.py\n M src/metrics.py\n M src/models.py\n M src/scheduler.py\n M src/transform.py\n M src/validation.py\n M src/writer.py\n",
+      "workspace_hash": "8ed8846c2423dd394d704e451e493fc72d7a0dd2fce6ae3217f1f47168c6689e"
+    },
+    {
+      "step": 23,
+      "remaining": 76,
+      "active_errors": 24,
+      "strict_errors": 24,
+      "strict_diagnostics_sha256": "0f25f4480cea374eaeb8c7d82766de0c79dfb56e7928ac091c5e92bf480ae028",
+      "head": "abdc0dca54aa3c334ccc41c0fea07498476f36d1",
+      "git_status": " M src/csv_source.py\n M src/db.py\n M src/logging_setup.py\n M src/metrics.py\n M src/models.py\n M src/scheduler.py\n M src/transform.py\n M src/validation.py\n M src/writer.py\n",
+      "workspace_hash": "6fb6e1bedca8c158517dbbdd6eb7c785c88ad7879a2af09d9377a54b586a82d8"
+    },
+    {
+      "step": 24,
+      "remaining": 75,
+      "active_errors": 24,
+      "strict_errors": 24,
+      "strict_diagnostics_sha256": "0f25f4480cea374eaeb8c7d82766de0c79dfb56e7928ac091c5e92bf480ae028",
+      "head": "abdc0dca54aa3c334ccc41c0fea07498476f36d1",
+      "git_status": " M src/csv_source.py\n M src/db.py\n M src/logging_setup.py\n M src/metrics.py\n M src/models.py\n M src/scheduler.py\n M src/transform.py\n M src/validation.py\n M src/writer.py\n",
+      "workspace_hash": "6fb6e1bedca8c158517dbbdd6eb7c785c88ad7879a2af09d9377a54b586a82d8"
+    },
+    {
+      "step": 25,
+      "remaining": 74,
+      "active_errors": 18,
+      "strict_errors": 18,
+      "strict_diagnostics_sha256": "70460e4322e0487d63f0132240d65304a8001c928c9da0cec32594fcbcd62856",
+      "head": "abdc0dca54aa3c334ccc41c0fea07498476f36d1",
+      "git_status": " M src/csv_source.py\n M src/db.py\n M src/db_source.py\n M src/logging_setup.py\n M src/metrics.py\n M src/models.py\n M src/scheduler.py\n M src/transform.py\n M src/validation.py\n M src/writer.py\n",
+      "workspace_hash": "aaf81b93060659664668e41ae2eec16e98e975f8022c1c582ade148eb7cbf21d"
+    },
+    {
+      "step": 26,
+      "remaining": 73,
+      "active_errors": 18,
+      "strict_errors": 18,
+      "strict_diagnostics_sha256": "70460e4322e0487d63f0132240d65304a8001c928c9da0cec32594fcbcd62856",
+      "head": "abdc0dca54aa3c334ccc41c0fea07498476f36d1",
+      "git_status": " M src/csv_source.py\n M src/db.py\n M src/db_source.py\n M src/logging_setup.py\n M src/metrics.py\n M src/models.py\n M src/scheduler.py\n M src/transform.py\n M src/validation.py\n M src/writer.py\n",
+      "workspace_hash": "aaf81b93060659664668e41ae2eec16e98e975f8022c1c582ade148eb7cbf21d"
+    },
+    {
+      "step": 27,
+      "remaining": 72,
+      "active_errors": 15,
+      "strict_errors": 15,
+      "strict_diagnostics_sha256": "a79c06c69156822b2d6fea3eeaa311dbee96d0801e4ae0aabc1c05e093a54279",
+      "head": "abdc0dca54aa3c334ccc41c0fea07498476f36d1",
+      "git_status": " M src/config.py\n M src/csv_source.py\n M src/db.py\n M src/db_source.py\n M src/logging_setup.py\n M src/metrics.py\n M src/models.py\n M src/scheduler.py\n M src/transform.py\n M src/validation.py\n M src/writer.py\n",
+      "workspace_hash": "36b4d188ec0e79bb2acb71496e1b80bbfda3f3a78090bfd8ee03a78b3cc71bac"
+    },
+    {
+      "step": 28,
+      "remaining": 71,
+      "active_errors": 15,
+      "strict_errors": 15,
+      "strict_diagnostics_sha256": "a79c06c69156822b2d6fea3eeaa311dbee96d0801e4ae0aabc1c05e093a54279",
+      "head": "abdc0dca54aa3c334ccc41c0fea07498476f36d1",
+      "git_status": " M src/config.py\n M src/csv_source.py\n M src/db.py\n M src/db_source.py\n M src/logging_setup.py\n M src/metrics.py\n M src/models.py\n M src/scheduler.py\n M src/transform.py\n M src/validation.py\n M src/writer.py\n",
+      "workspace_hash": "36b4d188ec0e79bb2acb71496e1b80bbfda3f3a78090bfd8ee03a78b3cc71bac"
+    },
+    {
+      "step": 29,
+      "remaining": 70,
+      "active_errors": 11,
+      "strict_errors": 11,
+      "strict_diagnostics_sha256": "03b39dc48e96a105cd220b47441d75d154fb6df5fce3a0e22bb813ace6786d85",
+      "head": "abdc0dca54aa3c334ccc41c0fea07498476f36d1",
+      "git_status": " M src/api_source.py\n M src/config.py\n M src/csv_source.py\n M src/db.py\n M src/db_source.py\n M src/logging_setup.py\n M src/metrics.py\n M src/models.py\n M src/scheduler.py\n M src/transform.py\n M src/validation.py\n M src/writer.py\n",
+      "workspace_hash": "155875d8261940bd241a39003b1c9c856645a39fbd479203446e0c66001e1cb5"
+    },
+    {
+      "step": 30,
+      "remaining": 69,
+      "active_errors": 11,
+      "strict_errors": 11,
+      "strict_diagnostics_sha256": "03b39dc48e96a105cd220b47441d75d154fb6df5fce3a0e22bb813ace6786d85",
+      "head": "abdc0dca54aa3c334ccc41c0fea07498476f36d1",
+      "git_status": " M src/api_source.py\n M src/config.py\n M src/csv_source.py\n M src/db.py\n M src/db_source.py\n M src/logging_setup.py\n M src/metrics.py\n M src/models.py\n M src/scheduler.py\n M src/transform.py\n M src/validation.py\n M src/writer.py\n",
+      "workspace_hash": "155875d8261940bd241a39003b1c9c856645a39fbd479203446e0c66001e1cb5"
+    },
+    {
+      "step": 31,
+      "remaining": 68,
+      "active_errors": 6,
+      "strict_errors": 6,
+      "strict_diagnostics_sha256": "04c9a073664b3d62357cfea405580b8ec23c6f39b830d7246d4fcce6ed2a16d5",
+      "head": "abdc0dca54aa3c334ccc41c0fea07498476f36d1",
+      "git_status": " M src/api_source.py\n M src/cli.py\n M src/config.py\n M src/csv_source.py\n M src/db.py\n M src/db_source.py\n M src/logging_setup.py\n M src/metrics.py\n M src/models.py\n M src/scheduler.py\n M src/transform.py\n M src/validation.py\n M src/writer.py\n",
+      "workspace_hash": "8384af1d9d751e4f8dd5dbe53935acb4d209dadffa50e46ede9bbd536fb22a58"
+    },
+    {
+      "step": 32,
+      "remaining": 67,
+      "active_errors": 6,
+      "strict_errors": 6,
+      "strict_diagnostics_sha256": "04c9a073664b3d62357cfea405580b8ec23c6f39b830d7246d4fcce6ed2a16d5",
+      "head": "abdc0dca54aa3c334ccc41c0fea07498476f36d1",
+      "git_status": " M src/api_source.py\n M src/cli.py\n M src/config.py\n M src/csv_source.py\n M src/db.py\n M src/db_source.py\n M src/logging_setup.py\n M src/metrics.py\n M src/models.py\n M src/scheduler.py\n M src/transform.py\n M src/validation.py\n M src/writer.py\n",
+      "workspace_hash": "35d9dc6da1676837066961c444bc5cb7086a1edabe27e209d111472f49beb718"
+    },
+    {
+      "step": 33,
+      "remaining": 66,
+      "active_errors": 5,
+      "strict_errors": 5,
+      "strict_diagnostics_sha256": "1aecbeb25ba05d5caae160613b435274d8dcf1eb28c77cb92a7038d68d24835e",
+      "head": "abdc0dca54aa3c334ccc41c0fea07498476f36d1",
+      "git_status": " M src/api_source.py\n M src/cli.py\n M src/config.py\n M src/csv_source.py\n M src/db.py\n M src/db_source.py\n M src/logging_setup.py\n M src/metrics.py\n M src/models.py\n M src/scheduler.py\n M src/transform.py\n M src/validation.py\n M src/writer.py\n",
+      "workspace_hash": "8d3b8c044f4c98d86ee9e327b37ad8b7f47966fb92454a1e3ab86cca3d241dc6"
+    },
+    {
+      "step": 34,
+      "remaining": 65,
+      "active_errors": 5,
+      "strict_errors": 5,
+      "strict_diagnostics_sha256": "1aecbeb25ba05d5caae160613b435274d8dcf1eb28c77cb92a7038d68d24835e",
+      "head": "abdc0dca54aa3c334ccc41c0fea07498476f36d1",
+      "git_status": " M src/api_source.py\n M src/cli.py\n M src/config.py\n M src/csv_source.py\n M src/db.py\n M src/db_source.py\n M src/logging_setup.py\n M src/metrics.py\n M src/models.py\n M src/scheduler.py\n M src/transform.py\n M src/validation.py\n M src/writer.py\n",
+      "workspace_hash": "c57763cfd35d3ce94d1aac5b492bf275d3cc91d0960cc9b3be40905951a011e8"
+    },
+    {
+      "step": 35,
+      "remaining": 64,
+      "active_errors": 3,
+      "strict_errors": 3,
+      "strict_diagnostics_sha256": "72a41555d069a2b3363e1834f6471b282ddba3e02983b432fd01ae89deda1224",
+      "head": "abdc0dca54aa3c334ccc41c0fea07498476f36d1",
+      "git_status": " M src/api_source.py\n M src/cli.py\n M src/config.py\n M src/csv_source.py\n M src/db.py\n M src/db_source.py\n M src/logging_setup.py\n M src/metrics.py\n M src/models.py\n M src/scheduler.py\n M src/transform.py\n M src/validation.py\n M src/writer.py\n",
+      "workspace_hash": "b6b8ed9642c4b00a87401a39af78d988bec878d4da5e4cc691319a58b2f99712"
+    },
+    {
+      "step": 36,
+      "remaining": 63,
+      "active_errors": 2,
+      "strict_errors": 2,
+      "strict_diagnostics_sha256": "995adeb20c78c6bd57b35fbc19476457dc5ec0ee25002b4aa5ef1dc765abd94e",
+      "head": "abdc0dca54aa3c334ccc41c0fea07498476f36d1",
+      "git_status": " M src/api_source.py\n M src/cli.py\n M src/config.py\n M src/csv_source.py\n M src/db.py\n M src/db_source.py\n M src/logging_setup.py\n M src/metrics.py\n M src/models.py\n M src/scheduler.py\n M src/transform.py\n M src/validation.py\n M src/writer.py\n",
+      "workspace_hash": "caed5d05b3669bc0f4005743b24234a1b20c8e304338b057329a0179b0e33b15"
+    },
+    {
+      "step": 37,
+      "remaining": 62,
+      "active_errors": 2,
+      "strict_errors": 2,
+      "strict_diagnostics_sha256": "995adeb20c78c6bd57b35fbc19476457dc5ec0ee25002b4aa5ef1dc765abd94e",
+      "head": "abdc0dca54aa3c334ccc41c0fea07498476f36d1",
+      "git_status": " M src/api_source.py\n M src/cli.py\n M src/config.py\n M src/csv_source.py\n M src/db.py\n M src/db_source.py\n M src/logging_setup.py\n M src/metrics.py\n M src/models.py\n M src/scheduler.py\n M src/transform.py\n M src/validation.py\n M src/writer.py\n?? src/__pycache__/db_source.cpython-311.pyc\n",
+      "workspace_hash": "af27fa020649565a91f3fee4a87988d054ebe2f08205b5b6c68221254f37d834"
+    },
+    {
+      "step": 38,
+      "remaining": 61,
+      "active_errors": 2,
+      "strict_errors": 2,
+      "strict_diagnostics_sha256": "995adeb20c78c6bd57b35fbc19476457dc5ec0ee25002b4aa5ef1dc765abd94e",
+      "head": "abdc0dca54aa3c334ccc41c0fea07498476f36d1",
+      "git_status": " M src/api_source.py\n M src/cli.py\n M src/config.py\n M src/csv_source.py\n M src/db.py\n M src/db_source.py\n M src/logging_setup.py\n M src/metrics.py\n M src/models.py\n M src/scheduler.py\n M src/transform.py\n M src/validation.py\n M src/writer.py\n?? src/__pycache__/db_source.cpython-311.pyc\n",
+      "workspace_hash": "af27fa020649565a91f3fee4a87988d054ebe2f08205b5b6c68221254f37d834"
+    },
+    {
+      "step": 39,
+      "remaining": 60,
+      "active_errors": 1,
+      "strict_errors": 1,
+      "strict_diagnostics_sha256": "acd777ad4f6477249261cb7abfffee0b50ddefdabe2b36a50564f7eba939f65e",
+      "head": "abdc0dca54aa3c334ccc41c0fea07498476f36d1",
+      "git_status": " M src/api_source.py\n M src/cli.py\n M src/config.py\n M src/csv_source.py\n M src/db.py\n M src/db_source.py\n M src/logging_setup.py\n M src/metrics.py\n M src/models.py\n M src/scheduler.py\n M src/transform.py\n M src/validation.py\n M src/writer.py\n?? src/__pycache__/db_source.cpython-311.pyc\n",
+      "workspace_hash": "a038e2336045f0685184718805e6919408bbd237eb93ebe3955ca3cc6822d9e5"
+    },
+    {
+      "step": 40,
+      "remaining": 59,
+      "active_errors": 1,
+      "strict_errors": 1,
+      "strict_diagnostics_sha256": "acd777ad4f6477249261cb7abfffee0b50ddefdabe2b36a50564f7eba939f65e",
+      "head": "abdc0dca54aa3c334ccc41c0fea07498476f36d1",
+      "git_status": " M src/api_source.py\n M src/cli.py\n M src/config.py\n M src/csv_source.py\n M src/db.py\n M src/db_source.py\n M src/logging_setup.py\n M src/metrics.py\n M src/models.py\n M src/scheduler.py\n M src/transform.py\n M src/validation.py\n M src/writer.py\n?? src/__pycache__/db_source.cpython-311.pyc\n",
+      "workspace_hash": "a038e2336045f0685184718805e6919408bbd237eb93ebe3955ca3cc6822d9e5"
+    },
+    {
+      "step": 41,
+      "remaining": 58,
+      "active_errors": 0,
+      "strict_errors": 0,
+      "strict_diagnostics_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "head": "abdc0dca54aa3c334ccc41c0fea07498476f36d1",
+      "git_status": " M src/api_source.py\n M src/cli.py\n M src/config.py\n M src/csv_source.py\n M src/db.py\n M src/db_source.py\n M src/logging_setup.py\n M src/metrics.py\n M src/models.py\n M src/scheduler.py\n M src/transform.py\n M src/validation.py\n M src/writer.py\n?? src/__pycache__/db_source.cpython-311.pyc\n",
+      "workspace_hash": "ca4784ffd189c9dbcffbec6b4dd547b42745eeaac52d70d410c4d1360105e175"
+    },
+    {
+      "step": 42,
+      "remaining": 57,
+      "active_errors": 0,
+      "strict_errors": 0,
+      "strict_diagnostics_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "head": "abdc0dca54aa3c334ccc41c0fea07498476f36d1",
+      "git_status": " M src/api_source.py\n M src/cli.py\n M src/config.py\n M src/csv_source.py\n M src/db.py\n M src/db_source.py\n M src/logging_setup.py\n M src/metrics.py\n M src/models.py\n M src/scheduler.py\n M src/transform.py\n M src/validation.py\n M src/writer.py\n?? src/__pycache__/db_source.cpython-311.pyc\n",
+      "workspace_hash": "2c525225605a98486af910749e6c1e706fa1d2eb0bb76cd44ec36236be6fa045"
+    },
+    {
+      "step": 43,
+      "remaining": 56,
+      "active_errors": 0,
+      "strict_errors": 0,
+      "strict_diagnostics_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "head": "abdc0dca54aa3c334ccc41c0fea07498476f36d1",
+      "git_status": " M src/api_source.py\n M src/cli.py\n M src/config.py\n M src/csv_source.py\n M src/db.py\n M src/db_source.py\n M src/logging_setup.py\n M src/metrics.py\n M src/models.py\n M src/scheduler.py\n M src/transform.py\n M src/validation.py\n M src/writer.py\n?? src/__pycache__/db_source.cpython-311.pyc\n",
+      "workspace_hash": "e6c07747510a65d8eeb29ccd1912817d493b861861b5fdc268089c9b18826b7e"
+    },
+    {
+      "step": 44,
+      "remaining": 55,
+      "active_errors": 0,
+      "strict_errors": 0,
+      "strict_diagnostics_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "head": "abdc0dca54aa3c334ccc41c0fea07498476f36d1",
+      "git_status": " M src/api_source.py\n M src/cli.py\n M src/config.py\n M src/csv_source.py\n M src/db.py\n M src/db_source.py\n M src/logging_setup.py\n M src/metrics.py\n M src/models.py\n M src/scheduler.py\n M src/transform.py\n M src/validation.py\n M src/writer.py\n?? src/__pycache__/db_source.cpython-311.pyc\n",
+      "workspace_hash": "4c349a04ba47ab422533574898d6bc7b120dc1da6ee1e31be5eba14c348756d8"
+    },
+    {
+      "step": 45,
+      "remaining": 54,
+      "active_errors": 0,
+      "strict_errors": 0,
+      "strict_diagnostics_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "head": "abdc0dca54aa3c334ccc41c0fea07498476f36d1",
+      "git_status": " M src/api_source.py\n M src/cli.py\n M src/config.py\n M src/csv_source.py\n M src/db.py\n M src/db_source.py\n M src/logging_setup.py\n M src/metrics.py\n M src/models.py\n M src/scheduler.py\n M src/transform.py\n M src/validation.py\n M src/writer.py\n?? src/__pycache__/db_source.cpython-311.pyc\n?? src/py.typed\n",
+      "workspace_hash": "af7402ce3ae56e441141ac0fbeeb6596e1db3f8c8545435e2910d3a8a07a234c"
+    },
+    {
+      "step": 46,
+      "remaining": 53,
+      "active_errors": 0,
+      "strict_errors": 0,
+      "strict_diagnostics_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "head": "abdc0dca54aa3c334ccc41c0fea07498476f36d1",
+      "git_status": "A  src/__pycache__/db_source.cpython-311.pyc\nM  src/api_source.py\nM  src/cli.py\nM  src/config.py\nM  src/csv_source.py\nM  src/db.py\nM  src/db_source.py\nM  src/logging_setup.py\nM  src/metrics.py\nM  src/models.py\nA  src/py.typed\nM  src/scheduler.py\nM  src/transform.py\nM  src/validation.py\nM  src/writer.py\n",
+      "workspace_hash": "77c4e9f95bb5d4375710a6a45e9fc4d900bd835ea4b6bdf7513e2563d08e5b92"
+    },
+    {
+      "step": 47,
+      "remaining": 52,
+      "active_errors": 0,
+      "strict_errors": 0,
+      "strict_diagnostics_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "head": "07c1a15873d9ff4dea51f691f6a47d0819766e64",
+      "git_status": "",
+      "workspace_hash": "65cd214c077e869e0785af5e28a61a58851cb57abdba26c6f7b44377f2900231"
+    },
+    {
+      "step": 48,
+      "remaining": 51,
+      "active_errors": 0,
+      "strict_errors": 0,
+      "strict_diagnostics_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "head": "07c1a15873d9ff4dea51f691f6a47d0819766e64",
+      "git_status": "",
+      "workspace_hash": "65cd214c077e869e0785af5e28a61a58851cb57abdba26c6f7b44377f2900231"
+    },
+    {
+      "step": 49,
+      "remaining": 50,
+      "active_errors": 0,
+      "strict_errors": 0,
+      "strict_diagnostics_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "head": "07c1a15873d9ff4dea51f691f6a47d0819766e64",
+      "git_status": "",
+      "workspace_hash": "65cd214c077e869e0785af5e28a61a58851cb57abdba26c6f7b44377f2900231"
+    },
+    {
+      "step": 50,
+      "remaining": 49,
+      "active_errors": 0,
+      "strict_errors": 0,
+      "strict_diagnostics_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "head": "07c1a15873d9ff4dea51f691f6a47d0819766e64",
+      "git_status": "",
+      "workspace_hash": "65cd214c077e869e0785af5e28a61a58851cb57abdba26c6f7b44377f2900231"
+    }
+  ],
+  "limits": "Server use of visible reasoning is not observable. No history-experiment checkpoint is selected by this audit."
+}

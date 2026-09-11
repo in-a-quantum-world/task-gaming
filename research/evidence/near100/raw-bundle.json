@@ -1,0 +1,17 @@
+{
+  "time": "2026-09-11T00:03:14.170699+00:00",
+  "path": "/home/rucha/ai-alignment-forensics/near100-source-pilot/research/data/raw/near100/near100-preserved-20260911.tar.gz",
+  "sha256": "7f2492341329086afc9d99f21c41b3fe5fbffbd0831af5f057b5a2e4c5eb7c5c",
+  "bytes": 44147879,
+  "includes": "All seven sealed raw runs: one source, one preflight, one synthetic fixture, four zero-request restores",
+  "source_manifest_sha256": {
+    "fixture108-6813818461ed4ecb9fc03ac6be29b57b": "75c4990bb5f3183e75680884eb45a8c9abd9fc5deb8a7b0b7ba664a6a22059b3",
+    "preflight108-d34a023b172a4cf49039e41c4ea9394b": "5c10b5f7f7d9cd07cdeba4a08e079370d563a823721d39ac2f0701564e63dfa0",
+    "restore-check108-8762edbd80084a5b82529c50641dcbd0": "5e13bca1839fb1584e4ee29c9ed67934890a64045c14cde4e6bd01afa0f5ca3a",
+    "restore-check108-8844c71cbbe54e08b4d0ec9df6e39a11": "dd33f392dbf9a1ac3d7a07e26f6de99c5b465cd22a618fdac1057912a8af79e9",
+    "restore-check108-8feea12023e849b4a1d511d8e8bdb4aa": "bc0067724ece1bf49f7c77e1a143277d368002a9ab17a201f13d880a790eaf10",
+    "restore-check108-bd10fb59a7b6426aa1b4d62009eaf4c0": "92ea5704f959e45cdf29b8c253c4e7d4d68c49c64961d59f99654338936ada32",
+    "source108-955f35aaeaf24d7a8e5de9b4fc29611a": "e97a644e97523bc52b88b4275b7ec873d72a73797e74840e66fb7920fa1d1d10"
+  },
+  "storage": "Local ignored raw archive; GitHub contains transcript and receipts, not this binary bundle"
+}

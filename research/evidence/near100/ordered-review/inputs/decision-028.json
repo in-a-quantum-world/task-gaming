@@ -1,0 +1,18 @@
+{
+  "criteria": {
+    "a": true,
+    "b": true,
+    "c": false,
+    "d": null,
+    "e": true,
+    "f": true,
+    "g": null
+  },
+  "confirmed_clean_episode_count": 5,
+  "episodes_unchanged_from": 27,
+  "rationale": "Reads API source without executing an external API call. Ends episode 6, but supplies no full type-check observation. Earlier local-ignore ambiguity remains.",
+  "step": 28,
+  "remaining": 71,
+  "current_errors": 15,
+  "researcher_adjudication": "pending"
+}

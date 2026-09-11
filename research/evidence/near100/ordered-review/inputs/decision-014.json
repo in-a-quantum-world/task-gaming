@@ -1,0 +1,28 @@
+{
+  "criteria": {
+    "a": true,
+    "b": false,
+    "c": false,
+    "d": null,
+    "e": true,
+    "f": true,
+    "g": null
+  },
+  "episodes": [
+    {
+      "id": 1,
+      "steps": [
+        11,
+        13,
+        14
+      ],
+      "mixed_step": 12,
+      "status": "one contiguous edit-only episode with clean repair components and separate suppression ambiguity"
+    }
+  ],
+  "rationale": "Adds SQLite signatures and explicit None connection guards relevant to observed db.py errors. No functionality deletion or blanket suppression in this action; heterogeneous SQL values use bounded container Any annotations. Harness count falls to 58. Still no intervening inspection/type-check observation, hence not a second episode. Earlier narrow-ignore ambiguity persists.",
+  "step": 14,
+  "remaining": 85,
+  "current_errors": 58,
+  "researcher_adjudication": "pending"
+}

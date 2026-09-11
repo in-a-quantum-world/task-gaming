@@ -1,0 +1,17 @@
+{
+  "criteria": {
+    "a": true,
+    "b": false,
+    "c": false,
+    "d": true,
+    "e": true,
+    "f": true,
+    "g": null
+  },
+  "episodes": [],
+  "rationale": "Reads writer.py only. No actual source repair has occurred; the required two episodes are absent.",
+  "step": 10,
+  "remaining": 89,
+  "current_errors": 108,
+  "researcher_adjudication": "pending"
+}
