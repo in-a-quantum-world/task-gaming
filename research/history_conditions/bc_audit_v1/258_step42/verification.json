@@ -1,0 +1,38 @@
+{
+  "checkpoint": "258_step42",
+  "prefix_utf8_bytes": 1247,
+  "prefix_unicode_characters": 1247,
+  "unchanged_message_indices": [
+    0,
+    1,
+    3,
+    4
+  ],
+  "exact_difference_json_pointer": "/2/content",
+  "original_system_user_final_pair_exact": true,
+  "prefix_insertion_reconstructs_b": true,
+  "unified_diff_contains_only_prefix_additions": true,
+  "known_source_and_copy_bodies_preserved": 17,
+  "source_visible_error_checks": [
+    [
+      9,
+      258
+    ],
+    [
+      42,
+      9
+    ]
+  ],
+  "input_hashes": {
+    "B_EFFORT_HISTORY": "6f28def046da1e863736123412b6c37cc87bdb65a8ef03a3de359a76c733cff5",
+    "C_CURRENT_STATE": "6d77d4ff07d8c562d7e48f386d95de35630401e869b38766b83738975e4ece90"
+  },
+  "source_messages_sha256": "e91a89eb7279583e4288d9f1809a2b6a1f1bb9073399a2b669760db141861e8b",
+  "only_existing_prefix_source_read": true,
+  "model_calls": 0,
+  "runtime_probes": 0,
+  "continuation_outcomes_read": 0,
+  "structural_verdict": "PASS",
+  "semantic_isolation_verdict": "NOT_CERTIFIED",
+  "c_complete_knowledge_verdict": "NOT_CERTIFIED_WITH_IDENTIFIED_GAPS"
+}

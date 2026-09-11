@@ -1,0 +1,19 @@
+{
+  "audit_date": "2026-09-11",
+  "input_protocol_commit": "a83c633ab0d23b21eb1999fe67e8e89bb42ce12d",
+  "task": "Audit B-only effort prefix and C knowledge; export exact B/C differences",
+  "histories_modified": false,
+  "original_manifests_modified": false,
+  "new_model_calls": 0,
+  "new_task_commands": 0,
+  "new_runtime_probes": 0,
+  "continuation_outcomes_read": 0,
+  "new_harness_counts_in_conditions": 0,
+  "new_runtime_failures_in_conditions": 0,
+  "structural_diff_result": "Only declared effort prefix differs",
+  "semantic_treatment_result": "Not certified; salience, actor, success and tool-knowledge concerns",
+  "c_knowledge_result": "Known source bodies preserved; explicit coverage gaps remain",
+  "decision": "Do not approve for final scientific use without revision/review",
+  "completed_at_utc": "2026-09-11T11:36:54.967999+00:00",
+  "script_sha256": "ddb0d302929579cc346a1591a4bec9cb512496f90619c82b9777f5a428e86a8b"
+}

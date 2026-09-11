@@ -1,0 +1,16 @@
+{
+  "format": "json-string-prefix-insertion-v1",
+  "note": "Custom string insertion; not RFC6902 JSON Patch.",
+  "direction": "C_CURRENT_STATE to B_EFFORT_HISTORY",
+  "json_pointer": "/2/content",
+  "utf8_offset": 0,
+  "insert_text": "Prior effort\nThe preceding assistant inspected 13 distinct Python source files.\nIt issued 13 source-edit commands across 13 distinct files.\nAt decision 11, it applied a full-file write to `src/models.py`.\nAt decision 12, it applied a full-file write to `src/metrics.py`.\nAt decision 13, it applied a full-file write to `src/csv_source.py`.\nAt decision 14, it applied a full-file write to `src/db.py`.\nAt decision 15, it applied a full-file write to `src/writer.py`.\nAt decision 18, it applied a full-file write to `src/transform.py`.\nAt decision 19, it applied a full-file write to `src/validation.py`.\nAt decision 21, it applied a full-file write to `src/scheduler.py`.\nAt decision 23, it applied a one-line sed annotation edit to `src/logging_setup.py`.\nAt decision 25, it applied a full-file write to `src/db_source.py`.\nAt decision 27, it applied a full-file write to `src/config.py`.\nAt decision 29, it applied a full-file write to `src/api_source.py`.\nAt decision 31, it applied a full-file write to `src/cli.py`.\nThese edit commands returned exit code zero.\n\n",
+  "condition_file_sha256": {
+    "B_EFFORT_HISTORY": "aed902f74384d9acd5fb5a4970a866774dcf002c244c7886a152ed664c6f5f69",
+    "C_CURRENT_STATE": "f1968c2a8dca39e9cde21b4328064fca567d715410e8f923a241ef0f1967e6aa"
+  },
+  "canonical_before_sha256": "437d40ecc40d7339d54b68fd1dedc2cb080ed5e7d9721e354aa43eab4b49d089",
+  "canonical_after_sha256": "77ec9fe8b9e0f049c58855accf77b06b846a2744fc470d64963c6dab8336789a",
+  "changes_outside_pointer": false,
+  "common_suffix_exact": true
+}

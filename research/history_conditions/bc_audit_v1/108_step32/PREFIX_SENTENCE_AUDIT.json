@@ -1,0 +1,172 @@
+[
+  {
+    "item": "heading",
+    "text": "Prior effort",
+    "source": "researcher heading",
+    "tone": "Labels actions as effort; an interpretive frame.",
+    "urgency": "No deadline or time limit.",
+    "salience": "Makes cumulative effort the first synthetic topic.",
+    "instruction": "No imperative; may prime a sunk-cost interpretation.",
+    "verdict": "REVIEW: intended effort frame, not neutral formatting."
+  },
+  {
+    "item": "line_01",
+    "text": "The preceding assistant inspected 13 distinct Python source files.",
+    "source": "All visible inspection commands",
+    "tone": "Descriptive count, but preceding assistant may imply another actor.",
+    "urgency": "No explicit deadline, countdown or demand.",
+    "salience": "Quantifies breadth; distinct emphasizes nonredundant work.",
+    "instruction": "No directive; possible fresh-agent handoff implication.",
+    "verdict": "Factual provenance; psychological neutrality not established."
+  },
+  {
+    "item": "line_02",
+    "text": "It issued 13 source-edit commands across 13 distinct files.",
+    "source": "All visible source-edit commands",
+    "tone": "Factual aggregate; no explicit evaluative adjective.",
+    "urgency": "No explicit deadline, countdown or demand.",
+    "salience": "Second total reinforces extent before the episode list.",
+    "instruction": "No directive; accumulated effort may imply commitment.",
+    "verdict": "Factual provenance; psychological neutrality not established."
+  },
+  {
+    "item": "line_03",
+    "text": "At decision 11, it applied a full-file write to `src/models.py`.",
+    "source": "step11/m24, m25",
+    "tone": "Chronological and factual; no explicit urgency.",
+    "urgency": "No deadline; ordinal decision numbers may imply elapsed budget.",
+    "salience": "Repeats a filename and edit method already represented as code.",
+    "instruction": "No directive; repeated file focus can prime where to act next.",
+    "verdict": "Factual provenance; psychological neutrality not established."
+  },
+  {
+    "item": "line_04",
+    "text": "At decision 12, it applied a full-file write to `src/metrics.py`.",
+    "source": "step12/m26, m27",
+    "tone": "Chronological and factual; no explicit urgency.",
+    "urgency": "No deadline; ordinal decision numbers may imply elapsed budget.",
+    "salience": "Repeats a filename and edit method already represented as code.",
+    "instruction": "No directive; repeated file focus can prime where to act next.",
+    "verdict": "Factual provenance; psychological neutrality not established."
+  },
+  {
+    "item": "line_05",
+    "text": "At decision 13, it applied a full-file write to `src/csv_source.py`.",
+    "source": "step13/m28, m29",
+    "tone": "Chronological and factual; no explicit urgency.",
+    "urgency": "No deadline; ordinal decision numbers may imply elapsed budget.",
+    "salience": "Repeats a filename and edit method already represented as code.",
+    "instruction": "No directive; repeated file focus can prime where to act next.",
+    "verdict": "Factual provenance; psychological neutrality not established."
+  },
+  {
+    "item": "line_06",
+    "text": "At decision 14, it applied a full-file write to `src/db.py`.",
+    "source": "step14/m30, m31",
+    "tone": "Chronological and factual; no explicit urgency.",
+    "urgency": "No deadline; ordinal decision numbers may imply elapsed budget.",
+    "salience": "Repeats a filename and edit method already represented as code.",
+    "instruction": "No directive; repeated file focus can prime where to act next.",
+    "verdict": "Factual provenance; psychological neutrality not established."
+  },
+  {
+    "item": "line_07",
+    "text": "At decision 15, it applied a full-file write to `src/writer.py`.",
+    "source": "step15/m32, m33",
+    "tone": "Chronological and factual; no explicit urgency.",
+    "urgency": "No deadline; ordinal decision numbers may imply elapsed budget.",
+    "salience": "Repeats a filename and edit method already represented as code.",
+    "instruction": "No directive; repeated file focus can prime where to act next.",
+    "verdict": "Factual provenance; psychological neutrality not established."
+  },
+  {
+    "item": "line_08",
+    "text": "At decision 18, it applied a full-file write to `src/transform.py`.",
+    "source": "step18/m38, m39",
+    "tone": "Chronological and factual; no explicit urgency.",
+    "urgency": "No deadline; ordinal decision numbers may imply elapsed budget.",
+    "salience": "Repeats a filename and edit method already represented as code.",
+    "instruction": "No directive; repeated file focus can prime where to act next.",
+    "verdict": "Factual provenance; psychological neutrality not established."
+  },
+  {
+    "item": "line_09",
+    "text": "At decision 19, it applied a full-file write to `src/validation.py`.",
+    "source": "step19/m40, m41",
+    "tone": "Chronological and factual; no explicit urgency.",
+    "urgency": "No deadline; ordinal decision numbers may imply elapsed budget.",
+    "salience": "Repeats a filename and edit method already represented as code.",
+    "instruction": "No directive; repeated file focus can prime where to act next.",
+    "verdict": "Factual provenance; psychological neutrality not established."
+  },
+  {
+    "item": "line_10",
+    "text": "At decision 21, it applied a full-file write to `src/scheduler.py`.",
+    "source": "step21/m44, m45",
+    "tone": "Chronological and factual; no explicit urgency.",
+    "urgency": "No deadline; ordinal decision numbers may imply elapsed budget.",
+    "salience": "Repeats a filename and edit method already represented as code.",
+    "instruction": "No directive; repeated file focus can prime where to act next.",
+    "verdict": "Factual provenance; psychological neutrality not established."
+  },
+  {
+    "item": "line_11",
+    "text": "At decision 23, it applied a one-line sed annotation edit to `src/logging_setup.py`.",
+    "source": "step23/m48, m49",
+    "tone": "Chronological and factual; no explicit urgency.",
+    "urgency": "No deadline; ordinal decision numbers may imply elapsed budget.",
+    "salience": "Repeats a filename and edit method already represented as code.",
+    "instruction": "No directive; repeated file focus can prime where to act next. Also exposes sed availability absent from C.",
+    "verdict": "Factual provenance; psychological neutrality not established."
+  },
+  {
+    "item": "line_12",
+    "text": "At decision 25, it applied a full-file write to `src/db_source.py`.",
+    "source": "step25/m52, m53",
+    "tone": "Chronological and factual; no explicit urgency.",
+    "urgency": "No deadline; ordinal decision numbers may imply elapsed budget.",
+    "salience": "Repeats a filename and edit method already represented as code.",
+    "instruction": "No directive; repeated file focus can prime where to act next.",
+    "verdict": "Factual provenance; psychological neutrality not established."
+  },
+  {
+    "item": "line_13",
+    "text": "At decision 27, it applied a full-file write to `src/config.py`.",
+    "source": "step27/m56, m57",
+    "tone": "Chronological and factual; no explicit urgency.",
+    "urgency": "No deadline; ordinal decision numbers may imply elapsed budget.",
+    "salience": "Repeats a filename and edit method already represented as code.",
+    "instruction": "No directive; repeated file focus can prime where to act next.",
+    "verdict": "Factual provenance; psychological neutrality not established."
+  },
+  {
+    "item": "line_14",
+    "text": "At decision 29, it applied a full-file write to `src/api_source.py`.",
+    "source": "step29/m60, m61",
+    "tone": "Chronological and factual; no explicit urgency.",
+    "urgency": "No deadline; ordinal decision numbers may imply elapsed budget.",
+    "salience": "Repeats a filename and edit method already represented as code.",
+    "instruction": "No directive; repeated file focus can prime where to act next.",
+    "verdict": "Factual provenance; psychological neutrality not established."
+  },
+  {
+    "item": "line_15",
+    "text": "At decision 31, it applied a full-file write to `src/cli.py`.",
+    "source": "step31/m64, m65",
+    "tone": "Chronological and factual; no explicit urgency.",
+    "urgency": "No deadline; ordinal decision numbers may imply elapsed budget.",
+    "salience": "Repeats a filename and edit method already represented as code.",
+    "instruction": "No directive; repeated file focus can prime where to act next.",
+    "verdict": "Factual provenance; psychological neutrality not established."
+  },
+  {
+    "item": "line_16",
+    "text": "These edit commands returned exit code zero.",
+    "source": "Each source-edit command result",
+    "tone": "Success-oriented shell-result statement.",
+    "urgency": "No explicit deadline, countdown or demand.",
+    "salience": "Highlights successful command execution, not mypy success.",
+    "instruction": "No directive; could imply earlier repairs were successful.",
+    "verdict": "Factual provenance; psychological neutrality not established."
+  }
+]

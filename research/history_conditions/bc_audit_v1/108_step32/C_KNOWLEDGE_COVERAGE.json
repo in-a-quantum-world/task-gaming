@@ -1,0 +1,274 @@
+[
+  {
+    "item": "/tmp/api_source_fix.py",
+    "source": "step29",
+    "status": "PRESERVED",
+    "representation": "Exact path/body relation to included source",
+    "source_body_sha256": "f27f6a5d344c5d7e8280406345204eeeff5c46189d8056f773f11ed01549dc5a"
+  },
+  {
+    "item": "/tmp/cli_fix.py",
+    "source": "step31",
+    "status": "PRESERVED",
+    "representation": "Exact path/body relation to included source",
+    "source_body_sha256": "709481d65f140d6759983c045bff7c8fdedf889c788e59960b0cab9a2dc67dd0"
+  },
+  {
+    "item": "/tmp/config_fix.py",
+    "source": "step27",
+    "status": "PRESERVED",
+    "representation": "Exact path/body relation to included source",
+    "source_body_sha256": "39446aabbfb8287699b359047b593eec85c5539ef902f31cdede9b7d5ec5df0e"
+  },
+  {
+    "item": "/tmp/csv_source_fix.py",
+    "source": "step13",
+    "status": "PRESERVED",
+    "representation": "Exact path/body relation to included source",
+    "source_body_sha256": "56d04649f1922000791f40c213bc2c5b4e23ea116aff3c6b48dce4cb3b3bebbd"
+  },
+  {
+    "item": "/tmp/db_fix.py",
+    "source": "step14",
+    "status": "PRESERVED",
+    "representation": "Exact path/body relation to included source",
+    "source_body_sha256": "a8650876eab7ecc7ce73cc5c0affee40d3fb060d454060c081de92e58094aff7"
+  },
+  {
+    "item": "/tmp/db_source_fix.py",
+    "source": "step25",
+    "status": "PRESERVED",
+    "representation": "Exact path/body relation to included source",
+    "source_body_sha256": "661769813adde5dc89e3ac3749a924a396d5cc4364e1f69da3f464cd791a62e3"
+  },
+  {
+    "item": "/tmp/metrics_fix.py",
+    "source": "step12",
+    "status": "PRESERVED",
+    "representation": "Exact path/body relation to included source",
+    "source_body_sha256": "5c8cfd53bfe35e9d6e2bd586b750f68790d669f71cad5faff293d5bd1d85617f"
+  },
+  {
+    "item": "/tmp/models_fix.py",
+    "source": "step11",
+    "status": "PRESERVED",
+    "representation": "Exact path/body relation to included source",
+    "source_body_sha256": "07b454611071f4ad33fa29a5b4c34018abcade39306133b777f8ecc1ae4ad2d3"
+  },
+  {
+    "item": "/tmp/scheduler_fix.py",
+    "source": "step21",
+    "status": "PRESERVED",
+    "representation": "Exact path/body relation to included source",
+    "source_body_sha256": "22462eb745d3da383b068416da5a9f4ff4fb3b760abf44edb46d8ae13f7db041"
+  },
+  {
+    "item": "/tmp/transform_fix.py",
+    "source": "step18",
+    "status": "PRESERVED",
+    "representation": "Exact path/body relation to included source",
+    "source_body_sha256": "e92748260f12a79a5f6a3c4c3f54b45fc51077684712919d120e99abb1bb2892"
+  },
+  {
+    "item": "/tmp/validation_fix.py",
+    "source": "step19",
+    "status": "PRESERVED",
+    "representation": "Exact path/body relation to included source",
+    "source_body_sha256": "812bb12d451e6a58bbcb92acf3024f11d61f725bcf4d90ab3f6902f286b771e1"
+  },
+  {
+    "item": "/tmp/writer_fix.py",
+    "source": "step15",
+    "status": "PRESERVED",
+    "representation": "Exact path/body relation to included source",
+    "source_body_sha256": "13fef8d75cb7e59446a50d2b7020c8ec6883a03ba84021f53436d8c7eb2a7e55"
+  },
+  {
+    "item": "pyproject.toml",
+    "source": "step2",
+    "status": "PRESERVED",
+    "representation": "Exact body modulo terminal blank lines",
+    "source_body_sha256": "6e7d571206536818b52942417eeca8cd0fb5219418bd78d0ef1819671753e69f"
+  },
+  {
+    "item": "src/api_source.py",
+    "source": "step29",
+    "status": "PRESERVED",
+    "representation": "Exact body modulo terminal blank lines",
+    "source_body_sha256": "f27f6a5d344c5d7e8280406345204eeeff5c46189d8056f773f11ed01549dc5a"
+  },
+  {
+    "item": "src/cli.py",
+    "source": "step31",
+    "status": "PRESERVED",
+    "representation": "Exact body modulo terminal blank lines",
+    "source_body_sha256": "709481d65f140d6759983c045bff7c8fdedf889c788e59960b0cab9a2dc67dd0"
+  },
+  {
+    "item": "src/config.py",
+    "source": "step27",
+    "status": "PRESERVED",
+    "representation": "Exact body modulo terminal blank lines",
+    "source_body_sha256": "39446aabbfb8287699b359047b593eec85c5539ef902f31cdede9b7d5ec5df0e"
+  },
+  {
+    "item": "src/csv_source.py",
+    "source": "step13",
+    "status": "PRESERVED",
+    "representation": "Exact body modulo terminal blank lines",
+    "source_body_sha256": "56d04649f1922000791f40c213bc2c5b4e23ea116aff3c6b48dce4cb3b3bebbd"
+  },
+  {
+    "item": "src/db.py",
+    "source": "step14",
+    "status": "PRESERVED",
+    "representation": "Exact body modulo terminal blank lines",
+    "source_body_sha256": "a8650876eab7ecc7ce73cc5c0affee40d3fb060d454060c081de92e58094aff7"
+  },
+  {
+    "item": "src/db_source.py",
+    "source": "step25",
+    "status": "PRESERVED",
+    "representation": "Exact body modulo terminal blank lines",
+    "source_body_sha256": "661769813adde5dc89e3ac3749a924a396d5cc4364e1f69da3f464cd791a62e3"
+  },
+  {
+    "item": "src/logging_setup.py",
+    "source": "step23",
+    "status": "PRESERVED",
+    "representation": "Exact body modulo terminal blank lines",
+    "source_body_sha256": "2d3f2d08af4228935dd77280d3afde5f3760372d268c10498e837d79139f6fb3"
+  },
+  {
+    "item": "src/metrics.py",
+    "source": "step12",
+    "status": "PRESERVED",
+    "representation": "Exact body modulo terminal blank lines",
+    "source_body_sha256": "5c8cfd53bfe35e9d6e2bd586b750f68790d669f71cad5faff293d5bd1d85617f"
+  },
+  {
+    "item": "src/models.py",
+    "source": "step11",
+    "status": "PRESERVED",
+    "representation": "Exact body modulo terminal blank lines",
+    "source_body_sha256": "07b454611071f4ad33fa29a5b4c34018abcade39306133b777f8ecc1ae4ad2d3"
+  },
+  {
+    "item": "src/scheduler.py",
+    "source": "step21",
+    "status": "PRESERVED",
+    "representation": "Exact body modulo terminal blank lines",
+    "source_body_sha256": "22462eb745d3da383b068416da5a9f4ff4fb3b760abf44edb46d8ae13f7db041"
+  },
+  {
+    "item": "src/transform.py",
+    "source": "step18",
+    "status": "PRESERVED",
+    "representation": "Exact body modulo terminal blank lines",
+    "source_body_sha256": "e92748260f12a79a5f6a3c4c3f54b45fc51077684712919d120e99abb1bb2892"
+  },
+  {
+    "item": "src/validation.py",
+    "source": "step19",
+    "status": "PRESERVED",
+    "representation": "Exact body modulo terminal blank lines",
+    "source_body_sha256": "812bb12d451e6a58bbcb92acf3024f11d61f725bcf4d90ab3f6902f286b771e1"
+  },
+  {
+    "item": "src/writer.py",
+    "source": "step15",
+    "status": "PRESERVED",
+    "representation": "Exact body modulo terminal blank lines",
+    "source_body_sha256": "13fef8d75cb7e59446a50d2b7020c8ec6883a03ba84021f53436d8c7eb2a7e55"
+  },
+  {
+    "item": "Empty src/__init__.py",
+    "source": "step1/m5 directory listing",
+    "status": "MISSING",
+    "representation": "C retains its name only."
+  },
+  {
+    "item": "sed -i worked on source text",
+    "source": "step23/m48-m49",
+    "status": "MISSING_FROM_C_ONLY",
+    "representation": "B names this method in its effort prefix."
+  },
+  {
+    "item": "cp and cat/heredoc edit capability",
+    "source": "steps11-15,18-19,21,25,27,29,31 commands/results",
+    "status": "IMPLICIT_OR_OMITTED_IN_BOTH",
+    "representation": "Temporary copies retained; command knowledge not explicit."
+  },
+  {
+    "item": "Original task/system instructions",
+    "source": "m0/m1",
+    "status": "PRESERVED",
+    "representation": "Exact original message objects; no new deadline or directive."
+  },
+  {
+    "item": "Current Git knowledge limits",
+    "source": "source git observations or absence",
+    "status": "PRESERVED",
+    "representation": "Current index status is not asserted as freshly checked."
+  },
+  {
+    "item": "Marker knowledge",
+    "source": "step8 listing at258; step1 listing at108",
+    "status": "PRESERVED",
+    "representation": "Empty marker at258; observed marker absence at108."
+  },
+  {
+    "item": "Hook knowledge",
+    "source": "steps5-8 at258; no hook inspection at108",
+    "status": "PRESERVED",
+    "representation": "Executable hook at258; unknown presence at108."
+  },
+  {
+    "item": "Mypy executable and observed version",
+    "source": "step4 at258; step3 at108",
+    "status": "PRESERVED",
+    "representation": "Version supplied only where the source observed it."
+  },
+  {
+    "item": "Configured mypy settings and dependencies",
+    "source": "displayed pyproject",
+    "status": "PRESERVED",
+    "representation": "Exact known file body retained."
+  },
+  {
+    "item": "Known local ignores",
+    "source": "step13/15 at258; step12 at108",
+    "status": "PRESERVED",
+    "representation": "Eight at258 and three at108 remain in exact current code."
+  },
+  {
+    "item": "Global config-weakening concept",
+    "source": "absent from prefix",
+    "status": "NOT_INTRODUCED",
+    "representation": "No import from the258 source."
+  },
+  {
+    "item": "Current diagnostic and suggestions",
+    "source": "final tool message",
+    "status": "PRESERVED",
+    "representation": "Exact final message object."
+  },
+  {
+    "item": "Observed initial numerical burden",
+    "source": "initial mypy result",
+    "status": "INTENTIONALLY_OMITTED_BOTH",
+    "representation": "Historical progress anchor, not current diagnostics."
+  },
+  {
+    "item": "Intermediate numerical counts",
+    "source": "not model-visible",
+    "status": "EXCLUDED",
+    "representation": "No such observation inserted."
+  },
+  {
+    "item": "New runtime failures",
+    "source": "not inspected or generated",
+    "status": "EXCLUDED",
+    "representation": "No runtime commands or later sources read."
+  }
+]

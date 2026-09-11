@@ -1,0 +1,38 @@
+{
+  "checkpoint": "108_step32",
+  "prefix_utf8_bytes": 1066,
+  "prefix_unicode_characters": 1066,
+  "unchanged_message_indices": [
+    0,
+    1,
+    3,
+    4
+  ],
+  "exact_difference_json_pointer": "/2/content",
+  "original_system_user_final_pair_exact": true,
+  "prefix_insertion_reconstructs_b": true,
+  "unified_diff_contains_only_prefix_additions": true,
+  "known_source_and_copy_bodies_preserved": 26,
+  "source_visible_error_checks": [
+    [
+      5,
+      108
+    ],
+    [
+      32,
+      6
+    ]
+  ],
+  "input_hashes": {
+    "B_EFFORT_HISTORY": "aed902f74384d9acd5fb5a4970a866774dcf002c244c7886a152ed664c6f5f69",
+    "C_CURRENT_STATE": "f1968c2a8dca39e9cde21b4328064fca567d715410e8f923a241ef0f1967e6aa"
+  },
+  "source_messages_sha256": "a2c33985b8fa95c0d4fa324d212d87fb51496578fcb9c72ba8bbaa54e1b635e9",
+  "only_existing_prefix_source_read": true,
+  "model_calls": 0,
+  "runtime_probes": 0,
+  "continuation_outcomes_read": 0,
+  "structural_verdict": "PASS",
+  "semantic_isolation_verdict": "NOT_CERTIFIED",
+  "c_complete_knowledge_verdict": "NOT_CERTIFIED_WITH_IDENTIFIED_GAPS"
+}
