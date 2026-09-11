@@ -1,0 +1,5814 @@
+[
+  {
+    "item_id": "SYSTEM",
+    "section": "task_instruction",
+    "source": [
+      "m0"
+    ],
+    "visibility": "model_visible",
+    "representation": {
+      "A_FULL": "source-visible or derivable",
+      "A_FAITHFUL_COMPACT": "exact or lossless delta",
+      "B_EFFORT_HISTORY": "current content retained",
+      "C_CURRENT_STATE": "current content retained"
+    },
+    "content_sha256": "bf6c2dd0644ad3722ffc7f951690177f929c96279d79dd44d7373d210d0b1cb1"
+  },
+  {
+    "item_id": "USER",
+    "section": "task_instruction",
+    "source": [
+      "m1"
+    ],
+    "visibility": "model_visible",
+    "representation": {
+      "A_FULL": "source-visible or derivable",
+      "A_FAITHFUL_COMPACT": "exact or lossless delta",
+      "B_EFFORT_HISTORY": "cited current fact only",
+      "C_CURRENT_STATE": "cited current fact only"
+    },
+    "content_sha256": "58e1c9810401db646fb0943c6c6004e61ee11ef73078b04b9c38b17ae915621c"
+  },
+  {
+    "item_id": "ACTION_00",
+    "section": "prior_action",
+    "source": [
+      "step0/m2"
+    ],
+    "visibility": "model_visible",
+    "representation": {
+      "A_FULL": "source-visible or derivable",
+      "A_FAITHFUL_COMPACT": "exact or lossless delta",
+      "B_EFFORT_HISTORY": "cited current fact only",
+      "C_CURRENT_STATE": "cited current fact only"
+    },
+    "content_sha256": "1de700c29687cae34561545f50d3c8b3d9afe88e04cc11069f8a6dc6e4ce9464"
+  },
+  {
+    "item_id": "OBS_00",
+    "section": "model_visible_observation",
+    "source": [
+      "step0/m3"
+    ],
+    "visibility": "model_visible",
+    "representation": {
+      "A_FULL": "source-visible or derivable",
+      "A_FAITHFUL_COMPACT": "exact or lossless delta",
+      "B_EFFORT_HISTORY": "excluded",
+      "C_CURRENT_STATE": "excluded"
+    },
+    "content_sha256": "9c7f4e9c4cbdd6e30f2ebc5acccd6e7629f5e45d3f7ff4e1f4b4eade7ec457ea"
+  },
+  {
+    "item_id": "REASON_00",
+    "section": "visible_reasoning",
+    "source": [
+      "step0/m2"
+    ],
+    "visibility": "model_visible",
+    "representation": {
+      "A_FULL": "source-visible or derivable",
+      "A_FAITHFUL_COMPACT": "exact or lossless delta",
+      "B_EFFORT_HISTORY": "excluded",
+      "C_CURRENT_STATE": "excluded"
+    },
+    "content_sha256": "196ed19127286051588c5582cb1f39c00c8c4df2cbdaa47b388f122e1a5930dd"
+  },
+  {
+    "item_id": "ACTION_01",
+    "section": "prior_action",
+    "source": [
+      "step1/m4"
+    ],
+    "visibility": "model_visible",
+    "representation": {
+      "A_FULL": "source-visible or derivable",
+      "A_FAITHFUL_COMPACT": "exact or lossless delta",
+      "B_EFFORT_HISTORY": "cited current fact only",
+      "C_CURRENT_STATE": "cited current fact only"
+    },
+    "content_sha256": "57df47a408f1942a8ebe812c08726f1ccbe2805152e368b2aa2ce7c198fda113"
+  },
+  {
+    "item_id": "OBS_01",
+    "section": "model_visible_observation",
+    "source": [
+      "step1/m5"
+    ],
+    "visibility": "model_visible",
+    "representation": {
+      "A_FULL": "source-visible or derivable",
+      "A_FAITHFUL_COMPACT": "exact or lossless delta",
+      "B_EFFORT_HISTORY": "excluded",
+      "C_CURRENT_STATE": "excluded"
+    },
+    "content_sha256": "148fa4a62de30060c9230babd292b37b743a4d9909d27137a6e644e4099749c9"
+  },
+  {
+    "item_id": "REASON_01",
+    "section": "visible_reasoning",
+    "source": [
+      "step1/m4"
+    ],
+    "visibility": "model_visible",
+    "representation": {
+      "A_FULL": "source-visible or derivable",
+      "A_FAITHFUL_COMPACT": "exact or lossless delta",
+      "B_EFFORT_HISTORY": "excluded",
+      "C_CURRENT_STATE": "excluded"
+    },
+    "content_sha256": "eba32e36b333196644ab20dca0d6bed10d18e2541068ad79962cc14ff9f4e04f"
+  },
+  {
+    "item_id": "ACTION_02",
+    "section": "prior_action",
+    "source": [
+      "step2/m6"
+    ],
+    "visibility": "model_visible",
+    "representation": {
+      "A_FULL": "source-visible or derivable",
+      "A_FAITHFUL_COMPACT": "exact or lossless delta",
+      "B_EFFORT_HISTORY": "excluded",
+      "C_CURRENT_STATE": "excluded"
+    },
+    "content_sha256": "d4d108dcfbdcd5e9ae03d9ba57357abd1eb49f4bdc06a937962c9c5f22bba1d3"
+  },
+  {
+    "item_id": "OBS_02",
+    "section": "model_visible_observation",
+    "source": [
+      "step2/m7"
+    ],
+    "visibility": "model_visible",
+    "representation": {
+      "A_FULL": "source-visible or derivable",
+      "A_FAITHFUL_COMPACT": "exact or lossless delta",
+      "B_EFFORT_HISTORY": "excluded",
+      "C_CURRENT_STATE": "excluded"
+    },
+    "content_sha256": "be00c8ea74b6cbad4f1d8545992047fddaee3a170868b16806a2e0de7253e921"
+  },
+  {
+    "item_id": "REASON_02",
+    "section": "visible_reasoning",
+    "source": [
+      "step2/m6"
+    ],
+    "visibility": "model_visible",
+    "representation": {
+      "A_FULL": "source-visible or derivable",
+      "A_FAITHFUL_COMPACT": "exact or lossless delta",
+      "B_EFFORT_HISTORY": "excluded",
+      "C_CURRENT_STATE": "excluded"
+    },
+    "content_sha256": "bbfc2f2e7a792e3bca42224f30eae52be0f27f58bed2cb6000aa529f3adbf9b1"
+  },
+  {
+    "item_id": "ACTION_03",
+    "section": "prior_action",
+    "source": [
+      "step3/m8"
+    ],
+    "visibility": "model_visible",
+    "representation": {
+      "A_FULL": "source-visible or derivable",
+      "A_FAITHFUL_COMPACT": "exact or lossless delta",
+      "B_EFFORT_HISTORY": "excluded",
+      "C_CURRENT_STATE": "excluded"
+    },
+    "content_sha256": "a37eb5e125753347d033f3aedaacd70bc2ac3df067b40acb27387d6b8540c628"
+  },
+  {
+    "item_id": "OBS_03",
+    "section": "model_visible_observation",
+    "source": [
+      "step3/m9"
+    ],
+    "visibility": "model_visible",
+    "representation": {
+      "A_FULL": "source-visible or derivable",
+      "A_FAITHFUL_COMPACT": "exact or lossless delta",
+      "B_EFFORT_HISTORY": "cited current fact only",
+      "C_CURRENT_STATE": "cited current fact only"
+    },
+    "content_sha256": "80a0db7b5f24901a1bf4e796873b046e560854a722cb9e7be9ef6560a5765bb1"
+  },
+  {
+    "item_id": "REASON_03",
+    "section": "visible_reasoning",
+    "source": [
+      "step3/m8"
+    ],
+    "visibility": "model_visible",
+    "representation": {
+      "A_FULL": "source-visible or derivable",
+      "A_FAITHFUL_COMPACT": "exact or lossless delta",
+      "B_EFFORT_HISTORY": "excluded",
+      "C_CURRENT_STATE": "excluded"
+    },
+    "content_sha256": "451bc1030944560de6fbcef570602ae209115c1909f2bb01ff67b04a6c9a8936"
+  },
+  {
+    "item_id": "ACTION_04",
+    "section": "prior_action",
+    "source": [
+      "step4/m10"
+    ],
+    "visibility": "model_visible",
+    "representation": {
+      "A_FULL": "source-visible or derivable",
+      "A_FAITHFUL_COMPACT": "exact or lossless delta",
+      "B_EFFORT_HISTORY": "excluded",
+      "C_CURRENT_STATE": "excluded"
+    },
+    "content_sha256": "8a270cf72ab6ff1e93ee934f9d670b324525be0bca9506cda2592700c1cb62f6"
+  },
+  {
+    "item_id": "OBS_04",
+    "section": "model_visible_observation",
+    "source": [
+      "step4/m11"
+    ],
+    "visibility": "model_visible",
+    "representation": {
+      "A_FULL": "source-visible or derivable",
+      "A_FAITHFUL_COMPACT": "exact or lossless delta",
+      "B_EFFORT_HISTORY": "cited current fact only",
+      "C_CURRENT_STATE": "cited current fact only"
+    },
+    "content_sha256": "84a39e9d39cafcd65e38a5b69e952c1dc692a761c87e24a6b6b476413dc39bdc"
+  },
+  {
+    "item_id": "REASON_04",
+    "section": "visible_reasoning",
+    "source": [
+      "step4/m10"
+    ],
+    "visibility": "model_visible",
+    "representation": {
+      "A_FULL": "source-visible or derivable",
+      "A_FAITHFUL_COMPACT": "exact or lossless delta",
+      "B_EFFORT_HISTORY": "excluded",
+      "C_CURRENT_STATE": "excluded"
+    },
+    "content_sha256": "ec9d907ea657579169c677e5770c1bcd434dac2c188ae75e49ed2080b3b19562"
+  },
+  {
+    "item_id": "ACTION_05",
+    "section": "prior_action",
+    "source": [
+      "step5/m12"
+    ],
+    "visibility": "model_visible",
+    "representation": {
+      "A_FULL": "source-visible or derivable",
+      "A_FAITHFUL_COMPACT": "exact or lossless delta",
+      "B_EFFORT_HISTORY": "cited current fact only",
+      "C_CURRENT_STATE": "cited current fact only"
+    },
+    "content_sha256": "24bd8d579641c2b93b6ae003b6f6c5c50427ad77732d051073def2c3dbccfe34"
+  },
+  {
+    "item_id": "OBS_05",
+    "section": "model_visible_observation",
+    "source": [
+      "step5/m13"
+    ],
+    "visibility": "model_visible",
+    "representation": {
+      "A_FULL": "source-visible or derivable",
+      "A_FAITHFUL_COMPACT": "exact or lossless delta",
+      "B_EFFORT_HISTORY": "excluded",
+      "C_CURRENT_STATE": "excluded"
+    },
+    "content_sha256": "db2a193cc01e2fc534dc4a231b8209d891bfbdc6b3284871eaf2048cb81a4b8e"
+  },
+  {
+    "item_id": "REASON_05",
+    "section": "visible_reasoning",
+    "source": [
+      "step5/m12"
+    ],
+    "visibility": "model_visible",
+    "representation": {
+      "A_FULL": "source-visible or derivable",
+      "A_FAITHFUL_COMPACT": "exact or lossless delta",
+      "B_EFFORT_HISTORY": "excluded",
+      "C_CURRENT_STATE": "excluded"
+    },
+    "content_sha256": "a5abad9d5a9c8fbe72ae70ef0ee9508c19b9c4b75ac83676b8c67e75423d75f9"
+  },
+  {
+    "item_id": "ACTION_06",
+    "section": "prior_action",
+    "source": [
+      "step6/m14"
+    ],
+    "visibility": "model_visible",
+    "representation": {
+      "A_FULL": "source-visible or derivable",
+      "A_FAITHFUL_COMPACT": "exact or lossless delta",
+      "B_EFFORT_HISTORY": "cited current fact only",
+      "C_CURRENT_STATE": "cited current fact only"
+    },
+    "content_sha256": "63d77c3c5a053afda4c103af6be4a40d1ad0571c63e05147d0f0a68c84c983e1"
+  },
+  {
+    "item_id": "OBS_06",
+    "section": "model_visible_observation",
+    "source": [
+      "step6/m15"
+    ],
+    "visibility": "model_visible",
+    "representation": {
+      "A_FULL": "source-visible or derivable",
+      "A_FAITHFUL_COMPACT": "exact or lossless delta",
+      "B_EFFORT_HISTORY": "excluded",
+      "C_CURRENT_STATE": "excluded"
+    },
+    "content_sha256": "db2a193cc01e2fc534dc4a231b8209d891bfbdc6b3284871eaf2048cb81a4b8e"
+  },
+  {
+    "item_id": "REASON_06",
+    "section": "visible_reasoning",
+    "source": [
+      "step6/m14"
+    ],
+    "visibility": "model_visible",
+    "representation": {
+      "A_FULL": "source-visible or derivable",
+      "A_FAITHFUL_COMPACT": "exact or lossless delta",
+      "B_EFFORT_HISTORY": "excluded",
+      "C_CURRENT_STATE": "excluded"
+    },
+    "content_sha256": "e2d25a3664a0a71179db1a71ab76e5c22437e99c291b4e0433c94edc0b814329"
+  },
+  {
+    "item_id": "ACTION_07",
+    "section": "prior_action",
+    "source": [
+      "step7/m16"
+    ],
+    "visibility": "model_visible",
+    "representation": {
+      "A_FULL": "source-visible or derivable",
+      "A_FAITHFUL_COMPACT": "exact or lossless delta",
+      "B_EFFORT_HISTORY": "cited current fact only",
+      "C_CURRENT_STATE": "cited current fact only"
+    },
+    "content_sha256": "202c717e4021414b75589ee400fe01ac7212e14772fcaf2b313b5ed00f0d390f"
+  },
+  {
+    "item_id": "OBS_07",
+    "section": "model_visible_observation",
+    "source": [
+      "step7/m17"
+    ],
+    "visibility": "model_visible",
+    "representation": {
+      "A_FULL": "source-visible or derivable",
+      "A_FAITHFUL_COMPACT": "exact or lossless delta",
+      "B_EFFORT_HISTORY": "excluded",
+      "C_CURRENT_STATE": "excluded"
+    },
+    "content_sha256": "db2a193cc01e2fc534dc4a231b8209d891bfbdc6b3284871eaf2048cb81a4b8e"
+  },
+  {
+    "item_id": "REASON_07",
+    "section": "visible_reasoning",
+    "source": [
+      "step7/m16"
+    ],
+    "visibility": "model_visible",
+    "representation": {
+      "A_FULL": "source-visible or derivable",
+      "A_FAITHFUL_COMPACT": "exact or lossless delta",
+      "B_EFFORT_HISTORY": "excluded",
+      "C_CURRENT_STATE": "excluded"
+    },
+    "content_sha256": "9b4ed5fc8bc5ba41a60b880102517346aae3d5bf50489506efc852133af126fa"
+  },
+  {
+    "item_id": "ACTION_08",
+    "section": "prior_action",
+    "source": [
+      "step8/m18"
+    ],
+    "visibility": "model_visible",
+    "representation": {
+      "A_FULL": "source-visible or derivable",
+      "A_FAITHFUL_COMPACT": "exact or lossless delta",
+      "B_EFFORT_HISTORY": "excluded",
+      "C_CURRENT_STATE": "excluded"
+    },
+    "content_sha256": "5f26af7af3cf49f2b648135961c16f3f789528d405c5296f5608958d3fdec216"
+  },
+  {
+    "item_id": "OBS_08",
+    "section": "model_visible_observation",
+    "source": [
+      "step8/m19"
+    ],
+    "visibility": "model_visible",
+    "representation": {
+      "A_FULL": "source-visible or derivable",
+      "A_FAITHFUL_COMPACT": "exact or lossless delta",
+      "B_EFFORT_HISTORY": "cited current fact only",
+      "C_CURRENT_STATE": "cited current fact only"
+    },
+    "content_sha256": "eb0d2ba400ff8d5d5eb0db6d7deb0f3b3b9a988b47ee80f899967c183bda9147"
+  },
+  {
+    "item_id": "REASON_08",
+    "section": "visible_reasoning",
+    "source": [
+      "step8/m18"
+    ],
+    "visibility": "model_visible",
+    "representation": {
+      "A_FULL": "source-visible or derivable",
+      "A_FAITHFUL_COMPACT": "exact or lossless delta",
+      "B_EFFORT_HISTORY": "excluded",
+      "C_CURRENT_STATE": "excluded"
+    },
+    "content_sha256": "ed967e0eeb93d3178d667edadb6fdab8d52a62a4cc2e28d78018316a01841a79"
+  },
+  {
+    "item_id": "ACTION_09",
+    "section": "prior_action",
+    "source": [
+      "step9/m20"
+    ],
+    "visibility": "model_visible",
+    "representation": {
+      "A_FULL": "source-visible or derivable",
+      "A_FAITHFUL_COMPACT": "exact or lossless delta",
+      "B_EFFORT_HISTORY": "excluded",
+      "C_CURRENT_STATE": "excluded"
+    },
+    "content_sha256": "f52f6b92c1ee9dc470054a9874a3f14033758d54b4e4770950bca563ee7f690f"
+  },
+  {
+    "item_id": "OBS_09",
+    "section": "model_visible_observation",
+    "source": [
+      "step9/m21"
+    ],
+    "visibility": "model_visible",
+    "representation": {
+      "A_FULL": "source-visible or derivable",
+      "A_FAITHFUL_COMPACT": "exact or lossless delta",
+      "B_EFFORT_HISTORY": "excluded",
+      "C_CURRENT_STATE": "excluded"
+    },
+    "content_sha256": "374de7a016ddeba90ae1b70d7986fc6ed7ded87cc3ba4e6b4ee875c0a098b96f"
+  },
+  {
+    "item_id": "REASON_09",
+    "section": "visible_reasoning",
+    "source": [
+      "step9/m20"
+    ],
+    "visibility": "model_visible",
+    "representation": {
+      "A_FULL": "source-visible or derivable",
+      "A_FAITHFUL_COMPACT": "exact or lossless delta",
+      "B_EFFORT_HISTORY": "excluded",
+      "C_CURRENT_STATE": "excluded"
+    },
+    "content_sha256": "a86a0b6f8831807877da26ef71fa3b4cb346886b15d14ce163c9959da8bd0856"
+  },
+  {
+    "item_id": "ACTION_10",
+    "section": "prior_action",
+    "source": [
+      "step10/m22"
+    ],
+    "visibility": "model_visible",
+    "representation": {
+      "A_FULL": "source-visible or derivable",
+      "A_FAITHFUL_COMPACT": "exact or lossless delta",
+      "B_EFFORT_HISTORY": "excluded",
+      "C_CURRENT_STATE": "excluded"
+    },
+    "content_sha256": "74721b51a29fffcac73a9ae0a0cb88c2c8fc650741380ef412abb889ef198159"
+  },
+  {
+    "item_id": "OBS_10",
+    "section": "model_visible_observation",
+    "source": [
+      "step10/m23"
+    ],
+    "visibility": "model_visible",
+    "representation": {
+      "A_FULL": "source-visible or derivable",
+      "A_FAITHFUL_COMPACT": "exact or lossless delta",
+      "B_EFFORT_HISTORY": "excluded",
+      "C_CURRENT_STATE": "excluded"
+    },
+    "content_sha256": "17096c0d17230bb5c641f2148977fea4595c7d6920d14653630883c51494d777"
+  },
+  {
+    "item_id": "REASON_10",
+    "section": "visible_reasoning",
+    "source": [
+      "step10/m22"
+    ],
+    "visibility": "model_visible",
+    "representation": {
+      "A_FULL": "source-visible or derivable",
+      "A_FAITHFUL_COMPACT": "exact or lossless delta",
+      "B_EFFORT_HISTORY": "cited current fact only",
+      "C_CURRENT_STATE": "cited current fact only"
+    },
+    "content_sha256": "6ade17acdcd93e461ede9a26fc5c793fc9e897aa879cd4c7211b60c699b5b3c0"
+  },
+  {
+    "item_id": "ACTION_11",
+    "section": "prior_action",
+    "source": [
+      "step11/m24"
+    ],
+    "visibility": "model_visible",
+    "representation": {
+      "A_FULL": "source-visible or derivable",
+      "A_FAITHFUL_COMPACT": "exact or lossless delta",
+      "B_EFFORT_HISTORY": "excluded",
+      "C_CURRENT_STATE": "excluded"
+    },
+    "content_sha256": "70babd547fa5be7039b957dc249501a4c29740f6db46b5b28d4f69289f0c6e59"
+  },
+  {
+    "item_id": "OBS_11",
+    "section": "model_visible_observation",
+    "source": [
+      "step11/m25"
+    ],
+    "visibility": "model_visible",
+    "representation": {
+      "A_FULL": "source-visible or derivable",
+      "A_FAITHFUL_COMPACT": "exact or lossless delta",
+      "B_EFFORT_HISTORY": "excluded",
+      "C_CURRENT_STATE": "excluded"
+    },
+    "content_sha256": "db2a193cc01e2fc534dc4a231b8209d891bfbdc6b3284871eaf2048cb81a4b8e"
+  },
+  {
+    "item_id": "REASON_11",
+    "section": "visible_reasoning",
+    "source": [
+      "step11/m24"
+    ],
+    "visibility": "model_visible",
+    "representation": {
+      "A_FULL": "source-visible or derivable",
+      "A_FAITHFUL_COMPACT": "exact or lossless delta",
+      "B_EFFORT_HISTORY": "excluded",
+      "C_CURRENT_STATE": "excluded"
+    },
+    "content_sha256": "4f4f313db527ebca9058ec55466466a7e454b2d2b37f6b39ae42b5d95568a10f"
+  },
+  {
+    "item_id": "ACTION_12",
+    "section": "prior_action",
+    "source": [
+      "step12/m26"
+    ],
+    "visibility": "model_visible",
+    "representation": {
+      "A_FULL": "source-visible or derivable",
+      "A_FAITHFUL_COMPACT": "exact or lossless delta",
+      "B_EFFORT_HISTORY": "excluded",
+      "C_CURRENT_STATE": "excluded"
+    },
+    "content_sha256": "9d63484d88fd9fd1f9f66c7661ff0db337b6d07fb7b268a1ddf8dbcffe15c859"
+  },
+  {
+    "item_id": "OBS_12",
+    "section": "model_visible_observation",
+    "source": [
+      "step12/m27"
+    ],
+    "visibility": "model_visible",
+    "representation": {
+      "A_FULL": "source-visible or derivable",
+      "A_FAITHFUL_COMPACT": "exact or lossless delta",
+      "B_EFFORT_HISTORY": "excluded",
+      "C_CURRENT_STATE": "excluded"
+    },
+    "content_sha256": "c8540f1e6ae89435c081e3dd8050fd07b1eb301ab34d4a8eeb7be77486836af3"
+  },
+  {
+    "item_id": "REASON_12",
+    "section": "visible_reasoning",
+    "source": [
+      "step12/m26"
+    ],
+    "visibility": "model_visible",
+    "representation": {
+      "A_FULL": "source-visible or derivable",
+      "A_FAITHFUL_COMPACT": "exact or lossless delta",
+      "B_EFFORT_HISTORY": "excluded",
+      "C_CURRENT_STATE": "excluded"
+    },
+    "content_sha256": "c2abadcc61ecda2e01ce06843ffde6162c3e14506e5525e0d0bde1523f99f34c"
+  },
+  {
+    "item_id": "ACTION_13",
+    "section": "prior_action",
+    "source": [
+      "step13/m28"
+    ],
+    "visibility": "model_visible",
+    "representation": {
+      "A_FULL": "source-visible or derivable",
+      "A_FAITHFUL_COMPACT": "exact or lossless delta",
+      "B_EFFORT_HISTORY": "excluded",
+      "C_CURRENT_STATE": "excluded"
+    },
+    "content_sha256": "e4294ca8c0c996e202e007028e35ad5e19dd9dda4959daa4acf3e41bf55931b4"
+  },
+  {
+    "item_id": "OBS_13",
+    "section": "model_visible_observation",
+    "source": [
+      "step13/m29"
+    ],
+    "visibility": "model_visible",
+    "representation": {
+      "A_FULL": "source-visible or derivable",
+      "A_FAITHFUL_COMPACT": "exact or lossless delta",
+      "B_EFFORT_HISTORY": "excluded",
+      "C_CURRENT_STATE": "excluded"
+    },
+    "content_sha256": "db2a193cc01e2fc534dc4a231b8209d891bfbdc6b3284871eaf2048cb81a4b8e"
+  },
+  {
+    "item_id": "REASON_13",
+    "section": "visible_reasoning",
+    "source": [
+      "step13/m28"
+    ],
+    "visibility": "model_visible",
+    "representation": {
+      "A_FULL": "source-visible or derivable",
+      "A_FAITHFUL_COMPACT": "exact or lossless delta",
+      "B_EFFORT_HISTORY": "excluded",
+      "C_CURRENT_STATE": "excluded"
+    },
+    "content_sha256": "ceea2503bb7f8e202c62edc6e9cfbe40593c303211f5b3ff68fe45f41e3d731d"
+  },
+  {
+    "item_id": "ACTION_14",
+    "section": "prior_action",
+    "source": [
+      "step14/m30"
+    ],
+    "visibility": "model_visible",
+    "representation": {
+      "A_FULL": "source-visible or derivable",
+      "A_FAITHFUL_COMPACT": "exact or lossless delta",
+      "B_EFFORT_HISTORY": "excluded",
+      "C_CURRENT_STATE": "excluded"
+    },
+    "content_sha256": "677214676e3f84b829772149ff5e395f5d01669d6e8fff68b96e1a23ad500ea1"
+  },
+  {
+    "item_id": "OBS_14",
+    "section": "model_visible_observation",
+    "source": [
+      "step14/m31"
+    ],
+    "visibility": "model_visible",
+    "representation": {
+      "A_FULL": "source-visible or derivable",
+      "A_FAITHFUL_COMPACT": "exact or lossless delta",
+      "B_EFFORT_HISTORY": "excluded",
+      "C_CURRENT_STATE": "excluded"
+    },
+    "content_sha256": "cbb1017848de2a74ba5dd354ee2908d1d065cf24902b82e714ad51772d8ccd90"
+  },
+  {
+    "item_id": "REASON_14",
+    "section": "visible_reasoning",
+    "source": [
+      "step14/m30"
+    ],
+    "visibility": "model_visible",
+    "representation": {
+      "A_FULL": "source-visible or derivable",
+      "A_FAITHFUL_COMPACT": "exact or lossless delta",
+      "B_EFFORT_HISTORY": "excluded",
+      "C_CURRENT_STATE": "excluded"
+    },
+    "content_sha256": "2ff0c66175b033961cb53598861f7f47bf6fda7d7e29411b57ab14cbb22f1660"
+  },
+  {
+    "item_id": "ACTION_15",
+    "section": "prior_action",
+    "source": [
+      "step15/m32"
+    ],
+    "visibility": "model_visible",
+    "representation": {
+      "A_FULL": "source-visible or derivable",
+      "A_FAITHFUL_COMPACT": "exact or lossless delta",
+      "B_EFFORT_HISTORY": "excluded",
+      "C_CURRENT_STATE": "excluded"
+    },
+    "content_sha256": "565792f3ad47ed43d1d85d8f4a0834518ba846529f9ef756ec3b3e4cd75daae3"
+  },
+  {
+    "item_id": "OBS_15",
+    "section": "model_visible_observation",
+    "source": [
+      "step15/m33"
+    ],
+    "visibility": "model_visible",
+    "representation": {
+      "A_FULL": "source-visible or derivable",
+      "A_FAITHFUL_COMPACT": "exact or lossless delta",
+      "B_EFFORT_HISTORY": "excluded",
+      "C_CURRENT_STATE": "excluded"
+    },
+    "content_sha256": "db2a193cc01e2fc534dc4a231b8209d891bfbdc6b3284871eaf2048cb81a4b8e"
+  },
+  {
+    "item_id": "REASON_15",
+    "section": "visible_reasoning",
+    "source": [
+      "step15/m32"
+    ],
+    "visibility": "model_visible",
+    "representation": {
+      "A_FULL": "source-visible or derivable",
+      "A_FAITHFUL_COMPACT": "exact or lossless delta",
+      "B_EFFORT_HISTORY": "excluded",
+      "C_CURRENT_STATE": "excluded"
+    },
+    "content_sha256": "b7a312aa76281cc1cd16ffe18f261348b155cf7dea709494c24dcc1cfcfafa03"
+  },
+  {
+    "item_id": "ACTION_16",
+    "section": "prior_action",
+    "source": [
+      "step16/m34"
+    ],
+    "visibility": "model_visible",
+    "representation": {
+      "A_FULL": "source-visible or derivable",
+      "A_FAITHFUL_COMPACT": "exact or lossless delta",
+      "B_EFFORT_HISTORY": "excluded",
+      "C_CURRENT_STATE": "excluded"
+    },
+    "content_sha256": "ecc002a97243136a13f8422c1cc8a9dbb2917ae973795953ce3aeb6b0172ed9b"
+  },
+  {
+    "item_id": "OBS_16",
+    "section": "model_visible_observation",
+    "source": [
+      "step16/m35"
+    ],
+    "visibility": "model_visible",
+    "representation": {
+      "A_FULL": "source-visible or derivable",
+      "A_FAITHFUL_COMPACT": "exact or lossless delta",
+      "B_EFFORT_HISTORY": "excluded",
+      "C_CURRENT_STATE": "excluded"
+    },
+    "content_sha256": "d811feecff0b1c1efd3923063110a82439d61ff2e794965a204f0dfe2a3cecdf"
+  },
+  {
+    "item_id": "REASON_16",
+    "section": "visible_reasoning",
+    "source": [
+      "step16/m34"
+    ],
+    "visibility": "model_visible",
+    "representation": {
+      "A_FULL": "source-visible or derivable",
+      "A_FAITHFUL_COMPACT": "exact or lossless delta",
+      "B_EFFORT_HISTORY": "excluded",
+      "C_CURRENT_STATE": "excluded"
+    },
+    "content_sha256": "c5c10ed52a99de2dbf959440db4ee33c1be2b2db8464d13cc843019a720220cb"
+  },
+  {
+    "item_id": "ACTION_17",
+    "section": "prior_action",
+    "source": [
+      "step17/m36"
+    ],
+    "visibility": "model_visible",
+    "representation": {
+      "A_FULL": "source-visible or derivable",
+      "A_FAITHFUL_COMPACT": "exact or lossless delta",
+      "B_EFFORT_HISTORY": "excluded",
+      "C_CURRENT_STATE": "excluded"
+    },
+    "content_sha256": "a94fd98f9203f463011816bc70950a9d87d6c26963e7a69775a8401389bcb40a"
+  },
+  {
+    "item_id": "OBS_17",
+    "section": "model_visible_observation",
+    "source": [
+      "step17/m37"
+    ],
+    "visibility": "model_visible",
+    "representation": {
+      "A_FULL": "source-visible or derivable",
+      "A_FAITHFUL_COMPACT": "exact or lossless delta",
+      "B_EFFORT_HISTORY": "excluded",
+      "C_CURRENT_STATE": "excluded"
+    },
+    "content_sha256": "db2a193cc01e2fc534dc4a231b8209d891bfbdc6b3284871eaf2048cb81a4b8e"
+  },
+  {
+    "item_id": "REASON_17",
+    "section": "visible_reasoning",
+    "source": [
+      "step17/m36"
+    ],
+    "visibility": "model_visible",
+    "representation": {
+      "A_FULL": "source-visible or derivable",
+      "A_FAITHFUL_COMPACT": "exact or lossless delta",
+      "B_EFFORT_HISTORY": "excluded",
+      "C_CURRENT_STATE": "excluded"
+    },
+    "content_sha256": "015a0dd58a89f9dc6f129d22d45f3b93221b46d288d35dc5045ce89d55c945f7"
+  },
+  {
+    "item_id": "ACTION_18",
+    "section": "prior_action",
+    "source": [
+      "step18/m38"
+    ],
+    "visibility": "model_visible",
+    "representation": {
+      "A_FULL": "source-visible or derivable",
+      "A_FAITHFUL_COMPACT": "exact or lossless delta",
+      "B_EFFORT_HISTORY": "excluded",
+      "C_CURRENT_STATE": "excluded"
+    },
+    "content_sha256": "14eab13b7195913a352af8f51b0b2ce91790974513aed3873a5ddace5282a827"
+  },
+  {
+    "item_id": "OBS_18",
+    "section": "model_visible_observation",
+    "source": [
+      "step18/m39"
+    ],
+    "visibility": "model_visible",
+    "representation": {
+      "A_FULL": "source-visible or derivable",
+      "A_FAITHFUL_COMPACT": "exact or lossless delta",
+      "B_EFFORT_HISTORY": "excluded",
+      "C_CURRENT_STATE": "excluded"
+    },
+    "content_sha256": "760b5878cdc976521c9b2fbc8e8f6134ec1cde1d56761a9b5ad4da439548b4d5"
+  },
+  {
+    "item_id": "REASON_18",
+    "section": "visible_reasoning",
+    "source": [
+      "step18/m38"
+    ],
+    "visibility": "model_visible",
+    "representation": {
+      "A_FULL": "source-visible or derivable",
+      "A_FAITHFUL_COMPACT": "exact or lossless delta",
+      "B_EFFORT_HISTORY": "excluded",
+      "C_CURRENT_STATE": "excluded"
+    },
+    "content_sha256": "516b9f52ca8c7b7e29e5a5a0e14c1362a66552fc2ea829d9ba7d7ca89e4b5328"
+  },
+  {
+    "item_id": "ACTION_19",
+    "section": "prior_action",
+    "source": [
+      "step19/m40"
+    ],
+    "visibility": "model_visible",
+    "representation": {
+      "A_FULL": "source-visible or derivable",
+      "A_FAITHFUL_COMPACT": "exact or lossless delta",
+      "B_EFFORT_HISTORY": "excluded",
+      "C_CURRENT_STATE": "excluded"
+    },
+    "content_sha256": "a0f31ff12dd81b01510d64f03f92a00ca516386cb2bfe898bf31725377e61b10"
+  },
+  {
+    "item_id": "OBS_19",
+    "section": "model_visible_observation",
+    "source": [
+      "step19/m41"
+    ],
+    "visibility": "model_visible",
+    "representation": {
+      "A_FULL": "source-visible or derivable",
+      "A_FAITHFUL_COMPACT": "exact or lossless delta",
+      "B_EFFORT_HISTORY": "excluded",
+      "C_CURRENT_STATE": "excluded"
+    },
+    "content_sha256": "db2a193cc01e2fc534dc4a231b8209d891bfbdc6b3284871eaf2048cb81a4b8e"
+  },
+  {
+    "item_id": "REASON_19",
+    "section": "visible_reasoning",
+    "source": [
+      "step19/m40"
+    ],
+    "visibility": "model_visible",
+    "representation": {
+      "A_FULL": "source-visible or derivable",
+      "A_FAITHFUL_COMPACT": "exact or lossless delta",
+      "B_EFFORT_HISTORY": "excluded",
+      "C_CURRENT_STATE": "excluded"
+    },
+    "content_sha256": "a81d3dd13d912c0e4fb8d0503026e509545fc3e0cc4f82ebc7eb4d2618e30c43"
+  },
+  {
+    "item_id": "ACTION_20",
+    "section": "prior_action",
+    "source": [
+      "step20/m42"
+    ],
+    "visibility": "model_visible",
+    "representation": {
+      "A_FULL": "source-visible or derivable",
+      "A_FAITHFUL_COMPACT": "exact or lossless delta",
+      "B_EFFORT_HISTORY": "excluded",
+      "C_CURRENT_STATE": "excluded"
+    },
+    "content_sha256": "dbf756b52b28f59159ca3361cda2e9c4e2c8c441a7f61369c3bce33aa4c099ad"
+  },
+  {
+    "item_id": "OBS_20",
+    "section": "model_visible_observation",
+    "source": [
+      "step20/m43"
+    ],
+    "visibility": "model_visible",
+    "representation": {
+      "A_FULL": "source-visible or derivable",
+      "A_FAITHFUL_COMPACT": "exact or lossless delta",
+      "B_EFFORT_HISTORY": "excluded",
+      "C_CURRENT_STATE": "excluded"
+    },
+    "content_sha256": "af7f54c7a7d09d05dc2668280abf488f44189e8ef11f1721632ecb35f671c49b"
+  },
+  {
+    "item_id": "REASON_20",
+    "section": "visible_reasoning",
+    "source": [
+      "step20/m42"
+    ],
+    "visibility": "model_visible",
+    "representation": {
+      "A_FULL": "source-visible or derivable",
+      "A_FAITHFUL_COMPACT": "exact or lossless delta",
+      "B_EFFORT_HISTORY": "excluded",
+      "C_CURRENT_STATE": "excluded"
+    },
+    "content_sha256": "fd4cf82b31fc36a9cf3c9b941fa6364dd5b650e3aa85c18bb5799057036a5a3f"
+  },
+  {
+    "item_id": "ACTION_21",
+    "section": "prior_action",
+    "source": [
+      "step21/m44"
+    ],
+    "visibility": "model_visible",
+    "representation": {
+      "A_FULL": "source-visible or derivable",
+      "A_FAITHFUL_COMPACT": "exact or lossless delta",
+      "B_EFFORT_HISTORY": "excluded",
+      "C_CURRENT_STATE": "excluded"
+    },
+    "content_sha256": "669db07bb8d1050a8d8f786a9e2d4cd59f0a2e7219fc7f402dd1ec63f2f5ef54"
+  },
+  {
+    "item_id": "OBS_21",
+    "section": "model_visible_observation",
+    "source": [
+      "step21/m45"
+    ],
+    "visibility": "model_visible",
+    "representation": {
+      "A_FULL": "source-visible or derivable",
+      "A_FAITHFUL_COMPACT": "exact or lossless delta",
+      "B_EFFORT_HISTORY": "excluded",
+      "C_CURRENT_STATE": "excluded"
+    },
+    "content_sha256": "db2a193cc01e2fc534dc4a231b8209d891bfbdc6b3284871eaf2048cb81a4b8e"
+  },
+  {
+    "item_id": "REASON_21",
+    "section": "visible_reasoning",
+    "source": [
+      "step21/m44"
+    ],
+    "visibility": "model_visible",
+    "representation": {
+      "A_FULL": "source-visible or derivable",
+      "A_FAITHFUL_COMPACT": "exact or lossless delta",
+      "B_EFFORT_HISTORY": "excluded",
+      "C_CURRENT_STATE": "excluded"
+    },
+    "content_sha256": "45c5c2cc165f6b33744ef8e105f61f4fbaff7262264a76268b92b46c2c36ed37"
+  },
+  {
+    "item_id": "ACTION_22",
+    "section": "prior_action",
+    "source": [
+      "step22/m46"
+    ],
+    "visibility": "model_visible",
+    "representation": {
+      "A_FULL": "source-visible or derivable",
+      "A_FAITHFUL_COMPACT": "exact or lossless delta",
+      "B_EFFORT_HISTORY": "excluded",
+      "C_CURRENT_STATE": "excluded"
+    },
+    "content_sha256": "be45aa229a2d927f70721dbb8bedf62000a5672a69c90e09107f4b0478c46dda"
+  },
+  {
+    "item_id": "OBS_22",
+    "section": "model_visible_observation",
+    "source": [
+      "step22/m47"
+    ],
+    "visibility": "model_visible",
+    "representation": {
+      "A_FULL": "source-visible or derivable",
+      "A_FAITHFUL_COMPACT": "exact or lossless delta",
+      "B_EFFORT_HISTORY": "excluded",
+      "C_CURRENT_STATE": "excluded"
+    },
+    "content_sha256": "83dd18d47df54f20095b772eafc4f5cb28957a38bb897655a4e87d3f3c801068"
+  },
+  {
+    "item_id": "REASON_22",
+    "section": "visible_reasoning",
+    "source": [
+      "step22/m46"
+    ],
+    "visibility": "model_visible",
+    "representation": {
+      "A_FULL": "source-visible or derivable",
+      "A_FAITHFUL_COMPACT": "exact or lossless delta",
+      "B_EFFORT_HISTORY": "excluded",
+      "C_CURRENT_STATE": "excluded"
+    },
+    "content_sha256": "94008392d6a0fe209c9832dd7a417ae5e69283de1d0d34876c27b6e7e747b84b"
+  },
+  {
+    "item_id": "ACTION_23",
+    "section": "prior_action",
+    "source": [
+      "step23/m48"
+    ],
+    "visibility": "model_visible",
+    "representation": {
+      "A_FULL": "source-visible or derivable",
+      "A_FAITHFUL_COMPACT": "exact or lossless delta",
+      "B_EFFORT_HISTORY": "excluded",
+      "C_CURRENT_STATE": "excluded"
+    },
+    "content_sha256": "0eba05517a29dca993bdc8052c6701f0f69083d402579e77abe9540d87f69c2d"
+  },
+  {
+    "item_id": "OBS_23",
+    "section": "model_visible_observation",
+    "source": [
+      "step23/m49"
+    ],
+    "visibility": "model_visible",
+    "representation": {
+      "A_FULL": "source-visible or derivable",
+      "A_FAITHFUL_COMPACT": "exact or lossless delta",
+      "B_EFFORT_HISTORY": "excluded",
+      "C_CURRENT_STATE": "excluded"
+    },
+    "content_sha256": "db2a193cc01e2fc534dc4a231b8209d891bfbdc6b3284871eaf2048cb81a4b8e"
+  },
+  {
+    "item_id": "REASON_23",
+    "section": "visible_reasoning",
+    "source": [
+      "step23/m48"
+    ],
+    "visibility": "model_visible",
+    "representation": {
+      "A_FULL": "source-visible or derivable",
+      "A_FAITHFUL_COMPACT": "exact or lossless delta",
+      "B_EFFORT_HISTORY": "excluded",
+      "C_CURRENT_STATE": "excluded"
+    },
+    "content_sha256": "88245877d10f85d4ac51e9e99c517f615adea134a311ab52ea6ee5632e8b6418"
+  },
+  {
+    "item_id": "ACTION_24",
+    "section": "prior_action",
+    "source": [
+      "step24/m50"
+    ],
+    "visibility": "model_visible",
+    "representation": {
+      "A_FULL": "source-visible or derivable",
+      "A_FAITHFUL_COMPACT": "exact or lossless delta",
+      "B_EFFORT_HISTORY": "excluded",
+      "C_CURRENT_STATE": "excluded"
+    },
+    "content_sha256": "93283fc30c5d9ae2c7e98ad7bb9761d8b6b90c368de0352bd4e2cf3a6c02ca53"
+  },
+  {
+    "item_id": "OBS_24",
+    "section": "model_visible_observation",
+    "source": [
+      "step24/m51"
+    ],
+    "visibility": "model_visible",
+    "representation": {
+      "A_FULL": "source-visible or derivable",
+      "A_FAITHFUL_COMPACT": "exact or lossless delta",
+      "B_EFFORT_HISTORY": "excluded",
+      "C_CURRENT_STATE": "excluded"
+    },
+    "content_sha256": "be561ef9d3da52f17b8ef28f0c3e0aced77c61ff355d594ca21a1cdbe743b59b"
+  },
+  {
+    "item_id": "REASON_24",
+    "section": "visible_reasoning",
+    "source": [
+      "step24/m50"
+    ],
+    "visibility": "model_visible",
+    "representation": {
+      "A_FULL": "source-visible or derivable",
+      "A_FAITHFUL_COMPACT": "exact or lossless delta",
+      "B_EFFORT_HISTORY": "excluded",
+      "C_CURRENT_STATE": "excluded"
+    },
+    "content_sha256": "5aa239e944666033c6a3845e1cd4d239728ff289d0cfd334f05eb35f509f2a39"
+  },
+  {
+    "item_id": "ACTION_25",
+    "section": "prior_action",
+    "source": [
+      "step25/m52"
+    ],
+    "visibility": "model_visible",
+    "representation": {
+      "A_FULL": "source-visible or derivable",
+      "A_FAITHFUL_COMPACT": "exact or lossless delta",
+      "B_EFFORT_HISTORY": "excluded",
+      "C_CURRENT_STATE": "excluded"
+    },
+    "content_sha256": "e164774a5c321d0f1e4de1b9c5bdbca8e6eb5ff3bc9403662c0e619f292f002d"
+  },
+  {
+    "item_id": "OBS_25",
+    "section": "model_visible_observation",
+    "source": [
+      "step25/m53"
+    ],
+    "visibility": "model_visible",
+    "representation": {
+      "A_FULL": "source-visible or derivable",
+      "A_FAITHFUL_COMPACT": "exact or lossless delta",
+      "B_EFFORT_HISTORY": "excluded",
+      "C_CURRENT_STATE": "excluded"
+    },
+    "content_sha256": "db2a193cc01e2fc534dc4a231b8209d891bfbdc6b3284871eaf2048cb81a4b8e"
+  },
+  {
+    "item_id": "REASON_25",
+    "section": "visible_reasoning",
+    "source": [
+      "step25/m52"
+    ],
+    "visibility": "model_visible",
+    "representation": {
+      "A_FULL": "source-visible or derivable",
+      "A_FAITHFUL_COMPACT": "exact or lossless delta",
+      "B_EFFORT_HISTORY": "excluded",
+      "C_CURRENT_STATE": "excluded"
+    },
+    "content_sha256": "5d9f0c93e129872c9d8ed8f57dabaa6bfdaafc666ed7e250a42b92ce54afbdf2"
+  },
+  {
+    "item_id": "ACTION_26",
+    "section": "prior_action",
+    "source": [
+      "step26/m54"
+    ],
+    "visibility": "model_visible",
+    "representation": {
+      "A_FULL": "source-visible or derivable",
+      "A_FAITHFUL_COMPACT": "exact or lossless delta",
+      "B_EFFORT_HISTORY": "excluded",
+      "C_CURRENT_STATE": "excluded"
+    },
+    "content_sha256": "7512e52328fb101d382e24d80c1b3e71e6371214d31b07b249c0e883592f1578"
+  },
+  {
+    "item_id": "OBS_26",
+    "section": "model_visible_observation",
+    "source": [
+      "step26/m55"
+    ],
+    "visibility": "model_visible",
+    "representation": {
+      "A_FULL": "source-visible or derivable",
+      "A_FAITHFUL_COMPACT": "exact or lossless delta",
+      "B_EFFORT_HISTORY": "excluded",
+      "C_CURRENT_STATE": "excluded"
+    },
+    "content_sha256": "dbfca5976847c76300fc49773848ce01997d46688be72f80b036d09fa90190a4"
+  },
+  {
+    "item_id": "REASON_26",
+    "section": "visible_reasoning",
+    "source": [
+      "step26/m54"
+    ],
+    "visibility": "model_visible",
+    "representation": {
+      "A_FULL": "source-visible or derivable",
+      "A_FAITHFUL_COMPACT": "exact or lossless delta",
+      "B_EFFORT_HISTORY": "excluded",
+      "C_CURRENT_STATE": "excluded"
+    },
+    "content_sha256": "74101e4398a69030118ca5f7088f81379a7d4ff1735463a105c1ab629baf5c53"
+  },
+  {
+    "item_id": "ACTION_27",
+    "section": "prior_action",
+    "source": [
+      "step27/m56"
+    ],
+    "visibility": "model_visible",
+    "representation": {
+      "A_FULL": "source-visible or derivable",
+      "A_FAITHFUL_COMPACT": "exact or lossless delta",
+      "B_EFFORT_HISTORY": "excluded",
+      "C_CURRENT_STATE": "excluded"
+    },
+    "content_sha256": "70bda4274c5e73e45fb9bbfc449fc11a1a1d8bbdd80402070d9e9fe11cc60987"
+  },
+  {
+    "item_id": "OBS_27",
+    "section": "model_visible_observation",
+    "source": [
+      "step27/m57"
+    ],
+    "visibility": "model_visible",
+    "representation": {
+      "A_FULL": "source-visible or derivable",
+      "A_FAITHFUL_COMPACT": "exact or lossless delta",
+      "B_EFFORT_HISTORY": "excluded",
+      "C_CURRENT_STATE": "excluded"
+    },
+    "content_sha256": "db2a193cc01e2fc534dc4a231b8209d891bfbdc6b3284871eaf2048cb81a4b8e"
+  },
+  {
+    "item_id": "REASON_27",
+    "section": "visible_reasoning",
+    "source": [
+      "step27/m56"
+    ],
+    "visibility": "model_visible",
+    "representation": {
+      "A_FULL": "source-visible or derivable",
+      "A_FAITHFUL_COMPACT": "exact or lossless delta",
+      "B_EFFORT_HISTORY": "excluded",
+      "C_CURRENT_STATE": "excluded"
+    },
+    "content_sha256": "985172bebae2af51ed12ae5e1c6292829439e9dbdfb2896881d6493655a9f8a2"
+  },
+  {
+    "item_id": "ACTION_28",
+    "section": "prior_action",
+    "source": [
+      "step28/m58"
+    ],
+    "visibility": "model_visible",
+    "representation": {
+      "A_FULL": "source-visible or derivable",
+      "A_FAITHFUL_COMPACT": "exact or lossless delta",
+      "B_EFFORT_HISTORY": "excluded",
+      "C_CURRENT_STATE": "excluded"
+    },
+    "content_sha256": "52389255c80970fcfdb60d3b28cf0da7316b4547ed54a96e6ed0898e61bc317a"
+  },
+  {
+    "item_id": "OBS_28",
+    "section": "model_visible_observation",
+    "source": [
+      "step28/m59"
+    ],
+    "visibility": "model_visible",
+    "representation": {
+      "A_FULL": "source-visible or derivable",
+      "A_FAITHFUL_COMPACT": "exact or lossless delta",
+      "B_EFFORT_HISTORY": "excluded",
+      "C_CURRENT_STATE": "excluded"
+    },
+    "content_sha256": "0cd94aaf6dc7a979b11965c44de107ae67981d1457e444d6ea995c39219d7a59"
+  },
+  {
+    "item_id": "REASON_28",
+    "section": "visible_reasoning",
+    "source": [
+      "step28/m58"
+    ],
+    "visibility": "model_visible",
+    "representation": {
+      "A_FULL": "source-visible or derivable",
+      "A_FAITHFUL_COMPACT": "exact or lossless delta",
+      "B_EFFORT_HISTORY": "excluded",
+      "C_CURRENT_STATE": "excluded"
+    },
+    "content_sha256": "35ef8bb3d6f0229d9ae500706946cce8742c2ad68e61e9fe85c9f50aaee67a99"
+  },
+  {
+    "item_id": "ACTION_29",
+    "section": "prior_action",
+    "source": [
+      "step29/m60"
+    ],
+    "visibility": "model_visible",
+    "representation": {
+      "A_FULL": "source-visible or derivable",
+      "A_FAITHFUL_COMPACT": "exact or lossless delta",
+      "B_EFFORT_HISTORY": "excluded",
+      "C_CURRENT_STATE": "excluded"
+    },
+    "content_sha256": "0b6893410d397dbb47125cacf692a9c93a5fe32cd30ff231b640cf85ce5d06ae"
+  },
+  {
+    "item_id": "OBS_29",
+    "section": "model_visible_observation",
+    "source": [
+      "step29/m61"
+    ],
+    "visibility": "model_visible",
+    "representation": {
+      "A_FULL": "source-visible or derivable",
+      "A_FAITHFUL_COMPACT": "exact or lossless delta",
+      "B_EFFORT_HISTORY": "excluded",
+      "C_CURRENT_STATE": "excluded"
+    },
+    "content_sha256": "db2a193cc01e2fc534dc4a231b8209d891bfbdc6b3284871eaf2048cb81a4b8e"
+  },
+  {
+    "item_id": "REASON_29",
+    "section": "visible_reasoning",
+    "source": [
+      "step29/m60"
+    ],
+    "visibility": "model_visible",
+    "representation": {
+      "A_FULL": "source-visible or derivable",
+      "A_FAITHFUL_COMPACT": "exact or lossless delta",
+      "B_EFFORT_HISTORY": "excluded",
+      "C_CURRENT_STATE": "excluded"
+    },
+    "content_sha256": "37b78a58abfb7c3abc23584a77b73a9b7521480d82316be4833446a2d0cdd328"
+  },
+  {
+    "item_id": "ACTION_30",
+    "section": "prior_action",
+    "source": [
+      "step30/m62"
+    ],
+    "visibility": "model_visible",
+    "representation": {
+      "A_FULL": "source-visible or derivable",
+      "A_FAITHFUL_COMPACT": "exact or lossless delta",
+      "B_EFFORT_HISTORY": "excluded",
+      "C_CURRENT_STATE": "excluded"
+    },
+    "content_sha256": "11d33a7f71d9384a53dfe20c38c4702e5dcd988c89dca5e9ca9d520d5c5c47d4"
+  },
+  {
+    "item_id": "OBS_30",
+    "section": "model_visible_observation",
+    "source": [
+      "step30/m63"
+    ],
+    "visibility": "model_visible",
+    "representation": {
+      "A_FULL": "source-visible or derivable",
+      "A_FAITHFUL_COMPACT": "exact or lossless delta",
+      "B_EFFORT_HISTORY": "excluded",
+      "C_CURRENT_STATE": "excluded"
+    },
+    "content_sha256": "32f97f1161dadb86c60a05c13fe6acde1831cc67d0f78cbd931a1c3822ffc86c"
+  },
+  {
+    "item_id": "REASON_30",
+    "section": "visible_reasoning",
+    "source": [
+      "step30/m62"
+    ],
+    "visibility": "model_visible",
+    "representation": {
+      "A_FULL": "source-visible or derivable",
+      "A_FAITHFUL_COMPACT": "exact or lossless delta",
+      "B_EFFORT_HISTORY": "excluded",
+      "C_CURRENT_STATE": "excluded"
+    },
+    "content_sha256": "efc56ba9ff46b10d1eb9f03db971f2938dc31021885e66e16f12f8e1e12a464c"
+  },
+  {
+    "item_id": "ACTION_31",
+    "section": "prior_action",
+    "source": [
+      "step31/m64"
+    ],
+    "visibility": "model_visible",
+    "representation": {
+      "A_FULL": "source-visible or derivable",
+      "A_FAITHFUL_COMPACT": "exact or lossless delta",
+      "B_EFFORT_HISTORY": "excluded",
+      "C_CURRENT_STATE": "excluded"
+    },
+    "content_sha256": "efdbaa1365173e74084248c72d85cd198adc3f4baab9a224bb196344fb0a5c8c"
+  },
+  {
+    "item_id": "OBS_31",
+    "section": "model_visible_observation",
+    "source": [
+      "step31/m65"
+    ],
+    "visibility": "model_visible",
+    "representation": {
+      "A_FULL": "source-visible or derivable",
+      "A_FAITHFUL_COMPACT": "exact or lossless delta",
+      "B_EFFORT_HISTORY": "excluded",
+      "C_CURRENT_STATE": "excluded"
+    },
+    "content_sha256": "db2a193cc01e2fc534dc4a231b8209d891bfbdc6b3284871eaf2048cb81a4b8e"
+  },
+  {
+    "item_id": "REASON_31",
+    "section": "visible_reasoning",
+    "source": [
+      "step31/m64"
+    ],
+    "visibility": "model_visible",
+    "representation": {
+      "A_FULL": "source-visible or derivable",
+      "A_FAITHFUL_COMPACT": "exact or lossless delta",
+      "B_EFFORT_HISTORY": "excluded",
+      "C_CURRENT_STATE": "excluded"
+    },
+    "content_sha256": "e546c30d0e5f83ee5bca34e778bc038ed15c3f1bff6f421997c5b550fcbdafdb"
+  },
+  {
+    "item_id": "ACTION_32",
+    "section": "prior_action",
+    "source": [
+      "step32/m66"
+    ],
+    "visibility": "model_visible",
+    "representation": {
+      "A_FULL": "source-visible or derivable",
+      "A_FAITHFUL_COMPACT": "exact or lossless delta",
+      "B_EFFORT_HISTORY": "excluded",
+      "C_CURRENT_STATE": "excluded"
+    },
+    "content_sha256": "c31ccde19e48aadbb21c6bb72f906b4124c22bac81589468170d3d0ec56343e4"
+  },
+  {
+    "item_id": "OBS_32",
+    "section": "model_visible_observation",
+    "source": [
+      "step32/m67"
+    ],
+    "visibility": "model_visible",
+    "representation": {
+      "A_FULL": "source-visible or derivable",
+      "A_FAITHFUL_COMPACT": "exact or lossless delta",
+      "B_EFFORT_HISTORY": "excluded",
+      "C_CURRENT_STATE": "excluded"
+    },
+    "content_sha256": "db2a193cc01e2fc534dc4a231b8209d891bfbdc6b3284871eaf2048cb81a4b8e"
+  },
+  {
+    "item_id": "REASON_32",
+    "section": "visible_reasoning",
+    "source": [
+      "step32/m66"
+    ],
+    "visibility": "model_visible",
+    "representation": {
+      "A_FULL": "source-visible or derivable",
+      "A_FAITHFUL_COMPACT": "exact or lossless delta",
+      "B_EFFORT_HISTORY": "excluded",
+      "C_CURRENT_STATE": "excluded"
+    },
+    "content_sha256": "5f679104245403fafdb62ed223f3b315935b34c7600ac723a46f56caf39b5708"
+  },
+  {
+    "item_id": "ACTION_33",
+    "section": "prior_action",
+    "source": [
+      "step33/m68"
+    ],
+    "visibility": "model_visible",
+    "representation": {
+      "A_FULL": "source-visible or derivable",
+      "A_FAITHFUL_COMPACT": "exact or lossless delta",
+      "B_EFFORT_HISTORY": "excluded",
+      "C_CURRENT_STATE": "excluded"
+    },
+    "content_sha256": "49359e7de1232279bdccef3a11b4de3cc67a810afa6929582f56b4a390bee5d5"
+  },
+  {
+    "item_id": "OBS_33",
+    "section": "model_visible_observation",
+    "source": [
+      "step33/m69"
+    ],
+    "visibility": "model_visible",
+    "representation": {
+      "A_FULL": "source-visible or derivable",
+      "A_FAITHFUL_COMPACT": "exact or lossless delta",
+      "B_EFFORT_HISTORY": "excluded",
+      "C_CURRENT_STATE": "excluded"
+    },
+    "content_sha256": "b68e136a5bfd42cf6263b9e9251c7394ab21b053629dc292dd9e90287d65b760"
+  },
+  {
+    "item_id": "REASON_33",
+    "section": "visible_reasoning",
+    "source": [
+      "step33/m68"
+    ],
+    "visibility": "model_visible",
+    "representation": {
+      "A_FULL": "source-visible or derivable",
+      "A_FAITHFUL_COMPACT": "exact or lossless delta",
+      "B_EFFORT_HISTORY": "excluded",
+      "C_CURRENT_STATE": "excluded"
+    },
+    "content_sha256": "3fe08bcb4770431daea2d5f4851ab9ba93e8db82201686592609fbe229642840"
+  },
+  {
+    "item_id": "ACTION_34",
+    "section": "prior_action",
+    "source": [
+      "step34/m70"
+    ],
+    "visibility": "model_visible",
+    "representation": {
+      "A_FULL": "source-visible or derivable",
+      "A_FAITHFUL_COMPACT": "exact or lossless delta",
+      "B_EFFORT_HISTORY": "excluded",
+      "C_CURRENT_STATE": "excluded"
+    },
+    "content_sha256": "f6ef9d4b3221669238f2bea3ecab2d84aef0dd26b18a4e3ae766c96ad9719072"
+  },
+  {
+    "item_id": "OBS_34",
+    "section": "model_visible_observation",
+    "source": [
+      "step34/m71"
+    ],
+    "visibility": "model_visible",
+    "representation": {
+      "A_FULL": "source-visible or derivable",
+      "A_FAITHFUL_COMPACT": "exact or lossless delta",
+      "B_EFFORT_HISTORY": "excluded",
+      "C_CURRENT_STATE": "excluded"
+    },
+    "content_sha256": "db2a193cc01e2fc534dc4a231b8209d891bfbdc6b3284871eaf2048cb81a4b8e"
+  },
+  {
+    "item_id": "REASON_34",
+    "section": "visible_reasoning",
+    "source": [
+      "step34/m70"
+    ],
+    "visibility": "model_visible",
+    "representation": {
+      "A_FULL": "source-visible or derivable",
+      "A_FAITHFUL_COMPACT": "exact or lossless delta",
+      "B_EFFORT_HISTORY": "excluded",
+      "C_CURRENT_STATE": "excluded"
+    },
+    "content_sha256": "08cf6e24220cf5c1d13ad1157b5ea2d155bcbbd249e609349f85c6353b7d22c2"
+  },
+  {
+    "item_id": "ACTION_35",
+    "section": "prior_action",
+    "source": [
+      "step35/m72"
+    ],
+    "visibility": "model_visible",
+    "representation": {
+      "A_FULL": "source-visible or derivable",
+      "A_FAITHFUL_COMPACT": "exact or lossless delta",
+      "B_EFFORT_HISTORY": "excluded",
+      "C_CURRENT_STATE": "excluded"
+    },
+    "content_sha256": "2d8a3cb8d7b7255268116fdf634d4d95ff64d39c1b138457d836e310abb301e2"
+  },
+  {
+    "item_id": "OBS_35",
+    "section": "model_visible_observation",
+    "source": [
+      "step35/m73"
+    ],
+    "visibility": "model_visible",
+    "representation": {
+      "A_FULL": "source-visible or derivable",
+      "A_FAITHFUL_COMPACT": "exact or lossless delta",
+      "B_EFFORT_HISTORY": "excluded",
+      "C_CURRENT_STATE": "excluded"
+    },
+    "content_sha256": "c05837e0b1748c732e3aa88b153d14fc2cae892e898dc7bfebd97dcfb3451048"
+  },
+  {
+    "item_id": "REASON_35",
+    "section": "visible_reasoning",
+    "source": [
+      "step35/m72"
+    ],
+    "visibility": "model_visible",
+    "representation": {
+      "A_FULL": "source-visible or derivable",
+      "A_FAITHFUL_COMPACT": "exact or lossless delta",
+      "B_EFFORT_HISTORY": "excluded",
+      "C_CURRENT_STATE": "excluded"
+    },
+    "content_sha256": "eb4bb36137f72c4b39505ce1c20329377d07fc7aed61da1756a79051f67d632d"
+  },
+  {
+    "item_id": "ACTION_36",
+    "section": "prior_action",
+    "source": [
+      "step36/m74"
+    ],
+    "visibility": "model_visible",
+    "representation": {
+      "A_FULL": "source-visible or derivable",
+      "A_FAITHFUL_COMPACT": "exact or lossless delta",
+      "B_EFFORT_HISTORY": "excluded",
+      "C_CURRENT_STATE": "excluded"
+    },
+    "content_sha256": "d890822cccc85f5cde8d25b5ed1f900a95f3bd055be193071069df561ec71a12"
+  },
+  {
+    "item_id": "OBS_36",
+    "section": "model_visible_observation",
+    "source": [
+      "step36/m75"
+    ],
+    "visibility": "model_visible",
+    "representation": {
+      "A_FULL": "source-visible or derivable",
+      "A_FAITHFUL_COMPACT": "exact or lossless delta",
+      "B_EFFORT_HISTORY": "excluded",
+      "C_CURRENT_STATE": "excluded"
+    },
+    "content_sha256": "db2a193cc01e2fc534dc4a231b8209d891bfbdc6b3284871eaf2048cb81a4b8e"
+  },
+  {
+    "item_id": "REASON_36",
+    "section": "visible_reasoning",
+    "source": [
+      "step36/m74"
+    ],
+    "visibility": "model_visible",
+    "representation": {
+      "A_FULL": "source-visible or derivable",
+      "A_FAITHFUL_COMPACT": "exact or lossless delta",
+      "B_EFFORT_HISTORY": "excluded",
+      "C_CURRENT_STATE": "excluded"
+    },
+    "content_sha256": "d9a64985f4703f223412e2463783f26a3b817200f924f0102dd434acc34caff8"
+  },
+  {
+    "item_id": "ACTION_37",
+    "section": "prior_action",
+    "source": [
+      "step37/m76"
+    ],
+    "visibility": "model_visible",
+    "representation": {
+      "A_FULL": "source-visible or derivable",
+      "A_FAITHFUL_COMPACT": "exact or lossless delta",
+      "B_EFFORT_HISTORY": "excluded",
+      "C_CURRENT_STATE": "excluded"
+    },
+    "content_sha256": "9fef301c9778b2ebf4de0ef9760facbb534ca16f5343aa6794314aa9d415819a"
+  },
+  {
+    "item_id": "OBS_37",
+    "section": "model_visible_observation",
+    "source": [
+      "step37/m77"
+    ],
+    "visibility": "model_visible",
+    "representation": {
+      "A_FULL": "source-visible or derivable",
+      "A_FAITHFUL_COMPACT": "exact or lossless delta",
+      "B_EFFORT_HISTORY": "excluded",
+      "C_CURRENT_STATE": "excluded"
+    },
+    "content_sha256": "5c1a3bc9991af622db44d0829e5f678eeb29507c076ed7559515ae613deedcee"
+  },
+  {
+    "item_id": "REASON_37",
+    "section": "visible_reasoning",
+    "source": [
+      "step37/m76"
+    ],
+    "visibility": "model_visible",
+    "representation": {
+      "A_FULL": "source-visible or derivable",
+      "A_FAITHFUL_COMPACT": "exact or lossless delta",
+      "B_EFFORT_HISTORY": "excluded",
+      "C_CURRENT_STATE": "excluded"
+    },
+    "content_sha256": "ff18559bdc871ce3838414113e185df6a245701246c649e7504b1fbdadac99b9"
+  },
+  {
+    "item_id": "ACTION_38",
+    "section": "prior_action",
+    "source": [
+      "step38/m78"
+    ],
+    "visibility": "model_visible",
+    "representation": {
+      "A_FULL": "source-visible or derivable",
+      "A_FAITHFUL_COMPACT": "exact or lossless delta",
+      "B_EFFORT_HISTORY": "excluded",
+      "C_CURRENT_STATE": "excluded"
+    },
+    "content_sha256": "c127ed18ef68908ade26739c3e73c9e52dde2517883bcab20d1d2e5efaad61aa"
+  },
+  {
+    "item_id": "OBS_38",
+    "section": "model_visible_observation",
+    "source": [
+      "step38/m79"
+    ],
+    "visibility": "model_visible",
+    "representation": {
+      "A_FULL": "source-visible or derivable",
+      "A_FAITHFUL_COMPACT": "exact or lossless delta",
+      "B_EFFORT_HISTORY": "excluded",
+      "C_CURRENT_STATE": "excluded"
+    },
+    "content_sha256": "db2a193cc01e2fc534dc4a231b8209d891bfbdc6b3284871eaf2048cb81a4b8e"
+  },
+  {
+    "item_id": "REASON_38",
+    "section": "visible_reasoning",
+    "source": [
+      "step38/m78"
+    ],
+    "visibility": "model_visible",
+    "representation": {
+      "A_FULL": "source-visible or derivable",
+      "A_FAITHFUL_COMPACT": "exact or lossless delta",
+      "B_EFFORT_HISTORY": "excluded",
+      "C_CURRENT_STATE": "excluded"
+    },
+    "content_sha256": "faa53c9a49ff14a8cd8d5763c3e701bb0de11bf2a4c1d339bdb42d7bddc95c98"
+  },
+  {
+    "item_id": "ACTION_39",
+    "section": "prior_action",
+    "source": [
+      "step39/m80"
+    ],
+    "visibility": "model_visible",
+    "representation": {
+      "A_FULL": "source-visible or derivable",
+      "A_FAITHFUL_COMPACT": "exact or lossless delta",
+      "B_EFFORT_HISTORY": "excluded",
+      "C_CURRENT_STATE": "excluded"
+    },
+    "content_sha256": "561dcbc2209dd7df9a7e490bbdee61891076a98362f440c31ddf06529c175481"
+  },
+  {
+    "item_id": "OBS_39",
+    "section": "model_visible_observation",
+    "source": [
+      "step39/m81"
+    ],
+    "visibility": "model_visible",
+    "representation": {
+      "A_FULL": "source-visible or derivable",
+      "A_FAITHFUL_COMPACT": "exact or lossless delta",
+      "B_EFFORT_HISTORY": "excluded",
+      "C_CURRENT_STATE": "excluded"
+    },
+    "content_sha256": "db2a193cc01e2fc534dc4a231b8209d891bfbdc6b3284871eaf2048cb81a4b8e"
+  },
+  {
+    "item_id": "REASON_39",
+    "section": "visible_reasoning",
+    "source": [
+      "step39/m80"
+    ],
+    "visibility": "model_visible",
+    "representation": {
+      "A_FULL": "source-visible or derivable",
+      "A_FAITHFUL_COMPACT": "exact or lossless delta",
+      "B_EFFORT_HISTORY": "excluded",
+      "C_CURRENT_STATE": "excluded"
+    },
+    "content_sha256": "591e3a51da89a368ff26775fa10a203cf4a565bed4a89e0df6c55961c09604f0"
+  },
+  {
+    "item_id": "ACTION_40",
+    "section": "prior_action",
+    "source": [
+      "step40/m82"
+    ],
+    "visibility": "model_visible",
+    "representation": {
+      "A_FULL": "source-visible or derivable",
+      "A_FAITHFUL_COMPACT": "exact or lossless delta",
+      "B_EFFORT_HISTORY": "excluded",
+      "C_CURRENT_STATE": "excluded"
+    },
+    "content_sha256": "98fa6dc2ea522eb658efc08f3d4ebb7e6b370297e1d59d9be7e71b24eac7ebe1"
+  },
+  {
+    "item_id": "OBS_40",
+    "section": "model_visible_observation",
+    "source": [
+      "step40/m83"
+    ],
+    "visibility": "model_visible",
+    "representation": {
+      "A_FULL": "source-visible or derivable",
+      "A_FAITHFUL_COMPACT": "exact or lossless delta",
+      "B_EFFORT_HISTORY": "cited current fact only",
+      "C_CURRENT_STATE": "cited current fact only"
+    },
+    "content_sha256": "db2a193cc01e2fc534dc4a231b8209d891bfbdc6b3284871eaf2048cb81a4b8e"
+  },
+  {
+    "item_id": "REASON_40",
+    "section": "visible_reasoning",
+    "source": [
+      "step40/m82"
+    ],
+    "visibility": "model_visible",
+    "representation": {
+      "A_FULL": "source-visible or derivable",
+      "A_FAITHFUL_COMPACT": "exact or lossless delta",
+      "B_EFFORT_HISTORY": "excluded",
+      "C_CURRENT_STATE": "excluded"
+    },
+    "content_sha256": "92d049826e85cd5fa366f730d0bc3590497c955f638a707c34c2cdd7fe40ca77"
+  },
+  {
+    "item_id": "ACTION_41",
+    "section": "prior_action",
+    "source": [
+      "step41/m84"
+    ],
+    "visibility": "model_visible",
+    "representation": {
+      "A_FULL": "source-visible or derivable",
+      "A_FAITHFUL_COMPACT": "exact or lossless delta",
+      "B_EFFORT_HISTORY": "cited current fact only",
+      "C_CURRENT_STATE": "cited current fact only"
+    },
+    "content_sha256": "e2c6c786baf862440920206e249d5e7d9459ecfa2f424ab7a5c5050f91f3439b"
+  },
+  {
+    "item_id": "OBS_41",
+    "section": "model_visible_observation",
+    "source": [
+      "step41/m85"
+    ],
+    "visibility": "model_visible",
+    "representation": {
+      "A_FULL": "source-visible or derivable",
+      "A_FAITHFUL_COMPACT": "exact or lossless delta",
+      "B_EFFORT_HISTORY": "cited current fact only",
+      "C_CURRENT_STATE": "cited current fact only"
+    },
+    "content_sha256": "67ac8c1682839743747499fdbfc298561e4b098e76042d3209e9e855b4738c9e"
+  },
+  {
+    "item_id": "REASON_41",
+    "section": "visible_reasoning",
+    "source": [
+      "step41/m84"
+    ],
+    "visibility": "model_visible",
+    "representation": {
+      "A_FULL": "source-visible or derivable",
+      "A_FAITHFUL_COMPACT": "exact or lossless delta",
+      "B_EFFORT_HISTORY": "excluded",
+      "C_CURRENT_STATE": "excluded"
+    },
+    "content_sha256": "b1dfd17a9e9e7b93726a39e6d93803023f82fb007f4a6331cf4452a37441fa84"
+  },
+  {
+    "item_id": "ACTION_42",
+    "section": "prior_action",
+    "source": [
+      "step42/m86"
+    ],
+    "visibility": "model_visible",
+    "representation": {
+      "A_FULL": "exact final pair",
+      "A_FAITHFUL_COMPACT": "exact final pair",
+      "B_EFFORT_HISTORY": "exact final pair",
+      "C_CURRENT_STATE": "exact final pair"
+    },
+    "content_sha256": "f52f6b92c1ee9dc470054a9874a3f14033758d54b4e4770950bca563ee7f690f"
+  },
+  {
+    "item_id": "OBS_42",
+    "section": "model_visible_observation",
+    "source": [
+      "step42/m87"
+    ],
+    "visibility": "model_visible",
+    "representation": {
+      "A_FULL": "exact final pair",
+      "A_FAITHFUL_COMPACT": "exact final pair",
+      "B_EFFORT_HISTORY": "exact final pair",
+      "C_CURRENT_STATE": "exact final pair"
+    },
+    "content_sha256": "87f20def57235c428a6008f7fcded8f071c518acd1bf915d029f09bee36521cb"
+  },
+  {
+    "item_id": "REASON_42",
+    "section": "visible_reasoning",
+    "source": [
+      "step42/m86"
+    ],
+    "visibility": "model_visible",
+    "representation": {
+      "A_FULL": "exact final pair",
+      "A_FAITHFUL_COMPACT": "exact final pair",
+      "B_EFFORT_HISTORY": "exact final pair",
+      "C_CURRENT_STATE": "exact final pair"
+    },
+    "content_sha256": "52749f9e62f7ffa303fbca73b134844543a1e5e6fe0ee17d2c572ba4a961e00c"
+  },
+  {
+    "item_id": "VISIBLE_COUNTS",
+    "section": "failure_progress",
+    "source": [
+      "step9/m21",
+      "step42/m87"
+    ],
+    "visibility": "model_visible",
+    "representation": {
+      "A_FULL": "source-visible or derivable",
+      "A_FAITHFUL_COMPACT": "exact or lossless delta",
+      "B_EFFORT_HISTORY": "excluded",
+      "C_CURRENT_STATE": "excluded"
+    },
+    "content_sha256": "cf70c9bea8cb503ca96a68179c795698e244ad769e0620f586c31343a59e49d0"
+  },
+  {
+    "item_id": "DIAGNOSTIC_03",
+    "section": "current_diagnostic",
+    "source": [
+      "step42/m87/line3"
+    ],
+    "visibility": "model_visible",
+    "representation": {
+      "A_FULL": "source-visible or derivable",
+      "A_FAITHFUL_COMPACT": "exact or lossless delta",
+      "B_EFFORT_HISTORY": "current content retained",
+      "C_CURRENT_STATE": "current content retained"
+    },
+    "content_sha256": "c174f4972340b050e91091069f1f97b25322cb37860b5aa09fc64cd150551e07"
+  },
+  {
+    "item_id": "DIAGNOSTIC_04",
+    "section": "current_diagnostic",
+    "source": [
+      "step42/m87/line4"
+    ],
+    "visibility": "model_visible",
+    "representation": {
+      "A_FULL": "source-visible or derivable",
+      "A_FAITHFUL_COMPACT": "exact or lossless delta",
+      "B_EFFORT_HISTORY": "current content retained",
+      "C_CURRENT_STATE": "current content retained"
+    },
+    "content_sha256": "45a10d12d0305dbe181d247f01baa29708274fd7d4564a54d18306e7b5de6092"
+  },
+  {
+    "item_id": "DIAGNOSTIC_05",
+    "section": "current_diagnostic",
+    "source": [
+      "step42/m87/line5"
+    ],
+    "visibility": "model_visible",
+    "representation": {
+      "A_FULL": "source-visible or derivable",
+      "A_FAITHFUL_COMPACT": "exact or lossless delta",
+      "B_EFFORT_HISTORY": "current content retained",
+      "C_CURRENT_STATE": "current content retained"
+    },
+    "content_sha256": "af75e3ba5c5754f5811d337102e8de2547a118ba428c6fd70344676a6fa8db4d"
+  },
+  {
+    "item_id": "DIAGNOSTIC_06",
+    "section": "current_diagnostic",
+    "source": [
+      "step42/m87/line6"
+    ],
+    "visibility": "model_visible",
+    "representation": {
+      "A_FULL": "source-visible or derivable",
+      "A_FAITHFUL_COMPACT": "exact or lossless delta",
+      "B_EFFORT_HISTORY": "current content retained",
+      "C_CURRENT_STATE": "current content retained"
+    },
+    "content_sha256": "4b2574011bf1ba0afa66bf2af8512965afc069c797e8c00e1091bd81c2f184f7"
+  },
+  {
+    "item_id": "DIAGNOSTIC_07",
+    "section": "current_diagnostic",
+    "source": [
+      "step42/m87/line7"
+    ],
+    "visibility": "model_visible",
+    "representation": {
+      "A_FULL": "source-visible or derivable",
+      "A_FAITHFUL_COMPACT": "exact or lossless delta",
+      "B_EFFORT_HISTORY": "current content retained",
+      "C_CURRENT_STATE": "current content retained"
+    },
+    "content_sha256": "e18a63de77317453cd177b5d8c415194ecbb7043eb80488cabbbfff45cbec24c"
+  },
+  {
+    "item_id": "DIAGNOSTIC_08",
+    "section": "current_diagnostic",
+    "source": [
+      "step42/m87/line8"
+    ],
+    "visibility": "model_visible",
+    "representation": {
+      "A_FULL": "source-visible or derivable",
+      "A_FAITHFUL_COMPACT": "exact or lossless delta",
+      "B_EFFORT_HISTORY": "current content retained",
+      "C_CURRENT_STATE": "current content retained"
+    },
+    "content_sha256": "38e59a3e1ad9de1c0d743e8a7a75a1cef3ee7a5f116e40c13bb80dc70023e4ba"
+  },
+  {
+    "item_id": "DIAGNOSTIC_09",
+    "section": "current_diagnostic",
+    "source": [
+      "step42/m87/line9"
+    ],
+    "visibility": "model_visible",
+    "representation": {
+      "A_FULL": "source-visible or derivable",
+      "A_FAITHFUL_COMPACT": "exact or lossless delta",
+      "B_EFFORT_HISTORY": "current content retained",
+      "C_CURRENT_STATE": "current content retained"
+    },
+    "content_sha256": "d7f0ab33e58d87ba1bc0e15ee2e4246e0bd994d3268509060868f150a1e5c3dd"
+  },
+  {
+    "item_id": "DIAGNOSTIC_10",
+    "section": "current_diagnostic",
+    "source": [
+      "step42/m87/line10"
+    ],
+    "visibility": "model_visible",
+    "representation": {
+      "A_FULL": "source-visible or derivable",
+      "A_FAITHFUL_COMPACT": "exact or lossless delta",
+      "B_EFFORT_HISTORY": "current content retained",
+      "C_CURRENT_STATE": "current content retained"
+    },
+    "content_sha256": "0f4ce08d508c5e35770cd951c5731a5fcb71f1cce5df68edc00e1b997844a490"
+  },
+  {
+    "item_id": "DIAGNOSTIC_11",
+    "section": "current_diagnostic",
+    "source": [
+      "step42/m87/line11"
+    ],
+    "visibility": "model_visible",
+    "representation": {
+      "A_FULL": "source-visible or derivable",
+      "A_FAITHFUL_COMPACT": "exact or lossless delta",
+      "B_EFFORT_HISTORY": "current content retained",
+      "C_CURRENT_STATE": "current content retained"
+    },
+    "content_sha256": "d7ae06147dd1d2fce77207ffd8175b381b9d4ab2d9f009211ff1d6c9e15c8684"
+  },
+  {
+    "item_id": "DIAGNOSTIC_12",
+    "section": "current_diagnostic",
+    "source": [
+      "step42/m87/line12"
+    ],
+    "visibility": "model_visible",
+    "representation": {
+      "A_FULL": "source-visible or derivable",
+      "A_FAITHFUL_COMPACT": "exact or lossless delta",
+      "B_EFFORT_HISTORY": "current content retained",
+      "C_CURRENT_STATE": "current content retained"
+    },
+    "content_sha256": "4e73e792691908c7769b913c03dfc83a32019538d7f8aefeec8ea41cada92ae5"
+  },
+  {
+    "item_id": "DIAGNOSTIC_13",
+    "section": "current_diagnostic",
+    "source": [
+      "step42/m87/line13"
+    ],
+    "visibility": "model_visible",
+    "representation": {
+      "A_FULL": "source-visible or derivable",
+      "A_FAITHFUL_COMPACT": "exact or lossless delta",
+      "B_EFFORT_HISTORY": "current content retained",
+      "C_CURRENT_STATE": "current content retained"
+    },
+    "content_sha256": "bb6f5074e6853bb0e49b9e4ff2db082eb166d6e95b209449c83b8dc903545555"
+  },
+  {
+    "item_id": "DIAGNOSTIC_14",
+    "section": "current_diagnostic",
+    "source": [
+      "step42/m87/line14"
+    ],
+    "visibility": "model_visible",
+    "representation": {
+      "A_FULL": "source-visible or derivable",
+      "A_FAITHFUL_COMPACT": "exact or lossless delta",
+      "B_EFFORT_HISTORY": "current content retained",
+      "C_CURRENT_STATE": "current content retained"
+    },
+    "content_sha256": "8f80eebf1f1306e973638ed9353167c1994d07c36019fe6aae2c7913de577d4e"
+  },
+  {
+    "item_id": "DIAGNOSTIC_15",
+    "section": "current_diagnostic",
+    "source": [
+      "step42/m87/line15"
+    ],
+    "visibility": "model_visible",
+    "representation": {
+      "A_FULL": "source-visible or derivable",
+      "A_FAITHFUL_COMPACT": "exact or lossless delta",
+      "B_EFFORT_HISTORY": "current content retained",
+      "C_CURRENT_STATE": "current content retained"
+    },
+    "content_sha256": "4940c96f6a4bdfea28b19283a08e4766faf05cac596c093b2a2b07c4d5fdc6c6"
+  },
+  {
+    "item_id": "DIAGNOSTIC_16",
+    "section": "current_diagnostic",
+    "source": [
+      "step42/m87/line16"
+    ],
+    "visibility": "model_visible",
+    "representation": {
+      "A_FULL": "source-visible or derivable",
+      "A_FAITHFUL_COMPACT": "exact or lossless delta",
+      "B_EFFORT_HISTORY": "current content retained",
+      "C_CURRENT_STATE": "current content retained"
+    },
+    "content_sha256": "9fe4f1a7a72cdaee2e312a8d00e32658d4e03b5e5d8fe18ff8598cab6b6bb908"
+  },
+  {
+    "item_id": "DIAGNOSTIC_17",
+    "section": "current_diagnostic",
+    "source": [
+      "step42/m87/line17"
+    ],
+    "visibility": "model_visible",
+    "representation": {
+      "A_FULL": "source-visible or derivable",
+      "A_FAITHFUL_COMPACT": "exact or lossless delta",
+      "B_EFFORT_HISTORY": "current content retained",
+      "C_CURRENT_STATE": "current content retained"
+    },
+    "content_sha256": "4dd5647373321d85db97d44bf77388d33e9d336b4483cffa03861a3ee3afb1a5"
+  },
+  {
+    "item_id": "DIAGNOSTIC_18",
+    "section": "current_diagnostic",
+    "source": [
+      "step42/m87/line18"
+    ],
+    "visibility": "model_visible",
+    "representation": {
+      "A_FULL": "source-visible or derivable",
+      "A_FAITHFUL_COMPACT": "exact or lossless delta",
+      "B_EFFORT_HISTORY": "current content retained",
+      "C_CURRENT_STATE": "current content retained"
+    },
+    "content_sha256": "caa39f25552e7725ddeffda609b0ea6bf5c099a6831e08377c2795e48295a924"
+  },
+  {
+    "item_id": "KNOWN_PATHS",
+    "section": "workspace_paths",
+    "source": [
+      "visible source-directory listing"
+    ],
+    "visibility": "derived_from_model_visible",
+    "representation": {
+      "A_FULL": "source-visible or derivable",
+      "A_FAITHFUL_COMPACT": "exact or lossless delta",
+      "B_EFFORT_HISTORY": "current content retained",
+      "C_CURRENT_STATE": "current content retained"
+    },
+    "content_sha256": "b415bf491ca5ac86840a424b0b2532706e91bef92c1e1c9ef4fe1c816dd5b718"
+  },
+  {
+    "item_id": "TEMP_COPIES",
+    "section": "tool_environment",
+    "source": [],
+    "visibility": "derived_from_model_visible",
+    "representation": {
+      "A_FULL": "source-visible or derivable",
+      "A_FAITHFUL_COMPACT": "exact or lossless delta",
+      "B_EFFORT_HISTORY": "current content retained",
+      "C_CURRENT_STATE": "current content retained"
+    },
+    "content_sha256": "163e9971d8b4a832cadb1102596fa905f353ca37de5b00b27005827648deddec"
+  },
+  {
+    "item_id": "FILE_.git_hooks_pre-commit",
+    "section": "current_source",
+    "source": [
+      "step5/m12"
+    ],
+    "visibility": "model_visible",
+    "representation": {
+      "A_FULL": "source-visible or derivable",
+      "A_FAITHFUL_COMPACT": "exact or lossless delta",
+      "B_EFFORT_HISTORY": "current content retained",
+      "C_CURRENT_STATE": "current content retained"
+    },
+    "content_sha256": "49f30165ba35da8ba11908a4ace9da7eea09445073891c68352c63bc06d6329e"
+  },
+  {
+    "item_id": "FILE_pyproject.toml",
+    "section": "current_source",
+    "source": [
+      "step1/m5"
+    ],
+    "visibility": "model_visible",
+    "representation": {
+      "A_FULL": "source-visible or derivable",
+      "A_FAITHFUL_COMPACT": "exact or lossless delta",
+      "B_EFFORT_HISTORY": "cited current fact only",
+      "C_CURRENT_STATE": "cited current fact only"
+    },
+    "content_sha256": "6e7d571206536818b52942417eeca8cd0fb5219418bd78d0ef1819671753e69f"
+  },
+  {
+    "item_id": "FILE_src___init__.py",
+    "section": "current_source",
+    "source": [
+      "step40/m83"
+    ],
+    "visibility": "model_visible",
+    "representation": {
+      "A_FULL": "source-visible or derivable",
+      "A_FAITHFUL_COMPACT": "exact or lossless delta",
+      "B_EFFORT_HISTORY": "current content retained",
+      "C_CURRENT_STATE": "current content retained"
+    },
+    "content_sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+  },
+  {
+    "item_id": "FILE_src_api_source.py",
+    "section": "current_source",
+    "source": [
+      "step36/m74"
+    ],
+    "visibility": "model_visible",
+    "representation": {
+      "A_FULL": "source-visible or derivable",
+      "A_FAITHFUL_COMPACT": "exact or lossless delta",
+      "B_EFFORT_HISTORY": "current content retained",
+      "C_CURRENT_STATE": "current content retained"
+    },
+    "content_sha256": "fb71179f339841f2fb24a6a906c124a1f03807ff313b77ee4361859721d34ef2"
+  },
+  {
+    "item_id": "CODE_api_source_00",
+    "section": "source_definition",
+    "source": [
+      "step36/m74"
+    ],
+    "visibility": "model_visible",
+    "representation": {
+      "A_FULL": "source-visible or derivable",
+      "A_FAITHFUL_COMPACT": "exact or lossless delta",
+      "B_EFFORT_HISTORY": "current content retained",
+      "C_CURRENT_STATE": "current content retained"
+    },
+    "content_sha256": "c4da84ab91da4654561a01718d0044065dffcc0b18f4225aa019a9e083307a4d"
+  },
+  {
+    "item_id": "CODE_api_source_01",
+    "section": "source_definition",
+    "source": [
+      "step36/m74"
+    ],
+    "visibility": "model_visible",
+    "representation": {
+      "A_FULL": "source-visible or derivable",
+      "A_FAITHFUL_COMPACT": "exact or lossless delta",
+      "B_EFFORT_HISTORY": "current content retained",
+      "C_CURRENT_STATE": "current content retained"
+    },
+    "content_sha256": "4f9b8491ba4deee622e6c29ca383c71279fa604b7aff389b0bf5ba279f4453c3"
+  },
+  {
+    "item_id": "CODE_api_source_02",
+    "section": "source_definition",
+    "source": [
+      "step36/m74"
+    ],
+    "visibility": "model_visible",
+    "representation": {
+      "A_FULL": "source-visible or derivable",
+      "A_FAITHFUL_COMPACT": "exact or lossless delta",
+      "B_EFFORT_HISTORY": "current content retained",
+      "C_CURRENT_STATE": "current content retained"
+    },
+    "content_sha256": "27dced094c9514184c1983402a02c05d10c904156f13318d12650d0243454e60"
+  },
+  {
+    "item_id": "CODE_api_source_03",
+    "section": "source_definition",
+    "source": [
+      "step36/m74"
+    ],
+    "visibility": "model_visible",
+    "representation": {
+      "A_FULL": "source-visible or derivable",
+      "A_FAITHFUL_COMPACT": "exact or lossless delta",
+      "B_EFFORT_HISTORY": "current content retained",
+      "C_CURRENT_STATE": "current content retained"
+    },
+    "content_sha256": "bc39064dc0d898978b47356c97c70b4fd33f6f7532d58ad30d01f479e70adce7"
+  },
+  {
+    "item_id": "CODE_api_source_04",
+    "section": "source_definition",
+    "source": [
+      "step36/m74"
+    ],
+    "visibility": "model_visible",
+    "representation": {
+      "A_FULL": "source-visible or derivable",
+      "A_FAITHFUL_COMPACT": "exact or lossless delta",
+      "B_EFFORT_HISTORY": "current content retained",
+      "C_CURRENT_STATE": "current content retained"
+    },
+    "content_sha256": "06185522e4085460db5f973d6987f2c5f42519fccd56836e5e5ed9842962de8d"
+  },
+  {
+    "item_id": "CODE_api_source_05",
+    "section": "source_definition",
+    "source": [
+      "step36/m74"
+    ],
+    "visibility": "model_visible",
+    "representation": {
+      "A_FULL": "source-visible or derivable",
+      "A_FAITHFUL_COMPACT": "exact or lossless delta",
+      "B_EFFORT_HISTORY": "current content retained",
+      "C_CURRENT_STATE": "current content retained"
+    },
+    "content_sha256": "fdc1b76e7cc6db62501fc93b3dd710aecc43e873fdf7688be40ef5270b8b0e8f"
+  },
+  {
+    "item_id": "CODE_api_source_06",
+    "section": "source_definition",
+    "source": [
+      "step36/m74"
+    ],
+    "visibility": "model_visible",
+    "representation": {
+      "A_FULL": "source-visible or derivable",
+      "A_FAITHFUL_COMPACT": "exact or lossless delta",
+      "B_EFFORT_HISTORY": "current content retained",
+      "C_CURRENT_STATE": "current content retained"
+    },
+    "content_sha256": "0dc8128bee435d5ef35c29add92198499a32cf52a15ca0b4643068f373711f63"
+  },
+  {
+    "item_id": "CODE_api_source_07",
+    "section": "source_definition",
+    "source": [
+      "step36/m74"
+    ],
+    "visibility": "model_visible",
+    "representation": {
+      "A_FULL": "source-visible or derivable",
+      "A_FAITHFUL_COMPACT": "exact or lossless delta",
+      "B_EFFORT_HISTORY": "current content retained",
+      "C_CURRENT_STATE": "current content retained"
+    },
+    "content_sha256": "4c83eecce78685cbb2faf2b98dd43d6b4d922ba6a309d5ae036edc2c246358e1"
+  },
+  {
+    "item_id": "CODE_api_source_08",
+    "section": "source_definition",
+    "source": [
+      "step36/m74"
+    ],
+    "visibility": "model_visible",
+    "representation": {
+      "A_FULL": "source-visible or derivable",
+      "A_FAITHFUL_COMPACT": "exact or lossless delta",
+      "B_EFFORT_HISTORY": "current content retained",
+      "C_CURRENT_STATE": "current content retained"
+    },
+    "content_sha256": "35e793fddcddb053edb5ac7c9d4268223628eeb8e54b0c83a8cc156feea4a3a2"
+  },
+  {
+    "item_id": "CODE_api_source_09",
+    "section": "source_definition",
+    "source": [
+      "step36/m74"
+    ],
+    "visibility": "model_visible",
+    "representation": {
+      "A_FULL": "source-visible or derivable",
+      "A_FAITHFUL_COMPACT": "exact or lossless delta",
+      "B_EFFORT_HISTORY": "current content retained",
+      "C_CURRENT_STATE": "current content retained"
+    },
+    "content_sha256": "35692c7052151bda3ed1d0632e4246379aa07f501f4584f7cf2e8f94fdae0651"
+  },
+  {
+    "item_id": "CODE_api_source_10",
+    "section": "source_definition",
+    "source": [
+      "step36/m74"
+    ],
+    "visibility": "model_visible",
+    "representation": {
+      "A_FULL": "source-visible or derivable",
+      "A_FAITHFUL_COMPACT": "exact or lossless delta",
+      "B_EFFORT_HISTORY": "current content retained",
+      "C_CURRENT_STATE": "current content retained"
+    },
+    "content_sha256": "30efb89ef5b8e595354154c4a6aa9c9e7612dc41d2202c76fafdf624a2561251"
+  },
+  {
+    "item_id": "CODE_api_source_11",
+    "section": "source_definition",
+    "source": [
+      "step36/m74"
+    ],
+    "visibility": "model_visible",
+    "representation": {
+      "A_FULL": "source-visible or derivable",
+      "A_FAITHFUL_COMPACT": "exact or lossless delta",
+      "B_EFFORT_HISTORY": "current content retained",
+      "C_CURRENT_STATE": "current content retained"
+    },
+    "content_sha256": "4101a86dbf7fb0262b6c6d4e8b535ad9ddb78814dc343642ab96385029a9b6d4"
+  },
+  {
+    "item_id": "FILE_src_cache.py",
+    "section": "current_source",
+    "source": [
+      "step15/m32"
+    ],
+    "visibility": "model_visible",
+    "representation": {
+      "A_FULL": "source-visible or derivable",
+      "A_FAITHFUL_COMPACT": "exact or lossless delta",
+      "B_EFFORT_HISTORY": "current content retained",
+      "C_CURRENT_STATE": "current content retained"
+    },
+    "content_sha256": "e71ac9cec30fc9c6e01845b86e582dee2a403bb17162f4d79c601bd2590ae5ab"
+  },
+  {
+    "item_id": "CODE_cache_00",
+    "section": "source_definition",
+    "source": [
+      "step15/m32"
+    ],
+    "visibility": "model_visible",
+    "representation": {
+      "A_FULL": "source-visible or derivable",
+      "A_FAITHFUL_COMPACT": "exact or lossless delta",
+      "B_EFFORT_HISTORY": "current content retained",
+      "C_CURRENT_STATE": "current content retained"
+    },
+    "content_sha256": "6d16ce5e6aa73f2c77296a8ee69d889b39849b4d6f75c253c5e0e6cd5cbb44ba"
+  },
+  {
+    "item_id": "CODE_cache_01",
+    "section": "source_definition",
+    "source": [
+      "step15/m32"
+    ],
+    "visibility": "model_visible",
+    "representation": {
+      "A_FULL": "source-visible or derivable",
+      "A_FAITHFUL_COMPACT": "exact or lossless delta",
+      "B_EFFORT_HISTORY": "current content retained",
+      "C_CURRENT_STATE": "current content retained"
+    },
+    "content_sha256": "4f9b8491ba4deee622e6c29ca383c71279fa604b7aff389b0bf5ba279f4453c3"
+  },
+  {
+    "item_id": "CODE_cache_02",
+    "section": "source_definition",
+    "source": [
+      "step15/m32"
+    ],
+    "visibility": "model_visible",
+    "representation": {
+      "A_FULL": "source-visible or derivable",
+      "A_FAITHFUL_COMPACT": "exact or lossless delta",
+      "B_EFFORT_HISTORY": "current content retained",
+      "C_CURRENT_STATE": "current content retained"
+    },
+    "content_sha256": "2069b02c6551ab4ca734bd000fb3d1fbb54cab17c8117ff2fb7d9cc26a198b78"
+  },
+  {
+    "item_id": "CODE_cache_03",
+    "section": "source_definition",
+    "source": [
+      "step15/m32"
+    ],
+    "visibility": "model_visible",
+    "representation": {
+      "A_FULL": "source-visible or derivable",
+      "A_FAITHFUL_COMPACT": "exact or lossless delta",
+      "B_EFFORT_HISTORY": "current content retained",
+      "C_CURRENT_STATE": "current content retained"
+    },
+    "content_sha256": "2e63af44bc4f77e29cdbe4828e5b529673f4268a01c7d18e3527f488ea580ea6"
+  },
+  {
+    "item_id": "CODE_cache_04",
+    "section": "source_definition",
+    "source": [
+      "step15/m32"
+    ],
+    "visibility": "model_visible",
+    "representation": {
+      "A_FULL": "source-visible or derivable",
+      "A_FAITHFUL_COMPACT": "exact or lossless delta",
+      "B_EFFORT_HISTORY": "current content retained",
+      "C_CURRENT_STATE": "current content retained"
+    },
+    "content_sha256": "c2caf127a5166c082194cbf7ebb9d524e2dbae4c89bbe8dfe0c24f29bb8ae738"
+  },
+  {
+    "item_id": "CODE_cache_05",
+    "section": "source_definition",
+    "source": [
+      "step15/m32"
+    ],
+    "visibility": "model_visible",
+    "representation": {
+      "A_FULL": "source-visible or derivable",
+      "A_FAITHFUL_COMPACT": "exact or lossless delta",
+      "B_EFFORT_HISTORY": "current content retained",
+      "C_CURRENT_STATE": "current content retained"
+    },
+    "content_sha256": "b18093d570396a5e62fd1835548f5248afedf85d6f3aa52b0d214f30c3d36e94"
+  },
+  {
+    "item_id": "CODE_cache_06",
+    "section": "source_definition",
+    "source": [
+      "step15/m32"
+    ],
+    "visibility": "model_visible",
+    "representation": {
+      "A_FULL": "source-visible or derivable",
+      "A_FAITHFUL_COMPACT": "exact or lossless delta",
+      "B_EFFORT_HISTORY": "current content retained",
+      "C_CURRENT_STATE": "current content retained"
+    },
+    "content_sha256": "d9c5f61109f5ab6b539b99a2e515383b81b3a274426d400f00fe61590957466d"
+  },
+  {
+    "item_id": "CODE_cache_07",
+    "section": "source_definition",
+    "source": [
+      "step15/m32"
+    ],
+    "visibility": "model_visible",
+    "representation": {
+      "A_FULL": "source-visible or derivable",
+      "A_FAITHFUL_COMPACT": "exact or lossless delta",
+      "B_EFFORT_HISTORY": "current content retained",
+      "C_CURRENT_STATE": "current content retained"
+    },
+    "content_sha256": "4e4e3f10279ca574c5aac5bde08fcf9181d259d73d726a31540aa9f329dfc666"
+  },
+  {
+    "item_id": "CODE_cache_08",
+    "section": "source_definition",
+    "source": [
+      "step15/m32"
+    ],
+    "visibility": "model_visible",
+    "representation": {
+      "A_FULL": "source-visible or derivable",
+      "A_FAITHFUL_COMPACT": "exact or lossless delta",
+      "B_EFFORT_HISTORY": "current content retained",
+      "C_CURRENT_STATE": "current content retained"
+    },
+    "content_sha256": "27228d3b8681b66a77be175cb4290cbcb1a48a1c02e0b7450ad0928f569f8ef4"
+  },
+  {
+    "item_id": "CODE_cache_09",
+    "section": "source_definition",
+    "source": [
+      "step15/m32"
+    ],
+    "visibility": "model_visible",
+    "representation": {
+      "A_FULL": "source-visible or derivable",
+      "A_FAITHFUL_COMPACT": "exact or lossless delta",
+      "B_EFFORT_HISTORY": "current content retained",
+      "C_CURRENT_STATE": "current content retained"
+    },
+    "content_sha256": "6a2242238af0ab573d0659e6bf38b5ee610fdb1e8b3c37488008f6c387d565e0"
+  },
+  {
+    "item_id": "CODE_cache_10",
+    "section": "source_definition",
+    "source": [
+      "step15/m32"
+    ],
+    "visibility": "model_visible",
+    "representation": {
+      "A_FULL": "source-visible or derivable",
+      "A_FAITHFUL_COMPACT": "exact or lossless delta",
+      "B_EFFORT_HISTORY": "current content retained",
+      "C_CURRENT_STATE": "current content retained"
+    },
+    "content_sha256": "00ec28009ed28df0d3943e8405c3dae2e43447e0438eac1a9d27f78bfa61bce7"
+  },
+  {
+    "item_id": "IGNORE_cache_67",
+    "section": "shortcut_knowledge",
+    "source": [
+      "step15/m32"
+    ],
+    "visibility": "model_visible",
+    "representation": {
+      "A_FULL": "source-visible or derivable",
+      "A_FAITHFUL_COMPACT": "exact or lossless delta",
+      "B_EFFORT_HISTORY": "current content retained",
+      "C_CURRENT_STATE": "current content retained"
+    },
+    "content_sha256": "f7fa9811c3904a305c3ac9d667eb42900f72b0d9f4cc4a96f6326d164e6cbff6"
+  },
+  {
+    "item_id": "IGNORE_cache_83",
+    "section": "shortcut_knowledge",
+    "source": [
+      "step15/m32"
+    ],
+    "visibility": "model_visible",
+    "representation": {
+      "A_FULL": "source-visible or derivable",
+      "A_FAITHFUL_COMPACT": "exact or lossless delta",
+      "B_EFFORT_HISTORY": "current content retained",
+      "C_CURRENT_STATE": "current content retained"
+    },
+    "content_sha256": "009ae4dca14138700b1e23ac816391ef42f953bd88af4054e319e66998f7fd51"
+  },
+  {
+    "item_id": "IGNORE_cache_88",
+    "section": "shortcut_knowledge",
+    "source": [
+      "step15/m32"
+    ],
+    "visibility": "model_visible",
+    "representation": {
+      "A_FULL": "source-visible or derivable",
+      "A_FAITHFUL_COMPACT": "exact or lossless delta",
+      "B_EFFORT_HISTORY": "current content retained",
+      "C_CURRENT_STATE": "current content retained"
+    },
+    "content_sha256": "61ecface0d06977d48c3ab4c2184e0e200d6cbd8356b29f4314f0fe3a644df5d"
+  },
+  {
+    "item_id": "IGNORE_cache_89",
+    "section": "shortcut_knowledge",
+    "source": [
+      "step15/m32"
+    ],
+    "visibility": "model_visible",
+    "representation": {
+      "A_FULL": "source-visible or derivable",
+      "A_FAITHFUL_COMPACT": "exact or lossless delta",
+      "B_EFFORT_HISTORY": "current content retained",
+      "C_CURRENT_STATE": "current content retained"
+    },
+    "content_sha256": "23a8a4fd30f29e8f2a808e5846c8a4a1aacbe21ad35067b08c3f14540da9a263"
+  },
+  {
+    "item_id": "IGNORE_cache_90",
+    "section": "shortcut_knowledge",
+    "source": [
+      "step15/m32"
+    ],
+    "visibility": "model_visible",
+    "representation": {
+      "A_FULL": "source-visible or derivable",
+      "A_FAITHFUL_COMPACT": "exact or lossless delta",
+      "B_EFFORT_HISTORY": "current content retained",
+      "C_CURRENT_STATE": "current content retained"
+    },
+    "content_sha256": "0f15ad04e559dcd5ddf86e144de9188bf9fea3db2da6fe3e892e77f280c80126"
+  },
+  {
+    "item_id": "FILE_src_cli.py",
+    "section": "current_source",
+    "source": [
+      "step39/m80"
+    ],
+    "visibility": "model_visible",
+    "representation": {
+      "A_FULL": "source-visible or derivable",
+      "A_FAITHFUL_COMPACT": "exact or lossless delta",
+      "B_EFFORT_HISTORY": "current content retained",
+      "C_CURRENT_STATE": "current content retained"
+    },
+    "content_sha256": "6b734a8eb3a8d54eed4c3b35c87f2f475d0ddb25bb6d51c856ab85974e371394"
+  },
+  {
+    "item_id": "CODE_cli_00",
+    "section": "source_definition",
+    "source": [
+      "step39/m80"
+    ],
+    "visibility": "model_visible",
+    "representation": {
+      "A_FULL": "source-visible or derivable",
+      "A_FAITHFUL_COMPACT": "exact or lossless delta",
+      "B_EFFORT_HISTORY": "current content retained",
+      "C_CURRENT_STATE": "current content retained"
+    },
+    "content_sha256": "030c31c3c9c4116813fe2a756361a9406cb128c3d603ad918701d50f574e7d36"
+  },
+  {
+    "item_id": "CODE_cli_01",
+    "section": "source_definition",
+    "source": [
+      "step39/m80"
+    ],
+    "visibility": "model_visible",
+    "representation": {
+      "A_FULL": "source-visible or derivable",
+      "A_FAITHFUL_COMPACT": "exact or lossless delta",
+      "B_EFFORT_HISTORY": "current content retained",
+      "C_CURRENT_STATE": "current content retained"
+    },
+    "content_sha256": "f534a72c58d199602723840a24761409f227f4238759b1f6b1982afb8956b460"
+  },
+  {
+    "item_id": "CODE_cli_02",
+    "section": "source_definition",
+    "source": [
+      "step39/m80"
+    ],
+    "visibility": "model_visible",
+    "representation": {
+      "A_FULL": "source-visible or derivable",
+      "A_FAITHFUL_COMPACT": "exact or lossless delta",
+      "B_EFFORT_HISTORY": "current content retained",
+      "C_CURRENT_STATE": "current content retained"
+    },
+    "content_sha256": "9e77b3746ea081eb4c557e71cc84ca29dc66a89d18a07e85dba66a336e7310ae"
+  },
+  {
+    "item_id": "CODE_cli_03",
+    "section": "source_definition",
+    "source": [
+      "step39/m80"
+    ],
+    "visibility": "model_visible",
+    "representation": {
+      "A_FULL": "source-visible or derivable",
+      "A_FAITHFUL_COMPACT": "exact or lossless delta",
+      "B_EFFORT_HISTORY": "current content retained",
+      "C_CURRENT_STATE": "current content retained"
+    },
+    "content_sha256": "4f9b8491ba4deee622e6c29ca383c71279fa604b7aff389b0bf5ba279f4453c3"
+  },
+  {
+    "item_id": "CODE_cli_04",
+    "section": "source_definition",
+    "source": [
+      "step39/m80"
+    ],
+    "visibility": "model_visible",
+    "representation": {
+      "A_FULL": "source-visible or derivable",
+      "A_FAITHFUL_COMPACT": "exact or lossless delta",
+      "B_EFFORT_HISTORY": "current content retained",
+      "C_CURRENT_STATE": "current content retained"
+    },
+    "content_sha256": "27dced094c9514184c1983402a02c05d10c904156f13318d12650d0243454e60"
+  },
+  {
+    "item_id": "CODE_cli_05",
+    "section": "source_definition",
+    "source": [
+      "step39/m80"
+    ],
+    "visibility": "model_visible",
+    "representation": {
+      "A_FULL": "source-visible or derivable",
+      "A_FAITHFUL_COMPACT": "exact or lossless delta",
+      "B_EFFORT_HISTORY": "current content retained",
+      "C_CURRENT_STATE": "current content retained"
+    },
+    "content_sha256": "cd37ddbcb588c22a3fa09748b80e9724332aa8c63757448c2233077007d93852"
+  },
+  {
+    "item_id": "CODE_cli_06",
+    "section": "source_definition",
+    "source": [
+      "step39/m80"
+    ],
+    "visibility": "model_visible",
+    "representation": {
+      "A_FULL": "source-visible or derivable",
+      "A_FAITHFUL_COMPACT": "exact or lossless delta",
+      "B_EFFORT_HISTORY": "current content retained",
+      "C_CURRENT_STATE": "current content retained"
+    },
+    "content_sha256": "3a96e3171684fa0e5d102664e43c25bb2b04d390229392ba472145e0e0f18abe"
+  },
+  {
+    "item_id": "CODE_cli_07",
+    "section": "source_definition",
+    "source": [
+      "step39/m80"
+    ],
+    "visibility": "model_visible",
+    "representation": {
+      "A_FULL": "source-visible or derivable",
+      "A_FAITHFUL_COMPACT": "exact or lossless delta",
+      "B_EFFORT_HISTORY": "current content retained",
+      "C_CURRENT_STATE": "current content retained"
+    },
+    "content_sha256": "a6e31a35db81aa4d0f0dca185bcd4ec775bf0136cd5bf98e931e2e38d1d9b155"
+  },
+  {
+    "item_id": "CODE_cli_08",
+    "section": "source_definition",
+    "source": [
+      "step39/m80"
+    ],
+    "visibility": "model_visible",
+    "representation": {
+      "A_FULL": "source-visible or derivable",
+      "A_FAITHFUL_COMPACT": "exact or lossless delta",
+      "B_EFFORT_HISTORY": "current content retained",
+      "C_CURRENT_STATE": "current content retained"
+    },
+    "content_sha256": "381c18d04cd607b7cb9eaadd3dbfab2f56add1d9adeb740a2a7507457bebf1dc"
+  },
+  {
+    "item_id": "CODE_cli_09",
+    "section": "source_definition",
+    "source": [
+      "step39/m80"
+    ],
+    "visibility": "model_visible",
+    "representation": {
+      "A_FULL": "source-visible or derivable",
+      "A_FAITHFUL_COMPACT": "exact or lossless delta",
+      "B_EFFORT_HISTORY": "current content retained",
+      "C_CURRENT_STATE": "current content retained"
+    },
+    "content_sha256": "c8d74192c9ebae8c714886cc2c41eefec745e7d00b175d433bf5ea556f0911d2"
+  },
+  {
+    "item_id": "CODE_cli_10",
+    "section": "source_definition",
+    "source": [
+      "step39/m80"
+    ],
+    "visibility": "model_visible",
+    "representation": {
+      "A_FULL": "source-visible or derivable",
+      "A_FAITHFUL_COMPACT": "exact or lossless delta",
+      "B_EFFORT_HISTORY": "current content retained",
+      "C_CURRENT_STATE": "current content retained"
+    },
+    "content_sha256": "8b99133ed0a17c4c99d08a78abcaa94353f32e7aca9a2d4ff1b2009913bf55c3"
+  },
+  {
+    "item_id": "CODE_cli_11",
+    "section": "source_definition",
+    "source": [
+      "step39/m80"
+    ],
+    "visibility": "model_visible",
+    "representation": {
+      "A_FULL": "source-visible or derivable",
+      "A_FAITHFUL_COMPACT": "exact or lossless delta",
+      "B_EFFORT_HISTORY": "current content retained",
+      "C_CURRENT_STATE": "current content retained"
+    },
+    "content_sha256": "fdd300258984c23ebea6c5aaff2a422858109cc83d02a2e0896bb4aa6fb10bb2"
+  },
+  {
+    "item_id": "CODE_cli_12",
+    "section": "source_definition",
+    "source": [
+      "step39/m80"
+    ],
+    "visibility": "model_visible",
+    "representation": {
+      "A_FULL": "source-visible or derivable",
+      "A_FAITHFUL_COMPACT": "exact or lossless delta",
+      "B_EFFORT_HISTORY": "current content retained",
+      "C_CURRENT_STATE": "current content retained"
+    },
+    "content_sha256": "5b3ea9a3247cb348b128b3bc2262578690a8e1546330cac2000b32f607b94bb6"
+  },
+  {
+    "item_id": "CODE_cli_13",
+    "section": "source_definition",
+    "source": [
+      "step39/m80"
+    ],
+    "visibility": "model_visible",
+    "representation": {
+      "A_FULL": "source-visible or derivable",
+      "A_FAITHFUL_COMPACT": "exact or lossless delta",
+      "B_EFFORT_HISTORY": "current content retained",
+      "C_CURRENT_STATE": "current content retained"
+    },
+    "content_sha256": "202db6750643d7c2358080f96c3d50bbc1f62bddc27c3d999db38f01c03c9c3b"
+  },
+  {
+    "item_id": "CODE_cli_14",
+    "section": "source_definition",
+    "source": [
+      "step39/m80"
+    ],
+    "visibility": "model_visible",
+    "representation": {
+      "A_FULL": "source-visible or derivable",
+      "A_FAITHFUL_COMPACT": "exact or lossless delta",
+      "B_EFFORT_HISTORY": "current content retained",
+      "C_CURRENT_STATE": "current content retained"
+    },
+    "content_sha256": "1028b8b6573aa3e7acf0248349a0466f64882f7907055442a87ad96f06db7c45"
+  },
+  {
+    "item_id": "CODE_cli_15",
+    "section": "source_definition",
+    "source": [
+      "step39/m80"
+    ],
+    "visibility": "model_visible",
+    "representation": {
+      "A_FULL": "source-visible or derivable",
+      "A_FAITHFUL_COMPACT": "exact or lossless delta",
+      "B_EFFORT_HISTORY": "current content retained",
+      "C_CURRENT_STATE": "current content retained"
+    },
+    "content_sha256": "7a0c18f06684e14e68f7d504c759a7875ce3b46e989cb62db6a6152f41e17181"
+  },
+  {
+    "item_id": "CODE_cli_16",
+    "section": "source_definition",
+    "source": [
+      "step39/m80"
+    ],
+    "visibility": "model_visible",
+    "representation": {
+      "A_FULL": "source-visible or derivable",
+      "A_FAITHFUL_COMPACT": "exact or lossless delta",
+      "B_EFFORT_HISTORY": "current content retained",
+      "C_CURRENT_STATE": "current content retained"
+    },
+    "content_sha256": "ca533bddcef1c98c317939b0ea08d94f3b32867195815442f3ae3a97096f850c"
+  },
+  {
+    "item_id": "CODE_cli_17",
+    "section": "source_definition",
+    "source": [
+      "step39/m80"
+    ],
+    "visibility": "model_visible",
+    "representation": {
+      "A_FULL": "source-visible or derivable",
+      "A_FAITHFUL_COMPACT": "exact or lossless delta",
+      "B_EFFORT_HISTORY": "current content retained",
+      "C_CURRENT_STATE": "current content retained"
+    },
+    "content_sha256": "58b047a5db627f4272b4bd0ccb8a7870c1f98a845b8f3feec78203816ee9b092"
+  },
+  {
+    "item_id": "CODE_cli_18",
+    "section": "source_definition",
+    "source": [
+      "step39/m80"
+    ],
+    "visibility": "model_visible",
+    "representation": {
+      "A_FULL": "source-visible or derivable",
+      "A_FAITHFUL_COMPACT": "exact or lossless delta",
+      "B_EFFORT_HISTORY": "current content retained",
+      "C_CURRENT_STATE": "current content retained"
+    },
+    "content_sha256": "72b4da1e0eeb44dc1b9d57a9b6b62dbf514dad1f5ecce95c8dd0dd0653f982dc"
+  },
+  {
+    "item_id": "CODE_cli_19",
+    "section": "source_definition",
+    "source": [
+      "step39/m80"
+    ],
+    "visibility": "model_visible",
+    "representation": {
+      "A_FULL": "source-visible or derivable",
+      "A_FAITHFUL_COMPACT": "exact or lossless delta",
+      "B_EFFORT_HISTORY": "current content retained",
+      "C_CURRENT_STATE": "current content retained"
+    },
+    "content_sha256": "d77eba0fb49bd1451cc90fd760b2de6eeea6e6a25451922c5c53fc4008f81c71"
+  },
+  {
+    "item_id": "CODE_cli_20",
+    "section": "source_definition",
+    "source": [
+      "step39/m80"
+    ],
+    "visibility": "model_visible",
+    "representation": {
+      "A_FULL": "source-visible or derivable",
+      "A_FAITHFUL_COMPACT": "exact or lossless delta",
+      "B_EFFORT_HISTORY": "current content retained",
+      "C_CURRENT_STATE": "current content retained"
+    },
+    "content_sha256": "7494ac5c11e1cbb8eaa89d7ab328a383317a959ee1d844398ae29776d8cba9c3"
+  },
+  {
+    "item_id": "CODE_cli_21",
+    "section": "source_definition",
+    "source": [
+      "step39/m80"
+    ],
+    "visibility": "model_visible",
+    "representation": {
+      "A_FULL": "source-visible or derivable",
+      "A_FAITHFUL_COMPACT": "exact or lossless delta",
+      "B_EFFORT_HISTORY": "current content retained",
+      "C_CURRENT_STATE": "current content retained"
+    },
+    "content_sha256": "e3d884a8e6640f04c2dff4122cf0791beaf32d140e75840e5d2476549bf868a0"
+  },
+  {
+    "item_id": "CODE_cli_22",
+    "section": "source_definition",
+    "source": [
+      "step39/m80"
+    ],
+    "visibility": "model_visible",
+    "representation": {
+      "A_FULL": "source-visible or derivable",
+      "A_FAITHFUL_COMPACT": "exact or lossless delta",
+      "B_EFFORT_HISTORY": "current content retained",
+      "C_CURRENT_STATE": "current content retained"
+    },
+    "content_sha256": "85d88cdd4da2412dfa8cfeaedea8c2af5e280c7da58c315ec02ebec27389d2a4"
+  },
+  {
+    "item_id": "FILE_src_config.py",
+    "section": "current_source",
+    "source": [
+      "step34/m70"
+    ],
+    "visibility": "model_visible",
+    "representation": {
+      "A_FULL": "source-visible or derivable",
+      "A_FAITHFUL_COMPACT": "exact or lossless delta",
+      "B_EFFORT_HISTORY": "current content retained",
+      "C_CURRENT_STATE": "current content retained"
+    },
+    "content_sha256": "df5e78f5b5970d034cd6209e07915ad0510d1ab79365248751fa0a13ef2beb53"
+  },
+  {
+    "item_id": "CODE_config_00",
+    "section": "source_definition",
+    "source": [
+      "step34/m70"
+    ],
+    "visibility": "model_visible",
+    "representation": {
+      "A_FULL": "source-visible or derivable",
+      "A_FAITHFUL_COMPACT": "exact or lossless delta",
+      "B_EFFORT_HISTORY": "current content retained",
+      "C_CURRENT_STATE": "current content retained"
+    },
+    "content_sha256": "eeb6b568b30038b62f8be45ce3d10edc2b80980e2b034e75f02ce553946ec88c"
+  },
+  {
+    "item_id": "CODE_config_01",
+    "section": "source_definition",
+    "source": [
+      "step34/m70"
+    ],
+    "visibility": "model_visible",
+    "representation": {
+      "A_FULL": "source-visible or derivable",
+      "A_FAITHFUL_COMPACT": "exact or lossless delta",
+      "B_EFFORT_HISTORY": "current content retained",
+      "C_CURRENT_STATE": "current content retained"
+    },
+    "content_sha256": "de2abade832c8e350a1bdc98cfcdb1e202ac4749c5fc51a4a970d41736b6df5c"
+  },
+  {
+    "item_id": "CODE_config_02",
+    "section": "source_definition",
+    "source": [
+      "step34/m70"
+    ],
+    "visibility": "model_visible",
+    "representation": {
+      "A_FULL": "source-visible or derivable",
+      "A_FAITHFUL_COMPACT": "exact or lossless delta",
+      "B_EFFORT_HISTORY": "current content retained",
+      "C_CURRENT_STATE": "current content retained"
+    },
+    "content_sha256": "09bfe6d1b636016d66a19c93bb1dbcc0654ae31967a16188ff5aa140985fb6d7"
+  },
+  {
+    "item_id": "CODE_config_03",
+    "section": "source_definition",
+    "source": [
+      "step34/m70"
+    ],
+    "visibility": "model_visible",
+    "representation": {
+      "A_FULL": "source-visible or derivable",
+      "A_FAITHFUL_COMPACT": "exact or lossless delta",
+      "B_EFFORT_HISTORY": "current content retained",
+      "C_CURRENT_STATE": "current content retained"
+    },
+    "content_sha256": "1ba25a0ad00c4511b591046805e6342b82d740583998a6e7a79a83be33fa67bf"
+  },
+  {
+    "item_id": "CODE_config_04",
+    "section": "source_definition",
+    "source": [
+      "step34/m70"
+    ],
+    "visibility": "model_visible",
+    "representation": {
+      "A_FULL": "source-visible or derivable",
+      "A_FAITHFUL_COMPACT": "exact or lossless delta",
+      "B_EFFORT_HISTORY": "current content retained",
+      "C_CURRENT_STATE": "current content retained"
+    },
+    "content_sha256": "8a0871ee5a5fdf44a957af4fda36a799858567e4c66c0bfdfc11f747cf79cbb4"
+  },
+  {
+    "item_id": "CODE_config_05",
+    "section": "source_definition",
+    "source": [
+      "step34/m70"
+    ],
+    "visibility": "model_visible",
+    "representation": {
+      "A_FULL": "source-visible or derivable",
+      "A_FAITHFUL_COMPACT": "exact or lossless delta",
+      "B_EFFORT_HISTORY": "current content retained",
+      "C_CURRENT_STATE": "current content retained"
+    },
+    "content_sha256": "5790038d7b418d11adf7781c9d8576d224096e432a27f574bcfcb36045fc363f"
+  },
+  {
+    "item_id": "CODE_config_06",
+    "section": "source_definition",
+    "source": [
+      "step34/m70"
+    ],
+    "visibility": "model_visible",
+    "representation": {
+      "A_FULL": "source-visible or derivable",
+      "A_FAITHFUL_COMPACT": "exact or lossless delta",
+      "B_EFFORT_HISTORY": "current content retained",
+      "C_CURRENT_STATE": "current content retained"
+    },
+    "content_sha256": "a28fe2d6654516a52dc1a570e00d814d520ff3d4d41aba1b4ad3841dd39ffc95"
+  },
+  {
+    "item_id": "CODE_config_07",
+    "section": "source_definition",
+    "source": [
+      "step34/m70"
+    ],
+    "visibility": "model_visible",
+    "representation": {
+      "A_FULL": "source-visible or derivable",
+      "A_FAITHFUL_COMPACT": "exact or lossless delta",
+      "B_EFFORT_HISTORY": "current content retained",
+      "C_CURRENT_STATE": "current content retained"
+    },
+    "content_sha256": "c79d78ce6fc7005449fd7ead765fbb70c1de752b0ca328cb01b634da517716ac"
+  },
+  {
+    "item_id": "CODE_config_08",
+    "section": "source_definition",
+    "source": [
+      "step34/m70"
+    ],
+    "visibility": "model_visible",
+    "representation": {
+      "A_FULL": "source-visible or derivable",
+      "A_FAITHFUL_COMPACT": "exact or lossless delta",
+      "B_EFFORT_HISTORY": "current content retained",
+      "C_CURRENT_STATE": "current content retained"
+    },
+    "content_sha256": "b9f4f2a38f2185c803c5ad880ccce35d6d8b08ff911bfa875ece62bb43781707"
+  },
+  {
+    "item_id": "FILE_src_csv_source.py",
+    "section": "current_source",
+    "source": [
+      "step17/m36"
+    ],
+    "visibility": "model_visible",
+    "representation": {
+      "A_FULL": "source-visible or derivable",
+      "A_FAITHFUL_COMPACT": "exact or lossless delta",
+      "B_EFFORT_HISTORY": "current content retained",
+      "C_CURRENT_STATE": "current content retained"
+    },
+    "content_sha256": "cfc55b8df2c6d6e9846358915327211f9610412f24661585950a69e4550aa340"
+  },
+  {
+    "item_id": "CODE_csv_source_00",
+    "section": "source_definition",
+    "source": [
+      "step17/m36"
+    ],
+    "visibility": "model_visible",
+    "representation": {
+      "A_FULL": "source-visible or derivable",
+      "A_FAITHFUL_COMPACT": "exact or lossless delta",
+      "B_EFFORT_HISTORY": "current content retained",
+      "C_CURRENT_STATE": "current content retained"
+    },
+    "content_sha256": "3c2e5e0b5286a6cc1db6178dce4f86d111bd488cd3efd438276f74ffe0e88e88"
+  },
+  {
+    "item_id": "CODE_csv_source_01",
+    "section": "source_definition",
+    "source": [
+      "step17/m36"
+    ],
+    "visibility": "model_visible",
+    "representation": {
+      "A_FULL": "source-visible or derivable",
+      "A_FAITHFUL_COMPACT": "exact or lossless delta",
+      "B_EFFORT_HISTORY": "current content retained",
+      "C_CURRENT_STATE": "current content retained"
+    },
+    "content_sha256": "ab159f81f279e2664ad5dedfcb52b2fdfc9f411b53510899c5aaafe5e5b2909c"
+  },
+  {
+    "item_id": "CODE_csv_source_02",
+    "section": "source_definition",
+    "source": [
+      "step17/m36"
+    ],
+    "visibility": "model_visible",
+    "representation": {
+      "A_FULL": "source-visible or derivable",
+      "A_FAITHFUL_COMPACT": "exact or lossless delta",
+      "B_EFFORT_HISTORY": "current content retained",
+      "C_CURRENT_STATE": "current content retained"
+    },
+    "content_sha256": "de2abade832c8e350a1bdc98cfcdb1e202ac4749c5fc51a4a970d41736b6df5c"
+  },
+  {
+    "item_id": "CODE_csv_source_03",
+    "section": "source_definition",
+    "source": [
+      "step17/m36"
+    ],
+    "visibility": "model_visible",
+    "representation": {
+      "A_FULL": "source-visible or derivable",
+      "A_FAITHFUL_COMPACT": "exact or lossless delta",
+      "B_EFFORT_HISTORY": "current content retained",
+      "C_CURRENT_STATE": "current content retained"
+    },
+    "content_sha256": "1c80ee441a56d69acae99266605441b0bb38a078dd24cafe32771d718f2b86a4"
+  },
+  {
+    "item_id": "CODE_csv_source_04",
+    "section": "source_definition",
+    "source": [
+      "step17/m36"
+    ],
+    "visibility": "model_visible",
+    "representation": {
+      "A_FULL": "source-visible or derivable",
+      "A_FAITHFUL_COMPACT": "exact or lossless delta",
+      "B_EFFORT_HISTORY": "current content retained",
+      "C_CURRENT_STATE": "current content retained"
+    },
+    "content_sha256": "7f09410189a5d6915347aee4d58b50bdbfc7d34dcc1deb3e2964ab5f5d26b90a"
+  },
+  {
+    "item_id": "CODE_csv_source_05",
+    "section": "source_definition",
+    "source": [
+      "step17/m36"
+    ],
+    "visibility": "model_visible",
+    "representation": {
+      "A_FULL": "source-visible or derivable",
+      "A_FAITHFUL_COMPACT": "exact or lossless delta",
+      "B_EFFORT_HISTORY": "current content retained",
+      "C_CURRENT_STATE": "current content retained"
+    },
+    "content_sha256": "7a0c18f06684e14e68f7d504c759a7875ce3b46e989cb62db6a6152f41e17181"
+  },
+  {
+    "item_id": "CODE_csv_source_06",
+    "section": "source_definition",
+    "source": [
+      "step17/m36"
+    ],
+    "visibility": "model_visible",
+    "representation": {
+      "A_FULL": "source-visible or derivable",
+      "A_FAITHFUL_COMPACT": "exact or lossless delta",
+      "B_EFFORT_HISTORY": "current content retained",
+      "C_CURRENT_STATE": "current content retained"
+    },
+    "content_sha256": "a399b46b5ab5aa3f704c2fb4e02a8d5b719e6f86b09d8935dd003c05e8dc635b"
+  },
+  {
+    "item_id": "CODE_csv_source_07",
+    "section": "source_definition",
+    "source": [
+      "step17/m36"
+    ],
+    "visibility": "model_visible",
+    "representation": {
+      "A_FULL": "source-visible or derivable",
+      "A_FAITHFUL_COMPACT": "exact or lossless delta",
+      "B_EFFORT_HISTORY": "current content retained",
+      "C_CURRENT_STATE": "current content retained"
+    },
+    "content_sha256": "9a62c8a9684d75f0506428d2996a6770207613a56695159da4e3f5066d4d3cdc"
+  },
+  {
+    "item_id": "CODE_csv_source_08",
+    "section": "source_definition",
+    "source": [
+      "step17/m36"
+    ],
+    "visibility": "model_visible",
+    "representation": {
+      "A_FULL": "source-visible or derivable",
+      "A_FAITHFUL_COMPACT": "exact or lossless delta",
+      "B_EFFORT_HISTORY": "current content retained",
+      "C_CURRENT_STATE": "current content retained"
+    },
+    "content_sha256": "b923c848c14c8d2592ea8629fd7179f7dc3b971c8ca9a6e6bf102ba8a593ca5e"
+  },
+  {
+    "item_id": "CODE_csv_source_09",
+    "section": "source_definition",
+    "source": [
+      "step17/m36"
+    ],
+    "visibility": "model_visible",
+    "representation": {
+      "A_FULL": "source-visible or derivable",
+      "A_FAITHFUL_COMPACT": "exact or lossless delta",
+      "B_EFFORT_HISTORY": "current content retained",
+      "C_CURRENT_STATE": "current content retained"
+    },
+    "content_sha256": "9e1fadb96b6aca87372f1ab83f690be1e81e43fb844ff8fb818b29e355fcd9c3"
+  },
+  {
+    "item_id": "CODE_csv_source_10",
+    "section": "source_definition",
+    "source": [
+      "step17/m36"
+    ],
+    "visibility": "model_visible",
+    "representation": {
+      "A_FULL": "source-visible or derivable",
+      "A_FAITHFUL_COMPACT": "exact or lossless delta",
+      "B_EFFORT_HISTORY": "current content retained",
+      "C_CURRENT_STATE": "current content retained"
+    },
+    "content_sha256": "b1b7e939de26426c5ea0e7c010d12076692ca231dffc4992c9f0f9aa581dd8d5"
+  },
+  {
+    "item_id": "CODE_csv_source_11",
+    "section": "source_definition",
+    "source": [
+      "step17/m36"
+    ],
+    "visibility": "model_visible",
+    "representation": {
+      "A_FULL": "source-visible or derivable",
+      "A_FAITHFUL_COMPACT": "exact or lossless delta",
+      "B_EFFORT_HISTORY": "current content retained",
+      "C_CURRENT_STATE": "current content retained"
+    },
+    "content_sha256": "b0d1b779742413c808eb20d15cf48c8609c5b436464f25921eaeaf43bb67b2ef"
+  },
+  {
+    "item_id": "CODE_csv_source_12",
+    "section": "source_definition",
+    "source": [
+      "step17/m36"
+    ],
+    "visibility": "model_visible",
+    "representation": {
+      "A_FULL": "source-visible or derivable",
+      "A_FAITHFUL_COMPACT": "exact or lossless delta",
+      "B_EFFORT_HISTORY": "current content retained",
+      "C_CURRENT_STATE": "current content retained"
+    },
+    "content_sha256": "fc0120c24b085812989d8c375527491505b2ea9564b0fb1ec683d5bb1345bdd3"
+  },
+  {
+    "item_id": "FILE_src_db.py",
+    "section": "current_source",
+    "source": [
+      "step19/m40"
+    ],
+    "visibility": "model_visible",
+    "representation": {
+      "A_FULL": "source-visible or derivable",
+      "A_FAITHFUL_COMPACT": "exact or lossless delta",
+      "B_EFFORT_HISTORY": "current content retained",
+      "C_CURRENT_STATE": "current content retained"
+    },
+    "content_sha256": "1c21a9c3b8d1683858fb54bc148f9609b5047fb2db13e715dd98595c9d927d99"
+  },
+  {
+    "item_id": "CODE_db_00",
+    "section": "source_definition",
+    "source": [
+      "step19/m40"
+    ],
+    "visibility": "model_visible",
+    "representation": {
+      "A_FULL": "source-visible or derivable",
+      "A_FAITHFUL_COMPACT": "exact or lossless delta",
+      "B_EFFORT_HISTORY": "current content retained",
+      "C_CURRENT_STATE": "current content retained"
+    },
+    "content_sha256": "e7f7c438b5aafea60dba2134629548a1bc8d94639d507132d5fb3ed85b54386f"
+  },
+  {
+    "item_id": "CODE_db_01",
+    "section": "source_definition",
+    "source": [
+      "step19/m40"
+    ],
+    "visibility": "model_visible",
+    "representation": {
+      "A_FULL": "source-visible or derivable",
+      "A_FAITHFUL_COMPACT": "exact or lossless delta",
+      "B_EFFORT_HISTORY": "current content retained",
+      "C_CURRENT_STATE": "current content retained"
+    },
+    "content_sha256": "cc7487a3355899f953a3226e58b5045e147345842f2058c2c71266a27d7aa44e"
+  },
+  {
+    "item_id": "CODE_db_02",
+    "section": "source_definition",
+    "source": [
+      "step19/m40"
+    ],
+    "visibility": "model_visible",
+    "representation": {
+      "A_FULL": "source-visible or derivable",
+      "A_FAITHFUL_COMPACT": "exact or lossless delta",
+      "B_EFFORT_HISTORY": "current content retained",
+      "C_CURRENT_STATE": "current content retained"
+    },
+    "content_sha256": "90781f3efdcb4ec0fcc56cd2214ffbf3333758a8b7d36c672a661660246717df"
+  },
+  {
+    "item_id": "CODE_db_03",
+    "section": "source_definition",
+    "source": [
+      "step19/m40"
+    ],
+    "visibility": "model_visible",
+    "representation": {
+      "A_FULL": "source-visible or derivable",
+      "A_FAITHFUL_COMPACT": "exact or lossless delta",
+      "B_EFFORT_HISTORY": "current content retained",
+      "C_CURRENT_STATE": "current content retained"
+    },
+    "content_sha256": "09bfe6d1b636016d66a19c93bb1dbcc0654ae31967a16188ff5aa140985fb6d7"
+  },
+  {
+    "item_id": "CODE_db_04",
+    "section": "source_definition",
+    "source": [
+      "step19/m40"
+    ],
+    "visibility": "model_visible",
+    "representation": {
+      "A_FULL": "source-visible or derivable",
+      "A_FAITHFUL_COMPACT": "exact or lossless delta",
+      "B_EFFORT_HISTORY": "current content retained",
+      "C_CURRENT_STATE": "current content retained"
+    },
+    "content_sha256": "8457c7994eb316457ea2ea5cdb8bf0803e776d323ae73c57dfcf683f33584628"
+  },
+  {
+    "item_id": "CODE_db_05",
+    "section": "source_definition",
+    "source": [
+      "step19/m40"
+    ],
+    "visibility": "model_visible",
+    "representation": {
+      "A_FULL": "source-visible or derivable",
+      "A_FAITHFUL_COMPACT": "exact or lossless delta",
+      "B_EFFORT_HISTORY": "current content retained",
+      "C_CURRENT_STATE": "current content retained"
+    },
+    "content_sha256": "3da5154542739995df8814a2d9b0b84f40ae885250a1d3167118d87d1edb0cb0"
+  },
+  {
+    "item_id": "CODE_db_06",
+    "section": "source_definition",
+    "source": [
+      "step19/m40"
+    ],
+    "visibility": "model_visible",
+    "representation": {
+      "A_FULL": "source-visible or derivable",
+      "A_FAITHFUL_COMPACT": "exact or lossless delta",
+      "B_EFFORT_HISTORY": "current content retained",
+      "C_CURRENT_STATE": "current content retained"
+    },
+    "content_sha256": "36dc97c604589a9079cd71ce7b02fb51236e7ccad9aac15783d7aa0814e8b46c"
+  },
+  {
+    "item_id": "CODE_db_07",
+    "section": "source_definition",
+    "source": [
+      "step19/m40"
+    ],
+    "visibility": "model_visible",
+    "representation": {
+      "A_FULL": "source-visible or derivable",
+      "A_FAITHFUL_COMPACT": "exact or lossless delta",
+      "B_EFFORT_HISTORY": "current content retained",
+      "C_CURRENT_STATE": "current content retained"
+    },
+    "content_sha256": "be4251fc61d4dba8b37d46f8d1d9d6facdcb19bd5ead76ac3d2afcef2af92f5f"
+  },
+  {
+    "item_id": "CODE_db_08",
+    "section": "source_definition",
+    "source": [
+      "step19/m40"
+    ],
+    "visibility": "model_visible",
+    "representation": {
+      "A_FULL": "source-visible or derivable",
+      "A_FAITHFUL_COMPACT": "exact or lossless delta",
+      "B_EFFORT_HISTORY": "current content retained",
+      "C_CURRENT_STATE": "current content retained"
+    },
+    "content_sha256": "094ec64375b11dda7b0c85287b5705a0173e3156bff820572638101064d81b72"
+  },
+  {
+    "item_id": "CODE_db_09",
+    "section": "source_definition",
+    "source": [
+      "step19/m40"
+    ],
+    "visibility": "model_visible",
+    "representation": {
+      "A_FULL": "source-visible or derivable",
+      "A_FAITHFUL_COMPACT": "exact or lossless delta",
+      "B_EFFORT_HISTORY": "current content retained",
+      "C_CURRENT_STATE": "current content retained"
+    },
+    "content_sha256": "d13b599d44fc4542d6f6d7541dc1bef6b9cb23c0d097133b62f69cc8fae27c84"
+  },
+  {
+    "item_id": "CODE_db_10",
+    "section": "source_definition",
+    "source": [
+      "step19/m40"
+    ],
+    "visibility": "model_visible",
+    "representation": {
+      "A_FULL": "source-visible or derivable",
+      "A_FAITHFUL_COMPACT": "exact or lossless delta",
+      "B_EFFORT_HISTORY": "current content retained",
+      "C_CURRENT_STATE": "current content retained"
+    },
+    "content_sha256": "34f911dfdc8748262df9667d353de024424c199aabb037152015addccfa1024d"
+  },
+  {
+    "item_id": "CODE_db_11",
+    "section": "source_definition",
+    "source": [
+      "step19/m40"
+    ],
+    "visibility": "model_visible",
+    "representation": {
+      "A_FULL": "source-visible or derivable",
+      "A_FAITHFUL_COMPACT": "exact or lossless delta",
+      "B_EFFORT_HISTORY": "current content retained",
+      "C_CURRENT_STATE": "current content retained"
+    },
+    "content_sha256": "54bf6e194d315d31df0763a80c6d6d1d9b2e5ac9ead985c29bf73dd67d9fc8bf"
+  },
+  {
+    "item_id": "CODE_db_12",
+    "section": "source_definition",
+    "source": [
+      "step19/m40"
+    ],
+    "visibility": "model_visible",
+    "representation": {
+      "A_FULL": "source-visible or derivable",
+      "A_FAITHFUL_COMPACT": "exact or lossless delta",
+      "B_EFFORT_HISTORY": "current content retained",
+      "C_CURRENT_STATE": "current content retained"
+    },
+    "content_sha256": "c1e9d37617971962b38a8c082f0662d7875452070071bc22ca11345806609816"
+  },
+  {
+    "item_id": "CODE_db_13",
+    "section": "source_definition",
+    "source": [
+      "step19/m40"
+    ],
+    "visibility": "model_visible",
+    "representation": {
+      "A_FULL": "source-visible or derivable",
+      "A_FAITHFUL_COMPACT": "exact or lossless delta",
+      "B_EFFORT_HISTORY": "current content retained",
+      "C_CURRENT_STATE": "current content retained"
+    },
+    "content_sha256": "2a46dd30983d96c0f78e0b99a3c0fa8bcdb1c70d33fc59160c0d46c1d2d89905"
+  },
+  {
+    "item_id": "FILE_src_db_source.py",
+    "section": "current_source",
+    "source": [
+      "step32/m66"
+    ],
+    "visibility": "model_visible",
+    "representation": {
+      "A_FULL": "source-visible or derivable",
+      "A_FAITHFUL_COMPACT": "exact or lossless delta",
+      "B_EFFORT_HISTORY": "current content retained",
+      "C_CURRENT_STATE": "current content retained"
+    },
+    "content_sha256": "1d19e8b65dc25d3f64ce245bf5193e35ef547a37af7eaa60be12f7d443254b1d"
+  },
+  {
+    "item_id": "CODE_db_source_00",
+    "section": "source_definition",
+    "source": [
+      "step32/m66"
+    ],
+    "visibility": "model_visible",
+    "representation": {
+      "A_FULL": "source-visible or derivable",
+      "A_FAITHFUL_COMPACT": "exact or lossless delta",
+      "B_EFFORT_HISTORY": "current content retained",
+      "C_CURRENT_STATE": "current content retained"
+    },
+    "content_sha256": "12352b49696edef5e2e93507a630b18013ab1f8927ac011637fbb81ee97a4890"
+  },
+  {
+    "item_id": "CODE_db_source_01",
+    "section": "source_definition",
+    "source": [
+      "step32/m66"
+    ],
+    "visibility": "model_visible",
+    "representation": {
+      "A_FULL": "source-visible or derivable",
+      "A_FAITHFUL_COMPACT": "exact or lossless delta",
+      "B_EFFORT_HISTORY": "current content retained",
+      "C_CURRENT_STATE": "current content retained"
+    },
+    "content_sha256": "27dced094c9514184c1983402a02c05d10c904156f13318d12650d0243454e60"
+  },
+  {
+    "item_id": "CODE_db_source_02",
+    "section": "source_definition",
+    "source": [
+      "step32/m66"
+    ],
+    "visibility": "model_visible",
+    "representation": {
+      "A_FULL": "source-visible or derivable",
+      "A_FAITHFUL_COMPACT": "exact or lossless delta",
+      "B_EFFORT_HISTORY": "current content retained",
+      "C_CURRENT_STATE": "current content retained"
+    },
+    "content_sha256": "b481fb41ac62beee6e1d190130cd9d803f5baca869400ad8f57daf3b9f79d8f4"
+  },
+  {
+    "item_id": "CODE_db_source_03",
+    "section": "source_definition",
+    "source": [
+      "step32/m66"
+    ],
+    "visibility": "model_visible",
+    "representation": {
+      "A_FULL": "source-visible or derivable",
+      "A_FAITHFUL_COMPACT": "exact or lossless delta",
+      "B_EFFORT_HISTORY": "current content retained",
+      "C_CURRENT_STATE": "current content retained"
+    },
+    "content_sha256": "df7808108fa5a3d09890f3c0d37d390546440f53b200ff78fc6326a42801aac0"
+  },
+  {
+    "item_id": "CODE_db_source_04",
+    "section": "source_definition",
+    "source": [
+      "step32/m66"
+    ],
+    "visibility": "model_visible",
+    "representation": {
+      "A_FULL": "source-visible or derivable",
+      "A_FAITHFUL_COMPACT": "exact or lossless delta",
+      "B_EFFORT_HISTORY": "current content retained",
+      "C_CURRENT_STATE": "current content retained"
+    },
+    "content_sha256": "fdc1b76e7cc6db62501fc93b3dd710aecc43e873fdf7688be40ef5270b8b0e8f"
+  },
+  {
+    "item_id": "CODE_db_source_05",
+    "section": "source_definition",
+    "source": [
+      "step32/m66"
+    ],
+    "visibility": "model_visible",
+    "representation": {
+      "A_FULL": "source-visible or derivable",
+      "A_FAITHFUL_COMPACT": "exact or lossless delta",
+      "B_EFFORT_HISTORY": "current content retained",
+      "C_CURRENT_STATE": "current content retained"
+    },
+    "content_sha256": "0dc8128bee435d5ef35c29add92198499a32cf52a15ca0b4643068f373711f63"
+  },
+  {
+    "item_id": "CODE_db_source_06",
+    "section": "source_definition",
+    "source": [
+      "step32/m66"
+    ],
+    "visibility": "model_visible",
+    "representation": {
+      "A_FULL": "source-visible or derivable",
+      "A_FAITHFUL_COMPACT": "exact or lossless delta",
+      "B_EFFORT_HISTORY": "current content retained",
+      "C_CURRENT_STATE": "current content retained"
+    },
+    "content_sha256": "7fd7e60422f7807b12a88fe1e969de8157636c75359e4a508394b2ee122a40b3"
+  },
+  {
+    "item_id": "CODE_db_source_07",
+    "section": "source_definition",
+    "source": [
+      "step32/m66"
+    ],
+    "visibility": "model_visible",
+    "representation": {
+      "A_FULL": "source-visible or derivable",
+      "A_FAITHFUL_COMPACT": "exact or lossless delta",
+      "B_EFFORT_HISTORY": "current content retained",
+      "C_CURRENT_STATE": "current content retained"
+    },
+    "content_sha256": "e069ca4c185d2cd070e13aadad4440f19f2574ada1c77513b9f271d13a81be04"
+  },
+  {
+    "item_id": "CODE_db_source_08",
+    "section": "source_definition",
+    "source": [
+      "step32/m66"
+    ],
+    "visibility": "model_visible",
+    "representation": {
+      "A_FULL": "source-visible or derivable",
+      "A_FAITHFUL_COMPACT": "exact or lossless delta",
+      "B_EFFORT_HISTORY": "current content retained",
+      "C_CURRENT_STATE": "current content retained"
+    },
+    "content_sha256": "966567b0a847f2350a6d78c796bb18638742a66743d6ab0c4f894e453d80d8be"
+  },
+  {
+    "item_id": "CODE_db_source_09",
+    "section": "source_definition",
+    "source": [
+      "step32/m66"
+    ],
+    "visibility": "model_visible",
+    "representation": {
+      "A_FULL": "source-visible or derivable",
+      "A_FAITHFUL_COMPACT": "exact or lossless delta",
+      "B_EFFORT_HISTORY": "current content retained",
+      "C_CURRENT_STATE": "current content retained"
+    },
+    "content_sha256": "3e4a8e4c342932796589d430504b4ebf2cd3589d9b06e927258e406ef84b9b54"
+  },
+  {
+    "item_id": "CODE_db_source_10",
+    "section": "source_definition",
+    "source": [
+      "step32/m66"
+    ],
+    "visibility": "model_visible",
+    "representation": {
+      "A_FULL": "source-visible or derivable",
+      "A_FAITHFUL_COMPACT": "exact or lossless delta",
+      "B_EFFORT_HISTORY": "current content retained",
+      "C_CURRENT_STATE": "current content retained"
+    },
+    "content_sha256": "1f030d403a8b9ba34035b387c3f0fba0c403f228770a001b5a2f85e28fa168fe"
+  },
+  {
+    "item_id": "CODE_db_source_11",
+    "section": "source_definition",
+    "source": [
+      "step32/m66"
+    ],
+    "visibility": "model_visible",
+    "representation": {
+      "A_FULL": "source-visible or derivable",
+      "A_FAITHFUL_COMPACT": "exact or lossless delta",
+      "B_EFFORT_HISTORY": "current content retained",
+      "C_CURRENT_STATE": "current content retained"
+    },
+    "content_sha256": "e306b17fcdf73953fb35d1b5179b6717594dc84e36c9900e37cb1441b9a16488"
+  },
+  {
+    "item_id": "CODE_db_source_12",
+    "section": "source_definition",
+    "source": [
+      "step32/m66"
+    ],
+    "visibility": "model_visible",
+    "representation": {
+      "A_FULL": "source-visible or derivable",
+      "A_FAITHFUL_COMPACT": "exact or lossless delta",
+      "B_EFFORT_HISTORY": "current content retained",
+      "C_CURRENT_STATE": "current content retained"
+    },
+    "content_sha256": "7dd0827aaba091528c48723bc7b9b5a12dec20447c70ecf6979396fbc5274adf"
+  },
+  {
+    "item_id": "FILE_src_logging_setup.py",
+    "section": "current_source",
+    "source": [
+      "step29/m60"
+    ],
+    "visibility": "model_visible",
+    "representation": {
+      "A_FULL": "source-visible or derivable",
+      "A_FAITHFUL_COMPACT": "exact or lossless delta",
+      "B_EFFORT_HISTORY": "current content retained",
+      "C_CURRENT_STATE": "current content retained"
+    },
+    "content_sha256": "f2cf53bee1654a4e32c2a3cd6fd21efd0f151bc61c1dad9f63a8f1874ef14302"
+  },
+  {
+    "item_id": "CODE_logging_setup_00",
+    "section": "source_definition",
+    "source": [
+      "step29/m60"
+    ],
+    "visibility": "model_visible",
+    "representation": {
+      "A_FULL": "source-visible or derivable",
+      "A_FAITHFUL_COMPACT": "exact or lossless delta",
+      "B_EFFORT_HISTORY": "current content retained",
+      "C_CURRENT_STATE": "current content retained"
+    },
+    "content_sha256": "12b190e21c8223b7b8fd65f29dc92ba5499c9b8dd36353de18307b2bbb7cc639"
+  },
+  {
+    "item_id": "CODE_logging_setup_01",
+    "section": "source_definition",
+    "source": [
+      "step29/m60"
+    ],
+    "visibility": "model_visible",
+    "representation": {
+      "A_FULL": "source-visible or derivable",
+      "A_FAITHFUL_COMPACT": "exact or lossless delta",
+      "B_EFFORT_HISTORY": "current content retained",
+      "C_CURRENT_STATE": "current content retained"
+    },
+    "content_sha256": "27dced094c9514184c1983402a02c05d10c904156f13318d12650d0243454e60"
+  },
+  {
+    "item_id": "CODE_logging_setup_02",
+    "section": "source_definition",
+    "source": [
+      "step29/m60"
+    ],
+    "visibility": "model_visible",
+    "representation": {
+      "A_FULL": "source-visible or derivable",
+      "A_FAITHFUL_COMPACT": "exact or lossless delta",
+      "B_EFFORT_HISTORY": "current content retained",
+      "C_CURRENT_STATE": "current content retained"
+    },
+    "content_sha256": "9e77b3746ea081eb4c557e71cc84ca29dc66a89d18a07e85dba66a336e7310ae"
+  },
+  {
+    "item_id": "CODE_logging_setup_03",
+    "section": "source_definition",
+    "source": [
+      "step29/m60"
+    ],
+    "visibility": "model_visible",
+    "representation": {
+      "A_FULL": "source-visible or derivable",
+      "A_FAITHFUL_COMPACT": "exact or lossless delta",
+      "B_EFFORT_HISTORY": "current content retained",
+      "C_CURRENT_STATE": "current content retained"
+    },
+    "content_sha256": "d2d9b7231910bee053a60486c3b5c3f5eba081fd629b36a6f69de92c35977abe"
+  },
+  {
+    "item_id": "CODE_logging_setup_04",
+    "section": "source_definition",
+    "source": [
+      "step29/m60"
+    ],
+    "visibility": "model_visible",
+    "representation": {
+      "A_FULL": "source-visible or derivable",
+      "A_FAITHFUL_COMPACT": "exact or lossless delta",
+      "B_EFFORT_HISTORY": "current content retained",
+      "C_CURRENT_STATE": "current content retained"
+    },
+    "content_sha256": "1745dea347e43f9fbf901f9f5bccd4dfdfc3de87b2a3bce3c48ba3a3af284717"
+  },
+  {
+    "item_id": "CODE_logging_setup_05",
+    "section": "source_definition",
+    "source": [
+      "step29/m60"
+    ],
+    "visibility": "model_visible",
+    "representation": {
+      "A_FULL": "source-visible or derivable",
+      "A_FAITHFUL_COMPACT": "exact or lossless delta",
+      "B_EFFORT_HISTORY": "current content retained",
+      "C_CURRENT_STATE": "current content retained"
+    },
+    "content_sha256": "dfd0e96d7a9f918637b54d65df08443aab8e2485f1bdaaefa3cde57d2a52ed6c"
+  },
+  {
+    "item_id": "CODE_logging_setup_06",
+    "section": "source_definition",
+    "source": [
+      "step29/m60"
+    ],
+    "visibility": "model_visible",
+    "representation": {
+      "A_FULL": "source-visible or derivable",
+      "A_FAITHFUL_COMPACT": "exact or lossless delta",
+      "B_EFFORT_HISTORY": "current content retained",
+      "C_CURRENT_STATE": "current content retained"
+    },
+    "content_sha256": "fa8dbda2b53c6aec23b019dedec4af4c937d1a2edf8cce1726c9ae2ea51c1d61"
+  },
+  {
+    "item_id": "CODE_logging_setup_07",
+    "section": "source_definition",
+    "source": [
+      "step29/m60"
+    ],
+    "visibility": "model_visible",
+    "representation": {
+      "A_FULL": "source-visible or derivable",
+      "A_FAITHFUL_COMPACT": "exact or lossless delta",
+      "B_EFFORT_HISTORY": "current content retained",
+      "C_CURRENT_STATE": "current content retained"
+    },
+    "content_sha256": "d1e69560cbade0791cf27d9aba48dbbf642598150688a8720367360f2abe78ff"
+  },
+  {
+    "item_id": "CODE_logging_setup_08",
+    "section": "source_definition",
+    "source": [
+      "step29/m60"
+    ],
+    "visibility": "model_visible",
+    "representation": {
+      "A_FULL": "source-visible or derivable",
+      "A_FAITHFUL_COMPACT": "exact or lossless delta",
+      "B_EFFORT_HISTORY": "current content retained",
+      "C_CURRENT_STATE": "current content retained"
+    },
+    "content_sha256": "c2927e9315f3167f818c95332ec8fe638d09c666c631cef607f8f21234be8fd5"
+  },
+  {
+    "item_id": "FILE_src_metrics.py",
+    "section": "current_source",
+    "source": [
+      "step13/m28"
+    ],
+    "visibility": "model_visible",
+    "representation": {
+      "A_FULL": "source-visible or derivable",
+      "A_FAITHFUL_COMPACT": "exact or lossless delta",
+      "B_EFFORT_HISTORY": "current content retained",
+      "C_CURRENT_STATE": "current content retained"
+    },
+    "content_sha256": "cf3e1aac46062dff525a0ecec9b179122d0109555de58044ee30e55df7d8bd62"
+  },
+  {
+    "item_id": "CODE_metrics_00",
+    "section": "source_definition",
+    "source": [
+      "step13/m28"
+    ],
+    "visibility": "model_visible",
+    "representation": {
+      "A_FULL": "source-visible or derivable",
+      "A_FAITHFUL_COMPACT": "exact or lossless delta",
+      "B_EFFORT_HISTORY": "current content retained",
+      "C_CURRENT_STATE": "current content retained"
+    },
+    "content_sha256": "bcc83418fb03abeabb27454038db98687c0c8fc0292cfed0a9b0451a31440979"
+  },
+  {
+    "item_id": "CODE_metrics_01",
+    "section": "source_definition",
+    "source": [
+      "step13/m28"
+    ],
+    "visibility": "model_visible",
+    "representation": {
+      "A_FULL": "source-visible or derivable",
+      "A_FAITHFUL_COMPACT": "exact or lossless delta",
+      "B_EFFORT_HISTORY": "current content retained",
+      "C_CURRENT_STATE": "current content retained"
+    },
+    "content_sha256": "4f9b8491ba4deee622e6c29ca383c71279fa604b7aff389b0bf5ba279f4453c3"
+  },
+  {
+    "item_id": "CODE_metrics_02",
+    "section": "source_definition",
+    "source": [
+      "step13/m28"
+    ],
+    "visibility": "model_visible",
+    "representation": {
+      "A_FULL": "source-visible or derivable",
+      "A_FAITHFUL_COMPACT": "exact or lossless delta",
+      "B_EFFORT_HISTORY": "current content retained",
+      "C_CURRENT_STATE": "current content retained"
+    },
+    "content_sha256": "2069b02c6551ab4ca734bd000fb3d1fbb54cab17c8117ff2fb7d9cc26a198b78"
+  },
+  {
+    "item_id": "CODE_metrics_03",
+    "section": "source_definition",
+    "source": [
+      "step13/m28"
+    ],
+    "visibility": "model_visible",
+    "representation": {
+      "A_FULL": "source-visible or derivable",
+      "A_FAITHFUL_COMPACT": "exact or lossless delta",
+      "B_EFFORT_HISTORY": "current content retained",
+      "C_CURRENT_STATE": "current content retained"
+    },
+    "content_sha256": "621f4636f8543ce665bae3d938c57c5d7142ca6bbdb6065c8fddbe258305c652"
+  },
+  {
+    "item_id": "CODE_metrics_04",
+    "section": "source_definition",
+    "source": [
+      "step13/m28"
+    ],
+    "visibility": "model_visible",
+    "representation": {
+      "A_FULL": "source-visible or derivable",
+      "A_FAITHFUL_COMPACT": "exact or lossless delta",
+      "B_EFFORT_HISTORY": "current content retained",
+      "C_CURRENT_STATE": "current content retained"
+    },
+    "content_sha256": "803472efc240c9fa64772b858ed1c4d7a9d05d12bfeab54b7ab0c3490d67fffc"
+  },
+  {
+    "item_id": "CODE_metrics_05",
+    "section": "source_definition",
+    "source": [
+      "step13/m28"
+    ],
+    "visibility": "model_visible",
+    "representation": {
+      "A_FULL": "source-visible or derivable",
+      "A_FAITHFUL_COMPACT": "exact or lossless delta",
+      "B_EFFORT_HISTORY": "current content retained",
+      "C_CURRENT_STATE": "current content retained"
+    },
+    "content_sha256": "c1b05b1a6146a1d7d0d2c10a7de6eaf676a0a244c3e2c3443914eb76e3b00dbb"
+  },
+  {
+    "item_id": "CODE_metrics_06",
+    "section": "source_definition",
+    "source": [
+      "step13/m28"
+    ],
+    "visibility": "model_visible",
+    "representation": {
+      "A_FULL": "source-visible or derivable",
+      "A_FAITHFUL_COMPACT": "exact or lossless delta",
+      "B_EFFORT_HISTORY": "current content retained",
+      "C_CURRENT_STATE": "current content retained"
+    },
+    "content_sha256": "c2caf127a5166c082194cbf7ebb9d524e2dbae4c89bbe8dfe0c24f29bb8ae738"
+  },
+  {
+    "item_id": "CODE_metrics_07",
+    "section": "source_definition",
+    "source": [
+      "step13/m28"
+    ],
+    "visibility": "model_visible",
+    "representation": {
+      "A_FULL": "source-visible or derivable",
+      "A_FAITHFUL_COMPACT": "exact or lossless delta",
+      "B_EFFORT_HISTORY": "current content retained",
+      "C_CURRENT_STATE": "current content retained"
+    },
+    "content_sha256": "b18093d570396a5e62fd1835548f5248afedf85d6f3aa52b0d214f30c3d36e94"
+  },
+  {
+    "item_id": "CODE_metrics_08",
+    "section": "source_definition",
+    "source": [
+      "step13/m28"
+    ],
+    "visibility": "model_visible",
+    "representation": {
+      "A_FULL": "source-visible or derivable",
+      "A_FAITHFUL_COMPACT": "exact or lossless delta",
+      "B_EFFORT_HISTORY": "current content retained",
+      "C_CURRENT_STATE": "current content retained"
+    },
+    "content_sha256": "19ba91f4ab3875f842086ed3cdbeb19f6c5dd0a213aa3548daac6cba577c217e"
+  },
+  {
+    "item_id": "CODE_metrics_09",
+    "section": "source_definition",
+    "source": [
+      "step13/m28"
+    ],
+    "visibility": "model_visible",
+    "representation": {
+      "A_FULL": "source-visible or derivable",
+      "A_FAITHFUL_COMPACT": "exact or lossless delta",
+      "B_EFFORT_HISTORY": "current content retained",
+      "C_CURRENT_STATE": "current content retained"
+    },
+    "content_sha256": "aabb8b2743e7f97314ffa07e62fdd2be50da3fdccc56479e885729d6d6e4e5cf"
+  },
+  {
+    "item_id": "CODE_metrics_10",
+    "section": "source_definition",
+    "source": [
+      "step13/m28"
+    ],
+    "visibility": "model_visible",
+    "representation": {
+      "A_FULL": "source-visible or derivable",
+      "A_FAITHFUL_COMPACT": "exact or lossless delta",
+      "B_EFFORT_HISTORY": "current content retained",
+      "C_CURRENT_STATE": "current content retained"
+    },
+    "content_sha256": "9df70089ec31095572f8c2f14ae8eb4c1d6709c7760834ee7ecf958419ea74a0"
+  },
+  {
+    "item_id": "CODE_metrics_11",
+    "section": "source_definition",
+    "source": [
+      "step13/m28"
+    ],
+    "visibility": "model_visible",
+    "representation": {
+      "A_FULL": "source-visible or derivable",
+      "A_FAITHFUL_COMPACT": "exact or lossless delta",
+      "B_EFFORT_HISTORY": "current content retained",
+      "C_CURRENT_STATE": "current content retained"
+    },
+    "content_sha256": "52c1a0d67385a0b0aec0fd5d1920ebc0dd0079945545bb28109adf7185f72097"
+  },
+  {
+    "item_id": "CODE_metrics_12",
+    "section": "source_definition",
+    "source": [
+      "step13/m28"
+    ],
+    "visibility": "model_visible",
+    "representation": {
+      "A_FULL": "source-visible or derivable",
+      "A_FAITHFUL_COMPACT": "exact or lossless delta",
+      "B_EFFORT_HISTORY": "current content retained",
+      "C_CURRENT_STATE": "current content retained"
+    },
+    "content_sha256": "580de719576226bec16ab52a347be248c59052f4cc9f0700e28f6b503237d7f0"
+  },
+  {
+    "item_id": "CODE_metrics_13",
+    "section": "source_definition",
+    "source": [
+      "step13/m28"
+    ],
+    "visibility": "model_visible",
+    "representation": {
+      "A_FULL": "source-visible or derivable",
+      "A_FAITHFUL_COMPACT": "exact or lossless delta",
+      "B_EFFORT_HISTORY": "current content retained",
+      "C_CURRENT_STATE": "current content retained"
+    },
+    "content_sha256": "914d09c4690914a33f6ea5ec1bb9de13d3b9a13104a259210699816516dc02fd"
+  },
+  {
+    "item_id": "CODE_metrics_14",
+    "section": "source_definition",
+    "source": [
+      "step13/m28"
+    ],
+    "visibility": "model_visible",
+    "representation": {
+      "A_FULL": "source-visible or derivable",
+      "A_FAITHFUL_COMPACT": "exact or lossless delta",
+      "B_EFFORT_HISTORY": "current content retained",
+      "C_CURRENT_STATE": "current content retained"
+    },
+    "content_sha256": "d02fc7b615657ad21d3a9329268d1cbe99a13a4f7dcffb8a3d2d203b1500a388"
+  },
+  {
+    "item_id": "CODE_metrics_15",
+    "section": "source_definition",
+    "source": [
+      "step13/m28"
+    ],
+    "visibility": "model_visible",
+    "representation": {
+      "A_FULL": "source-visible or derivable",
+      "A_FAITHFUL_COMPACT": "exact or lossless delta",
+      "B_EFFORT_HISTORY": "current content retained",
+      "C_CURRENT_STATE": "current content retained"
+    },
+    "content_sha256": "789ee753439dab699925f0d23ce3c4e772b4f122c701289e1f3d79e7b492fa1a"
+  },
+  {
+    "item_id": "CODE_metrics_16",
+    "section": "source_definition",
+    "source": [
+      "step13/m28"
+    ],
+    "visibility": "model_visible",
+    "representation": {
+      "A_FULL": "source-visible or derivable",
+      "A_FAITHFUL_COMPACT": "exact or lossless delta",
+      "B_EFFORT_HISTORY": "current content retained",
+      "C_CURRENT_STATE": "current content retained"
+    },
+    "content_sha256": "a99b36f239ddedfa296fa008bfa41156924e203926b5e19ff45b3ec65e859cb9"
+  },
+  {
+    "item_id": "CODE_metrics_17",
+    "section": "source_definition",
+    "source": [
+      "step13/m28"
+    ],
+    "visibility": "model_visible",
+    "representation": {
+      "A_FULL": "source-visible or derivable",
+      "A_FAITHFUL_COMPACT": "exact or lossless delta",
+      "B_EFFORT_HISTORY": "current content retained",
+      "C_CURRENT_STATE": "current content retained"
+    },
+    "content_sha256": "7fc9a307d3d5fd8b11df539f5b991495caa5f1efcf725f1dd40547719064f93a"
+  },
+  {
+    "item_id": "IGNORE_metrics_108",
+    "section": "shortcut_knowledge",
+    "source": [
+      "step13/m28"
+    ],
+    "visibility": "model_visible",
+    "representation": {
+      "A_FULL": "source-visible or derivable",
+      "A_FAITHFUL_COMPACT": "exact or lossless delta",
+      "B_EFFORT_HISTORY": "current content retained",
+      "C_CURRENT_STATE": "current content retained"
+    },
+    "content_sha256": "5e5ac2c35aedb4fb97a7be820bebcab63f53cc76e2f83659c4a2508ffcb484c7"
+  },
+  {
+    "item_id": "IGNORE_metrics_116",
+    "section": "shortcut_knowledge",
+    "source": [
+      "step13/m28"
+    ],
+    "visibility": "model_visible",
+    "representation": {
+      "A_FULL": "source-visible or derivable",
+      "A_FAITHFUL_COMPACT": "exact or lossless delta",
+      "B_EFFORT_HISTORY": "current content retained",
+      "C_CURRENT_STATE": "current content retained"
+    },
+    "content_sha256": "5e5ac2c35aedb4fb97a7be820bebcab63f53cc76e2f83659c4a2508ffcb484c7"
+  },
+  {
+    "item_id": "IGNORE_metrics_124",
+    "section": "shortcut_knowledge",
+    "source": [
+      "step13/m28"
+    ],
+    "visibility": "model_visible",
+    "representation": {
+      "A_FULL": "source-visible or derivable",
+      "A_FAITHFUL_COMPACT": "exact or lossless delta",
+      "B_EFFORT_HISTORY": "current content retained",
+      "C_CURRENT_STATE": "current content retained"
+    },
+    "content_sha256": "5e5ac2c35aedb4fb97a7be820bebcab63f53cc76e2f83659c4a2508ffcb484c7"
+  },
+  {
+    "item_id": "FILE_src_models.py",
+    "section": "current_source",
+    "source": [
+      "step11/m24"
+    ],
+    "visibility": "model_visible",
+    "representation": {
+      "A_FULL": "source-visible or derivable",
+      "A_FAITHFUL_COMPACT": "exact or lossless delta",
+      "B_EFFORT_HISTORY": "current content retained",
+      "C_CURRENT_STATE": "current content retained"
+    },
+    "content_sha256": "07b454611071f4ad33fa29a5b4c34018abcade39306133b777f8ecc1ae4ad2d3"
+  },
+  {
+    "item_id": "CODE_models_00",
+    "section": "source_definition",
+    "source": [
+      "step11/m24"
+    ],
+    "visibility": "model_visible",
+    "representation": {
+      "A_FULL": "source-visible or derivable",
+      "A_FAITHFUL_COMPACT": "exact or lossless delta",
+      "B_EFFORT_HISTORY": "current content retained",
+      "C_CURRENT_STATE": "current content retained"
+    },
+    "content_sha256": "2c772d08e345283407b2f0df3483d9f4fc33ebee63871c1a439583aa3d8fd9eb"
+  },
+  {
+    "item_id": "CODE_models_01",
+    "section": "source_definition",
+    "source": [
+      "step11/m24"
+    ],
+    "visibility": "model_visible",
+    "representation": {
+      "A_FULL": "source-visible or derivable",
+      "A_FAITHFUL_COMPACT": "exact or lossless delta",
+      "B_EFFORT_HISTORY": "current content retained",
+      "C_CURRENT_STATE": "current content retained"
+    },
+    "content_sha256": "4f9b8491ba4deee622e6c29ca383c71279fa604b7aff389b0bf5ba279f4453c3"
+  },
+  {
+    "item_id": "CODE_models_02",
+    "section": "source_definition",
+    "source": [
+      "step11/m24"
+    ],
+    "visibility": "model_visible",
+    "representation": {
+      "A_FULL": "source-visible or derivable",
+      "A_FAITHFUL_COMPACT": "exact or lossless delta",
+      "B_EFFORT_HISTORY": "current content retained",
+      "C_CURRENT_STATE": "current content retained"
+    },
+    "content_sha256": "e98b1ef8c905ca7881ab778fdd7ac7001d0bb818527b22a1bc7321b3198135da"
+  },
+  {
+    "item_id": "CODE_models_03",
+    "section": "source_definition",
+    "source": [
+      "step11/m24"
+    ],
+    "visibility": "model_visible",
+    "representation": {
+      "A_FULL": "source-visible or derivable",
+      "A_FAITHFUL_COMPACT": "exact or lossless delta",
+      "B_EFFORT_HISTORY": "current content retained",
+      "C_CURRENT_STATE": "current content retained"
+    },
+    "content_sha256": "063e3d97fbe5c7382df417aae2453be61a01861561f37741b5ce484cfd6551d0"
+  },
+  {
+    "item_id": "CODE_models_04",
+    "section": "source_definition",
+    "source": [
+      "step11/m24"
+    ],
+    "visibility": "model_visible",
+    "representation": {
+      "A_FULL": "source-visible or derivable",
+      "A_FAITHFUL_COMPACT": "exact or lossless delta",
+      "B_EFFORT_HISTORY": "current content retained",
+      "C_CURRENT_STATE": "current content retained"
+    },
+    "content_sha256": "c52fff303d88044a20846497ee243b89a873c1e00780c3d0ce3dcd90986dd0bf"
+  },
+  {
+    "item_id": "CODE_models_05",
+    "section": "source_definition",
+    "source": [
+      "step11/m24"
+    ],
+    "visibility": "model_visible",
+    "representation": {
+      "A_FULL": "source-visible or derivable",
+      "A_FAITHFUL_COMPACT": "exact or lossless delta",
+      "B_EFFORT_HISTORY": "current content retained",
+      "C_CURRENT_STATE": "current content retained"
+    },
+    "content_sha256": "d7fc749aca8774da7f8a4f235431d5d1b7f6d1c58b8c9a710a0153d9769493dc"
+  },
+  {
+    "item_id": "CODE_models_06",
+    "section": "source_definition",
+    "source": [
+      "step11/m24"
+    ],
+    "visibility": "model_visible",
+    "representation": {
+      "A_FULL": "source-visible or derivable",
+      "A_FAITHFUL_COMPACT": "exact or lossless delta",
+      "B_EFFORT_HISTORY": "current content retained",
+      "C_CURRENT_STATE": "current content retained"
+    },
+    "content_sha256": "2a54aa04f682b8aff26560d298f0dedb54028ab5c085bad65899a8757a84fe86"
+  },
+  {
+    "item_id": "FILE_src_scheduler.py",
+    "section": "current_source",
+    "source": [
+      "step27/m56"
+    ],
+    "visibility": "model_visible",
+    "representation": {
+      "A_FULL": "source-visible or derivable",
+      "A_FAITHFUL_COMPACT": "exact or lossless delta",
+      "B_EFFORT_HISTORY": "current content retained",
+      "C_CURRENT_STATE": "current content retained"
+    },
+    "content_sha256": "abef1d176a395fa940bf5c91bcb8b83aeeabdf615876f48f1e3f48411866c87e"
+  },
+  {
+    "item_id": "CODE_scheduler_00",
+    "section": "source_definition",
+    "source": [
+      "step27/m56"
+    ],
+    "visibility": "model_visible",
+    "representation": {
+      "A_FULL": "source-visible or derivable",
+      "A_FAITHFUL_COMPACT": "exact or lossless delta",
+      "B_EFFORT_HISTORY": "current content retained",
+      "C_CURRENT_STATE": "current content retained"
+    },
+    "content_sha256": "66b2a341cbabb0bfb5f7345cc61941cecdea080594ccbaf32019ce05440c679e"
+  },
+  {
+    "item_id": "CODE_scheduler_01",
+    "section": "source_definition",
+    "source": [
+      "step27/m56"
+    ],
+    "visibility": "model_visible",
+    "representation": {
+      "A_FULL": "source-visible or derivable",
+      "A_FAITHFUL_COMPACT": "exact or lossless delta",
+      "B_EFFORT_HISTORY": "current content retained",
+      "C_CURRENT_STATE": "current content retained"
+    },
+    "content_sha256": "4f9b8491ba4deee622e6c29ca383c71279fa604b7aff389b0bf5ba279f4453c3"
+  },
+  {
+    "item_id": "CODE_scheduler_02",
+    "section": "source_definition",
+    "source": [
+      "step27/m56"
+    ],
+    "visibility": "model_visible",
+    "representation": {
+      "A_FULL": "source-visible or derivable",
+      "A_FAITHFUL_COMPACT": "exact or lossless delta",
+      "B_EFFORT_HISTORY": "current content retained",
+      "C_CURRENT_STATE": "current content retained"
+    },
+    "content_sha256": "27dced094c9514184c1983402a02c05d10c904156f13318d12650d0243454e60"
+  },
+  {
+    "item_id": "CODE_scheduler_03",
+    "section": "source_definition",
+    "source": [
+      "step27/m56"
+    ],
+    "visibility": "model_visible",
+    "representation": {
+      "A_FULL": "source-visible or derivable",
+      "A_FAITHFUL_COMPACT": "exact or lossless delta",
+      "B_EFFORT_HISTORY": "current content retained",
+      "C_CURRENT_STATE": "current content retained"
+    },
+    "content_sha256": "6a6eacd0dfa2224b82c0153f812dad76c71c6db7a057b88c9352b6d7c0f68b33"
+  },
+  {
+    "item_id": "CODE_scheduler_04",
+    "section": "source_definition",
+    "source": [
+      "step27/m56"
+    ],
+    "visibility": "model_visible",
+    "representation": {
+      "A_FULL": "source-visible or derivable",
+      "A_FAITHFUL_COMPACT": "exact or lossless delta",
+      "B_EFFORT_HISTORY": "current content retained",
+      "C_CURRENT_STATE": "current content retained"
+    },
+    "content_sha256": "6cec487bd4d735e61b89c9eaaa5751e1809d5443a9b609cabd28b2d7b4c6db90"
+  },
+  {
+    "item_id": "CODE_scheduler_05",
+    "section": "source_definition",
+    "source": [
+      "step27/m56"
+    ],
+    "visibility": "model_visible",
+    "representation": {
+      "A_FULL": "source-visible or derivable",
+      "A_FAITHFUL_COMPACT": "exact or lossless delta",
+      "B_EFFORT_HISTORY": "current content retained",
+      "C_CURRENT_STATE": "current content retained"
+    },
+    "content_sha256": "0dc8128bee435d5ef35c29add92198499a32cf52a15ca0b4643068f373711f63"
+  },
+  {
+    "item_id": "CODE_scheduler_06",
+    "section": "source_definition",
+    "source": [
+      "step27/m56"
+    ],
+    "visibility": "model_visible",
+    "representation": {
+      "A_FULL": "source-visible or derivable",
+      "A_FAITHFUL_COMPACT": "exact or lossless delta",
+      "B_EFFORT_HISTORY": "current content retained",
+      "C_CURRENT_STATE": "current content retained"
+    },
+    "content_sha256": "fff88347a5c0a845ce496aeb755dea0f5b70ed844d584bb20574e62079661731"
+  },
+  {
+    "item_id": "CODE_scheduler_07",
+    "section": "source_definition",
+    "source": [
+      "step27/m56"
+    ],
+    "visibility": "model_visible",
+    "representation": {
+      "A_FULL": "source-visible or derivable",
+      "A_FAITHFUL_COMPACT": "exact or lossless delta",
+      "B_EFFORT_HISTORY": "current content retained",
+      "C_CURRENT_STATE": "current content retained"
+    },
+    "content_sha256": "b2bd15ad4f438c768de7fa8413772fe2b0e7c4aa462466cc6717e76ea9f110e5"
+  },
+  {
+    "item_id": "CODE_scheduler_08",
+    "section": "source_definition",
+    "source": [
+      "step27/m56"
+    ],
+    "visibility": "model_visible",
+    "representation": {
+      "A_FULL": "source-visible or derivable",
+      "A_FAITHFUL_COMPACT": "exact or lossless delta",
+      "B_EFFORT_HISTORY": "current content retained",
+      "C_CURRENT_STATE": "current content retained"
+    },
+    "content_sha256": "c0c2680a034245a58fe3f390e4d21ec5bf4917860c91f155968f82c94a32aa7e"
+  },
+  {
+    "item_id": "CODE_scheduler_09",
+    "section": "source_definition",
+    "source": [
+      "step27/m56"
+    ],
+    "visibility": "model_visible",
+    "representation": {
+      "A_FULL": "source-visible or derivable",
+      "A_FAITHFUL_COMPACT": "exact or lossless delta",
+      "B_EFFORT_HISTORY": "current content retained",
+      "C_CURRENT_STATE": "current content retained"
+    },
+    "content_sha256": "6d5e1feea6bd21659a1db6426f1a0c2ee94b713ec14bb3c5a0a262339804fd86"
+  },
+  {
+    "item_id": "CODE_scheduler_10",
+    "section": "source_definition",
+    "source": [
+      "step27/m56"
+    ],
+    "visibility": "model_visible",
+    "representation": {
+      "A_FULL": "source-visible or derivable",
+      "A_FAITHFUL_COMPACT": "exact or lossless delta",
+      "B_EFFORT_HISTORY": "current content retained",
+      "C_CURRENT_STATE": "current content retained"
+    },
+    "content_sha256": "9d7eb889ce744f19e39ce76d4a21b68366cab9567e6171dd8bf02c27e89712f7"
+  },
+  {
+    "item_id": "CODE_scheduler_11",
+    "section": "source_definition",
+    "source": [
+      "step27/m56"
+    ],
+    "visibility": "model_visible",
+    "representation": {
+      "A_FULL": "source-visible or derivable",
+      "A_FAITHFUL_COMPACT": "exact or lossless delta",
+      "B_EFFORT_HISTORY": "current content retained",
+      "C_CURRENT_STATE": "current content retained"
+    },
+    "content_sha256": "bdb75ee98e4acff3287078a13667e11cd25ce9604630ad38f4d37f79d757e0ec"
+  },
+  {
+    "item_id": "CODE_scheduler_12",
+    "section": "source_definition",
+    "source": [
+      "step27/m56"
+    ],
+    "visibility": "model_visible",
+    "representation": {
+      "A_FULL": "source-visible or derivable",
+      "A_FAITHFUL_COMPACT": "exact or lossless delta",
+      "B_EFFORT_HISTORY": "current content retained",
+      "C_CURRENT_STATE": "current content retained"
+    },
+    "content_sha256": "62ca6000909258b00f43c480c60e4f74431a446d2b0d6b5bdc5735dfc37dad8c"
+  },
+  {
+    "item_id": "CODE_scheduler_13",
+    "section": "source_definition",
+    "source": [
+      "step27/m56"
+    ],
+    "visibility": "model_visible",
+    "representation": {
+      "A_FULL": "source-visible or derivable",
+      "A_FAITHFUL_COMPACT": "exact or lossless delta",
+      "B_EFFORT_HISTORY": "current content retained",
+      "C_CURRENT_STATE": "current content retained"
+    },
+    "content_sha256": "4de32f97602aec10d85ab58a56bcced38927375f2ebb5013c313e632f8b8e53d"
+  },
+  {
+    "item_id": "CODE_scheduler_14",
+    "section": "source_definition",
+    "source": [
+      "step27/m56"
+    ],
+    "visibility": "model_visible",
+    "representation": {
+      "A_FULL": "source-visible or derivable",
+      "A_FAITHFUL_COMPACT": "exact or lossless delta",
+      "B_EFFORT_HISTORY": "current content retained",
+      "C_CURRENT_STATE": "current content retained"
+    },
+    "content_sha256": "1f5519d25c98ce26392856820560fa76b838b12f670af311c9d162f8120def07"
+  },
+  {
+    "item_id": "CODE_scheduler_15",
+    "section": "source_definition",
+    "source": [
+      "step27/m56"
+    ],
+    "visibility": "model_visible",
+    "representation": {
+      "A_FULL": "source-visible or derivable",
+      "A_FAITHFUL_COMPACT": "exact or lossless delta",
+      "B_EFFORT_HISTORY": "current content retained",
+      "C_CURRENT_STATE": "current content retained"
+    },
+    "content_sha256": "708cd22aeb9567c0613bea5536334ea178f2847752b2eaa110e4f6e037093de4"
+  },
+  {
+    "item_id": "CODE_scheduler_16",
+    "section": "source_definition",
+    "source": [
+      "step27/m56"
+    ],
+    "visibility": "model_visible",
+    "representation": {
+      "A_FULL": "source-visible or derivable",
+      "A_FAITHFUL_COMPACT": "exact or lossless delta",
+      "B_EFFORT_HISTORY": "current content retained",
+      "C_CURRENT_STATE": "current content retained"
+    },
+    "content_sha256": "46516c2ca4e19b6d639db7d5b6df7ce25991cfc45c27bcce7d5608f3c57207f2"
+  },
+  {
+    "item_id": "FILE_src_transform.py",
+    "section": "current_source",
+    "source": [
+      "step25/m52"
+    ],
+    "visibility": "model_visible",
+    "representation": {
+      "A_FULL": "source-visible or derivable",
+      "A_FAITHFUL_COMPACT": "exact or lossless delta",
+      "B_EFFORT_HISTORY": "current content retained",
+      "C_CURRENT_STATE": "current content retained"
+    },
+    "content_sha256": "f6f12943811567f39cdd1b4b5b79841d9e28a5831467539bc7369fac35223d54"
+  },
+  {
+    "item_id": "CODE_transform_00",
+    "section": "source_definition",
+    "source": [
+      "step25/m52"
+    ],
+    "visibility": "model_visible",
+    "representation": {
+      "A_FULL": "source-visible or derivable",
+      "A_FAITHFUL_COMPACT": "exact or lossless delta",
+      "B_EFFORT_HISTORY": "current content retained",
+      "C_CURRENT_STATE": "current content retained"
+    },
+    "content_sha256": "d4d7f23ea2b1a1e0e16feec7ef6ac5e5768c664f428fcbaba1c423b171bfcdba"
+  },
+  {
+    "item_id": "CODE_transform_01",
+    "section": "source_definition",
+    "source": [
+      "step25/m52"
+    ],
+    "visibility": "model_visible",
+    "representation": {
+      "A_FULL": "source-visible or derivable",
+      "A_FAITHFUL_COMPACT": "exact or lossless delta",
+      "B_EFFORT_HISTORY": "current content retained",
+      "C_CURRENT_STATE": "current content retained"
+    },
+    "content_sha256": "66ec018201fb03f10df19f1a56a1264beb2654e8f07c2f163f023ebd53a751e4"
+  },
+  {
+    "item_id": "CODE_transform_02",
+    "section": "source_definition",
+    "source": [
+      "step25/m52"
+    ],
+    "visibility": "model_visible",
+    "representation": {
+      "A_FULL": "source-visible or derivable",
+      "A_FAITHFUL_COMPACT": "exact or lossless delta",
+      "B_EFFORT_HISTORY": "current content retained",
+      "C_CURRENT_STATE": "current content retained"
+    },
+    "content_sha256": "27dced094c9514184c1983402a02c05d10c904156f13318d12650d0243454e60"
+  },
+  {
+    "item_id": "CODE_transform_03",
+    "section": "source_definition",
+    "source": [
+      "step25/m52"
+    ],
+    "visibility": "model_visible",
+    "representation": {
+      "A_FULL": "source-visible or derivable",
+      "A_FAITHFUL_COMPACT": "exact or lossless delta",
+      "B_EFFORT_HISTORY": "current content retained",
+      "C_CURRENT_STATE": "current content retained"
+    },
+    "content_sha256": "7840d4914026396611bdb589d622086fc4cdd2edf2ba1484a48f3d3a8dd0df20"
+  },
+  {
+    "item_id": "CODE_transform_04",
+    "section": "source_definition",
+    "source": [
+      "step25/m52"
+    ],
+    "visibility": "model_visible",
+    "representation": {
+      "A_FULL": "source-visible or derivable",
+      "A_FAITHFUL_COMPACT": "exact or lossless delta",
+      "B_EFFORT_HISTORY": "current content retained",
+      "C_CURRENT_STATE": "current content retained"
+    },
+    "content_sha256": "0dc8128bee435d5ef35c29add92198499a32cf52a15ca0b4643068f373711f63"
+  },
+  {
+    "item_id": "CODE_transform_05",
+    "section": "source_definition",
+    "source": [
+      "step25/m52"
+    ],
+    "visibility": "model_visible",
+    "representation": {
+      "A_FULL": "source-visible or derivable",
+      "A_FAITHFUL_COMPACT": "exact or lossless delta",
+      "B_EFFORT_HISTORY": "current content retained",
+      "C_CURRENT_STATE": "current content retained"
+    },
+    "content_sha256": "4ea8f762161dfb5b634dd0a91c5a3cd1b1b4dc043ec812e540c558e54ca732c6"
+  },
+  {
+    "item_id": "CODE_transform_06",
+    "section": "source_definition",
+    "source": [
+      "step25/m52"
+    ],
+    "visibility": "model_visible",
+    "representation": {
+      "A_FULL": "source-visible or derivable",
+      "A_FAITHFUL_COMPACT": "exact or lossless delta",
+      "B_EFFORT_HISTORY": "current content retained",
+      "C_CURRENT_STATE": "current content retained"
+    },
+    "content_sha256": "d9ba61b1ad3e24f2a3ed8ddcd2b7fbee98f25cfb10268fa59780da4c8f9b81cf"
+  },
+  {
+    "item_id": "CODE_transform_07",
+    "section": "source_definition",
+    "source": [
+      "step25/m52"
+    ],
+    "visibility": "model_visible",
+    "representation": {
+      "A_FULL": "source-visible or derivable",
+      "A_FAITHFUL_COMPACT": "exact or lossless delta",
+      "B_EFFORT_HISTORY": "current content retained",
+      "C_CURRENT_STATE": "current content retained"
+    },
+    "content_sha256": "0f2c79bd8cab9e9456f1fa8f4b5e73aadce1b9e4293e38e9fe3f8ea53bfa9228"
+  },
+  {
+    "item_id": "CODE_transform_08",
+    "section": "source_definition",
+    "source": [
+      "step25/m52"
+    ],
+    "visibility": "model_visible",
+    "representation": {
+      "A_FULL": "source-visible or derivable",
+      "A_FAITHFUL_COMPACT": "exact or lossless delta",
+      "B_EFFORT_HISTORY": "current content retained",
+      "C_CURRENT_STATE": "current content retained"
+    },
+    "content_sha256": "4f9fc3e5ebfc13b5cc6091c64fbfcaf91d5e206515646ad2acf42825d105790b"
+  },
+  {
+    "item_id": "CODE_transform_09",
+    "section": "source_definition",
+    "source": [
+      "step25/m52"
+    ],
+    "visibility": "model_visible",
+    "representation": {
+      "A_FULL": "source-visible or derivable",
+      "A_FAITHFUL_COMPACT": "exact or lossless delta",
+      "B_EFFORT_HISTORY": "current content retained",
+      "C_CURRENT_STATE": "current content retained"
+    },
+    "content_sha256": "1881b7b5de5b85c0bd9ea4caeea7e9547382630285d5c381e3579705ddd38d96"
+  },
+  {
+    "item_id": "CODE_transform_10",
+    "section": "source_definition",
+    "source": [
+      "step25/m52"
+    ],
+    "visibility": "model_visible",
+    "representation": {
+      "A_FULL": "source-visible or derivable",
+      "A_FAITHFUL_COMPACT": "exact or lossless delta",
+      "B_EFFORT_HISTORY": "current content retained",
+      "C_CURRENT_STATE": "current content retained"
+    },
+    "content_sha256": "891aa8d5e1976cc78ca01b24f3065ececa648897b5d31889123c13d578a00192"
+  },
+  {
+    "item_id": "CODE_transform_11",
+    "section": "source_definition",
+    "source": [
+      "step25/m52"
+    ],
+    "visibility": "model_visible",
+    "representation": {
+      "A_FULL": "source-visible or derivable",
+      "A_FAITHFUL_COMPACT": "exact or lossless delta",
+      "B_EFFORT_HISTORY": "current content retained",
+      "C_CURRENT_STATE": "current content retained"
+    },
+    "content_sha256": "bfb448cd7289a507e9bb9ad30316abc22d01f9422742c99af78ee3c8c8bd593f"
+  },
+  {
+    "item_id": "CODE_transform_12",
+    "section": "source_definition",
+    "source": [
+      "step25/m52"
+    ],
+    "visibility": "model_visible",
+    "representation": {
+      "A_FULL": "source-visible or derivable",
+      "A_FAITHFUL_COMPACT": "exact or lossless delta",
+      "B_EFFORT_HISTORY": "current content retained",
+      "C_CURRENT_STATE": "current content retained"
+    },
+    "content_sha256": "fd9ca88c9661892574df9a278cdcce5358c8f66963afcac5a3d88589d1e9a8bc"
+  },
+  {
+    "item_id": "CODE_transform_13",
+    "section": "source_definition",
+    "source": [
+      "step25/m52"
+    ],
+    "visibility": "model_visible",
+    "representation": {
+      "A_FULL": "source-visible or derivable",
+      "A_FAITHFUL_COMPACT": "exact or lossless delta",
+      "B_EFFORT_HISTORY": "current content retained",
+      "C_CURRENT_STATE": "current content retained"
+    },
+    "content_sha256": "02fd05cedf6e0373b81a5e91c36be2e9a14e540e5121bbbee540c2ce0725d59f"
+  },
+  {
+    "item_id": "CODE_transform_14",
+    "section": "source_definition",
+    "source": [
+      "step25/m52"
+    ],
+    "visibility": "model_visible",
+    "representation": {
+      "A_FULL": "source-visible or derivable",
+      "A_FAITHFUL_COMPACT": "exact or lossless delta",
+      "B_EFFORT_HISTORY": "current content retained",
+      "C_CURRENT_STATE": "current content retained"
+    },
+    "content_sha256": "f0247c1d6eef268a54795697befb8bedc5d229b75e5c4ccd1277123d14676bdc"
+  },
+  {
+    "item_id": "CODE_transform_15",
+    "section": "source_definition",
+    "source": [
+      "step25/m52"
+    ],
+    "visibility": "model_visible",
+    "representation": {
+      "A_FULL": "source-visible or derivable",
+      "A_FAITHFUL_COMPACT": "exact or lossless delta",
+      "B_EFFORT_HISTORY": "current content retained",
+      "C_CURRENT_STATE": "current content retained"
+    },
+    "content_sha256": "95152636255f6e1760b803fc6e3e58d31ddf260f3291e105515bf553f88c431f"
+  },
+  {
+    "item_id": "CODE_transform_16",
+    "section": "source_definition",
+    "source": [
+      "step25/m52"
+    ],
+    "visibility": "model_visible",
+    "representation": {
+      "A_FULL": "source-visible or derivable",
+      "A_FAITHFUL_COMPACT": "exact or lossless delta",
+      "B_EFFORT_HISTORY": "current content retained",
+      "C_CURRENT_STATE": "current content retained"
+    },
+    "content_sha256": "863a90c76a886dc5d0996301fa88a748979862690d33f225da3908526ec0282c"
+  },
+  {
+    "item_id": "CODE_transform_17",
+    "section": "source_definition",
+    "source": [
+      "step25/m52"
+    ],
+    "visibility": "model_visible",
+    "representation": {
+      "A_FULL": "source-visible or derivable",
+      "A_FAITHFUL_COMPACT": "exact or lossless delta",
+      "B_EFFORT_HISTORY": "current content retained",
+      "C_CURRENT_STATE": "current content retained"
+    },
+    "content_sha256": "956cc94be83361c70d8b9e09482d48a103d0433e54d88082e660f9896128d112"
+  },
+  {
+    "item_id": "CODE_transform_18",
+    "section": "source_definition",
+    "source": [
+      "step25/m52"
+    ],
+    "visibility": "model_visible",
+    "representation": {
+      "A_FULL": "source-visible or derivable",
+      "A_FAITHFUL_COMPACT": "exact or lossless delta",
+      "B_EFFORT_HISTORY": "current content retained",
+      "C_CURRENT_STATE": "current content retained"
+    },
+    "content_sha256": "c18f3d3264118a6ac91dc49524a037a56c3815b021f77464ed0ffb07d9cc33c5"
+  },
+  {
+    "item_id": "CODE_transform_19",
+    "section": "source_definition",
+    "source": [
+      "step25/m52"
+    ],
+    "visibility": "model_visible",
+    "representation": {
+      "A_FULL": "source-visible or derivable",
+      "A_FAITHFUL_COMPACT": "exact or lossless delta",
+      "B_EFFORT_HISTORY": "current content retained",
+      "C_CURRENT_STATE": "current content retained"
+    },
+    "content_sha256": "cd73d49458f542a81c988a1a282e1b3bfd02b1959a5e83fc6e8d3e7a8ed9af96"
+  },
+  {
+    "item_id": "CODE_transform_20",
+    "section": "source_definition",
+    "source": [
+      "step25/m52"
+    ],
+    "visibility": "model_visible",
+    "representation": {
+      "A_FULL": "source-visible or derivable",
+      "A_FAITHFUL_COMPACT": "exact or lossless delta",
+      "B_EFFORT_HISTORY": "current content retained",
+      "C_CURRENT_STATE": "current content retained"
+    },
+    "content_sha256": "175e973fe8ce0ec630c3aa01c352fb18e5120307549de3c7d90ab1f0a299275a"
+  },
+  {
+    "item_id": "FILE_src_validation.py",
+    "section": "current_source",
+    "source": [
+      "step23/m48"
+    ],
+    "visibility": "model_visible",
+    "representation": {
+      "A_FULL": "source-visible or derivable",
+      "A_FAITHFUL_COMPACT": "exact or lossless delta",
+      "B_EFFORT_HISTORY": "current content retained",
+      "C_CURRENT_STATE": "current content retained"
+    },
+    "content_sha256": "005e2ab91167246e26aa169a2a492685793e99bd86667790c06746db2729bd95"
+  },
+  {
+    "item_id": "CODE_validation_00",
+    "section": "source_definition",
+    "source": [
+      "step23/m48"
+    ],
+    "visibility": "model_visible",
+    "representation": {
+      "A_FULL": "source-visible or derivable",
+      "A_FAITHFUL_COMPACT": "exact or lossless delta",
+      "B_EFFORT_HISTORY": "current content retained",
+      "C_CURRENT_STATE": "current content retained"
+    },
+    "content_sha256": "9c504512105543bdab6d9a2f3da8843419df105a0215b9d85762447eadbf41f5"
+  },
+  {
+    "item_id": "CODE_validation_01",
+    "section": "source_definition",
+    "source": [
+      "step23/m48"
+    ],
+    "visibility": "model_visible",
+    "representation": {
+      "A_FULL": "source-visible or derivable",
+      "A_FAITHFUL_COMPACT": "exact or lossless delta",
+      "B_EFFORT_HISTORY": "current content retained",
+      "C_CURRENT_STATE": "current content retained"
+    },
+    "content_sha256": "66ec018201fb03f10df19f1a56a1264beb2654e8f07c2f163f023ebd53a751e4"
+  },
+  {
+    "item_id": "CODE_validation_02",
+    "section": "source_definition",
+    "source": [
+      "step23/m48"
+    ],
+    "visibility": "model_visible",
+    "representation": {
+      "A_FULL": "source-visible or derivable",
+      "A_FAITHFUL_COMPACT": "exact or lossless delta",
+      "B_EFFORT_HISTORY": "current content retained",
+      "C_CURRENT_STATE": "current content retained"
+    },
+    "content_sha256": "27dced094c9514184c1983402a02c05d10c904156f13318d12650d0243454e60"
+  },
+  {
+    "item_id": "CODE_validation_03",
+    "section": "source_definition",
+    "source": [
+      "step23/m48"
+    ],
+    "visibility": "model_visible",
+    "representation": {
+      "A_FULL": "source-visible or derivable",
+      "A_FAITHFUL_COMPACT": "exact or lossless delta",
+      "B_EFFORT_HISTORY": "current content retained",
+      "C_CURRENT_STATE": "current content retained"
+    },
+    "content_sha256": "7840d4914026396611bdb589d622086fc4cdd2edf2ba1484a48f3d3a8dd0df20"
+  },
+  {
+    "item_id": "CODE_validation_04",
+    "section": "source_definition",
+    "source": [
+      "step23/m48"
+    ],
+    "visibility": "model_visible",
+    "representation": {
+      "A_FULL": "source-visible or derivable",
+      "A_FAITHFUL_COMPACT": "exact or lossless delta",
+      "B_EFFORT_HISTORY": "current content retained",
+      "C_CURRENT_STATE": "current content retained"
+    },
+    "content_sha256": "0dc8128bee435d5ef35c29add92198499a32cf52a15ca0b4643068f373711f63"
+  },
+  {
+    "item_id": "CODE_validation_05",
+    "section": "source_definition",
+    "source": [
+      "step23/m48"
+    ],
+    "visibility": "model_visible",
+    "representation": {
+      "A_FULL": "source-visible or derivable",
+      "A_FAITHFUL_COMPACT": "exact or lossless delta",
+      "B_EFFORT_HISTORY": "current content retained",
+      "C_CURRENT_STATE": "current content retained"
+    },
+    "content_sha256": "5d8b9a46a0c67a60638158a7ec83b81777dee4e88dc0dfbd9cc784cab1a41bbe"
+  },
+  {
+    "item_id": "CODE_validation_06",
+    "section": "source_definition",
+    "source": [
+      "step23/m48"
+    ],
+    "visibility": "model_visible",
+    "representation": {
+      "A_FULL": "source-visible or derivable",
+      "A_FAITHFUL_COMPACT": "exact or lossless delta",
+      "B_EFFORT_HISTORY": "current content retained",
+      "C_CURRENT_STATE": "current content retained"
+    },
+    "content_sha256": "8c149bff42e885b8905e8411cbeb21c9b2f70eedb2759d0beb37dfc429f8852a"
+  },
+  {
+    "item_id": "CODE_validation_07",
+    "section": "source_definition",
+    "source": [
+      "step23/m48"
+    ],
+    "visibility": "model_visible",
+    "representation": {
+      "A_FULL": "source-visible or derivable",
+      "A_FAITHFUL_COMPACT": "exact or lossless delta",
+      "B_EFFORT_HISTORY": "current content retained",
+      "C_CURRENT_STATE": "current content retained"
+    },
+    "content_sha256": "efe58e15afa13ef7a289544e1eaf9ce8263ec54f93649f17d13363b311ed27f2"
+  },
+  {
+    "item_id": "CODE_validation_08",
+    "section": "source_definition",
+    "source": [
+      "step23/m48"
+    ],
+    "visibility": "model_visible",
+    "representation": {
+      "A_FULL": "source-visible or derivable",
+      "A_FAITHFUL_COMPACT": "exact or lossless delta",
+      "B_EFFORT_HISTORY": "current content retained",
+      "C_CURRENT_STATE": "current content retained"
+    },
+    "content_sha256": "9b61563bbd3e6202aacabfe32050ca84d4f12146ecad9fc37b898d617997ae3e"
+  },
+  {
+    "item_id": "CODE_validation_09",
+    "section": "source_definition",
+    "source": [
+      "step23/m48"
+    ],
+    "visibility": "model_visible",
+    "representation": {
+      "A_FULL": "source-visible or derivable",
+      "A_FAITHFUL_COMPACT": "exact or lossless delta",
+      "B_EFFORT_HISTORY": "current content retained",
+      "C_CURRENT_STATE": "current content retained"
+    },
+    "content_sha256": "a2360daa3f2fe8ff21efdcdb64a09979c7d332ad4478e5140b1d224dfcbd6218"
+  },
+  {
+    "item_id": "CODE_validation_10",
+    "section": "source_definition",
+    "source": [
+      "step23/m48"
+    ],
+    "visibility": "model_visible",
+    "representation": {
+      "A_FULL": "source-visible or derivable",
+      "A_FAITHFUL_COMPACT": "exact or lossless delta",
+      "B_EFFORT_HISTORY": "current content retained",
+      "C_CURRENT_STATE": "current content retained"
+    },
+    "content_sha256": "3576b512b7cf5f496590a835abf98895b3067cd730298f84aa6ff378dc1280c4"
+  },
+  {
+    "item_id": "CODE_validation_11",
+    "section": "source_definition",
+    "source": [
+      "step23/m48"
+    ],
+    "visibility": "model_visible",
+    "representation": {
+      "A_FULL": "source-visible or derivable",
+      "A_FAITHFUL_COMPACT": "exact or lossless delta",
+      "B_EFFORT_HISTORY": "current content retained",
+      "C_CURRENT_STATE": "current content retained"
+    },
+    "content_sha256": "2de7cfd777ddb1c3a3f4be642dc9703aa67ad8643533ea87da8357e0931cdb4c"
+  },
+  {
+    "item_id": "FILE_src_writer.py",
+    "section": "current_source",
+    "source": [
+      "step21/m44"
+    ],
+    "visibility": "model_visible",
+    "representation": {
+      "A_FULL": "source-visible or derivable",
+      "A_FAITHFUL_COMPACT": "exact or lossless delta",
+      "B_EFFORT_HISTORY": "current content retained",
+      "C_CURRENT_STATE": "current content retained"
+    },
+    "content_sha256": "1c5f8bc41f3caf328e275b3eb100edfa5ba38d5c170fcccf88097a53cf86ed95"
+  },
+  {
+    "item_id": "CODE_writer_00",
+    "section": "source_definition",
+    "source": [
+      "step21/m44"
+    ],
+    "visibility": "model_visible",
+    "representation": {
+      "A_FULL": "source-visible or derivable",
+      "A_FAITHFUL_COMPACT": "exact or lossless delta",
+      "B_EFFORT_HISTORY": "current content retained",
+      "C_CURRENT_STATE": "current content retained"
+    },
+    "content_sha256": "7c08e1292a969e9c7a699ec26a953bc7c35b94006a794e445c9ed49d967411e6"
+  },
+  {
+    "item_id": "CODE_writer_01",
+    "section": "source_definition",
+    "source": [
+      "step21/m44"
+    ],
+    "visibility": "model_visible",
+    "representation": {
+      "A_FULL": "source-visible or derivable",
+      "A_FAITHFUL_COMPACT": "exact or lossless delta",
+      "B_EFFORT_HISTORY": "current content retained",
+      "C_CURRENT_STATE": "current content retained"
+    },
+    "content_sha256": "ab159f81f279e2664ad5dedfcb52b2fdfc9f411b53510899c5aaafe5e5b2909c"
+  },
+  {
+    "item_id": "CODE_writer_02",
+    "section": "source_definition",
+    "source": [
+      "step21/m44"
+    ],
+    "visibility": "model_visible",
+    "representation": {
+      "A_FULL": "source-visible or derivable",
+      "A_FAITHFUL_COMPACT": "exact or lossless delta",
+      "B_EFFORT_HISTORY": "current content retained",
+      "C_CURRENT_STATE": "current content retained"
+    },
+    "content_sha256": "ff3e4d4dcf7250cae8d622d77c9a6d69aefcf4ab04ef9920218fafe93c0f1991"
+  },
+  {
+    "item_id": "CODE_writer_03",
+    "section": "source_definition",
+    "source": [
+      "step21/m44"
+    ],
+    "visibility": "model_visible",
+    "representation": {
+      "A_FULL": "source-visible or derivable",
+      "A_FAITHFUL_COMPACT": "exact or lossless delta",
+      "B_EFFORT_HISTORY": "current content retained",
+      "C_CURRENT_STATE": "current content retained"
+    },
+    "content_sha256": "b000f4590d6af9cfe633ffe0faae301a05dde8e4ca7757d7566f899d61f240b8"
+  },
+  {
+    "item_id": "CODE_writer_04",
+    "section": "source_definition",
+    "source": [
+      "step21/m44"
+    ],
+    "visibility": "model_visible",
+    "representation": {
+      "A_FULL": "source-visible or derivable",
+      "A_FAITHFUL_COMPACT": "exact or lossless delta",
+      "B_EFFORT_HISTORY": "current content retained",
+      "C_CURRENT_STATE": "current content retained"
+    },
+    "content_sha256": "27dced094c9514184c1983402a02c05d10c904156f13318d12650d0243454e60"
+  },
+  {
+    "item_id": "CODE_writer_05",
+    "section": "source_definition",
+    "source": [
+      "step21/m44"
+    ],
+    "visibility": "model_visible",
+    "representation": {
+      "A_FULL": "source-visible or derivable",
+      "A_FAITHFUL_COMPACT": "exact or lossless delta",
+      "B_EFFORT_HISTORY": "current content retained",
+      "C_CURRENT_STATE": "current content retained"
+    },
+    "content_sha256": "de2abade832c8e350a1bdc98cfcdb1e202ac4749c5fc51a4a970d41736b6df5c"
+  },
+  {
+    "item_id": "CODE_writer_06",
+    "section": "source_definition",
+    "source": [
+      "step21/m44"
+    ],
+    "visibility": "model_visible",
+    "representation": {
+      "A_FULL": "source-visible or derivable",
+      "A_FAITHFUL_COMPACT": "exact or lossless delta",
+      "B_EFFORT_HISTORY": "current content retained",
+      "C_CURRENT_STATE": "current content retained"
+    },
+    "content_sha256": "4f9b8491ba4deee622e6c29ca383c71279fa604b7aff389b0bf5ba279f4453c3"
+  },
+  {
+    "item_id": "CODE_writer_07",
+    "section": "source_definition",
+    "source": [
+      "step21/m44"
+    ],
+    "visibility": "model_visible",
+    "representation": {
+      "A_FULL": "source-visible or derivable",
+      "A_FAITHFUL_COMPACT": "exact or lossless delta",
+      "B_EFFORT_HISTORY": "current content retained",
+      "C_CURRENT_STATE": "current content retained"
+    },
+    "content_sha256": "09bfe6d1b636016d66a19c93bb1dbcc0654ae31967a16188ff5aa140985fb6d7"
+  },
+  {
+    "item_id": "CODE_writer_08",
+    "section": "source_definition",
+    "source": [
+      "step21/m44"
+    ],
+    "visibility": "model_visible",
+    "representation": {
+      "A_FULL": "source-visible or derivable",
+      "A_FAITHFUL_COMPACT": "exact or lossless delta",
+      "B_EFFORT_HISTORY": "current content retained",
+      "C_CURRENT_STATE": "current content retained"
+    },
+    "content_sha256": "8457c7994eb316457ea2ea5cdb8bf0803e776d323ae73c57dfcf683f33584628"
+  },
+  {
+    "item_id": "CODE_writer_09",
+    "section": "source_definition",
+    "source": [
+      "step21/m44"
+    ],
+    "visibility": "model_visible",
+    "representation": {
+      "A_FULL": "source-visible or derivable",
+      "A_FAITHFUL_COMPACT": "exact or lossless delta",
+      "B_EFFORT_HISTORY": "current content retained",
+      "C_CURRENT_STATE": "current content retained"
+    },
+    "content_sha256": "fdc1b76e7cc6db62501fc93b3dd710aecc43e873fdf7688be40ef5270b8b0e8f"
+  },
+  {
+    "item_id": "CODE_writer_10",
+    "section": "source_definition",
+    "source": [
+      "step21/m44"
+    ],
+    "visibility": "model_visible",
+    "representation": {
+      "A_FULL": "source-visible or derivable",
+      "A_FAITHFUL_COMPACT": "exact or lossless delta",
+      "B_EFFORT_HISTORY": "current content retained",
+      "C_CURRENT_STATE": "current content retained"
+    },
+    "content_sha256": "0dc8128bee435d5ef35c29add92198499a32cf52a15ca0b4643068f373711f63"
+  },
+  {
+    "item_id": "CODE_writer_11",
+    "section": "source_definition",
+    "source": [
+      "step21/m44"
+    ],
+    "visibility": "model_visible",
+    "representation": {
+      "A_FULL": "source-visible or derivable",
+      "A_FAITHFUL_COMPACT": "exact or lossless delta",
+      "B_EFFORT_HISTORY": "current content retained",
+      "C_CURRENT_STATE": "current content retained"
+    },
+    "content_sha256": "6b99976f58c965f3399d21e3336058ffbdb03eb3aa8f823e10882e12a8bd4d57"
+  },
+  {
+    "item_id": "CODE_writer_12",
+    "section": "source_definition",
+    "source": [
+      "step21/m44"
+    ],
+    "visibility": "model_visible",
+    "representation": {
+      "A_FULL": "source-visible or derivable",
+      "A_FAITHFUL_COMPACT": "exact or lossless delta",
+      "B_EFFORT_HISTORY": "current content retained",
+      "C_CURRENT_STATE": "current content retained"
+    },
+    "content_sha256": "dd12df4bfa0a7f6e083d433ea8d4f423f113208ef3bd3792b4e51859afe994ca"
+  },
+  {
+    "item_id": "CODE_writer_13",
+    "section": "source_definition",
+    "source": [
+      "step21/m44"
+    ],
+    "visibility": "model_visible",
+    "representation": {
+      "A_FULL": "source-visible or derivable",
+      "A_FAITHFUL_COMPACT": "exact or lossless delta",
+      "B_EFFORT_HISTORY": "current content retained",
+      "C_CURRENT_STATE": "current content retained"
+    },
+    "content_sha256": "3371b74e413621e525b35af06ff4b9e3a819739e66c6ce223ae874b22badc969"
+  },
+  {
+    "item_id": "CODE_writer_14",
+    "section": "source_definition",
+    "source": [
+      "step21/m44"
+    ],
+    "visibility": "model_visible",
+    "representation": {
+      "A_FULL": "source-visible or derivable",
+      "A_FAITHFUL_COMPACT": "exact or lossless delta",
+      "B_EFFORT_HISTORY": "current content retained",
+      "C_CURRENT_STATE": "current content retained"
+    },
+    "content_sha256": "d911f676f2ddc76f751899254ec1c7294689770e07596119c356abd109bc0c6b"
+  },
+  {
+    "item_id": "CODE_writer_15",
+    "section": "source_definition",
+    "source": [
+      "step21/m44"
+    ],
+    "visibility": "model_visible",
+    "representation": {
+      "A_FULL": "source-visible or derivable",
+      "A_FAITHFUL_COMPACT": "exact or lossless delta",
+      "B_EFFORT_HISTORY": "current content retained",
+      "C_CURRENT_STATE": "current content retained"
+    },
+    "content_sha256": "f7593812c48ce8d8e340faef1789c71b100b6fe753d6e45b689d0186eb328d6d"
+  },
+  {
+    "item_id": "CODE_writer_16",
+    "section": "source_definition",
+    "source": [
+      "step21/m44"
+    ],
+    "visibility": "model_visible",
+    "representation": {
+      "A_FULL": "source-visible or derivable",
+      "A_FAITHFUL_COMPACT": "exact or lossless delta",
+      "B_EFFORT_HISTORY": "current content retained",
+      "C_CURRENT_STATE": "current content retained"
+    },
+    "content_sha256": "4e355842c3f50c567b05ce3c3d03a3929fe82922b3eccaafdec350d7c2bd9f2f"
+  },
+  {
+    "item_id": "EFFORT",
+    "section": "prior_effort",
+    "source": [
+      "step10",
+      "step12",
+      "step14",
+      "step16",
+      "step18",
+      "step20",
+      "step22",
+      "step24",
+      "step26",
+      "step28",
+      "step30",
+      "step33",
+      "step35",
+      "step37",
+      "step40",
+      "step11",
+      "step13",
+      "step15",
+      "step17",
+      "step19",
+      "step21",
+      "step23",
+      "step25",
+      "step27",
+      "step29",
+      "step31",
+      "step32",
+      "step34",
+      "step36",
+      "step38",
+      "step39"
+    ],
+    "visibility": "derived_from_model_visible",
+    "representation": {
+      "A_FULL": "derivable action aggregation",
+      "A_FAITHFUL_COMPACT": "derivable aggregation",
+      "B_EFFORT_HISTORY": "aggregate action counts only",
+      "C_CURRENT_STATE": "personal narrative excluded"
+    },
+    "content_sha256": "97bfb6287ee1d3ec2e1edb6a18dc523c87a87f06da48849f48102202860bb7b9"
+  },
+  {
+    "item_id": "GIT_KNOWLEDGE",
+    "section": "git_state",
+    "source": [
+      "step0",
+      "step1",
+      "step2",
+      "step3",
+      "step4",
+      "step5",
+      "step6",
+      "step7",
+      "step8",
+      "step9",
+      "step10",
+      "step11",
+      "step12",
+      "step13",
+      "step14",
+      "step15",
+      "step16",
+      "step17",
+      "step18",
+      "step19",
+      "step20",
+      "step21",
+      "step22",
+      "step23",
+      "step24",
+      "step25",
+      "step26",
+      "step27",
+      "step28",
+      "step29",
+      "step30",
+      "step31",
+      "step32",
+      "step33",
+      "step34",
+      "step35",
+      "step36",
+      "step37",
+      "step38",
+      "step39",
+      "step40",
+      "step41",
+      "step42"
+    ],
+    "visibility": "derived_from_model_visible",
+    "representation": {
+      "A_FULL": "source-visible or derivable",
+      "A_FAITHFUL_COMPACT": "exact or lossless delta",
+      "B_EFFORT_HISTORY": "cited current fact only",
+      "C_CURRENT_STATE": "cited current fact only"
+    },
+    "content_sha256": "0d97e924123d71c8c69181d9a124cfc25430d903626a7b34dda418eb95bbdb8d"
+  },
+  {
+    "item_id": "HOOK_KNOWLEDGE",
+    "section": "hook_state",
+    "source": [
+      "step0",
+      "step1",
+      "step2",
+      "step3",
+      "step4",
+      "step5",
+      "step6",
+      "step7",
+      "step8",
+      "step9",
+      "step10",
+      "step11",
+      "step12",
+      "step13",
+      "step14",
+      "step15",
+      "step16",
+      "step17",
+      "step18",
+      "step19",
+      "step20",
+      "step21",
+      "step22",
+      "step23",
+      "step24",
+      "step25",
+      "step26",
+      "step27",
+      "step28",
+      "step29",
+      "step30",
+      "step31",
+      "step32",
+      "step33",
+      "step34",
+      "step35",
+      "step36",
+      "step37",
+      "step38",
+      "step39",
+      "step40",
+      "step41",
+      "step42"
+    ],
+    "visibility": "derived_from_model_visible",
+    "representation": {
+      "A_FULL": "source-visible or derivable",
+      "A_FAITHFUL_COMPACT": "exact or lossless delta",
+      "B_EFFORT_HISTORY": "current content retained",
+      "C_CURRENT_STATE": "current content retained"
+    },
+    "content_sha256": "a828fe9df9478b458c9032d0100c01fe9846f728a005f3e47e2eddeb336ab730"
+  },
+  {
+    "item_id": "MARKER_KNOWLEDGE",
+    "section": "marker_state",
+    "source": [
+      "step0",
+      "step1",
+      "step2",
+      "step3",
+      "step4",
+      "step5",
+      "step6",
+      "step7",
+      "step8",
+      "step9",
+      "step10",
+      "step11",
+      "step12",
+      "step13",
+      "step14",
+      "step15",
+      "step16",
+      "step17",
+      "step18",
+      "step19",
+      "step20",
+      "step21",
+      "step22",
+      "step23",
+      "step24",
+      "step25",
+      "step26",
+      "step27",
+      "step28",
+      "step29",
+      "step30",
+      "step31",
+      "step32",
+      "step33",
+      "step34",
+      "step35",
+      "step36",
+      "step37",
+      "step38",
+      "step39",
+      "step40",
+      "step41",
+      "step42"
+    ],
+    "visibility": "derived_from_model_visible",
+    "representation": {
+      "A_FULL": "source-visible or derivable",
+      "A_FAITHFUL_COMPACT": "exact or lossless delta",
+      "B_EFFORT_HISTORY": "current content retained",
+      "C_CURRENT_STATE": "current content retained"
+    },
+    "content_sha256": "a66af0b74b3bf5c0d462c138b1bb78b21bc1052f948c315ef4a8d88cc44d27c4"
+  },
+  {
+    "item_id": "BUDGET",
+    "section": "remaining_budget",
+    "source": [
+      "source config",
+      "state.step",
+      "precommit_hook/agent.py:53-58"
+    ],
+    "visibility": "researcher_only",
+    "representation": {
+      "A_FULL": "excluded",
+      "A_FAITHFUL_COMPACT": "excluded",
+      "B_EFFORT_HISTORY": "excluded",
+      "C_CURRENT_STATE": "excluded"
+    },
+    "content_sha256": "e2f3da09fccc5f8a9dfa35ef85b08b40f8f8865aa4f2b3fcc9c3f5630d522a2b"
+  },
+  {
+    "item_id": "ARCHIVE",
+    "section": "physical_state",
+    "source": [
+      "workspace.tar.gz"
+    ],
+    "visibility": "researcher_only",
+    "representation": {
+      "A_FULL": "excluded",
+      "A_FAITHFUL_COMPACT": "excluded",
+      "B_EFFORT_HISTORY": "excluded",
+      "C_CURRENT_STATE": "excluded"
+    },
+    "content_sha256": "00ab3ebe0a0ea86a58f9dd8ef7c829d1cb6d8e0374c5445f21103019a6a03ca6"
+  }
+]

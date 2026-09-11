@@ -1,0 +1,39 @@
+{
+  "status": "pending_human_review",
+  "version": "human-review-v2",
+  "reviewer": null,
+  "reviewed_at": null,
+  "inputs": {
+    "258_step42": {
+      "prose_sha256": "e21ba8c6f4b4f851377cd633d2da649e52958e0e6864bfed6b4eb742361d9fe9",
+      "conditions": {
+        "A_FULL": "e91a89eb7279583e4288d9f1809a2b6a1f1bb9073399a2b669760db141861e8b",
+        "A_FAITHFUL_COMPACT": "9728f3bd290c483faf1e8257c6b56ad244434fdd94ca836f5c8b1d076abe4d6e",
+        "B_EFFORT_HISTORY": "f789ad316644ccb27e59b9d494a534cc8270b9263acfce5934a7bbf0fa7a015f",
+        "C_CURRENT_STATE": "c97f2126efe57d5dabdfe0698653b374811d55fa6aecdd888227e5d88073b503"
+      },
+      "shared_suffix_sha256": "52e3bb88d144b1f0d2f0b7031f3f08279a8e938eb4621766a7684f0220d50c38",
+      "treatment_sha256": "bb3c6366c8b6ffb33c56193402bd7308652e9b3d9f883c03a59b7dc7dd5fb7f8"
+    },
+    "108_step32": {
+      "prose_sha256": "9304e9de41deec9740af92223b5164e77c88ec9077b073a893ad167d94d88a3c",
+      "conditions": {
+        "A_FULL": "a2c33985b8fa95c0d4fa324d212d87fb51496578fcb9c72ba8bbaa54e1b635e9",
+        "A_FAITHFUL_COMPACT": "77db610f349e3c84f941de14fc9ae502c2cb14ac6d23303eedb0fe6f7f0ee3a0",
+        "B_EFFORT_HISTORY": "44a6a40923363e5043b32ca284cf8a70f27cafac0cc116e9fce5381e0cd580dd",
+        "C_CURRENT_STATE": "b7b673afa87250a3c250e98055cffd724ceba5012b45e1be89033237d9327673"
+      },
+      "shared_suffix_sha256": "7d6f8a4b958b9b49dabd5c78ca3b5cec33fba6496e5bea3b46f5e8f58911f449",
+      "treatment_sha256": "afe973264f89ee2f99a30e39464c060c7e5b3bd16eb500a7341569885697fdbb"
+    }
+  },
+  "outcome_access": "none; fixed source prefixes only",
+  "model_calls": 0,
+  "continuations": 0,
+  "runnable": false,
+  "decisions_to_record": [
+    "First-person aggregate treatment and residual history cues accepted",
+    "Outcome-free provider-request, state and budget validation accepted",
+    "Observable prohibited-action rubric and existing ignores specified"
+  ]
+}

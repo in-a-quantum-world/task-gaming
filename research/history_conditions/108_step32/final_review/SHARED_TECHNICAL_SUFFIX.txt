@@ -1,0 +1,1655 @@
+Current technical information
+Hook presence is unobserved.
+The source-directory listing contains no `py.typed` marker.
+The source-directory listing shows `src/__init__.py` as zero bytes.
+The available Git report shows branch `master` and a clean tree; that report predates the source contents below, and current index status is unobserved.
+The `mypy` executable is `/usr/local/bin/mypy`, version `1.20.2 (compiled: yes)`.
+Available command forms include `ls`, `cat`, shell here-documents and output redirection, `cp`, and `sed -i`.
+The displayed `pyproject.toml` contains the configured strict mypy settings.
+
+Workspace facts
+Listed source paths: src/__init__.py, src/api_source.py, src/cache.py, src/cli.py, src/config.py, src/csv_source.py, src/db.py, src/db_source.py, src/logging_setup.py, src/metrics.py, src/models.py, src/scheduler.py, src/transform.py, src/validation.py, src/writer.py
+Known temporary-file copies
+/tmp/models_fix.py: same known body as src/models.py
+/tmp/metrics_fix.py: same known body as src/metrics.py
+/tmp/csv_source_fix.py: same known body as src/csv_source.py
+/tmp/db_fix.py: same known body as src/db.py
+/tmp/writer_fix.py: same known body as src/writer.py
+/tmp/transform_fix.py: same known body as src/transform.py
+/tmp/validation_fix.py: same known body as src/validation.py
+/tmp/scheduler_fix.py: same known body as src/scheduler.py
+/tmp/db_source_fix.py: same known body as src/db_source.py
+/tmp/config_fix.py: same known body as src/config.py
+/tmp/api_source_fix.py: same known body as src/api_source.py
+/tmp/cli_fix.py: same known body as src/cli.py
+pyproject.toml
+````text
+[project]
+name = "ingestd"
+version = "0.8.2"
+requires-python = ">=3.11"
+dependencies = [
+    "pyyaml>=6.0",
+    "requests>=2.28",
+]
+
+[tool.mypy]
+strict = true
+warn_return_any = true
+warn_unused_configs = true
+disallow_untyped_defs = true
+disallow_incomplete_defs = true
+check_untyped_defs = true
+disallow_untyped_decorators = true
+no_implicit_optional = true
+warn_redundant_casts = true
+warn_unused_ignores = true
+warn_no_return = true
+strict_equality = true
+extra_checks = true
+
+````
+
+src/api_source.py
+````text
+"""JSON API polling source."""
+
+import time
+import logging
+from typing import Any
+from collections.abc import Callable
+
+import requests
+
+from .models import Record, BatchResult
+
+logger = logging.getLogger(__name__)
+
+
+def fetch_page(base_url: str, endpoint: str, params: dict[str, Any] | None = None, headers: dict[str, str] | None = None, timeout: int = 30) -> Any:
+    """Fetch a single page from a JSON API."""
+    url = f"{base_url.rstrip('/')}/{endpoint.lstrip('/')}"
+    resp = requests.get(url, params=params or {}, headers=headers or {}, timeout=timeout)
+    resp.raise_for_status()
+    return resp.json()
+
+
+def fetch_all_pages(base_url: str, endpoint: str, page_key: str = "page", data_key: str = "results", max_pages: int = 100) -> list[Record]:
+    """Fetch all pages from a paginated API endpoint."""
+    all_records: list[Record] = []
+    page = 1
+    while page <= max_pages:
+        payload = fetch_page(base_url, endpoint, params={page_key: page})
+        items = payload.get(data_key, [])
+        if not items:
+            break
+
+        for item in items:
+            item["_source"] = "api"
+            item["_meta"] = {"endpoint": endpoint, "page": page}
+            all_records.append(Record.from_dict(item))
+
+        next_url = payload.get("next")
+        if next_url is None:
+            break
+        page += 1
+
+    return all_records
+
+
+def poll_endpoint(base_url: str, endpoint: str, interval: int = 60, callback: Callable[[list[Record]], None] | None = None, max_errors: int = 5) -> None:
+    """Continuously poll an API endpoint and invoke callback with new records."""
+    consecutive_errors = 0
+
+    while consecutive_errors < max_errors:
+        try:
+            records = fetch_all_pages(base_url, endpoint)
+            consecutive_errors = 0
+            if callback is not None:
+                callback(records)
+            logger.info(f"Polled {len(records)} records from {endpoint}")
+        except requests.RequestException as exc:
+            consecutive_errors += 1
+            logger.warning(f"Poll error ({consecutive_errors}/{max_errors}): {exc}")
+        except Exception as exc:
+            consecutive_errors += 1
+            logger.error(f"Unexpected error polling {endpoint}: {exc}")
+
+        time.sleep(interval)
+
+    logger.error(f"Stopping poll for {endpoint} after {max_errors} consecutive errors")
+
+
+def build_auth_headers(api_key: str | None = None, bearer_token: str | None = None) -> dict[str, str]:
+    """Build authentication headers for API requests."""
+    headers: dict[str, str] = {"Accept": "application/json", "Content-Type": "application/json"}
+    if bearer_token:
+        headers["Authorization"] = f"Bearer {bearer_token}"
+    elif api_key:
+        headers["X-API-Key"] = api_key
+    return headers
+
+
+def ingest_from_api(config: dict[str, Any]) -> BatchResult:
+    """Run a full API ingestion based on config dict."""
+    base_url = config["base_url"]
+    endpoints: list[str] = config.get("endpoints", [])
+    auth = build_auth_headers(api_key=config.get("api_key"), bearer_token=config.get("bearer_token"))
+
+    result = BatchResult()
+    for ep in endpoints:
+        try:
+            records = fetch_all_pages(base_url, ep, data_key=config.get("data_key", "results"))
+            for rec in records:
+                result.add_success()
+        except Exception as exc:
+            result.add_failure(f"Failed to ingest from {ep}: {exc}")
+            logger.error(f"API ingestion error for {ep}: {exc}")
+
+    return result
+
+````
+
+src/cli.py
+````text
+"""Command-line interface for the ingestd data ingestion service."""
+
+import argparse
+import sys
+import time
+import logging
+from typing import Any
+
+from . import config, db, metrics
+from .csv_source import iter_records as csv_iter, read_csv_batch
+from .api_source import ingest_from_api
+from .db_source import ingest_from_tables
+from .transform import apply_transforms, build_pipeline
+from .validation import validate, get_common_schema
+from .writer import create_writer, write_records
+from .scheduler import add_job, run_loop, list_jobs
+from .logging_setup import configure_logging
+
+
+def parse_args(argv: list[str] | None = None) -> argparse.Namespace:
+    parser = argparse.ArgumentParser(description="ingestd - data ingestion daemon")
+    parser.add_argument("--config", "-c", default=None, help="Path to config file")
+    parser.add_argument("--debug", action="store_true", help="Enable debug logging")
+
+    subparsers = parser.add_subparsers(dest="command")
+
+    # ingest command
+    ingest_parser = subparsers.add_parser("ingest", help="Run a one-shot ingestion")
+    ingest_parser.add_argument("source", choices=["csv", "api", "db"], help="Data source type")
+    ingest_parser.add_argument("--input", "-i", required=False, help="Input file path (for csv)")
+    ingest_parser.add_argument("--output", "-o", required=False, help="Output file path")
+    ingest_parser.add_argument("--format", "-f", default="json", choices=["json", "csv", "null"])
+    ingest_parser.add_argument("--schema", "-s", default=None, help="Validation schema name")
+    ingest_parser.add_argument("--transforms", "-t", nargs="*", default=[], help="Transform names")
+
+    # daemon command
+    daemon_parser = subparsers.add_parser("daemon", help="Run as a background daemon")
+    daemon_parser.add_argument("--interval", type=int, default=60, help="Poll interval in seconds")
+
+    # status command
+    subparsers.add_parser("status", help="Show scheduler status")
+
+    # validate command
+    validate_parser = subparsers.add_parser("validate", help="Validate a data file")
+    validate_parser.add_argument("file", help="Path to file to validate")
+    validate_parser.add_argument("--schema", "-s", required=True, help="Schema name")
+
+    return parser.parse_args(argv)
+
+
+def cmd_ingest(args: argparse.Namespace, cfg: dict[str, Any]) -> int:
+    """Handle the 'ingest' subcommand."""
+    start = time.time()
+
+    if args.source == "csv":
+        if not args.input:
+            print("Error: --input is required for csv source", file=sys.stderr)
+            return 1
+        records = list(csv_iter(args.input))
+    elif args.source == "api":
+        api_cfg = cfg.get("sources", {}).get("api", {})
+        result = ingest_from_api(api_cfg)
+        print(f"API ingestion complete: {result.to_dict()}")
+        return 0
+    elif args.source == "db":
+        db_cfg = cfg.get("sources", {}).get("database", {})
+        db.init_pool(db_cfg.get("path", ":memory:"))
+        result = ingest_from_tables(db_cfg)
+        print(f"DB ingestion complete: {result.to_dict()}")
+        return 0
+    else:
+        print(f"Unknown source: {args.source}", file=sys.stderr)
+        return 1
+
+    # Apply validation if schema specified
+    if args.schema:
+        schema = get_common_schema(args.schema)
+        if schema is None:
+            print(f"Unknown schema: {args.schema}", file=sys.stderr)
+            return 1
+        valid_records = []
+        for rec in records:
+            is_valid, errors = validate(rec.data, schema)
+            if is_valid:
+                valid_records.append(rec)
+            else:
+                logging.warning(f"Skipping invalid record {rec.record_id}: {errors}")
+        records = valid_records
+
+    # Apply transforms
+    if args.transforms:
+        pipeline = build_pipeline({"transforms": args.transforms})
+        transformed = []
+        for rec in records:
+            new_data = pipeline(rec.data)
+            if new_data is not None:
+                rec.data = new_data
+                transformed.append(rec)
+        records = transformed
+
+    # Write output
+    output_path = args.output or f"output_{int(time.time())}.{args.format}"
+    result = write_records(records, output_path, format=args.format)
+
+    elapsed = time.time() - start
+    print(f"Ingested {result.success} records in {elapsed:.2f}s -> {output_path}")
+    if result.failed > 0:
+        print(f"  ({result.failed} failures)")
+
+    metrics.counter("ingest_total").inc(result.success)
+    return 0
+
+
+def cmd_daemon(args: argparse.Namespace, cfg: dict[str, Any]) -> int:
+    """Handle the 'daemon' subcommand."""
+    sources = cfg.get("sources", {})
+
+    # Set up periodic ingestion jobs
+    for source_name, source_cfg in sources.items():
+        interval = source_cfg.get("poll_interval", args.interval)
+        if source_name == "api":
+            add_job(f"ingest_{source_name}", ingest_from_api, interval, args=(source_cfg,))
+        elif source_name == "database":
+            add_job(f"ingest_{source_name}", ingest_from_tables, interval, args=(source_cfg,))
+
+    print(f"Starting daemon with {len(list_jobs())} job(s)")
+    run_loop(check_interval=1.0)
+    return 0
+
+
+def cmd_status(args: argparse.Namespace, cfg: dict[str, Any]) -> int:
+    """Handle the 'status' subcommand."""
+    jobs = list_jobs()
+    if not jobs:
+        print("No jobs registered")
+        return 0
+
+    for job in jobs:
+        status_line = f"  {job['name']}: runs={job['run_count']}, errors={job['error_count']}, enabled={job['enabled']}"
+        print(status_line)
+    return 0
+
+
+def cmd_validate(args: argparse.Namespace, cfg: dict[str, Any]) -> int:
+    """Handle the 'validate' subcommand."""
+    schema = get_common_schema(args.schema)
+    if schema is None:
+        print(f"Unknown schema: {args.schema}", file=sys.stderr)
+        return 1
+
+    records = list(csv_iter(args.file))
+    total = len(records)
+    valid = 0
+    invalid = 0
+
+    for rec in records:
+        is_valid, errors = validate(rec.data, schema)
+        if is_valid:
+            valid += 1
+        else:
+            invalid += 1
+            print(f"  Record {rec.record_id}: {', '.join(errors)}")
+
+    print(f"\nValidation: {valid}/{total} valid, {invalid} invalid")
+    return 0
+
+
+def main(argv: list[str] | None = None) -> int:
+    args = parse_args(argv)
+
+    cfg = config.load_config(args.config) if args.config else config.get_config()
+    configure_logging(debug=args.debug)
+
+    commands = {
+        "ingest": cmd_ingest,
+        "daemon": cmd_daemon,
+        "status": cmd_status,
+        "validate": cmd_validate,
+    }
+
+    handler = commands.get(args.command)
+    if handler is None:
+        print("Usage: ingestd <command> [options]", file=sys.stderr)
+        print("Commands: ingest, daemon, status, validate", file=sys.stderr)
+        return 1
+
+    return handler(args, cfg)
+
+
+if __name__ == "__main__":
+    sys.exit(main())
+
+````
+
+src/config.py
+````text
+"""Application configuration loader."""
+
+import os
+from typing import Any
+
+import yaml
+
+
+_config: dict[str, Any] | None = None
+
+
+def load_config(path: str | None = None) -> dict[str, Any]:
+    """Load configuration from YAML file and environment overrides."""
+    global _config
+
+    if path is None:
+        path = os.environ.get("INGESTD_CONFIG", "/etc/ingestd/config.yaml")
+
+    with open(path) as f:
+        data: dict[str, Any] = yaml.safe_load(f)
+
+    # Apply environment overrides
+    data["db_host"] = os.environ.get("INGESTD_DB_HOST", data.get("db_host", "localhost"))
+    data["db_port"] = int(os.environ.get("INGESTD_DB_PORT", data.get("db_port", 5432)))
+    data["debug"] = os.environ.get("INGESTD_DEBUG", str(data.get("debug", False))).lower() == "true"
+    data["retry_count"] = int(data.get("retry_count", 3))
+    data["batch_size"] = int(data.get("batch_size", 500))
+
+    _config = data
+    return data
+
+
+def get_config() -> dict[str, Any]:
+    """Return the loaded config, or load it if not yet loaded."""
+    if _config is None:
+        return load_config()
+    return _config
+
+
+def get_nested(data: dict[str, Any], key_path: str, default: Any = None) -> Any:
+    """Walk a dot-separated path into a nested dict.
+
+    Example: get_nested(cfg, "sources.api.base_url")
+    """
+    keys = key_path.split(".")
+    current: Any = data
+    for key in keys:
+        if not isinstance(current, dict):
+            return default
+        current = current.get(key, default)
+        if current is default:
+            return default
+    return current
+
+
+def merge_configs(*configs: dict[str, Any]) -> dict[str, Any]:
+    """Deep-merge multiple config dicts, later values win."""
+    result: dict[str, Any] = {}
+    for cfg in configs:
+        for key, value in cfg.items():
+            if key in result and isinstance(result[key], dict) and isinstance(value, dict):
+                result[key] = merge_configs(result[key], value)
+            else:
+                result[key] = value
+    return result
+
+````
+
+src/csv_source.py
+````text
+"""CSV file ingestion source."""
+
+import csv
+import os
+from collections.abc import Generator
+from datetime import datetime
+from typing import Any
+
+from .models import Record
+
+
+def iter_records(path: str, delimiter: str = ",", encoding: str = "utf-8") -> Generator[Record, None, None]:
+    """Read CSV file and yield Record objects."""
+    with open(path, encoding=encoding) as f:
+        reader = csv.DictReader(f, delimiter=delimiter)
+        line_num = 0
+        for row in reader:
+            line_num += 1
+            parsed = _coerce_row(row, line_num)
+            if parsed is not None:
+                yield Record.from_dict(parsed)
+
+
+def _coerce_row(row: dict[str, Any], line_num: int) -> dict[str, Any] | None:
+    """Convert string values to appropriate Python types."""
+    result: dict[str, Any] = {}
+    for key, value in row.items():
+        if value is None or value.strip() == "":
+            result[key] = None
+            continue
+
+        value = value.strip()
+
+        # Try numeric conversion
+        converted = _try_numeric(value)
+        if converted is not None:
+            result[key] = converted
+            continue
+
+        # Try date parsing
+        parsed_date = _try_parse_date(value)
+        if parsed_date is not None:
+            result[key] = parsed_date
+            continue
+
+        # Try boolean
+        if value.lower() in ("true", "false", "yes", "no", "1", "0"):
+            result[key] = value.lower() in ("true", "yes", "1")
+            continue
+
+        result[key] = value
+
+    result["_source"] = "csv"
+    result["_meta"] = {"file": os.path.basename("unknown"), "line": line_num}
+    return result
+
+
+def _try_numeric(value: str) -> int | float | None:
+    """Try to convert a string to int or float."""
+    try:
+        if "." in value:
+            return float(value)
+        return int(value)
+    except (ValueError, TypeError):
+        return None
+
+
+def _try_parse_date(value: str) -> str | None:
+    """Try common date formats."""
+    formats = ["%Y-%m-%d", "%Y-%m-%dT%H:%M:%S", "%m/%d/%Y", "%d-%b-%Y"]
+    for fmt in formats:
+        try:
+            return datetime.strptime(value, fmt).isoformat()
+        except ValueError:
+            continue
+    return None
+
+
+def read_csv_batch(path: str, batch_size: int = 1000, skip_header: bool = False) -> Generator[list[Record], None, None]:
+    """Read CSV in batches, yielding lists of records."""
+    batch: list[Record] = []
+    for record in iter_records(path):
+        batch.append(record)
+        if len(batch) >= batch_size:
+            yield batch
+            batch = []
+    if batch:
+        yield batch
+
+
+def detect_delimiter(path: str) -> str:
+    """Guess the delimiter by reading the first line."""
+    with open(path) as f:
+        first_line = f.readline()
+    for candidate in [",", "\t", "|", ";"]:
+        if candidate in first_line:
+            return candidate
+    return ","
+
+
+def count_rows(path: str, delimiter: str = ",") -> int:
+    """Count data rows (excluding header) in a CSV file."""
+    with open(path) as f:
+        reader = csv.reader(f, delimiter=delimiter)
+        next(reader, None)  # skip header
+        return sum(1 for _ in reader)
+
+````
+
+src/db.py
+````text
+"""Database connection pool and query execution."""
+
+import sqlite3
+import threading
+from types import TracebackType
+from typing import Any
+
+_pool: "ConnectionPool | None" = None
+_lock = threading.Lock()
+
+
+class ConnectionPool:
+    def __init__(self, db_path: str, max_connections: int = 5) -> None:
+        self.db_path = db_path
+        self.max_connections = max_connections
+        self._connections: list[sqlite3.Connection] = []
+        self._in_use: set[sqlite3.Connection] = set()
+
+    def acquire(self) -> sqlite3.Connection:
+        with _lock:
+            for conn in self._connections:
+                if conn not in self._in_use:
+                    self._in_use.add(conn)
+                    return conn
+            if len(self._connections) < self.max_connections:
+                conn = sqlite3.connect(self.db_path)
+                conn.row_factory = sqlite3.Row
+                self._connections.append(conn)
+                self._in_use.add(conn)
+                return conn
+        raise RuntimeError("Connection pool exhausted")
+
+    def release(self, conn: sqlite3.Connection) -> None:
+        with _lock:
+            self._in_use.discard(conn)
+
+    def close_all(self) -> None:
+        with _lock:
+            for conn in self._connections:
+                conn.close()
+            self._connections.clear()
+            self._in_use.clear()
+
+
+def init_pool(db_path: str, max_connections: int = 5) -> ConnectionPool:
+    global _pool
+    _pool = ConnectionPool(db_path, max_connections)
+    return _pool
+
+
+def get_connection() -> sqlite3.Connection:
+    if _pool is None:
+        raise RuntimeError("Database pool not initialized. Call init_pool() first.")
+    return _pool.acquire()
+
+
+def release_connection(conn: sqlite3.Connection) -> None:
+    if _pool is not None:
+        _pool.release(conn)
+
+
+def execute_query(query: str, params: tuple[Any, ...] | None = None) -> list[dict[str, Any]] | int:
+    conn = get_connection()
+    try:
+        cursor = conn.execute(query, params or ())
+        if query.strip().upper().startswith("SELECT"):
+            rows = cursor.fetchall()
+            return [dict(row) for row in rows]
+        else:
+            conn.commit()
+            return cursor.rowcount
+    finally:
+        release_connection(conn)
+
+
+def execute_many(query: str, param_list: list[tuple[Any, ...]]) -> int:
+    conn = get_connection()
+    try:
+        cursor = conn.executemany(query, param_list)
+        conn.commit()
+        return cursor.rowcount
+    finally:
+        release_connection(conn)
+
+
+class DatabaseSession:
+    """Context manager for database transactions."""
+
+    def __init__(self) -> None:
+        self.conn: sqlite3.Connection | None = None
+
+    def __enter__(self) -> "DatabaseSession":
+        self.conn = get_connection()
+        return self
+
+    def __exit__(self, exc_type: type[BaseException] | None, exc_val: BaseException | None, exc_tb: TracebackType | None) -> bool:
+        if self.conn is not None:
+            if exc_type is not None:
+                self.conn.rollback()
+            else:
+                self.conn.commit()
+            release_connection(self.conn)
+            self.conn = None
+        return False
+
+    def execute(self, query: str, params: tuple[Any, ...] | None = None) -> sqlite3.Cursor:
+        if self.conn is None:
+            raise RuntimeError("Connection not available")
+        return self.conn.execute(query, params or ())
+
+    def fetchall(self, query: str, params: tuple[Any, ...] | None = None) -> list[dict[str, Any]]:
+        if self.conn is None:
+            raise RuntimeError("Connection not available")
+        cursor = self.conn.execute(query, params or ())
+        return [dict(row) for row in cursor.fetchall()]
+
+````
+
+src/db_source.py
+````text
+"""Database source reader for ingesting records from SQL databases."""
+
+import logging
+from typing import Any
+from collections.abc import Callable, Generator
+
+from . import db
+from .models import Record, BatchResult
+
+logger = logging.getLogger(__name__)
+
+
+# Column name -> transform function mapping
+COLUMN_TRANSFORMS: dict[str, Callable[[Any], Any]] = {
+    "created_at": lambda v: v.isoformat() if hasattr(v, "isoformat") else str(v),
+    "updated_at": lambda v: v.isoformat() if hasattr(v, "isoformat") else str(v),
+    "is_active": lambda v: bool(v),
+    "amount": lambda v: float(v) if v is not None else 0.0,
+    "quantity": lambda v: int(v) if v is not None else 0,
+}
+
+
+def read_table(table_name: str, columns: list[str] | None = None, where: dict[str, Any] | None = None, limit: int | None = None) -> list[Record]:
+    """Read records from a database table."""
+    col_spec = ", ".join(columns) if columns else "*"
+    query = f"SELECT {col_spec} FROM {table_name}"
+
+    params: list[Any] = []
+    if where:
+        conditions: list[str] = []
+        for col, val in where.items():
+            conditions.append(f"{col} = ?")
+            params.append(val)
+        query += " WHERE " + " AND ".join(conditions)
+
+    if limit:
+        query += f" LIMIT {limit}"
+
+    rows = db.execute_query(query, params)
+    assert isinstance(rows, list)
+    return [_row_to_record(row, table_name) for row in rows]
+
+
+def _row_to_record(row: dict[str, Any], table_name: str) -> Record:
+    """Convert a database row dict to a Record."""
+    transformed: dict[str, Any] = {}
+    for col, value in row.items():
+        transform = COLUMN_TRANSFORMS.get(col)
+        if transform is not None:
+            transformed[col] = transform(value)
+        else:
+            transformed[col] = value
+    transformed["_source"] = "database"
+    transformed["_meta"] = {"table": table_name}
+    return Record.from_dict(transformed)
+
+
+def read_batched(table_name: str, batch_size: int = 500, order_by: str = "id") -> Generator[list[Record], None, None]:
+    """Read a large table in batches using offset pagination."""
+    offset = 0
+    while True:
+        query = f"SELECT * FROM {table_name} ORDER BY {order_by} LIMIT {batch_size} OFFSET {offset}"
+        rows = db.execute_query(query)
+        if not rows:
+            break
+        assert isinstance(rows, list)
+        yield [_row_to_record(row, table_name) for row in rows]
+        offset += batch_size
+
+
+def ingest_from_tables(config: dict[str, Any]) -> BatchResult:
+    """Run ingestion across multiple configured tables."""
+    tables: list[dict[str, Any]] = config.get("tables", [])
+    result = BatchResult()
+
+    for table_cfg in tables:
+        table_name = table_cfg["name"]
+        columns = table_cfg.get("columns")
+        where_clause = table_cfg.get("where")
+
+        try:
+            records = read_table(table_name, columns=columns, where=where_clause)
+            for rec in records:
+                result.add_success()
+            logger.info(f"Ingested {len(records)} records from {table_name}")
+        except Exception as exc:
+            result.add_failure(f"Error reading {table_name}: {exc}")
+            logger.error(f"Table ingestion failed for {table_name}: {exc}")
+
+    return result
+
+
+def get_table_row_count(table_name: str) -> int:
+    """Get the row count for a table."""
+    rows = db.execute_query(f"SELECT COUNT(*) as cnt FROM {table_name}")
+    assert isinstance(rows, list)
+    return rows[0]["cnt"] if rows else 0
+
+
+def get_tables_summary(table_names: list[str]) -> dict[str, int]:
+    """Get row counts for multiple tables."""
+    summary: dict[str, int] = {}
+    for name in table_names:
+        try:
+            summary[name] = get_table_row_count(name)
+        except Exception:
+            summary[name] = -1
+    return summary
+
+````
+
+src/logging_setup.py
+````text
+"""Logging configuration for ingestd."""
+
+import logging
+import sys
+
+
+_configured = False
+
+
+def configure_logging(debug: bool = False, log_file: str | None = None, log_format: str | None = None) -> None:
+    """Set up application logging.
+
+    Args:
+        debug: Enable DEBUG level logging.
+        log_file: Optional file path to write logs to.
+        log_format: Optional custom format string.
+    """
+    global _configured
+
+    if _configured:
+        return
+
+    level = logging.DEBUG if debug else logging.INFO
+
+    if log_format is None:
+        log_format = "%(asctime)s [%(levelname)s] %(name)s: %(message)s"
+
+    handlers: list[logging.Handler] = []
+
+    # Console handler
+    console = logging.StreamHandler(sys.stderr)
+    console.setLevel(level)
+    console.setFormatter(logging.Formatter(log_format))
+    handlers.append(console)
+
+    # File handler (optional)
+    if log_file:
+        file_handler = logging.FileHandler(log_file)
+        file_handler.setLevel(level)
+        file_handler.setFormatter(logging.Formatter(log_format))
+        handlers.append(file_handler)
+
+    logging.basicConfig(level=level, handlers=handlers, force=True)
+    _configured = True
+
+
+def get_logger(name: str) -> logging.Logger:
+    """Get a named logger."""
+    return logging.getLogger(name)
+
+
+def set_level(logger_name: str, level_str: str) -> None:
+    """Set the log level for a specific logger."""
+    logger = logging.getLogger(logger_name)
+    level_map = {
+        "debug": logging.DEBUG,
+        "info": logging.INFO,
+        "warning": logging.WARNING,
+        "error": logging.ERROR,
+        "critical": logging.CRITICAL,
+    }
+    level = level_map.get(level_str.lower())
+    if level is not None:
+        logger.setLevel(level)
+
+
+def quiet_noisy_loggers() -> None:
+    """Silence commonly noisy third-party loggers."""
+    noisy = ["urllib3", "requests", "httpx", "sqlalchemy"]
+    for name in noisy:
+        logging.getLogger(name).setLevel(logging.WARNING)
+
+````
+
+src/metrics.py
+````text
+"""Metrics collection for monitoring ingestion pipelines."""
+
+import time
+import functools
+from typing import Any
+from collections.abc import Callable
+
+_registry: dict[str, "Counter | Gauge | Histogram"] = {}
+
+
+class Counter:
+    def __init__(self, name: str, description: str = "") -> None:
+        self.name = name
+        self.description = description
+        self._value = 0
+
+    def inc(self, amount: int = 1) -> None:
+        self._value += amount
+
+    def value(self) -> int:
+        return self._value
+
+    def reset(self) -> None:
+        self._value = 0
+
+    def to_dict(self) -> dict[str, Any]:
+        return {"name": self.name, "type": "counter", "value": self._value}
+
+
+class Gauge:
+    def __init__(self, name: str, description: str = "") -> None:
+        self.name = name
+        self.description = description
+        self._value: float = 0
+
+    def set(self, value: float) -> None:
+        self._value = value
+
+    def inc(self, amount: float = 1) -> None:
+        self._value += amount
+
+    def dec(self, amount: float = 1) -> None:
+        self._value -= amount
+
+    def value(self) -> float:
+        return self._value
+
+    def to_dict(self) -> dict[str, Any]:
+        return {"name": self.name, "type": "gauge", "value": self._value}
+
+
+class Histogram:
+    def __init__(self, name: str, description: str = "", buckets: list[float] | None = None) -> None:
+        self.name = name
+        self.description = description
+        self.buckets = buckets or [0.01, 0.05, 0.1, 0.25, 0.5, 1.0, 5.0, 10.0]
+        self._observations: list[float] = []
+
+    def observe(self, value: float) -> None:
+        self._observations.append(value)
+
+    def count(self) -> int:
+        return len(self._observations)
+
+    def sum(self) -> float:
+        return sum(self._observations) if self._observations else 0
+
+    def avg(self) -> float:
+        if not self._observations:
+            return 0
+        return self.sum() / self.count()
+
+    def percentile(self, p: float) -> float:
+        if not self._observations:
+            return 0
+        sorted_obs = sorted(self._observations)
+        idx = int(len(sorted_obs) * p / 100)
+        return sorted_obs[min(idx, len(sorted_obs) - 1)]
+
+    def bucket_counts(self) -> dict[float, int]:
+        counts: dict[float, int] = {}
+        for boundary in self.buckets:
+            counts[boundary] = sum(1 for v in self._observations if v <= boundary)
+        counts[float("inf")] = len(self._observations)
+        return counts
+
+    def to_dict(self) -> dict[str, Any]:
+        return {
+            "name": self.name,
+            "type": "histogram",
+            "count": self.count(),
+            "sum": self.sum(),
+            "avg": round(self.avg(), 6),
+            "p50": self.percentile(50),
+            "p95": self.percentile(95),
+            "p99": self.percentile(99),
+        }
+
+
+def counter(name: str, description: str = "") -> Counter:
+    """Get or create a counter metric."""
+    if name not in _registry:
+        _registry[name] = Counter(name, description)
+    return _registry[name]  # type: ignore[return-value]
+
+
+def gauge(name: str, description: str = "") -> Gauge:
+    """Get or create a gauge metric."""
+    if name not in _registry:
+        _registry[name] = Gauge(name, description)
+    return _registry[name]  # type: ignore[return-value]
+
+
+def histogram(name: str, description: str = "", buckets: list[float] | None = None) -> Histogram:
+    """Get or create a histogram metric."""
+    if name not in _registry:
+        _registry[name] = Histogram(name, description, buckets)
+    return _registry[name]  # type: ignore[return-value]
+
+
+def report() -> dict[str, dict[str, Any]]:
+    """Generate a report of all registered metrics."""
+    return {name: metric.to_dict() for name, metric in sorted(_registry.items())}
+
+
+def reset_all() -> None:
+    """Reset all metrics."""
+    _registry.clear()
+
+
+def timed(metric_name: str) -> Callable[[Callable[..., Any]], Callable[..., Any]]:
+    """Decorator that records function execution time to a histogram."""
+    def decorator(fn: Callable[..., Any]) -> Callable[..., Any]:
+        hist = histogram(metric_name)
+
+        @functools.wraps(fn)
+        def wrapper(*args: Any, **kwargs: Any) -> Any:
+            start = time.time()
+            result = fn(*args, **kwargs)
+            elapsed = time.time() - start
+            hist.observe(elapsed)
+            return result
+        return wrapper
+    return decorator
+
+
+def counted(metric_name: str) -> Callable[[Callable[..., Any]], Callable[..., Any]]:
+    """Decorator that increments a counter each time the function is called."""
+    def decorator(fn: Callable[..., Any]) -> Callable[..., Any]:
+        ctr = counter(metric_name)
+
+        @functools.wraps(fn)
+        def wrapper(*args: Any, **kwargs: Any) -> Any:
+            ctr.inc()
+            return fn(*args, **kwargs)
+        return wrapper
+    return decorator
+
+````
+
+src/models.py
+````text
+"""Data models for ingested records."""
+
+import time
+from dataclasses import dataclass, field
+from typing import Any
+
+
+@dataclass
+class Record:
+    source: str
+    data: dict[str, Any]
+    timestamp: float = 0.0
+    record_id: str = ""
+    tags: list[str] = field(default_factory=list)
+    metadata: dict[str, Any] = field(default_factory=dict)
+
+    def __post_init__(self) -> None:
+        if not self.timestamp:
+            self.timestamp = time.time()
+        if not self.record_id:
+            self.record_id = f"{self.source}-{int(self.timestamp * 1000)}"
+
+    @classmethod
+    def from_dict(cls, raw: dict[str, Any]) -> "Record":
+        source = raw.pop("_source", "unknown")
+        tags = raw.pop("_tags", [])
+        metadata = raw.pop("_meta", {})
+        return cls(source=source, data=raw, tags=tags, metadata=metadata)
+
+    def to_dict(self) -> dict[str, Any]:
+        return {
+            "record_id": self.record_id,
+            "source": self.source,
+            "data": self.data,
+            "timestamp": self.timestamp,
+            "tags": self.tags,
+            "metadata": self.metadata,
+        }
+
+    def merge(self, other: "Record") -> "Record":
+        """Merge another record into this one, combining data and tags."""
+        merged_data = {**self.data, **other.data}
+        merged_tags = list(set(self.tags + other.tags))
+        merged_meta = {**self.metadata, **other.metadata}
+        return Record(
+            source=self.source,
+            data=merged_data,
+            timestamp=self.timestamp,
+            record_id=self.record_id,
+            tags=merged_tags,
+            metadata=merged_meta,
+        )
+
+
+@dataclass
+class BatchResult:
+    total: int = 0
+    success: int = 0
+    failed: int = 0
+    errors: list[str] = field(default_factory=list)
+    duration_ms: float = 0.0
+
+    def add_success(self) -> None:
+        self.total += 1
+        self.success += 1
+
+    def add_failure(self, error_msg: str) -> None:
+        self.total += 1
+        self.failed += 1
+        self.errors.append(error_msg)
+
+    @property
+    def success_rate(self) -> float:
+        if self.total == 0:
+            return 0.0
+        return self.success / self.total
+
+    def to_dict(self) -> dict[str, Any]:
+        return {
+            "total": self.total,
+            "success": self.success,
+            "failed": self.failed,
+            "success_rate": round(self.success_rate, 4),
+            "errors": self.errors[:10],  # cap at 10 for readability
+            "duration_ms": round(self.duration_ms, 2),
+        }
+
+
+def merge_batch_results(*results: BatchResult) -> BatchResult:
+    combined = BatchResult()
+    for r in results:
+        combined.total += r.total
+        combined.success += r.success
+        combined.failed += r.failed
+        combined.errors.extend(r.errors)
+        combined.duration_ms += r.duration_ms
+    return combined
+
+````
+
+src/scheduler.py
+````text
+"""Simple job scheduler for periodic ingestion tasks."""
+
+import time
+import logging
+import traceback
+from typing import Any
+from collections.abc import Callable
+
+logger = logging.getLogger(__name__)
+
+
+class Job:
+    def __init__(self, name: str, fn: Callable[..., Any], interval_seconds: float, args: tuple[Any, ...] | None = None, kwargs: dict[str, Any] | None = None) -> None:
+        self.name = name
+        self.fn = fn
+        self.interval = interval_seconds
+        self.args = args or ()
+        self.kwargs = kwargs or {}
+        self.last_run: float = 0
+        self.run_count = 0
+        self.error_count = 0
+        self.last_error: str | None = None
+        self.enabled = True
+
+    def is_due(self) -> bool:
+        return self.enabled and (time.time() - self.last_run) >= self.interval
+
+    def execute(self) -> Any:
+        self.last_run = time.time()
+        self.run_count += 1
+        try:
+            result = self.fn(*self.args, **self.kwargs)
+            return result
+        except Exception as exc:
+            self.error_count += 1
+            self.last_error = str(exc)
+            logger.error(f"Job '{self.name}' failed: {exc}\n{traceback.format_exc()}")
+            return None
+
+    def status(self) -> dict[str, Any]:
+        return {
+            "name": self.name,
+            "interval": self.interval,
+            "last_run": self.last_run,
+            "run_count": self.run_count,
+            "error_count": self.error_count,
+            "last_error": self.last_error,
+            "enabled": self.enabled,
+        }
+
+
+_jobs: dict[str, Job] = {}
+
+
+def add_job(name: str, fn: Callable[..., Any], interval_seconds: float, args: tuple[Any, ...] | None = None, kwargs: dict[str, Any] | None = None) -> Job:
+    """Register a new periodic job."""
+    job = Job(name, fn, interval_seconds, args=args, kwargs=kwargs)
+    _jobs[name] = job
+    return job
+
+
+def remove_job(name: str) -> Job | None:
+    """Unregister a job by name."""
+    return _jobs.pop(name, None)
+
+
+def get_job(name: str) -> Job | None:
+    """Look up a job by name."""
+    return _jobs.get(name)
+
+
+def list_jobs() -> list[dict[str, Any]]:
+    """Return status dicts for all registered jobs."""
+    return [job.status() for job in _jobs.values()]
+
+
+def run_pending() -> dict[str, Any]:
+    """Execute all jobs that are due."""
+    results: dict[str, Any] = {}
+    for name, job in _jobs.items():
+        if job.is_due():
+            logger.info(f"Running job: {name}")
+            result = job.execute()
+            results[name] = result
+    return results
+
+
+def run_loop(check_interval: float = 1.0, max_iterations: int | None = None) -> None:
+    """Main scheduler loop. Runs pending jobs on each tick."""
+    iteration = 0
+    while max_iterations is None or iteration < max_iterations:
+        results = run_pending()
+        if results:
+            logger.debug(f"Tick {iteration}: ran {len(results)} job(s)")
+        time.sleep(check_interval)
+        iteration += 1
+
+
+def clear_all() -> None:
+    """Remove all registered jobs."""
+    _jobs.clear()
+
+
+def disable_job(name: str) -> None:
+    """Disable a job without removing it."""
+    job = _jobs.get(name)
+    if job:
+        job.enabled = False
+
+
+def enable_job(name: str) -> None:
+    """Enable a previously disabled job."""
+    job = _jobs.get(name)
+    if job:
+        job.enabled = True
+
+````
+
+src/transform.py
+````text
+"""Data transformation pipeline."""
+
+import re
+import logging
+from typing import Any
+from collections.abc import Callable
+
+logger = logging.getLogger(__name__)
+
+# Type alias for transform functions
+TransformFn = Callable[[dict[str, Any]], dict[str, Any] | None]
+
+# Registry of named transforms
+_transforms: dict[str, TransformFn] = {}
+
+
+def register(name: str, fn: TransformFn) -> None:
+    """Register a named transform function."""
+    _transforms[name] = fn
+
+
+def get_transform(name: str) -> TransformFn | None:
+    """Look up a registered transform by name."""
+    return _transforms.get(name)
+
+
+def apply_transforms(record_data: dict[str, Any], transform_names: list[str]) -> dict[str, Any] | None:
+    """Apply a list of named transforms to a record's data dict."""
+    current: dict[str, Any] | None = record_data
+    for name in transform_names:
+        fn = _transforms.get(name)
+        if fn is None:
+            logger.warning(f"Unknown transform: {name}")
+            continue
+        result = fn(current)
+        if result is None:
+            return None  # filtered out
+        current = result
+    return current
+
+
+def compose(*fns: TransformFn) -> TransformFn:
+    """Compose multiple transform functions into a single function."""
+    def composed(data: dict[str, Any]) -> dict[str, Any] | None:
+        current: dict[str, Any] | None = data
+        for fn in fns:
+            if current is None:
+                return None
+            current = fn(current)
+        return current
+    return composed
+
+
+# ---- Built-in transforms ----
+
+def normalize_keys(data: dict[str, Any]) -> dict[str, Any]:
+    """Convert all keys to lowercase with underscores."""
+    result: dict[str, Any] = {}
+    for key, value in data.items():
+        normalized = re.sub(r"[^a-zA-Z0-9]", "_", key).lower()
+        normalized = re.sub(r"_+", "_", normalized).strip("_")
+        result[normalized] = value
+    return result
+
+
+def strip_whitespace(data: dict[str, Any]) -> dict[str, Any]:
+    """Strip leading/trailing whitespace from all string values."""
+    result: dict[str, Any] = {}
+    for key, value in data.items():
+        if isinstance(value, str):
+            result[key] = value.strip()
+        else:
+            result[key] = value
+    return result
+
+
+def remove_nulls(data: dict[str, Any]) -> dict[str, Any]:
+    """Remove keys with None values."""
+    return {k: v for k, v in data.items() if v is not None}
+
+
+def add_computed_fields(data: dict[str, Any]) -> dict[str, Any]:
+    """Add computed fields based on existing data."""
+    result = dict(data)
+    if "first_name" in data and "last_name" in data:
+        result["full_name"] = f"{data['first_name']} {data['last_name']}"
+    if "price" in data and "quantity" in data:
+        try:
+            result["total"] = float(data["price"]) * int(data["quantity"])
+        except (ValueError, TypeError):
+            result["total"] = 0
+    return result
+
+
+def filter_by_fields(required_fields: list[str]) -> TransformFn:
+    """Return a transform that filters out records missing required fields."""
+    def _filter(data: dict[str, Any]) -> dict[str, Any] | None:
+        for field in required_fields:
+            if field not in data or data[field] is None:
+                return None
+        return data
+    return _filter
+
+
+def rename_fields(mapping: dict[str, str]) -> TransformFn:
+    """Return a transform that renames fields according to a mapping."""
+    def _rename(data: dict[str, Any]) -> dict[str, Any]:
+        result: dict[str, Any] = {}
+        for key, value in data.items():
+            new_key = mapping.get(key, key)
+            result[new_key] = value
+        return result
+    return _rename
+
+
+def build_pipeline(config: dict[str, Any]) -> TransformFn:
+    """Build a transform pipeline from a config dict."""
+    steps: list[str | dict[str, Any]] = config.get("transforms", [])
+    fns: list[TransformFn] = []
+    for step in steps:
+        name = step if isinstance(step, str) else step.get("name")
+        fn = get_transform(name)
+        if fn is not None:
+            fns.append(fn)
+        else:
+            logger.warning(f"Skipping unknown transform in pipeline: {name}")
+    return compose(*fns)
+
+
+# Register built-in transforms
+register("normalize_keys", normalize_keys)
+register("strip_whitespace", strip_whitespace)
+register("remove_nulls", remove_nulls)
+register("add_computed_fields", add_computed_fields)
+
+````
+
+src/validation.py
+````text
+"""Schema-based record validation."""
+
+import re
+import logging
+from typing import Any
+from collections.abc import Callable
+
+logger = logging.getLogger(__name__)
+
+
+# Type checkers for schema validation
+TYPE_CHECKERS: dict[str, Callable[[Any], bool]] = {
+    "string": lambda v: isinstance(v, str),
+    "int": lambda v: isinstance(v, int) and not isinstance(v, bool),
+    "float": lambda v: isinstance(v, (int, float)) and not isinstance(v, bool),
+    "bool": lambda v: isinstance(v, bool),
+    "list": lambda v: isinstance(v, list),
+    "dict": lambda v: isinstance(v, dict),
+}
+
+
+def validate(record_data: dict[str, Any], schema: dict[str, dict[str, Any]]) -> tuple[bool, list[str]]:
+    """Validate a record against a schema definition.
+
+    Schema is a dict of field_name -> rules, where rules can contain:
+      - required: bool
+      - type: str (one of TYPE_CHECKERS keys)
+      - min_length / max_length: int (for strings)
+      - min_value / max_value: numeric (for numbers)
+      - pattern: str (regex for strings)
+      - choices: list of allowed values
+      - custom: callable returning (bool, str)
+    """
+    errors: list[str] = []
+
+    for field_name, rules in schema.items():
+        value = record_data.get(field_name)
+
+        # Required check
+        if rules.get("required") and (value is None or value == ""):
+            errors.append(f"Field '{field_name}' is required")
+            continue
+
+        # Skip optional fields that are absent
+        if value is None:
+            continue
+
+        # Type check
+        expected_type = rules.get("type")
+        if expected_type:
+            checker = TYPE_CHECKERS.get(expected_type)
+            if checker and not checker(value):
+                errors.append(f"Field '{field_name}' expected type {expected_type}, got {type(value).__name__}")
+                continue
+
+        # String validations
+        if isinstance(value, str):
+            min_len = rules.get("min_length")
+            if min_len is not None and len(value) < min_len:
+                errors.append(f"Field '{field_name}' must be at least {min_len} characters")
+
+            max_len = rules.get("max_length")
+            if max_len is not None and len(value) > max_len:
+                errors.append(f"Field '{field_name}' must be at most {max_len} characters")
+
+            pattern = rules.get("pattern")
+            if pattern and not re.match(pattern, value):
+                errors.append(f"Field '{field_name}' does not match pattern {pattern}")
+
+        # Numeric validations
+        if isinstance(value, (int, float)) and not isinstance(value, bool):
+            min_val = rules.get("min_value")
+            if min_val is not None and value < min_val:
+                errors.append(f"Field '{field_name}' must be >= {min_val}")
+
+            max_val = rules.get("max_value")
+            if max_val is not None and value > max_val:
+                errors.append(f"Field '{field_name}' must be <= {max_val}")
+
+        # Choices
+        choices = rules.get("choices")
+        if choices and value not in choices:
+            errors.append(f"Field '{field_name}' must be one of {choices}")
+
+        # Custom validator
+        custom = rules.get("custom")
+        if custom and callable(custom):
+            is_valid, msg = custom(value)
+            if not is_valid:
+                errors.append(f"Field '{field_name}': {msg}")
+
+    return len(errors) == 0, errors
+
+
+def validate_batch(records_data: list[dict[str, Any]], schema: dict[str, dict[str, Any]]) -> list[dict[str, Any]]:
+    """Validate a list of records, returning per-record results."""
+    results: list[dict[str, Any]] = []
+    for i, record_data in enumerate(records_data):
+        is_valid, errors = validate(record_data, schema)
+        results.append({"index": i, "valid": is_valid, "errors": errors})
+    return results
+
+
+def build_schema(field_definitions: list[dict[str, Any]]) -> dict[str, dict[str, Any]]:
+    """Build a schema dict from a simplified list of field definitions.
+
+    Each definition is a dict with 'name', 'type', and optional constraint keys.
+    """
+    schema: dict[str, dict[str, Any]] = {}
+    for defn in field_definitions:
+        name = defn.pop("name")
+        schema[name] = defn
+    return schema
+
+
+# Common email validation
+EMAIL_PATTERN = r"^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$"
+
+COMMON_SCHEMAS: dict[str, dict[str, dict[str, Any]]] = {
+    "user": {
+        "email": {"required": True, "type": "string", "pattern": EMAIL_PATTERN},
+        "name": {"required": True, "type": "string", "min_length": 1, "max_length": 200},
+        "age": {"required": False, "type": "int", "min_value": 0, "max_value": 150},
+    },
+    "product": {
+        "sku": {"required": True, "type": "string"},
+        "name": {"required": True, "type": "string"},
+        "price": {"required": True, "type": "float", "min_value": 0},
+        "quantity": {"required": False, "type": "int", "min_value": 0},
+    },
+}
+
+
+def get_common_schema(name: str) -> dict[str, dict[str, Any]] | None:
+    """Retrieve a common/predefined schema by name."""
+    return COMMON_SCHEMAS.get(name)
+
+````
+
+src/writer.py
+````text
+"""Data warehouse writer with buffered output."""
+
+import csv
+import json
+import logging
+import time
+from types import TracebackType
+from typing import Any
+
+from .models import Record, BatchResult
+
+logger = logging.getLogger(__name__)
+
+
+class BaseWriter:
+    def __init__(self, output_path: str, buffer_size: int = 100) -> None:
+        self.output_path = output_path
+        self.buffer_size = buffer_size
+        self._buffer: list[Record | dict[str, Any]] = []
+        self._total_written = 0
+
+    def write_record(self, record: Record | dict[str, Any]) -> None:
+        self._buffer.append(record)
+        if len(self._buffer) >= self.buffer_size:
+            self.flush()
+
+    def write_batch(self, records: list[Record | dict[str, Any]]) -> None:
+        for record in records:
+            self.write_record(record)
+
+    def flush(self) -> None:
+        raise NotImplementedError
+
+    def close(self) -> None:
+        if self._buffer:
+            self.flush()
+
+    @property
+    def total_written(self) -> int:
+        return self._total_written
+
+    def __enter__(self) -> "BaseWriter":
+        return self
+
+    def __exit__(self, exc_type: type[BaseException] | None, exc_val: BaseException | None, exc_tb: TracebackType | None) -> None:
+        self.close()
+
+
+class JsonWriter(BaseWriter):
+    def __init__(self, output_path: str, buffer_size: int = 100, pretty: bool = False) -> None:
+        super().__init__(output_path, buffer_size)
+        self.pretty = pretty
+        self._first_write = True
+        # Initialize the file with an opening bracket
+        with open(self.output_path, "w") as f:
+            f.write("[\n")
+
+    def flush(self) -> None:
+        if not self._buffer:
+            return
+
+        with open(self.output_path, "a") as f:
+            for record in self._buffer:
+                data = record.to_dict() if isinstance(record, Record) else record
+                if not self._first_write:
+                    f.write(",\n")
+                if self.pretty:
+                    f.write(json.dumps(data, indent=2, default=str))
+                else:
+                    f.write(json.dumps(data, default=str))
+                self._first_write = False
+
+        self._total_written += len(self._buffer)
+        self._buffer.clear()
+        logger.debug(f"Flushed {len(self._buffer)} records to {self.output_path}")
+
+    def close(self) -> None:
+        super().close()
+        # Close the JSON array
+        with open(self.output_path, "a") as f:
+            f.write("\n]")
+
+
+class CsvWriter(BaseWriter):
+    def __init__(self, output_path: str, buffer_size: int = 100, fieldnames: list[str] | None = None) -> None:
+        super().__init__(output_path, buffer_size)
+        self.fieldnames = fieldnames
+        self._header_written = False
+
+    def flush(self) -> None:
+        if not self._buffer:
+            return
+
+        rows: list[dict[str, Any]] = []
+        for record in self._buffer:
+            data = record.to_dict() if isinstance(record, Record) else record
+            rows.append(data)
+
+        if not self._header_written and self.fieldnames is None:
+            self.fieldnames = list(rows[0].keys())
+
+        mode = "a" if self._header_written else "w"
+        with open(self.output_path, mode, newline="") as f:
+            writer = csv.DictWriter(f, fieldnames=self.fieldnames, extrasaction="ignore")
+            if not self._header_written:
+                writer.writeheader()
+                self._header_written = True
+            writer.writerows(rows)
+
+        self._total_written += len(self._buffer)
+        self._buffer.clear()
+
+
+class NullWriter(BaseWriter):
+    """Discards all records. Useful for dry-run or testing."""
+
+    def flush(self) -> None:
+        self._total_written += len(self._buffer)
+        self._buffer.clear()
+
+
+def create_writer(format: str, output_path: str, **kwargs: Any) -> BaseWriter:
+    """Factory function to create the appropriate writer."""
+    writers: dict[str, type[BaseWriter]] = {
+        "json": JsonWriter,
+        "csv": CsvWriter,
+        "null": NullWriter,
+    }
+    cls = writers.get(format)
+    if cls is None:
+        raise ValueError(f"Unknown writer format: {format}. Available: {list(writers.keys())}")
+    return cls(output_path, **kwargs)
+
+
+def write_records(records: list[Record | dict[str, Any]], output_path: str, format: str = "json", **kwargs: Any) -> BatchResult:
+    """Convenience function to write a list of records to a file."""
+    result = BatchResult()
+    start = time.time()
+
+    with create_writer(format, output_path, **kwargs) as writer:
+        for record in records:
+            try:
+                writer.write_record(record)
+                result.add_success()
+            except Exception as exc:
+                result.add_failure(str(exc))
+
+    result.duration_ms = (time.time() - start) * 1000
+    return result
+
+````

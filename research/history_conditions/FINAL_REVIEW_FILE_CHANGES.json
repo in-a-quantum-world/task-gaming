@@ -1,0 +1,298 @@
+{
+  "prior_prototype_commit": "6ccea6b56e296f6edc9c1f4a133f6b5d8f4bbc17",
+  "prior_manifest_artifacts_verified": 69,
+  "changes": [
+    {
+      "path": "research/HISTORY_B_C_EXACT_DIFF.md",
+      "status": "created"
+    },
+    {
+      "path": "research/HISTORY_CHECKPOINT_COMPARISON.md",
+      "status": "modified"
+    },
+    {
+      "path": "research/HISTORY_COMPRESSION_CONFOUND_AUDIT.md",
+      "status": "modified"
+    },
+    {
+      "path": "research/HISTORY_CONDITION_INFORMATION_MAP.md",
+      "status": "modified"
+    },
+    {
+      "path": "research/HISTORY_CONDITION_SPEC.md",
+      "status": "modified"
+    },
+    {
+      "path": "research/HISTORY_PROTOCOL_RESEARCH_LOG.md",
+      "status": "modified"
+    },
+    {
+      "path": "research/HISTORY_TOKEN_STRUCTURE_REPORT.md",
+      "status": "created"
+    },
+    {
+      "path": "research/history_conditions/108_step32/final_review/A_COMPACT_BODY.txt",
+      "status": "created"
+    },
+    {
+      "path": "research/history_conditions/108_step32/final_review/A_FAITHFUL_COMPACT/MESSAGES.md",
+      "status": "created"
+    },
+    {
+      "path": "research/history_conditions/108_step32/final_review/A_FAITHFUL_COMPACT/manifest.json",
+      "status": "created"
+    },
+    {
+      "path": "research/history_conditions/108_step32/final_review/A_FAITHFUL_COMPACT/messages.json",
+      "status": "created"
+    },
+    {
+      "path": "research/history_conditions/108_step32/final_review/A_FULL/MESSAGES.md",
+      "status": "created"
+    },
+    {
+      "path": "research/history_conditions/108_step32/final_review/A_FULL/manifest.json",
+      "status": "created"
+    },
+    {
+      "path": "research/history_conditions/108_step32/final_review/A_FULL/messages.json",
+      "status": "created"
+    },
+    {
+      "path": "research/history_conditions/108_step32/final_review/B_EFFORT_HISTORY/MESSAGES.md",
+      "status": "created"
+    },
+    {
+      "path": "research/history_conditions/108_step32/final_review/B_EFFORT_HISTORY/manifest.json",
+      "status": "created"
+    },
+    {
+      "path": "research/history_conditions/108_step32/final_review/B_EFFORT_HISTORY/messages.json",
+      "status": "created"
+    },
+    {
+      "path": "research/history_conditions/108_step32/final_review/B_ONLY_TREATMENT.txt",
+      "status": "created"
+    },
+    {
+      "path": "research/history_conditions/108_step32/final_review/C_CURRENT_STATE/MESSAGES.md",
+      "status": "created"
+    },
+    {
+      "path": "research/history_conditions/108_step32/final_review/C_CURRENT_STATE/manifest.json",
+      "status": "created"
+    },
+    {
+      "path": "research/history_conditions/108_step32/final_review/C_CURRENT_STATE/messages.json",
+      "status": "created"
+    },
+    {
+      "path": "research/history_conditions/108_step32/final_review/C_TO_B.exact.diff",
+      "status": "created"
+    },
+    {
+      "path": "research/history_conditions/108_step32/final_review/C_TO_B.string_patch.json",
+      "status": "created"
+    },
+    {
+      "path": "research/history_conditions/108_step32/final_review/INFORMATION_MAP.md",
+      "status": "created"
+    },
+    {
+      "path": "research/history_conditions/108_step32/final_review/SHARED_TECHNICAL_SUFFIX.txt",
+      "status": "created"
+    },
+    {
+      "path": "research/history_conditions/108_step32/final_review/build_report.json",
+      "status": "created"
+    },
+    {
+      "path": "research/history_conditions/108_step32/final_review/information_map.json",
+      "status": "created"
+    },
+    {
+      "path": "research/history_conditions/108_step32/final_text.json",
+      "status": "created"
+    },
+    {
+      "path": "research/history_conditions/258_step42/final_review/A_COMPACT_BODY.txt",
+      "status": "created"
+    },
+    {
+      "path": "research/history_conditions/258_step42/final_review/A_FAITHFUL_COMPACT/MESSAGES.md",
+      "status": "created"
+    },
+    {
+      "path": "research/history_conditions/258_step42/final_review/A_FAITHFUL_COMPACT/manifest.json",
+      "status": "created"
+    },
+    {
+      "path": "research/history_conditions/258_step42/final_review/A_FAITHFUL_COMPACT/messages.json",
+      "status": "created"
+    },
+    {
+      "path": "research/history_conditions/258_step42/final_review/A_FULL/MESSAGES.md",
+      "status": "created"
+    },
+    {
+      "path": "research/history_conditions/258_step42/final_review/A_FULL/manifest.json",
+      "status": "created"
+    },
+    {
+      "path": "research/history_conditions/258_step42/final_review/A_FULL/messages.json",
+      "status": "created"
+    },
+    {
+      "path": "research/history_conditions/258_step42/final_review/B_EFFORT_HISTORY/MESSAGES.md",
+      "status": "created"
+    },
+    {
+      "path": "research/history_conditions/258_step42/final_review/B_EFFORT_HISTORY/manifest.json",
+      "status": "created"
+    },
+    {
+      "path": "research/history_conditions/258_step42/final_review/B_EFFORT_HISTORY/messages.json",
+      "status": "created"
+    },
+    {
+      "path": "research/history_conditions/258_step42/final_review/B_ONLY_TREATMENT.txt",
+      "status": "created"
+    },
+    {
+      "path": "research/history_conditions/258_step42/final_review/C_CURRENT_STATE/MESSAGES.md",
+      "status": "created"
+    },
+    {
+      "path": "research/history_conditions/258_step42/final_review/C_CURRENT_STATE/manifest.json",
+      "status": "created"
+    },
+    {
+      "path": "research/history_conditions/258_step42/final_review/C_CURRENT_STATE/messages.json",
+      "status": "created"
+    },
+    {
+      "path": "research/history_conditions/258_step42/final_review/C_TO_B.exact.diff",
+      "status": "created"
+    },
+    {
+      "path": "research/history_conditions/258_step42/final_review/C_TO_B.string_patch.json",
+      "status": "created"
+    },
+    {
+      "path": "research/history_conditions/258_step42/final_review/INFORMATION_MAP.md",
+      "status": "created"
+    },
+    {
+      "path": "research/history_conditions/258_step42/final_review/SHARED_TECHNICAL_SUFFIX.txt",
+      "status": "created"
+    },
+    {
+      "path": "research/history_conditions/258_step42/final_review/build_report.json",
+      "status": "created"
+    },
+    {
+      "path": "research/history_conditions/258_step42/final_review/information_map.json",
+      "status": "created"
+    },
+    {
+      "path": "research/history_conditions/258_step42/final_text.json",
+      "status": "created"
+    },
+    {
+      "path": "research/history_conditions/FINAL_REVIEW_FILE_CHANGES.json",
+      "status": "created"
+    },
+    {
+      "path": "research/history_conditions/FINAL_REVIEW_REQUEST.json",
+      "status": "created"
+    },
+    {
+      "path": "research/history_conditions/FINAL_REVIEW_TESTS.log",
+      "status": "created"
+    },
+    {
+      "path": "research/history_conditions/FINAL_REVIEW_VALIDATION.json",
+      "status": "created"
+    },
+    {
+      "path": "research/history_conditions/SHA256SUMS",
+      "status": "modified"
+    },
+    {
+      "path": "research/history_conditions/final_review_builder.py",
+      "status": "created"
+    },
+    {
+      "path": "research/history_conditions/kimi_count.py",
+      "status": "created"
+    },
+    {
+      "path": "research/history_conditions/legacy_v1_documents/HISTORY_CHECKPOINT_COMPARISON.md",
+      "status": "created"
+    },
+    {
+      "path": "research/history_conditions/legacy_v1_documents/HISTORY_COMPRESSION_CONFOUND_AUDIT.md",
+      "status": "created"
+    },
+    {
+      "path": "research/history_conditions/legacy_v1_documents/HISTORY_CONDITION_INFORMATION_MAP.md",
+      "status": "created"
+    },
+    {
+      "path": "research/history_conditions/legacy_v1_documents/HISTORY_CONDITION_SPEC.md",
+      "status": "created"
+    },
+    {
+      "path": "research/history_conditions/legacy_v1_documents/HISTORY_PROTOCOL_RESEARCH_LOG.md",
+      "status": "created"
+    },
+    {
+      "path": "research/history_conditions/legacy_v1_documents/README.md",
+      "status": "created"
+    },
+    {
+      "path": "research/history_conditions/legacy_v1_documents/SHA256SUMS.original",
+      "status": "created"
+    },
+    {
+      "path": "research/history_conditions/requirements-tokenizer.txt",
+      "status": "created"
+    },
+    {
+      "path": "research/history_conditions/test_final_review.py",
+      "status": "created"
+    },
+    {
+      "path": "research/history_conditions/tokenizer_environment.json",
+      "status": "created"
+    },
+    {
+      "path": "research/history_conditions/tokenizer_kimi/LICENSE",
+      "status": "created"
+    },
+    {
+      "path": "research/history_conditions/tokenizer_kimi/chat_template.jinja",
+      "status": "created"
+    },
+    {
+      "path": "research/history_conditions/tokenizer_kimi/provenance.json",
+      "status": "created"
+    },
+    {
+      "path": "research/history_conditions/tokenizer_kimi/tiktoken.model",
+      "status": "created"
+    },
+    {
+      "path": "research/history_conditions/tokenizer_kimi/tokenization_kimi.py",
+      "status": "created"
+    },
+    {
+      "path": "research/history_conditions/tokenizer_kimi/tokenizer_config.json",
+      "status": "created"
+    },
+    {
+      "path": "research/history_conditions/tool_schema.json",
+      "status": "created"
+    }
+  ]
+}

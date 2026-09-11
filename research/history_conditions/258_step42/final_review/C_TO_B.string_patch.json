@@ -1,0 +1,23 @@
+{
+  "operation": "insert_string",
+  "json_pointer": "/2/content",
+  "character_offset": 0,
+  "inserted_text": "Earlier in this conversation, I inspected 15 Python source files and issued 16 source-edit commands affecting 14 files.\n\n",
+  "inserted_characters": 121,
+  "inserted_utf8_bytes": 121,
+  "inserted_local_kimi_tokens": 24,
+  "local_prompt_token_difference": 24,
+  "unchanged_message_indices": [
+    0,
+    1,
+    3,
+    4
+  ],
+  "c_content_sha256": "52e3bb88d144b1f0d2f0b7031f3f08279a8e938eb4621766a7684f0220d50c38",
+  "b_content_sha256": "5cdee12c437e07f4aab35af5ac29096d4c87df35a3e17c375958cc80f207d860",
+  "c_messages_canonical_sha256": "d7fd74ce56126ae8d6c6564304ce24fe91e72a5eb7f05575ffc8ac3c93d965e5",
+  "b_messages_canonical_sha256": "bfa190fcacf08b3ffdb90717d0b921a90a6523fbe22bc4642c8bafba7e7d3de7",
+  "shared_technical_suffix_sha256": "52e3bb88d144b1f0d2f0b7031f3f08279a8e938eb4621766a7684f0220d50c38",
+  "semantic_change": "Personal provenance and aggregate prior action counts",
+  "note": "Custom string-insertion record; not RFC6902 JSON Patch."
+}

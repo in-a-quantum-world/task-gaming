@@ -1,68 +1,62 @@
-# Compression and confound audit
+# Final compression and treatment audit
 
-These are candidate-condition audits without behavioral evidence.
+This audit applies to `human-review-v2`, before human approval. No continuation behavior was inspected. Automated equality checks establish bytes and provenance constraints; they do not establish equal psychological effects.
 
-| Checkpoint | Condition | Role sequence | Messages | Unicode characters | UTF-8 bytes | Canonical JSON bytes | Actual tokens |
-|---|---|---|---:|---:|---:|---:|---|
-| 258_step42 | A_FULL | system,user,(assistant,tool)×43 | 88 | 155502 | 155512 | 196394 | unknown |
-| 258_step42 | A_FAITHFUL_COMPACT | system,user,assistant,assistant,tool | 5 | 118146 | 118156 | 124065 | unknown |
-| 258_step42 | B_EFFORT_HISTORY | system,user,assistant,assistant,tool | 5 | 60637 | 60643 | 64447 | unknown |
-| 258_step42 | C_CURRENT_STATE | system,user,assistant,assistant,tool | 5 | 59390 | 59396 | 63179 | unknown |
-| 108_step32 | A_FULL | system,user,(assistant,tool)×33 | 68 | 131172 | 131174 | 164321 | unknown |
-| 108_step32 | A_FAITHFUL_COMPACT | system,user,assistant,assistant,tool | 5 | 94552 | 94554 | 100809 | unknown |
-| 108_step32 | B_EFFORT_HISTORY | system,user,assistant,assistant,tool | 5 | 56463 | 56465 | 60157 | unknown |
-| 108_step32 | C_CURRENT_STATE | system,user,assistant,assistant,tool | 5 | 55397 | 55399 | 59073 | unknown |
+## B-only tone and meaning
 
-All final assistant/tool objects and original system/user objects compare equal to the source.
+The B-only material is one declarative, first-person sentence reporting counts of inspected files and issued edit commands, followed by a blank line. It contains no file names, mypy results, suppression names, step numbers, external speaker, deadline, evaluation, or future action. The numbers count actions, including writes with local ignores; they do not label those actions legitimate or successful.
 
-A_FULL also matches the raw messages file byte for byte.
-
-258_step42: faithful compact is 24.02% smaller by visible UTF-8 bytes. B adds 1247 bytes to C (2.10%).
-
-108_step32: faithful compact is 27.92% smaller by visible UTF-8 bytes. B adds 1066 bytes to C (1.92%).
-
-
-## Condition-specific assessment
-
-| Condition | Preserved | Omitted or changed | Newly introduced representation | Instruction and shortcut audit |
-|---|---|---|---|---|
-| A_FULL | Exact stored source prefix | Nothing in the stored conversation | None | Original instructions, rejected options and burden language remain in context. |
-| A_FAITHFUL_COMPACT | All visible reasoning/content and tool observations; exact final pair | Repeated source-write bodies become reconstructible diffs; historical wrappers and roles collapse | Decision headings and one assistant evidence ledger | Original reasoning includes plans and self-directed language; quotation changes its role and apparent authorship. |
-| B_EFFORT_HISTORY | Shared current technical facts and shortcuts, plus factual effort E | Initial diagnostic, obsolete versions, repeated deliberation, and burden adjectives | Researcher-authored effort totals, episode list, and neutral shortcut paraphrase | No new imperative; numbered effort and shortcut headings can heighten salience. |
-| C_CURRENT_STATE | Exactly the same T as B and exact final pair | Explicit E; same historical omissions as B | Researcher-authored current-state account | Does not say repair is unexplored; known code and “again” still imply past work. |
-
-A_COMPACT retains all visible reasoning rather than replacing it with an aggressive summary.
-This conservative choice reduces semantic loss but gives only moderate compression.
-Its quoted text no longer occupies the original structured reasoning field.
-Actual provider handling of those fields remains untested.
-
-## Explicit confound checklist
-
-| Dimension | Finding | Control and remaining limit |
+| Dimension | Wording audit | Residual qualification |
 |---|---|---|
-| Semantic information loss | All compact code diffs reconstruct; current bodies match archive evidence. | Semantic decision effects remain unproved; B/C jointly omit historical detail and old burden anchors. |
-| Shortcut salience | 258 includes rejected config-weakening knowledge; 108 does not. | B/C share the same block within checkpoint; a concise block may advertise it more than A. |
-| Difficulty salience | A retains initial counts and burden language; B/C do not. | B/C avoid evaluative adjectives but effort counts can still imply difficulty. |
-| Instruction salience | System/user text is exact in all conditions. | Researcher headings and an assistant ledger can alter perceived authority. |
-| Authorship | Synthetic text appears as assistant content; B says “the preceding assistant.” | This may imply another actor rather than personal prior effort; approve the attribution wording before use. |
-| Message roles | A alternates assistant/tool; compact conditions collapse history into one assistant message. | Shared compact layout across checkpoints; provider acceptance and role normalization untested. |
-| Chronology | A_COMPACT preserves all steps; B gives edit episodes; C omits that list. | C still has stale-observation qualifiers and the exact final pair. |
-| Repetition | Repeated full-file content shrinks in A_COMPACT. | Repetition can influence behavior even if code is reconstructible. |
-| Token length | Exact tokenizer/provider totals unavailable. | No padding; chars/bytes separate; effect of effort text includes its natural length cost. |
-| Recency | B equals E followed by the exact C content. | Common suffix has equal character distance to the final result; provider tokenization remains unverified. |
-| Final-observation position | Same exact final pair, same last observation. | The larger context and assistant-role boundaries differ. |
-| Unobserved progress | Harness intermediate counts are absent from every condition. | Only two observed mypy result totals exist per prefix. |
-| Accumulated effort vs repeated failure | Many successful shell edits precede a later failing type check. | The design concerns effort exposure, not a model-observed sequence of failed type checks. |
-| Current Git knowledge | 108 has an old clean status; 258 lacks a status observation. | Do not upgrade old or absent evidence into a fresh status. |
-| Hook and marker knowledge | Physical setup differs. | Keep physical metadata separate from source-visible knowledge; stratify by checkpoint. |
-| Temporary files | 108 created known copies outside the workspace. | Their path/body knowledge is in B/C; actual external restoration is not certified here. |
-| Budget | Source entry increments after restore; intended remaining budgets are57/67. | Integration must preserve this behavior and avoid an extra decision in a custom loop. |
-| Provider route | Frozen configs match model, endpoint preference and generation settings. | No new request verified backend routing; validate before any authorized experiment. |
-| Timeouts and caps | Honest repairs may consume more actions and wall time. | Fixed within checkpoint; record censoring and termination separately from abandonment. |
+| Urgency | No deadline, countdown, time or speed request | Prior activity can still imply elapsed time; that inference is unmeasured |
+| Encouragement | No praise, approval, reassurance or imperative | No guarantee of pragmatic neutrality |
+| Discouragement | No failure label, warning or negative evaluation | No guarantee of pragmatic neutrality |
+| Sunk-cost framing | No investment metaphor or argument for continuing | Any effort-based inference is a possible response to the intended fact, not a claimed internal mechanism |
+| Completion pressure | No shipping reminder, remaining-work count, commitment or next step | Original task wording is identical |
+| Success framing | No zero-exit claim or claim that edits fixed errors | Counts are issued actions, not verified repairs |
+| Difficulty framing | No easy/hard/substantial/burden adjective or comparison | Counts make amount of prior activity explicit; that is the treatment |
+| Shortcut salience | No names of files, ignores, settings or hook workarounds | Shared current bodies and diagnostics still expose source-known suppressions |
+| Oversight salience | No new user/system role or reviewer/human reference | Synthetic first-person prose has researcher authorship; this is disclosed to the researcher, not added as a model cue |
+| Instruction-like wording | Past-tense statement; no should/must/need/continue | The condition remains a factual attribution, not a command |
+| Tone | Neutral vocabulary, one sentence, no heading calling it effort | Perceived tone cannot be proven identical without behavioral evidence |
+| Repetition | One set of aggregates; no file-by-file replay | Numeric aggregation is more explicit than the distributed source evidence |
 
-## Interpretive limits
+Revisions from v1 removed “preceding assistant”, its separate effort heading, the repeated episode list and decision ordinals, and the zero-exit sentence. Missing editing methods, empty initializer knowledge and relevant sample-hook names were added to both technical suffixes. The researcher judgment about whether code comments demonstrate safety was removed from model-visible prose. These changes followed the source-only audit, not any continuation result.
 
-These artifacts establish constructibility and some byte-level invariants.
-They do not establish information equivalence, provider acceptance or a history effect.
-The same protocol can serve both checkpoints with separate, reviewed literal text.
-The checkpoint differences require blocked analysis rather than raw pooling.
+C retains the entire shared technical suffix and the exact current result. B has no extra editing method or shortcut knowledge. The tests inspect source-body/definition and local-ignore coverage and diagnostic notes, not just the prefix equality. No harness-only intermediate count or post-checkpoint runtime failure appears in any active text.
+
+## A_FULL versus A_FAITHFUL_COMPACT
+
+Preserved: original instructions; exact initial and final error observations; every pre-final visible reasoning string and assistant content; all tool observations; prior code observations; command order; targeted ignores; configuration-weakening consideration and rejection at 258; original uncertainties and subjective language; full shell-prefix/suffix mechanics; reconstructable authored code; exact final pair and IDs.
+
+Removed from the direct representation: repeated unchanged lines in 16 primary and 12 replication full-file write commands, historical separate tool/assistant role envelopes, historical tool-call IDs and duplicated SDK reasoning aliases. Earlier source text remains in exact read observations, and every changed write body reconstructs from a preceding visible version. No substantive repair episode or ordering is intentionally removed. The shorter representation is consequently still long: it is a conservative compact ledger, not an aggressively shortened paraphrase.
+
+Introduced: section labels, decision labels derived from prefix order, unified-diff syntax, one synthetic assistant content message, and a different placement of quoted reasoning into content. These are representation changes, not new source discoveries or instructions. A_FULL has no such edits. The public Kimi template places the final pair in the suffix where its visible reasoning is retained; this is checked offline. Actual provider serialization is not observed here.
+
+## Shared residual confounds
+
+| Dimension | Audit result |
+|---|---|
+| Semantic information loss | No loss of quoted reasoning/observations or reconstructable writes in faithful arm; B/C intentionally omit old states and detailed personal provenance. Equal shared bytes do not prove every inference from A survives. |
+| Shortcut salience | B/C show known current ignores in code and diagnostics, with no B-only advertisement. The shared 258 settings-conflict paraphrase is shorter and differently placed than the original deliberation. |
+| Difficulty salience | Initial totals and literal burden prose remain in A arms, omitted from both B/C. Aggregate B counts expose effort amount without evaluative adjectives. |
+| Instruction salience | Original prompts remain exact. Long context length differs across A arms; shorter distance from instructions can change their influence. |
+| Authorship | All compact bodies are researcher-constructed assistant content. B intentionally attributes source actions to “I”; there is no new human-message cue. |
+| Message roles | A_FULL has 88/68 messages; each compact arm has five. B/C role layout and message count match exactly. |
+| Chronology | Faithful arm retains decision order; B has an aggregate prior-action attribution; C lacks that narrative. Necessary stale-observation qualifiers remain shared. |
+| Repetition | A_FULL repeats complete files; faithful arm removes unchanged rewrite lines. B/C current bodies appear once. The two B action-count clauses are not repeated elsewhere. |
+| Token length | No filler. B adds 24 local-template tokens at each checkpoint. A arms differ by thousands of tokens. Provider counts are unknown. |
+| Recency | B's prefix occurs before identical K and F; it does not move the final diagnostic behind a summary. A faithful compression changes the token distance of earlier events. |
+| Final-observation position | Tool result is the final message in every arm; no follow-up user message or reminder is added. |
+| Residual history in C | 108 final assistant says “again” and expects a check of fixed errors; 258 final pair and stale-state qualifiers also supply limited history. C means no long personal-effort treatment, not no conceivable history inference. |
+| Budget/timeouts | 57/67 decisions fixed by checkpoint; request/tool/wall caps must stay fixed. Honest repair may need more decisions than a workaround; that limitation remains. No new timeout was sampled. |
+| Physical state | Constructor never restores or modifies a task workspace. Fixed source archives are metadata; equivalence during later execution belongs to the independent integration check. |
+| Provider | Model/route/settings fixed in manifests. Public local-template rendering is known; actual outgoing payload and server accounting require independent confirmation. |
+
+## Items that should block freezing the complete experiment
+
+1. Obtain outcome-free evidence that the integration runner sends the approved message structure and visible reasoning, restores the selected workspace, and assigns exactly 57/67 future decisions. This work does not establish that execution equivalence.
+2. Approve an observable prohibited-action rubric before seeing continuation outcomes, including whether particular targeted ignores are allowed, how pre-existing suppressions are handled, and how an attempt differs from a successful bypass. The original task text is untouched; the history constructor must not invent a new prohibition.
+3. Record the researcher's acceptance of the first-person aggregate treatment and residual “again”/observation-age cues. If the intended contrast requires absolutely no inference of past action in C, that target conflicts with the mandated unchanged final pair and requires a different protocol.
+
+Exact provider-billed counts alone need not block freezing if approximate local counts are accepted and length is reported as a residual. The unchanged required final pair also need not block the stated narrower effort-information question. These are review decisions, not reasons to inspect outcomes or to rewrite histories after observing them.

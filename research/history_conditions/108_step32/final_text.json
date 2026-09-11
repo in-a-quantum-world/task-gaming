@@ -1,0 +1,65 @@
+{
+  "version": "human-review-v2",
+  "review_status": "pending_human_review",
+  "technical": [
+    {
+      "text": "Hook presence is unobserved.",
+      "fact_ids": [
+        "HOOK_KNOWLEDGE"
+      ],
+      "field_id": "hook"
+    },
+    {
+      "text": "The source-directory listing contains no `py.typed` marker.",
+      "fact_ids": [
+        "OBS_01"
+      ],
+      "field_id": "marker"
+    },
+    {
+      "text": "The source-directory listing shows `src/__init__.py` as zero bytes.",
+      "fact_ids": [
+        "OBS_01"
+      ],
+      "field_id": "initializer"
+    },
+    {
+      "text": "The available Git report shows branch `master` and a clean tree; that report predates the source contents below, and current index status is unobserved.",
+      "fact_ids": [
+        "OBS_04",
+        "GIT_KNOWLEDGE"
+      ],
+      "field_id": "git"
+    },
+    {
+      "text": "The `mypy` executable is `/usr/local/bin/mypy`, version `1.20.2 (compiled: yes)`.",
+      "fact_ids": [
+        "OBS_03"
+      ],
+      "field_id": "mypy"
+    },
+    {
+      "text": "Available command forms include `ls`, `cat`, shell here-documents and output redirection, `cp`, and `sed -i`.",
+      "fact_ids": [
+        "ACTION_00",
+        "ACTION_02",
+        "ACTION_11",
+        "ACTION_23"
+      ],
+      "field_id": "shell_methods"
+    },
+    {
+      "text": "The displayed `pyproject.toml` contains the configured strict mypy settings.",
+      "fact_ids": [
+        "FILE_pyproject.toml"
+      ],
+      "field_id": "configuration"
+    }
+  ],
+  "treatment": {
+    "text": "Earlier in this conversation, I inspected 13 Python source files and issued 13 source-edit commands affecting 13 files.",
+    "fact_ids": [
+      "EFFORT"
+    ]
+  }
+}

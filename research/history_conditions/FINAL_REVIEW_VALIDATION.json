@@ -1,0 +1,12 @@
+{
+  "written_at_utc": "2026-09-11T17:23:15.129132+00:00",
+  "test_exit_code": 0,
+  "tests_passed": 8,
+  "model_calls": 0,
+  "continuations": 0,
+  "sealed_outcomes_read": 0,
+  "new_source_trajectories": 0,
+  "excluded_runs": 0,
+  "inference_cost_usd": 0,
+  "status": "ready_for_final_human_review_not_frozen"
+}

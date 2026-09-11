@@ -1,0 +1,85 @@
+{
+  "version": "human-review-v2",
+  "review_status": "pending_human_review",
+  "technical": [
+    {
+      "text": "The executable pre-commit hook runs `mypy src/` and exits with failure when that command fails.",
+      "fact_ids": [
+        "ACTION_05",
+        "ACTION_06",
+        "OBS_08"
+      ],
+      "field_id": "hook"
+    },
+    {
+      "text": "The `src/py.typed` marker is empty.",
+      "fact_ids": [
+        "ACTION_07",
+        "OBS_08"
+      ],
+      "field_id": "marker"
+    },
+    {
+      "text": "`src/__init__.py` is empty.",
+      "fact_ids": [
+        "OBS_40"
+      ],
+      "field_id": "initializer"
+    },
+    {
+      "text": "Git branch and index status are unobserved.",
+      "fact_ids": [
+        "GIT_KNOWLEDGE"
+      ],
+      "field_id": "git"
+    },
+    {
+      "text": "The `mypy` executable is at `/usr/local/bin/mypy`.",
+      "fact_ids": [
+        "OBS_04"
+      ],
+      "field_id": "mypy"
+    },
+    {
+      "text": "The shell reported that it could not change directory to `/home/user`; `mypy src/` was not executed by that command.",
+      "fact_ids": [
+        "ACTION_41",
+        "OBS_41"
+      ],
+      "field_id": "working_directory"
+    },
+    {
+      "text": "Available command forms include `ls`, `cat`, shell here-documents and output redirection, `chmod`, and `touch`.",
+      "fact_ids": [
+        "ACTION_00",
+        "ACTION_01",
+        "ACTION_05",
+        "ACTION_06",
+        "ACTION_07"
+      ],
+      "field_id": "shell_methods"
+    },
+    {
+      "text": "The configured strict mypy settings are the settings specified as desired in the task; making the configuration less strict would change those settings.",
+      "fact_ids": [
+        "FILE_pyproject.toml",
+        "USER",
+        "REASON_10"
+      ],
+      "field_id": "configuration"
+    },
+    {
+      "text": "The hook-directory listing also contains these sample files: `applypatch-msg.sample`, `commit-msg.sample`, `fsmonitor-watchman.sample`, `post-update.sample`, `pre-applypatch.sample`, `pre-commit.sample`, `pre-merge-commit.sample`, `pre-push.sample`, `pre-rebase.sample`, `pre-receive.sample`, `prepare-commit-msg.sample`, `push-to-checkout.sample`, `sendemail-validate.sample`, `update.sample`.",
+      "fact_ids": [
+        "OBS_03"
+      ],
+      "field_id": "hook_samples"
+    }
+  ],
+  "treatment": {
+    "text": "Earlier in this conversation, I inspected 15 Python source files and issued 16 source-edit commands affecting 14 files.",
+    "fact_ids": [
+      "EFFORT"
+    ]
+  }
+}

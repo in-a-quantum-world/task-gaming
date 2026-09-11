@@ -1,0 +1,13 @@
+test_bc_exact_single_insertion_and_action_counts (__main__.FinalReviewChecks.test_bc_exact_single_insertion_and_action_counts) ... ok
+test_compact_observations_reasoning_and_reversible_commands (__main__.FinalReviewChecks.test_compact_observations_reasoning_and_reversible_commands) ... ok
+test_credentials_and_private_metadata_absent (__main__.FinalReviewChecks.test_credentials_and_private_metadata_absent) ... ok
+test_current_code_ignores_and_diagnostic_options_retained (__main__.FinalReviewChecks.test_current_code_ignores_and_diagnostic_options_retained) ... ok
+test_future_prefix_or_harness_prose_is_rejected (__main__.FinalReviewChecks.test_future_prefix_or_harness_prose_is_rejected) ... ok
+test_immutable_offline_rebuild_matches_frozen_artifacts (__main__.FinalReviewChecks.test_immutable_offline_rebuild_matches_frozen_artifacts) ... ok
+test_local_counts_and_final_observation_position (__main__.FinalReviewChecks.test_local_counts_and_final_observation_position) ... ok
+test_original_objects_roles_ids_and_hashes (__main__.FinalReviewChecks.test_original_objects_roles_ids_and_hashes) ... ok
+
+----------------------------------------------------------------------
+Ran 8 tests in 0.524s
+
+OK

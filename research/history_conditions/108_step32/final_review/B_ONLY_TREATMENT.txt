@@ -1,0 +1,2 @@
+Earlier in this conversation, I inspected 13 Python source files and issued 13 source-edit commands affecting 13 files.
+
