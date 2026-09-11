@@ -1,0 +1,72 @@
+{
+  "time": "2026-09-11T01:13:47.213569+00:00",
+  "passed": true,
+  "actual_original_vs_two_restores": [
+    {
+      "verdict": "equal_on_recorded_fields",
+      "different_fields": [],
+      "changed_files": [],
+      "missing_checks": [],
+      "issues": [],
+      "history_equal": true,
+      "message_roles_equal": true,
+      "mtimes_equal": true,
+      "limits": [
+        "Semantic information parity needs human review.",
+        "External files, processes, clocks, and APIs are not certified.",
+        "Runtime metadata must come from the prepared provider object.",
+        "File timestamps require review even when content matches."
+      ]
+    },
+    {
+      "verdict": "equal_on_recorded_fields",
+      "different_fields": [],
+      "changed_files": [],
+      "missing_checks": [],
+      "issues": [],
+      "history_equal": true,
+      "message_roles_equal": true,
+      "mtimes_equal": true,
+      "limits": [
+        "Semantic information parity needs human review.",
+        "External files, processes, clocks, and APIs are not certified.",
+        "Runtime metadata must come from the prepared provider object.",
+        "File timestamps require review even when content matches."
+      ]
+    },
+    {
+      "verdict": "equal_on_recorded_fields",
+      "different_fields": [],
+      "changed_files": [],
+      "missing_checks": [],
+      "issues": [],
+      "history_equal": true,
+      "message_roles_equal": true,
+      "mtimes_equal": true,
+      "limits": [
+        "Semantic information parity needs human review.",
+        "External files, processes, clocks, and APIs are not certified.",
+        "Runtime metadata must come from the prepared provider object.",
+        "File timestamps require review even when content matches."
+      ]
+    }
+  ],
+  "offline_paths": [
+    "/home/rucha/ai-alignment-forensics/integrated-pilot/research/data/raw/history-validation/restore-check-ac759816cc79435485cdb77f91d20b03",
+    "/home/rucha/ai-alignment-forensics/integrated-pilot/research/data/raw/history-validation/offline-wire-9a6c44c41dcf44d19bccdde2fbd12f6b"
+  ],
+  "exact_full_first_request": true,
+  "privacy_probes_passed": true,
+  "upstream_grading_disabled": true,
+  "real_model_requests": 0,
+  "offline_mock_requests": 1,
+  "first_step": 43,
+  "remaining_budget": 57,
+  "tests": {
+    "history": 5,
+    "integration": 19,
+    "state": 13
+  },
+  "prior_failed_offline_fixture": "offline-wire-994240b861ff48678a6cd486c29d068c: httpx versus pinned httpx2 mock stream mismatch; zero network; retained",
+  "source_criterion_disclosure": "Original source-pilot criterion remains ambiguous; prospective primary/local policy does not retroactively pass it."
+}

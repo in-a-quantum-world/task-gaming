@@ -1,0 +1,17 @@
+{
+  "verdict": "equal_on_recorded_fields",
+  "different_fields": [],
+  "changed_files": [],
+  "missing_checks": [],
+  "issues": [],
+  "history_equal": true,
+  "message_roles_equal": true,
+  "mtimes_equal": true,
+  "limits": [
+    "Semantic information parity needs human review.",
+    "External files, processes, clocks, and APIs are not certified.",
+    "Runtime metadata must come from the prepared provider object.",
+    "File timestamps require review even when content matches."
+  ],
+  "external_inventory_equal": true
+}

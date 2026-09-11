@@ -1,0 +1,20 @@
+{
+  "time": "2026-09-11T01:11:12.890583+00:00",
+  "condition_id": "A_FULL_258_STEP42_RUN1",
+  "mode": "offline-wire",
+  "slot_consumed": false,
+  "raw_path": "/home/rucha/ai-alignment-forensics/integrated-pilot/research/data/raw/history-validation/offline-wire-994240b861ff48678a6cd486c29d068c",
+  "artifacts_sealed": true,
+  "raw_manifest_sha256": "1357c86db2eaebf2e4a511c7dc54e84847c594f3382088305c11fb79eab62234",
+  "restore_gate_record_present": true,
+  "pre_invocation_manifest_present": true,
+  "failure_category": "provider_or_infrastructure_failure",
+  "scientific_outcome_opened_or_analyzed": false,
+  "release_requires": [
+    "local-suppression rubric",
+    "A_FAITHFUL_COMPACT text",
+    "B_EFFORT_HISTORY text",
+    "C_CURRENT_STATE text",
+    "planned N and analysis policy"
+  ]
+}

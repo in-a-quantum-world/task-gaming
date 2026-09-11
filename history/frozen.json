@@ -1,0 +1,31 @@
+{
+  "time": "2026-09-11T01:16:02.961070+00:00",
+  "condition_id": "A_FULL_258_STEP42_RUN1",
+  "implementation_sha256": {
+    "history/bootstrap.py": "1a30a46477ee9019be2238b0807ace5dfa32a7b84cf6c9fc54b947e88b615d1c",
+    "history/contract.py": "e2d1bf4c5b9cd736e7836eb6ca0970a54ca3ae843b533538a6492a6820083838",
+    "history/loop.py": "bfc393c5d31603d98a6f38c4e399a85919e9794ad4e4c7368713d5788c536660",
+    "history/run.py": "7f5d57d72bfa76dc7efc6a0cddc80c62f4a8553d156e0fe8cf5192d69357da49",
+    "history/test_history.py": "036762fcb4c4740a71c843551fcaa521eae7d25aa61ff1c53c95abb3234a5f71",
+    "history/A_FULL_258_STEP42_RUN1.json": "382be594758b771da0b1961040476a7d1a96876e87483f75be837d3de36943ac",
+    "history/PREREG.md": "7fb373d39164e76f40dd26126ef23239e5e0df56ec78e1294a29043e1cb00373"
+  },
+  "gate_sha256": {
+    "research/evidence/history/A_FULL_258_STEP42_RUN1/tests-history.log": "b9c8d761787f53c9d8d3b0025bd7c1a1e147cf71f0d17c3ef87a1ab1c8d5d244",
+    "research/evidence/history/A_FULL_258_STEP42_RUN1/offline-0-pre_invocation_manifest.json": "3d6873f1d20e77b961354632ca31948a2e4d6d4a7165fd62d981418967e6fc5c",
+    "research/evidence/history/A_FULL_258_STEP42_RUN1/offline-0-restore_comparison.json": "8cdfe7643f9df34758cbb916c97438247325124237b683d19e7016874cda72b9",
+    "research/evidence/history/A_FULL_258_STEP42_RUN1/gates.json": "35ae37676bf9faba1bae518ce8ea474a05acd4b164151a07ac9d21338e82381e",
+    "research/evidence/history/A_FULL_258_STEP42_RUN1/restore-check-ac759816cc79435485cdb77f91d20b03.json": "72e5dfe89b7287005f9da15a009c84fb960038f1300cccdd588e6267ff0c0c01",
+    "research/evidence/history/A_FULL_258_STEP42_RUN1/offline-1-restore_comparison.json": "8cdfe7643f9df34758cbb916c97438247325124237b683d19e7016874cda72b9",
+    "research/evidence/history/A_FULL_258_STEP42_RUN1/offline-wire-994240b861ff48678a6cd486c29d068c.json": "5b1a6a2090227d96c2c74952a3be97daca0df0b70afe5888b0be884296366bf6",
+    "research/evidence/history/A_FULL_258_STEP42_RUN1/restore-check-ccf7965ff42b4592af124f1be1c804e1.json": "54847365b15e98381f742166bf40abac8e42a3b0a644318804f4d968c61a9257",
+    "research/evidence/history/A_FULL_258_STEP42_RUN1/offline-wire-9a6c44c41dcf44d19bccdde2fbd12f6b.json": "450326bdfcc07a1e117456a705dbaf080b4115267683ebffbaea09e05ca1ed5f",
+    "research/evidence/history/A_FULL_258_STEP42_RUN1/tests-integration.log": "2f5fb30bd9a2db577415144f4c927154145e7b7c8be68d26c93329599d11ad80",
+    "research/evidence/history/A_FULL_258_STEP42_RUN1/tests-state.log": "5dc7bff5292bcd4bf30067eb0b04638280ee7e24f4150273100b09e4fa46300d",
+    "research/evidence/history/A_FULL_258_STEP42_RUN1/offline-1-pre_invocation_manifest.json": "136e6e75d214f493f5a7d807a44f1d4c02ba0a095d092d048f0e27f5361bb9dc"
+  },
+  "all_gates_passed": true,
+  "real_model_requests_before_freeze": 0,
+  "continuation_ledger_absent": true,
+  "source_code_unchanged": true
+}

@@ -1,0 +1,20 @@
+{
+  "time": "2026-09-11T01:09:41.034116+00:00",
+  "condition_id": "A_FULL_258_STEP42_RUN1",
+  "mode": "restore-check",
+  "slot_consumed": false,
+  "raw_path": "/home/rucha/ai-alignment-forensics/integrated-pilot/research/data/raw/history-validation/restore-check-ccf7965ff42b4592af124f1be1c804e1",
+  "artifacts_sealed": true,
+  "raw_manifest_sha256": "06453041a5f7c3c756949858754b4aad8e32f06125d73ed9a7ae7a373ec9389c",
+  "restore_gate_record_present": true,
+  "pre_invocation_manifest_present": true,
+  "failure_category": null,
+  "scientific_outcome_opened_or_analyzed": false,
+  "release_requires": [
+    "local-suppression rubric",
+    "A_FAITHFUL_COMPACT text",
+    "B_EFFORT_HISTORY text",
+    "C_CURRENT_STATE text",
+    "planned N and analysis policy"
+  ]
+}

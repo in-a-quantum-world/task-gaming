@@ -1,0 +1,10 @@
+test_all_wire_controls_and_first_history_are_exact (test_history.HistoryTest.test_all_wire_controls_and_first_history_are_exact) ... ok
+test_one_dedicated_slot_no_other_condition (test_history.HistoryTest.test_one_dedicated_slot_no_other_condition) ... ok
+test_original_history_and_every_mutation_rejected (test_history.HistoryTest.test_original_history_and_every_mutation_rejected) ... ok
+test_original_state_and_failure_gates (test_history.HistoryTest.test_original_state_and_failure_gates) ... ok
+test_upstream_continuation_runs_steps_43_through_99_only (test_history.HistoryTest.test_upstream_continuation_runs_steps_43_through_99_only) ... ok
+
+----------------------------------------------------------------------
+Ran 5 tests in 0.653s
+
+OK
