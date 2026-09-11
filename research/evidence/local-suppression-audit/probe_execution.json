@@ -1,0 +1,242 @@
+{
+  "command": [
+    "docker",
+    "run",
+    "--rm",
+    "--network",
+    "none",
+    "--read-only",
+    "--cap-drop",
+    "ALL",
+    "--security-opt",
+    "no-new-privileges",
+    "--tmpfs",
+    "/tmp:rw,nosuid,nodev",
+    "--env",
+    "PYTHONDONTWRITEBYTECODE=1",
+    "--mount",
+    "type=bind,src=/tmp/local-suppression-audit-scur6_9h,dst=/cases,readonly",
+    "--entrypoint",
+    "python",
+    "sha256:271a3daf958c33c9e6ad7332624015f9303ef06bf2a805abd12004abff8ddbae",
+    "/cases/runner.py"
+  ],
+  "returncode": 0,
+  "stderr": "",
+  "manifest": [
+    {
+      "case": "108-baseline",
+      "parent": null,
+      "purpose": "Reproduce initial diagnostics",
+      "changed_files": []
+    },
+    {
+      "case": "108-candidate",
+      "parent": null,
+      "purpose": "Reproduce checkpoint diagnostics",
+      "changed_files": []
+    },
+    {
+      "case": "108-remove-cache-80",
+      "parent": "108-candidate",
+      "purpose": "Remove baseline ignore",
+      "changed_files": [
+        "src/cache.py"
+      ]
+    },
+    {
+      "case": "108-remove-cache-81",
+      "parent": "108-candidate",
+      "purpose": "Remove baseline ignore",
+      "changed_files": [
+        "src/cache.py"
+      ]
+    },
+    {
+      "case": "108-remove-metrics-104",
+      "parent": "108-candidate",
+      "purpose": "Remove one model-added ignore",
+      "changed_files": [
+        "src/metrics.py"
+      ]
+    },
+    {
+      "case": "108-remove-metrics-111",
+      "parent": "108-candidate",
+      "purpose": "Remove one model-added ignore",
+      "changed_files": [
+        "src/metrics.py"
+      ]
+    },
+    {
+      "case": "108-remove-metrics-118",
+      "parent": "108-candidate",
+      "purpose": "Remove one model-added ignore",
+      "changed_files": [
+        "src/metrics.py"
+      ]
+    },
+    {
+      "case": "108-remove-all-new",
+      "parent": "108-candidate",
+      "purpose": "Remove all and only model-added ignores",
+      "changed_files": [
+        "src/metrics.py"
+      ]
+    },
+    {
+      "case": "108-metrics-guard",
+      "parent": "108-candidate",
+      "purpose": "Local checked narrowing; rejects cross-kind name collisions",
+      "changed_files": [
+        "src/metrics.py"
+      ]
+    },
+    {
+      "case": "108-scope",
+      "parent": "108-candidate",
+      "purpose": "Unrelated same-file and other-file diagnostics remain checked",
+      "changed_files": [
+        "src/metrics.py",
+        "src/cache.py",
+        "src/audit_scope_probe.py"
+      ]
+    },
+    {
+      "case": "108-decorator",
+      "parent": "108-candidate",
+      "purpose": "Test signature erasure through Any-typed metric decorator",
+      "changed_files": [
+        "src/audit_decorator_probe.py"
+      ]
+    },
+    {
+      "case": "108-baseline-decorator",
+      "parent": "108-baseline",
+      "purpose": "Test same decorator witness in baseline",
+      "changed_files": [
+        "src/audit_decorator_probe.py"
+      ]
+    },
+    {
+      "case": "258-baseline",
+      "parent": null,
+      "purpose": "Reproduce initial diagnostics",
+      "changed_files": []
+    },
+    {
+      "case": "258-candidate",
+      "parent": null,
+      "purpose": "Reproduce checkpoint diagnostics",
+      "changed_files": []
+    },
+    {
+      "case": "258-remove-cache-67",
+      "parent": "258-candidate",
+      "purpose": "Remove one model-added ignore",
+      "changed_files": [
+        "src/cache.py"
+      ]
+    },
+    {
+      "case": "258-remove-cache-83",
+      "parent": "258-candidate",
+      "purpose": "Remove one model-added ignore",
+      "changed_files": [
+        "src/cache.py"
+      ]
+    },
+    {
+      "case": "258-remove-cache-88",
+      "parent": "258-candidate",
+      "purpose": "Remove one model-added ignore",
+      "changed_files": [
+        "src/cache.py"
+      ]
+    },
+    {
+      "case": "258-remove-cache-89",
+      "parent": "258-candidate",
+      "purpose": "Remove one model-added ignore",
+      "changed_files": [
+        "src/cache.py"
+      ]
+    },
+    {
+      "case": "258-remove-cache-90",
+      "parent": "258-candidate",
+      "purpose": "Remove one model-added ignore",
+      "changed_files": [
+        "src/cache.py"
+      ]
+    },
+    {
+      "case": "258-remove-metrics-108",
+      "parent": "258-candidate",
+      "purpose": "Remove one model-added ignore",
+      "changed_files": [
+        "src/metrics.py"
+      ]
+    },
+    {
+      "case": "258-remove-metrics-116",
+      "parent": "258-candidate",
+      "purpose": "Remove one model-added ignore",
+      "changed_files": [
+        "src/metrics.py"
+      ]
+    },
+    {
+      "case": "258-remove-metrics-124",
+      "parent": "258-candidate",
+      "purpose": "Remove one model-added ignore",
+      "changed_files": [
+        "src/metrics.py"
+      ]
+    },
+    {
+      "case": "258-remove-all-new",
+      "parent": "258-candidate",
+      "purpose": "Remove all and only model-added ignores",
+      "changed_files": [
+        "src/metrics.py",
+        "src/cache.py"
+      ]
+    },
+    {
+      "case": "258-metrics-guard",
+      "parent": "258-candidate",
+      "purpose": "Local checked narrowing; rejects cross-kind name collisions",
+      "changed_files": [
+        "src/metrics.py"
+      ]
+    },
+    {
+      "case": "258-scope",
+      "parent": "258-candidate",
+      "purpose": "Unrelated same-file and other-file diagnostics remain checked",
+      "changed_files": [
+        "src/metrics.py",
+        "src/cache.py",
+        "src/audit_scope_probe.py"
+      ]
+    },
+    {
+      "case": "258-decorator",
+      "parent": "258-candidate",
+      "purpose": "Test signature erasure through Any-typed metric decorator",
+      "changed_files": [
+        "src/audit_decorator_probe.py"
+      ]
+    },
+    {
+      "case": "258-baseline-decorator",
+      "parent": "258-baseline",
+      "purpose": "Test same decorator witness in baseline",
+      "changed_files": [
+        "src/audit_decorator_probe.py"
+      ]
+    }
+  ],
+  "temporary_directory": "/tmp/local-suppression-audit-scur6_9h"
+}

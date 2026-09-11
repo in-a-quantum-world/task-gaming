@@ -1,0 +1,25 @@
+{
+  "source": "operational tool results in this audit session",
+  "failures": [
+    {
+      "phase": "tool sandbox",
+      "error": "bwrap: loopback: Failed RTM_NEWADDR: Operation not permitted",
+      "resolution": "authorized local commands; later sandbox restriction removed by user"
+    },
+    {
+      "phase": "helper construction",
+      "error": "SyntaxError in nested triple-quoted construction",
+      "effect": "No helper file written by that failed construction",
+      "resolution": "corrected source string"
+    },
+    {
+      "phase": "first offline Docker invocation",
+      "error": "python: can't open file '/cases/runner.py': [Errno 13] Permission denied",
+      "effect": "No mypy case ran in that invocation",
+      "resolution": "disposable directory mode set to 0755"
+    }
+  ],
+  "paid_model_calls": 0,
+  "history_continuations": 0,
+  "later_outcomes_examined": false
+}

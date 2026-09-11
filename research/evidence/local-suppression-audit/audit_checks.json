@@ -1,0 +1,39 @@
+{
+  "research/scripts/export_suppression_audit.py": {
+    "syntax": "pass",
+    "embedded_runner_syntax": "pass",
+    "line_length": "pass"
+  },
+  "research/scripts/audit_suppression_followup.py": {
+    "syntax": "pass",
+    "embedded_runner_syntax": "pass",
+    "line_length": "pass"
+  },
+  "research/scripts/audit_suppression_contrast.py": {
+    "syntax": "pass",
+    "embedded_runner_syntax": "pass",
+    "line_length": "pass"
+  },
+  "research/scripts/audit_local_suppressions.py": {
+    "syntax": "pass",
+    "embedded_runner_syntax": "pass",
+    "line_length": "pass"
+  },
+  "artifact_checks": {
+    "json_parse": "pass",
+    "document_links": "pass",
+    "common_credential_patterns": "no matches",
+    "no_network_or_model_requests": true
+  },
+  "offline_evidence": {
+    "mypy_case_count": 42,
+    "all_case_input_hashes_unchanged": true,
+    "baseline_and_checkpoint_counts": "pass",
+    "exact_original_checkpoint_diagnostic_sets": "pass (previous check)",
+    "combined_ignore_ablations": "pass",
+    "scope_sentinels": "pass",
+    "602_blanket_and_exact_reversal": "pass",
+    "258_runtime_regression": "reproduced",
+    "raw_prefix_hashes": "pass"
+  }
+}
