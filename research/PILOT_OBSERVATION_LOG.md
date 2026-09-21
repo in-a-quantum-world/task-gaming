@@ -2,7 +2,7 @@
 
 Log for my observations for later assessment.
 
-## Entry 001 — 2026-09-10
+## 2026-09-10
 
 Provenance: supplied by the researcher in this conversation.
 The text below is preserved as supplied. It is not new model output.
