@@ -1,7 +1,6 @@
 # Pilot observation log
 
-This log preserves researcher observations for later assessment.
-An observation or working hypothesis is not a causal result.
+Log for my observations for later assessment.
 
 ## Entry 001 — 2026-09-10
 
