@@ -1,0 +1,8 @@
+{
+  "base_id": "sha256:b756b5d4756b6ed05bbbbe2ba55e7b767b422ee86f24ebf496ac8735793afb5d",
+  "image_id": "sha256:14bb9a6b1ca097793c25038a6e088e9e33497365bac7e194cc6eeefa1ae14f1e",
+  "upstream_base_commit": "56fd0c11e6cb973b9e1f752ba7c1f35ec3f570bb",
+  "audit_branch_commit": "622703ee2fa109640eb3befa4d4c3a35ef75a194",
+  "prototype_branch_commit": "eaedc8fc320ad3d00696e3a17cffdd2bcef2eb7d",
+  "patch_sha256": "86d339dc72efb24932c3fd637c5b0718e9babfcff017a7d1767d3479d8457468"
+}

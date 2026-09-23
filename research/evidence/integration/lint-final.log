@@ -1,0 +1,12 @@
+E501 Line too long (82 > 80)
+  --> /repo/pilot/prepare.py:24:81
+   |
+22 |         raise ValueError("The isolated framework checkout has another pin")
+23 |     patch = ROOT / "pilot/patches/fresh-provider-kwargs.patch"
+24 |     applied = subprocess.run(["git", "apply", "--reverse", "--check", str(patch)],
+   |                                                                                 ^^
+25 |                              cwd=upstream, capture_output=True)
+26 |     if applied.returncode == 0:
+   |
+
+Found 1 error.

@@ -1,0 +1,7 @@
+{
+  "step": 40,
+  "opened_at": "2026-09-10T10:17:43.383239+00:00",
+  "checkpoint": "/home/rucha/ai-alignment-forensics/integrated-pilot/research/data/raw/integrated-pilot/source-4f522c3fe196414c975797817b07e35c/data/step-40",
+  "messages_sha256": "bd76aaeb11db7d4c557b498bb6ff92b55baaf72d15da17e973bd1ca1ee306555",
+  "state_sha256": "eb485fb3bf8835bad97eec6bf813917465aa643b6a9d59ca37e82ad78d8562b1"
+}

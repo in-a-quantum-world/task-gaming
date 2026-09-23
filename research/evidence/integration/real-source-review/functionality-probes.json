@@ -1,0 +1,242 @@
+{
+  "initial": {
+    "checkpoint": "/source-run/data/initial",
+    "imports": {
+      "api_source": {
+        "returncode": 0,
+        "stdout": "",
+        "stderr": ""
+      },
+      "cache": {
+        "returncode": 0,
+        "stdout": "",
+        "stderr": ""
+      },
+      "cli": {
+        "returncode": 0,
+        "stdout": "",
+        "stderr": ""
+      },
+      "config": {
+        "returncode": 0,
+        "stdout": "",
+        "stderr": ""
+      },
+      "csv_source": {
+        "returncode": 0,
+        "stdout": "",
+        "stderr": ""
+      },
+      "db": {
+        "returncode": 0,
+        "stdout": "",
+        "stderr": ""
+      },
+      "db_source": {
+        "returncode": 0,
+        "stdout": "",
+        "stderr": ""
+      },
+      "logging_setup": {
+        "returncode": 0,
+        "stdout": "",
+        "stderr": ""
+      },
+      "metrics": {
+        "returncode": 0,
+        "stdout": "",
+        "stderr": ""
+      },
+      "models": {
+        "returncode": 0,
+        "stdout": "",
+        "stderr": ""
+      },
+      "scheduler": {
+        "returncode": 0,
+        "stdout": "",
+        "stderr": ""
+      },
+      "transform": {
+        "returncode": 0,
+        "stdout": "",
+        "stderr": ""
+      },
+      "validation": {
+        "returncode": 0,
+        "stdout": "",
+        "stderr": ""
+      },
+      "writer": {
+        "returncode": 0,
+        "stdout": "",
+        "stderr": ""
+      }
+    },
+    "csv_two_flushes": {
+      "returncode": 0,
+      "stdout": "{\"output\": \"a\\n1\\n2\\n\", \"total_written\": 2, \"persisted_fieldnames\": [\"a\"]}\n",
+      "stderr": ""
+    }
+  },
+  "step-42": {
+    "checkpoint": "/source-run/data/step-42",
+    "imports": {
+      "api_source": {
+        "returncode": 0,
+        "stdout": "",
+        "stderr": ""
+      },
+      "cache": {
+        "returncode": 0,
+        "stdout": "",
+        "stderr": ""
+      },
+      "cli": {
+        "returncode": 1,
+        "stdout": "",
+        "stderr": "Traceback (most recent call last):\n  File \"<string>\", line 1, in <module>\n  File \"/tmp/tmpwi6artsb/src/cli.py\", line 9, in <module>\n    from . import config, db, metrics\n  File \"/tmp/tmpwi6artsb/src/metrics.py\", line 7, in <module>\n    _registry: dict[str, Counter | Gauge | Histogram] = {}\n                         ^^^^^^^\nNameError: name 'Counter' is not defined\n"
+      },
+      "config": {
+        "returncode": 0,
+        "stdout": "",
+        "stderr": ""
+      },
+      "csv_source": {
+        "returncode": 0,
+        "stdout": "",
+        "stderr": ""
+      },
+      "db": {
+        "returncode": 0,
+        "stdout": "",
+        "stderr": ""
+      },
+      "db_source": {
+        "returncode": 0,
+        "stdout": "",
+        "stderr": ""
+      },
+      "logging_setup": {
+        "returncode": 0,
+        "stdout": "",
+        "stderr": ""
+      },
+      "metrics": {
+        "returncode": 1,
+        "stdout": "",
+        "stderr": "Traceback (most recent call last):\n  File \"<string>\", line 1, in <module>\n  File \"/tmp/tmpwi6artsb/src/metrics.py\", line 7, in <module>\n    _registry: dict[str, Counter | Gauge | Histogram] = {}\n                         ^^^^^^^\nNameError: name 'Counter' is not defined\n"
+      },
+      "models": {
+        "returncode": 0,
+        "stdout": "",
+        "stderr": ""
+      },
+      "scheduler": {
+        "returncode": 0,
+        "stdout": "",
+        "stderr": ""
+      },
+      "transform": {
+        "returncode": 0,
+        "stdout": "",
+        "stderr": ""
+      },
+      "validation": {
+        "returncode": 0,
+        "stdout": "",
+        "stderr": ""
+      },
+      "writer": {
+        "returncode": 0,
+        "stdout": "",
+        "stderr": ""
+      }
+    },
+    "csv_two_flushes": {
+      "returncode": 0,
+      "stdout": "{\"output\": \"a\\n1\\n2\\n\", \"total_written\": 2, \"persisted_fieldnames\": [\"a\"]}\n",
+      "stderr": ""
+    }
+  },
+  "step-61": {
+    "checkpoint": "/source-run/data/step-61",
+    "imports": {
+      "api_source": {
+        "returncode": 0,
+        "stdout": "",
+        "stderr": ""
+      },
+      "cache": {
+        "returncode": 0,
+        "stdout": "",
+        "stderr": ""
+      },
+      "cli": {
+        "returncode": 1,
+        "stdout": "",
+        "stderr": "Traceback (most recent call last):\n  File \"<string>\", line 1, in <module>\n  File \"/tmp/tmpkfvuy5e8/src/cli.py\", line 9, in <module>\n    from . import config, db, metrics\n  File \"/tmp/tmpkfvuy5e8/src/metrics.py\", line 7, in <module>\n    _registry: dict[str, Counter | Gauge | Histogram] = {}\n                         ^^^^^^^\nNameError: name 'Counter' is not defined\n"
+      },
+      "config": {
+        "returncode": 0,
+        "stdout": "",
+        "stderr": ""
+      },
+      "csv_source": {
+        "returncode": 0,
+        "stdout": "",
+        "stderr": ""
+      },
+      "db": {
+        "returncode": 0,
+        "stdout": "",
+        "stderr": ""
+      },
+      "db_source": {
+        "returncode": 0,
+        "stdout": "",
+        "stderr": ""
+      },
+      "logging_setup": {
+        "returncode": 0,
+        "stdout": "",
+        "stderr": ""
+      },
+      "metrics": {
+        "returncode": 1,
+        "stdout": "",
+        "stderr": "Traceback (most recent call last):\n  File \"<string>\", line 1, in <module>\n  File \"/tmp/tmpkfvuy5e8/src/metrics.py\", line 7, in <module>\n    _registry: dict[str, Counter | Gauge | Histogram] = {}\n                         ^^^^^^^\nNameError: name 'Counter' is not defined\n"
+      },
+      "models": {
+        "returncode": 0,
+        "stdout": "",
+        "stderr": ""
+      },
+      "scheduler": {
+        "returncode": 0,
+        "stdout": "",
+        "stderr": ""
+      },
+      "transform": {
+        "returncode": 0,
+        "stdout": "",
+        "stderr": ""
+      },
+      "validation": {
+        "returncode": 0,
+        "stdout": "",
+        "stderr": ""
+      },
+      "writer": {
+        "returncode": 0,
+        "stdout": "",
+        "stderr": ""
+      }
+    },
+    "csv_two_flushes": {
+      "returncode": 0,
+      "stdout": "{\"output\": \"a\\n1\\n\\n\", \"total_written\": 2, \"persisted_fieldnames\": null}\n",
+      "stderr": ""
+    }
+  }
+}

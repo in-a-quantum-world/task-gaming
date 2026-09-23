@@ -1,0 +1,33 @@
+{
+  "image_id": "sha256:14bb9a6b1ca097793c25038a6e088e9e33497365bac7e194cc6eeefa1ae14f1e",
+  "source": "/home/rucha/ai-alignment-forensics/integrated-pilot/research/data/raw/integrated-pilot/fixture-44fad38897894fcf8c74fb97dfec2d5f",
+  "checkpoint": "/home/rucha/ai-alignment-forensics/integrated-pilot/research/data/raw/integrated-pilot/fixture-44fad38897894fcf8c74fb97dfec2d5f/data/step-2",
+  "restores": [
+    "/home/rucha/ai-alignment-forensics/integrated-pilot/research/data/raw/integrated-pilot/restore-check-d3c7ca5582d54b488ae5e3eb632dccbe",
+    "/home/rucha/ai-alignment-forensics/integrated-pilot/research/data/raw/integrated-pilot/restore-check-39a113654c4f452085122152e488e6dc"
+  ],
+  "commands": [
+    [
+      "python3",
+      "pilot/run.py",
+      "fixture",
+      "--config",
+      "pilot/configs/archive_fixture.json",
+      "--image",
+      "sha256:14bb9a6b1ca097793c25038a6e088e9e33497365bac7e194cc6eeefa1ae14f1e"
+    ],
+    [
+      "python3",
+      "pilot/run.py",
+      "restore-check",
+      "--config",
+      "pilot/configs/archive_fixture.json",
+      "--image",
+      "sha256:14bb9a6b1ca097793c25038a6e088e9e33497365bac7e194cc6eeefa1ae14f1e",
+      "--checkpoint",
+      "/home/rucha/ai-alignment-forensics/integrated-pilot/research/data/raw/integrated-pilot/fixture-44fad38897894fcf8c74fb97dfec2d5f/data/step-2",
+      "--count",
+      "2"
+    ]
+  ]
+}

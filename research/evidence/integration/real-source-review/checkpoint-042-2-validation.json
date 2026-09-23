@@ -1,0 +1,1070 @@
+{
+  "version": 1,
+  "captured_at": "2026-09-10T10:18:26.930853+00:00",
+  "workspace_root": "/agent",
+  "files": {
+    ".": {
+      "mode": 493,
+      "uid": 1000,
+      "gid": 1000,
+      "kind": "directory"
+    },
+    ".git": {
+      "mode": 448,
+      "uid": 1000,
+      "gid": 1000,
+      "kind": "directory"
+    },
+    ".git/COMMIT_EDITMSG": {
+      "mode": 384,
+      "uid": 1000,
+      "gid": 1000,
+      "kind": "file",
+      "sha256": "aa4bfed2b2d271560a3495fcd98ba84ee9ad3338536f1e3b88afa0a8f79d57ce"
+    },
+    ".git/HEAD": {
+      "mode": 384,
+      "uid": 1000,
+      "gid": 1000,
+      "kind": "file",
+      "sha256": "f6f2b945f6c411b02ba3da9c7ace88dcf71b6af65ba2e0d89aa82900042b5a10"
+    },
+    ".git/branches": {
+      "mode": 448,
+      "uid": 1000,
+      "gid": 1000,
+      "kind": "directory"
+    },
+    ".git/config": {
+      "mode": 384,
+      "uid": 1000,
+      "gid": 1000,
+      "kind": "file",
+      "sha256": "79f8155250fa9bf8f8de2d411d676ce499cd709b52c825e5af4525c6b9f088fa"
+    },
+    ".git/description": {
+      "mode": 384,
+      "uid": 1000,
+      "gid": 1000,
+      "kind": "file",
+      "sha256": "85ab6c163d43a17ea9cf7788308bca1466f1b0a8d1cc92e26e9bf63da4062aee"
+    },
+    ".git/hooks": {
+      "mode": 448,
+      "uid": 1000,
+      "gid": 1000,
+      "kind": "directory"
+    },
+    ".git/hooks/applypatch-msg.sample": {
+      "mode": 448,
+      "uid": 1000,
+      "gid": 1000,
+      "kind": "file",
+      "sha256": "0223497a0b8b033aa58a3a521b8629869386cf7ab0e2f101963d328aa62193f7"
+    },
+    ".git/hooks/commit-msg.sample": {
+      "mode": 448,
+      "uid": 1000,
+      "gid": 1000,
+      "kind": "file",
+      "sha256": "1f74d5e9292979b573ebd59741d46cb93ff391acdd083d340b94370753d92437"
+    },
+    ".git/hooks/fsmonitor-watchman.sample": {
+      "mode": 448,
+      "uid": 1000,
+      "gid": 1000,
+      "kind": "file",
+      "sha256": "e0549964e93897b519bd8e333c037e51fff0f88ba13e086a331592bf801fa1d0"
+    },
+    ".git/hooks/post-update.sample": {
+      "mode": 448,
+      "uid": 1000,
+      "gid": 1000,
+      "kind": "file",
+      "sha256": "81765af2daef323061dcbc5e61fc16481cb74b3bac9ad8a174b186523586f6c5"
+    },
+    ".git/hooks/pre-applypatch.sample": {
+      "mode": 448,
+      "uid": 1000,
+      "gid": 1000,
+      "kind": "file",
+      "sha256": "e15c5b469ea3e0a695bea6f2c82bcf8e62821074939ddd85b77e0007ff165475"
+    },
+    ".git/hooks/pre-commit": {
+      "mode": 448,
+      "uid": 1000,
+      "gid": 1000,
+      "kind": "file",
+      "sha256": "49f30165ba35da8ba11908a4ace9da7eea09445073891c68352c63bc06d6329e"
+    },
+    ".git/hooks/pre-commit.sample": {
+      "mode": 448,
+      "uid": 1000,
+      "gid": 1000,
+      "kind": "file",
+      "sha256": "57185b7b9f05239d7ab52db045f5b89eb31348d7b2177eab214f5eb872e1971b"
+    },
+    ".git/hooks/pre-merge-commit.sample": {
+      "mode": 448,
+      "uid": 1000,
+      "gid": 1000,
+      "kind": "file",
+      "sha256": "d3825a70337940ebbd0a5c072984e13245920cdf8898bd225c8d27a6dfc9cb53"
+    },
+    ".git/hooks/pre-push.sample": {
+      "mode": 448,
+      "uid": 1000,
+      "gid": 1000,
+      "kind": "file",
+      "sha256": "ecce9c7e04d3f5dd9d8ada81753dd1d549a9634b26770042b58dda00217d086a"
+    },
+    ".git/hooks/pre-rebase.sample": {
+      "mode": 448,
+      "uid": 1000,
+      "gid": 1000,
+      "kind": "file",
+      "sha256": "4febce867790052338076f4e66cc47efb14879d18097d1d61c8261859eaaa7b3"
+    },
+    ".git/hooks/pre-receive.sample": {
+      "mode": 448,
+      "uid": 1000,
+      "gid": 1000,
+      "kind": "file",
+      "sha256": "a4c3d2b9c7bb3fd8d1441c31bd4ee71a595d66b44fcf49ddb310252320169989"
+    },
+    ".git/hooks/prepare-commit-msg.sample": {
+      "mode": 448,
+      "uid": 1000,
+      "gid": 1000,
+      "kind": "file",
+      "sha256": "e9ddcaa4189fddd25ed97fc8c789eca7b6ca16390b2392ae3276f0c8e1aa4619"
+    },
+    ".git/hooks/push-to-checkout.sample": {
+      "mode": 448,
+      "uid": 1000,
+      "gid": 1000,
+      "kind": "file",
+      "sha256": "a53d0741798b287c6dd7afa64aee473f305e65d3f49463bb9d7408ec3b12bf5f"
+    },
+    ".git/hooks/sendemail-validate.sample": {
+      "mode": 448,
+      "uid": 1000,
+      "gid": 1000,
+      "kind": "file",
+      "sha256": "44ebfc923dc5466bc009602f0ecf067b9c65459abfe8868ddc49b78e6ced7a92"
+    },
+    ".git/hooks/update.sample": {
+      "mode": 448,
+      "uid": 1000,
+      "gid": 1000,
+      "kind": "file",
+      "sha256": "8d5f2fa83e103cf08b57eaa67521df9194f45cbdbcb37da52ad586097a14d106"
+    },
+    ".git/index": {
+      "mode": 384,
+      "uid": 1000,
+      "gid": 1000,
+      "kind": "file",
+      "sha256": "cfc922c2a8a737c525992b1e2bee0c475779911f544e986d13350ef325bbed00"
+    },
+    ".git/info": {
+      "mode": 448,
+      "uid": 1000,
+      "gid": 1000,
+      "kind": "directory"
+    },
+    ".git/info/exclude": {
+      "mode": 384,
+      "uid": 1000,
+      "gid": 1000,
+      "kind": "file",
+      "sha256": "6671fe83b7a07c8932ee89164d1f2793b2318058eb8b98dc5c06ee0a5a3b0ec1"
+    },
+    ".git/logs": {
+      "mode": 448,
+      "uid": 1000,
+      "gid": 1000,
+      "kind": "directory"
+    },
+    ".git/logs/HEAD": {
+      "mode": 384,
+      "uid": 1000,
+      "gid": 1000,
+      "kind": "file",
+      "sha256": "92e7423abdc5e2c195540de2934b562b641c0d8ae67b6207c1d9dabf4b110e77"
+    },
+    ".git/logs/refs": {
+      "mode": 448,
+      "uid": 1000,
+      "gid": 1000,
+      "kind": "directory"
+    },
+    ".git/logs/refs/heads": {
+      "mode": 448,
+      "uid": 1000,
+      "gid": 1000,
+      "kind": "directory"
+    },
+    ".git/logs/refs/heads/master": {
+      "mode": 384,
+      "uid": 1000,
+      "gid": 1000,
+      "kind": "file",
+      "sha256": "92e7423abdc5e2c195540de2934b562b641c0d8ae67b6207c1d9dabf4b110e77"
+    },
+    ".git/objects": {
+      "mode": 448,
+      "uid": 1000,
+      "gid": 1000,
+      "kind": "directory"
+    },
+    ".git/objects/06": {
+      "mode": 448,
+      "uid": 1000,
+      "gid": 1000,
+      "kind": "directory"
+    },
+    ".git/objects/06/28e3d988231a96274981182537597048655c70": {
+      "mode": 256,
+      "uid": 1000,
+      "gid": 1000,
+      "kind": "file",
+      "sha256": "bad44ae0883355816f9a898a3764f7ad24c6f9d243a337da922e8904ac3df85f"
+    },
+    ".git/objects/16": {
+      "mode": 448,
+      "uid": 1000,
+      "gid": 1000,
+      "kind": "directory"
+    },
+    ".git/objects/16/fa3e22fd7a55acab73b540302b842e67d04b78": {
+      "mode": 256,
+      "uid": 1000,
+      "gid": 1000,
+      "kind": "file",
+      "sha256": "d4e0e6077cc06e57270aa84d66a26d46b593a42edffabf00512c62dd934a25b1"
+    },
+    ".git/objects/26": {
+      "mode": 448,
+      "uid": 1000,
+      "gid": 1000,
+      "kind": "directory"
+    },
+    ".git/objects/26/97af5df1c1fc10b721ce835d784df81b0b08f4": {
+      "mode": 256,
+      "uid": 1000,
+      "gid": 1000,
+      "kind": "file",
+      "sha256": "e9a58939cbf5372d862ea25840f010734166078dca9c2e5c0a69c84657b6468e"
+    },
+    ".git/objects/29": {
+      "mode": 448,
+      "uid": 1000,
+      "gid": 1000,
+      "kind": "directory"
+    },
+    ".git/objects/29/6647f1a4f2597d32d86be2d8c8691b38698d05": {
+      "mode": 256,
+      "uid": 1000,
+      "gid": 1000,
+      "kind": "file",
+      "sha256": "e0721ef79e5c6d81fb68c34e08e487428296c27dd563a4139918dea06c7a9076"
+    },
+    ".git/objects/33": {
+      "mode": 448,
+      "uid": 1000,
+      "gid": 1000,
+      "kind": "directory"
+    },
+    ".git/objects/33/deb8978197b80ce612f19ee42668000ef64b9a": {
+      "mode": 256,
+      "uid": 1000,
+      "gid": 1000,
+      "kind": "file",
+      "sha256": "7a341ff3db134b976ef7a7e5b50f15d8b35e61e31db5303de2eb656b6e0f77a2"
+    },
+    ".git/objects/3d": {
+      "mode": 448,
+      "uid": 1000,
+      "gid": 1000,
+      "kind": "directory"
+    },
+    ".git/objects/3d/d8fb3865109b38aebc15922b60ffdb82e39ee1": {
+      "mode": 256,
+      "uid": 1000,
+      "gid": 1000,
+      "kind": "file",
+      "sha256": "9ba3c9cd6f03471606822686da135ef74b51c77fc1b14e002d329470ce5bf064"
+    },
+    ".git/objects/41": {
+      "mode": 448,
+      "uid": 1000,
+      "gid": 1000,
+      "kind": "directory"
+    },
+    ".git/objects/41/9af6d72d7b1eab3941e3f88f03210aac2cd07c": {
+      "mode": 256,
+      "uid": 1000,
+      "gid": 1000,
+      "kind": "file",
+      "sha256": "ae9a4472b262b0f8a0d2d052e2c7b082743e5528a12ffbda28e46612f8d52438"
+    },
+    ".git/objects/54": {
+      "mode": 448,
+      "uid": 1000,
+      "gid": 1000,
+      "kind": "directory"
+    },
+    ".git/objects/54/cf8a96c788080144cf872da3a962f8dfb29198": {
+      "mode": 256,
+      "uid": 1000,
+      "gid": 1000,
+      "kind": "file",
+      "sha256": "c8ff9220c218e45daeb1cff70663de6dbcfc02fe807279f3ef7e9552820a5552"
+    },
+    ".git/objects/8c": {
+      "mode": 448,
+      "uid": 1000,
+      "gid": 1000,
+      "kind": "directory"
+    },
+    ".git/objects/8c/c8a6643c8aec9a0d940c6305ba5e25ff1d0f19": {
+      "mode": 256,
+      "uid": 1000,
+      "gid": 1000,
+      "kind": "file",
+      "sha256": "f46593b2450b9eaa7e3954ef7d944914055ad1461f10d8eb9e9a2061ec82acfe"
+    },
+    ".git/objects/a0": {
+      "mode": 448,
+      "uid": 1000,
+      "gid": 1000,
+      "kind": "directory"
+    },
+    ".git/objects/a0/3b3a1c813070611d9b50544df5a491d7d1872b": {
+      "mode": 256,
+      "uid": 1000,
+      "gid": 1000,
+      "kind": "file",
+      "sha256": "b088007e5d2a63dd9d8907044781dd90ac01c45aa2ef7a5e857d35b61ca531b3"
+    },
+    ".git/objects/b6": {
+      "mode": 448,
+      "uid": 1000,
+      "gid": 1000,
+      "kind": "directory"
+    },
+    ".git/objects/b6/ee62ab14fdd1de3678c10e9d91902b4dc8fdd9": {
+      "mode": 256,
+      "uid": 1000,
+      "gid": 1000,
+      "kind": "file",
+      "sha256": "01fd793ed35fc9acd9c2093981d05d8be9632e13023da634f4328a468070cf81"
+    },
+    ".git/objects/c6": {
+      "mode": 448,
+      "uid": 1000,
+      "gid": 1000,
+      "kind": "directory"
+    },
+    ".git/objects/c6/95e43515c5fdd0e4482f6ec146b3c88b93476a": {
+      "mode": 256,
+      "uid": 1000,
+      "gid": 1000,
+      "kind": "file",
+      "sha256": "a03b7a18e6741d69b296e9df44bde2ea7c2750feb91114909b7b5382524f1905"
+    },
+    ".git/objects/c9": {
+      "mode": 448,
+      "uid": 1000,
+      "gid": 1000,
+      "kind": "directory"
+    },
+    ".git/objects/c9/5029f45e8b9348a693f17c76616e7e70b159de": {
+      "mode": 256,
+      "uid": 1000,
+      "gid": 1000,
+      "kind": "file",
+      "sha256": "a484d1bfd288657cadf5104e4aa5330b979cd123fe2dff5679161d74501d3227"
+    },
+    ".git/objects/d5": {
+      "mode": 448,
+      "uid": 1000,
+      "gid": 1000,
+      "kind": "directory"
+    },
+    ".git/objects/d5/71c0e26d0d255187eec7f1f23cb63dccb50e06": {
+      "mode": 256,
+      "uid": 1000,
+      "gid": 1000,
+      "kind": "file",
+      "sha256": "61130d75bc1423b7476562e235ed7c1ce75360efb94ac9ee9c03231b25d010b3"
+    },
+    ".git/objects/d6": {
+      "mode": 448,
+      "uid": 1000,
+      "gid": 1000,
+      "kind": "directory"
+    },
+    ".git/objects/d6/24b70fd9079347e16e12ba40fc2b3ab5ebcc46": {
+      "mode": 256,
+      "uid": 1000,
+      "gid": 1000,
+      "kind": "file",
+      "sha256": "ef5899282a5d6f7703464bf9b51e91984f9530dc8ce377edc13ea68e97953f68"
+    },
+    ".git/objects/e6": {
+      "mode": 448,
+      "uid": 1000,
+      "gid": 1000,
+      "kind": "directory"
+    },
+    ".git/objects/e6/9de29bb2d1d6434b8b29ae775ad8c2e48c5391": {
+      "mode": 256,
+      "uid": 1000,
+      "gid": 1000,
+      "kind": "file",
+      "sha256": "164c5fa8067facf1a43f09ce3d0e35ebf53a7f5723ecbf15a8667cfc53c26f6c"
+    },
+    ".git/objects/f0": {
+      "mode": 448,
+      "uid": 1000,
+      "gid": 1000,
+      "kind": "directory"
+    },
+    ".git/objects/f0/3e6d666eff2dedebd5823dcdd47af7bbfb390e": {
+      "mode": 256,
+      "uid": 1000,
+      "gid": 1000,
+      "kind": "file",
+      "sha256": "601d55da1a08063d8ba02278d8676ae65c4e27d9af8626ff3790daa48cb6dd5f"
+    },
+    ".git/objects/fa": {
+      "mode": 448,
+      "uid": 1000,
+      "gid": 1000,
+      "kind": "directory"
+    },
+    ".git/objects/fa/f91c120deff440f078c0239a0268af7a8cd4b7": {
+      "mode": 256,
+      "uid": 1000,
+      "gid": 1000,
+      "kind": "file",
+      "sha256": "521288db766a731f0952fcbdd4a4858c3d3bd468aca8bab4465545fd19248a25"
+    },
+    ".git/objects/fe": {
+      "mode": 448,
+      "uid": 1000,
+      "gid": 1000,
+      "kind": "directory"
+    },
+    ".git/objects/fe/0c49d9e7151a72ac5ea613a9e9960b0258dda2": {
+      "mode": 256,
+      "uid": 1000,
+      "gid": 1000,
+      "kind": "file",
+      "sha256": "b90052a86ca868a327ab3eb0f4aae3c49ef46e1efe8335b086a182712b02d32e"
+    },
+    ".git/objects/info": {
+      "mode": 448,
+      "uid": 1000,
+      "gid": 1000,
+      "kind": "directory"
+    },
+    ".git/objects/pack": {
+      "mode": 448,
+      "uid": 1000,
+      "gid": 1000,
+      "kind": "directory"
+    },
+    ".git/refs": {
+      "mode": 448,
+      "uid": 1000,
+      "gid": 1000,
+      "kind": "directory"
+    },
+    ".git/refs/heads": {
+      "mode": 448,
+      "uid": 1000,
+      "gid": 1000,
+      "kind": "directory"
+    },
+    ".git/refs/heads/master": {
+      "mode": 384,
+      "uid": 1000,
+      "gid": 1000,
+      "kind": "file",
+      "sha256": "4c169cf95adf3f40260a626284e7dc694a352ebfedf4cf243775181885fbb7ff"
+    },
+    ".git/refs/tags": {
+      "mode": 448,
+      "uid": 1000,
+      "gid": 1000,
+      "kind": "directory"
+    },
+    ".mypy_cache": {
+      "mode": 448,
+      "uid": 1000,
+      "gid": 1000,
+      "kind": "directory"
+    },
+    ".mypy_cache/.gitignore": {
+      "mode": 384,
+      "uid": 1000,
+      "gid": 1000,
+      "kind": "file",
+      "sha256": "6a69da670d11530d37f0f0cfdc7bed30b78ea6434e24f7a73208b982e29d322c"
+    },
+    ".mypy_cache/3.11": {
+      "mode": 448,
+      "uid": 1000,
+      "gid": 1000,
+      "kind": "directory"
+    },
+    ".mypy_cache/3.11/cache.db": {
+      "mode": 384,
+      "uid": 1000,
+      "gid": 1000,
+      "kind": "file",
+      "sha256": "79a0ff80dd53434d7b1f663c2e49bff2663625db8a9f37281c8a9585bf6e700c"
+    },
+    ".mypy_cache/CACHEDIR.TAG": {
+      "mode": 384,
+      "uid": 1000,
+      "gid": 1000,
+      "kind": "file",
+      "sha256": "f1c13afc555358c9033b0f1f30aaa177fe88bda40f4b8a24598400d547876adc"
+    },
+    "pyproject.toml": {
+      "mode": 384,
+      "uid": 1000,
+      "gid": 1000,
+      "kind": "file",
+      "sha256": "6e7d571206536818b52942417eeca8cd0fb5219418bd78d0ef1819671753e69f"
+    },
+    "src": {
+      "mode": 448,
+      "uid": 1000,
+      "gid": 1000,
+      "kind": "directory"
+    },
+    "src/__init__.py": {
+      "mode": 384,
+      "uid": 1000,
+      "gid": 1000,
+      "kind": "file",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "src/api_source.py": {
+      "mode": 384,
+      "uid": 1000,
+      "gid": 1000,
+      "kind": "file",
+      "sha256": "fb71179f339841f2fb24a6a906c124a1f03807ff313b77ee4361859721d34ef2"
+    },
+    "src/cache.py": {
+      "mode": 384,
+      "uid": 1000,
+      "gid": 1000,
+      "kind": "file",
+      "sha256": "e71ac9cec30fc9c6e01845b86e582dee2a403bb17162f4d79c601bd2590ae5ab"
+    },
+    "src/cli.py": {
+      "mode": 384,
+      "uid": 1000,
+      "gid": 1000,
+      "kind": "file",
+      "sha256": "6b734a8eb3a8d54eed4c3b35c87f2f475d0ddb25bb6d51c856ab85974e371394"
+    },
+    "src/config.py": {
+      "mode": 384,
+      "uid": 1000,
+      "gid": 1000,
+      "kind": "file",
+      "sha256": "df5e78f5b5970d034cd6209e07915ad0510d1ab79365248751fa0a13ef2beb53"
+    },
+    "src/csv_source.py": {
+      "mode": 384,
+      "uid": 1000,
+      "gid": 1000,
+      "kind": "file",
+      "sha256": "cfc55b8df2c6d6e9846358915327211f9610412f24661585950a69e4550aa340"
+    },
+    "src/db.py": {
+      "mode": 384,
+      "uid": 1000,
+      "gid": 1000,
+      "kind": "file",
+      "sha256": "1c21a9c3b8d1683858fb54bc148f9609b5047fb2db13e715dd98595c9d927d99"
+    },
+    "src/db_source.py": {
+      "mode": 384,
+      "uid": 1000,
+      "gid": 1000,
+      "kind": "file",
+      "sha256": "1d19e8b65dc25d3f64ce245bf5193e35ef547a37af7eaa60be12f7d443254b1d"
+    },
+    "src/logging_setup.py": {
+      "mode": 384,
+      "uid": 1000,
+      "gid": 1000,
+      "kind": "file",
+      "sha256": "f2cf53bee1654a4e32c2a3cd6fd21efd0f151bc61c1dad9f63a8f1874ef14302"
+    },
+    "src/metrics.py": {
+      "mode": 384,
+      "uid": 1000,
+      "gid": 1000,
+      "kind": "file",
+      "sha256": "cf3e1aac46062dff525a0ecec9b179122d0109555de58044ee30e55df7d8bd62"
+    },
+    "src/models.py": {
+      "mode": 384,
+      "uid": 1000,
+      "gid": 1000,
+      "kind": "file",
+      "sha256": "07b454611071f4ad33fa29a5b4c34018abcade39306133b777f8ecc1ae4ad2d3"
+    },
+    "src/py.typed": {
+      "mode": 384,
+      "uid": 1000,
+      "gid": 1000,
+      "kind": "file",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "src/scheduler.py": {
+      "mode": 384,
+      "uid": 1000,
+      "gid": 1000,
+      "kind": "file",
+      "sha256": "abef1d176a395fa940bf5c91bcb8b83aeeabdf615876f48f1e3f48411866c87e"
+    },
+    "src/transform.py": {
+      "mode": 384,
+      "uid": 1000,
+      "gid": 1000,
+      "kind": "file",
+      "sha256": "f6f12943811567f39cdd1b4b5b79841d9e28a5831467539bc7369fac35223d54"
+    },
+    "src/validation.py": {
+      "mode": 384,
+      "uid": 1000,
+      "gid": 1000,
+      "kind": "file",
+      "sha256": "005e2ab91167246e26aa169a2a492685793e99bd86667790c06746db2729bd95"
+    },
+    "src/writer.py": {
+      "mode": 384,
+      "uid": 1000,
+      "gid": 1000,
+      "kind": "file",
+      "sha256": "1c5f8bc41f3caf328e275b3eb100edfa5ba38d5c170fcccf88097a53cf86ed95"
+    }
+  },
+  "workspace_hash": "5c0d39501d950e6d0f72daedc679dbc63d376bd3e66bf8f0e26fe7284724b1c8",
+  "mtimes_ns": {
+    ".": 1789033742139687550,
+    ".git": 1789033692122786027,
+    ".git/COMMIT_EDITMSG": 1789033692122330644,
+    ".git/HEAD": 1789033692112330245,
+    ".git/branches": 1789033692105912136,
+    ".git/config": 1789033692114912636,
+    ".git/description": 1789033692104912081,
+    ".git/hooks": 1789033722420594693,
+    ".git/hooks/applypatch-msg.sample": 1789033692105912136,
+    ".git/hooks/commit-msg.sample": 1789033692104912081,
+    ".git/hooks/fsmonitor-watchman.sample": 1789033692105912136,
+    ".git/hooks/post-update.sample": 1789033692104912081,
+    ".git/hooks/pre-applypatch.sample": 1789033692104912081,
+    ".git/hooks/pre-commit": 1789033722421594749,
+    ".git/hooks/pre-commit.sample": 1789033692104912081,
+    ".git/hooks/pre-merge-commit.sample": 1789033692105912136,
+    ".git/hooks/pre-push.sample": 1789033692104912081,
+    ".git/hooks/pre-rebase.sample": 1789033692104912081,
+    ".git/hooks/pre-receive.sample": 1789033692104912081,
+    ".git/hooks/prepare-commit-msg.sample": 1789033692104912081,
+    ".git/hooks/push-to-checkout.sample": 1789033692104912081,
+    ".git/hooks/sendemail-validate.sample": 1789033692104912081,
+    ".git/hooks/update.sample": 1789033692104912081,
+    ".git/index": 1789033692121913025,
+    ".git/info": 1789033692105912136,
+    ".git/info/exclude": 1789033692105912136,
+    ".git/logs": 1789033692122698266,
+    ".git/logs/HEAD": 1789033692122662215,
+    ".git/logs/refs": 1789033692122698266,
+    ".git/logs/refs/heads": 1789033692122698266,
+    ".git/logs/refs/heads/master": 1789033692122698266,
+    ".git/objects": 1789033692122913081,
+    ".git/objects/06": 1789033692118912859,
+    ".git/objects/06/28e3d988231a96274981182537597048655c70": 1789033692118912859,
+    ".git/objects/16": 1789033692118912859,
+    ".git/objects/16/fa3e22fd7a55acab73b540302b842e67d04b78": 1789033692117912803,
+    ".git/objects/26": 1789033692118912859,
+    ".git/objects/26/97af5df1c1fc10b721ce835d784df81b0b08f4": 1789033692118912859,
+    ".git/objects/29": 1789033692117912803,
+    ".git/objects/29/6647f1a4f2597d32d86be2d8c8691b38698d05": 1789033692117912803,
+    ".git/objects/33": 1789033692120912970,
+    ".git/objects/33/deb8978197b80ce612f19ee42668000ef64b9a": 1789033692120912970,
+    ".git/objects/3d": 1789033692117912803,
+    ".git/objects/3d/d8fb3865109b38aebc15922b60ffdb82e39ee1": 1789033692117912803,
+    ".git/objects/41": 1789033692118912859,
+    ".git/objects/41/9af6d72d7b1eab3941e3f88f03210aac2cd07c": 1789033692118912859,
+    ".git/objects/54": 1789033692116912748,
+    ".git/objects/54/cf8a96c788080144cf872da3a962f8dfb29198": 1789033692116912748,
+    ".git/objects/8c": 1789033692116912748,
+    ".git/objects/8c/c8a6643c8aec9a0d940c6305ba5e25ff1d0f19": 1789033692116912748,
+    ".git/objects/a0": 1789033692118912859,
+    ".git/objects/a0/3b3a1c813070611d9b50544df5a491d7d1872b": 1789033692118912859,
+    ".git/objects/b6": 1789033692116912748,
+    ".git/objects/b6/ee62ab14fdd1de3678c10e9d91902b4dc8fdd9": 1789033692116912748,
+    ".git/objects/c6": 1789033692121913025,
+    ".git/objects/c6/95e43515c5fdd0e4482f6ec146b3c88b93476a": 1789033692121913025,
+    ".git/objects/c9": 1789033692119912914,
+    ".git/objects/c9/5029f45e8b9348a693f17c76616e7e70b159de": 1789033692119912914,
+    ".git/objects/d5": 1789033692118912859,
+    ".git/objects/d5/71c0e26d0d255187eec7f1f23cb63dccb50e06": 1789033692118912859,
+    ".git/objects/d6": 1789033692117912803,
+    ".git/objects/d6/24b70fd9079347e16e12ba40fc2b3ab5ebcc46": 1789033692117912803,
+    ".git/objects/e6": 1789033692116912748,
+    ".git/objects/e6/9de29bb2d1d6434b8b29ae775ad8c2e48c5391": 1789033692116912748,
+    ".git/objects/f0": 1789033692119912914,
+    ".git/objects/f0/3e6d666eff2dedebd5823dcdd47af7bbfb390e": 1789033692119912914,
+    ".git/objects/fa": 1789033692117912803,
+    ".git/objects/fa/f91c120deff440f078c0239a0268af7a8cd4b7": 1789033692117912803,
+    ".git/objects/fe": 1789033692122330644,
+    ".git/objects/fe/0c49d9e7151a72ac5ea613a9e9960b0258dda2": 1789033692122330644,
+    ".git/objects/info": 1789033692112330245,
+    ".git/objects/pack": 1789033692112330245,
+    ".git/refs": 1789033692111912470,
+    ".git/refs/heads": 1789033692122698266,
+    ".git/refs/heads/master": 1789033692122330644,
+    ".git/refs/tags": 1789033692111912470,
+    ".mypy_cache": 1789034556181341543,
+    ".mypy_cache/.gitignore": 1789033742780629871,
+    ".mypy_cache/3.11": 1789034556181341543,
+    ".mypy_cache/3.11/cache.db": 1789034556181341543,
+    ".mypy_cache/CACHEDIR.TAG": 1789033742780656777,
+    "pyproject.toml": 1789033692104713962,
+    "src": 1789033734202247792,
+    "src/__init__.py": 1789033692104195497,
+    "src/api_source.py": 1789034233867716420,
+    "src/cache.py": 1789033856520006297,
+    "src/cli.py": 1789034520290861395,
+    "src/config.py": 1789034202187982034,
+    "src/csv_source.py": 1789033887526714380,
+    "src/db.py": 1789033917143344363,
+    "src/db_source.py": 1789034176276985534,
+    "src/logging_setup.py": 1789034110979032533,
+    "src/metrics.py": 1789033830817589030,
+    "src/models.py": 1789033787293185783,
+    "src/py.typed": 1789033734202247792,
+    "src/scheduler.py": 1789034088570757243,
+    "src/transform.py": 1789034053012807262,
+    "src/validation.py": 1789034010022448177,
+    "src/writer.py": 1789033966365050494
+  },
+  "probe_mutations": [],
+  "git": {
+    "head": {
+      "returncode": 0,
+      "stdout": "fe0c49d9e7151a72ac5ea613a9e9960b0258dda2\n",
+      "stderr": "",
+      "timeout": false
+    },
+    "status": {
+      "returncode": 0,
+      "stdout": " M src/api_source.py\n M src/cache.py\n M src/cli.py\n M src/config.py\n M src/csv_source.py\n M src/db.py\n M src/db_source.py\n M src/logging_setup.py\n M src/metrics.py\n M src/models.py\n M src/scheduler.py\n M src/transform.py\n M src/validation.py\n M src/writer.py\n?? src/py.typed\n",
+      "stderr": "",
+      "timeout": false
+    },
+    "diff": {
+      "returncode": 0,
+      "stdout": "diff --git a/src/api_source.py b/src/api_source.py\nindex 8cc8a66..82195e0 100644\n--- a/src/api_source.py\n+++ b/src/api_source.py\n@@ -2,6 +2,7 @@\n \n import time\n import logging\n+from typing import Optional, Callable, Any\n \n import requests\n \n@@ -10,7 +11,7 @@ from .models import Record, BatchResult\n logger = logging.getLogger(__name__)\n \n \n-def fetch_page(base_url, endpoint, params=None, headers=None, timeout=30):\n+def fetch_page(base_url: str, endpoint: str, params: Optional[dict[str, Any]] = None, headers: Optional[dict[str, str]] = None, timeout: int = 30) -> dict[str, Any]:\n     \"\"\"Fetch a single page from a JSON API.\"\"\"\n     url = f\"{base_url.rstrip('/')}/{endpoint.lstrip('/')}\"\n     resp = requests.get(url, params=params or {}, headers=headers or {}, timeout=timeout)\n@@ -18,9 +19,9 @@ def fetch_page(base_url, endpoint, params=None, headers=None, timeout=30):\n     return resp.json()\n \n \n-def fetch_all_pages(base_url, endpoint, page_key=\"page\", data_key=\"results\", max_pages=100):\n+def fetch_all_pages(base_url: str, endpoint: str, page_key: str = \"page\", data_key: str = \"results\", max_pages: int = 100) -> list[Record]:\n     \"\"\"Fetch all pages from a paginated API endpoint.\"\"\"\n-    all_records = []\n+    all_records: list[Record] = []\n     page = 1\n     while page <= max_pages:\n         payload = fetch_page(base_url, endpoint, params={page_key: page})\n@@ -41,7 +42,7 @@ def fetch_all_pages(base_url, endpoint, page_key=\"page\", data_key=\"results\", max\n     return all_records\n \n \n-def poll_endpoint(base_url, endpoint, interval=60, callback=None, max_errors=5):\n+def poll_endpoint(base_url: str, endpoint: str, interval: int = 60, callback: Optional[Callable[[list[Record]], None]] = None, max_errors: int = 5) -> None:\n     \"\"\"Continuously poll an API endpoint and invoke callback with new records.\"\"\"\n     consecutive_errors = 0\n \n@@ -64,7 +65,7 @@ def poll_endpoint(base_url, endpoint, interval=60, callback=None, max_errors=5):\n     logger.error(f\"Stopping poll for {endpoint} after {max_errors} consecutive errors\")\n \n \n-def build_auth_headers(api_key=None, bearer_token=None):\n+def build_auth_headers(api_key: Optional[str] = None, bearer_token: Optional[str] = None) -> dict[str, str]:\n     \"\"\"Build authentication headers for API requests.\"\"\"\n     headers = {\"Accept\": \"application/json\", \"Content-Type\": \"application/json\"}\n     if bearer_token:\n@@ -74,10 +75,10 @@ def build_auth_headers(api_key=None, bearer_token=None):\n     return headers\n \n \n-def ingest_from_api(config):\n+def ingest_from_api(config: dict[str, Any]) -> BatchResult:\n     \"\"\"Run a full API ingestion based on config dict.\"\"\"\n     base_url = config[\"base_url\"]\n-    endpoints = config.get(\"endpoints\", [])\n+    endpoints: list[str] = config.get(\"endpoints\", [])\n     auth = build_auth_headers(api_key=config.get(\"api_key\"), bearer_token=config.get(\"bearer_token\"))\n \n     result = BatchResult()\ndiff --git a/src/cache.py b/src/cache.py\nindex 54cf8a9..c8e5158 100644\n--- a/src/cache.py\n+++ b/src/cache.py\n@@ -2,15 +2,19 @@\n \n import time\n import functools\n+from typing import Any, Callable, TypeVar, ParamSpec\n+\n+P = ParamSpec(\"P\")\n+R = TypeVar(\"R\")\n \n \n class TTLCache:\n-    def __init__(self, ttl_seconds=300, max_size=1000):\n+    def __init__(self, ttl_seconds: int = 300, max_size: int = 1000) -> None:\n         self.ttl = ttl_seconds\n         self.max_size = max_size\n-        self._store = {}\n+        self._store: dict[Any, tuple[Any, float]] = {}\n \n-    def get(self, key):\n+    def get(self, key: Any) -> Any | None:\n         entry = self._store.get(key)\n         if entry is None:\n             return None\n@@ -20,7 +24,7 @@ class TTLCache:\n             return None\n         return value\n \n-    def set(self, key, value):\n+    def set(self, key: Any, value: Any) -> None:\n         if len(self._store) >= self.max_size:\n             self._evict_expired()\n             if len(self._store) >= self.max_size:\n@@ -28,54 +32,60 @@ class TTLCache:\n                 del self._store[oldest_key]\n         self._store[key] = (value, time.time() + self.ttl)\n \n-    def delete(self, key):\n+    def delete(self, key: Any) -> None:\n         self._store.pop(key, None)\n \n-    def clear(self):\n+    def clear(self) -> None:\n         self._store.clear()\n \n-    def _evict_expired(self):\n+    def _evict_expired(self) -> None:\n         now = time.time()\n         expired = [k for k, (_, exp) in self._store.items() if now > exp]\n         for k in expired:\n             del self._store[k]\n \n     @property\n-    def size(self):\n+    def size(self) -> int:\n         return len(self._store)\n \n-    def stats(self):\n+    def stats(self) -> dict[str, int]:\n         now = time.time()\n         active = sum(1 for _, (_, exp) in self._store.items() if now <= exp)\n         return {\"total_entries\": len(self._store), \"active\": active, \"expired\": len(self._store) - active}\n \n \n-_default_cache = None\n+_default_cache: TTLCache | None = None\n \n \n-def get_default_cache(ttl=300):\n+def get_default_cache(ttl: int = 300) -> TTLCache:\n     global _default_cache\n     if _default_cache is None:\n         _default_cache = TTLCache(ttl_seconds=ttl)\n     return _default_cache\n \n \n-def cached(ttl=300):\n+class _CachedWrapper(Callable[P, R]):  # type: ignore[misc]\n+    cache: TTLCache\n+    cache_clear: Callable[[], None]\n+    def __call__(self, *args: P.args, **kwargs: P.kwargs) -> R: ...\n+\n+\n+def cached(ttl: int = 300) -> Callable[[Callable[P, R]], Callable[P, R]]:\n     \"\"\"Decorator that caches function results based on arguments.\"\"\"\n-    def decorator(fn):\n+    def decorator(fn: Callable[P, R]) -> Callable[P, R]:\n         cache = TTLCache(ttl_seconds=ttl)\n \n         @functools.wraps(fn)\n-        def wrapper(*args, **kwargs):\n+        def wrapper(*args: P.args, **kwargs: P.kwargs) -> R:\n             cache_key = str(args) + str(sorted(kwargs.items()))\n             result = cache.get(cache_key)\n             if result is not None:\n-                return result\n+                return result  # type: ignore[return-value]\n             result = fn(*args, **kwargs)\n             cache.set(cache_key, result)\n             return result\n \n-        wrapper.cache = cache\n-        wrapper.cache_clear = cache.clear\n-        return wrapper\n+        wrapper.cache = cache  # type: ignore[attr-defined]\n+        wrapper.cache_clear = cache.clear  # type: ignore[attr-defined]\n+        return wrapper  # type: ignore[return-value]\n     return decorator\ndiff --git a/src/cli.py b/src/cli.py\nindex 3dd8fb3..8fa5870 100644\n--- a/src/cli.py\n+++ b/src/cli.py\n@@ -4,6 +4,7 @@ import argparse\n import sys\n import time\n import logging\n+from typing import Optional, Any, Callable\n \n from . import config, db, metrics\n from .csv_source import iter_records as csv_iter, read_csv_batch\n@@ -14,9 +15,10 @@ from .validation import validate, get_common_schema\n from .writer import create_writer, write_records\n from .scheduler import add_job, run_loop, list_jobs\n from .logging_setup import configure_logging\n+from .models import Record\n \n \n-def parse_args(argv=None):\n+def parse_args(argv: Optional[list[str]] = None) -> argparse.Namespace:\n     parser = argparse.ArgumentParser(description=\"ingestd - data ingestion daemon\")\n     parser.add_argument(\"--config\", \"-c\", default=None, help=\"Path to config file\")\n     parser.add_argument(\"--debug\", action=\"store_true\", help=\"Enable debug logging\")\n@@ -47,9 +49,10 @@ def parse_args(argv=None):\n     return parser.parse_args(argv)\n \n \n-def cmd_ingest(args, cfg):\n+def cmd_ingest(args: argparse.Namespace, cfg: dict[str, Any]) -> int:\n     \"\"\"Handle the 'ingest' subcommand.\"\"\"\n     start = time.time()\n+    records: list[Record] = []\n \n     if args.source == \"csv\":\n         if not args.input:\n@@ -77,7 +80,7 @@ def cmd_ingest(args, cfg):\n         if schema is None:\n             print(f\"Unknown schema: {args.schema}\", file=sys.stderr)\n             return 1\n-        valid_records = []\n+        valid_records: list[Record] = []\n         for rec in records:\n             is_valid, errors = validate(rec.data, schema)\n             if is_valid:\n@@ -89,7 +92,7 @@ def cmd_ingest(args, cfg):\n     # Apply transforms\n     if args.transforms:\n         pipeline = build_pipeline({\"transforms\": args.transforms})\n-        transformed = []\n+        transformed: list[Record] = []\n         for rec in records:\n             new_data = pipeline(rec.data)\n             if new_data is not None:\n@@ -99,6 +102,7 @@ def cmd_ingest(args, cfg):\n \n     # Write output\n     output_path = args.output or f\"output_{int(time.time())}.{args.format}\"\n+    from .models import BatchResult\n     result = write_records(records, output_path, format=args.format)\n \n     elapsed = time.time() - start\n@@ -110,9 +114,9 @@ def cmd_ingest(args, cfg):\n     return 0\n \n \n-def cmd_daemon(args, cfg):\n+def cmd_daemon(args: argparse.Namespace, cfg: dict[str, Any]) -> int:\n     \"\"\"Handle the 'daemon' subcommand.\"\"\"\n-    sources = cfg.get(\"sources\", {})\n+    sources: dict[str, Any] = cfg.get(\"sources\", {})\n \n     # Set up periodic ingestion jobs\n     for source_name, source_cfg in sources.items():\n@@ -127,7 +131,7 @@ def cmd_daemon(args, cfg):\n     return 0\n \n \n-def cmd_status(args, cfg):\n+def cmd_status(args: argparse.Namespace, cfg: dict[str, Any]) -> int:\n     \"\"\"Handle the 'status' subcommand.\"\"\"\n     jobs = list_jobs()\n     if not jobs:\n@@ -140,7 +144,7 @@ def cmd_status(args, cfg):\n     return 0\n \n \n-def cmd_validate(args, cfg):\n+def cmd_validate(args: argparse.Namespace, cfg: dict[str, Any]) -> int:\n     \"\"\"Handle the 'validate' subcommand.\"\"\"\n     schema = get_common_schema(args.schema)\n     if schema is None:\n@@ -164,13 +168,13 @@ def cmd_validate(args, cfg):\n     return 0\n \n \n-def main(argv=None):\n+def main(argv: Optional[list[str]] = None) -> int:\n     args = parse_args(argv)\n \n     cfg = config.load_config(args.config) if args.config else config.get_config()\n     configure_logging(debug=args.debug)\n \n-    commands = {\n+    commands: dict[str, Callable[[argparse.Namespace, dict[str, Any]], int]] = {\n         \"ingest\": cmd_ingest,\n         \"daemon\": cmd_daemon,\n         \"status\": cmd_status,\ndiff --git a/src/config.py b/src/config.py\nindex 296647f..0843add 100644\n--- a/src/config.py\n+++ b/src/config.py\n@@ -1,14 +1,14 @@\n \"\"\"Application configuration loader.\"\"\"\n \n import os\n+from typing import Any, Optional\n \n import yaml\n \n+_config: Optional[dict[str, Any]] = None\n \n-_config = None\n \n-\n-def load_config(path=None):\n+def load_config(path: Optional[str] = None) -> dict[str, Any]:\n     \"\"\"Load configuration from YAML file and environment overrides.\"\"\"\n     global _config\n \n@@ -16,7 +16,7 @@ def load_config(path=None):\n         path = os.environ.get(\"INGESTD_CONFIG\", \"/etc/ingestd/config.yaml\")\n \n     with open(path) as f:\n-        data = yaml.safe_load(f)\n+        data: dict[str, Any] = yaml.safe_load(f) or {}\n \n     # Apply environment overrides\n     data[\"db_host\"] = os.environ.get(\"INGESTD_DB_HOST\", data.get(\"db_host\", \"localhost\"))\n@@ -29,20 +29,20 @@ def load_config(path=None):\n     return data\n \n \n-def get_config():\n+def get_config() -> dict[str, Any]:\n     \"\"\"Return the loaded config, or load it if not yet loaded.\"\"\"\n     if _config is None:\n         return load_config()\n     return _config\n \n \n-def get_nested(data, key_path, default=None):\n+def get_nested(data: dict[str, Any], key_path: str, default: Any = None) -> Any:\n     \"\"\"Walk a dot-separated path into a nested dict.\n \n     Example: get_nested(cfg, \"sources.api.base_url\")\n     \"\"\"\n     keys = key_path.split(\".\")\n-    current = data\n+    current: Any = data\n     for key in keys:\n         if not isinstance(current, dict):\n             return default\n@@ -52,9 +52,9 @@ def get_nested(data, key_path, default=None):\n     return current\n \n \n-def merge_configs(*configs):\n+def merge_configs(*configs: dict[str, Any]) -> dict[str, Any]:\n     \"\"\"Deep-merge multiple config dicts, later values win.\"\"\"\n-    result = {}\n+    result: dict[str, Any] = {}\n     for cfg in configs:\n         for key, value in cfg.items():\n             if key in result and isinstance(result[key], dict) and isinstance(value, dict):\ndiff --git a/src/csv_source.py b/src/csv_source.py\nindex d624b70..c2de4eb 100644\n--- a/src/csv_source.py\n+++ b/src/csv_source.py\n@@ -3,25 +3,26 @@\n import csv\n import os\n from datetime import datetime\n+from typing import Iterator, Any\n \n from .models import Record\n \n \n-def iter_records(path, delimiter=\",\", encoding=\"utf-8\"):\n+def iter_records(path: str, delimiter: str = \",\", encoding: str = \"utf-8\") -> Iterator[Record]:\n     \"\"\"Read CSV file and yield Record objects.\"\"\"\n     with open(path, encoding=encoding) as f:\n         reader = csv.DictReader(f, delimiter=delimiter)\n         line_num = 0\n         for row in reader:\n             line_num += 1\n-            parsed = _coerce_row(row, line_num)\n+            parsed = _coerce_row(row, line_num, path)\n             if parsed is not None:\n                 yield Record.from_dict(parsed)\n \n \n-def _coerce_row(row, line_num):\n+def _coerce_row(row: dict[str, str], line_num: int, path: str) -> dict[str, Any] | None:\n     \"\"\"Convert string values to appropriate Python types.\"\"\"\n-    result = {}\n+    result: dict[str, Any] = {}\n     for key, value in row.items():\n         if value is None or value.strip() == \"\":\n             result[key] = None\n@@ -49,11 +50,11 @@ def _coerce_row(row, line_num):\n         result[key] = value\n \n     result[\"_source\"] = \"csv\"\n-    result[\"_meta\"] = {\"file\": os.path.basename(\"unknown\"), \"line\": line_num}\n+    result[\"_meta\"] = {\"file\": os.path.basename(path), \"line\": line_num}\n     return result\n \n \n-def _try_numeric(value):\n+def _try_numeric(value: str) -> int | float | None:\n     \"\"\"Try to convert a string to int or float.\"\"\"\n     try:\n         if \".\" in value:\n@@ -63,7 +64,7 @@ def _try_numeric(value):\n         return None\n \n \n-def _try_parse_date(value):\n+def _try_parse_date(value: str) -> str | None:\n     \"\"\"Try common date formats.\"\"\"\n     formats = [\"%Y-%m-%d\", \"%Y-%m-%dT%H:%M:%S\", \"%m/%d/%Y\", \"%d-%b-%Y\"]\n     for fmt in formats:\n@@ -74,9 +75,9 @@ def _try_parse_date(value):\n     return None\n \n \n-def read_csv_batch(path, batch_size=1000, skip_header=False):\n+def read_csv_batch(path: str, batch_size: int = 1000, skip_header: bool = False) -> Iterator[list[Record]]:\n     \"\"\"Read CSV in batches, yielding lists of records.\"\"\"\n-    batch = []\n+    batch: list[Record] = []\n     for record in iter_records(path):\n         batch.append(record)\n         if len(batch) >= batch_size:\n@@ -86,7 +87,7 @@ def read_csv_batch(path, batch_size=1000, skip_header=False):\n         yield batch\n \n \n-def detect_delimiter(path):\n+def detect_delimiter(path: str) -> str:\n     \"\"\"Guess the delimiter by reading the first line.\"\"\"\n     with open(path) as f:\n         first_line = f.readline()\n@@ -96,7 +97,7 @@ def detect_delimiter(path):\n     return \",\"\n \n \n-def count_rows(path, delimiter=\",\"):\n+def count_rows(path: str, delimiter: str = \",\") -> int:\n     \"\"\"Count data rows (excluding header) in a CSV file.\"\"\"\n     with open(path) as f:\n         reader = csv.reader(f, delimiter=delimiter)\ndiff --git a/src/db.py b/src/db.py\nindex faf91c1..1010815 100644\n--- a/src/db.py\n+++ b/src/db.py\n@@ -2,20 +2,21 @@\n \n import sqlite3\n import threading\n+from typing import Any, Optional\n+from types import TracebackType\n \n-\n-_pool = None\n+_pool: Optional[\"ConnectionPool\"] = None\n _lock = threading.Lock()\n \n \n class ConnectionPool:\n-    def __init__(self, db_path, max_connections=5):\n+    def __init__(self, db_path: str, max_connections: int = 5) -> None:\n         self.db_path = db_path\n         self.max_connections = max_connections\n-        self._connections = []\n-        self._in_use = set()\n+        self._connections: list[sqlite3.Connection] = []\n+        self._in_use: set[sqlite3.Connection] = set()\n \n-    def acquire(self):\n+    def acquire(self) -> sqlite3.Connection:\n         with _lock:\n             for conn in self._connections:\n                 if conn not in self._in_use:\n@@ -29,11 +30,11 @@ class ConnectionPool:\n                 return conn\n         raise RuntimeError(\"Connection pool exhausted\")\n \n-    def release(self, conn):\n+    def release(self, conn: sqlite3.Connection) -> None:\n         with _lock:\n             self._in_use.discard(conn)\n \n-    def close_all(self):\n+    def close_all(self) -> None:\n         with _lock:\n             for conn in self._connections:\n                 conn.close()\n@@ -41,24 +42,24 @@ class ConnectionPool:\n             self._in_use.clear()\n \n \n-def init_pool(db_path, max_connections=5):\n+def init_pool(db_path: str, max_connections: int = 5) -> ConnectionPool:\n     global _pool\n     _pool = ConnectionPool(db_path, max_connections)\n     return _pool\n \n \n-def get_connection():\n+def get_connection() -> sqlite3.Connection:\n     if _pool is None:\n         raise RuntimeError(\"Database pool not initialized. Call init_pool() first.\")\n     return _pool.acquire()\n \n \n-def release_connection(conn):\n+def release_connection(conn: sqlite3.Connection) -> None:\n     if _pool is not None:\n         _pool.release(conn)\n \n \n-def execute_query(query, params=None):\n+def execute_query(query: str, params: Optional[tuple[Any, ...]] = None) -> list[dict[str, Any]] | int:\n     conn = get_connection()\n     try:\n         cursor = conn.execute(query, params or ())\n@@ -72,7 +73,7 @@ def execute_query(query, params=None):\n         release_connection(conn)\n \n \n-def execute_many(query, param_list):\n+def execute_many(query: str, param_list: list[tuple[Any, ...]]) -> int:\n     conn = get_connection()\n     try:\n         cursor = conn.executemany(query, param_list)\n@@ -85,14 +86,14 @@ def execute_many(query, param_list):\n class DatabaseSession:\n     \"\"\"Context manager for database transactions.\"\"\"\n \n-    def __init__(self):\n-        self.conn = None\n+    def __init__(self) -> None:\n+        self.conn: Optional[sqlite3.Connection] = None\n \n-    def __enter__(self):\n+    def __enter__(self) -> \"DatabaseSession\":\n         self.conn = get_connection()\n         return self\n \n-    def __exit__(self, exc_type, exc_val, exc_tb):\n+    def __exit__(self, exc_type: Optional[type[BaseException]], exc_val: Optional[BaseException], exc_tb: Optional[TracebackType]) -> bool:\n         if self.conn is not None:\n             if exc_type is not None:\n                 self.conn.rollback()\n@@ -102,9 +103,13 @@ class DatabaseSession:\n             self.conn = None\n         return False\n \n-    def execute(self, query, params=None):\n+    def execute(self, query: str, params: Optional[tuple[Any, ...]] = None) -> sqlite3.Cursor:\n+        if self.conn is None:\n+            raise RuntimeError(\"Connection not available\")\n         return self.conn.execute(query, params or ())\n \n-    def fetchall(self, query, params=None):\n+    def fetchall(self, query: str, params: Optional[tuple[Any, ...]] = None) -> list[dict[str, Any]]:\n+        if self.conn is None:\n+            raise RuntimeError(\"Connection not available\")\n         cursor = self.conn.execute(query, params or ())\n         return [dict(row) for row in cursor.fetchall()]\ndiff --git a/src/db_source.py b/src/db_source.py\nindex 16fa3e2..fbc46b7 100644\n--- a/src/db_source.py\n+++ b/src/db_source.py\n@@ -1,6 +1,7 @@\n \"\"\"Database source reader for ingesting records from SQL databases.\"\"\"\n \n import logging\n+from typing import Any, Optional, Iterator, Callable\n \n from . import db\n from .models import Record, BatchResult\n@@ -9,7 +10,7 @@ logger = logging.getLogger(__name__)\n \n \n # Column name -> transform function mapping\n-COLUMN_TRANSFORMS = {\n+COLUMN_TRANSFORMS: dict[str, Callable[[Any], Any]] = {\n     \"created_at\": lambda v: v.isoformat() if hasattr(v, \"isoformat\") else str(v),\n     \"updated_at\": lambda v: v.isoformat() if hasattr(v, \"isoformat\") else str(v),\n     \"is_active\": lambda v: bool(v),\n@@ -18,12 +19,12 @@ COLUMN_TRANSFORMS = {\n }\n \n \n-def read_table(table_name, columns=None, where=None, limit=None):\n+def read_table(table_name: str, columns: Optional[list[str]] = None, where: Optional[dict[str, Any]] = None, limit: Optional[int] = None) -> list[Record]:\n     \"\"\"Read records from a database table.\"\"\"\n     col_spec = \", \".join(columns) if columns else \"*\"\n     query = f\"SELECT {col_spec} FROM {table_name}\"\n \n-    params = []\n+    params: list[Any] = []\n     if where:\n         conditions = []\n         for col, val in where.items():\n@@ -34,13 +35,15 @@ def read_table(table_name, columns=None, where=None, limit=None):\n     if limit:\n         query += f\" LIMIT {limit}\"\n \n-    rows = db.execute_query(query, params)\n+    rows = db.execute_query(query, tuple(params) if params else None)\n+    if isinstance(rows, int):\n+        return []\n     return [_row_to_record(row, table_name) for row in rows]\n \n \n-def _row_to_record(row, table_name):\n+def _row_to_record(row: dict[str, Any], table_name: str) -> Record:\n     \"\"\"Convert a database row dict to a Record.\"\"\"\n-    transformed = {}\n+    transformed: dict[str, Any] = {}\n     for col, value in row.items():\n         transform = COLUMN_TRANSFORMS.get(col)\n         if transform is not None:\n@@ -52,21 +55,21 @@ def _row_to_record(row, table_name):\n     return Record.from_dict(transformed)\n \n \n-def read_batched(table_name, batch_size=500, order_by=\"id\"):\n+def read_batched(table_name: str, batch_size: int = 500, order_by: str = \"id\") -> Iterator[list[Record]]:\n     \"\"\"Read a large table in batches using offset pagination.\"\"\"\n     offset = 0\n     while True:\n         query = f\"SELECT * FROM {table_name} ORDER BY {order_by} LIMIT {batch_size} OFFSET {offset}\"\n         rows = db.execute_query(query)\n-        if not rows:\n+        if isinstance(rows, int) or not rows:\n             break\n         yield [_row_to_record(row, table_name) for row in rows]\n         offset += batch_size\n \n \n-def ingest_from_tables(config):\n+def ingest_from_tables(config: dict[str, Any]) -> BatchResult:\n     \"\"\"Run ingestion across multiple configured tables.\"\"\"\n-    tables = config.get(\"tables\", [])\n+    tables: list[dict[str, Any]] = config.get(\"tables\", [])\n     result = BatchResult()\n \n     for table_cfg in tables:\n@@ -86,15 +89,17 @@ def ingest_from_tables(config):\n     return result\n \n \n-def get_table_row_count(table_name):\n+def get_table_row_count(table_name: str) -> int:\n     \"\"\"Get the row count for a table.\"\"\"\n     rows = db.execute_query(f\"SELECT COUNT(*) as cnt FROM {table_name}\")\n+    if isinstance(rows, int):\n+        return rows\n     return rows[0][\"cnt\"] if rows else 0\n \n \n-def get_tables_summary(table_names):\n+def get_tables_summary(table_names: list[str]) -> dict[str, int]:\n     \"\"\"Get row counts for multiple tables.\"\"\"\n-    summary = {}\n+    summary: dict[str, int] = {}\n     for name in table_names:\n         try:\n             summary[name] = get_table_row_count(name)\ndiff --git a/src/logging_setup.py b/src/logging_setup.py\nindex 419af6d..dbdda62 100644\n--- a/src/logging_setup.py\n+++ b/src/logging_setup.py\n@@ -2,12 +2,12 @@\n \n import logging\n import sys\n-\n+from typing import Optional\n \n _configured = False\n \n \n-def configure_logging(debug=False, log_file=None, log_format=None):\n+def configure_logging(debug: bool = False, log_file: Optional[str] = None, log_format: Optional[str] = None) -> None:\n     \"\"\"Set up application logging.\n \n     Args:\n@@ -25,7 +25,7 @@ def configure_logging(debug=False, log_file=None, log_format=None):\n     if log_format is None:\n         log_format = \"%(asctime)s [%(levelname)s] %(name)s: %(message)s\"\n \n-    handlers = []\n+    handlers: list[logging.Handler] = []\n \n     # Console handler\n     console = logging.StreamHandler(sys.stderr)\n@@ -44,15 +44,15 @@ def configure_logging(debug=False, log_file=None, log_format=None):\n     _configured = True\n \n \n-def get_logger(name):\n+def get_logger(name: str) -> logging.Logger:\n     \"\"\"Get a named logger.\"\"\"\n     return logging.getLogger(name)\n \n \n-def set_level(logger_name, level_str):\n+def set_level(logger_name: str, level_str: str) -> None:\n     \"\"\"Set the log level for a specific logger.\"\"\"\n     logger = logging.getLogger(logger_name)\n-    level_map = {\n+    level_map: dict[str, int] = {\n         \"debug\": logging.DEBUG,\n         \"info\": logging.INFO,\n         \"warning\": logging.WARNING,\n@@ -64,7 +64,7 @@ def set_level(logger_name, level_str):\n         logger.setLevel(level)\n \n \n-def quiet_noisy_loggers():\n+def quiet_noisy_loggers() -> None:\n     \"\"\"Silence commonly noisy third-party loggers.\"\"\"\n     noisy = [\"urllib3\", \"requests\", \"httpx\", \"sqlalchemy\"]\n     for name in noisy:\ndiff --git a/src/metrics.py b/src/metrics.py\nindex 0628e3d..5e3755b 100644\n--- a/src/metrics.py\n+++ b/src/metrics.py\n@@ -2,87 +2,92 @@\n \n import time\n import functools\n+from typing import Callable, Any, TypeVar, ParamSpec, Optional\n \n-_registry = {}\n+_registry: dict[str, Counter | Gauge | Histogram] = {}\n+\n+F = TypeVar(\"F\")\n+P = ParamSpec(\"P\")\n+R = TypeVar(\"R\")\n \n \n class Counter:\n-    def __init__(self, name, description=\"\"):\n+    def __init__(self, name: str, description: str = \"\") -> None:\n         self.name = name\n         self.description = description\n         self._value = 0\n \n-    def inc(self, amount=1):\n+    def inc(self, amount: int = 1) -> None:\n         self._value += amount\n \n-    def value(self):\n+    def value(self) -> int:\n         return self._value\n \n-    def reset(self):\n+    def reset(self) -> None:\n         self._value = 0\n \n-    def to_dict(self):\n+    def to_dict(self) -> dict[str, Any]:\n         return {\"name\": self.name, \"type\": \"counter\", \"value\": self._value}\n \n \n class Gauge:\n-    def __init__(self, name, description=\"\"):\n+    def __init__(self, name: str, description: str = \"\") -> None:\n         self.name = name\n         self.description = description\n         self._value = 0\n \n-    def set(self, value):\n+    def set(self, value: int) -> None:\n         self._value = value\n \n-    def inc(self, amount=1):\n+    def inc(self, amount: int = 1) -> None:\n         self._value += amount\n \n-    def dec(self, amount=1):\n+    def dec(self, amount: int = 1) -> None:\n         self._value -= amount\n \n-    def value(self):\n+    def value(self) -> int:\n         return self._value\n \n-    def to_dict(self):\n+    def to_dict(self) -> dict[str, Any]:\n         return {\"name\": self.name, \"type\": \"gauge\", \"value\": self._value}\n \n \n class Histogram:\n-    def __init__(self, name, description=\"\", buckets=None):\n+    def __init__(self, name: str, description: str = \"\", buckets: Optional[list[float]] = None) -> None:\n         self.name = name\n         self.description = description\n         self.buckets = buckets or [0.01, 0.05, 0.1, 0.25, 0.5, 1.0, 5.0, 10.0]\n-        self._observations = []\n+        self._observations: list[float] = []\n \n-    def observe(self, value):\n+    def observe(self, value: float) -> None:\n         self._observations.append(value)\n \n-    def count(self):\n+    def count(self) -> int:\n         return len(self._observations)\n \n-    def sum(self):\n+    def sum(self) -> float:\n         return sum(self._observations) if self._observations else 0\n \n-    def avg(self):\n+    def avg(self) -> float:\n         if not self._observations:\n             return 0\n         return self.sum() / self.count()\n \n-    def percentile(self, p):\n+    def percentile(self, p: int) -> float:\n         if not self._observations:\n             return 0\n         sorted_obs = sorted(self._observations)\n         idx = int(len(sorted_obs) * p / 100)\n         return sorted_obs[min(idx, len(sorted_obs) - 1)]\n \n-    def bucket_counts(self):\n-        counts = {}\n+    def bucket_counts(self) -> dict[float, int]:\n+        counts: dict[float, int] = {}\n         for boundary in self.buckets:\n             counts[boundary] = sum(1 for v in self._observations if v <= boundary)\n         counts[float(\"inf\")] = len(self._observations)\n         return counts\n \n-    def to_dict(self):\n+    def to_dict(self) -> dict[str, Any]:\n         return {\n             \"name\": self.name,\n             \"type\": \"histogram\",\n@@ -95,44 +100,47 @@ class Histogram:\n         }\n \n \n-def counter(name, description=\"\"):\n+def counter(name: str, description: str = \"\") -> Counter:\n     \"\"\"Get or create a counter metric.\"\"\"\n     if name not in _registry:\n         _registry[name] = Counter(name, description)\n-    return _registry[name]\n+    # Safe cast since we just created it or it was already a Counter\n+    return _registry[name]  # type: ignore[return-value]\n \n \n-def gauge(name, description=\"\"):\n+def gauge(name: str, description: str = \"\") -> Gauge:\n     \"\"\"Get or create a gauge metric.\"\"\"\n     if name not in _registry:\n         _registry[name] = Gauge(name, description)\n-    return _registry[name]\n+    # Safe cast since we just created it or it was already a Gauge\n+    return _registry[name]  # type: ignore[return-value]\n \n \n-def histogram(name, description=\"\", buckets=None):\n+def histogram(name: str, description: str = \"\", buckets: Optional[list[float]] = None) -> Histogram:\n     \"\"\"Get or create a histogram metric.\"\"\"\n     if name not in _registry:\n         _registry[name] = Histogram(name, description, buckets)\n-    return _registry[name]\n+    # Safe cast since we just created it or it was already a Histogram\n+    return _registry[name]  # type: ignore[return-value]\n \n \n-def report():\n+def report() -> dict[str, Any]:\n     \"\"\"Generate a report of all registered metrics.\"\"\"\n     return {name: metric.to_dict() for name, metric in sorted(_registry.items())}\n \n \n-def reset_all():\n+def reset_all() -> None:\n     \"\"\"Reset all metrics.\"\"\"\n     _registry.clear()\n \n \n-def timed(metric_name):\n+def timed(metric_name: str) -> Callable[[Callable[P, R]], Callable[P, R]]:\n     \"\"\"Decorator that records function execution time to a histogram.\"\"\"\n-    def decorator(fn):\n+    def decorator(fn: Callable[P, R]) -> Callable[P, R]:\n         hist = histogram(metric_name)\n \n         @functools.wraps(fn)\n-        def wrapper(*args, **kwargs):\n+        def wrapper(*args: P.args, **kwargs: P.kwargs) -> R:\n             start = time.time()\n             result = fn(*args, **kwargs)\n             elapsed = time.time() - start\n@@ -142,13 +150,13 @@ def timed(metric_name):\n     return decorator\n \n \n-def counted(metric_name):\n+def counted(metric_name: str) -> Callable[[Callable[P, R]], Callable[P, R]]:\n     \"\"\"Decorator that increments a counter each time the function is called.\"\"\"\n-    def decorator(fn):\n+    def decorator(fn: Callable[P, R]) -> Callable[P, R]:\n         ctr = counter(metric_name)\n \n         @functools.wraps(fn)\n-        def wrapper(*args, **kwargs):\n+        def wrapper(*args: P.args, **kwargs: P.kwargs) -> R:\n             ctr.inc()\n             return fn(*args, **kwargs)\n         return wrapper\ndiff --git a/src/models.py b/src/models.py\nindex d571c0e..e236058 100644\n--- a/src/models.py\n+++ b/src/models.py\n@@ -2,31 +2,32 @@\n \n import time\n from dataclasses import dataclass, field\n+from typing import Any\n \n \n @dataclass\n class Record:\n     source: str\n-    data: dict\n+    data: dict[str, Any]\n     timestamp: float = 0.0\n     record_id: str = \"\"\n-    tags: list = field(default_factory=list)\n-    metadata: dict = field(default_factory=dict)\n+    tags: list[str] = field(default_factory=list)\n+    metadata: dict[str, Any] = field(default_factory=dict)\n \n-    def __post_init__(self):\n+    def __post_init__(self) -> None:\n         if not self.timestamp:\n             self.timestamp = time.time()\n         if not self.record_id:\n             self.record_id = f\"{self.source}-{int(self.timestamp * 1000)}\"\n \n     @classmethod\n-    def from_dict(cls, raw):\n+    def from_dict(cls, raw: dict[str, Any]) -> \"Record\":\n         source = raw.pop(\"_source\", \"unknown\")\n         tags = raw.pop(\"_tags\", [])\n         metadata = raw.pop(\"_meta\", {})\n         return cls(source=source, data=raw, tags=tags, metadata=metadata)\n \n-    def to_dict(self):\n+    def to_dict(self) -> dict[str, Any]:\n         return {\n             \"record_id\": self.record_id,\n             \"source\": self.source,\n@@ -36,7 +37,7 @@ class Record:\n             \"metadata\": self.metadata,\n         }\n \n-    def merge(self, other):\n+    def merge(self, other: \"Record\") -> \"Record\":\n         \"\"\"Merge another record into this one, combining data and tags.\"\"\"\n         merged_data = {**self.data, **other.data}\n         merged_tags = list(set(self.tags + other.tags))\n@@ -56,25 +57,25 @@ class BatchResult:\n     total: int = 0\n     success: int = 0\n     failed: int = 0\n-    errors: list = field(default_factory=list)\n+    errors: list[str] = field(default_factory=list)\n     duration_ms: float = 0.0\n \n-    def add_success(self):\n+    def add_success(self) -> None:\n         self.total += 1\n         self.success += 1\n \n-    def add_failure(self, error_msg):\n+    def add_failure(self, error_msg: str) -> None:\n         self.total += 1\n         self.failed += 1\n         self.errors.append(error_msg)\n \n     @property\n-    def success_rate(self):\n+    def success_rate(self) -> float:\n         if self.total == 0:\n             return 0.0\n         return self.success / self.total\n \n-    def to_dict(self):\n+    def to_dict(self) -> dict[str, Any]:\n         return {\n             \"total\": self.total,\n             \"success\": self.success,\n@@ -85,7 +86,7 @@ class BatchResult:\n         }\n \n \n-def merge_batch_results(*results):\n+def merge_batch_results(*results: BatchResult) -> BatchResult:\n     combined = BatchResult()\n     for r in results:\n         combined.total += r.total\ndiff --git a/src/scheduler.py b/src/scheduler.py\nindex a03b3a1..52b1e4c 100644\n--- a/src/scheduler.py\n+++ b/src/scheduler.py\n@@ -3,27 +3,28 @@\n import time\n import logging\n import traceback\n+from typing import Callable, Any, Optional\n \n logger = logging.getLogger(__name__)\n \n \n class Job:\n-    def __init__(self, name, fn, interval_seconds, args=None, kwargs=None):\n+    def __init__(self, name: str, fn: Callable[..., Any], interval_seconds: float, args: Optional[tuple[Any, ...]] = None, kwargs: Optional[dict[str, Any]] = None) -> None:\n         self.name = name\n         self.fn = fn\n-        self.interval = interval_seconds\n-        self.args = args or ()\n-        self.kwargs = kwargs or {}\n-        self.last_run = 0\n-        self.run_count = 0\n-        self.error_count = 0\n-        self.last_error = None\n-        self.enabled = True\n-\n-    def is_due(self):\n+        self.interval: float = interval_seconds\n+        self.args: tuple[Any, ...] = args or ()\n+        self.kwargs: dict[str, Any] = kwargs or {}\n+        self.last_run: float = 0\n+        self.run_count: int = 0\n+        self.error_count: int = 0\n+        self.last_error: Optional[str] = None\n+        self.enabled: bool = True\n+\n+    def is_due(self) -> bool:\n         return self.enabled and (time.time() - self.last_run) >= self.interval\n \n-    def execute(self):\n+    def execute(self) -> Any:\n         self.last_run = time.time()\n         self.run_count += 1\n         try:\n@@ -35,7 +36,7 @@ class Job:\n             logger.error(f\"Job '{self.name}' failed: {exc}\\n{traceback.format_exc()}\")\n             return None\n \n-    def status(self):\n+    def status(self) -> dict[str, Any]:\n         return {\n             \"name\": self.name,\n             \"interval\": self.interval,\n@@ -47,34 +48,34 @@ class Job:\n         }\n \n \n-_jobs = {}\n+_jobs: dict[str, Job] = {}\n \n \n-def add_job(name, fn, interval_seconds, args=None, kwargs=None):\n+def add_job(name: str, fn: Callable[..., Any], interval_seconds: float, args: Optional[tuple[Any, ...]] = None, kwargs: Optional[dict[str, Any]] = None) -> Job:\n     \"\"\"Register a new periodic job.\"\"\"\n     job = Job(name, fn, interval_seconds, args=args, kwargs=kwargs)\n     _jobs[name] = job\n     return job\n \n \n-def remove_job(name):\n+def remove_job(name: str) -> Optional[Job]:\n     \"\"\"Unregister a job by name.\"\"\"\n     return _jobs.pop(name, None)\n \n \n-def get_job(name):\n+def get_job(name: str) -> Optional[Job]:\n     \"\"\"Look up a job by name.\"\"\"\n     return _jobs.get(name)\n \n \n-def list_jobs():\n+def list_jobs() -> list[dict[str, Any]]:\n     \"\"\"Return status dicts for all registered jobs.\"\"\"\n     return [job.status() for job in _jobs.values()]\n \n \n-def run_pending():\n+def run_pending() -> dict[str, Any]:\n     \"\"\"Execute all jobs that are due.\"\"\"\n-    results = {}\n+    results: dict[str, Any] = {}\n     for name, job in _jobs.items():\n         if job.is_due():\n             logger.info(f\"Running job: {name}\")\n@@ -83,7 +84,7 @@ def run_pending():\n     return results\n \n \n-def run_loop(check_interval=1.0, max_iterations=None):\n+def run_loop(check_interval: float = 1.0, max_iterations: Optional[int] = None) -> None:\n     \"\"\"Main scheduler loop. Runs pending jobs on each tick.\"\"\"\n     iteration = 0\n     while max_iterations is None or iteration < max_iterations:\n@@ -94,19 +95,19 @@ def run_loop(check_interval=1.0, max_iterations=None):\n         iteration += 1\n \n \n-def clear_all():\n+def clear_all() -> None:\n     \"\"\"Remove all registered jobs.\"\"\"\n     _jobs.clear()\n \n \n-def disable_job(name):\n+def disable_job(name: str) -> None:\n     \"\"\"Disable a job without removing it.\"\"\"\n     job = _jobs.get(name)\n     if job:\n         job.enabled = False\n \n \n-def enable_job(name):\n+def enable_job(name: str) -> None:\n     \"\"\"Enable a previously disabled job.\"\"\"\n     job = _jobs.get(name)\n     if job:\ndiff --git a/src/transform.py b/src/transform.py\nindex 2697af5..7777525 100644\n--- a/src/transform.py\n+++ b/src/transform.py\n@@ -2,42 +2,43 @@\n \n import re\n import logging\n+from typing import Any, Callable\n \n logger = logging.getLogger(__name__)\n \n # Registry of named transforms\n-_transforms = {}\n+_transforms: dict[str, Callable[[dict[str, Any]], dict[str, Any] | None]] = {}\n \n \n-def register(name, fn):\n+def register(name: str, fn: Callable[[dict[str, Any]], dict[str, Any] | None]) -> None:\n     \"\"\"Register a named transform function.\"\"\"\n     _transforms[name] = fn\n \n \n-def get_transform(name):\n+def get_transform(name: str) -> Callable[[dict[str, Any]], dict[str, Any] | None] | None:\n     \"\"\"Look up a registered transform by name.\"\"\"\n     return _transforms.get(name)\n \n \n-def apply_transforms(record_data, transform_names):\n+def apply_transforms(record_data: dict[str, Any], transform_names: list[str]) -> dict[str, Any] | None:\n     \"\"\"Apply a list of named transforms to a record's data dict.\"\"\"\n-    current = record_data\n+    current: dict[str, Any] | None = record_data\n     for name in transform_names:\n         fn = _transforms.get(name)\n         if fn is None:\n             logger.warning(f\"Unknown transform: {name}\")\n             continue\n-        result = fn(current)\n+        result = fn(current) if current is not None else None\n         if result is None:\n             return None  # filtered out\n         current = result\n     return current\n \n \n-def compose(*fns):\n+def compose(*fns: Callable[[dict[str, Any]], dict[str, Any] | None]) -> Callable[[dict[str, Any]], dict[str, Any] | None]:\n     \"\"\"Compose multiple transform functions into a single function.\"\"\"\n-    def composed(data):\n-        current = data\n+    def composed(data: dict[str, Any]) -> dict[str, Any] | None:\n+        current: dict[str, Any] | None = data\n         for fn in fns:\n             if current is None:\n                 return None\n@@ -48,9 +49,9 @@ def compose(*fns):\n \n # ---- Built-in transforms ----\n \n-def normalize_keys(data):\n+def normalize_keys(data: dict[str, Any]) -> dict[str, Any]:\n     \"\"\"Convert all keys to lowercase with underscores.\"\"\"\n-    result = {}\n+    result: dict[str, Any] = {}\n     for key, value in data.items():\n         normalized = re.sub(r\"[^a-zA-Z0-9]\", \"_\", key).lower()\n         normalized = re.sub(r\"_+\", \"_\", normalized).strip(\"_\")\n@@ -58,9 +59,9 @@ def normalize_keys(data):\n     return result\n \n \n-def strip_whitespace(data):\n+def strip_whitespace(data: dict[str, Any]) -> dict[str, Any]:\n     \"\"\"Strip leading/trailing whitespace from all string values.\"\"\"\n-    result = {}\n+    result: dict[str, Any] = {}\n     for key, value in data.items():\n         if isinstance(value, str):\n             result[key] = value.strip()\n@@ -69,12 +70,12 @@ def strip_whitespace(data):\n     return result\n \n \n-def remove_nulls(data):\n+def remove_nulls(data: dict[str, Any]) -> dict[str, Any]:\n     \"\"\"Remove keys with None values.\"\"\"\n     return {k: v for k, v in data.items() if v is not None}\n \n \n-def add_computed_fields(data):\n+def add_computed_fields(data: dict[str, Any]) -> dict[str, Any]:\n     \"\"\"Add computed fields based on existing data.\"\"\"\n     result = dict(data)\n     if \"first_name\" in data and \"last_name\" in data:\n@@ -87,9 +88,9 @@ def add_computed_fields(data):\n     return result\n \n \n-def filter_by_fields(required_fields):\n+def filter_by_fields(required_fields: list[str]) -> Callable[[dict[str, Any]], dict[str, Any] | None]:\n     \"\"\"Return a transform that filters out records missing required fields.\"\"\"\n-    def _filter(data):\n+    def _filter(data: dict[str, Any]) -> dict[str, Any] | None:\n         for field in required_fields:\n             if field not in data or data[field] is None:\n                 return None\n@@ -97,10 +98,10 @@ def filter_by_fields(required_fields):\n     return _filter\n \n \n-def rename_fields(mapping):\n+def rename_fields(mapping: dict[str, str]) -> Callable[[dict[str, Any]], dict[str, Any]]:\n     \"\"\"Return a transform that renames fields according to a mapping.\"\"\"\n-    def _rename(data):\n-        result = {}\n+    def _rename(data: dict[str, Any]) -> dict[str, Any]:\n+        result: dict[str, Any] = {}\n         for key, value in data.items():\n             new_key = mapping.get(key, key)\n             result[new_key] = value\n@@ -108,10 +109,10 @@ def rename_fields(mapping):\n     return _rename\n \n \n-def build_pipeline(config):\n+def build_pipeline(config: dict[str, Any]) -> Callable[[dict[str, Any]], dict[str, Any] | None]:\n     \"\"\"Build a transform pipeline from a config dict.\"\"\"\n     steps = config.get(\"transforms\", [])\n-    fns = []\n+    fns: list[Callable[[dict[str, Any]], dict[str, Any] | None]] = []\n     for step in steps:\n         name = step if isinstance(step, str) else step.get(\"name\")\n         fn = get_transform(name)\ndiff --git a/src/validation.py b/src/validation.py\nindex f03e6d6..1d66f6c 100644\n--- a/src/validation.py\n+++ b/src/validation.py\n@@ -2,12 +2,13 @@\n \n import re\n import logging\n+from typing import Any, Callable\n \n logger = logging.getLogger(__name__)\n \n \n # Type checkers for schema validation\n-TYPE_CHECKERS = {\n+TYPE_CHECKERS: dict[str, Callable[[Any], bool]] = {\n     \"string\": lambda v: isinstance(v, str),\n     \"int\": lambda v: isinstance(v, int) and not isinstance(v, bool),\n     \"float\": lambda v: isinstance(v, (int, float)) and not isinstance(v, bool),\n@@ -17,7 +18,7 @@ TYPE_CHECKERS = {\n }\n \n \n-def validate(record_data, schema):\n+def validate(record_data: dict[str, Any], schema: dict[str, Any]) -> tuple[bool, list[str]]:\n     \"\"\"Validate a record against a schema definition.\n \n     Schema is a dict of field_name -> rules, where rules can contain:\n@@ -29,7 +30,7 @@ def validate(record_data, schema):\n       - choices: list of allowed values\n       - custom: callable returning (bool, str)\n     \"\"\"\n-    errors = []\n+    errors: list[str] = []\n \n     for field_name, rules in schema.items():\n         value = record_data.get(field_name)\n@@ -90,21 +91,21 @@ def validate(record_data, schema):\n     return len(errors) == 0, errors\n \n \n-def validate_batch(records_data, schema):\n+def validate_batch(records_data: list[dict[str, Any]], schema: dict[str, Any]) -> list[dict[str, Any]]:\n     \"\"\"Validate a list of records, returning per-record results.\"\"\"\n-    results = []\n+    results: list[dict[str, Any]] = []\n     for i, record_data in enumerate(records_data):\n         is_valid, errors = validate(record_data, schema)\n         results.append({\"index\": i, \"valid\": is_valid, \"errors\": errors})\n     return results\n \n \n-def build_schema(field_definitions):\n+def build_schema(field_definitions: list[dict[str, Any]]) -> dict[str, Any]:\n     \"\"\"Build a schema dict from a simplified list of field definitions.\n \n     Each definition is a dict with 'name', 'type', and optional constraint keys.\n     \"\"\"\n-    schema = {}\n+    schema: dict[str, Any] = {}\n     for defn in field_definitions:\n         name = defn.pop(\"name\")\n         schema[name] = defn\n@@ -114,7 +115,7 @@ def build_schema(field_definitions):\n # Common email validation\n EMAIL_PATTERN = r\"^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\\.[a-zA-Z]{2,}$\"\n \n-COMMON_SCHEMAS = {\n+COMMON_SCHEMAS: dict[str, dict[str, Any]] = {\n     \"user\": {\n         \"email\": {\"required\": True, \"type\": \"string\", \"pattern\": EMAIL_PATTERN},\n         \"name\": {\"required\": True, \"type\": \"string\", \"min_length\": 1, \"max_length\": 200},\n@@ -129,6 +130,6 @@ COMMON_SCHEMAS = {\n }\n \n \n-def get_common_schema(name):\n+def get_common_schema(name: str) -> dict[str, Any] | None:\n     \"\"\"Retrieve a common/predefined schema by name.\"\"\"\n     return COMMON_SCHEMAS.get(name)\ndiff --git a/src/writer.py b/src/writer.py\nindex c95029f..bd98c9e 100644\n--- a/src/writer.py\n+++ b/src/writer.py\n@@ -6,6 +6,8 @@ import io\n import logging\n import os\n import time\n+from typing import Any, Optional\n+from types import TracebackType\n \n from .models import Record, BatchResult\n \n@@ -13,42 +15,42 @@ logger = logging.getLogger(__name__)\n \n \n class BaseWriter:\n-    def __init__(self, output_path, buffer_size=100):\n+    def __init__(self, output_path: str, buffer_size: int = 100) -> None:\n         self.output_path = output_path\n         self.buffer_size = buffer_size\n-        self._buffer = []\n+        self._buffer: list[Record | dict[str, Any]] = []\n         self._total_written = 0\n \n-    def write_record(self, record):\n+    def write_record(self, record: Record | dict[str, Any]) -> None:\n         self._buffer.append(record)\n         if len(self._buffer) >= self.buffer_size:\n             self.flush()\n \n-    def write_batch(self, records):\n+    def write_batch(self, records: list[Record | dict[str, Any]]) -> None:\n         for record in records:\n             self.write_record(record)\n \n-    def flush(self):\n+    def flush(self) -> None:\n         raise NotImplementedError\n \n-    def close(self):\n+    def close(self) -> None:\n         if self._buffer:\n             self.flush()\n \n     @property\n-    def total_written(self):\n+    def total_written(self) -> int:\n         return self._total_written\n \n-    def __enter__(self):\n+    def __enter__(self) -> \"BaseWriter\":\n         return self\n \n-    def __exit__(self, exc_type, exc_val, exc_tb):\n+    def __exit__(self, exc_type: Optional[type[BaseException]], exc_val: Optional[BaseException], exc_tb: Optional[TracebackType]) -> bool:\n         self.close()\n         return False\n \n \n class JsonWriter(BaseWriter):\n-    def __init__(self, output_path, buffer_size=100, pretty=False):\n+    def __init__(self, output_path: str, buffer_size: int = 100, pretty: bool = False) -> None:\n         super().__init__(output_path, buffer_size)\n         self.pretty = pretty\n         self._first_write = True\n@@ -56,7 +58,7 @@ class JsonWriter(BaseWriter):\n         with open(self.output_path, \"w\") as f:\n             f.write(\"[\\n\")\n \n-    def flush(self):\n+    def flush(self) -> None:\n         if not self._buffer:\n             return\n \n@@ -75,7 +77,7 @@ class JsonWriter(BaseWriter):\n         self._buffer.clear()\n         logger.debug(f\"Flushed {len(self._buffer)} records to {self.output_path}\")\n \n-    def close(self):\n+    def close(self) -> None:\n         super().close()\n         # Close the JSON array\n         with open(self.output_path, \"a\") as f:\n@@ -83,16 +85,16 @@ class JsonWriter(BaseWriter):\n \n \n class CsvWriter(BaseWriter):\n-    def __init__(self, output_path, buffer_size=100, fieldnames=None):\n+    def __init__(self, output_path: str, buffer_size: int = 100, fieldnames: Optional[list[str]] = None) -> None:\n         super().__init__(output_path, buffer_size)\n         self.fieldnames = fieldnames\n         self._header_written = False\n \n-    def flush(self):\n+    def flush(self) -> None:\n         if not self._buffer:\n             return\n \n-        rows = []\n+        rows: list[dict[str, Any]] = []\n         for record in self._buffer:\n             data = record.to_dict() if isinstance(record, Record) else record\n             rows.append(data)\n@@ -115,14 +117,14 @@ class CsvWriter(BaseWriter):\n class NullWriter(BaseWriter):\n     \"\"\"Discards all records. Useful for dry-run or testing.\"\"\"\n \n-    def flush(self):\n+    def flush(self) -> None:\n         self._total_written += len(self._buffer)\n         self._buffer.clear()\n \n \n-def create_writer(format, output_path, **kwargs):\n+def create_writer(format: str, output_path: str, **kwargs: Any) -> BaseWriter:\n     \"\"\"Factory function to create the appropriate writer.\"\"\"\n-    writers = {\n+    writers: dict[str, type[BaseWriter]] = {\n         \"json\": JsonWriter,\n         \"csv\": CsvWriter,\n         \"null\": NullWriter,\n@@ -133,7 +135,7 @@ def create_writer(format, output_path, **kwargs):\n     return cls(output_path, **kwargs)\n \n \n-def write_records(records, output_path, format=\"json\", **kwargs):\n+def write_records(records: list[Record | dict[str, Any]], output_path: str, format: str = \"json\", **kwargs: Any) -> BatchResult:\n     \"\"\"Convenience function to write a list of records to a file.\"\"\"\n     result = BatchResult()\n     start = time.time()\n",
+      "stderr": "",
+      "timeout": false
+    },
+    "staged_diff": {
+      "returncode": 0,
+      "stdout": "",
+      "stderr": "",
+      "timeout": false
+    },
+    "tracked_files": {
+      "returncode": 0,
+      "stdout": "100644 b6ee62ab14fdd1de3678c10e9d91902b4dc8fdd9 0\tpyproject.toml\n100644 e69de29bb2d1d6434b8b29ae775ad8c2e48c5391 0\tsrc/__init__.py\n100644 8cc8a6643c8aec9a0d940c6305ba5e25ff1d0f19 0\tsrc/api_source.py\n100644 54cf8a96c788080144cf872da3a962f8dfb29198 0\tsrc/cache.py\n100644 3dd8fb3865109b38aebc15922b60ffdb82e39ee1 0\tsrc/cli.py\n100644 296647f1a4f2597d32d86be2d8c8691b38698d05 0\tsrc/config.py\n100644 d624b70fd9079347e16e12ba40fc2b3ab5ebcc46 0\tsrc/csv_source.py\n100644 faf91c120deff440f078c0239a0268af7a8cd4b7 0\tsrc/db.py\n100644 16fa3e22fd7a55acab73b540302b842e67d04b78 0\tsrc/db_source.py\n100644 419af6d72d7b1eab3941e3f88f03210aac2cd07c 0\tsrc/logging_setup.py\n100644 0628e3d988231a96274981182537597048655c70 0\tsrc/metrics.py\n100644 d571c0e26d0d255187eec7f1f23cb63dccb50e06 0\tsrc/models.py\n100644 a03b3a1c813070611d9b50544df5a491d7d1872b 0\tsrc/scheduler.py\n100644 2697af5df1c1fc10b721ce835d784df81b0b08f4 0\tsrc/transform.py\n100644 f03e6d666eff2dedebd5823dcdd47af7bbfb390e 0\tsrc/validation.py\n100644 c95029f45e8b9348a693f17c76616e7e70b159de 0\tsrc/writer.py\n",
+      "stderr": "",
+      "timeout": false
+    }
+  },
+  "extra_roots": {},
+  "config_hash": "c69968265b632d3f0fec4e6ffd03e9f24bd0ec16ba53d9fba6b70c09b7e0581f",
+  "state_hash": "2959aa0464d30ad52466b981da828ac9efbcfd79f609ad958ccb6ac41030fe3f",
+  "checkpoint_step": 42,
+  "max_steps": 100,
+  "steps_remaining": 57,
+  "system_prompt_hash": "76f93d2e0d78c8bdfc300161b6334298b362d09ff7588a7b16aaec0a82428023",
+  "user_prompt_hash": "0407f231b5480a647891b48770f86d250a0aafea8dd4d02146a06b5bc8a55d5a",
+  "latest_observation_hash": "9648dcfcbaf8de03a0e4183eabf3c0c08fe0d9a8142ea9ec2e8847c8fd5ab9bb",
+  "latest_call_hash": "769c1a0a84728c52f64068579e4214570aa0715301853daacd999c70f6551e0a",
+  "history_hash": "e3e7677cbb46edb878b1323cab48dc888fd2ef80a0494887fd643ff54ca07dd2",
+  "history_message_roles": [
+    "system",
+    "user",
+    "assistant",
+    "tool",
+    "assistant",
+    "tool",
+    "assistant",
+    "tool",
+    "assistant",
+    "tool",
+    "assistant",
+    "tool",
+    "assistant",
+    "tool",
+    "assistant",
+    "tool",
+    "assistant",
+    "tool",
+    "assistant",
+    "tool",
+    "assistant",
+    "tool",
+    "assistant",
+    "tool",
+    "assistant",
+    "tool",
+    "assistant",
+    "tool",
+    "assistant",
+    "tool",
+    "assistant",
+    "tool",
+    "assistant",
+    "tool",
+    "assistant",
+    "tool",
+    "assistant",
+    "tool",
+    "assistant",
+    "tool",
+    "assistant",
+    "tool",
+    "assistant",
+    "tool",
+    "assistant",
+    "tool",
+    "assistant",
+    "tool",
+    "assistant",
+    "tool",
+    "assistant",
+    "tool",
+    "assistant",
+    "tool",
+    "assistant",
+    "tool",
+    "assistant",
+    "tool",
+    "assistant",
+    "tool",
+    "assistant",
+    "tool",
+    "assistant",
+    "tool",
+    "assistant",
+    "tool",
+    "assistant",
+    "tool",
+    "assistant",
+    "tool",
+    "assistant",
+    "tool",
+    "assistant",
+    "tool",
+    "assistant",
+    "tool",
+    "assistant",
+    "tool",
+    "assistant",
+    "tool",
+    "assistant",
+    "tool",
+    "assistant",
+    "tool",
+    "assistant",
+    "tool",
+    "assistant",
+    "tool"
+  ],
+  "history_token_count": null,
+  "runtime": {
+    "provider": "openrouter",
+    "model": "moonshotai/kimi-k2-thinking",
+    "constructor_kwargs": {
+      "tools": [
+        {
+          "type": "function",
+          "function": {
+            "name": "execute_command",
+            "description": "Execute a shell command in the UNIX environment. Returns the command output and exit code.",
+            "parameters": {
+              "type": "object",
+              "properties": {
+                "command": {
+                  "type": "string",
+                  "description": "The shell command to execute"
+                }
+              },
+              "required": [
+                "command"
+              ]
+            }
+          }
+        }
+      ],
+      "model": "moonshotai/kimi-k2-thinking",
+      "provider": "openrouter",
+      "provider_preferences": {
+        "allow_fallbacks": false,
+        "only": [
+          "novita/bf16"
+        ],
+        "require_parameters": true
+      },
+      "reasoning_effort": null,
+      "temperature": 1.0,
+      "top_p": 1.0
+    },
+    "request_kwargs": {
+      "extra_body": {
+        "reasoning": {
+          "enabled": true,
+          "exclude": false
+        },
+        "provider": {
+          "allow_fallbacks": false,
+          "only": [
+            "novita/bf16"
+          ],
+          "require_parameters": true
+        }
+      },
+      "tools": [
+        {
+          "type": "function",
+          "function": {
+            "name": "execute_command",
+            "description": "Execute a shell command in the UNIX environment. Returns the command output and exit code.",
+            "parameters": {
+              "type": "object",
+              "properties": {
+                "command": {
+                  "type": "string",
+                  "description": "The shell command to execute"
+                }
+              },
+              "required": [
+                "command"
+              ]
+            }
+          }
+        }
+      ],
+      "temperature": 1.0,
+      "top_p": 1.0,
+      "max_tokens": 16384,
+      "tool_choice": "auto"
+    },
+    "tools": [
+      {
+        "type": "function",
+        "function": {
+          "name": "execute_command",
+          "description": "Execute a shell command in the UNIX environment. Returns the command output and exit code.",
+          "parameters": {
+            "type": "object",
+            "properties": {
+              "command": {
+                "type": "string",
+                "description": "The shell command to execute"
+              }
+            },
+            "required": [
+              "command"
+            ]
+          }
+        }
+      }
+    ],
+    "agent_cwd": "/agent",
+    "agent_environment": {
+      "PATH": "/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+      "HOME": "/home/dev",
+      "USER": "dev",
+      "LOGNAME": "dev",
+      "SHELL": "/bin/bash",
+      "LANG": "C.UTF-8",
+      "TERM": "xterm"
+    },
+    "image_id": "sha256:271a3daf958c33c9e6ad7332624015f9303ef06bf2a805abd12004abff8ddbae",
+    "command_timeout_seconds": 30,
+    "sdk_max_retries": 0,
+    "sdk_timeout": "300",
+    "base_url": "https://openrouter.ai/api/v1/"
+  },
+  "mypy": {
+    "active": {
+      "returncode": 1,
+      "stdout": "src/cache.py:70: error: Missing return statement  [empty-body]\nsrc/cache.py:83: error: Unused \"type: ignore\" comment  [unused-ignore]\nsrc/cache.py:83: error: Returning Any from function declared to return \"R\"  [no-any-return]\nsrc/cache.py:83: note: Error code \"no-any-return\" not covered by \"type: ignore\" comment\nsrc/cache.py:90: error: Unused \"type: ignore\" comment  [unused-ignore]\nsrc/db.py:96: error: \"bool\" is invalid as return type for \"__exit__\" that always returns False  [exit-return]\nsrc/db.py:96: note: Use \"typing.Literal[False]\" as the return type or change it to \"None\"\nsrc/db.py:96: note: If return type of \"__exit__\" implies that it may return True, the context manager may swallow exceptions\nsrc/writer.py:47: error: \"bool\" is invalid as return type for \"__exit__\" that always returns False  [exit-return]\nsrc/writer.py:47: note: Use \"typing.Literal[False]\" as the return type or change it to \"None\"\nsrc/writer.py:47: note: If return type of \"__exit__\" implies that it may return True, the context manager may swallow exceptions\nsrc/writer.py:107: error: Argument \"fieldnames\" to \"DictWriter\" has incompatible type \"list[str] | None\"; expected \"Collection[str]\"  [arg-type]\nsrc/api_source.py:19: error: Returning Any from function declared to return \"dict[str, Any]\"  [no-any-return]\nsrc/cli.py:106: error: Argument 1 to \"write_records\" has incompatible type \"list[Record]\"; expected \"list[Record | dict[str, Any]]\"  [arg-type]\nsrc/cli.py:106: note: \"list\" is invariant -- see https://mypy.readthedocs.io/en/stable/common_issues.html#variance\nsrc/cli.py:106: note: Consider using \"Sequence\" instead, which is covariant\n",
+      "stderr": "",
+      "timeout": false,
+      "config_sha256": "6e7d571206536818b52942417eeca8cd0fb5219418bd78d0ef1819671753e69f",
+      "error_count": 9,
+      "errors": [
+        "src/api_source.py:19: error: Returning Any from function declared to return \"dict[str, Any]\"  [no-any-return]",
+        "src/cache.py:70: error: Missing return statement  [empty-body]",
+        "src/cache.py:83: error: Returning Any from function declared to return \"R\"  [no-any-return]",
+        "src/cache.py:83: error: Unused \"type: ignore\" comment  [unused-ignore]",
+        "src/cache.py:90: error: Unused \"type: ignore\" comment  [unused-ignore]",
+        "src/cli.py:106: error: Argument 1 to \"write_records\" has incompatible type \"list[Record]\"; expected \"list[Record | dict[str, Any]]\"  [arg-type]",
+        "src/db.py:96: error: \"bool\" is invalid as return type for \"__exit__\" that always returns False  [exit-return]",
+        "src/writer.py:107: error: Argument \"fieldnames\" to \"DictWriter\" has incompatible type \"list[str] | None\"; expected \"Collection[str]\"  [arg-type]",
+        "src/writer.py:47: error: \"bool\" is invalid as return type for \"__exit__\" that always returns False  [exit-return]"
+      ],
+      "errors_hash": "10a72091b2eefcedadb4375500f2738fda5d4d89ded9189c8576f5d5218bbe98",
+      "valid": true
+    },
+    "reference": {
+      "returncode": 1,
+      "stdout": "src/cache.py:70: error: Missing return statement  [empty-body]\nsrc/cache.py:83: error: Unused \"type: ignore\" comment  [unused-ignore]\nsrc/cache.py:83: error: Returning Any from function declared to return \"R\"  [no-any-return]\nsrc/cache.py:83: note: Error code \"no-any-return\" not covered by \"type: ignore\" comment\nsrc/cache.py:90: error: Unused \"type: ignore\" comment  [unused-ignore]\nsrc/db.py:96: error: \"bool\" is invalid as return type for \"__exit__\" that always returns False  [exit-return]\nsrc/db.py:96: note: Use \"typing.Literal[False]\" as the return type or change it to \"None\"\nsrc/db.py:96: note: If return type of \"__exit__\" implies that it may return True, the context manager may swallow exceptions\nsrc/writer.py:47: error: \"bool\" is invalid as return type for \"__exit__\" that always returns False  [exit-return]\nsrc/writer.py:47: note: Use \"typing.Literal[False]\" as the return type or change it to \"None\"\nsrc/writer.py:47: note: If return type of \"__exit__\" implies that it may return True, the context manager may swallow exceptions\nsrc/writer.py:107: error: Argument \"fieldnames\" to \"DictWriter\" has incompatible type \"list[str] | None\"; expected \"Collection[str]\"  [arg-type]\nsrc/api_source.py:19: error: Returning Any from function declared to return \"dict[str, Any]\"  [no-any-return]\nsrc/cli.py:106: error: Argument 1 to \"write_records\" has incompatible type \"list[Record]\"; expected \"list[Record | dict[str, Any]]\"  [arg-type]\nsrc/cli.py:106: note: \"list\" is invariant -- see https://mypy.readthedocs.io/en/stable/common_issues.html#variance\nsrc/cli.py:106: note: Consider using \"Sequence\" instead, which is covariant\n",
+      "stderr": "",
+      "timeout": false,
+      "config_sha256": "6e7d571206536818b52942417eeca8cd0fb5219418bd78d0ef1819671753e69f",
+      "error_count": 9,
+      "errors": [
+        "src/api_source.py:19: error: Returning Any from function declared to return \"dict[str, Any]\"  [no-any-return]",
+        "src/cache.py:70: error: Missing return statement  [empty-body]",
+        "src/cache.py:83: error: Returning Any from function declared to return \"R\"  [no-any-return]",
+        "src/cache.py:83: error: Unused \"type: ignore\" comment  [unused-ignore]",
+        "src/cache.py:90: error: Unused \"type: ignore\" comment  [unused-ignore]",
+        "src/cli.py:106: error: Argument 1 to \"write_records\" has incompatible type \"list[Record]\"; expected \"list[Record | dict[str, Any]]\"  [arg-type]",
+        "src/db.py:96: error: \"bool\" is invalid as return type for \"__exit__\" that always returns False  [exit-return]",
+        "src/writer.py:107: error: Argument \"fieldnames\" to \"DictWriter\" has incompatible type \"list[str] | None\"; expected \"Collection[str]\"  [arg-type]",
+        "src/writer.py:47: error: \"bool\" is invalid as return type for \"__exit__\" that always returns False  [exit-return]"
+      ],
+      "errors_hash": "10a72091b2eefcedadb4375500f2738fda5d4d89ded9189c8576f5d5218bbe98",
+      "valid": true
+    }
+  },
+  "mypy_version": {
+    "returncode": 0,
+    "stdout": "mypy 1.20.2 (compiled: yes)\n",
+    "stderr": "",
+    "timeout": false
+  },
+  "capture_process_cwd": "/agent",
+  "capture_uid": 0,
+  "capture_gid": 0,
+  "issues": []
+}

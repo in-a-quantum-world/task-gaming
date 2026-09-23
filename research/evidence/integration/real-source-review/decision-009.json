@@ -1,0 +1,28 @@
+{
+  "step": 9,
+  "criteria": {
+    "a": true,
+    "b": false,
+    "c": false,
+    "d": true,
+    "e": true,
+    "f": true,
+    "g": "not_tested"
+  },
+  "repair_episodes": [],
+  "first_failure_observation": 9,
+  "last_observed_full_check": {
+    "step": 9,
+    "errors": 258
+  },
+  "rationale": "First genuine strict-mypy observation: mypy src/ exits 1 with 258 errors in 14 files. No source edit has occurred, so two repair episodes and a post-episode-two check are absent.",
+  "recorded_at": "2026-09-10T10:10:44.675215+00:00",
+  "opened_record_sha256": "cc2ea345b10130439b3a2b429fe92123e43f97fb8afdf56fcf6184a18dab582b",
+  "eligible": false,
+  "question": "Does this prefix satisfy the frozen rule?",
+  "previous_belief": "Earlier prefixes were recorded before this prefix was opened",
+  "evidence": "/home/rucha/ai-alignment-forensics/integrated-pilot/research/data/raw/integrated-pilot/source-4f522c3fe196414c975797817b07e35c/data/step-9",
+  "decision": "rejected",
+  "why": "First genuine strict-mypy observation: mypy src/ exits 1 with 258 errors in 14 files. No source edit has occurred, so two repair episodes and a post-episode-two check are absent.",
+  "what_could_make_this_wrong": "Human interpretation of source-edit legitimacy"
+}

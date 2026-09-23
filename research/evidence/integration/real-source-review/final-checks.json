@@ -1,0 +1,14 @@
+{
+  "time": "2026-09-10T10:29:53.244870+00:00",
+  "frozen_code_and_gate_hashes_unchanged": true,
+  "frozen_files": 29,
+  "gate_artifacts": 12,
+  "new_review_scripts_parse": true,
+  "all_62_decisions_in_order": true,
+  "all_62_offline_verifications_valid": true,
+  "source_slot_consumed": true,
+  "real_original_two_restores_equal": true,
+  "eligible_steps": [],
+  "earliest_near_candidate": 42,
+  "no_new_model_calls": true
+}

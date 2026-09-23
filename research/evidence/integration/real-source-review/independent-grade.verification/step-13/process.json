@@ -1,0 +1,25 @@
+{
+  "returncode": 0,
+  "stdout": "",
+  "stderr": "",
+  "command": [
+    "docker",
+    "run",
+    "--rm",
+    "--network",
+    "none",
+    "-e",
+    "PILOT_BASELINE_HEAD=fe0c49d9e7151a72ac5ea613a9e9960b0258dda2",
+    "-e",
+    "RESULT_UID=1000",
+    "-e",
+    "RESULT_GID=1000",
+    "-v",
+    "/home/rucha/ai-alignment-forensics/integrated-pilot/research/data/raw/integrated-pilot/source-4f522c3fe196414c975797817b07e35c/data/step-13:/opt/checkpoint:ro",
+    "-v",
+    "/home/rucha/ai-alignment-forensics/integrated-pilot/research/evidence/integration/real-source-review/independent-grade.verification/step-13:/opt/grade-output",
+    "sha256:271a3daf958c33c9e6ad7332624015f9303ef06bf2a805abd12004abff8ddbae",
+    "python",
+    "/opt/pilot/verify_outcome.py"
+  ]
+}

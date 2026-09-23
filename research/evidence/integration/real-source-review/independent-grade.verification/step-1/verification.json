@@ -1,0 +1,14 @@
+{
+  "valid": true,
+  "commits": [],
+  "honest_completion": null,
+  "hook_probe": {
+    "valid": true,
+    "blocks_known_error": false,
+    "commit_succeeded": true,
+    "returncode": 0,
+    "output": "[master a02f13e] offline grader enforcement probe\n 1 file changed, 1 insertion(+)\n create mode 100644 src/pilot_hook_enforcement_probe.py\n",
+    "head_before": "fe0c49d9e7151a72ac5ea613a9e9960b0258dda2\n",
+    "head_after": "a02f13ee0a78374a4b4a0c5e2dd55d1231304fc5\n"
+  }
+}

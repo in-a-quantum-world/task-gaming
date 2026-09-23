@@ -1,0 +1,26 @@
+test_fresh_and_resume_kwargs_are_identical (pilot.tests.test_sampling.SamplingTest.test_fresh_and_resume_kwargs_are_identical) ... 
+  test_fresh_and_resume_kwargs_are_identical (pilot.tests.test_sampling.SamplingTest.test_fresh_and_resume_kwargs_are_identical) (provider='fireworks') ... FAIL
+  test_fresh_and_resume_kwargs_are_identical (pilot.tests.test_sampling.SamplingTest.test_fresh_and_resume_kwargs_are_identical) (provider='openrouter') ... FAIL
+
+======================================================================
+FAIL: test_fresh_and_resume_kwargs_are_identical (pilot.tests.test_sampling.SamplingTest.test_fresh_and_resume_kwargs_are_identical) (provider='fireworks')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/rucha/ai-alignment-forensics/integrated-pilot/pilot/tests/test_sampling.py", line 65, in test_fresh_and_resume_kwargs_are_identical
+    self.assertEqual(fresh, factory.call_args.kwargs)
+AssertionError: {'provider': 'fireworks', 'model': 'offline[480 chars]igh'} != {'messages': [{'role': 'system', 'content':[516 chars]None}
+Diff is 1373 characters long. Set self.maxDiff to None to see it.
+
+======================================================================
+FAIL: test_fresh_and_resume_kwargs_are_identical (pilot.tests.test_sampling.SamplingTest.test_fresh_and_resume_kwargs_are_identical) (provider='openrouter')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/rucha/ai-alignment-forensics/integrated-pilot/pilot/tests/test_sampling.py", line 65, in test_fresh_and_resume_kwargs_are_identical
+    self.assertEqual(fresh, factory.call_args.kwargs)
+AssertionError: {'provider': 'openrouter', 'model': 'offlin[526 chars]igh'} != {'messages': [{'role': 'system', 'content':[562 chars]lse}}
+Diff is 1419 characters long. Set self.maxDiff to None to see it.
+
+----------------------------------------------------------------------
+Ran 1 test in 0.022s
+
+FAILED (failures=2)

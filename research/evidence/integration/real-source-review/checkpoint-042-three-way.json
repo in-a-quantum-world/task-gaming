@@ -1,0 +1,75 @@
+{
+  "paths": [
+    "/home/rucha/ai-alignment-forensics/integrated-pilot/research/data/raw/integrated-pilot/source-4f522c3fe196414c975797817b07e35c/data/step-42",
+    "/home/rucha/ai-alignment-forensics/integrated-pilot/research/data/raw/integrated-pilot/restore-check-bd85003692844df1bc6778b5bda82f13/data/restored",
+    "/home/rucha/ai-alignment-forensics/integrated-pilot/research/data/raw/integrated-pilot/restore-check-b3b1c2293b9040eeb9f0518e1c8b9bb5/data/restored"
+  ],
+  "comparisons": [
+    {
+      "verdict": "equal_on_recorded_fields",
+      "different_fields": [],
+      "changed_files": [],
+      "missing_checks": [],
+      "issues": [],
+      "history_equal": true,
+      "message_roles_equal": true,
+      "mtimes_equal": true,
+      "limits": [
+        "Semantic information parity needs human review.",
+        "External files, processes, clocks, and APIs are not certified.",
+        "Runtime metadata must come from the prepared provider object.",
+        "File timestamps require review even when content matches."
+      ],
+      "pair": [
+        0,
+        1
+      ],
+      "external_equal": true
+    },
+    {
+      "verdict": "equal_on_recorded_fields",
+      "different_fields": [],
+      "changed_files": [],
+      "missing_checks": [],
+      "issues": [],
+      "history_equal": true,
+      "message_roles_equal": true,
+      "mtimes_equal": true,
+      "limits": [
+        "Semantic information parity needs human review.",
+        "External files, processes, clocks, and APIs are not certified.",
+        "Runtime metadata must come from the prepared provider object.",
+        "File timestamps require review even when content matches."
+      ],
+      "pair": [
+        0,
+        2
+      ],
+      "external_equal": true
+    },
+    {
+      "verdict": "equal_on_recorded_fields",
+      "different_fields": [],
+      "changed_files": [],
+      "missing_checks": [],
+      "issues": [],
+      "history_equal": true,
+      "message_roles_equal": true,
+      "mtimes_equal": true,
+      "limits": [
+        "Semantic information parity needs human review.",
+        "External files, processes, clocks, and APIs are not certified.",
+        "Runtime metadata must come from the prepared provider object.",
+        "File timestamps require review even when content matches."
+      ],
+      "pair": [
+        1,
+        2
+      ],
+      "external_equal": true
+    }
+  ],
+  "model_decisions_in_restores": 0,
+  "errors": 9,
+  "remaining_decisions": 57
+}

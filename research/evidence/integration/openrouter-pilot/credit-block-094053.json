@@ -1,0 +1,27 @@
+{
+  "time": "2026-09-10T09:43:29.287724+00:00",
+  "source_started": false,
+  "source_slot_consumed": false,
+  "preflight_passed": false,
+  "preflight_http_requests": 1,
+  "error_code": 402,
+  "reason": "No purchased OpenRouter credits",
+  "max_tokens_requested": 16384,
+  "max_tokens_affordable_reported": 15894,
+  "key_valid": true,
+  "key_spending_limit": null,
+  "account_is_free_tier": true,
+  "purchased_credits_usd": 0,
+  "source_config_changed_after_error": false,
+  "checkpoint_eligibility_evaluated": false,
+  "raw_preflight": "/home/rucha/ai-alignment-forensics/integrated-pilot/research/data/raw/integrated-pilot/preflight-f310510751d94e7fa71259376bf64a7e",
+  "raw_hashes_verified": true,
+  "image_id": "sha256:271a3daf958c33c9e6ad7332624015f9303ef06bf2a805abd12004abff8ddbae",
+  "protocol_freeze_commit": "c79c16ade05c2c81e62597576ffdf40b08a475f2",
+  "funding_estimate": {
+    "source_conservative_upper_bound_usd": "19.82464",
+    "formula": "100 * (262144 * 0.0000006 + 16384 * 0.0000025)",
+    "scope": "Listed token prices; deliberately overcounts context/output overlap; no cache discounts; two short preflight calls extra",
+    "not_an_expected_charge": true
+  }
+}

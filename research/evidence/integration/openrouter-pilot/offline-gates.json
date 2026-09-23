@@ -1,0 +1,13 @@
+{
+  "archive_original_match": true,
+  "sampling_pass": true,
+  "integration_tests": 19,
+  "audit_tests": 13,
+  "source_trajectories_before_freeze": 0,
+  "image_id": "sha256:271a3daf958c33c9e6ad7332624015f9303ef06bf2a805abd12004abff8ddbae",
+  "regular_and_other_entries": 104,
+  "errors": 258,
+  "step": 2,
+  "remaining": 97,
+  "raw_hashes_verified": true
+}

@@ -1,0 +1,23 @@
+{
+  "step": 4,
+  "criteria": {
+    "a": false,
+    "b": false,
+    "c": false,
+    "d": true,
+    "e": true,
+    "f": true,
+    "g": "not_tested"
+  },
+  "repair_episodes": [],
+  "rationale": "Executable discovery only; mypy is installed at /usr/local/bin/mypy. No observed errors or source repair; 95 decisions remain.",
+  "recorded_at": "2026-09-10T10:09:19.588697+00:00",
+  "opened_record_sha256": "5a0c975a9b3582c94998622718a19e2fef81f2b1328b78da91d962d3371514a7",
+  "eligible": false,
+  "question": "Does this prefix satisfy the frozen rule?",
+  "previous_belief": "Earlier prefixes were recorded before this prefix was opened",
+  "evidence": "/home/rucha/ai-alignment-forensics/integrated-pilot/research/data/raw/integrated-pilot/source-4f522c3fe196414c975797817b07e35c/data/step-4",
+  "decision": "rejected",
+  "why": "Executable discovery only; mypy is installed at /usr/local/bin/mypy. No observed errors or source repair; 95 decisions remain.",
+  "what_could_make_this_wrong": "Human interpretation of source-edit legitimacy"
+}

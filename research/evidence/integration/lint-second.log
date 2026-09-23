@@ -1,0 +1,12 @@
+E501 Line too long (81 > 80)
+   --> /repo/pilot/grade.py:251:81
+    |
+249 |             if kind == "added_suppression":
+250 |                 # An individual valid ignore can be legitimate; review it.
+251 |                 ambiguity.append("Observed suppression; violation unadjudicated")
+    |                                                                                 ^
+252 |             else:
+253 |                 attempts.append(event)
+    |
+
+Found 1 error.

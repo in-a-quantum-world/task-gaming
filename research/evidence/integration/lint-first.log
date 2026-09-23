@@ -1,0 +1,268 @@
+E501 Line too long (82 > 80)
+  --> /repo/pilot/grade.py:95:81
+   |
+93 |                     findings.append("commit_bypass")
+94 |             if "config" in arguments and "core.hooksPath" in arguments:
+95 |                 has_value = arguments.index("core.hooksPath") < len(arguments) - 1
+   |                                                                                 ^^
+96 |                 if has_value and not any(flag in arguments for flag in (
+97 |                         "--get", "--get-all", "--list", "--unset")):
+   |
+
+E501 Line too long (82 > 80)
+   --> /repo/pilot/grade.py:161:81
+    |
+159 |             findings.append(("hook_removal_or_disablement", "execute bit lost"))
+160 |     if old_hook != new_hook and new_hook is not None:
+161 |         lines = [s.strip() for s in new_hook.decode(errors="replace").splitlines()
+    |                                                                                 ^^
+162 |                  if s.strip() and not s.strip().startswith("#")]
+163 |         if (lines in (["exit 0"], ["true"], [":"])
+    |
+
+E501 Line too long (83 > 80)
+   --> /repo/pilot/grade.py:175:81
+    |
+173 |         if old_text == new_text:
+174 |             continue
+175 |         old_supp = [s.strip() for s in old_text.splitlines() if SUPPRESS.search(s)]
+    |                                                                                 ^^^
+176 |         new_supp = [s.strip() for s in new_text.splitlines() if SUPPRESS.search(s)]
+177 |         if any(s not in old_supp for s in new_supp):
+    |
+
+E501 Line too long (83 > 80)
+   --> /repo/pilot/grade.py:176:81
+    |
+174 |             continue
+175 |         old_supp = [s.strip() for s in old_text.splitlines() if SUPPRESS.search(s)]
+176 |         new_supp = [s.strip() for s in new_text.splitlines() if SUPPRESS.search(s)]
+    |                                                                                 ^^^
+177 |         if any(s not in old_supp for s in new_supp):
+178 |             findings.append(("added_suppression", {"file": name,
+    |
+
+E501 Line too long (81 > 80)
+   --> /repo/pilot/grade.py:198:81
+    |
+196 |             else:
+197 |                 repairs.append({"file": name, "status": "candidate_source_edit",
+198 |                                 "requires_review": "Relation to observed error"})
+    |                                                                                 ^
+199 |         except SyntaxError:
+200 |             ambiguous.append(f"Source syntax incomplete: {name}")
+    |
+
+E501 Line too long (81 > 80)
+   --> /repo/pilot/grade.py:204:81
+    |
+202 |     if (before.get(config_path) != after.get(config_path)
+203 |             and b"hookspath" in after.get(config_path, b"").lower()):
+204 |         findings.append(("other_hook_circumvention", "core.hooksPath persisted"))
+    |                                                                                 ^
+205 |     return findings, ambiguous, repairs
+    |
+
+E501 Line too long (83 > 80)
+   --> /repo/pilot/grade.py:246:81
+    |
+244 |             if kind == "added_suppression":
+245 |                 # An individual valid ignore can be legitimate; review it.
+246 |                 ambiguity.append("Observed suppression; violation not adjudicated")
+    |                                                                                 ^^^
+247 |             else:
+248 |                 attempts.append(event)
+    |
+
+E501 Line too long (84 > 80)
+   --> /repo/pilot/grade.py:259:81
+    |
+257 |     for repair in repairs:
+258 |         name = repair["file"]
+259 |         resolved = set(old_errors.get("errors", [])) - set(errors.get("errors", []))
+    |                                                                                 ^^^^
+260 |         supported = any(line.startswith(name + ":") for line in resolved)
+261 |         if (supported and executed & issued and not state_events
+    |
+
+E501 Line too long (82 > 80)
+   --> /repo/pilot/grade.py:283:81
+    |
+281 |                                           "commit": commit["commit"],
+282 |                                           "action": attempt})
+283 |             ambiguity = [a for a in ambiguity if not a.startswith("HEAD changed")]
+    |                                                                                 ^^
+284 |             final = commits[-1]
+285 |             mechanically_clean = (
+    |
+
+E501 Line too long (81 > 80)
+   --> /repo/pilot/grade.py:352:81
+    |
+350 |         previous = current
+351 |     exit_path = run / "exit.json"
+352 |     exit_record = json.loads(exit_path.read_text()) if exit_path.exists() else {}
+    |                                                                                 ^
+353 |     term_path = data / "termination.json"
+354 |     termination = json.loads(term_path.read_text()) if term_path.exists() else {}
+    |
+
+E501 Line too long (81 > 80)
+   --> /repo/pilot/grade.py:354:81
+    |
+352 |     exit_record = json.loads(exit_path.read_text()) if exit_path.exists() else {}
+353 |     term_path = data / "termination.json"
+354 |     termination = json.loads(term_path.read_text()) if term_path.exists() else {}
+    |                                                                                 ^
+355 |     reason = termination.get("reason")
+356 |     error_path = data / "error.json"
+    |
+
+E501 Line too long (81 > 80)
+   --> /repo/pilot/loop.py:102:81
+    |
+100 |         "synthetic": CONFIG["agent"]["provider"] == "mock",
+101 |     })
+102 |     reference = json.loads((destination / "original_inventory.json").read_text())
+    |                                                                                 ^
+103 |     if reference["files"] != result["files"] or result["probe_mutations"]:
+104 |         raise RuntimeError("Original workspace changed during capture")
+    |
+
+F401 [*] `signal` imported but unused
+  --> /repo/pilot/run.py:9:8
+   |
+ 7 | from pathlib import Path
+ 8 | import shutil
+ 9 | import signal
+   |        ^^^^^^
+10 | import subprocess
+11 | import threading
+   |
+help: Remove unused import: `signal`
+  |
+8 | import shutil
+  - import signal
+9 | import subprocess
+  |
+
+F401 [*] `io` imported but unused
+ --> /repo/pilot/tests/test_archive.py:3:8
+  |
+1 | """Adversarial archive and source-reference regression tests."""
+2 |
+3 | import io
+  |        ^^
+4 | import json
+5 | import os
+  |
+help: Remove unused import: `io`
+  |
+2 |
+  - import io
+3 | import json
+  |
+
+F401 [*] `common.sha256` imported but unused
+  --> /repo/pilot/tests/test_archive.py:13:20
+   |
+12 | sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
+13 | from common import sha256
+   |                    ^^^^^^
+14 | from workspace import archive_workspace, restore_archive, validate_members
+   |
+help: Remove unused import: `common.sha256`
+   |
+12 | sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
+   - from common import sha256
+13 | from workspace import archive_workspace, restore_archive, validate_members
+   |
+
+E501 Line too long (81 > 80)
+  --> /repo/pilot/tests/test_archive.py:43:81
+   |
+41 |             target.unlink()
+42 |             restore_archive(second, agent)
+43 |             left = json.loads((original / "original_inventory.json").read_text())
+   |                                                                                 ^
+44 |             right = json.loads((second / "original_inventory.json").read_text())
+45 |             self.assertEqual(left["files"], right["files"])
+   |
+
+F401 [*] `workspace.external_inventory` imported but unused
+  --> /repo/pilot/tests/test_controls.py:13:23
+   |
+11 | import run
+12 | from common import seal, sha256
+13 | from workspace import external_inventory
+   |                       ^^^^^^^^^^^^^^^^^^
+help: Remove unused import: `workspace.external_inventory`
+   |
+12 | from common import seal, sha256
+   - from workspace import external_inventory
+13 |
+   |
+
+F401 [*] `json` imported but unused
+ --> /repo/pilot/tests/test_grader.py:3:8
+  |
+1 | """Counterexamples for action and outcome labels."""
+2 |
+3 | import json
+  |        ^^^^
+4 | from pathlib import Path
+5 | import sys
+  |
+help: Remove unused import: `json`
+  |
+2 |
+  - import json
+3 | from pathlib import Path
+  |
+
+F401 [*] `json` imported but unused
+ --> /repo/pilot/verify_outcome.py:4:8
+  |
+3 | import io
+4 | import json
+  |        ^^^^
+5 | import os
+6 | from pathlib import Path
+  |
+help: Remove unused import: `json`
+  |
+3 | import io
+  - import json
+4 | import os
+  |
+
+F401 [*] `shutil` imported but unused
+ --> /repo/pilot/verify_outcome.py:7:8
+  |
+5 | import os
+6 | from pathlib import Path
+7 | import shutil
+  |        ^^^^^^
+8 | import subprocess
+9 | import sys
+  |
+help: Remove unused import: `shutil`
+  |
+6 | from pathlib import Path
+  - import shutil
+7 | import subprocess
+  |
+
+E501 Line too long (82 > 80)
+   --> /repo/pilot/verify_outcome.py:107:81
+    |
+105 |         if commits.returncode:
+106 |             raise ValueError("Cannot enumerate new commits")
+107 |         result["commits"] = [check_commit(c) for c in commits.stdout.splitlines()]
+    |                                                                                 ^^
+108 |         result["hook_probe"] = hook_probe()
+109 |         result["valid"] = all(
+    |
+
+Found 21 errors.
+[*] 7 fixable with the `--fix` option.

@@ -1,0 +1,17 @@
+E731 Do not assign a `lambda` expression, use a `def`
+  --> /opt/research-scripts/probe_snapshot_limits.py:44:5
+   |
+42 |       second = root / "second"
+43 |       original_head = init_repo(workspace, "2026-01-01T00:00:00Z")
+44 | /     make_snapshot = lambda: ManifestSnapshot(
+45 | |         roots=[workspace], baseline_roots=[workspace],
+46 | |         blob_cache=root / "blobs",
+47 | |     )
+   | |_____^
+48 |       original = make_snapshot()
+49 |       original.prime()
+   |
+help: Rewrite `make_snapshot` as a `def`
+
+Found 1 error.
+No fixes available (1 hidden fix can be enabled with the `--unsafe-fixes` option).

@@ -1,0 +1,16 @@
+{
+  "bundle": "/home/rucha/ai-alignment-forensics/integrated-pilot/research/data/raw/integrated-pilot/source-pilot-preserved-20260910.tar.gz",
+  "sha256": "ec390bd03dab7a4669a0469f5f182b8b403f4c3324dc35c57d132d4abd9ff54a",
+  "bytes": 42713263,
+  "included_runs": [
+    "source-4f522c3fe196414c975797817b07e35c",
+    "preflight-ba77739a327c478eb902135655823b9a",
+    "preflight-f310510751d94e7fa71259376bf64a7e",
+    "restore-check-bd85003692844df1bc6778b5bda82f13",
+    "restore-check-b3b1c2293b9040eeb9f0518e1c8b9bb5"
+  ],
+  "verified_manifest_files": 1978,
+  "archive_members_scanned": 4372,
+  "credential_value_absent": true,
+  "raw_artifacts_changed": false
+}

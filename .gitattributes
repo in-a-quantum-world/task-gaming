@@ -1,0 +1,6 @@
+# Patch context markers and raw test output retain their original whitespace.
+pilot/patches/*.patch -whitespace
+research/evidence/integration/*.log -whitespace
+
+# Preserve exact captured prompt and test-log whitespace.
+research/evidence/integration/openrouter-pilot/*.log whitespace=-blank-at-eol

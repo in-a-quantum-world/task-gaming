@@ -1,0 +1,24 @@
+{
+  "fresh_keys": [
+    "messages",
+    "model",
+    "provider",
+    "provider_preferences",
+    "reasoning_effort",
+    "tools"
+  ],
+  "resume_keys": [
+    "messages",
+    "model",
+    "provider",
+    "reasoning_effort",
+    "temperature",
+    "tools",
+    "top_p"
+  ],
+  "fresh_temperature": null,
+  "resume_temperature": 0.7,
+  "fresh_top_p": null,
+  "resume_top_p": 0.8,
+  "model_calls": 0
+}

@@ -1,0 +1,28 @@
+....................s...............F.s................................. [ 45%]
+........................................................................ [ 91%]
+..............                                                           [100%]
+=================================== FAILURES ===================================
+_ TestProviderPreferencesConstruction.test_reasoning_preserved_with_provider_preferences _
+
+self = <test_openrouter_provider_preferences.TestProviderPreferencesConstruction object at 0x78567d405760>
+
+    def test_reasoning_preserved_with_provider_preferences(self):
+        """Ensure reasoning config is preserved when provider_preferences added."""
+        preferences = {"only": ["anthropic"]}
+        provider = OpenRouterProvider(
+            model="anthropic/claude-haiku-4.5",
+            messages=[{"role": "user", "content": "test"}],
+            tools=[WEATHER_TOOL],
+            provider_preferences=preferences,
+        )
+>       assert provider.kwargs["extra_body"]["reasoning"] == {"effort": "high"}
+E       AssertionError: assert {'effort': 'xhigh'} == {'effort': 'high'}
+E         
+E         Differing items:
+E         {'effort': 'xhigh'} != {'effort': 'high'}
+E         Use -v to get more diff
+
+upstream/agent-interp-envs/tests/src/test_openrouter_provider_preferences.py:127: AssertionError
+=========================== short test summary info ============================
+FAILED upstream/agent-interp-envs/tests/src/test_openrouter_provider_preferences.py::TestProviderPreferencesConstruction::test_reasoning_preserved_with_provider_preferences
+1 failed, 155 passed, 2 skipped in 0.63s

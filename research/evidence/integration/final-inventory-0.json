@@ -1,0 +1,804 @@
+{
+  "files": {
+    ".": {
+      "mode": 493,
+      "uid": 1000,
+      "gid": 1000,
+      "kind": "directory"
+    },
+    ".git": {
+      "mode": 448,
+      "uid": 1000,
+      "gid": 1000,
+      "kind": "directory"
+    },
+    ".git/COMMIT_EDITMSG": {
+      "mode": 384,
+      "uid": 1000,
+      "gid": 1000,
+      "kind": "file",
+      "sha256": "aa4bfed2b2d271560a3495fcd98ba84ee9ad3338536f1e3b88afa0a8f79d57ce"
+    },
+    ".git/HEAD": {
+      "mode": 384,
+      "uid": 1000,
+      "gid": 1000,
+      "kind": "file",
+      "sha256": "f6f2b945f6c411b02ba3da9c7ace88dcf71b6af65ba2e0d89aa82900042b5a10"
+    },
+    ".git/branches": {
+      "mode": 448,
+      "uid": 1000,
+      "gid": 1000,
+      "kind": "directory"
+    },
+    ".git/config": {
+      "mode": 384,
+      "uid": 1000,
+      "gid": 1000,
+      "kind": "file",
+      "sha256": "79f8155250fa9bf8f8de2d411d676ce499cd709b52c825e5af4525c6b9f088fa"
+    },
+    ".git/description": {
+      "mode": 384,
+      "uid": 1000,
+      "gid": 1000,
+      "kind": "file",
+      "sha256": "85ab6c163d43a17ea9cf7788308bca1466f1b0a8d1cc92e26e9bf63da4062aee"
+    },
+    ".git/hooks": {
+      "mode": 448,
+      "uid": 1000,
+      "gid": 1000,
+      "kind": "directory"
+    },
+    ".git/hooks/applypatch-msg.sample": {
+      "mode": 448,
+      "uid": 1000,
+      "gid": 1000,
+      "kind": "file",
+      "sha256": "0223497a0b8b033aa58a3a521b8629869386cf7ab0e2f101963d328aa62193f7"
+    },
+    ".git/hooks/commit-msg.sample": {
+      "mode": 448,
+      "uid": 1000,
+      "gid": 1000,
+      "kind": "file",
+      "sha256": "1f74d5e9292979b573ebd59741d46cb93ff391acdd083d340b94370753d92437"
+    },
+    ".git/hooks/fsmonitor-watchman.sample": {
+      "mode": 448,
+      "uid": 1000,
+      "gid": 1000,
+      "kind": "file",
+      "sha256": "e0549964e93897b519bd8e333c037e51fff0f88ba13e086a331592bf801fa1d0"
+    },
+    ".git/hooks/post-update.sample": {
+      "mode": 448,
+      "uid": 1000,
+      "gid": 1000,
+      "kind": "file",
+      "sha256": "81765af2daef323061dcbc5e61fc16481cb74b3bac9ad8a174b186523586f6c5"
+    },
+    ".git/hooks/pre-applypatch.sample": {
+      "mode": 448,
+      "uid": 1000,
+      "gid": 1000,
+      "kind": "file",
+      "sha256": "e15c5b469ea3e0a695bea6f2c82bcf8e62821074939ddd85b77e0007ff165475"
+    },
+    ".git/hooks/pre-commit": {
+      "mode": 448,
+      "uid": 1000,
+      "gid": 1000,
+      "kind": "file",
+      "sha256": "d680480f9b674349add50d7c97e51f9e5d0dee0b3425e8fc9e8f7d700a21166b"
+    },
+    ".git/hooks/pre-commit.sample": {
+      "mode": 448,
+      "uid": 1000,
+      "gid": 1000,
+      "kind": "file",
+      "sha256": "57185b7b9f05239d7ab52db045f5b89eb31348d7b2177eab214f5eb872e1971b"
+    },
+    ".git/hooks/pre-merge-commit.sample": {
+      "mode": 448,
+      "uid": 1000,
+      "gid": 1000,
+      "kind": "file",
+      "sha256": "d3825a70337940ebbd0a5c072984e13245920cdf8898bd225c8d27a6dfc9cb53"
+    },
+    ".git/hooks/pre-push.sample": {
+      "mode": 448,
+      "uid": 1000,
+      "gid": 1000,
+      "kind": "file",
+      "sha256": "ecce9c7e04d3f5dd9d8ada81753dd1d549a9634b26770042b58dda00217d086a"
+    },
+    ".git/hooks/pre-rebase.sample": {
+      "mode": 448,
+      "uid": 1000,
+      "gid": 1000,
+      "kind": "file",
+      "sha256": "4febce867790052338076f4e66cc47efb14879d18097d1d61c8261859eaaa7b3"
+    },
+    ".git/hooks/pre-receive.sample": {
+      "mode": 448,
+      "uid": 1000,
+      "gid": 1000,
+      "kind": "file",
+      "sha256": "a4c3d2b9c7bb3fd8d1441c31bd4ee71a595d66b44fcf49ddb310252320169989"
+    },
+    ".git/hooks/prepare-commit-msg.sample": {
+      "mode": 448,
+      "uid": 1000,
+      "gid": 1000,
+      "kind": "file",
+      "sha256": "e9ddcaa4189fddd25ed97fc8c789eca7b6ca16390b2392ae3276f0c8e1aa4619"
+    },
+    ".git/hooks/push-to-checkout.sample": {
+      "mode": 448,
+      "uid": 1000,
+      "gid": 1000,
+      "kind": "file",
+      "sha256": "a53d0741798b287c6dd7afa64aee473f305e65d3f49463bb9d7408ec3b12bf5f"
+    },
+    ".git/hooks/sendemail-validate.sample": {
+      "mode": 448,
+      "uid": 1000,
+      "gid": 1000,
+      "kind": "file",
+      "sha256": "44ebfc923dc5466bc009602f0ecf067b9c65459abfe8868ddc49b78e6ced7a92"
+    },
+    ".git/hooks/update.sample": {
+      "mode": 448,
+      "uid": 1000,
+      "gid": 1000,
+      "kind": "file",
+      "sha256": "8d5f2fa83e103cf08b57eaa67521df9194f45cbdbcb37da52ad586097a14d106"
+    },
+    ".git/index": {
+      "mode": 384,
+      "uid": 1000,
+      "gid": 1000,
+      "kind": "file",
+      "sha256": "82d32946712df6b6a30326408fdb29c96b1fed7811722b25a61bea3d75a866ee"
+    },
+    ".git/info": {
+      "mode": 448,
+      "uid": 1000,
+      "gid": 1000,
+      "kind": "directory"
+    },
+    ".git/info/exclude": {
+      "mode": 384,
+      "uid": 1000,
+      "gid": 1000,
+      "kind": "file",
+      "sha256": "6671fe83b7a07c8932ee89164d1f2793b2318058eb8b98dc5c06ee0a5a3b0ec1"
+    },
+    ".git/logs": {
+      "mode": 448,
+      "uid": 1000,
+      "gid": 1000,
+      "kind": "directory"
+    },
+    ".git/logs/HEAD": {
+      "mode": 384,
+      "uid": 1000,
+      "gid": 1000,
+      "kind": "file",
+      "sha256": "ecf3e1ab139f261bc089a282026e66c24cfb86add0acf47cb8c20fcae8ae68d2"
+    },
+    ".git/logs/refs": {
+      "mode": 448,
+      "uid": 1000,
+      "gid": 1000,
+      "kind": "directory"
+    },
+    ".git/logs/refs/heads": {
+      "mode": 448,
+      "uid": 1000,
+      "gid": 1000,
+      "kind": "directory"
+    },
+    ".git/logs/refs/heads/master": {
+      "mode": 384,
+      "uid": 1000,
+      "gid": 1000,
+      "kind": "file",
+      "sha256": "ecf3e1ab139f261bc089a282026e66c24cfb86add0acf47cb8c20fcae8ae68d2"
+    },
+    ".git/objects": {
+      "mode": 448,
+      "uid": 1000,
+      "gid": 1000,
+      "kind": "directory"
+    },
+    ".git/objects/05": {
+      "mode": 448,
+      "uid": 1000,
+      "gid": 1000,
+      "kind": "directory"
+    },
+    ".git/objects/05/73cf81344c41b92c45cae9043a66e837a7240f": {
+      "mode": 256,
+      "uid": 1000,
+      "gid": 1000,
+      "kind": "file",
+      "sha256": "0ea316b5858d5f45a77bd9630aa64c9f027a1fc8b29e51c9dc16659868307f42"
+    },
+    ".git/objects/06": {
+      "mode": 448,
+      "uid": 1000,
+      "gid": 1000,
+      "kind": "directory"
+    },
+    ".git/objects/06/28e3d988231a96274981182537597048655c70": {
+      "mode": 256,
+      "uid": 1000,
+      "gid": 1000,
+      "kind": "file",
+      "sha256": "bad44ae0883355816f9a898a3764f7ad24c6f9d243a337da922e8904ac3df85f"
+    },
+    ".git/objects/16": {
+      "mode": 448,
+      "uid": 1000,
+      "gid": 1000,
+      "kind": "directory"
+    },
+    ".git/objects/16/fa3e22fd7a55acab73b540302b842e67d04b78": {
+      "mode": 256,
+      "uid": 1000,
+      "gid": 1000,
+      "kind": "file",
+      "sha256": "d4e0e6077cc06e57270aa84d66a26d46b593a42edffabf00512c62dd934a25b1"
+    },
+    ".git/objects/26": {
+      "mode": 448,
+      "uid": 1000,
+      "gid": 1000,
+      "kind": "directory"
+    },
+    ".git/objects/26/97af5df1c1fc10b721ce835d784df81b0b08f4": {
+      "mode": 256,
+      "uid": 1000,
+      "gid": 1000,
+      "kind": "file",
+      "sha256": "e9a58939cbf5372d862ea25840f010734166078dca9c2e5c0a69c84657b6468e"
+    },
+    ".git/objects/29": {
+      "mode": 448,
+      "uid": 1000,
+      "gid": 1000,
+      "kind": "directory"
+    },
+    ".git/objects/29/6647f1a4f2597d32d86be2d8c8691b38698d05": {
+      "mode": 256,
+      "uid": 1000,
+      "gid": 1000,
+      "kind": "file",
+      "sha256": "e0721ef79e5c6d81fb68c34e08e487428296c27dd563a4139918dea06c7a9076"
+    },
+    ".git/objects/33": {
+      "mode": 448,
+      "uid": 1000,
+      "gid": 1000,
+      "kind": "directory"
+    },
+    ".git/objects/33/deb8978197b80ce612f19ee42668000ef64b9a": {
+      "mode": 256,
+      "uid": 1000,
+      "gid": 1000,
+      "kind": "file",
+      "sha256": "7a341ff3db134b976ef7a7e5b50f15d8b35e61e31db5303de2eb656b6e0f77a2"
+    },
+    ".git/objects/3d": {
+      "mode": 448,
+      "uid": 1000,
+      "gid": 1000,
+      "kind": "directory"
+    },
+    ".git/objects/3d/d8fb3865109b38aebc15922b60ffdb82e39ee1": {
+      "mode": 256,
+      "uid": 1000,
+      "gid": 1000,
+      "kind": "file",
+      "sha256": "9ba3c9cd6f03471606822686da135ef74b51c77fc1b14e002d329470ce5bf064"
+    },
+    ".git/objects/41": {
+      "mode": 448,
+      "uid": 1000,
+      "gid": 1000,
+      "kind": "directory"
+    },
+    ".git/objects/41/9af6d72d7b1eab3941e3f88f03210aac2cd07c": {
+      "mode": 256,
+      "uid": 1000,
+      "gid": 1000,
+      "kind": "file",
+      "sha256": "ae9a4472b262b0f8a0d2d052e2c7b082743e5528a12ffbda28e46612f8d52438"
+    },
+    ".git/objects/54": {
+      "mode": 448,
+      "uid": 1000,
+      "gid": 1000,
+      "kind": "directory"
+    },
+    ".git/objects/54/cf8a96c788080144cf872da3a962f8dfb29198": {
+      "mode": 256,
+      "uid": 1000,
+      "gid": 1000,
+      "kind": "file",
+      "sha256": "c8ff9220c218e45daeb1cff70663de6dbcfc02fe807279f3ef7e9552820a5552"
+    },
+    ".git/objects/8c": {
+      "mode": 448,
+      "uid": 1000,
+      "gid": 1000,
+      "kind": "directory"
+    },
+    ".git/objects/8c/c8a6643c8aec9a0d940c6305ba5e25ff1d0f19": {
+      "mode": 256,
+      "uid": 1000,
+      "gid": 1000,
+      "kind": "file",
+      "sha256": "f46593b2450b9eaa7e3954ef7d944914055ad1461f10d8eb9e9a2061ec82acfe"
+    },
+    ".git/objects/a0": {
+      "mode": 448,
+      "uid": 1000,
+      "gid": 1000,
+      "kind": "directory"
+    },
+    ".git/objects/a0/3b3a1c813070611d9b50544df5a491d7d1872b": {
+      "mode": 256,
+      "uid": 1000,
+      "gid": 1000,
+      "kind": "file",
+      "sha256": "b088007e5d2a63dd9d8907044781dd90ac01c45aa2ef7a5e857d35b61ca531b3"
+    },
+    ".git/objects/b6": {
+      "mode": 448,
+      "uid": 1000,
+      "gid": 1000,
+      "kind": "directory"
+    },
+    ".git/objects/b6/ee62ab14fdd1de3678c10e9d91902b4dc8fdd9": {
+      "mode": 256,
+      "uid": 1000,
+      "gid": 1000,
+      "kind": "file",
+      "sha256": "01fd793ed35fc9acd9c2093981d05d8be9632e13023da634f4328a468070cf81"
+    },
+    ".git/objects/c6": {
+      "mode": 448,
+      "uid": 1000,
+      "gid": 1000,
+      "kind": "directory"
+    },
+    ".git/objects/c6/95e43515c5fdd0e4482f6ec146b3c88b93476a": {
+      "mode": 256,
+      "uid": 1000,
+      "gid": 1000,
+      "kind": "file",
+      "sha256": "a03b7a18e6741d69b296e9df44bde2ea7c2750feb91114909b7b5382524f1905"
+    },
+    ".git/objects/c9": {
+      "mode": 448,
+      "uid": 1000,
+      "gid": 1000,
+      "kind": "directory"
+    },
+    ".git/objects/c9/5029f45e8b9348a693f17c76616e7e70b159de": {
+      "mode": 256,
+      "uid": 1000,
+      "gid": 1000,
+      "kind": "file",
+      "sha256": "a484d1bfd288657cadf5104e4aa5330b979cd123fe2dff5679161d74501d3227"
+    },
+    ".git/objects/d5": {
+      "mode": 448,
+      "uid": 1000,
+      "gid": 1000,
+      "kind": "directory"
+    },
+    ".git/objects/d5/71c0e26d0d255187eec7f1f23cb63dccb50e06": {
+      "mode": 256,
+      "uid": 1000,
+      "gid": 1000,
+      "kind": "file",
+      "sha256": "61130d75bc1423b7476562e235ed7c1ce75360efb94ac9ee9c03231b25d010b3"
+    },
+    ".git/objects/d6": {
+      "mode": 448,
+      "uid": 1000,
+      "gid": 1000,
+      "kind": "directory"
+    },
+    ".git/objects/d6/24b70fd9079347e16e12ba40fc2b3ab5ebcc46": {
+      "mode": 256,
+      "uid": 1000,
+      "gid": 1000,
+      "kind": "file",
+      "sha256": "ef5899282a5d6f7703464bf9b51e91984f9530dc8ce377edc13ea68e97953f68"
+    },
+    ".git/objects/e6": {
+      "mode": 448,
+      "uid": 1000,
+      "gid": 1000,
+      "kind": "directory"
+    },
+    ".git/objects/e6/9de29bb2d1d6434b8b29ae775ad8c2e48c5391": {
+      "mode": 256,
+      "uid": 1000,
+      "gid": 1000,
+      "kind": "file",
+      "sha256": "164c5fa8067facf1a43f09ce3d0e35ebf53a7f5723ecbf15a8667cfc53c26f6c"
+    },
+    ".git/objects/f0": {
+      "mode": 448,
+      "uid": 1000,
+      "gid": 1000,
+      "kind": "directory"
+    },
+    ".git/objects/f0/3e6d666eff2dedebd5823dcdd47af7bbfb390e": {
+      "mode": 256,
+      "uid": 1000,
+      "gid": 1000,
+      "kind": "file",
+      "sha256": "601d55da1a08063d8ba02278d8676ae65c4e27d9af8626ff3790daa48cb6dd5f"
+    },
+    ".git/objects/fa": {
+      "mode": 448,
+      "uid": 1000,
+      "gid": 1000,
+      "kind": "directory"
+    },
+    ".git/objects/fa/0819cb9711f14f162a4436b563994ca7989b8d": {
+      "mode": 256,
+      "uid": 1000,
+      "gid": 1000,
+      "kind": "file",
+      "sha256": "2ba36e1f35672551e7df272ea62d0097296a10ce10f856fd6c6c9d9f99f87681"
+    },
+    ".git/objects/fa/f91c120deff440f078c0239a0268af7a8cd4b7": {
+      "mode": 256,
+      "uid": 1000,
+      "gid": 1000,
+      "kind": "file",
+      "sha256": "521288db766a731f0952fcbdd4a4858c3d3bd468aca8bab4465545fd19248a25"
+    },
+    ".git/objects/info": {
+      "mode": 448,
+      "uid": 1000,
+      "gid": 1000,
+      "kind": "directory"
+    },
+    ".git/objects/pack": {
+      "mode": 448,
+      "uid": 1000,
+      "gid": 1000,
+      "kind": "directory"
+    },
+    ".git/refs": {
+      "mode": 448,
+      "uid": 1000,
+      "gid": 1000,
+      "kind": "directory"
+    },
+    ".git/refs/heads": {
+      "mode": 448,
+      "uid": 1000,
+      "gid": 1000,
+      "kind": "directory"
+    },
+    ".git/refs/heads/master": {
+      "mode": 384,
+      "uid": 1000,
+      "gid": 1000,
+      "kind": "file",
+      "sha256": "d9bce19b3c1bcec82c7e9f48085242fd5815016ca389599ab882b1600c053fe7"
+    },
+    ".git/refs/tags": {
+      "mode": 448,
+      "uid": 1000,
+      "gid": 1000,
+      "kind": "directory"
+    },
+    ".mypy_cache": {
+      "mode": 448,
+      "uid": 1000,
+      "gid": 1000,
+      "kind": "directory"
+    },
+    ".mypy_cache/.gitignore": {
+      "mode": 384,
+      "uid": 1000,
+      "gid": 1000,
+      "kind": "file",
+      "sha256": "6a69da670d11530d37f0f0cfdc7bed30b78ea6434e24f7a73208b982e29d322c"
+    },
+    ".mypy_cache/3.11": {
+      "mode": 448,
+      "uid": 1000,
+      "gid": 1000,
+      "kind": "directory"
+    },
+    ".mypy_cache/3.11/cache.db": {
+      "mode": 384,
+      "uid": 1000,
+      "gid": 1000,
+      "kind": "file",
+      "sha256": "504ae21a250b5fd78abd090121254e943ed79e22ff0eb48242181def9e5eafee"
+    },
+    ".mypy_cache/CACHEDIR.TAG": {
+      "mode": 384,
+      "uid": 1000,
+      "gid": 1000,
+      "kind": "file",
+      "sha256": "f1c13afc555358c9033b0f1f30aaa177fe88bda40f4b8a24598400d547876adc"
+    },
+    ".mypy_cache/missing_stubs": {
+      "mode": 384,
+      "uid": 1000,
+      "gid": 1000,
+      "kind": "file",
+      "sha256": "d4f674e58bb6997cd7ba4d027c30daa86d5d74753e2b9a2b34fa111a5aa81a59"
+    },
+    "dir-link": {
+      "mode": 511,
+      "uid": 1000,
+      "gid": 1000,
+      "kind": "symlink",
+      "target": "src"
+    },
+    "probe-link": {
+      "mode": 511,
+      "uid": 1000,
+      "gid": 1000,
+      "kind": "symlink",
+      "target": "probe.txt"
+    },
+    "probe.txt": {
+      "mode": 416,
+      "uid": 1000,
+      "gid": 1000,
+      "kind": "file",
+      "sha256": "f85ebb17aff9cf2a2320fb74da2cbcb05c77e40a81bdf428fb378c7cc7c098eb"
+    },
+    "pyproject.toml": {
+      "mode": 384,
+      "uid": 1000,
+      "gid": 1000,
+      "kind": "file",
+      "sha256": "6e7d571206536818b52942417eeca8cd0fb5219418bd78d0ef1819671753e69f"
+    },
+    "src": {
+      "mode": 448,
+      "uid": 1000,
+      "gid": 1000,
+      "kind": "directory"
+    },
+    "src/__init__.py": {
+      "mode": 384,
+      "uid": 1000,
+      "gid": 1000,
+      "kind": "file",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "src/api_source.py": {
+      "mode": 384,
+      "uid": 1000,
+      "gid": 1000,
+      "kind": "file",
+      "sha256": "e1166f5afdc7d9c66352c78dab65575bbba37b0ede4013627df4863a229f355a"
+    },
+    "src/cache.py": {
+      "mode": 384,
+      "uid": 1000,
+      "gid": 1000,
+      "kind": "file",
+      "sha256": "0e4dcb6072e96c2de2e24ac5ebb929ca7b9c1e3b623a8477421c032a735d2c2f"
+    },
+    "src/cli.py": {
+      "mode": 384,
+      "uid": 1000,
+      "gid": 1000,
+      "kind": "file",
+      "sha256": "3f1542a225d740953760e48e55454e7a4b70b18852519767179442b239d47b9f"
+    },
+    "src/config.py": {
+      "mode": 384,
+      "uid": 1000,
+      "gid": 1000,
+      "kind": "file",
+      "sha256": "907131aa0413ccdadf4f2c2a10ac09cface471663d1fb3fb58ce6e6047399203"
+    },
+    "src/csv_source.py": {
+      "mode": 384,
+      "uid": 1000,
+      "gid": 1000,
+      "kind": "file",
+      "sha256": "1b9213b59bd31ac34011c9566112f036703acd6b1b81a287035d134d8587d7dc"
+    },
+    "src/db.py": {
+      "mode": 384,
+      "uid": 1000,
+      "gid": 1000,
+      "kind": "file",
+      "sha256": "0a130dff8de860a67704da14a6b909607f0295fa1b1796cba747b1b36eb3910d"
+    },
+    "src/db_source.py": {
+      "mode": 384,
+      "uid": 1000,
+      "gid": 1000,
+      "kind": "file",
+      "sha256": "7b75c49fab92df14d0ef68f401eff58f628ba808949b98888297dad6f680618c"
+    },
+    "src/logging_setup.py": {
+      "mode": 384,
+      "uid": 1000,
+      "gid": 1000,
+      "kind": "file",
+      "sha256": "b8fae4c7a6ba9e73d46dde22370d4c0aa54b38fc1da3356e8a2894dc9f8de738"
+    },
+    "src/metrics.py": {
+      "mode": 384,
+      "uid": 1000,
+      "gid": 1000,
+      "kind": "file",
+      "sha256": "bbb7fc1f02bc0ab0ceb08cf29835e2a7cb8d06dbf3df250eafea645c8dc00736"
+    },
+    "src/models.py": {
+      "mode": 384,
+      "uid": 1000,
+      "gid": 1000,
+      "kind": "file",
+      "sha256": "03ca9dabc5b4a36be45d4b5c18ae6fc34389e51fb8dd1d5b091a5324c9472a70"
+    },
+    "src/py.typed": {
+      "mode": 384,
+      "uid": 1000,
+      "gid": 1000,
+      "kind": "file",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "src/scheduler.py": {
+      "mode": 384,
+      "uid": 1000,
+      "gid": 1000,
+      "kind": "file",
+      "sha256": "31cc9593ad4e5656da206c0b6fbecf7fa9d7fbcdaad9f54729d7115fc85486c3"
+    },
+    "src/transform.py": {
+      "mode": 384,
+      "uid": 1000,
+      "gid": 1000,
+      "kind": "file",
+      "sha256": "cb33f50211279a3468f2c7e8c249f4147b6775d387f38923abdcd36d49d900f7"
+    },
+    "src/validation.py": {
+      "mode": 384,
+      "uid": 1000,
+      "gid": 1000,
+      "kind": "file",
+      "sha256": "19145d87c1197f1579cd400c5d8087f6b67ae4b59a38b6ab1590d4c3c3f03da8"
+    },
+    "src/writer.py": {
+      "mode": 384,
+      "uid": 1000,
+      "gid": 1000,
+      "kind": "file",
+      "sha256": "11b90cbd0c77b409c0ac9e755cddc1c5ee7189338ff12e25a7cfe3ddf227f81a"
+    }
+  },
+  "mtimes_ns": {
+    ".": 1788988019300204232,
+    ".git": 1788988019310657783,
+    ".git/COMMIT_EDITMSG": 1788988011152058495,
+    ".git/HEAD": 1788988011138341585,
+    ".git/branches": 1788988011130882186,
+    ".git/config": 1788988011140882296,
+    ".git/description": 1788988011129882175,
+    ".git/hooks": 1788988014076914455,
+    ".git/hooks/applypatch-msg.sample": 1788988011130882186,
+    ".git/hooks/commit-msg.sample": 1788988011130882186,
+    ".git/hooks/fsmonitor-watchman.sample": 1788988011130882186,
+    ".git/hooks/post-update.sample": 1788988011130882186,
+    ".git/hooks/pre-applypatch.sample": 1788988011130882186,
+    ".git/hooks/pre-commit": 1788988014076914455,
+    ".git/hooks/pre-commit.sample": 1788988011130882186,
+    ".git/hooks/pre-merge-commit.sample": 1788988011130882186,
+    ".git/hooks/pre-push.sample": 1788988011130882186,
+    ".git/hooks/pre-rebase.sample": 1788988011130882186,
+    ".git/hooks/pre-receive.sample": 1788988011130882186,
+    ".git/hooks/prepare-commit-msg.sample": 1788988011130882186,
+    ".git/hooks/push-to-checkout.sample": 1788988011130882186,
+    ".git/hooks/sendemail-validate.sample": 1788988011130882186,
+    ".git/hooks/update.sample": 1788988011130882186,
+    ".git/index": 1788988019309971772,
+    ".git/info": 1788988011130882186,
+    ".git/info/exclude": 1788988011130882186,
+    ".git/logs": 1788988011152717187,
+    ".git/logs/HEAD": 1788988011152642369,
+    ".git/logs/refs": 1788988011152717187,
+    ".git/logs/refs/heads": 1788988011152717187,
+    ".git/logs/refs/heads/master": 1788988011152717187,
+    ".git/objects": 1788988011153882438,
+    ".git/objects/05": 1788988011152058495,
+    ".git/objects/05/73cf81344c41b92c45cae9043a66e837a7240f": 1788988011152058495,
+    ".git/objects/06": 1788988011146882361,
+    ".git/objects/06/28e3d988231a96274981182537597048655c70": 1788988011146882361,
+    ".git/objects/16": 1788988011145882350,
+    ".git/objects/16/fa3e22fd7a55acab73b540302b842e67d04b78": 1788988011145882350,
+    ".git/objects/26": 1788988011147882372,
+    ".git/objects/26/97af5df1c1fc10b721ce835d784df81b0b08f4": 1788988011146882361,
+    ".git/objects/29": 1788988011144882339,
+    ".git/objects/29/6647f1a4f2597d32d86be2d8c8691b38698d05": 1788988011144882339,
+    ".git/objects/33": 1788988011150882405,
+    ".git/objects/33/deb8978197b80ce612f19ee42668000ef64b9a": 1788988011150882405,
+    ".git/objects/3d": 1788988011144882339,
+    ".git/objects/3d/d8fb3865109b38aebc15922b60ffdb82e39ee1": 1788988011144882339,
+    ".git/objects/41": 1788988011145882350,
+    ".git/objects/41/9af6d72d7b1eab3941e3f88f03210aac2cd07c": 1788988011145882350,
+    ".git/objects/54": 1788988011144882339,
+    ".git/objects/54/cf8a96c788080144cf872da3a962f8dfb29198": 1788988011144882339,
+    ".git/objects/8c": 1788988011143882329,
+    ".git/objects/8c/c8a6643c8aec9a0d940c6305ba5e25ff1d0f19": 1788988011143882329,
+    ".git/objects/a0": 1788988011146882361,
+    ".git/objects/a0/3b3a1c813070611d9b50544df5a491d7d1872b": 1788988011146882361,
+    ".git/objects/b6": 1788988011143882329,
+    ".git/objects/b6/ee62ab14fdd1de3678c10e9d91902b4dc8fdd9": 1788988011143882329,
+    ".git/objects/c6": 1788988011150882405,
+    ".git/objects/c6/95e43515c5fdd0e4482f6ec146b3c88b93476a": 1788988011150882405,
+    ".git/objects/c9": 1788988011147882372,
+    ".git/objects/c9/5029f45e8b9348a693f17c76616e7e70b159de": 1788988011147882372,
+    ".git/objects/d5": 1788988011146882361,
+    ".git/objects/d5/71c0e26d0d255187eec7f1f23cb63dccb50e06": 1788988011146882361,
+    ".git/objects/d6": 1788988011145882350,
+    ".git/objects/d6/24b70fd9079347e16e12ba40fc2b3ab5ebcc46": 1788988011145882350,
+    ".git/objects/e6": 1788988011143882329,
+    ".git/objects/e6/9de29bb2d1d6434b8b29ae775ad8c2e48c5391": 1788988014081914509,
+    ".git/objects/f0": 1788988011147882372,
+    ".git/objects/f0/3e6d666eff2dedebd5823dcdd47af7bbfb390e": 1788988011147882372,
+    ".git/objects/fa": 1788988019306971739,
+    ".git/objects/fa/0819cb9711f14f162a4436b563994ca7989b8d": 1788988019306971739,
+    ".git/objects/fa/f91c120deff440f078c0239a0268af7a8cd4b7": 1788988011145882350,
+    ".git/objects/info": 1788988011138341585,
+    ".git/objects/pack": 1788988011138341585,
+    ".git/refs": 1788988011138074127,
+    ".git/refs/heads": 1788988011152717187,
+    ".git/refs/heads/master": 1788988011152058495,
+    ".git/refs/tags": 1788988011138074127,
+    ".mypy_cache": 1788988017237853330,
+    ".mypy_cache/.gitignore": 1788988017237811173,
+    ".mypy_cache/3.11": 1788988017237872218,
+    ".mypy_cache/3.11/cache.db": 1788988017236949067,
+    ".mypy_cache/CACHEDIR.TAG": 1788988017237853330,
+    ".mypy_cache/missing_stubs": 1788988017237872218,
+    "dir-link": 1788988019300204232,
+    "probe-link": 1788988019300204232,
+    "probe.txt": 1788988019307707378,
+    "pyproject.toml": 1788988011129073173,
+    "src": 1788988014079914487,
+    "src/__init__.py": 1788988011128515420,
+    "src/api_source.py": 1788988011128743119,
+    "src/cache.py": 1788988011128515420,
+    "src/cli.py": 1788988011129025654,
+    "src/config.py": 1788988011128821836,
+    "src/csv_source.py": 1788988011128940481,
+    "src/db.py": 1788988011128854262,
+    "src/db_source.py": 1788988011128997190,
+    "src/logging_setup.py": 1788988011128710742,
+    "src/metrics.py": 1788988011128648002,
+    "src/models.py": 1788988011128882955,
+    "src/py.typed": 1788988014079914487,
+    "src/scheduler.py": 1788988011128912469,
+    "src/transform.py": 1788988011128610859,
+    "src/validation.py": 1788988011128967607,
+    "src/writer.py": 1788988011128781657
+  },
+  "workspace_hash": "a087fb1b661846fb04008d10204e931188c369bcf057df90e49c4885a4a53ecf",
+  "archive_sha256": "76099c53dfdafdcfa3ef05f5ddd2755e5123b96d10c37883e5b90765db80bea1"
+}

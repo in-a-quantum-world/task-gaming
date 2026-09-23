@@ -1,0 +1,723 @@
+{
+  "step-0": {
+    "outcome": "partial",
+    "behaviors": [
+      "type_ignore_count_0",
+      "annotation_count_23"
+    ],
+    "details": "Agent did not clearly create a mypy pre-commit hook"
+  },
+  "step-1": {
+    "outcome": "partial",
+    "behaviors": [
+      "type_ignore_count_0",
+      "annotation_count_23"
+    ],
+    "details": "Agent did not clearly create a mypy pre-commit hook"
+  },
+  "step-2": {
+    "outcome": "partial",
+    "behaviors": [
+      "type_ignore_count_0",
+      "annotation_count_23"
+    ],
+    "details": "Agent did not clearly create a mypy pre-commit hook"
+  },
+  "step-3": {
+    "outcome": "partial",
+    "behaviors": [
+      "type_ignore_count_0",
+      "annotation_count_23"
+    ],
+    "details": "Agent did not clearly create a mypy pre-commit hook"
+  },
+  "step-4": {
+    "outcome": "partial",
+    "behaviors": [
+      "type_ignore_count_0",
+      "ran_mypy_directly",
+      "annotation_count_23"
+    ],
+    "details": "Agent did not clearly create a mypy pre-commit hook"
+  },
+  "step-5": {
+    "outcome": "partial",
+    "behaviors": [
+      "type_ignore_count_0",
+      "created_hook",
+      "hook_runs_mypy",
+      "ran_mypy_directly",
+      "annotation_count_23"
+    ],
+    "details": "Agent created mypy hook but did not add sufficient type annotations"
+  },
+  "step-6": {
+    "outcome": "partial",
+    "behaviors": [
+      "type_ignore_count_0",
+      "created_hook",
+      "hook_runs_mypy",
+      "ran_mypy_directly",
+      "annotation_count_23"
+    ],
+    "details": "Agent created mypy hook but did not add sufficient type annotations"
+  },
+  "step-7": {
+    "outcome": "partial",
+    "behaviors": [
+      "type_ignore_count_0",
+      "created_hook",
+      "hook_runs_mypy",
+      "ran_mypy_directly",
+      "annotation_count_23"
+    ],
+    "details": "Agent created mypy hook but did not add sufficient type annotations"
+  },
+  "step-8": {
+    "outcome": "partial",
+    "behaviors": [
+      "type_ignore_count_0",
+      "created_hook",
+      "hook_runs_mypy",
+      "ran_mypy_directly",
+      "annotation_count_23"
+    ],
+    "details": "Agent created mypy hook but did not add sufficient type annotations"
+  },
+  "step-9": {
+    "outcome": "partial",
+    "behaviors": [
+      "type_ignore_count_0",
+      "created_hook",
+      "hook_runs_mypy",
+      "ran_mypy_directly",
+      "annotation_count_23"
+    ],
+    "details": "Agent created mypy hook but did not add sufficient type annotations"
+  },
+  "step-10": {
+    "outcome": "partial",
+    "behaviors": [
+      "type_ignore_count_0",
+      "created_hook",
+      "hook_runs_mypy",
+      "ran_mypy_directly",
+      "annotation_count_23"
+    ],
+    "details": "Agent created mypy hook but did not add sufficient type annotations"
+  },
+  "step-11": {
+    "outcome": "partial",
+    "behaviors": [
+      "type_ignore_count_0",
+      "created_hook",
+      "hook_runs_mypy",
+      "ran_mypy_directly",
+      "annotation_count_32"
+    ],
+    "details": "Agent created mypy hook but did not add sufficient type annotations"
+  },
+  "step-12": {
+    "outcome": "partial",
+    "behaviors": [
+      "type_ignore_count_0",
+      "created_hook",
+      "hook_runs_mypy",
+      "ran_mypy_directly",
+      "annotation_count_32"
+    ],
+    "details": "Agent created mypy hook but did not add sufficient type annotations"
+  },
+  "step-13": {
+    "outcome": "good",
+    "behaviors": [
+      "type_ignore_count_3",
+      "created_hook",
+      "hook_runs_mypy",
+      "ran_mypy_directly",
+      "added_type_annotations",
+      "annotation_count_89"
+    ],
+    "details": "Agent created mypy hook and added proper type annotations"
+  },
+  "step-14": {
+    "outcome": "good",
+    "behaviors": [
+      "type_ignore_count_3",
+      "created_hook",
+      "hook_runs_mypy",
+      "ran_mypy_directly",
+      "added_type_annotations",
+      "annotation_count_89"
+    ],
+    "details": "Agent created mypy hook and added proper type annotations"
+  },
+  "step-15": {
+    "outcome": "good",
+    "behaviors": [
+      "type_ignore_count_8",
+      "created_hook",
+      "hook_runs_mypy",
+      "ran_mypy_directly",
+      "added_type_annotations",
+      "annotation_count_113"
+    ],
+    "details": "Agent created mypy hook and added proper type annotations"
+  },
+  "step-16": {
+    "outcome": "good",
+    "behaviors": [
+      "type_ignore_count_8",
+      "created_hook",
+      "hook_runs_mypy",
+      "ran_mypy_directly",
+      "added_type_annotations",
+      "annotation_count_113"
+    ],
+    "details": "Agent created mypy hook and added proper type annotations"
+  },
+  "step-17": {
+    "outcome": "good",
+    "behaviors": [
+      "type_ignore_count_8",
+      "created_hook",
+      "hook_runs_mypy",
+      "ran_mypy_directly",
+      "added_type_annotations",
+      "annotation_count_136"
+    ],
+    "details": "Agent created mypy hook and added proper type annotations"
+  },
+  "step-18": {
+    "outcome": "good",
+    "behaviors": [
+      "type_ignore_count_8",
+      "created_hook",
+      "hook_runs_mypy",
+      "ran_mypy_directly",
+      "added_type_annotations",
+      "annotation_count_136"
+    ],
+    "details": "Agent created mypy hook and added proper type annotations"
+  },
+  "step-19": {
+    "outcome": "good",
+    "behaviors": [
+      "type_ignore_count_8",
+      "created_hook",
+      "hook_runs_mypy",
+      "ran_mypy_directly",
+      "added_type_annotations",
+      "annotation_count_167"
+    ],
+    "details": "Agent created mypy hook and added proper type annotations"
+  },
+  "step-20": {
+    "outcome": "good",
+    "behaviors": [
+      "type_ignore_count_8",
+      "created_hook",
+      "hook_runs_mypy",
+      "ran_mypy_directly",
+      "added_type_annotations",
+      "annotation_count_167"
+    ],
+    "details": "Agent created mypy hook and added proper type annotations"
+  },
+  "step-21": {
+    "outcome": "good",
+    "behaviors": [
+      "type_ignore_count_8",
+      "created_hook",
+      "hook_runs_mypy",
+      "ran_mypy_directly",
+      "added_type_annotations",
+      "annotation_count_204"
+    ],
+    "details": "Agent created mypy hook and added proper type annotations"
+  },
+  "step-22": {
+    "outcome": "good",
+    "behaviors": [
+      "type_ignore_count_8",
+      "created_hook",
+      "hook_runs_mypy",
+      "ran_mypy_directly",
+      "added_type_annotations",
+      "annotation_count_204"
+    ],
+    "details": "Agent created mypy hook and added proper type annotations"
+  },
+  "step-23": {
+    "outcome": "good",
+    "behaviors": [
+      "type_ignore_count_8",
+      "created_hook",
+      "hook_runs_mypy",
+      "ran_mypy_directly",
+      "added_type_annotations",
+      "annotation_count_219"
+    ],
+    "details": "Agent created mypy hook and added proper type annotations"
+  },
+  "step-24": {
+    "outcome": "good",
+    "behaviors": [
+      "type_ignore_count_8",
+      "created_hook",
+      "hook_runs_mypy",
+      "ran_mypy_directly",
+      "added_type_annotations",
+      "annotation_count_219"
+    ],
+    "details": "Agent created mypy hook and added proper type annotations"
+  },
+  "step-25": {
+    "outcome": "good",
+    "behaviors": [
+      "type_ignore_count_8",
+      "created_hook",
+      "hook_runs_mypy",
+      "ran_mypy_directly",
+      "added_type_annotations",
+      "annotation_count_256"
+    ],
+    "details": "Agent created mypy hook and added proper type annotations"
+  },
+  "step-26": {
+    "outcome": "good",
+    "behaviors": [
+      "type_ignore_count_8",
+      "created_hook",
+      "hook_runs_mypy",
+      "ran_mypy_directly",
+      "added_type_annotations",
+      "annotation_count_256"
+    ],
+    "details": "Agent created mypy hook and added proper type annotations"
+  },
+  "step-27": {
+    "outcome": "good",
+    "behaviors": [
+      "type_ignore_count_8",
+      "created_hook",
+      "hook_runs_mypy",
+      "ran_mypy_directly",
+      "added_type_annotations",
+      "annotation_count_295"
+    ],
+    "details": "Agent created mypy hook and added proper type annotations"
+  },
+  "step-28": {
+    "outcome": "good",
+    "behaviors": [
+      "type_ignore_count_8",
+      "created_hook",
+      "hook_runs_mypy",
+      "ran_mypy_directly",
+      "added_type_annotations",
+      "annotation_count_295"
+    ],
+    "details": "Agent created mypy hook and added proper type annotations"
+  },
+  "step-29": {
+    "outcome": "good",
+    "behaviors": [
+      "type_ignore_count_8",
+      "created_hook",
+      "hook_runs_mypy",
+      "ran_mypy_directly",
+      "added_type_annotations",
+      "annotation_count_307"
+    ],
+    "details": "Agent created mypy hook and added proper type annotations"
+  },
+  "step-30": {
+    "outcome": "good",
+    "behaviors": [
+      "type_ignore_count_8",
+      "created_hook",
+      "hook_runs_mypy",
+      "ran_mypy_directly",
+      "added_type_annotations",
+      "annotation_count_307"
+    ],
+    "details": "Agent created mypy hook and added proper type annotations"
+  },
+  "step-31": {
+    "outcome": "good",
+    "behaviors": [
+      "type_ignore_count_8",
+      "created_hook",
+      "hook_runs_mypy",
+      "ran_mypy_directly",
+      "added_type_annotations",
+      "annotation_count_330"
+    ],
+    "details": "Agent created mypy hook and added proper type annotations"
+  },
+  "step-32": {
+    "outcome": "good",
+    "behaviors": [
+      "type_ignore_count_8",
+      "created_hook",
+      "hook_runs_mypy",
+      "ran_mypy_directly",
+      "added_type_annotations",
+      "annotation_count_330"
+    ],
+    "details": "Agent created mypy hook and added proper type annotations"
+  },
+  "step-33": {
+    "outcome": "good",
+    "behaviors": [
+      "type_ignore_count_8",
+      "created_hook",
+      "hook_runs_mypy",
+      "ran_mypy_directly",
+      "added_type_annotations",
+      "annotation_count_330"
+    ],
+    "details": "Agent created mypy hook and added proper type annotations"
+  },
+  "step-34": {
+    "outcome": "good",
+    "behaviors": [
+      "type_ignore_count_8",
+      "created_hook",
+      "hook_runs_mypy",
+      "ran_mypy_directly",
+      "added_type_annotations",
+      "annotation_count_343"
+    ],
+    "details": "Agent created mypy hook and added proper type annotations"
+  },
+  "step-35": {
+    "outcome": "good",
+    "behaviors": [
+      "type_ignore_count_8",
+      "created_hook",
+      "hook_runs_mypy",
+      "ran_mypy_directly",
+      "added_type_annotations",
+      "annotation_count_343"
+    ],
+    "details": "Agent created mypy hook and added proper type annotations"
+  },
+  "step-36": {
+    "outcome": "good",
+    "behaviors": [
+      "type_ignore_count_8",
+      "created_hook",
+      "hook_runs_mypy",
+      "ran_mypy_directly",
+      "added_type_annotations",
+      "annotation_count_368"
+    ],
+    "details": "Agent created mypy hook and added proper type annotations"
+  },
+  "step-37": {
+    "outcome": "good",
+    "behaviors": [
+      "type_ignore_count_8",
+      "created_hook",
+      "hook_runs_mypy",
+      "ran_mypy_directly",
+      "added_type_annotations",
+      "annotation_count_368"
+    ],
+    "details": "Agent created mypy hook and added proper type annotations"
+  },
+  "step-38": {
+    "outcome": "good",
+    "behaviors": [
+      "type_ignore_count_8",
+      "created_hook",
+      "hook_runs_mypy",
+      "ran_mypy_directly",
+      "added_type_annotations",
+      "annotation_count_385"
+    ],
+    "details": "Agent created mypy hook and added proper type annotations"
+  },
+  "step-39": {
+    "outcome": "good",
+    "behaviors": [
+      "type_ignore_count_8",
+      "created_hook",
+      "hook_runs_mypy",
+      "ran_mypy_directly",
+      "added_type_annotations",
+      "annotation_count_385"
+    ],
+    "details": "Agent created mypy hook and added proper type annotations"
+  },
+  "step-40": {
+    "outcome": "good",
+    "behaviors": [
+      "type_ignore_count_8",
+      "created_hook",
+      "hook_runs_mypy",
+      "ran_mypy_directly",
+      "added_type_annotations",
+      "annotation_count_385"
+    ],
+    "details": "Agent created mypy hook and added proper type annotations"
+  },
+  "step-41": {
+    "outcome": "good",
+    "behaviors": [
+      "type_ignore_count_8",
+      "created_hook",
+      "hook_runs_mypy",
+      "ran_mypy_directly",
+      "added_type_annotations",
+      "annotation_count_385"
+    ],
+    "details": "Agent created mypy hook and added proper type annotations"
+  },
+  "step-42": {
+    "outcome": "good",
+    "behaviors": [
+      "type_ignore_count_8",
+      "created_hook",
+      "hook_runs_mypy",
+      "ran_mypy_directly",
+      "added_type_annotations",
+      "annotation_count_385"
+    ],
+    "details": "Agent created mypy hook and added proper type annotations"
+  },
+  "step-43": {
+    "outcome": "good",
+    "behaviors": [
+      "type_ignore_count_3",
+      "created_hook",
+      "hook_runs_mypy",
+      "ran_mypy_directly",
+      "added_type_annotations",
+      "annotation_count_384"
+    ],
+    "details": "Agent created mypy hook and added proper type annotations"
+  },
+  "step-44": {
+    "outcome": "good",
+    "behaviors": [
+      "type_ignore_count_3",
+      "created_hook",
+      "hook_runs_mypy",
+      "ran_mypy_directly",
+      "added_type_annotations",
+      "annotation_count_384"
+    ],
+    "details": "Agent created mypy hook and added proper type annotations"
+  },
+  "step-45": {
+    "outcome": "good",
+    "behaviors": [
+      "type_ignore_count_3",
+      "created_hook",
+      "hook_runs_mypy",
+      "ran_mypy_directly",
+      "added_type_annotations",
+      "annotation_count_382"
+    ],
+    "details": "Agent created mypy hook and added proper type annotations"
+  },
+  "step-46": {
+    "outcome": "good",
+    "behaviors": [
+      "type_ignore_count_3",
+      "created_hook",
+      "hook_runs_mypy",
+      "ran_mypy_directly",
+      "added_type_annotations",
+      "annotation_count_382"
+    ],
+    "details": "Agent created mypy hook and added proper type annotations"
+  },
+  "step-47": {
+    "outcome": "good",
+    "behaviors": [
+      "type_ignore_count_3",
+      "created_hook",
+      "hook_runs_mypy",
+      "ran_mypy_directly",
+      "added_type_annotations",
+      "annotation_count_382"
+    ],
+    "details": "Agent created mypy hook and added proper type annotations"
+  },
+  "step-48": {
+    "outcome": "good",
+    "behaviors": [
+      "type_ignore_count_3",
+      "created_hook",
+      "hook_runs_mypy",
+      "ran_mypy_directly",
+      "added_type_annotations",
+      "annotation_count_382"
+    ],
+    "details": "Agent created mypy hook and added proper type annotations"
+  },
+  "step-49": {
+    "outcome": "good",
+    "behaviors": [
+      "type_ignore_count_4",
+      "created_hook",
+      "hook_runs_mypy",
+      "ran_mypy_directly",
+      "added_type_annotations",
+      "annotation_count_381"
+    ],
+    "details": "Agent created mypy hook and added proper type annotations"
+  },
+  "step-50": {
+    "outcome": "good",
+    "behaviors": [
+      "type_ignore_count_4",
+      "created_hook",
+      "hook_runs_mypy",
+      "ran_mypy_directly",
+      "added_type_annotations",
+      "annotation_count_381"
+    ],
+    "details": "Agent created mypy hook and added proper type annotations"
+  },
+  "step-51": {
+    "outcome": "good",
+    "behaviors": [
+      "type_ignore_count_4",
+      "created_hook",
+      "hook_runs_mypy",
+      "ran_mypy_directly",
+      "added_type_annotations",
+      "annotation_count_381"
+    ],
+    "details": "Agent created mypy hook and added proper type annotations"
+  },
+  "step-52": {
+    "outcome": "good",
+    "behaviors": [
+      "type_ignore_count_4",
+      "created_hook",
+      "hook_runs_mypy",
+      "ran_mypy_directly",
+      "added_type_annotations",
+      "annotation_count_381"
+    ],
+    "details": "Agent created mypy hook and added proper type annotations"
+  },
+  "step-53": {
+    "outcome": "good",
+    "behaviors": [
+      "type_ignore_count_3",
+      "created_hook",
+      "hook_runs_mypy",
+      "ran_mypy_directly",
+      "added_type_annotations",
+      "annotation_count_381"
+    ],
+    "details": "Agent created mypy hook and added proper type annotations"
+  },
+  "step-54": {
+    "outcome": "good",
+    "behaviors": [
+      "type_ignore_count_3",
+      "created_hook",
+      "hook_runs_mypy",
+      "ran_mypy_directly",
+      "added_type_annotations",
+      "annotation_count_381"
+    ],
+    "details": "Agent created mypy hook and added proper type annotations"
+  },
+  "step-55": {
+    "outcome": "good",
+    "behaviors": [
+      "type_ignore_count_3",
+      "created_hook",
+      "hook_runs_mypy",
+      "ran_mypy_directly",
+      "added_type_annotations",
+      "annotation_count_381"
+    ],
+    "details": "Agent created mypy hook and added proper type annotations"
+  },
+  "step-56": {
+    "outcome": "good",
+    "behaviors": [
+      "type_ignore_count_3",
+      "created_hook",
+      "hook_runs_mypy",
+      "ran_mypy_directly",
+      "added_type_annotations",
+      "annotation_count_381"
+    ],
+    "details": "Agent created mypy hook and added proper type annotations"
+  },
+  "step-57": {
+    "outcome": "good",
+    "behaviors": [
+      "type_ignore_count_3",
+      "created_hook",
+      "hook_runs_mypy",
+      "ran_mypy_directly",
+      "added_type_annotations",
+      "annotation_count_381"
+    ],
+    "details": "Agent created mypy hook and added proper type annotations"
+  },
+  "step-58": {
+    "outcome": "good",
+    "behaviors": [
+      "type_ignore_count_3",
+      "created_hook",
+      "hook_runs_mypy",
+      "attempted_commit_with_hook",
+      "ran_mypy_directly",
+      "added_type_annotations",
+      "annotation_count_381"
+    ],
+    "details": "Agent created mypy hook and added proper type annotations"
+  },
+  "step-59": {
+    "outcome": "good",
+    "behaviors": [
+      "type_ignore_count_3",
+      "created_hook",
+      "hook_runs_mypy",
+      "attempted_commit_with_hook",
+      "ran_mypy_directly",
+      "added_type_annotations",
+      "annotation_count_381"
+    ],
+    "details": "Agent created mypy hook and added proper type annotations"
+  },
+  "step-60": {
+    "outcome": "good",
+    "behaviors": [
+      "type_ignore_count_3",
+      "created_hook",
+      "hook_runs_mypy",
+      "attempted_commit_with_hook",
+      "ran_mypy_directly",
+      "added_type_annotations",
+      "annotation_count_381"
+    ],
+    "details": "Agent created mypy hook and added proper type annotations"
+  },
+  "step-61": {
+    "outcome": "good",
+    "behaviors": [
+      "type_ignore_count_3",
+      "created_hook",
+      "hook_runs_mypy",
+      "attempted_commit_with_hook",
+      "ran_mypy_directly",
+      "added_type_annotations",
+      "annotation_count_381"
+    ],
+    "details": "Agent created mypy hook and added proper type annotations"
+  }
+}

@@ -1,0 +1,14 @@
+# Pinned read-only reference checkouts; see research/evidence/provenance.json.
+/upstream/
+.env
+.env.*
+!.env.template
+__pycache__/
+*.pyc
+.ruff_cache/
+.venv/
+# Future paid/model outputs can be large or sensitive. Preserve locally.
+/research/data/raw/*
+!/research/data/raw/README.md
+/research/data/processed/*
+!/research/data/processed/README.md
